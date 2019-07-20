@@ -1,0 +1,277 @@
+---
+seo-title: 品質參數
+title: 品質參數
+uuid: 0d9fa764-edf-4178-8650-90c9 a0852 a57
+translation-type: tm+mt
+source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
+
+---
+
+
+# 品質參數{#quality-parameters}
+
+本主題提供體驗品質 (QoE/QoS) 資料的清單，包含 Adobe 透過解決方案變數收集的內容資料值。
+
+表格資料說明:
+
+* **實作:**&#x200B;實作數值和要求的資訊
+   * *索引鍵* - 在您的應用程式中手動設定，或由 Adobe Media SDK 自動設定的變數。
+   * *必要* - 指出基本視訊追蹤是否需要參數。
+   * *類型* - 指明預計設定的變數類型 (字串或數字)。
+   * *隨附於* -表示傳送資料時： *媒體開始* 是在媒體開始時傳送的分析呼叫， *廣告開始* 是在廣告開始時傳送的分析呼叫等等； *關閉* 呼叫是直接從心率伺服器傳送至媒體工作階段結束處的編譯分析呼叫，或是廣告、章節等結尾的編譯分析呼叫。網路封包呼叫無法使用關閉呼叫。
+   * *最小 SDK 版本* - 指出您存取參數所需的 SDK 版本。
+   * *範例值* - 提供常見的變數使用方法範例。
+* **網路參數:**&#x200B;顯示傳遞至 Adobe Analytics 或心率伺服器的數值。本欄顯示可於網路呼叫中看到，且由 Adobe Media SDK 產生的參數名稱。
+* **報表:**&#x200B;關於如何檢視和分析視訊資料的資訊。
+   * *可用* - 指出資料是否已由報表預設提供 (*是*)，或是需要自行設定 (*自訂*)
+   * *預留變數* - 指出資料在預留變數中是否被當作事件、eVar、prop 或分類擷取。
+   * *報表名稱* - 適用於變數的 Adobe Aanlytics 報表名稱
+   * *內容資料* - 傳遞至報表伺服器以及用於處理規則的 Adobe Aanlytics 內容資料名稱。
+   * *資料饋送* - 可在 Clickstream 或 Live Stream 資料饋送中找到的變數欄位名稱
+   * *Audience Manager* - Adobe Audience Manager 中的特徵名稱
+
+## 品質中繼資料 {#section_8467F9729DA04A888A2657712234D7C7}
+
+### 平均位元速率
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>  [位元速率](./quality-parameters.md#related_apis_section) </li> <li> **API 索引鍵:**<br/>media.qoe.bitrate </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/>關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 800-899 </li><li> **說明：**<br/>平均位元速率(以kbps為單位)。值預先定義為 100kbps 間隔的貯體。平均位元速率的計算方式，為播放作業工作階段期間發生、與播放期間相關的所有位元速率值的加權平均。實施流量分類。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>BitrateAveageBit) </li> <li> **心率：**<br/> (l：串流：位元速率) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>平均位元速率 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>BitrateAveageBit) </li> <li> **資料摘要:**<br/>videoqoebitrateaverageevar </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>BitrateAveageBit) </li> </ul> |
+
+
+
+### 開始時間
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/>media.qoe.timeToStart </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體開始，媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 30,000 </li><li> **說明：**<br/>如果您未透過QoSobject設定此值，則預設值為零。您將此值設為毫秒。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>timeToStart) </li> <li> **心率：**<br/> (l：串流：startup_ time) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>開始時間 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>timeToStart) </li> <li> **資料饋送:**<br/>videoqoetimetostartevar </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>timeToStart) </li> </ul> |
+
+
+
+### FPS
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/>media.qoe.framesPerSecond </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體開始，媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 24 </li><li> **說明：**<br/>串流影格速率的目前值(以秒為單位)。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率：**<br/> (l：串流：fps) </li> </ul> | <ul> <li> **可用:**<br/>否 </li> <li> **預留變數:**<br/>不適用 </li> <li> **報表名稱:**<br/>不適用 </li> <li> **內容資料:**<br/> </li> <li> **資料饋送:**<br/> </li> <li> **Audience Manager:**<br/> </li> </ul> |
+
+
+
+### 掉格
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>droppedFrames </li> <li> **API 索引鍵:**<br/>media.qoe.droppedFrames </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 3 </li><li> **說明：**<br/>掉格數(整數)。此值的計算方式為播放工作階段期間所有掉格的總數。此值取自最後值(l：串流：drop_ frame.)  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>DropedFrameCount) </li> <li> **心率：**<br/> (l：串流：<br/>drop_ frames) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>掉格 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>DropedFrameCount) </li> <li> **資料饋送:**<br/>videoqoedroppedframecountevar </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>DropedFrameCount) </li> </ul> |
+
+
+
+### 緩衝事件
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 2 </li><li> **說明：**<br/>緩衝事件的數目。此量度是以發生在播放作業期間的不同緩衝狀態的計數來計算。這是該播放器從其他狀態 (例如播放或暫停) 進行緩衝狀態的計數。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>BufferCount) </li> <li> **心率：**<br/> (s：event：<br/>type=緩衝) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>緩衝事件 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>BufferCount) </li> <li> **資料饋送:**<br/>videoqoebuffercountevar </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>BufferCount) </li> </ul> |
+
+
+
+### 總緩衝期間
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:** </li> <li> **範例值：**<br/> 30 </li><li> **說明：**<br/>總時間量，以秒為單位，以緩衝區為單位。此值的計算方式為播放工作階段期間發生的所有緩衝事件期間的總數。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。<br/>**發行日期: 2018 年 9 月 13 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>BufferTime) </li> <li> **心率：**<br/> (l：event：持續時間) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>總緩衝期間 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>BufferTime) </li> <li> **資料饋送:**<br/>videoqoebuffertimeevar </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>BufferTime) </li> </ul> |
+
+
+
+### 位元速率變更
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/>media.qoe.bitrateChange </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 3 </li><li> **說明：**<br/>位元速率變更數(整數)。此值的計算方式為播放工作階段期間發生的所有位元速率變更事件的總數。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>BitrateChangeCount) </li> <li> **心率：**<br/> (s：event：<br/>type= bitrate_ change) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>位元速率變更 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>BitrateChangeCount) </li> <li> **資料饋送:**<br/>videoqoebitratechangecountevar </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>BitrateChangeCount) </li> </ul> |
+
+
+
+### 錯誤/錯誤事件
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 密鑰:**<br/> </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 1 </li><li> **說明：**<br/>發生的錯誤數(整數)。此值的計算方式為播放工作階段期間發生的所有錯誤事件的總數。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>errorCount) </li> <li> **心率：**<br/> (s：event：<br/>type= error) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>錯誤 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>errorCount) </li> <li> **資料饋送:**<br/>videoqoeerrorcountevar </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>errorCount) </li> </ul> |
+
+
+
+### 播放器 SDK 錯誤 ID
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 密鑰:**<br/> </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> </li><li> **說明：**<br/>播放器SDK產生的唯一錯誤ID。客戶必須透過系統提供的錯誤 API，在實施時提供錯誤代碼/ID。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>playerSDKErrors) </li> <li> **心率：**<br/> (s：event：<br/>type= error) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>錯誤 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>playerSDKErrors) </li> <li> **資料饋送：**<br/> videoqoebayersdkerrors </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>playerSDKErrors) </li> </ul> |
+
+
+
+### 外部錯誤 ID
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 密鑰:**<br/> </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> </li><li> **說明：**<br/>來自任何外部來源的唯一錯誤ID，例如CDN錯誤。客戶必須透過系統提供的錯誤 API，在實施時提供錯誤代碼/ID。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>ExternalErrors) </li> <li> **心率：**<br/> (s：event：<br/>type= error) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>錯誤 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>ExternalErrors) </li> <li> **資料饋送：**<br/> videoqoebexneralerrors </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>ExternalErrors) </li> </ul> |
+
+
+
+### Media SDK 錯誤 ID
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 密鑰:**<br/> </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> </li><li> **說明：**<br/>播放期間由Media SDK產生的唯一錯誤ID。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>MediaDKErrors) </li> <li> **心率：**<br/> (s：event：<br/>type= error) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>錯誤 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>MediaDKErrors) </li> <li> **資料饋送:** <br/>mediaqoeexternalerrors </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>MediaDKErrors) </li> </ul> |
+
+
+
+
+### 作業結束 {#session-end}
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 密鑰:**<br/> </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:** 2.1 </li> <li> **範例值：**<br/> end </li><li> **說明：**<br/>結束事件表示SDK會傳送結束呼叫至後端。接收此事件後，後端會關閉此影片的作業階段，不會進行後續處理。<br/>如果媒體已完成至100%，應在 `s:event:type=complete.` 參閱 [內容完成後傳送，](audio-video-parameters.md#content-complete) 以瞭解相關資訊。 </li> </ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **活動訊號：**<br/> (s：event：type= end) </li> </ul> | <ul> <li> **可用:**<br/>使用自訂處理規則 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>不適用 </li> <li> **內容資料:**<br/> </li> <li> **資料饋送:**<br/> </li> <li> **Audience Manager:**<br/> </li> </ul> |
+
+
+
+## 品質量度 {#section_8EB0C9CBC09340C8915E1D2707D0A9EE}
+
+### 開始時間
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 30,000 </li><li> **說明：**<br/>如果您未透過QoSobject設定此值，則預設值為零。您將此值設為毫秒。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。<br/>**發行日期: 2018 年 9 月 13 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>timeToStart) </li> <li> **心率：**<br/> (l：串流：startup_ time) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>開始時間 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>timeToStart) </li> <li> **資料饋送:**<br/>videoqoetimetostart </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>timeToStart) </li> </ul> |
+
+
+
+### 緩衝事件
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>  [startupTime](./quality-parameters.md#related_apis_section) </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 2 </li><li> **說明：**<br/>緩衝事件數(整數)。此度量的計算方式為播放工作階段期間發生的緩衝事件的計數。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>BufferCount) </li> <li> **心率：**<br/> (s：event：<br/>type=緩衝) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>緩衝事件 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>BufferCount) </li> <li> **資料饋送:**<br/>videoqoebuffercount </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>BufferCount) </li> </ul> |
+
+
+
+### 總緩衝期間
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 15 </li><li> **說明：**<br/>緩衝逗留時間總計(秒；整數)。此值的計算方式為播放工作階段期間發生的所有緩衝事件期間的總數。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。<br/>**發行日期: 2018 年 9 月 13 日**  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>BufferTime) </li> <li> **心率：**<br/> (l：event：持續時間) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>總緩衝期間 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>BufferTime) </li> <li> **資料饋送:**<br/>videoqoebuffertime </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>BufferTime) </li> </ul> |
+
+
+
+### 位元速率變更
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>事件 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 「3」 </li><li> **說明：**<br/>位元速率變更數。此值的計算方式為播放工作階段期間發生的所有位元速率變更事件的總數。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>BitrateChangeCount) </li> <li> **心率：**<br/> (s：event：<br/>type= bitrate_ change) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>位元速率變更 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>BitrateChangeCount) </li> <li> **資料饋送:**<br/>videoqoebitratechangecount </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>BitrateChangeCount) </li> </ul> |
+
+
+
+### 錯誤
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 1 </li><li> **說明：**<br/>發生的錯誤數(整數)。此值的計算方式為播放工作階段期間發生的所有錯誤事件的總數。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>errorCount) </li> <li> **心率：**<br/> (s：event：<br/>type= error) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>錯誤事件 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>errorCount) </li> <li> **資料饋送:**<br/>videoqoeerrorcount </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>errorCount) </li> </ul> |
+
+
+
+### 掉格
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 1 </li><li> **說明：**<br/>掉格數(整數)。此值的計算方式為播放工作階段期間所有掉格的總數。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>DropedFrameCount) </li> <li> **心率：**<br/> (l：串流：<br/>drop_ frames) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>掉格 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>DropedFrameCount) </li> <li> **資料饋送:**<br/>videoqoedroppedframecount </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>DropedFrameCount) </li> </ul> |
+
+
+
+### 開始前掉格
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>使用者在開始之前結束視訊的次數。只有在未轉譯任何內容 (不論是否為廣告) 時，此度量才會設為 1。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>DropBeforeStart) </li> <li> **心率：**<br/> (s：event：<br/>type= aa_ start) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>開始前掉格 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>DropBeforeStart) </li> <li> **資料饋送:**<br/>videoqoedropbeforestart </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>DropBeforeStart) </li> </ul> |
+
+
+
+>[!IMPORTANT]
+>如果設定此事件，則唯一可能的值為TRUE。若此事件未設定，則不會傳送值。
+
+### 緩衝影響的資料流
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>受到緩衝影響的串流數。只有在播放工作階段期間發生至少一個緩衝事件時，此度量才會設為 1。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>buffer) </li> <li> **心率：**<br/> (s：event：<br/>type=緩衝) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>緩衝影響的資料流量 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>buffer) </li> <li> **資料饋送:**<br/>videoqoebuffer </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>buffer) </li> </ul> |
+
+
+
+>[!IMPORTANT]
+>如果設定此事件，則唯一可能的值為TRUE。若此事件未設定，則不會傳送值。
+
+### 位元速率變更影響的資料流
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>發生位元速率變更的串流數。只有在播放工作階段期間發生至少一個位元速率變更事件時，此度量才會設為 1。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>BitrateChange) </li> <li> **心率：**<br/> (s：event：<br/>type= bitrate_ change) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>緩衝變更影響的資料流量 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>BitrateChange) </li> <li> **資料饋送:**<br/>videoqoebitratechange </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>BitrateChange) </li> </ul> |
+
+
+
+>[!IMPORTANT]
+>如果設定此事件，則唯一可能的值為TRUE。若此事件未設定，則不會傳送值。
+
+### 平均位元速率
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 3200 </li><li> **說明：**<br/>平均位元速率(以kbps為單位，整數)。此度量的計算方式為播放工作階段期間發生、與播放期間相關的所有位元速率值的平均比重。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>Bitrate平均) </li> <li> **心率：**<br/> (l：串流：位元速率) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>平均位元速率 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>Bitrate平均) </li> <li> **資料饋送:**<br/>videoqoebitrateaverage </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>Bitrate平均) </li> </ul> |
+
+
+
+### 錯誤影響的資料流
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>發生位元速率變更的串流數。只有在播放工作階段期間發生至少一個位元速率變更事件時，此度量才會設為 1。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>error) </li> <li> **心率：**<br/> (s：event：<br/>type= error) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>錯誤影響的資料流量 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>error) </li> <li> **資料饋送:**<br/>videoqoeerror </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>error) </li> </ul> |
+
+
+
+>[!IMPORTANT]
+>如果設定此事件，則唯一可能的值為TRUE。若此事件未設定，則不會傳送值。
+
+### 掉格影響的資料流
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>框架被捨棄的串流數。只有在播放工作階段期間發生至少一個掉格時，此度量才會設為 1。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>droppedFrames) </li> <li> **心率：**<br/> (l：串流：<br/>drop_ frames) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>掉格影響的資料流量 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>droppedFrames) </li> <li> **資料饋送:**<br/>videoqoedroppedframes </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>droppedFrames) </li> </ul> |
+
+
+
+>[!IMPORTANT]
+>如果設定此事件，則唯一可能的值為TRUE。若此事件未設定，則不會傳送值。
+
+### 停頓影響的資料流
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:** 1.5+ </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>發生事件的串流數。只有在播放時發生了至少一次停頓，此量度才會設定為 1。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>stall) </li> <li> **心率：**<br/> (s：event：<br/>type= stall) </li> </ul> | <ul> <li> **可用:**<br/>使用自訂處理規則 </li> <li> **預留變數:**<br/>事件 </li> <li> **報告名稱:**<br/> </li> <li> **資料饋送:**<br/>不適用 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>stall) </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>stall) </li> </ul> |
+
+
+
+>[!IMPORTANT]
+>如果設定此事件，則唯一可能的值為TRUE。若此事件未設定，則不會傳送值。
+
+### 停頓事件
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:** 1.5+ </li> <li> **範例值：**<br/> 「3」 </li><li> **說明：**<br/>播放階段期間停止播放的次數。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>STallCount) </li> <li> **心率：**<br/> (s：event：<br/>type= stall) </li> </ul> | <ul> <li> **可用:**<br/>使用自訂處理規則 </li> <li> **預留變數:**<br/>事件 </li> <li> **報告名稱:**<br/> </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>STallCount) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>STallCount) </li> </ul> |
+
+
+
+### 總停頓期間
+
+|   實施   | 網路參數 | 報告 |
+| --- | --- | --- |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:** 1.5+ </li> <li> **範例值：**<br/> 12 </li><li> **說明：**<br/>總時間(秒；整數)播放時停止播放。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>STAllTime) </li> <li> **心率：**<br/> (s：event：<br/>type= stall) </li> </ul> | <ul> <li> **可用:**<br/>使用自訂處理規則 </li> <li> **預留變數:**<br/>事件 </li> <li> **報告名稱:**<br/> </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>STAllTime) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>STAllTime) </li> </ul> |
+
+
+
+## Related APIs {#related_apis_section}
+
+* Android - [createQoSObject ](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createQoSObject-java.lang.Long-java.lang.Double-java.lang.Double-java.lang.Long-)
+* iOS - [createQoSObjectWithBitrate](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createQoSObject)
+* Javascript - [createQoSObject ](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createQoSObject)
+
