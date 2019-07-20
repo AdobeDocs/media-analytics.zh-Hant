@@ -1,0 +1,102 @@
+---
+seo-title: 概述
+title: 概述
+uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
+translation-type: tm+mt
+source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+
+---
+
+
+# 概述{#overview}
+
+媒體收集 API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過媒體收集 API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。Media Collection API提供相同的媒體SDK即時追蹤功能，以及另一項功能：
+
+* **下載的內容追蹤**
+
+   此功能可讓您在使用者離線時追蹤媒體，透過本機儲存事件資料，直到使用者裝置在線上傳回為止。(如需詳細資訊，請參閱[追蹤下載內容](track-downloaded-content.md)。)
+
+媒體收集 API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示Media SDK文件的某些層面也與Media Collection API相關。For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+
+## 媒體追蹤資料流程 {#section_pwq_n34_qbb}
+
+實作Media Collection API的媒體播放器會直接呼叫媒體追蹤後端伺服器，而實作Media SDK的播放器則會對播放器應用程式內的SDK API進行追蹤呼叫。透過網路發出呼叫的其中一個效應，就是實作媒體收集 API 的播放器需要處置一些 Media SDK 自動處置的處理工作。(Details in [Media Collection Implementation.](mc-api-impl/mc-api-quick-start.md))
+
+使用Media Collection API擷取的追蹤資料會傳送且最初處理不同於在Media SDK播放器中擷取的追蹤資料，但是後端上的相同處理引擎會用於這兩個解決方案。
+
+![](assets/col_api_overview_simple.png)
+
+## API Overview {#section_y4n_mcl_kcb}
+
+**URI:** 請向 Adobe 代表索取。
+
+**HTTP 方法:** POST，搭配 JSON 要求內文。
+
+### API 呼叫 {#mc-api-calls}
+
+* **`sessions`-** 建立與伺服器的作業，並傳回後續 `events` 呼叫中使用的工作階段ID。應用程式會在追蹤工作階段開始時呼叫一次。
+
+   ```
+   {uri}/api/v1/sessions
+   ```
+
+* **`events`-** 傳送媒體追蹤資料。
+
+   ```
+   {uri}/api/v1/sessions/{session-id}/events
+   ```
+
+### 要求內文 {#mc-api-request-body}
+
+```
+{ 
+    "playerTime": { 
+        "playhead": {playhead position in seconds}, 
+        "ts": {timestamp in milliseconds} 
+    }, 
+    "eventType": {event-type}, 
+    "params": { 
+        {parameter-name}: {parameter-value}, 
+        ... 
+        {parameter-name}: {parameter-value} 
+    }, 
+    "qoeData" : { 
+        {parameter-name}: {parameter-value}, 
+        ... 
+        {parameter-name}: {parameter-value} 
+    }, 
+    "customMetadata": { 
+        {parameter-name}: {parameter-value}, 
+        ... 
+        {parameter-name}: {parameter-value} 
+    } 
+} 
+```
+
+* `playerTime` - 所有請求皆強制使用。
+* `eventType` - 所有請求皆強制使用。
+* `params` - 某些 `eventTypes` 強制使用。若要判斷哪些 eventTypes 屬於強制性質，哪些屬於選用性質，請參閱 [JSON 驗證結構](mc-api-ref/mc-api-json-validation.md)。
+
+* `qoeData` - 適用於所有請求。
+* `customMetadata` - 可供所有請求選用，但僅隨附於 `sessionStart`、 `adStart``chapterStart` 和事件類型。
+
+您可以利用開放使用的 `eventType`JSON 驗證結構[來驗證每種 ](mc-api-ref/mc-api-json-validation.md) 的參數類型，以及特定事件的參數屬於選用或必要性質。
+
+### 事件類型 {#mc-api-event-types}
+
+* `sessionStart`
+* `play`
+* `ping`
+* `pauseStart`
+* `bufferStart`
+* `adStart`
+* `adComplete`
+* `adSkip`
+* `adBreakStart`
+* `adBreakComplete`
+* `chapterStart`
+* `chapterSkip`
+* `chapterComplete`
+* `sessionEnd`
+* `sessionComplete`
+
