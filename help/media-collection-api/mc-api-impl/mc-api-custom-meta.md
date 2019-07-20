@@ -1,0 +1,18 @@
+---
+seo-title: 自訂中繼資料支援
+title: 自訂中繼資料支援
+uuid: df4109dd-9fca-4c33-a7 d5-8e6 eEC257527
+translation-type: tm+mt
+source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+
+---
+
+
+# 自訂中繼資料支援{#custom-metadata-support}
+
+You can provide custom key:value pairs on the `sessionStart`, `chapterStart`, and `adStart` events. 這些資訊必須以 JSON 索引鍵 `customMetadata` 提供，並放置在 `params` 索引鍵旁。
+
+`customMetadata` JSON金鑰應包含索引鍵物件：值配對。索引鍵只能包含英數字元、底線及點/句號。
+
+[MA系列API事件](../mc-api-ref/mc-api-events-req.md)
+
