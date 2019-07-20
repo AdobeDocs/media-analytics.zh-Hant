@@ -1,0 +1,104 @@
+---
+seo-title: 在 Roku 上追蹤廣告
+title: 在 Roku 上追蹤廣告
+uuid: b1567265-704-3efa-a313-awa91 c4 bb01
+translation-type: tm+mt
+source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+
+---
+
+
+# 在 Roku 上追蹤廣告{#track-ads-on-roku}
+
+>[!IMPORTANT]
+>
+>下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](../../sdk-implement/download-sdks.md)
+
+## 廣告追蹤常數
+
+| 常數名稱 | 說明   |
+|---|---|
+| `AdBreakStart` | 用於追蹤廣告插播開始事件的常數 |
+| `AdBreakComplete` | 用於追蹤廣告插播事件的常數 |
+| `AdStart` | 用於追蹤廣告開始事件的常數 |
+| `AdComplete` | 用於追蹤廣告完成事件的常數 |
+| `AdSkip` | 用於追蹤廣告略過事件的常數 |
+
+## 實施步驟
+
+1. 識別廣告插播界限何時開始 (包括前段)，並使用廣告插播資訊建立 `AdBreakObject`。
+
+   `AdBreakObject` 參考：
+
+   | 變數名稱 | 說明 | 必要 |
+   | --- | --- | :---: |
+   | `name` | 廣告插播名稱，例如前段、中段和後段。 | 是 |
+   | `position` | 廣告插播的編號位置從 1 開始。 | 是 |
+   | `startTime` | 廣告插播開始時的播放點值。 | 是 |
+
+   ```
+   ‘ Create an adbreak info object 
+   adBreakInfo = adb_media_init_adbreakinfo() 
+   adBreakInfo.name = <ADBREAK_NAME> 
+   adBreakInfo.startTime = <START_TIME> 
+   adBreakInfo.position = <POSITION>
+   ```
+
+1. Call `trackEvent()` with `AdBreakStart` in the `MediaHeartbeat` instance to begin tracking the ad break:
+
+   ```
+   contextData = {} 
+   ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_START, adBreakInfo, contextData)
+   ```
+
+1. 識別廣告資產何時開始，並使用廣告資訊建立 `AdObject` 例項。
+
+   ```
+   adInfo =  
+     adb_media_init_adinfo(ad.title,  
+                           ad.id,  
+                           ad.position,  
+                           ad.duration) 
+   ```
+
+1. (選擇性)透過上下文資料變數，將標準和/或廣告中繼資料附加至媒體追蹤工作階段。
+
+   * [在 Roku 上實作標準廣告中繼資料](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告資產的資料:
+
+      ```
+      contextData = {} 
+      contextData["adinfo1"] = "adinfo2" 
+      contextData["adinfo2"] = "adinfo2"
+      ```
+
+1. Call `trackEvent()` with the `AdStart` event in the `MediaHeartbeat` instance to begin tracking the ad playback:
+
+   ```
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_START, adInfo, contextData)
+   ```
+
+1. When the ad asset playback reaches the end of the ad, call `trackEvent()` with the `AdComplete` event.
+
+   ```
+   standardAdMetadata = {} 
+   contextData = {} 
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_COMPLETE, adInfo, contextData)
+   ```
+
+1. 如果由於使用者選擇略過廣告而導致廣告播放未完成，請追蹤 `AdSkip` 事件:
+
+   ```
+   contextData = {} 
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_SKIP, adInfo, contextData
+   ```
+
+1. 如果在相同 `AdBreak` 內有任何其他廣告，請再次重複步驟 3 到 7。
+1. 當廣告插播完成時，請使用 `AdBreakComplete` 事件進行追蹤:
+
+   ```
+   contextData = {} 
+   ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_COMPLETE, adBreakInfo, contextData)
+   ```
+
+如需詳細資訊，請參閱追蹤案例[具有前段廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)。
