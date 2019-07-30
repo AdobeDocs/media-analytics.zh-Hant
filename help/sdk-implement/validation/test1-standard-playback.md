@@ -3,7 +3,7 @@ seo-title: Test Standard播放
 title: Test Standard播放
 uuid: c4b3fead-1b27-484b-ab6 a-39f1 ae0 f03 f
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -83,7 +83,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    1. 視訊分析開始
    1. 心率開始
    1. 心率分析開始
-   上述前兩個呼叫包含其他中繼資料和變數。For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   上述前兩個呼叫包含其他中繼資料和變數。For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **檢視廣告插播 (可以的話)**
 
@@ -93,7 +93,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    1. 視訊廣告分析開始
    1. 心率廣告開始
    1. 心率廣告分析開始
-   前兩個呼叫包含其他中繼資料和變數。For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+   前兩個呼叫包含其他中繼資料和變數。For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
    * **廣告播放**
 
@@ -122,7 +122,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
    * 每個播放呼叫的播放點位置應該要以 10 為單位遞增。
    * `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
 
-      For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+      For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **在播放期間暫停至少 30 秒。**&#x200B;暫停視訊播放器時，暫停事件呼叫會每隔 10 秒傳送一次。暫停結束後，播放事件應該會繼續。
 
