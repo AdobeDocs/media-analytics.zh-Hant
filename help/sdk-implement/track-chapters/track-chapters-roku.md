@@ -3,7 +3,7 @@ seo-title: 在 Roku 上追蹤章節和區段
 title: 在 Roku 上追蹤章節和區段
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->下列指示提供使用2.x SDK進行實施的指引。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>下列指示提供使用2.x SDK進行實施的指引。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 實作標準廣告中繼資料
 
