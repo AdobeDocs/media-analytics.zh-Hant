@@ -3,7 +3,7 @@ seo-title: 品質參數
 title: 品質參數
 uuid: 0d9fa764-edf-4178-8650-90c9 a0852 a57
 translation-type: tm+mt
-source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
+source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 ---
 
@@ -224,7 +224,7 @@ source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
 
 |   實施   | 網路參數 | 報告 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>發生位元速率變更的串流數。只有在播放工作階段期間發生至少一個位元速率變更事件時，此度量才會設為 1。  </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>error) </li> <li> **心率：**<br/> (s：event：<br/>type= error) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>錯誤影響的資料流量 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>error) </li> <li> **資料饋送:**<br/>videoqoeerror </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>error) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>發生錯誤事件的串流數， `trackError` 在播放作業期間呼叫，並產生 `type=error` 心率呼叫。 </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. qoe.<br/>error) </li> <li> **心率：**<br/> (s：event：<br/>type= error) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>錯誤影響的資料流量 </li> <li> **上下文資料：**<br/> (a. media. qoe.<br/>error) </li> <li> **資料饋送:**<br/>videoqoeerror </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. qoe。<br/>error) </li> </ul> |
 
 
 
