@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 3Fe32425-5e2a -4886-fea-d91 d15671 bb0
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->下列指示提供使用2.x SDK進行實施的指引。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>下列指示提供使用2.x SDK進行實施的指引。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 章節和區段追蹤適用於自訂的媒體章節或區段。章節追蹤的一些常見用法是根據媒體內容(例如棒球傳入)定義自訂群體，或在廣告插播之間定義內容區段。Chapter tracking is **not** required for core media tracking implementations.
 
