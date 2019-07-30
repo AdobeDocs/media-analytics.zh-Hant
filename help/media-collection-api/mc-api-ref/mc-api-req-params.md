@@ -1,9 +1,9 @@
 ---
 seo-title: 要求參數
 title: 要求參數
-uuid: f83 e9 ef1-803d-4152-a6 c7-aca325036 b9
+uuid: f83e9ef1-803d-4152-a6 c7-aca325036 b9
 translation-type: tm+mt
-source-git-commit: 4c5fe469d5ef858e1caa65a25cc23d2a84637144
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -131,7 +131,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](../../federated-analytics.md))
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/federated-analytics.md))
 
 ### Analytics 舊版使用者 ID (aid) 和宣告使用者 ID (customerID)
 
