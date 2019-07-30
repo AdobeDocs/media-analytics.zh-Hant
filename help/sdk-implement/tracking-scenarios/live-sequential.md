@@ -3,7 +3,7 @@ seo-title: 具有循序追蹤的即時主要內容
 title: 具有循序追蹤的即時主要內容
 uuid: b03477b6-9be6-4b67-a5 a0-4cf3 cf262 ab
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,13 +14,13 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此案例中，有一個沒有廣告的即時資產，在加入即時資料流後播放了 40 秒。
 
-這是與[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例相同的案例，只是一部分內容被刪除，並且搜尋是從主要內容中的某個點到另一個點間完成。
+這是與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例相同的案例，只是一部分內容被刪除，並且搜尋是從主要內容中的某個點到另一個點間完成。
 
 | 觸發 | 心率方法 | 網路呼叫   | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 內容播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
-| 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 工作階段 1 結束 (第 1 集結束) | `trackComplete` `trackSessionEnd` | 心率內容完成 | 完成表示已到達第 1 集的工作階段 1，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
 | 第 2 集開始 (工作階段 2 開始) | `trackSessionStart` | Analytics內容開始心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
 | 媒體的第一個畫格 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，只要播放繼續，便會每 10 秒傳送心率。 |
