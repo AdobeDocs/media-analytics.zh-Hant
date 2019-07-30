@@ -3,7 +3,7 @@ seo-title: 用於多個工作階段的 VOD 一個追蹤器
 title: 用於多個工作階段的 VOD 一個追蹤器
 uuid: 355c83f4-52bd-4bdd-92dc-ab506 e412 d0 a
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此案例中，`MediaHeartbeat` 例項用來循序建立兩個不同的工作階段。
 
-此案例等同於[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。
+此案例等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。
 
 ## 參數 {#section_D52B325B99DA42108EF560873907E02C}
 
