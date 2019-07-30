@@ -3,7 +3,7 @@ seo-title: 測試視訊中斷
 title: 測試視訊中斷
 uuid: eeccd534-63fd-4dd3-b096-0431bc9 a11 ff
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -23,7 +23,7 @@ Download the certification request here: [Certification Request Form.](cert_req_
    1. 媒體分析開始
    1. 心率開始
    1. 心率分析開始
-   上述前兩個呼叫包含其他中繼資料和變數。For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   上述前兩個呼叫包含其他中繼資料和變數。For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **播放主要內容視訊至少 5 分鐘並避免中斷**
 
@@ -31,9 +31,9 @@ Download the certification request here: [Certification Request Form.](cert_req_
 
    在正常主要內容播放期間，心率呼叫會每隔十秒傳送到心率伺服器一次。
 
-   For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
-   Also see your platform's [Track Ads](../../sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+   Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
 
 1. **將應用程式或瀏覽器移動到背景**
 
@@ -45,7 +45,7 @@ Download the certification request here: [Certification Request Form.](cert_req_
 
 1. **播放主要內容視訊至少 5 分鐘並避免中斷**
 
-   For call parameters and metadata, see [Test Call Details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **關閉視訊播放器**
 
