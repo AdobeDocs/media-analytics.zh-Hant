@@ -3,7 +3,7 @@ seo-title: 具有已略過章節的 VOD 播放
 title: 具有已略過章節的 VOD 播放
 uuid: 19fb020c-eb7 a-4942-9212-94f4 d47195 b9
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此案例中，使用者會在主要內容中略過某個章節。
 
-這是與[具有一個章節的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-one-chapter.md)相同的案例，除了此案例中的使用者要搜尋超出章節，因此略過它以著陸到主要內容。
+這是與[具有一個章節的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)相同的案例，除了此案例中的使用者要搜尋超出章節，因此略過它以著陸到主要內容。
 
 | 觸發 | 心率方法 | 網路呼叫   | 附註 |
 |---|---|---|---|
@@ -31,7 +31,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 ## 參數 {#section_1874F6B7880B43C5856BD11FF85B382E}
 
-The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](../../sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
+The parameters used during chapter playback are identical to the parameters in the [VOD playback with one chapter](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) scenario, except that there is no chapter complete network call.
 
 ## 程式碼範例 {#section_fyl_ncj_x2b}
 
