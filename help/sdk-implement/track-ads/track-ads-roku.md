@@ -3,7 +3,7 @@ seo-title: 在 Roku 上追蹤廣告
 title: 在 Roku 上追蹤廣告
 uuid: b1567265-704-3efa-a313-awa91 c4 bb01
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](../../sdk-implement/download-sdks.md)
+>下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
 
 ## 廣告追蹤常數
 
@@ -63,7 +63,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 1. (選擇性)透過上下文資料變數，將標準和/或廣告中繼資料附加至媒體追蹤工作階段。
 
-   * [在 Roku 上實作標準廣告中繼資料](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * [在 Roku 上實作標準廣告中繼資料](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告資產的資料:
 
       ```
@@ -101,4 +101,4 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_COMPLETE, adBreakInfo, contextData)
    ```
 
-如需詳細資訊，請參閱追蹤案例[具有前段廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)。
+如需詳細資訊，請參閱追蹤案例[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)。
