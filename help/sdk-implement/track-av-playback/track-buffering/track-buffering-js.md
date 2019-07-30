@@ -3,7 +3,7 @@ seo-title: 在 JavaScript 上追蹤緩衝
 title: 在 JavaScript 上追蹤緩衝
 uuid: c380cf2c-7729-4d4a-a4 a-a4 da-581bd94
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../../sdk-implement/download-sdks.md)
+>下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 緩衝追蹤常數
 
@@ -39,4 +39,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    };
    ```
 
-如需詳細資訊，請參閱追蹤案例[具有緩衝的 VOD 播放](../../../sdk-implement/tracking-scenarios/vod-buffering.md)。
+如需詳細資訊，請參閱追蹤案例[具有緩衝的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-buffering.md)。
