@@ -3,7 +3,7 @@ seo-title: 章節參數
 title: 章節參數
 uuid: 2a6b9247-a694-46e9-98e1-424c08 c27 ec2
 translation-type: tm+mt
-source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
+source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
 
 ---
 
@@ -73,13 +73,13 @@ source-git-commit: f7ffb9a88f1cf3ffefba0ae5508a857fa3de8432
 
 |   實施   | 網路參數 | 報告 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定  </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>是 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/>章節開始 </li> <li> **最小 SDK 版本:** 1.3 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>章節的開始數。重要: 若此事件已設定，則唯一可能的值為「TRUE」。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. page。<br/>檢視) </li> <li> **心率：**<br/> (s：event：<br/>type= paper_ start) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱：**<br/> 章節開始g </li> <li> **上下文資料：**<br/> (a. media. page。<br/>檢視) </li> <li> **資料饋送:**<br/>videochapterstart </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. page。<br/>檢視) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定  </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>是 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/>章節開始 </li> <li> **最小 SDK 版本:** 1.3 </li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>章節的開始數。**重要:** 若此事件已設定，則唯一可能的值為「TRUE」。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. page。<br/>檢視) </li> <li> **心率：**<br/> (s：event：<br/>type= paper_ start) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱：**<br/> 章節開始g </li> <li> **上下文資料：**<br/> (a. media. page。<br/>檢視) </li> <li> **資料饋送:**<br/>videochapterstart </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. page。<br/>檢視) </li> </ul> |
 
 ### 章節完成
 
 |   實施   | 網路參數 | 報告 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定  </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>是 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 章節關閉 </li> <li> **最小 SDK 版本:** 1.3</li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>章節的數目已完成。重要: 若此事件已設定，則唯一可能的值為「TRUE」。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. page。<br/>complete) </li> <li> **心率：**<br/> (s：event：<br/>type= paper_ complete) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱：**<br/> 章節完成g </li> <li> **上下文資料：**<br/> (a. media. page。<br/>complete) </li> <li> **資料饋送:**<br/>videochaptercomplete </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. page。<br/>complete) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定  </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **必要:**<br/>是 </li> <li> **類型:**<br/>字串 </li> <li> **隨附於：**<br/> 章節關閉 </li> <li> **最小 SDK 版本:** 1.3</li> <li> **範例值：**<br/> TRUE </li><li> **說明：**<br/>章節的數目已完成。**重要:** 若此事件已設定，則唯一可能的值為「TRUE」。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics：**<br/> (a. media. page。<br/>complete) </li> <li> **心率：**<br/> (s：event：<br/>type= paper_ complete) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱：**<br/> 章節完成g </li> <li> **上下文資料：**<br/> (a. media. page。<br/>complete) </li> <li> **資料饋送:**<br/>videochaptercomplete </li> <li> **Audience Manager：**<br/> (c_ contextData.<br/>a. media. page。<br/>complete) </li> </ul> |
 
 ### 章節逗留時間
 
