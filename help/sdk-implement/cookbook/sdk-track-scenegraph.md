@@ -3,7 +3,7 @@ seo-title: 在 SceneGraph (Roku) 中進行追蹤
 title: 在 SceneGraph (Roku) 中進行追蹤
 uuid: fa85e546-c79 b-4df4-8c03-d6593 fa296 d
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -186,8 +186,8 @@ Input: None\
 | 版本設定 | `version` | 擷取 AdobeMobileLibrary 版本資訊的常數 |
 | 隱私權/選擇退出 | `PRIVACY_STATUS_OPT_IN` | 隱私權狀態選擇加入的常數 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 隱私權狀態選擇退出的常數 |
-| MediaHeartbeat 常數 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](../../sdk-implement/track-av-playback/track-core/track-core-roku.md) | 搭配MediaHeartbeat API使用這些常數 |
-| 標準中繼資料 | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 使用這些常數以附加 MediaHeartbeat API 中的標準視訊/廣告中繼資料 |
+| MediaHeartbeat 常數 | Refer to the constants on this page: <br/><br/>[Media Heartbeat Methods.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | 搭配MediaHeartbeat API使用這些常數 |
+| 標準中繼資料 | Refer to the constants on this page: <br/><br/>[Standard Metadata Parameters.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | 使用這些常數以附加 MediaHeartbeat API 中的標準視訊/廣告中繼資料 |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. 如需關於這些方法的更多資訊，請參閱下表:
 
