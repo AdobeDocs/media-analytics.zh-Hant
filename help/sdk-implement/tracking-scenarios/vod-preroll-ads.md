@@ -5,18 +5,18 @@ description: 在此案例中，前段廣告已插入到主要內容之前。
 seo-description: 在Adobe Media Analytics中，廣告前廣告已插入主要內容之前。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: 66173d82714970c60f4e3088aa5ec0946efd7887
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
 
 # 具有前段廣告的 VOD 播放{#vod-playback-with-pre-roll-ads}
 
-在此案例中，前段廣告已插入到主要內容之前。除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。網路呼叫會同時發生，但裝載不同。
+在此案例中，前段廣告已插入到主要內容之前。除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。網路呼叫會同時發生，但裝載不同。
 
 | 觸發 | 心率方法 | 網路呼叫   | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 |  |
 | 已播放廣告 #1 的時間格。 | `trackPlay` | 心率廣告播放 | 廣告內容在主要內容之前播放，而心率在廣告開始時啟動。 |
 | 廣告播放。 |  | 廣告心率 |  |
@@ -24,8 +24,8 @@ source-git-commit: 66173d82714970c60f4e3088aa5ec0946efd7887
 | 已播放廣告 #2 的第一個時間格。 | `trackEvent:AdStart` | Analytics 廣告開始、心率廣告開始 |  |
 | 廣告播放。 |  | 廣告心率 |  |
 | 廣告 #2 完成播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率廣告完成 | 已到達廣告和 Pod 的結尾。 |
-| 內容播放。 |  | 內容心率 | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| 內容已完成。 | `trackComplete` | 心率內容完成 | This network call is identical to the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 內容播放。 |  | 內容心率 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 內容已完成。 | `trackComplete` | 心率內容完成 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
 | 工作階段已結束 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 參數 {#section_33CDFB6CB230437480B67A3D149EC44E}
