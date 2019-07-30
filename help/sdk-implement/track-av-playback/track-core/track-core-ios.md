@@ -3,7 +3,7 @@ seo-title: 在 iOS 上追蹤核心播放
 title: 在 iOS 上追蹤核心播放
 uuid: bdc0e05c-4Fe5-430e-aee2-f331 bc59 ac6 b
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # 在 iOS 上追蹤核心播放{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](../../../sdk-implement/download-sdks.md)
+>本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始追蹤設定**
 
@@ -62,11 +62,11 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **標準視訊中繼資料**
 
-      * [在 iOS 上實作標準中繼資料](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      * [在 iOS 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **視訊中繼資料索引鍵**
-         [iOS 中繼資料索引鍵](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         [iOS 中繼資料索引鍵](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-      * 請在這裡參閱完整的視訊中繼資料清單: [音訊與視訊參數](../../../metrics-and-metadata/audio-video-parameters.md)
+      * 請在這裡參閱完整的視訊中繼資料清單: [音訊與視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
       >將標準視訊中繼資料物件附加至媒體物件是選擇性的。
@@ -172,6 +172,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 如需有關追蹤核心播放的詳細資訊，請參閱下列內容:
 
-* 追蹤案例: [沒有廣告的 VOD 播放](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤案例: [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 iOS SDK 包含範例播放器。
 
