@@ -3,7 +3,7 @@ seo-title: 追蹤概述
 title: 追蹤概述
 uuid: 7b8e2f76-bc4 e-4721-8933-3e4453 b01788
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](../../sdk-implement/download-sdks.md)
+>本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
 
 ## 播放器事件
 
@@ -59,7 +59,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!TIP]
 >
->播放磁頭位置會設為設定和設定程式碼的一部分。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>播放磁頭位置會設為設定和設定程式碼的一部分。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 實作 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -105,7 +105,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
       在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。
 
-      請在此處參閱完整的中繼資料清單: [音效和視訊參數.](../../metrics-and-metadata/audio-video-parameters.md)
+      請在此處參閱完整的中繼資料清單: [音效和視訊參數.](/help/metrics-and-metadata/audio-video-parameters.md)
 
    * **自訂中繼資料 -** 為自訂變數建立變數物件，並為此內容填入資料。
 
