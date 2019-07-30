@@ -3,7 +3,7 @@ seo-title: 自訂中繼資料支援
 title: 自訂中繼資料支援
 uuid: df4109dd-9fca-4c33-a7 d5-8e6 eEC257527
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,5 +14,5 @@ You can provide custom key:value pairs on the `sessionStart`, `chapterStart`, an
 
 `customMetadata` JSON金鑰應包含索引鍵物件：值配對。索引鍵只能包含英數字元、底線及點/句號。
 
-[MA系列API事件](../mc-api-ref/mc-api-events-req.md)
+[MA系列API事件](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
 
