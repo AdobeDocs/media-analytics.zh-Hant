@@ -3,7 +3,7 @@ seo-title: 追蹤下載內容
 title: 追蹤下載內容
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 translation-type: tm+mt
-source-git-commit: 501bbfe8b44a2a8e9b2ac2caab49b2317f9ea0f3
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -30,7 +30,7 @@ Downloaded Content API 提供可在使用者離線時追蹤媒體消耗的功能
 
 ### 事件結構
 
-下載的內容API是以Media Collection API為基礎，因此您的播放器批次和傳送的事件資料必須與媒體收集API中使用的事件結構相同。For information on these schemas, see: [Overview;](../media-collection-api/mc-api-overview.md) and [Validating event requests.](../media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+下載的內容API是以Media Collection API為基礎，因此您的播放器批次和傳送的事件資料必須與媒體收集API中使用的事件結構相同。For information on these schemas, see: [Overview;](/help/media-collection-api/mc-api-overview.md) and [Validating event requests.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 事件順序
 
