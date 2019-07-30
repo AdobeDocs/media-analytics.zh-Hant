@@ -3,7 +3,7 @@ seo-title: 設定 Android
 title: 設定 Android
 uuid: 3ffe3276-a104-4182-9220-038729e9 f3 d5
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -21,7 +21,7 @@ for Android**，如需有關Adobe Mobile SDK文件的詳細資訊，請參閱 [�
 
 ## SDK 實作
 
-1. 將[下載的](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK 新增至專案。
+1. 將[下載的](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK 新增至專案。
 
    1. Expand the Android zip file (e.g., `MediaSDK-android-v2.*.zip`).
    1. Verify that the `MediaSDK.jar` file exists in the `libs/` directory.
@@ -129,4 +129,4 @@ for Android**，如需有關Adobe Mobile SDK文件的詳細資訊，請參閱 [�
 
 在 2.x 版中，所有公用方法皆已整合至 `com.adobe.primetime.va.simple.MediaHeartbeat` 類別，讓開發人員更容易操作。此外，所有的設定現已整合至 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 類別。
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
