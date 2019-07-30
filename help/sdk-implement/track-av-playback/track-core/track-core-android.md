@@ -3,7 +3,7 @@ seo-title: 在 Android 上追蹤核心播放
 title: 在 Android 上追蹤核心播放
 uuid: ab5fab95-76ed-4ae6-aedb-2e66 eece7607
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # 在 Android 上追蹤核心播放{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載適用於 Android 的 1.x 開發人員指南: [下載 SDK](../../../sdk-implement/download-sdks.md)
+>本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載適用於 Android 的 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始追蹤設定**
 
@@ -56,14 +56,14 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **標準中繼資料**
 
-      [在 Android 上實作標準中繼資料](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+      [在 Android 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
       >[!NOTE]
       >
       >將標準中繼資料物件附加至媒體物件是選擇性的。
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * 請在此處參閱完整的可用視訊中繼資料組: [音效和視訊參數](../../../metrics-and-metadata/audio-video-parameters.md)
+      * 請在此處參閱完整的可用視訊中繼資料組: [音效和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
    * **自訂中繼資料**
 
       建立自訂變數的字典，並填入此媒體的資料。例如:
@@ -170,6 +170,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 如需有關追蹤核心播放的詳細資訊，請參閱下列內容:
 
-* 追蹤案例: [沒有廣告的 VOD 播放](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤案例: [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 Android SDK 包含範例播放器。
 
