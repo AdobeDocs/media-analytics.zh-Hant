@@ -3,7 +3,7 @@ seo-title: 時間軸 2 - 使用者放棄工作階段
 title: 時間軸 2 - 使用者放棄工作階段
 uuid: 74b89e8f-ef56-4e0 c-b9 a8-40739e15 b4 cf
 translation-type: tm+mt
-source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
 
 **實施詳細資料**
 
-這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;視訊。It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器狀態尚未進入「正在播放」，而是「正在開始」。[要求的作業參數](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) 必須包含在請求主體的 `params` 地圖中。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
+這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;視訊。It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器狀態尚未進入「正在播放」，而是「正在開始」。[要求的作業參數](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) 必須包含在請求主體的 `params` 地圖中。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
 
 **範例要求內文**
 
