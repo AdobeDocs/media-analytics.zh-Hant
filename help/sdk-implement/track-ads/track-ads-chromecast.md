@@ -3,7 +3,7 @@ seo-title: 在 Chromecast 上追蹤廣告
 title: 在 Chromecast 上追蹤廣告
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
-source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
 
 >[!IMPORTANT]
 >
->下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](../../sdk-implement/download-sdks.md)
+>下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
 
 ## 廣告追蹤常數
 
@@ -74,4 +74,4 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete, getAdBreakInfo());
    ```
 
-如需詳細資訊，請參閱追蹤案例[具有前段廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md)。
+如需詳細資訊，請參閱追蹤案例[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)。
