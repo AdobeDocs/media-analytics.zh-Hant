@@ -3,7 +3,7 @@ seo-title: 事件類型和說明
 title: 事件類型和說明
 uuid: bc4f75a-ea22-47eb-a50 d-5f41274 c6 d41
 translation-type: tm+mt
-source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -85,5 +85,5 @@ If you don't send a `sessionEnd`, an abandoned session will time-out normally (a
 
 >[!IMPORTANT]
 >
->You should refer to the [JSON validation schemas](../../media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
+>You should refer to the [JSON validation schemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
 
