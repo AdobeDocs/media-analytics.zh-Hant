@@ -3,7 +3,7 @@ seo-title: 在播放期間處理應用程式中斷
 title: 在播放期間處理應用程式中斷
 uuid: ccb4507-bda6-462d-bb67-e22978 a4 db3 d
 translation-type: tm+mt
-source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -32,5 +32,5 @@ source-git-commit: 8c9592ee7ad97de2cf4aefb226ed1390bc5b53a8
 * _要如何重新啟動同一個工作階段?_
 
    如需重新啟動追蹤工作階段的詳細指示，請參閱頁面: [
-繼續非作用中工作階段。](../../sdk-implement/cookbook/resuming-inactive.md)SDK 會傳送恢復 Ping 來通知後端，告知它使用者正在手動恢復工作階段。
+繼續非作用中工作階段。](/help/sdk-implement/cookbook/resuming-inactive.md)SDK 會傳送恢復 Ping 來通知後端，告知它使用者正在手動恢復工作階段。
 
