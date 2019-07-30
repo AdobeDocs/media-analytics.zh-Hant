@@ -3,7 +3,7 @@ seo-title: 程式碼比較1.x至2.x
 title: 程式碼比較1.x至2.x
 uuid: 9f0a1660-2100-446d-ab75-afdf966478 b3
 translation-type: tm+mt
-source-git-commit: ee073531814b446ba0ae4a86fc1011f063886561
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -840,4 +840,4 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-如需以 2.x 版追蹤視訊的詳細資訊，請參閱[追蹤核心視訊播放](../../sdk-implement/track-av-playback/track-core-overview.md)。
+如需以 2.x 版追蹤視訊的詳細資訊，請參閱[追蹤核心視訊播放](/help/sdk-implement/track-av-playback/track-core-overview.md)。
