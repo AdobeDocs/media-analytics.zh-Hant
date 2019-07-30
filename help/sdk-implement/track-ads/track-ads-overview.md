@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 1607798b-c6 ef-4d60-8e40-e958 c345 c09 c
 translation-type: tm+mt
-source-git-commit: 56e8716ea37049b95a59a82144bbad0e882c16b4
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: 56e8716ea37049b95a59a82144bbad0e882c16b4
 
 >[!IMPORTANT]
 >
->下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](../../sdk-implement/download-sdks.md)
+>下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
 
-廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。使用媒體播放器的API來識別關鍵播放器事件，並填入必要和選擇性的廣告變數。See the comprehensive list of metadata here: [Ad parameters.](../../metrics-and-metadata/ad-parameters.md)
+廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。使用媒體播放器的API來識別關鍵播放器事件，並填入必要和選擇性的廣告變數。See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
 
 ## Player events {#player-events}
 
