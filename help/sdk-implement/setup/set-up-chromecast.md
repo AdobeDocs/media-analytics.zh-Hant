@@ -3,7 +3,7 @@ seo-title: 設定 Chromecast
 title: 設定 Chromecast
 uuid: d664e394-02a2-4985-bad-be1 bcc44 fb2 b
 translation-type: tm+mt
-source-git-commit: bb3a303edba724c8f444d612b3be9d7250eea363
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -31,7 +31,7 @@ Experience Cloud 解決方案適用的 Chromecast SDK 2.x 可讓您測量在 Jav
 
 ## SDK 實作
 
-1. 將[下載的](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast 程式庫新增至專案。
+1. 將[下載的](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Chromecast 程式庫新增至專案。
 
    1. `AdobeMobileLibrary-Chromecast-[version]` zip 檔案包含下列軟體元件:
 
