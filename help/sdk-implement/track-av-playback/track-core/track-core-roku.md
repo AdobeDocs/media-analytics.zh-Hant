@@ -3,7 +3,7 @@ seo-title: 在 Roku 上追蹤核心播放
 title: 在 Roku 上追蹤核心播放
 uuid: a8aa7b3c-2d39-44d-7ebc-b101 d130101 f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # 在 Roku 上追蹤核心播放{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](../../../sdk-implement/download-sdks.md)
+>本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始追蹤設定**
 
@@ -97,7 +97,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **標準中繼資料**
 
-      [在 JavaScript 上實作標準中繼資料](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [在 JavaScript 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -105,7 +105,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+         See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **自訂中繼資料**
 
       建立自訂變數的變數物件，並填入此媒體的資料。例如:
@@ -182,7 +182,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **標準視訊中繼資料**
 
-      [在 Roku 上實作標準中繼資料](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >將標準視訊中繼資料物件附加至媒體物件是選擇性的。
@@ -267,6 +267,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >[!TIP]
    >這可能與步驟中使用的事件來源相同。在視訊播放繼續時，使用後續的 `trackPause()` API 呼叫確保 `trackPlay()` API 呼叫成對。
 
-* 追蹤案例: [沒有廣告的 VOD 播放](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤案例: [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 Roku SDK 包含範例播放器。
 
