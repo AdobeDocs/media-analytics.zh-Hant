@@ -3,7 +3,7 @@ seo-title: 事件要求
 title: 事件要求
 uuid: b237f0a0-dc29-418b-89ee-04c596 a27 f39
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -17,7 +17,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## URI參數
 
-`sid`：從 [「工作階段」請求傳回的作業ID。](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid`：從 [「工作階段」請求傳回的作業ID。](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## 要求內文
 
@@ -44,7 +44,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 * `customMetadata` (可選；僅傳送與 `adStart``chapterStart` 事件類型)
 * `qoeData` (可選)
 
-For a list of valid event types for this release, see [Event types and descriptions.](../../media-collection-api/mc-api-ref/mc-api-event-types.md)
+For a list of valid event types for this release, see [Event types and descriptions.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
@@ -70,8 +70,8 @@ Access-Control-Expose-Headers Location
 | HTTP 回應代碼 | 說明 | 用戶端動作項目 |
 |---|---|---|
 | **204** | **沒有內容.**<br/><br/> 心率呼叫成功。 | 不適用 |
-| **400** | **Bad Request。**<br/><br/> 要求格式錯誤。 | 如需要求類型，請查看 [JSON 驗證結構](../../media-collection-api/mc-api-ref/mc-api-json-validation.md)。 |
-| **404** | **找不到.**<br/><br/>後端服務中找不到媒體作業的作業ID。 | 用戶端應用程式應使用[工作階段要求](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API，建立其他媒體工作階段並回報相關追蹤。 |
-| **410** | **Gone.**<br/><br/>媒體工作階段已在後端服務中找到，但用戶端無法再在其上報告活動。 | 用戶端應用程式應使用[工作階段要求](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) API，建立其他媒體工作階段並回報相關追蹤。 |
+| **400** | **Bad Request。**<br/><br/> 要求格式錯誤。 | 如需要求類型，請查看 [JSON 驗證結構](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)。 |
+| **404** | **找不到.**<br/><br/>後端服務中找不到媒體作業的作業ID。 | 用戶端應用程式應使用[工作階段要求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API，建立其他媒體工作階段並回報相關追蹤。 |
+| **410** | **Gone.**<br/><br/>媒體工作階段已在後端服務中找到，但用戶端無法再在其上報告活動。 | 用戶端應用程式應使用[工作階段要求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API，建立其他媒體工作階段並回報相關追蹤。 |
 | **500** | **伺服器錯誤** | 不適用 |
 
