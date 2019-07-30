@@ -3,7 +3,7 @@ seo-title: 設定概述
 title: 設定概述
 uuid: 06feeddb-b0 c8-4f7 d-90c8-e374 cdd1695
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->下列指示適用於2.x Media SDK。若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](../download-sdks.md) 如需Primetime整合商，請參閱 _下面的Primetime媒體SDK文件_ 。
+>下列指示適用於2.x Media SDK。若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md) 如需Primetime整合商，請參閱 _下面的Primetime媒體SDK文件_ 。
 
 
 ## Minimum Platform Version Support {#minimum-platform-version}
