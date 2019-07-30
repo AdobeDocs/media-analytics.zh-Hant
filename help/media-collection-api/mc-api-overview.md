@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
 
    此功能可讓您在使用者離線時追蹤媒體，透過本機儲存事件資料，直到使用者裝置在線上傳回為止。(如需詳細資訊，請參閱[追蹤下載內容](track-downloaded-content.md)。)
 
-媒體收集 API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示Media SDK文件的某些層面也與Media Collection API相關。For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+媒體收集 API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示Media SDK文件的某些層面也與Media Collection API相關。For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## 媒體追蹤資料流程 {#section_pwq_n34_qbb}
 
