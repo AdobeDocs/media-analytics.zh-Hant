@@ -3,7 +3,7 @@ seo-title: 啟用媒體報表
 title: 啟用媒體報表
 uuid: d306068d-a308-4b6 e-8a72-742dda0 de428
 translation-type: tm+mt
-source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -65,4 +65,4 @@ source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
 
 >[!IMPORTANT]
 >
->Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". 媒體分類是在報告套裝啓用媒體追蹤時定義。Adobe不時新增新屬性，當發生這種情況時，客戶必須重新啓用報表套裝，才能存取新媒體屬性。在更新過程中，Adobe會檢查變數名稱，判斷分類是否啓用。如果其中有任何項目遺失，Adobe會再次新增遺漏的項目。
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". 媒體分類是在報告套裝啓用媒體追蹤時定義。Adobe不時新增新屬性，當發生這種情況時，客戶必須重新啓用報表套裝，才能存取新媒體屬性。在更新過程中，Adobe會檢查變數名稱，判斷分類是否啓用。如果其中有任何項目遺失，Adobe會再次新增遺漏的項目。
