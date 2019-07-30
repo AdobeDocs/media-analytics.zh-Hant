@@ -3,7 +3,7 @@ seo-title: 實施路徑
 title: 實施路徑
 uuid: 8400c938-e77 e-4c88-b23 b-5f5977 a5316 c
 translation-type: tm+mt
-source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
 
 * **用戶端-** 這些是僅限Media Analytics的整合。您可以選擇視訊心率 SDK 與/或媒體收集 API 整合。此路徑可用於任何視訊播放器，包括客戶及/或 OVP 播放器，例如 Brightcove、Ooyala、thePlatform 等。
 
-   If Media Analytics is your intended path, see the [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and the [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+   If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
    >[!IMPORTANT]
    >
@@ -34,6 +34,6 @@ source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
    * TVSDK 的流暢廣告插入模型允許直接測量廣告播放的分析，進而提高準確性。
    * 強大的事件和中繼資料集合，可確保跨 QoS 緩衝或行動連線中斷問題以一般使用者互動 (例如在行動裝置上搜尋、暫停和後台處理) 的準確性。
    * Nielsen DTVR (線性) 與 ID3 中繼資料以及 DCR 與 CMS 中繼資料的整合支援。
-   TVSDK已與Media Publishics(Heartbeats) SDK整合，讓每個支援的平台更輕鬆快速地實施。Primetime 也支援與 Nielsen 合作。若要利用 Primetime，請遵循在以下內容中找到的相同指引和必要條件: [用戶端](../../intro-to-ava/implementation-paths/client-side-path.md)以及適用於您平台的下列文件:[Primetime使用指南。](https://helpx.adobe.com/primetime/user-guide.html)
+   TVSDK已與Media Publishics(Heartbeats) SDK整合，讓每個支援的平台更輕鬆快速地實施。Primetime 也支援與 Nielsen 合作。若要利用 Primetime，請遵循在以下內容中找到的相同指引和必要條件: [用戶端](/help/intro-to-ava/implementation-paths/client-side-path.md)以及適用於您平台的下列文件:[Primetime使用指南。](https://helpx.adobe.com/primetime/user-guide.html)
 
    您也應該聯絡銷售代表/客戶經理，討論購買 TVSDK 的所需作業。
