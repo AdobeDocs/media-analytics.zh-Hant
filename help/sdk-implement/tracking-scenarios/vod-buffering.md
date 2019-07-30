@@ -3,7 +3,7 @@ seo-title: 具有緩衝的 VOD 播放
 title: 具有緩衝的 VOD 播放
 uuid: 958f7692-7193-40fb-a8 e7-2ff4 fa805330
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此案例中，播放 VOD 內容時發生一些緩衝。
 
-除非另有指定，否則此案例中的網路呼叫與[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。
+除非另有指定，否則此案例中的網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。
 
 | 觸發   | 心率方法   | 網路呼叫   | 附註   |
 |---|---|---|---|
