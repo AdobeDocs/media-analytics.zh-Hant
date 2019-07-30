@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 4d73c47f-d0 a4-4228-9040-d6432311 c9 eb
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒體播放器API來識別與QoS和錯誤追蹤相關的變數。以下為追蹤體驗品質的重要元素:
 
