@@ -3,7 +3,7 @@ seo-title: 設定 iOS
 title: 設定 iOS
 uuid: a c6be79-a6 dc-47b6-93b3-ac7 b42 f1 f3 b
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -27,7 +27,7 @@ for iOS**&#x200B;如需有關Adobe Mobile SDK文件的詳細資訊，請參閱 [
 
 ## SDK 實作
 
-1. 將[下載的](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK 新增至專案。
+1. 將[下載的](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK 新增至專案。
 
    1. 驗證 `libs` 目錄中存在下列軟體元件:
 
@@ -137,7 +137,7 @@ for iOS**&#x200B;如需有關Adobe Mobile SDK文件的詳細資訊，請參閱 [
 
 在 2.x 版中，所有公用方法皆已整合至 `ADBMediaHeartbeat` 類別，讓開發人員更容易操作。所有設定皆已整合至 `ADBMediaHeartbeatConfig` 類別。
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
 
 ## 設定 tvOS 的原生應用程式
 
