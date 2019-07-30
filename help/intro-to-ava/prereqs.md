@@ -3,7 +3,7 @@ seo-title: 必要條件
 title: 必要條件
 uuid: 4c0b37f3-8615-4cc0-b9 c9-eeb02906764
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -26,7 +26,7 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
    您必須實作Adobe Experience Platform Identity Service。
 
-   Identity Service可為Experience Cloud核心服務、解決方案以及People核心服務中的客戶屬性和受眾啓用通用識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實施 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
+    Identity 服務可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和觀眾啟用共同識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實施 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
 
    ![](assets/mc_id_service_graphic.png)
 
@@ -48,5 +48,5 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
 1. **啟用 Adobe Analytics 報表。**
 
-   To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](../media-reports/media-reports-enable.md)
+   To enable reports in Analytics and see the content and ad data you are collecting, see [Media reports enablement.](/help/media-reports/media-reports-enable.md)
 
