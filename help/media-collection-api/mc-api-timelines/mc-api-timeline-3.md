@@ -3,7 +3,7 @@ seo-title: 時間軸 3 - 章節
 title: 時間軸 3 - 章節
 uuid: 41b52072-e1 cd-4dda-9253-31f3408924 f6
 translation-type: tm+mt
-source-git-commit: 6ada4d04824a3e501ecc58a9ca719cc9445aee12
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 6ada4d04824a3e501ecc58a9ca719cc9445aee12
 
 **實施詳細資訊**
 
-This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器狀態尚未進入「正在播放」，而是「正在開始」。[要求的作業參數](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) 必須包含在請求主體的 `params` 地圖中。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
+This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器狀態尚未進入「正在播放」，而是「正在開始」。[要求的作業參數](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) 必須包含在請求主體的 `params` 地圖中。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
 
 **範例要求內文**
 
