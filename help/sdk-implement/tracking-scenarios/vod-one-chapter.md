@@ -3,7 +3,7 @@ seo-title: 具有一個章節的 VOD 播放
 title: 具有一個章節的 VOD 播放
 uuid: 1566a6f5-cf22-42e7-1e1 a-6976c6 c4 e649
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 在此案例中，會將一部分的 VOD 內容標示為章節。
 
-除非另有指定，否則此案例中的網路呼叫與[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。網路呼叫會同時發生，但裝載不同。
+除非另有指定，否則此案例中的網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。網路呼叫會同時發生，但裝載不同。
 
 | 觸發   | 心率方法   | 網路呼叫   | 附註   |
 |---|---|---|---|
@@ -23,8 +23,8 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | 章節播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
 | 章節播放。 |  | 章節心率 |  |
 | 章節已完成。 | `trackEvent:trackChapterComplete` | 心率章節完成 | 已到達章節的結尾。 |
-| 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。即使使用者不觀看媒體，也必須呼叫此API。 |
 
 ## 參數 {#section_869319D99A474FEA8EA840415EA97FBD}
