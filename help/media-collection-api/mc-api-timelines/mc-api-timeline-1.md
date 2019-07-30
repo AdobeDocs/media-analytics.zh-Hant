@@ -3,7 +3,7 @@ seo-title: 時間軸 1 - 檢視內容到結束為止
 title: 時間軸 1 - 檢視內容到結束為止
 uuid: 0ff591d-fa99-4123-9e09-c4 e71-c1060 b
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
 
 **實施詳細資料**
 
-這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;視訊。<br/><br/>它會傳回工作階段ID( `{sid}`)給用戶端，用來識別工作階段內所有後續追蹤呼叫。播放器狀態尚未進入「正在播放」，而是「正在開始」。<br/><br/>[要求的作業參數 ](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) 必須包含在請求主體的 `params` 地圖中。<br/><br/>在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
+這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;視訊。<br/><br/>它會傳回工作階段ID( `{sid}`)給用戶端，用來識別工作階段內所有後續追蹤呼叫。播放器狀態尚未進入「正在播放」，而是「正在開始」。<br/><br/>[要求的作業參數 ](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) 必須包含在請求主體的 `params` 地圖中。<br/><br/>在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
 
 **範例要求內文**
 
