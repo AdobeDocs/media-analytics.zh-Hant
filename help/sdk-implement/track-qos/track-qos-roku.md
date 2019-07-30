@@ -3,7 +3,7 @@ seo-title: 在 Roku 上追蹤體驗品質
 title: 在 Roku 上追蹤體驗品質
 uuid: a8b242ab-da3 c-4297-1eef-f0 b9684 ef56 a
 translation-type: tm+mt
-source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
 
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](../../sdk-implement/download-sdks.md)
+>下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 ## 實施者QoS
 
@@ -76,7 +76,7 @@ source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](../../sdk-implement/track-errors/track-errors-overview.md).)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
