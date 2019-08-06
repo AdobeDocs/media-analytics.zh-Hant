@@ -3,7 +3,7 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2 f6-4799-9a62-4c6 a737 a7 dab
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: a9e1c8ba7c8a95120e4c66460ff6d742c0855652
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
 1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。
 
-   **請在此處下載最新版本的表格：**[https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf。](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/federated_analytics_form.pdf)
+   **請在此處下載最新版本的表格：**[聯邦法規合約](./federated_analytics_form.pdf)
 
    >[!NOTE]
    >
