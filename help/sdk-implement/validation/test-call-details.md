@@ -3,7 +3,7 @@ seo-title: 測試呼叫詳細資料
 title: 測試呼叫詳細資料
 uuid: d3a0e62f-2fc3-413d-ac56-adbhone9 b3 e983
 translation-type: tm+mt
-source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
@@ -57,15 +57,15 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | VOD |
+| `s:stream:type` | VOD |
 | `s:asset:type` | main |
 | `s:meta:custom.[value]` | 自訂中繼資料欄位 |
 | `s:meta:a.media.[value]` | 標準中繼資料欄位 |
 
-### Media Analytics中的視訊中繼資料開始呼叫
+### 媒體分析中的媒體中繼資料開始呼叫
 
 | 參數 | 值 (範例)   |
 |---|---|
@@ -84,13 +84,13 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | aa_start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | VOD |
+| `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
-### 心率開始呼叫中的視訊中繼資料
+### 心率開始呼叫中的媒體中繼資料
 
 | 參數 | 值 (範例)   |
 |---|---|
@@ -150,14 +150,14 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | VOD |
+| `s:stream:type` | VOD |
 | `s:asset:type` | ad |
 | `s:meta:custom.[value]` | 自訂中繼資料欄位 |
 | `s:meta:a.media.[value]` | 標準中繼資料欄位 |
 
-### Media Analytics廣告開始呼叫中的視訊中繼資料
+### 媒體分析廣告開始呼叫中的媒體中繼資料
 
 | 參數 | 值 (範例)   |
 |---|---|
@@ -195,12 +195,12 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | aa_ad_start |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | VOD |
+| `s:stream:type` | VOD |
 | `s:asset:type` | ad |
 
-### 心率廣告開始呼叫中的視訊中繼資料
+### 心率廣告開始呼叫中的媒體中繼資料
 
 | 參數 | 值 (範例)   |
 |---|---|
@@ -238,9 +238,9 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | complete |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | VOD |
+| `s:stream:type` | VOD |
 | `s:asset:type` | ad |
 
 ### 心率廣告播放呼叫
@@ -250,9 +250,9 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | play |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
-| `l:asset:ad_id` | 9378 |
+| `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
-| `l:stream:type` | VOD |
+| `s:stream:type` | VOD |
 | `s:asset:type` | ad |
 
 ## 播放主要內容 {#section_u1l_1gf_f2b}
@@ -264,10 +264,10 @@ source-git-commit: 400c7ada4ab269017c3c2948c9056b4c1031d793
 | `s:event:type` | play |
 | `l:event:playhead` | 29 |
 | `l:event:duration` | 10189 |
-| `l:asset:name` | Episode Title |
-| `l:asset:video_id` | 123456 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
-| `l:stream:type` | VOD |
+| `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
 **附註:**
