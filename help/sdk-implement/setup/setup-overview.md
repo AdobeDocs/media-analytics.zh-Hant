@@ -3,19 +3,19 @@ seo-title: 設定概述
 title: 設定概述
 uuid: 06feeddb-b0 c8-4f7 d-90c8-e374 cdd1695
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# Setup Overview{#setup-overview}
+# 設定概述{#setup-overview}
 
 >[!IMPORTANT]
 >
 >下列指示適用於2.x Media SDK。若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md) 如需Primetime整合商，請參閱 _下面的Primetime媒體SDK文件_ 。
 
 
-## Minimum Platform Version Support {#minimum-platform-version}
+## 最低平台版本支援 {#minimum-platform-version}
 
 下表說明每個SDK支援的最低平台版本，自2019年月19日起。
 
@@ -49,7 +49,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `ssl` | 指出呼叫是否應透過 HTTPS 進行 | 無 | false |
    | `debugLogging` | 指出是否已啟用除錯記錄 | 無 | false |
 
-1. Implement the `MediaHeartbeatDelegate`.
+1. 實作 `MediaHeartbeatDelegate`。
 
    |  方法名稱  |  說明  | 必填 |
    | --- | --- | :---: |
@@ -91,7 +91,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    
    //Media Heartbeat Config 
    var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "namespace.hb.omtrdc.net"; 
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
    mediaConfig.playerName = "HTML5 Basic"; 
    mediaConfig.channel = "Video Channel"; 
    mediaConfig.debugLogging = true; 
@@ -136,9 +136,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* **活動訊號(Media Analytics)**&#x200B;一律有格式「`[namespace].hb.omtrdc.net`，其中」`[namespace]`是由您的登入公司定義，由Adobe提供。
+* ** Media Analytics(Heartbeats)**這一律有格式」`[your_namespace].hb.omtrdc.net`。值「`[your_namespace]`指定您的公司，由Adobe提供。
 
-## SDK 1.x Documentation {#section_acj_tkk_t2b}
+## SDK1.x文件 {#section_acj_tkk_t2b}
 
 | Video Analytics1.x SDK | 開發人員指南(僅限PDF) |
 | --- | --- |
