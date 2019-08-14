@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 終端使用者
 user-guide-title: Adobe Analytics音訊與視訊
 translation-type: tm+mt
-source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [從里程碑移轉至自訂連結](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics 中的自訂連結 {#cl-in-aa}
       + [自訂連結實施指南](measurement-options/cl-in-aa/cl-impl-guide.md)
-+ Introduction to Audio and Video Analytics {#intro-to-ava}
++ 音訊與視訊分析簡介 {#intro-to-ava}
    + [必要條件](intro-to-ava/prereqs.md)
    + 實施路徑 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -113,7 +113,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
    + 驗證 {#validation}
       + [驗證概觀](sdk-implement/validation/validation-overview.md)
       + [測試 1: 標準播放](sdk-implement/validation/test1-standard-playback.md)
-      + [測試 2: 視訊中斷](sdk-implement/validation/test2-video-interrupt.md)
+      + [Test2：媒體中斷](sdk-implement/validation/test2-media-interrupt.md)
       + [測試呼叫詳細資訊](sdk-implement/validation/test-call-details.md)
       + [心率參數說明](sdk-implement/validation/heartbeat-params.md)
       + 除錯 {#debugging}
@@ -136,7 +136,7 @@ source-git-commit: b93adc7fe1e6d13d9d2c6bcc610bbb6dbea9d108
       + [移轉概述](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [程式碼比較: 1.x 和 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [從 1.x 轉換為 2.x API](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API (RESTful) {#media-collection-api}
++ Media Collection API(Restful) {#media-collection-api}
    + [概述](media-collection-api/mc-api-overview.md)
    + API 參考 {#mc-api-ref}
       + [工作階段要求](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
