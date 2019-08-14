@@ -3,21 +3,21 @@ seo-title: 心率參數說明
 title: 心率參數說明
 uuid: e9dda32-0952-43d-a702-49f5 b1 bfd8 cf
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# 心率參數說明{#heartbeat-parameter-descriptions}
+# Media Analytics(心率)參數說明{#heartbeat-parameter-descriptions}
 
-Adobe在心率伺服器上收集和處理的心率參數清單：
+Adobe在心率伺服器上收集和處理的Media Analytics參數清單：
 
 ## 所有事件
 
 | 名稱 | 必要/選用 | 資料來源 | 說明   |
 | ---  | :---: | --- | --- |
 | `s:event:type` | R | Media SDK | 要追蹤的事件類型。事件類型: <ul> <li> `s:event:type=start` </li> <li> `s:event:type=complete` </li> <li> `s:event:type=chapter_start` </li> <li> `s:event:type=chapter_complete` </li> <li> `s:event:type=buffer` </li> <li> `s:event:type=pause` </li> <li> `s:event:type=resume` </li> <li> `s:event:type=bitrate_change` </li> <li> `s:event:type=aa_start` </li> <li> `s:event:type=stall` </li> <li> `s:event:type=end` </li> </ul> |
-| `l:event:prev_ts` | R | Media SDK | 此工作階段中相同類型的上次事件時間戳記。The value is `-1` |
+| `l:event:prev_ts` | R | Media SDK | 此工作階段中相同類型的上次事件時間戳記。值是 `-1` |
 | `l:event:ts` | R | Media SDK | 事件的時間戳記。 |
 | `l:event:duration` | R | Media SDK | 此值是由 VHL 程式庫從內部 (而非由播放器) 設定 (單位: 毫秒)。它是用於運算後端量度所花時間。For example `a.media.totalTimePlayed` `type=play` Note:  For some of the HB that are sent This parameter is set to 0 for certain events because they are "state change events" (e.g., `type=complete` `type=chapter_complete` `type=bitrate_change` |
 | `l:event:playhead` | R | `VideoInfo` | 事件記錄時，播放點位於目前作用中的資產內 (主要內容或廣告)。 |
@@ -33,8 +33,8 @@ Adobe在心率伺服器上收集和處理的心率參數清單：
 | `s:cuser:customer_user_ids_x` | O | `MediaHeartbeatConfig` | 在 Audience Manager 上設定的所有使用者 ID |
 | `l:aam:loc_hint` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
 | `s:aam:blob` | R | `MediaHeartbeatConfig` | AAM data sent on each payload after `aa_start` |
-| `s:sc:rsid` | R | 報表套裝 ID。 | 應該傳送報表的 SiteCatalyst RSID。 |
-| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | SiteCatalyst 追蹤伺服器。 |
+| `s:sc:rsid` | R | 報表套裝 ID。 | 應傳送報表的Adobe Analytics RSID。 |
+| `s:sc:tracking_server` | R | `MediaHeartbeatConfig` | Adobe Analytics追蹤伺服器。 |
 | `h:sc:ssl` | R | `MediaHeartbeatConfig` | 流量是透過 HTTPS (若設為 1) 或透過 HTTP (設為 0)。 |
 | `s:sp:ovp` | O | `MediaHeartbeatConfig` | 設定為黃金時段播放器的「黃金時段」，或其他播放器的實際 OVP。 |
 | `s:sp:sdk` | R | `MediaHeartbeatConfig` | OVP 版本字串。 |
