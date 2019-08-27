@@ -3,7 +3,7 @@ seo-title: 設定概述
 title: 設定概述
 uuid: 06feeddb-b0 c8-4f7 d-90c8-e374 cdd1695
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -121,14 +121,12 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ## 驗證 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-媒體實作包含兩種類型的追蹤呼叫:
+媒體分析追蹤實施會產生兩種追蹤呼叫類型：
 
-* 媒體和廣告開始呼叫會直接傳送到 AppMeasurement 伺服器。
-* 心率呼叫會在開始時傳送至心率追蹤伺服器，內容每十秒傳送一次，廣告每一秒傳送一次。
+* 媒體和廣告開始呼叫會直接傳送至Adobe Analytics(AppMeasurement)伺服器。
+* 心率呼叫會傳送至Media Analytics(活動訊號)追蹤伺服器、處理並傳遞至Adobe Analytics伺服器。
 
-媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。目前，音效追蹤可在行動平台運作。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數:
-
-* **AppMeasurement(Analytics)**&#x200B;如需追蹤伺服器選項的詳細資訊，請參閱 [正確填入trackingServer和trackingServerSecure變數。](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html)
+* **Adobe Analytics(AppMeasurement)伺服器**&#x200B;如需追蹤伺服器選項的詳細資訊，請參閱 [正確填入trackingServer和trackingServerSecure變數。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -136,7 +134,9 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics(Heartbeats)**這一律有格式」`[your_namespace].hb.omtrdc.net`。值「`[your_namespace]`指定您的公司，由Adobe提供。
+* ** Media Analytics(Heartbeats)伺服器**此格式一律為「`[your_namespace].hb.omtrdc.net`值「`[your_namespace]`指定您的公司，由Adobe提供。
+
+媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。音訊追蹤目前適用於行動平台。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數:
 
 ## SDK1.x文件 {#section_acj_tkk_t2b}
 
