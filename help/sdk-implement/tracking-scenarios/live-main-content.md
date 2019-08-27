@@ -3,7 +3,7 @@ seo-title: 即時主要內容
 title: 即時主要內容
 uuid: e92e99f4-c395-48aa-8a30-cbdd2 f5 fc07 c
 translation-type: tm+mt
-source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -40,7 +40,7 @@ source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
 
 ## 內容心率 {#section_7B387303851A43E5993F937AE2B146FE}
 
-在媒體播放期間，會有計時器每10秒傳送一或多個心率。這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
+在媒體播放期間，會針對主要內容每10秒傳送一或多個心率(或每秒)，以傳送一個或多個活動訊號。這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
 
 在內容心率中，尋找一些特定項目:
 
@@ -59,13 +59,13 @@ source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
 
 ### at Start
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. 這與VOD相反，您可將播放磁頭設為「0」。
+對於即時媒體，當使用者開始播放串流時，您必須在 `l:event:playhead` 數秒內設定為目前的偏移量。這與VOD相反，您可將播放磁頭設為「0」。
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). 然後，假設使用者在下午12：00開始播放該即時串流。In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+例如，假設即時串流事件從午夜開始，並執行24小時(`a.media.length=86400`； `l:asset:length=86400`)。然後，假設使用者在下午12：00開始播放該即時串流。在此情況下，您應設定 `l:event:playhead` 為43200(在串流中)。
 
 ### 暫停
 
-在播放開始時套用的相同「live Playhead」邏輯，必須在使用者暫停播放時套用。When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+在播放開始時套用的相同「live Playhead」邏輯，必須在使用者暫停播放時套用。當使用者返回播放即時串流時，您必須將 `l:event:playhead` 值設為新的偏移播放磁頭位置，而 _不_ 是使用者暫停即時串流的點。
 
 ## 程式碼範例 {#section_vct_j2j_x2b}
 
