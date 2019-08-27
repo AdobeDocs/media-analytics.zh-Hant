@@ -3,12 +3,12 @@ seo-title: 追蹤概述
 title: 追蹤概述
 uuid: 7b8e2f76-bc4 e-4721-8933-3e4453 b01788
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# 追蹤概述{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 建立媒體物件
 * 填入中繼資料
-* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+* 呼叫 `trackSessionStart`；例如： `trackSessionStart(mediaObject, contextData)`
 
 ### 媒體開始時
 
@@ -59,7 +59,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->播放磁頭位置會設為設定和設定程式碼的一部分。For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>播放磁頭位置會設為設定和設定程式碼的一部分。如需詳細資訊， `getCurrentPlayheadTime`請參閱 [概述：一般實施准則。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 實作 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -234,32 +234,5 @@ if (e.type == “buffered”) {
 
 ## 驗證 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### 內容開始
+如需驗證實施的詳細資訊，請參閱 [驗證。](/help/sdk-implement/validation/validation-overview.md)
 
-媒體播放器開始時，這些重要呼叫將會以下列順序傳送:
-
-1. 媒體分析開始
-1. 心率開始
-1. 心率分析開始
-
-呼叫 1 和 2 包含自訂和標準的其他中繼資料變數。
-
-### 內容播放
-
-在正常主要內容播放期間，心率呼叫會每隔十秒傳送到心率伺服器一次。
-
-### 內容完成
-
-在內容或線性資料流上的顯示界限到達 100% 點時，將會傳送心率完成呼叫。
-
-### 內容暫停
-
-當播放器暫停時，將每 10 秒傳送一次播放器暫停事件呼叫。暫停結束後，視訊將繼續播放。
-
-### 內容拖曳/搜尋
-
-拖曳時間軸搜尋播放點時，不會傳送特殊的追蹤呼叫。但是當放開時間軸繼續播放時，播放點值將反映主要內容的最新位置。
-
-### 內容緩衝
-
-當播放器緩衝時，每 10 秒會傳送一次播放器緩衝事件呼叫。緩衝結束後，視訊將繼續播放。
