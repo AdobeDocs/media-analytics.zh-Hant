@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 4d73c47f-d0 a4-4228-9040-d6432311 c9 eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒體播放器API來識別與QoS和錯誤追蹤相關的變數。以下為追蹤體驗品質的重要元素:
 
-## Player events {#player-events}
+## 播放器事件 {#player-events}
 
 ### 對於任何 QoS 量度變更:
 
@@ -71,12 +71,3 @@ if (e.type == "bitrate_change") {
 };
 ```
 
-## 驗證 {#section_F3174831408947A893F7E8C15659E5AA}
-
-### 位元速率變更
-
-每次位元速率變更時，都會傳送心率 `bitrate_change` 呼叫。
-
-### 錯誤
-
-播放器發生錯誤時，將傳送含有錯誤值的心率錯誤呼叫。
