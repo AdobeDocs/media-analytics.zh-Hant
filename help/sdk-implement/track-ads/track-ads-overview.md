@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 1607798b-c6 ef-4d60-8e40-e958 c345 c09 c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
 
-廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。使用媒體播放器的API來識別關鍵播放器事件，並填入必要和選擇性的廣告變數。See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
+廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。使用媒體播放器的API來識別關鍵播放器事件，並填入必要和選擇性的廣告變數。請參閱此處完整的中繼資料清單： [廣告參數。](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## 播放器事件 {#player-events}
 
 
 ### 在廣告插播開始時
@@ -46,7 +46,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 呼叫廣告插播完成的 `trackEvent`。
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## 實施廣告追蹤 {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### 廣告追蹤常數
 
@@ -100,7 +100,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). 如果您執行，「內容逗留時間」度量會受到負面影響。
+>請確定您在廣告播放期間不會增加內容播放器播放磁頭(`l:event:playhead`)`s:asset:type=ad`。如果您執行，「內容逗留時間」度量會受到負面影響。
 
 下列範例程式碼使用HTML媒體播放器的JavaScript2.x SDK。
 
@@ -139,32 +139,4 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
-## 驗證 {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### 廣告開始
-
-開始播放個別廣告時，會依下列順序傳送三個索引鍵呼叫:
-
-1. 視訊廣告分析開始
-1. 心率廣告開始
-1. 心率分析開始
-
-呼叫 1 和 2 包含自訂和標準的其他中繼資料變數。
-
-### 廣告播放
-
-在廣告播放過程中，心率廣告播放呼叫每一秒便會傳送到心率伺服器。
-
-### 廣告完成
-
-在廣告的 100% 點上，將傳送心率廣告完成呼叫。
-
-### 廣告略過
-
-略過廣告時，不會傳送任何事件，因此追蹤呼叫不會包含廣告資訊。
-
->[!TIP]
->
->不會在廣告中斷開始和廣告中斷完成時傳送唯一呼叫。
 
