@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 3Fe32425-5e2a -4886-fea-d91 d15671 bb0
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 * 呼叫 `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## 實施章節追蹤 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. 識別章節開始事件何時發生，並使用章節資訊建立 `ChapterObject` 例項。
 
@@ -85,18 +85,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## 驗證 {#section_07EC2811BE3249249494596BFE9BF869}
-
-### 章節開始
-
-在個別章節播放開始時，會傳送一個關鍵呼叫：
-
-* 心率章節開始(此呼叫包含其他章節中繼資料變數)。
-
-### 章節完成
-
-在章節界限結束時，將傳送心率章節完成呼叫。
-
-### 章節略過
-
-略過章節時，將傳送心率章節略過呼叫。
