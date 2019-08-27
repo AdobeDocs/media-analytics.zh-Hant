@@ -3,37 +3,37 @@ seo-title: 測試呼叫詳細資料
 title: 測試呼叫詳細資料
 uuid: d3a0e62f-2fc3-413d-ac56-adbhone9 b3 e983
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ---
 
 
 # 測試呼叫詳細資料{#test-call-details}
 
-## 啟動視訊播放器 {#section_qts_xff_f2b}
+## 啓動媒體播放器 {#start-the-media-player}
 
-### 媒體分析開始呼叫
+### Adobe Analytics(AppMeasurement)開始呼叫 {#aa-start-call}
 
-| 參數 | 值 (範例)   |
+| 參數 |  值 (範例)  |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
-| `a.media.name` | 123456 |
-| `a.media.length` | 120 |
+| _**`a.media.name`**_ | _**123456**_ |
+| _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML5 |
-| `a.media.view` | true |
+| _**`a.media.view`**_ | _**true**_ |
 | `a.contentType` | VOD |
-| `custom.[value]` | 自訂中繼資料欄位 |
-| `a.media.[value]` | 標準中繼資料欄位 |
+| _**`custom.[value]`**_ | _**自訂中繼資料欄位**_ |
+| _**`a.media.[value]`**_ | _**標準中繼資料欄位**_ |
 
 **附註:**
 
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 線性資料流的長度應設定為目前節目的最佳預估值。
 
-### Media Analytics中的標準中繼資料開始呼叫
+### Adobe Analytics(AppMeasurement)中的標準中繼資料開始呼叫 {#std-metadata-aa}
 
-| 參數 | 值 (範例)   |
+| 參數 |  值 (範例)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -50,56 +50,36 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### 心率開始呼叫
+### Adobe Analytics(AppMeasurement)中的自訂中繼資料開始呼叫 {#custom-metadata-aa}
 
-| 參數 | 值 (範例)   |
+| 參數 |  值 (範例)  |
+|---|---|
+| `custom.metadataA` | value |
+| `custom.metadataB` | value |
+
+### 媒體分析(活動訊號)開始呼叫 {#ma-start-call}
+
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:event:type` | start |
-| `l:event:playhead` | 0 |
+| _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
-| `s:meta:custom.[value]` | 自訂中繼資料欄位 |
-| `s:meta:a.media.[value]` | 標準中繼資料欄位 |
-
-### 媒體分析中的媒體中繼資料開始呼叫
-
-| 參數 | 值 (範例)   |
-|---|---|
-| `custom.metadataA` | value |
-| `custom.metadataB` | value |
+| _**`s:meta:custom.[value]`**_ | _**自訂中繼資料欄位**_ |
+| _**`s:meta:a.media.[value]`**_ | _**標準中繼資料欄位**_ |
 
 **附註:**
 
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 視訊開始時的線性資料流播放點位置，應設定為目前節目開始後經過的秒數，而不是 0。
 
-### Heartbeat Analytics 開始呼叫
+### Media Analytics中的標準中繼資料(活動訊號)開始呼叫 {#std-metadata-ma}
 
-| 參數 | 值 (範例)   |
-|---|---|
-| `s:event:type` | aa_start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
-| `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120 |
-| `s:stream:type` | VOD |
-| `s:asset:type` | main |
-
-### 心率開始呼叫中的媒體中繼資料
-
-| 參數 | 值 (範例)   |
-|---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
-
-### 心率開始呼叫中的標準中繼資料
-
-| 參數 | 值 (範例)   |
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
@@ -116,57 +96,59 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
+### Media Analytics中的自訂中繼資料(活動訊號)開始呼叫 {#custom-metadata-ma}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | value |
+
+### 媒體分析(活動訊號) Adobe Analytics啓動呼叫 {#ma-aa-start}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| _**`s:event:type`**_ | _**aa_start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 4 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
+| `l:asset:length` | 120 |
+| `s:stream:type` | VOD |
+| `s:asset:type` | main |
+
 **附註:**
 
-* 這個呼叫代表心率程式庫已要求將 analytics pev2=ms_s 呼叫傳送到 Analytics 伺服器。
+* 此呼叫表示Media SDK要求將Adobe Analytics `pev2=ms_s` 呼叫傳送至Adobe Analytics(AppMeasurement)伺服器。
 * 該呼叫不含自訂中繼資料。
 
-## 檢視廣告播放 {#section_wz3_yff_f2b}
+## 檢視廣告播放 {#view-ad-playback}
 
-### 媒體分析廣告開始呼叫
+### Adobe Analytics(AppMeasurement)廣告開始呼叫 {#aa-ad-start-call}
 
-| 參數 | 值 (範例)   |
+| 參數 |  值 (範例)  |
 |---|---|
-| `pev2` | msa_s |
+| _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
-| `a.media.ad.name` | 9378 |
+| _**`a.media.ad.name`**_ | _**9378**_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| `a.media.ad.length` | 15 |
+| _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| `a.media.ad.view` | True |
-| `custom.[value]` | 中繼資料欄位 |
-| `a.media.[value]` | 標準中繼資料欄位 |
+| _**`a.media.ad.view`**_ | _**True**_ |
+| _**`custom.[value]`**_ | _**中繼資料欄位**_ |
+| _**`a.media.[value]`**_ | _**標準中繼資料欄位**_ |
 
-**注意:** 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
+**附註:**
 
-### 心率廣告開始呼叫
+* 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
+* 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
 
-| 參數 | 值 (範例)   |
-|---|---|
-| `s:event:type` | start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 4 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:length` | 120 |
-| `s:stream:type` | VOD |
-| `s:asset:type` | ad |
-| `s:meta:custom.[value]` | 自訂中繼資料欄位 |
-| `s:meta:a.media.[value]` | 標準中繼資料欄位 |
+### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
 
-### 媒體分析廣告開始呼叫中的媒體中繼資料
-
-| 參數 | 值 (範例)   |
-|---|---|
-| `custom.metadata` | value |
-| `custom.metadata` | value |
-
-### Media Analytics廣告開始呼叫中的標準中繼資料
-
-| 參數 | 值 (範例)   |
+| 參數 |  值 (範例)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -183,33 +165,35 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
+### Adobe Analytics(AppMeasurement)廣告開始呼叫中的自訂中繼資料 {#custom-metadata-aa-ad-start}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| `custom.metadata` | value |
+| `custom.metadata` | value |
+
+### 媒體分析(活動訊號)廣告開始呼叫 {#ma-ad-start-call}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| _**`s:event:type`**_ | _**start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 4 |
+| `s:asset:ad_id` | 9378 |
+| _**`l:asset:length`**_ | _**120**_ |
+| `s:stream:type` | VOD |
+| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:meta:custom.[value]`**_ | _**自訂中繼資料欄位**_ |
+| _**`s:meta:a.media.[value]`**_ | _**標準中繼資料欄位**_ |
+
 **附註:**
 
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
 
-### Heartbeat Analytics 廣告開始呼叫
+### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
 
-| 參數 | 值 (範例)   |
-|---|---|
-| `s:event:type` | aa_ad_start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | VOD |
-| `s:asset:type` | ad |
-
-### 心率廣告開始呼叫中的媒體中繼資料
-
-| 參數 | 值 (範例)   |
-|---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
-
-### 心率廣告開始呼叫中的標準中繼資料
-
-| 參數 | 值 (範例)   |
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:a.media.show` | Show |
 | `s:meta:a.media.season` | 6 |
@@ -226,43 +210,89 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
+### 媒體分析(活動訊號)中的自訂中繼資料(活動訊號) {#custom-metadata-ma-ad-start}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | value |
+
+### 媒體分析(活動訊號) Adobe Analytics Ad Start呼叫 {#ma-aa-ad-start-call}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| _**`s:event:type`**_ | _**aa_ad_start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | VOD |
+| `s:asset:type` | ad |
+
+### 媒體分析(活動訊號)廣告播放呼叫 {#ma-ad-play-call}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| _**`s:event:type`**_ | _**play**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | VOD |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+### 媒體分析(活動訊號)廣告暫停呼叫 {#ma-ad-pause-call}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| _**`s:event:type`**_ | _**pause**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | VOD |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+### 媒體分析(活動訊號) Adobe Analytics廣告完成呼叫 {#ma-aa-ad-complete-call}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| _**`s:event:type`**_ | _**complete**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | VOD |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+## 播放主要內容 {#play-main-content}
+
+### 媒體分析(活動訊號)播放呼叫 {#ma-play-call}
+
+| 參數 |  值 (範例)  |
+|---|---|
+| `s:event:type` | play |
+| _**`l:event:playhead`**_ | _**29**_ |
+| _**`l:event:duration`**_ | _**10189**_ |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
+| `l:asset:length` | 120 |
+| `s:stream:type` | VOD |
+| `s:asset:type` | main |
+
 **附註:**
 
-* 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
-* 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
+* 播放磁頭位置在每次播放呼叫時應增加10秒。
+* `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
 
-### 心率廣告完成呼叫
+## 暫停主要內容 {#pause-main-content}
 
-| 參數 | 值 (範例)   |
+### 媒體分析(活動訊號)暫停呼叫 {#ma-pause-call}
+
+| 參數 |  值 (範例)  |
 |---|---|
-| `s:event:type` | complete |
-| `l:event:playhead` | 15 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | VOD |
-| `s:asset:type` | ad |
-
-### 心率廣告播放呼叫
-
-| 參數 | 值 (範例)   |
-|---|---|
-| `s:event:type` | play |
-| `l:event:playhead` | 15 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | VOD |
-| `s:asset:type` | ad |
-
-## 播放主要內容 {#section_u1l_1gf_f2b}
-
-### 心率播放呼叫
-
-| 參數 | 值 (範例)   |
-|---|---|
-| `s:event:type` | play |
-| `l:event:playhead` | 29 |
+| _**`s:event:type`**_ | _**pause**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
@@ -270,8 +300,4 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
-**附註:**
-
-* 每個播放呼叫的播放點位置應該要以 10 為單位遞增。
-* `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
 
