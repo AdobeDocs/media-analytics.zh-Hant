@@ -3,7 +3,7 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2 f6-4799-9a62-4c6 a737 a7 dab
 translation-type: tm+mt
-source-git-commit: 2760ff12ef9125f724cc98d263ba0d6961ffe35c
+source-git-commit: 0334975eb84a1626c3bac63354380e165ce3b29b
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 2760ff12ef9125f724cc98d263ba0d6961ffe35c
 
 1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。
 
-   **請在這裡下載最新版本的表格：**
+   **請在此處下載最新版本的表格：**
 
    [聯邦法規合約](federated_analytics_form.pdf)
 
