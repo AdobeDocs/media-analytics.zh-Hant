@@ -1,9 +1,9 @@
 ---
 seo-title: 具有循序追蹤的即時主要內容
 title: 具有循序追蹤的即時主要內容
-uuid: b03477b6-9be6-4b67-a5 a0-4cf3 cf262 ab
+uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 
 ---
 
@@ -16,16 +16,16 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 這是與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例相同的案例，只是一部分內容被刪除，並且搜尋是從主要內容中的某個點到另一個點間完成。
 
-| 觸發 | 心率方法 | 網路呼叫   | 附註   |
+| 觸發 | 心率方法 |  網路呼叫 |  附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 內容播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
+| 使用者點按[!UICONTROL 播放] | trackSessionStart | Analytics 內容開始, 心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 內容播放的第一個時間格。 | trackPlay | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
 | 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 工作階段 1 結束 (第 1 集結束) | `trackComplete` `trackSessionEnd` | 心率內容完成 | 完成表示已到達第 1 集的工作階段 1，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
-| 第 2 集開始 (工作階段 2 開始) | `trackSessionStart` | Analytics內容開始心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
-| 媒體的第一個畫格 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，只要播放繼續，便會每 10 秒傳送心率。 |
+| 工作階段 1 結束 (第 1 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成表示已到達第 1 集的工作階段 1，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
+| 第 2 集開始 (工作階段 2 開始) | trackSessionStart | Analytics 內容開始 心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
+| 第1個媒體影格 | trackPlay | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，只要播放繼續，便會每 10 秒傳送心率。 |
 | 內容播放 |  | 內容心率 |  |
-| 工作階段結束 (第 2 集結束) | `trackComplete` `trackSessionEnd` | 心率內容完成 | 完成表示已到達第 2 集的工作階段 2，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
+| 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成表示已到達第 2 集的工作階段 2，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
 
 ## 參數 {#section_D52B325B99DA42108EF560873907E02C}
 
@@ -40,7 +40,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;您的媒體名稱&gt; |  |
 | `s:stream:type` | `live` |  |
-| `s:meta:*` | *可選* | 媒體上設定的自訂中繼資料 |
+| `s:meta:*` | *可選* | 媒體上的自訂中繼資料集 |
 
 ## 心率內容播放 {#section_B6AD9225747943F881DCA8E6A1D5710E}
 
@@ -53,7 +53,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## 內容心率 {#section_7B387303851A43E5993F937AE2B146FE}
 
-在媒體播放期間，會有計時器針對主要內容每10秒傳送一或多個心率，每秒廣告一次。這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
+在媒體播放期間，計時器會每10秒傳送一或多個心率，以用於主要內容，而每秒傳送一個或多個心率。 這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
 
 在內容心率中，尋找一些特定項目:
 
