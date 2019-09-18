@@ -1,29 +1,29 @@
 ---
 seo-title: 自訂連結實施指南
 title: 自訂連結實施指南
-uuid: 83315e73-20ca-4db5-9d43-33daide45a13
+uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
 
 ---
 
 
 # 自訂連結實施指南{#custom-link-implementation-guide}
 
-自訂視訊追蹤採用 Analytics [ 中的](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html)使用自訂連結程式碼手動追蹤連結`appMeasurement`。自訂視訊連結視訊追蹤經常用於不太需要視訊測量的平台與裝置上。
+Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. 自訂視訊連結視訊追蹤經常用於不太需要視訊測量的平台與裝置上。
 
-* In JavaScript: `s.tl()` function
+* 在JavaScript中：函 `s.tl()` 數
 * 在行動應用程式中: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
-**需求:**
+## 要求
 
 * 視訊播放器 API 事件與資料的存取權限
 * 若使用 Analytics SDK: 新增指令碼的能力
 * 若使用 Data Insertion API: 新增追蹤信標 (自訂指令碼或硬式編碼) 的能力
 
-**中繼資料:**
+## 中繼資料
 
 * 您可以將中繼資料視為連結資料的一部分，新增到任何追蹤呼叫中
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
@@ -44,7 +44,7 @@ if (e.type == "ended") {
 };
 ```
 
-**為什麼要使用自訂連結:**
+## 為什麼要使用自訂連結
 
 * 只需要滿足少量的必要條件
 * 適用於任何平台，包括 NoScript 平台
@@ -53,7 +53,7 @@ if (e.type == "ended") {
 * 全面掌握視訊資料的各個層面
 * 移除範例播放器的連結
 
-**HTML5 播放器適用的範例 JavaScript**
+## HTML5 播放器適用的範例 JavaScript
 
 ```javascript
 <script type="text/javascript"> 
