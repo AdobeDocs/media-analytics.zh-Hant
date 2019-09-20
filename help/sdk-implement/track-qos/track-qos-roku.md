@@ -1,9 +1,9 @@
 ---
 seo-title: 在 Roku 上追蹤體驗品質
 title: 在 Roku 上追蹤體驗品質
-uuid: a8b242ab-da3 c-4297-1eef-f0 b9684 ef56 a
+uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
 ---
 
@@ -14,15 +14,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 實施者QoS
+## 實施QOS
 
-1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the Media SDK.
+1. 識別媒體播放期間位元速率的變更，並使用 `mediaUpdateQoS` API更新媒體SDK上的QoS資訊。
 
    QoSObject 變數:
 
    >[!TIP]
    >
-   >只有在您追蹤QoS時才需要這些變數。
+   >只有在追蹤QoS時，才需要這些變數。
 
    | 變數 | 說明 | 必要 |
    | --- | --- | :---: |
@@ -55,15 +55,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
     ```
     -->
 
-1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the Media SDK that the Bitrate changed.
+1. 當播放切換位元速率時， `trackEvent(BitrateChange)` 請呼叫以通知Media SDK位元速率已變更。
 
    ```
-   ADBMobile().trackMediaEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
    ```
 
    >[!NOTE]
    >
-   >You need to call `updateQoSObject` with the updated bitrate value.
+   >您必須使用更 `updateQoSObject` 新的位元速率值來呼叫。
 
    <!--
     ```
@@ -80,5 +80,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
