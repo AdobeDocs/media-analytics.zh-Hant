@@ -3,7 +3,7 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: dd88b69bdbb33e48585f32de5a6a78fbbdc4bd2a
+source-git-commit: 4ffdc10559c7c25072bb7cd34165c9df9311a65e
 
 ---
 
@@ -39,12 +39,11 @@ source-git-commit: dd88b69bdbb33e48585f32de5a6a78fbbdc4bd2a
 
 ## Download the Federated Analytics Form
 
-**Download the current version of the form here:**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
+**請從此處下載目前版本的表單：聯合**&#x200B;規 [則合約表單。](/assets/federated_analytics_form.pdf)
 
 ## 程序 {#section_byb_kb3_vbb}
 
-1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。
-1. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [免費下載 Acrobat。](https://get.adobe.com/reader/)
+1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [免費下載 Acrobat。](https://get.adobe.com/reader/)
 1. 在能取得資料檔案的前提下，諮詢服務可提供接收者範例資料檔案，內含來自傳送者播放器的實際資料，以便進一步確認資料共享規則已妥善定義。
 1. 傳送者與接收者可確保資料共享協定符合雙方之間的所有合約要求。
 1. 諮詢服務會將填妥的表單傳送至 Adobe 工程技術部門以建立資料共享規則。
