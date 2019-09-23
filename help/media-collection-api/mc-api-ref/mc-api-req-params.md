@@ -1,9 +1,9 @@
 ---
 seo-title: 要求參數
 title: 要求參數
-uuid: f83e9ef1-803d-4152-a6 c7-aca325036 b9
+uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ---
 
@@ -12,25 +12,25 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Analytics 資料
 
-| 請求索引鍵 | 必填 | 設定於... |  說明  |
+| 請求金鑰 | 必填 | 設定於... |  說明  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 伺服器的 URL |
 | `analytics.reportSuite` | Y | `sessionStart` | 識別 Analytics 報表資料的 ID |
 | `analytics.enableSSL` | N | `sessionStart` | 是否啟用 SSL (True 或 False) |
-| `analytics.visitorId` | N | `sessionStart` | Adobe訪客ID是可用於多個Adobe應用程式的自訂ID。The Heartbeat `visitorId` equals the Analytics `VID.` |
+| `analytics.visitorId` | N | `sessionStart` | Adobe訪客ID是可跨多個Adobe應用程式使用的自訂ID。 心率 `visitorId` 等於分析 `VID.` |
 
 ## 訪客資料
 
-| 請求索引鍵 | 必填 | 設定於... |  說明  |
+| 請求金鑰 | 必填 | 設定於... |  說明  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 組織 ID，能在 Adobe Experience Cloud 生態系統中識別您的組織 |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | 這是Experience Cloud使用者ID(ECID)。在大部分情況下，這是您用來識別使用者的ID。The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. 在技術上不需要，這個參數是存取Experience Cloud應用程式系列時的必要參數。 |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | 這是Experience cloud使用者ID(ECID)。 In most scenarios this is the ID you should use to identify a user. 「心率」 `marketingCloudUserId` 等於 `MID` Adobe Analytics中的。 雖然在技術上並非必要，但存取Experience cloud系列應用程式時，此參數是必要的。 |
 | `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 資料 |
 | `appInstallationId` | N | `sessionStart` | 唯一識別應用程式和裝置的 appInstallationId |
 
 ## 內容資料
 
-| 請求索引鍵 | 必填 | 設定於... |  說明  |
+| 請求金鑰 | 必填 | 設定於... |  說明  |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | 內容的唯一識別碼 |
 | `media.name` | N | `sessionStart` | 內容的人類可讀名稱 |
@@ -38,12 +38,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `media.contentType` | Y | `sessionStart` | 資料流的格式 (可以是任何字串；幾個建議的值包括「即時」、「VOD」或「線性」) |
 | `media.playerName` | Y | `sessionStart` | 負責轉譯內容之播放器的名稱 |
 | `media.channel` | Y | `sessionStart` | 內容分送的管道。可以是行動應用程式名稱或網站名稱、屬性名稱 |
-| `media.resume` | N | `sessionStart` | 指出使用者是否正在繼續先前的工作階段(相對於起始新作業) |
+| `media.resume` | N | `sessionStart` | Indicates whether or not a user is resuming a previous session (as opposed to starting a new session) |
 | `media.sdkVersion` | N | `sessionStart` | 播放器使用的 SDK 版本 |
 
 ## 內容標準中繼資料
 
-| 請求索引鍵 | 必填 | 設定於... |  說明  |
+| Request Key  | 必填 | 設定於... |  說明  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | 節目或影集名稱 |
 | `media.season` | N | `sessionStart` | 節目或影集隸屬的季數 |
@@ -64,7 +64,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 廣告資料
 
-| 請求索引鍵 | 必填 | 設定於... |  說明  |
+| 請求金鑰 | 必填 | 設定於... |  說明  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | 廣告插播的易記名稱 |
 | `media.ad.podIndex` | Y | `adBreakStart` | 視訊中的廣告 Pod 索引 |
@@ -77,7 +77,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 廣告標準中繼資料
 
-| 請求索引鍵 | 必填 | 設定於... |  說明  |
+| 請求金鑰 | 必填 | 設定於... |  說明  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | 廣告中精選產品的公司或品牌 |
 | `media.ad.campaignId` | N | `adStart` | 廣告促銷活動 ID |
@@ -88,7 +88,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 章節資料
 
-| 請求索引鍵 | 必填 | 設定於... |  說明  |
+| 請求金鑰 | 必填 | 設定於... |  說明  |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | 識別章節在內容中的位置 |
 | `media.chapter.offset` | Y | `chapterStart` | 章節開始播放的秒數 |
@@ -97,7 +97,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 品質資料
 
-| 請求索引鍵 | 必填 | 設定於... |  說明  |
+| 請求金鑰 | 必填 | 設定於... |  說明  |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | 任何 | 資料流的位元速率 |
 | `media.qoe.droppedFrames` | N | 任何 | 資料流掉格的數量 |
@@ -112,13 +112,13 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->媒體分析(MA)已與Experience Cloud應用程式系列(Adobe Analytics、Audience Manager、Target等)整合。若要存取這些應用程式，您需要 Experience Cloud ID。_在大多數情況下，您應該使用ECID來識別使用者。_
+>Media Analytics (MA) is integrated with the Experience Cloud family of apps (Adobe Analytics, Audience Manager, Target, and so on). 若要存取這些應用程式，您需要 Experience Cloud ID。_The ECID is what you should use to identify users in most scenarios._
 
 ### appInstallationId
 
-* **如果您&#x200B;*未*傳遞`appInstallationId`值-** MA後端將不再產生MCID，而是依賴Adobe Analytics執行此動作。Adobe 建議您盡可能傳送 MCID 或 `appInstallationId` (連同目前仍為必要項目的 `marketingCloudOrgId`)，讓媒體收集 API 在每次呼叫時產生 MCID 並予以傳送。
+* **If you *do not*pass an`appInstallationId`value -** The MA back-end will no longer generate a MCID, but instead will rely on Adobe Analytics to do this. Adobe 建議您盡可能傳送 MCID 或 `appInstallationId` (連同目前仍為必要項目的 `marketingCloudOrgId`)，讓媒體收集 API 在每次呼叫時產生 MCID 並予以傳送。
 
-* ***如果您是*通過`appInstallationId`值，** 則MA後端 *可* 產生MCID，如果您傳遞值 `appInstallationId` 和(必要) `marketingCloudOrgId` 參數。如果您自行傳遞 `appInstallationId`，必須將其值保留在用戶端上。該值必須供裝置上的應用程式專用，而且只要您未重新安裝應用程式，該值就必須存在。
+* **如果&#x200B;*您傳遞*值`appInstallationId`-The MCID can be** generated by the MA back-end, if you pass values for and the(required)parements **`appInstallationId``marketingCloudOrgId` . 如果您自行傳遞 `appInstallationId`，必須將其值保留在用戶端上。該值必須供裝置上的應用程式專用，而且只要您未重新安裝應用程式，該值就必須存在。
 
 >[!NOTE]
 >
@@ -131,16 +131,16 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/federated-analytics.md))
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/data-sharing/federated-analytics.md))
 
 ### Analytics 舊版使用者 ID (aid) 和宣告使用者 ID (customerID)
 
-* **analytics. aid：**
+* **analytics.aid:**
 
-   此索引鍵的值必須是代表Analytics舊版使用者ID的字串
-* **visitor. customerIDs：**
+   The value of this key must be a string that represents the Analytics Legacy User ID
+* **visitor.customerIDs:**
 
-   此索引鍵的值必須是下列格式的物件：
+   此鍵的值必須是以下格式的對象：
 
    ```js
    "<<insert your ID name here>>": {  
@@ -153,7 +153,7 @@ Note that the `visitor.customerIDs` value can have any number of objects in the 
 
 ### visitor.aamLocationHint
 
-此參數指出當Adobe Analytics將客戶資料傳送至Audience Manager時，會點擊哪些Adobe Audience Manager(AAM) Edge。如果您未傳遞這個參數，Adobe 會將其硬式編碼為 1。當使用者傾向於在偏遠位置使用裝置 (如美國東部、美國西部、歐洲、亞洲) 時，這個參數尤其重要。否則，使用者資料將散佈到多個 AAM Edge。
+此參數指出當Adobe Analytics將客戶資料傳送至Audience Manager時，會點擊哪個Adobe Audience Manager(AAM)Edge。 如果您未傳遞這個參數，Adobe 會將其硬式編碼為 1。當使用者傾向於在偏遠位置使用裝置 (如美國東部、美國西部、歐洲、亞洲) 時，這個參數尤其重要。否則，使用者資料將散佈到多個 AAM Edge。
 
 ### media.resume
 
