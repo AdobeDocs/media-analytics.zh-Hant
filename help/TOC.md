@@ -1,24 +1,24 @@
 ---
 product: Media Analytics
 audience: 終端使用者
-user-guide-title: Adobe Analytics音訊與視訊
+user-guide-title: 音訊與視訊專用的Adobe Analytics
 translation-type: tm+mt
-source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
+source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 
 ---
 
 
 # Adobe Analytics for Audio and Video {#using}
 
-+ [在Adobe Analytics中測量音訊和視訊](media-overview.md)
++ [Measuring Audio and Video in Adobe Analytics](media-overview.md)
 + Measurement Options {#measurement-options}
    + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [里程碑概述](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [將里程碑移轉至媒體分析](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [從里程碑移轉至自訂連結](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics 中的自訂連結 {#cl-in-aa}
-      + [自訂連結實施指南](measurement-options/cl-in-aa/cl-impl-guide.md)
-+ 音訊與視訊分析簡介 {#intro-to-ava}
+      + [自訂連結實作指南](measurement-options/cl-in-aa/cl-impl-guide.md)
++ 音訊和視訊分析簡介 {#intro-to-ava}
    + [必要條件](intro-to-ava/prereqs.md)
    + 實施路徑 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -40,37 +40,37 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
       + Track Core Audio and Video Playback {#track-core}
          + [在Android上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在iOS上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
-         + [追蹤JavaScript上的核心播放](sdk-implement/track-av-playback/track-core/track-core-js.md)
-         + [在Chromecast上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
-         + [在Roku上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-roku.md)
+         + [Track Core Playback on JavaScript](sdk-implement/track-av-playback/track-core/track-core-js.md)
+         + [Track Core Playback on Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
+         + [Track Core Playback on Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Track Buffering {#track-buffering}
-         + [Android上的追蹤緩衝功能](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
-         + [iOS上的追蹤緩衝功能](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-         + [JavaScript上的追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
-         + [Chromecast上的追蹤緩衝區](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Roku上的追蹤緩衝區](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Track Buffering on Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
+         + [在iOS上追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
+         + [追蹤JavaScript上的緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [Track Buffering on Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [在Roku上追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
-         + [Android上的追蹤搜尋功能](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Android上的追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [在iOS上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [在JavaScript上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
-         + [Chromecast的追蹤搜尋功能](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Roku追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Chromecast的追蹤](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Roku上的追蹤](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + 實作標準中繼資料 {#impl-std-metadata}
          + [在 Android 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS中繼資料索引鍵](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + [在 JavaScript 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
          + [在 Chromecast 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [標準中繼資料參數- Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [Standard Metadata Parameters - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [在 Roku 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [標準中繼資料參數- Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
+         + [Standard Metadata Parameters - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 追蹤廣告 {#track-ads}
       + [概述](sdk-implement/track-ads/track-ads-overview.md)
-      + [在Android上追蹤廣告](sdk-implement/track-ads/track-ads-android.md)
-      + [在iOS上追蹤廣告](sdk-implement/track-ads/track-ads-ios.md)
-      + [在JavaScript上追蹤廣告](sdk-implement/track-ads/track-ads-js.md)
-      + [Chromecast上的追蹤廣告](sdk-implement/track-ads/track-ads-chromecast.md)
-      + [Roku追蹤廣告](sdk-implement/track-ads/track-ads-roku.md)
+      + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
+      + [Track Ads on iOS](sdk-implement/track-ads/track-ads-ios.md)
+      + [Track Ads on JavaScript](sdk-implement/track-ads/track-ads-js.md)
+      + [在Chromecast上追蹤廣告](sdk-implement/track-ads/track-ads-chromecast.md)
+      + [在Roku上追蹤廣告](sdk-implement/track-ads/track-ads-roku.md)
       + 實作標準廣告中繼資料 {#impl-std-ad-metadata}
          + [在 Android 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [在 iOS 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
@@ -78,26 +78,26 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
          + [在 Roku 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + 追蹤章節和區段 {#track-chapters}
       + [概述](sdk-implement/track-chapters/track-chapters-overview.md)
-      + [Android上的追蹤章節和區段](sdk-implement/track-chapters/track-chapters-android.md)
-      + [iOS上的追蹤章節和區段](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [JavaScript上的追蹤章節和區段](sdk-implement/track-chapters/track-chapters-js.md)
-      + [Chromecast上的追蹤章節和區段](sdk-implement/track-chapters/track-chapters-chromecast.md)
-      + [Roku上的追蹤章節和區段](sdk-implement/track-chapters/track-chapters-roku.md)
+      + [在Android上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-android.md)
+      + [在iOS上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-ios.md)
+      + [Track Chapters and Segments on JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
+      + [Track Chapters and Segments on Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
+      + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + 追蹤體驗品質 {#track-qos}
       + [概述](sdk-implement/track-qos/track-qos-overview.md)
       + [在Android上追蹤體驗品質](sdk-implement/track-qos/track-qos-android.md)
-      + [追蹤iOS上的體驗品質](sdk-implement/track-qos/track-qos-ios.md)
-      + [追蹤JavaScript上的體驗品質](sdk-implement/track-qos/track-qos-js.md)
-      + [追蹤Chromecast上的體驗品質](sdk-implement/track-qos/track-qos-chromecast.md)
-      + [追蹤Roku上的體驗品質](sdk-implement/track-qos/track-qos-roku.md)
+      + [在iOS上追蹤體驗品質](sdk-implement/track-qos/track-qos-ios.md)
+      + [在JavaScript上追蹤體驗品質](sdk-implement/track-qos/track-qos-js.md)
+      + [追蹤Chromecast的體驗品質](sdk-implement/track-qos/track-qos-chromecast.md)
+      + [追蹤Roku的體驗品質](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [概述](sdk-implement/track-errors/track-errors-overview.md)
-      + [追蹤Android上的錯誤](sdk-implement/track-errors/track-errors-android.md)
-      + [追蹤iOS上的錯誤](sdk-implement/track-errors/track-errors-ios.md)
-      + [追蹤JavaScript上的錯誤](sdk-implement/track-errors/track-errors-js.md)
-      + [追蹤Chromecast上的錯誤](sdk-implement/track-errors/track-errors-chromecast.md)
-      + [追蹤Roku上的錯誤](sdk-implement/track-errors/track-errors-roku.md)
-   + [選擇退出與隱私權](sdk-implement/opt-out-privacy.md)
+      + [在Android上追蹤錯誤](sdk-implement/track-errors/track-errors-android.md)
+      + [在iOS上追蹤錯誤](sdk-implement/track-errors/track-errors-ios.md)
+      + [在JavaScript上追蹤錯誤](sdk-implement/track-errors/track-errors-js.md)
+      + [在Chromecast上追蹤錯誤](sdk-implement/track-errors/track-errors-chromecast.md)
+      + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
+   + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
       + [沒有廣告的 VOD 播放](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
       + [具有前段廣告的 VOD 播放](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
@@ -113,7 +113,7 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
    + 驗證 {#validation}
       + [驗證概觀](sdk-implement/validation/validation-overview.md)
       + [測試 1: 標準播放](sdk-implement/validation/test1-standard-playback.md)
-      + [Test2：媒體中斷](sdk-implement/validation/test2-media-interrupt.md)
+      + [測試2:媒體中斷](sdk-implement/validation/test2-media-interrupt.md)
       + [測試呼叫詳細資訊](sdk-implement/validation/test-call-details.md)
       + [心率參數說明](sdk-implement/validation/heartbeat-params.md)
       + 除錯 {#debugging}
@@ -124,20 +124,20 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
    + Analytics in OTT Apps {#analytics-with-ott}
       + [追蹤應用程式狀態](sdk-implement/analytics-with-ott/track-app-states.md)
       + [追蹤應用程式動作](sdk-implement/analytics-with-ott/track-app-actions.md)
-      + [設定使用者ID](sdk-implement/analytics-with-ott/set-user-ids.md)
+      + [Set User IDs](sdk-implement/analytics-with-ott/set-user-ids.md)
       + [OTT 與 Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT 與 Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + 逐步指南 {#cookbook}
       + [在播放期間處理應用程式中斷](sdk-implement/cookbook/app-interrupts.md)
       + [解決 main:play 出現在廣告之間的問題](sdk-implement/cookbook/fix-ad-play-ad.md)
-      + [繼續非活動中會話](sdk-implement/cookbook/resuming-inactive.md)
+      + [繼續非活動會話](sdk-implement/cookbook/resuming-inactive.md)
       + [在 SceneGraph (Roku) 中進行追蹤](sdk-implement/cookbook/sdk-track-scenegraph.md)
-      + [SDK與啓動差異](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
+      + [SDK與啟動差異](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
    + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
       + [移轉概述](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [程式碼比較: 1.x 和 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [從 1.x 轉換為 2.x API](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API(Restful) {#media-collection-api}
++ Media Collection API(RESTful) {#media-collection-api}
    + [概述](media-collection-api/mc-api-overview.md)
    + API 參考 {#mc-api-ref}
       + [工作階段要求](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -170,7 +170,7 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
    + [區段](metrics-and-metadata/segments.md)
    + [計算量度](metrics-and-metadata/calculated-metrics.md)
 + Reporting and Analysis {#media-reports}
-   + [媒體報表啓用](media-reports/media-reports-enable.md)
+   + [媒體報告啟用](media-reports/media-reports-enable.md)
    + Media Default Reports {#media-default-reports}
       + [預設報表概述](media-reports/media-default-reports/default-reports-overview.md)
       + [媒體概述](media-reports/media-default-reports/media-reports-overview.md)
@@ -178,7 +178,7 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
       + [媒體播出時段](media-reports/media-default-reports/media-reports-daypart.md)
       + [媒體同時觀看者](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [取得同時觀看者 JSON 報表資料](media-reports/media-default-reports/get-concurrent-json.md)
-   + [媒體工作區範本](media-reports/media-workspace-templates.md)
-+ [同盟分析](federated-analytics.md)
+   + [Media Workspace Templates](media-reports/media-workspace-templates.md)
++ [同盟分析](data-sharing/federated-analytics.md)
 + 其他資源 {#additional-resources}
    + [文件更新](additional-resources/doc-updates.md)
