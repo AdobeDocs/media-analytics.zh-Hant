@@ -1,9 +1,9 @@
 ---
 seo-title: 在 Adobe Analytics 測量音訊和視訊
 title: 在 Adobe Analytics 測量音訊和視訊
-uuid: b3cbe240-b94 d-42b8-a99 c-0280334aa14
+uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
+source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: 1915261ec21679f510350663a472096abe7fdf63
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 它不包含舊有里程碑視訊實施的相關指示。我們鼓勵所有客戶儘量採用這兩個最新的媒體追蹤解決方案其中之一或兩項，以便充分利用其改進項目和擴充的測量功能。您可以查看下列[轉換為最新解決方案的優點](media-overview.md#section_cnj_5st_p1b)。雖然我們將繼續支援里程碑方法，但不會有任何計劃更新、修正或功能改進。如有任何問題，請洽詢您的 Adobe 客戶經理。
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. 它不包含有關舊版里程碑視訊實作的指示。 我們鼓勵所有客戶儘量採用這兩個最新的媒體追蹤解決方案其中之一或兩項，以便充分利用其改進項目和擴充的測量功能。您可以查看下列[轉換為最新解決方案的優點](media-overview.md#section_cnj_5st_p1b)。雖然我們將繼續支援追蹤視訊的里程碑方法，但不會有任何計畫的更新、修正或功能改進。 如有任何問題，請洽詢您的 Adobe 客戶經理。
 
 ## 概述 {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -39,14 +39,14 @@ Adobe 的媒體測量解決方案提供的部分優勢包括:
 
 * **及時分析 -** 使用跨越多個管道的關鍵效能量度 (例如持續時間) 來做出即時且可行的決定。主要內容事件是以 **10 秒鐘**&#x200B;的間隔來測量，以擷取其發生所有活動。廣告追蹤事件則為 **1 秒鐘**&#x200B;的發生間隔。
 * **促進參與 -** 透過較少的緩衝事件和瞭解廣告播放在內容中的時間和位置，提供較少干擾的流暢體驗，讓使用者回頭重複造訪，進而與使用者全面互動。
-* **全面性的圖片-** 結合所有內容發佈者的多個資料點，以獲得所有媒體活動的完整檢視，並透過 [Federated Analytics](federated-analytics.md) 功能衡量所有可能通道的參與與檢視/偵聽/偵聽。
+* **全貌-** 跨所有內容發佈商合併多個資料點，以取得所有媒體活動的完整檢視，並透過 [](data-sharing/federated-analytics.md) Federated Analytics功能衡量所有可能通道的參與度和檢視／監聽。
 * **提高粒度 -** 從最精細的層級評估檢視行為，包括個別訪客的每日時間、每分鐘的同時檢閱者/聽眾人數以及使用內容的平均持續時間。
 * **精準的測量 -** 跨越用來使用媒體的多項裝置進行測量，包括 OTT、智慧型手機、平板電腦、桌面等，以監控使用者的參與類型和習慣。
 * **區段 -** 套用分類至您的播放器、裝置、類型、章節，並顯示每一個類別如何影響整體的檢視/收聽次數，以及客戶對內容、音訊、廣告和複合上述項目的參與度。
 
 ## 心率優點對比里程碑優點 {#section_cnj_5st_p1b}
 
-Adobe Analytics for Media可透過兩種方式進行測量：舊版里程碑方法(僅限視訊)和目前的心率方法(音訊和視訊，包括Media SDK和Media Collection API)。我們建議使用「心率」方法進行測量，也鼓勵所有用戶端改用此版本 (如果還沒改用的話)，以充分利用下述的各項優點。
+Adobe Analytics for Media可透過兩種方式進行測量：舊版里程碑方法（僅限視訊）和目前的心率方法（音訊和視訊，在Media SDK和Media Collection API中都提供）。 我們建議使用「心率」方法進行測量，也鼓勵所有用戶端改用此版本 (如果還沒改用的話)，以充分利用下述的各項優點。
 
 舊版的「里程碑」方法是根據個別伺服器對 Analytics 伺服器的呼叫，可適用於影片開始、四分位數、持續期間和完成。「心率」方法提供更為強大的媒體追蹤解決方案，以 10 秒鐘間隔測量主要內容，提供強化的標準量度。此外，Adobe 從「里程碑」淬鍊出更為進步的功能，可透過心率使用的 Media SDK 或媒體收集 API 提供較為流暢的簡化實作程序。
 
@@ -106,8 +106,8 @@ For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup
 
 ## Transport Layer Security {#transport-layer-security}
 
-**TLS注意事項—** Adobe的安全性規範標準需要舊版安全性通訊協定的結束生命週期。為了持續符合不斷發展的安全性通訊協定標準，Adobe正致力於使用TLS1.2，以提供最新和最安全的版本。自2019年月20日起，Adobe僅支援TLS1.1或更新版本。在此項變更後，Adobe將不再透過部署TLS1.0的舊裝置或網頁瀏覽器收集使用者資料。移轉至TLS1.2可改善安全性。務必詳閱詳細資訊，並針對變更進行規劃，以順利轉移。
+**TLS Notice -- Adobe has security compliance standards that require the end-of-life of older security protocols.**&#x200B;為了持續符合不斷升級的安全通訊協定標準，Adobe正朝使用TLS 1.2的方向邁進，以取得最新和安全的使用版本。 自2019年2月20日起，Adobe將僅支援TLS 1.1或更新版本。 透過這項變更，Adobe將不再收集使用舊版裝置或部署TLS 1.0之網頁瀏覽器的使用者所收集的資料。移轉至TLS 1.2可改善安全性。 務必詳閱詳細資訊，並針對變更進行規劃，以順利轉移。
 
 >[!NOTE]
 >
->TLS目前已部署在網頁瀏覽器和其他要求安全交換網路的應用程式中，目前已採用最廣泛部署的安全性通訊協定。
+>TLS目前是部署最廣泛的安全通訊協定，適用於網頁瀏覽器和其他需要透過網路安全交換資料的應用程式。
