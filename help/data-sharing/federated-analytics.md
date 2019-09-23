@@ -3,7 +3,7 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
+source-git-commit: ef6e37791cd365b12d964b2a06831a563f605104
 
 ---
 
@@ -33,14 +33,14 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 
 * **媒體資料流合約:**&#x200B;傳送者與接收者在取得 Adobe Analytics 內音訊與視訊資料的存取權前，必須先締結適用於媒體資料流的 Adobe Analytics 合約。如需更多詳細資訊，請與您的帳戶團隊聯絡。
 * **同盟增補合約:**&#x200B;每一位傳送者與接收者在傳送或接收資料前，必須擁有一份與 Adobe 簽署的增補合約。每位客戶須各擁有一份增補合約，而非一段合作關係共用一份。如需更多詳細資訊，請與您的帳戶團隊聯絡。
-* **Media Analytics 實作:**&#x200B;傳送者必須在將作為同盟資料組一部分的所有播放器上實作 Media Analytics。僅 Media Analytics 資料才可用於同盟作業。See documentation: [Measuring audio and video in Adobe Analytics](media-overview.md)
+* **Media Analytics 實作:**&#x200B;傳送者必須在將作為同盟資料組一部分的所有播放器上實作 Media Analytics。僅 Media Analytics 資料才可用於同盟作業。See documentation: [Measuring audio and video in Adobe Analytics](/help/media-overview.md)
 
 * **Adobe 諮詢合約:**&#x200B;若要進行接收者和傳送者之間同盟規則的初始設定，建議您與諮詢服務人員合作檢閱資料並建立資料共享協定。
 
 ## 程序 {#section_byb_kb3_vbb}
 
 1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。
-1. 請從以下網址下載目前版本的表單：聯合 [體規則協定表。](/assets/federated_analytics_form.pdf)
+1. Download the current version of the form here: [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
 1. The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [免費下載 Acrobat。](https://get.adobe.com/reader/)
 1. 在能取得資料檔案的前提下，諮詢服務可提供接收者範例資料檔案，內含來自傳送者播放器的實際資料，以便進一步確認資料共享規則已妥善定義。
 1. 傳送者與接收者可確保資料共享協定符合雙方之間的所有合約要求。
