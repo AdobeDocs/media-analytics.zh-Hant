@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: 在 JavaScript 上實作標準廣告中繼資料
 title: 在 JavaScript 上實作標準廣告中繼資料
-uuid: 4aa10c5a-ae2 b-45d0-aad3-3f10028 ee7 c3
+uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 translation-type: tm+mt
 source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
@@ -18,9 +18,9 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 |---|---|
 | `StandardAdMetadata` | 用於在 Ad Object 上附加標準廣告中繼資料的常數 |
 
-## 實作標準廣告中繼資料
+## 實施標準廣告中繼資料
 
-對於標準廣告中繼資料，請使用您平台的索引鍵建立標準廣告中繼資料索引鍵值配對的字典：
+對於標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對的字典：
 
 ```js
 var adObject =  
