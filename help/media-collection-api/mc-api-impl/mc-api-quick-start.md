@@ -1,7 +1,7 @@
 ---
 seo-title: 快速入門
 title: 快速入門
-uuid: ca20不差的4-2c8f-406b-833e-b4883 a
+uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,12 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!TIP]
 >
->Gather the request data necessary for completing a successful [Session request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to the Media Analytics (MA) Collection API back-end server. 您可以手動傳送要求 (利用 `curl` 或 Postman 等)，進而迅速驗證要求資料。如此一來，您將能立即獲知要求中是否有因為資料類型錯誤或資訊錯誤而引起的問題。請使用 [JSON 驗證結構](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)來確認您提供的要求資料是否適當。
+>收集完成Media Analytics(MA)Collection API後端伺服 [器之Session請求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) ，所需的請求資料。 您可以手動傳送要求 (利用 `curl` 或 Postman 等)，進而迅速驗證要求資料。如此一來，您將能立即獲知要求中是否有因為資料類型錯誤或資訊錯誤而引起的問題。請使用 [JSON 驗證結構](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)來確認您提供的要求資料是否適當。
 
 1. 收集必要的標準 Adobe Analytics 和訪客資料；您必須提供這些資料才能執行任何 Experience Cloud 應用程式:
 
    * 訪客 Experience Cloud 組織 ID
-   * 訪客Experience Cloud使用者ID
+   * 訪客Experience cloud使用者ID
    * Analytics 報表套裝 ID
    * Analytics Tracking Server URL
 
@@ -49,9 +49,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >您必須在JSON請求主體中使用正確的資料類型。E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >您必須在JSON請求內文中使用正確的資料類型。 E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. You can check parameter types and mandatory versus optional requirements by checking the [JSON validation schemas.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
-1. 傳送階段作業要求至MA Collection API端點。如果您的要求裝載無效，請找出問題並再次嘗試，直到獲得 `201 Created` 回應為止。In this `curl` example, the JSON request body is in a file named `sample_data_session`:
+1. 將會話請求發送到MA Collection API端點。 如果您的要求裝載無效，請找出問題並再次嘗試，直到獲得 `201 Created` 回應為止。In this `curl` example, the JSON request body is in a file named `sample_data_session`:
 
    ```
    $ curl -i -d \ 
