@@ -102,11 +102,11 @@ Adobe Analytics for Media 隨業界發展與時俱進，提供強大的資料收
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(其他/新連接裝置)** |  | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see [Minimum Platform Version Support](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+若為Media SDK，請參閱「最 [低平台版本支援」](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## Transport Layer Security {#transport-layer-security}
+## 傳輸層安全性 {#transport-layer-security}
 
-**TLS Notice -- Adobe has security compliance standards that require the end-of-life of older security protocols.**&#x200B;為了持續符合不斷升級的安全通訊協定標準，Adobe正朝使用TLS 1.2的方向邁進，以取得最新和安全的使用版本。 自2019年2月20日起，Adobe將僅支援TLS 1.1或更新版本。 透過這項變更，Adobe將不再收集使用舊版裝置或部署TLS 1.0之網頁瀏覽器的使用者所收集的資料。移轉至TLS 1.2可改善安全性。 務必詳閱詳細資訊，並針對變更進行規劃，以順利轉移。
+**TLS通知** — adobe有安全性規範標準，要求舊版安全性通訊協定終止。 為了持續符合不斷升級的安全通訊協定標準，Adobe正朝使用TLS 1.2的方向邁進，以取得最新和安全的使用版本。 自2019年2月20日起，Adobe將僅支援TLS 1.1或更新版本。 透過這項變更，Adobe將不再收集使用舊版裝置或部署TLS 1.0之網頁瀏覽器的使用者所收集的資料。移轉至TLS 1.2可改善安全性。 務必詳閱詳細資訊，並針對變更進行規劃，以順利轉移。
 
 >[!NOTE]
 >
