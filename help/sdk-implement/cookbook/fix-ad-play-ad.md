@@ -1,7 +1,7 @@
 ---
-seo-title: 解決廣告之間出現的主要播放
-title: 解決廣告之間出現的主要播放
-uuid: 228b4812-c23 e-40c8-ae2 b-e15 ca69 b0 bc
+seo-title: 解決廣告間出現的主重頭戲
+title: 解決廣告間出現的主重頭戲
+uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
 source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
@@ -18,18 +18,18 @@ Media SDK 會將前述廣告間的間隙解讀為主要內容，因為它與任�
 
 ## IDENTIFICATION
 
-使用Adobe Debug或網路封包Sniffer(例如Charles)時，如果您在前段廣告插播期間，以此順序檢視下列心率呼叫：
+在使用Adobe Debug或網路封包嗅探器（例如Charles）時，如果您在前段廣告插播期間依此順序看到下列心率呼叫：
 
 * 工作階段開始: `s:event:type=start` &amp; `s:asset:type=main`
 * 廣告開始: `s:event:type=start` &amp; `s:asset:type=ad`
 * 廣告播放: `s:event:type=play` &amp; `s:asset:type=ad`
 * 廣告完成: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+* 主要內容播放： `s:event:type=play` &amp; `s:asset:type=main`**（非預期）**
 
 * 廣告開始: `s:event:type=start` &amp; `s:asset:type=ad`
 * 廣告播放: `s:event:type=play` &amp; `s:asset:type=ad`
 * 廣告完成: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+* 主要內容播放： `s:event:type=play` 與 `s:asset:type=main`**（預期）**
 
 ## 解析度
 
@@ -49,7 +49,7 @@ Media SDK 會將前述廣告間的間隙解讀為主要內容，因為它與任�
 
    >[!NOTE]
    >
-   >只有在上一個廣告未完成時才呼叫此。請考慮使用布林值來維持上一個廣告的 "`isinAd`" 狀態。
+   >只有在上一個廣告未完成時才呼叫此功能。 請考慮使用布林值來維持上一個廣告的 "`isinAd`" 狀態。
 
 * 為廣告資產建立物件例項，如 `adObject`。
 * Populate the ad metadata, `adCustomMetadata`.
@@ -58,7 +58,7 @@ Media SDK 會將前述廣告間的間隙解讀為主要內容，因為它與任�
 
 **在每個廣告資產完成時:**
 
-* **不要呼叫**
+* **不要打電話**
 
    >[!NOTE]
    >
