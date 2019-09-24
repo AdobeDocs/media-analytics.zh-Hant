@@ -1,7 +1,7 @@
 ---
 seo-title: 追蹤概述
 title: 追蹤概述
-uuid: 7b8e2f76-bc4 e-4721-8933-3e4453 b01788
+uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,7 +12,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->本文件涵蓋SDK2.x版追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
+>本檔案涵蓋SDK 2.x版的追蹤。 若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
 
 ## 播放器事件
 
@@ -22,7 +22,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 建立媒體物件
 * 填入中繼資料
-* 呼叫 `trackSessionStart`；例如： `trackSessionStart(mediaObject, contextData)`
+* 電 `trackSessionStart`話；例如： `trackSessionStart(mediaObject, contextData)`
 
 ### 媒體開始時
 
@@ -59,7 +59,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!TIP]
 >
->播放磁頭位置會設為設定和設定程式碼的一部分。如需詳細資訊， `getCurrentPlayheadTime`請參閱 [概述：一般實施准則。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>播放頭位置是設定和設定代碼的一部分。 如需詳細資訊，請 `getCurrentPlayheadTime`參閱 [概述：一般實施指引。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## 實作 {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -113,7 +113,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 追蹤使用者的播放意圖，而不是播放的開始。此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
+   >`trackSessionStart` 追蹤使用者的播放意圖，而非播放的開始。 此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
 
    >[!NOTE]
    >
@@ -127,7 +127,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 標示追蹤工作階段結尾。如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` 標示追蹤工作階段的結束。 如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **追蹤所有可能的暫停情況 -** 識別來自媒體播放器的暫停事件，並呼叫 `trackPause`。
 
@@ -142,7 +142,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >這可能與步驟中使用的事件來源相同。Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >這可能是步驟4中使用的相同事件來源。 Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 1. 從媒體播放器上聽取播放搜尋事件。在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋。
 1. 在來自媒體播放器的搜尋完成通知上，使用 `SeekComplete` 事件來追蹤搜尋的結尾.
@@ -234,5 +234,5 @@ if (e.type == “buffered”) {
 
 ## 驗證 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-如需驗證實施的詳細資訊，請參閱 [驗證。](/help/sdk-implement/validation/validation-overview.md)
+如需驗證實作的詳細資訊，請參閱驗 [證。](/help/sdk-implement/validation/validation-overview.md)
 
