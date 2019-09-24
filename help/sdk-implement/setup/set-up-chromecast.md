@@ -1,7 +1,7 @@
 ---
 seo-title: 設定 Chromecast
 title: 設定 Chromecast
-uuid: d664e394-02a2-4985-bad-be1 bcc44 fb2 b
+uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
 source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
@@ -14,13 +14,13 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 _我該使用 Chromecast JavaScript SDK 嗎? 還是說，我可以使用標準 JavaScript SDK 呢?_
 
-基於下列原因，正確答案是「Chromecast」：
+正確答案是「Chromecast」，原因如下：
 * 標準 JS SDK 中的 AppMeasurement 和 VisitorAPI 程式庫未經認證可在 OTT 平台上運作。在 Chromecast JS SDK 中，視訊心率程式庫 (VHL)、Analytics 和 VisitorAPI 均內建於單一、統一且經過 Chromecast 認證的 SDK 中。
 * Chromecast SDK 比起標準 JS SDK 更輕量得多。這對 OTT 平台使用的低階硬體非常重要。
 
 ## 必備條件
 
-* **取得活動訊號的有效設定參數**&#x200B;這些參數可在您設定媒體分析帳戶後由Adobe代表取得。
+* **取得Heartbeats的有效設定參數**&#x200B;在您設定媒體分析帳戶後，這些參數可從Adobe代表取得。
 * **在您的媒體播放器中提供下列功能:**
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * *提供播放器資訊的 API* - 此資訊包含媒體名稱和播放點位置等等的詳細內容。
