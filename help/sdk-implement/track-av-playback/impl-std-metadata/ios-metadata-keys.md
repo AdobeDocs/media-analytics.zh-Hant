@@ -1,7 +1,7 @@
 ---
 seo-title: iOS 中繼資料索引鍵
 title: iOS 中繼資料索引鍵
-uuid: 8eb90111-c9 dd-4ca7-9766-91530a ae6 af6
+uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -14,27 +14,27 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 開始日期 `ADBStandardMetadataKeys.h`:
 
-## 視訊中繼資料索引鍵
+## 視訊中繼資料金鑰
 
 | 常數名稱 | 說明 | 類型 |
 |---|---|---|
-| `ADBVideoMetadataKeySHOW` | Show | 視訊 |
-| `ADBVideoMetadataKeySEASON` | 季數 | 視訊 |
-| `ADBVideoMetadataKeyEPISODE` | 集數 | 視訊 |
-| `ADBVideoMetadataKeyASSET_ID` | 資產 | 視訊 |
-| `ADBVideoMetadataKeyGENRE` | 類型 | 視訊 |
-| `ADBVideoMetadataKeyFIRST_AIR_DATE` | 首播日期 | 視訊 |
-| `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | 首次數位化日期 | 視訊 |
-| `ADBVideoMetadataKeyRATING` | 排名 | 視訊 |
-| `ADBVideoMetadataKeyORIGINATOR` | 創作者 | 視訊 |
-| `ADBVideoMetadataKeyNETWORK` | 網路 | 視訊 |
-| `ADBVideoMetadataKeySHOW_TYPE` | 節目類型 | 視訊 |
-| `ADBVideoMetadataKeyAD_LOAD` | 廣告載入 | 視訊 |
-| `ADBVideoMetadataKeyMVPD` | mvpd | 視訊 |
-| `ADBVideoMetadataKeyAUTHORIZED` | 授權 | 視訊 |
-| `ADBVideoMetadataKeyDAY_PART` | 時段 | 視訊 |
-| `ADBVideoMetadataKeyFEED` | 資訊源 | 視訊 |
-| `ADBVideoMetadataKeySTREAM_FORMAT` | 資料流格式 | 視訊 |
+| `ADBVideoMetadataKeySHOW` | Show | 影片 |
+| `ADBVideoMetadataKeySEASON` | 季數 | 影片 |
+| `ADBVideoMetadataKeyEPISODE` | 集數 | 影片 |
+| `ADBVideoMetadataKeyASSET_ID` | 資產 | 影片 |
+| `ADBVideoMetadataKeyGENRE` | 類型 | 影片 |
+| `ADBVideoMetadataKeyFIRST_AIR_DATE` | 首播日期 | 影片 |
+| `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | 首次數位化日期 | 影片 |
+| `ADBVideoMetadataKeyRATING` | 排名 | 影片 |
+| `ADBVideoMetadataKeyORIGINATOR` | 創作者 | 影片 |
+| `ADBVideoMetadataKeyNETWORK` | 網路 | 影片 |
+| `ADBVideoMetadataKeySHOW_TYPE` | 節目類型 | 影片 |
+| `ADBVideoMetadataKeyAD_LOAD` | 廣告載入 | 影片 |
+| `ADBVideoMetadataKeyMVPD` | mvpd | 影片 |
+| `ADBVideoMetadataKeyAUTHORIZED` | 授權 | 影片 |
+| `ADBVideoMetadataKeyDAY_PART` | 時段 | 影片 |
+| `ADBVideoMetadataKeyFEED` | 資訊源 | 影片 |
+| `ADBVideoMetadataKeySTREAM_FORMAT` | 資料流格式 | 影片 |
 
 ## 音訊中繼資料索引鍵
 
