@@ -1,31 +1,31 @@
 ---
-seo-title: 設定概述
-title: 設定概述
-uuid: 06feeddb-b0 c8-4f7 d-90c8-e374 cdd1695
+seo-title: 設定概觀
+title: 設定概觀
+uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# 設定概述{#setup-overview}
+# 設定概觀{#setup-overview}
 
 >[!IMPORTANT]
 >
->下列指示適用於2.x Media SDK。若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md) 如需Primetime整合商，請參閱 _下面的Primetime媒體SDK文件_ 。
+>下列指示適用於2.x Media SDK。 若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md) 如需Primetime整合商，請參 _閱以下Primetime Media SDK檔案_ 。
 
 
 ## 最低平台版本支援 {#minimum-platform-version}
 
-下表說明每個SDK支援的最低平台版本，自2019年月19日起。
+下表說明自2019年2月19日起，每個SDK支援的最低平台版本。
 
-| OS/瀏覽器 | 需要最低版本 |
+| 作業系統／瀏覽器 | 需要的最小版本 |
 | --- | --- |
 | iOS 應用程式 | iOS 6+ |
-| Android | Android5.0+- Lollipop |
+| Android | Android 5.0+ —— 棒棒糖 |
 | Chrome | v22+ |
 | Mozilla | v27+ |
-| Safari | v+ |
+| Safari | v7+ |
 | IE | v11+ |
 
 ## 一般實施指引 {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
@@ -49,7 +49,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
    | `ssl` | 指出呼叫是否應透過 HTTPS 進行 | 無 | false |
    | `debugLogging` | 指出是否已啟用除錯記錄 | 無 | false |
 
-1. 實作 `MediaHeartbeatDelegate`。
+1. 實作 `MediaHeartbeatDelegate`.
 
    |  方法名稱  |  說明  | 必填 |
    | --- | --- | :---: |
@@ -58,7 +58,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >服務品質(QoS)物件為選用項目。若 QoS 資料可供您的播放器使用，且您希望追蹤該資料，則需要下列變數:
+   >服務質量(QoS)對象是可選的。 若 QoS 資料可供您的播放器使用，且您希望追蹤該資料，則需要下列變數:
 
    | 變數名稱 | 說明   | 必填 |
    | --- | --- | :---: |
@@ -77,7 +77,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
    >[!TIP]
    >
-   >`MediaHeartbeat` 需要傳送呼叫給Adobe `AppMeasurement` Analytics的例項。
+   >`MediaHeartbeat` 需要執行個 `AppMeasurement` 體來傳送呼叫至Adobe Analytics。
 
 1. 組合所有片段。
 
@@ -121,26 +121,26 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## 驗證 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-媒體分析追蹤實施會產生兩種追蹤呼叫類型：
+媒體分析追蹤實施會產生兩種類型的追蹤呼叫：
 
 * 媒體和廣告開始呼叫會直接傳送至Adobe Analytics(AppMeasurement)伺服器。
-* 心率呼叫會傳送至Media Analytics(活動訊號)追蹤伺服器、處理並傳遞至Adobe Analytics伺服器。
+* 心率呼叫會傳送至Media Analytics（心率）追蹤伺服器，並在該處處理，然後傳遞至Adobe Analytics伺服器。
 
-* **Adobe Analytics(AppMeasurement)伺服器**&#x200B;如需追蹤伺服器選項的詳細資訊，請參閱 [正確填入trackingServer和trackingServerSecure變數。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics(AppMeasurement)伺服器如需追蹤伺**&#x200B;服器選項的詳細資訊，請參 [閱正確填入trackingServer和trackingServerSecure變數。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >Experience Cloud訪客ID服務需要RDC追蹤伺服器或CNAME解析至RDC伺服器。
+   >Experience cloud訪客ID服務需要解析為RDC伺服器的RDC追蹤伺服器或CNAME。
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics(Heartbeats)伺服器**此格式一律為「`[your_namespace].hb.omtrdc.net`值「`[your_namespace]`指定您的公司，由Adobe提供。
+* ** Media Analytics(Heartbeats)伺服器**此格式一律為「`[your_namespace].hb.omtrdc.net`」。 「」的值會指`[your_namespace]`定您的公司，並由Adobe提供。
 
-媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。音訊追蹤目前適用於行動平台。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數:
+媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。音訊追蹤目前適用於行動平台。 在所有追蹤呼叫中，有一些要驗證的關鍵通用變數:
 
-## SDK1.x文件 {#section_acj_tkk_t2b}
+## SDK 1.x檔案 {#section_acj_tkk_t2b}
 
-| Video Analytics1.x SDK | 開發人員指南(僅限PDF) |
+| 視訊分析1.x SDK |  開發人員指南（僅限PDF） |
 | --- | --- |
 | Android | [為 Android 進行配置 ](vhl-dev-guide-v15_android.pdf) |
 | AppleTV | [為 AppleTV 進行配置 ](vhl-dev-guide-v1x_appletv.pdf) |
@@ -152,4 +152,4 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ## Primetime Media SDK 文件 {#primetime-docs}
 
-* [Primetime使用者指引](https://helpx.adobe.com/primetime/user-guide.html)
+* [Primetime使用指南](https://helpx.adobe.com/primetime/user-guide.html)
