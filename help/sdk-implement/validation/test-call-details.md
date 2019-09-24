@@ -1,7 +1,7 @@
 ---
 seo-title: 測試呼叫詳細資料
 title: 測試呼叫詳細資料
-uuid: d3a0e62f-2fc3-413d-ac56-adbhone9 b3 e983
+uuid: d3a0e62f-2fc3-413d-ac56-adbc9b3e983
 translation-type: tm+mt
 source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
@@ -10,7 +10,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 # 測試呼叫詳細資料{#test-call-details}
 
-## 啓動媒體播放器 {#start-the-media-player}
+## 啟動媒體播放器 {#start-the-media-player}
 
 ### Adobe Analytics(AppMeasurement)開始呼叫 {#aa-start-call}
 
@@ -31,7 +31,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 線性資料流的長度應設定為目前節目的最佳預估值。
 
-### Adobe Analytics(AppMeasurement)中的標準中繼資料開始呼叫 {#std-metadata-aa}
+### Adobe Analytics(AppMeasurement)開始呼叫中的標準中繼資料 {#std-metadata-aa}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -50,14 +50,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics(AppMeasurement)中的自訂中繼資料開始呼叫 {#custom-metadata-aa}
+### Adobe Analytics(AppMeasurement)開始呼叫中的自訂中繼資料 {#custom-metadata-aa}
 
 | 參數 |  值 (範例)  |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### 媒體分析(活動訊號)開始呼叫 {#ma-start-call}
+### 媒體分析（心率）開始呼叫 {#ma-start-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -77,7 +77,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 視訊開始時的線性資料流播放點位置，應設定為目前節目開始後經過的秒數，而不是 0。
 
-### Media Analytics中的標準中繼資料(活動訊號)開始呼叫 {#std-metadata-ma}
+### Media Analytics（心率）開始呼叫中的標準中繼資料 {#std-metadata-ma}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -96,14 +96,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Media Analytics中的自訂中繼資料(活動訊號)開始呼叫 {#custom-metadata-ma}
+### Media Analytics（心率）中的自訂中繼資料開始呼叫 {#custom-metadata-ma}
 
 | 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### 媒體分析(活動訊號) Adobe Analytics啓動呼叫 {#ma-aa-start}
+### Media Analytics（心率）Adobe Analytics Start呼叫 {#ma-aa-start}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -118,7 +118,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **附註:**
 
-* 此呼叫表示Media SDK要求將Adobe Analytics `pev2=ms_s` 呼叫傳送至Adobe Analytics(AppMeasurement)伺服器。
+* 此呼叫表示Media SDK已要求將Adobe Analytics呼 `pev2=ms_s` 叫傳送至Adobe Analytics(AppMeasurement)伺服器。
 * 該呼叫不含自訂中繼資料。
 
 ## 檢視廣告播放 {#view-ad-playback}
@@ -172,7 +172,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### 媒體分析(活動訊號)廣告開始呼叫 {#ma-ad-start-call}
+### 媒體分析（心率）廣告開始呼叫 {#ma-ad-start-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -210,14 +210,14 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### 媒體分析(活動訊號)中的自訂中繼資料(活動訊號) {#custom-metadata-ma-ad-start}
+### Media Analytics（心率）廣告開始呼叫中的自訂中繼資料 {#custom-metadata-ma-ad-start}
 
 | 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### 媒體分析(活動訊號) Adobe Analytics Ad Start呼叫 {#ma-aa-ad-start-call}
+### Media Analytics（心率）Adobe Analytics廣告開始呼叫 {#ma-aa-ad-start-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -229,7 +229,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | VOD |
 | `s:asset:type` | ad |
 
-### 媒體分析(活動訊號)廣告播放呼叫 {#ma-ad-play-call}
+### 媒體分析（心率）廣告播放呼叫 {#ma-ad-play-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -241,7 +241,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### 媒體分析(活動訊號)廣告暫停呼叫 {#ma-ad-pause-call}
+### 媒體分析（心率）廣告暫停呼叫 {#ma-ad-pause-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -253,7 +253,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### 媒體分析(活動訊號) Adobe Analytics廣告完成呼叫 {#ma-aa-ad-complete-call}
+### 媒體分析（心率）Adobe Analytics廣告完整呼叫 {#ma-aa-ad-complete-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -267,7 +267,7 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ## 播放主要內容 {#play-main-content}
 
-### 媒體分析(活動訊號)播放呼叫 {#ma-play-call}
+### 媒體分析（心率）播放呼叫 {#ma-play-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -282,12 +282,12 @@ source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 **附註:**
 
-* 播放磁頭位置在每次播放呼叫時應增加10秒。
+* 每次播放呼叫的播放磁頭位置應增加10秒。
 * `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
 
 ## 暫停主要內容 {#pause-main-content}
 
-### 媒體分析(活動訊號)暫停呼叫 {#ma-pause-call}
+### 媒體分析（心率）暫停呼叫 {#ma-pause-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
