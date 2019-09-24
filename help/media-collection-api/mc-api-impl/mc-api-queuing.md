@@ -1,7 +1,7 @@
 ---
 seo-title: 在工作階段回應緩慢時，將事件加入佇列
 title: 在工作階段回應緩慢時，將事件加入佇列
-uuid: 39ea59d9-89d3-4087-a806-48a43 ef0 c98
+uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # 在工作階段回應緩慢時，將事件加入佇列{#queueing-events-when-sessions-response-is-slow}
 
-媒體收集 API 為 RESTful API，這表示您可以發出 HTTP 要求並等候回應。This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. 這很重要，因為所有後續追蹤呼叫都需要使用工作階段ID。
+媒體收集 API 為 RESTful API，這表示您可以發出 HTTP 要求並等候回應。This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. 這很重要，因為所有後續追蹤呼叫都需要作業ID。
 
 It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
 
