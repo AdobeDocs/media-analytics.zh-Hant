@@ -1,16 +1,16 @@
 ---
 seo-title: 心率參數說明
 title: 心率參數說明
-uuid: e9dda32-0952-43d-a702-49f5 b1 bfd8 cf
+uuid: e9dda32-0952-43d0-a702-49f5b1bfd8cf
 translation-type: tm+mt
 source-git-commit: 10a5d921953339bef1cde2f802eb9ce0cb1bbe4b
 
 ---
 
 
-# 媒體分析(活動訊號)參數說明{#heartbeat-parameter-descriptions}
+# 媒體分析（心率）參數說明{#heartbeat-parameter-descriptions}
 
-Adobe在Media Analytics(活動訊號)伺服器上收集和處理的Media Analytics參數清單：
+Adobe在Media Analytics（心率）伺服器上收集和處理的Media Analytics參數清單：
 
 ## 所有事件
 
@@ -19,29 +19,29 @@ Adobe在Media Analytics(活動訊號)伺服器上收集和處理的Media Analyti
 | s:event:type | Media SDK | (Required)<br/><br/>The type of the event being tracked. 事件類型: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | Media SDK | (Required)<br/><br/>The timestamp of the last event of the same type in this session. 值為-1。 |
 | l:event:ts | Media SDK | (Required)<br/><br/>The timestamp of the event. |
-| l:event:duration | Media SDK | (Required)<br/><br/>This value is set internally (in milliseconds) by the Media SDK, not by the player. 它是用於運算後端量度所花時間。例如：a. media. totalTimePlayed的計算方式是所有產生之Play(type= play)心率的期間總和。<br/>*注意：* 對於某些事件，此參數會設為0，因為它們是「狀態變更事件」(例如，type= complete，type= paper_ complete，or type= bitrate_ change。) |
-| l:event:playhead | VideoInfo | (Required)<br/><br/>The playhead was inside the currently active asset (main or ad), when the event was recorded. |
+| l:event:duration | Media SDK | (Required)<br/><br/>This value is set internally (in milliseconds) by the Media SDK, not by the player. 它是用於運算後端量度所花時間。例如：a.media.totalTimePlayed的計算方式為所有產生的播放(type=play)心率的持續時間總和。 <br/>** 注意：對於某些事件，此參數設定為0，因為它們是「狀態更改事件」（例如，type=complete、type=chapter_complete或type=bitrate_change）。 |
+| l:event:playhead | 視訊資訊 | (Required)<br/><br/>The playhead was inside the currently active asset (main or ad), when the event was recorded. |
 | s:event:sid | Media SDK | (Required)<br/><br/>The session ID (a randomly generated string). 某個工作階段 (視訊 + 廣告) 中的所有事件應該是相同的。 |
-| l：資產：uration/l：資產：長度 <br/>(從長度持續時間重新命名) | VideoInfo | (Required)<br/><br/>The video asset length of the main asset. |
+| l:asset:duration / l:asset:length <br/>（從長度持續時間重新命名） | 視訊資訊 | (Required)<br/><br/>The video asset length of the main asset. |
 | s:asset:publisher | MediaHeartbeatConfig | (Required)<br/><br/>The publisher of the asset. |
-| s:asset:video_id | VideoInfo | (Required)<br/><br/>An ID uniquely identifying the video in the publisher's catalog. |
+| s:asset:video_id | 視訊資訊 | (Required)<br/><br/>An ID uniquely identifying the video in the publisher's catalog. |
 | s:asset:type | Media SDK | (Required)<br/><br/>The asset type (main or ad). |
-| s:stream:type | VideoInfo | (必要)<br/><br/>串流類型。可以是下列其中一項： <ul> <li> live </li> <li> VOD </li> <li> 線性 </li> </ul> |
+| s:stream:type | 視訊資訊 | （必要）<br/><br/>串流類型。 可以是下列其中一項： <ul> <li> live </li> <li> VOD </li> <li> 線性 </li> </ul> |
 | s:user:id | 行動應用程式測量 VisitorID 的設定物件 | (Optional)<br/><br/>User's specifically set Visitor ID. |
 | s:user:aid | Experience Cloud 組織 | (Optional)<br/><br/>The user's Analytics Visitor ID value. |
 | s:user:mid | Experience Cloud 組織 | (Required)<br/><br/>The user's Experience cloud visitor ID value. |
 | s:cuser:customer_user_ids_x | MediaHeartbeatConfig | (Optional)<br/><br/>All customer user IDs set on Audience Manager. |
 | l:aam:loc_hint | MediaHeartbeatConfig | (Required)<br/><br/>AAM data sent on each payload after aa_start |
 | s:aam:blob | MediaHeartbeatConfig | (Required)<br/><br/>AAM data sent on each payload after aa_start |
-| s:sc:rsid | 報表套裝 ID。 | (必要)<br/><br/>應傳送報表的Adobe Analytics RSID。 |
-| s:sc:tracking_server | MediaHeartbeatConfig | (必要)<br/><br/>Adobe Analytics追蹤伺服器。 |
+| s:sc:rsid | 報表套裝 ID。 | （必要）<br/><br/>Adobe Analytics RSID，其中應傳送報表。 |
+| s:sc:tracking_server | MediaHeartbeatConfig | （必要）<br/><br/>Adobe Analytics追蹤伺服器。 |
 | h:sc:ssl | MediaHeartbeatConfig | (Required)<br/><br/>Whether the traffic is over HTTPS (if set to 1) or over HTTP (is set to 0). |
 | s:sp:ovp | MediaHeartbeatConfig | (Optional)<br/><br/>Set to "primetime" for Primetime players, or the actual OVP for other players. |
 | s:sp:sdk | MediaHeartbeatConfig | (Required)<br/><br/>The OVP version string. |
-| s:sp:player_name | VideoInfo | (Required)<br/><br/>Video player name (the actual player software, used to identify the player). |
+| s:sp:player_name | 視訊資訊 | (Required)<br/><br/>Video player name (the actual player software, used to identify the player). |
 | s:sp:channel | MediaHeartbeatConfig | (Optional)<br/><br/>The channel where the user is watching the content. 若為行動應用程式，則為應用程式名稱。若為網站，則為網域名稱。 |
-| s:sp:hb_version | Media SDK | (必要)<br/><br/>發佈呼叫之Media SDK程式庫的版本號碼。 |
-| l:stream:bitrate | QOSMO | (Required)<br/><br/>The current value of the stream bitrate (in bps). |
+| s:sp:hb_version | Media SDK | （必要）<br/><br/>發出呼叫之Media SDK程式庫的版本號碼。 |
+| l:stream:bitrate | QoSInfo | (Required)<br/><br/>The current value of the stream bitrate (in bps). |
 
 ## 錯誤事件
 
@@ -54,11 +54,11 @@ Adobe在Media Analytics(活動訊號)伺服器上收集和處理的Media Analyti
 
 | 名稱 | 資料來源 | 說明   |
 | ---  | --- | --- |
-| s:asset:ad_id | AdInfo | (必要)<br/><br/>廣告的名稱。 |
+| s:asset:ad_id | AdInfo | （必要）<br/><br/>廣告的名稱。 |
 | s:asset:ad_sid | Media SDK | (Required)<br/><br/>A unique identifier generated by the Media SDK, appended to all ad-related pings. |
 | s:asset:pod_id | Media SDK | (Required)<br/><br/>Pod ID inside the video. 系統會依據下列公式自動運算此值: <br/>`MD5(video_id) + `<br/>`"_" + `<br/>`[pod index]` |
-| s:asset:pod_position | AdDreakInfo | (Required)<br/><br/>Index of the ad inside the pod (the first ad has index 0, the second ad has index 1, etc.). |
-| s:asset:resolver | AdDreakInfo | (必要)<br/><br/>廣告解譯器。 |
+| s:asset:pod_position | AdBreakInfo | (Required)<br/><br/>Index of the ad inside the pod (the first ad has index 0, the second ad has index 1, etc.). |
+| s:asset:resolver | AdBreakInfo | （必要）<br/><br/>廣告解析程式。 |
 | s:meta:custom_ad_metadata.x | MediaHeartbeat | (Optional)<br/><br/>The custom ad metadata. |
 
 ## 章節事件
@@ -71,11 +71,11 @@ Adobe在Media Analytics(活動訊號)伺服器上收集和處理的Media Analyti
 | l:stream:chapter_pos | ChapterInfo | (Required)<br/><br/>The chapter's index in the list of chapters (starting with 1). |
 | l:stream:chapter_offset | ChapterInfo | (Required)<br/><br/>The chapter's offset (expressed in seconds) inside the main content, excluding ads. |
 | l:stream:chapter_length | ChapterInfo | (Required)<br/><br/>The chapter's duration (expressed in seconds). |
-| s:meta:custom_chapter_metadata.x | ChapterInfo | (可選)<br/><br/>自訂章節中繼資料。 |
+| s:meta:custom_chapter_metadata.x | ChapterInfo | （可選）自訂<br/><br/>章節中繼資料。 |
 
 ## 作業結束事件
 
 | 名稱 | 資料來源 | 說明   |
 | ---  | --- | --- |
-| s:event:type=end | Media SDK | (必要) <br/><br/>`end``close` |
+| s:event:type=end | Media SDK | （必要）<br/><br/> , `end``close` |
 
