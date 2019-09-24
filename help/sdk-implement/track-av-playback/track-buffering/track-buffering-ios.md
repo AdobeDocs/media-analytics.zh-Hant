@@ -1,7 +1,7 @@
 ---
 seo-title: 在 iOS 上追蹤緩衝
 title: 在 iOS 上追蹤緩衝
-uuid: 4f4db23a-489b-4b41-bb6 e-393ec64 d52 a2
+uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `ADBMediaHeartbeatEventBufferStart` | 用於追蹤緩衝開始事件的常數 |
 | `ADBMediaHeartbeatEventBufferComplete` | 用於追蹤緩衝完成事件的常數 |
 
-## 實施緩衝
+## 實現緩衝
 
 1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝:
 
