@@ -1,7 +1,7 @@
 ---
 seo-title: 設定 Roku
 title: 設定 Roku
-uuid: 904dfda0-4872-41da-b4 ab-212e81156633
+uuid: 904dfda0-4782-41da-b4ab-212e81156633
 translation-type: tm+mt
 source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
@@ -12,7 +12,7 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ## 必備條件
 
-* **取得活動訊號的有效設定參數**&#x200B;這些參數可在您設定媒體分析帳戶後由Adobe代表取得。
+* **取得Heartbeats的有效設定參數**&#x200B;在您設定媒體分析帳戶後，這些參數可從Adobe代表取得。
 * **在您的媒體播放器中提供下列功能:**
    * _訂閱播放器事件專用的 API_ - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * _提供播放器資訊的 API_ - 此資訊包含媒體名稱和播放點位置等等的詳細內容。
@@ -27,11 +27,11 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
 
 1. 將[下載的](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Roku 程式庫新增至專案。
 
-   1. `AdobeMobileLibrary-2.*-Roku.zip` 下載檔案包含下列軟體元件：
+   1. The `AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:
 
-      * `adbmobile.brs`：此程式庫檔案將包含在Roku應用程式來源資料夾中。
+      * `adbmobile.brs`:此程式庫檔案將包含在您的Roku應用程式來源檔案夾中。
 
-      * `ADBMobileConfig.json`：您的應用程式會自訂此SDK組態檔。
+      * `ADBMobileConfig.json`:此SDK設定檔會針對您的應用程式自訂。
    1. 新增程式庫檔案和 JSON 設定檔案至您的專案來源。
 
       用來設定 Adobe Mobile 的 JSON 有一個媒體心率專用的索引鍵，稱為 `mediaHeartbeat`。其集結了多種媒體心率的設定參數。
@@ -127,8 +127,8 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    |  方法   | 說明 |
    | --- | --- |
    | `visitorMarketingCloudID` | Retrieves the Experience Cloud visitor ID from the visitor ID service.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | 透過 Experience Cloud 訪客 ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。This method corresponds to `setCustomerIDs`. For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | 用來設定SDK上的Roku ID(RIA)。例如: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>`"<sample_roku_identifier_for_advertising>")`<br/><br/><br/>使用Roku SDK [GetTriDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API取得Roku ID for Advertising(RIA)。 |
+   | `visitorSyncIdentifiers` | 透過 Experience Cloud 訪客 ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應 `setCustomerIDs`。 For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | 用於在SDK上設定廣告的Roku ID(RIDA)。 例如: <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` 使 <br/><br/><br/>用Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API取得廣告的Roku ID(RIDA)。 |
 
    <!--
     Roku Api Reference: 
