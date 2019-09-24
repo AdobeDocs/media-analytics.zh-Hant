@@ -16,17 +16,17 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
 * **行動應用程式 -** VA 資料庫會依照 `AdobeMobile` 資料庫的隱私權和退出設定。若要退出追蹤，必須使用 `AdobeMobile` 資料庫。如需 `AdobeMobile` 資料庫的退出和隱私權設定詳細資訊，請參閱[退出和隱私權設定](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html)。
 * **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。若要退出追蹤，您需要從訪客 API 服務退出。For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **OTT Apps(Chromecast，Roku)-** OTT SDK提供通用資料保護規則(GDPR)-現成API，可讓您設定 `opt` 資料收集與傳輸的狀態標幟，並擷取本機儲存的身份。
+* **OTT Apps(Chromecast, Roku)**`opt` - OTT SDK提供通用資料保護規則(GDPR)適用的API，可讓您設定資料收集和傳輸的狀態標幟，並擷取本機儲存的身分。
 
    >[!NOTE]
    >
-   >如果隱私權狀態設定為退出，則也會停用媒體心率追蹤呼叫。
+   >如果隱私權狀態設為選擇退出，媒體心率追蹤呼叫也會停用。
 
    您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料:
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. 這會控制持續使用的初始設定，直到在程式碼中變更為止。
 
-   * `ADBMobile().setPrivacyStatus()` 方法。
+   * 方 `ADBMobile().setPrivacyStatus()` 法。
 
       * **選擇退出:**
 
@@ -43,7 +43,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
             ```
          >[!IMPORTANT]
          >
-         >當使用者退出追蹤時，所有保存的裝置資料和ID都會被清除，直到使用者選擇返回為止。
+         >當使用者退出追蹤時，所有持續的裝置資料和ID都會被清除，直到使用者返回為止。
 
       * **再次加入:**
 
@@ -79,7 +79,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
 >[!IMPORTANT]
 >
->擷取所有識別碼的方法會取得SDK已知並持續存在的所有使用者身分識別。您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
+>擷取所有識別碼的方法會取得SDK已知並持續存在的所有使用者識別碼。 您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
 
 存放在本機的身分識別資料會以 JSON 字串傳回，其中包括:
 
