@@ -1,7 +1,7 @@
 ---
 seo-title: 傳送 QoE 資料
 title: 傳送 QoE 資料
-uuid: 52a02d92-195d-4ce8-8ce3-585ec68969f9
+uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
