@@ -1,7 +1,7 @@
 ---
 seo-title: 沒有廣告的 VOD 播放
 title: 沒有廣告的 VOD 播放
-uuid: ee2a1b79-2c2f-42e1-8e81-b62 bbdd0 d8 cb
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: tm+mt
 source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
@@ -17,13 +17,13 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 這可以是使用者點按播放或自動播放事件中的一個。 |
-| 媒體的第一個影格 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，在播放期間便會每 10 秒傳送心率。 |
+| 媒體的第一個畫格 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，在播放期間便會每 10 秒傳送心率。 |
 | 內容播放 |  | 內容心率 |  |
 | 內容已完成 | `trackComplete` | 心率內容完成 | *完成*&#x200B;表示已到播放點的結尾。 |
 
 ## 參數 {#section_45D7B10031524411B91E2C569F7818B0}
 
-您在心率內容開始呼叫上看到的許多相同值，也會在 Adobe Analytics `Content Start` 呼叫上看到。Adobe會使用許多參數來填入各種媒體報表，但下列表格中僅列出最重要的參數：
+您在心率內容開始呼叫上看到的許多相同值，也會在 Adobe Analytics `Content Start` 呼叫上看到。Adobe使用許多參數來填入各種媒體報表，但下表僅列出最重要的參數：
 
 ### 心率內容開始
 
@@ -31,11 +31,11 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 |---|---|---|
 | `s:sc:rsid` | &lt;Your Adobe Report Suite ID&gt; |  |
 | `s:sc:tracking_server` | &lt;Your Analytics Tracking Server URL&gt; |  |
-| `s:user:mid` | 必須設定 | Should match the mid value on the `Adobe Analytics Content Start` call. |
+| `s:user:mid` | 必須設定 | 應符合呼叫的中 `Adobe Analytics Content Start` 值。 |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
 | `s:asset:media_id` | &lt;您的媒體名稱&gt; |  |
-| `s:meta:*` | 可選 | 媒體上設定的自訂中繼資料。 |
+| `s:meta:*` | 可選 | 在媒體上設定的自訂中繼資料。 |
 
 ## 心率內容播放 {#section_2ABBD51D3A6D45ABA92CC516E414417A}
 
@@ -48,14 +48,14 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## 內容心率 {#section_3B5945336E464160A94518231CEE8F53}
 
-在媒體播放期間，計時器每10秒至少會傳送一個心率。這些心率包含關於播放、廣告、緩衝等等的資訊。每個心率的確切內容不在本文件的範圍，但重要問題為，當播放繼續時會一致地觸發心率。
+在媒體播放期間，計時器至少每10秒發送一個心跳。 這些心率包含關於播放、廣告、緩衝等等的資訊。每個心率的確切內容不在本文件的範圍，但重要問題為，當播放繼續時會一致地觸發心率。
 
 在內容心率中，尋找下列參數:
 
 | 參數 | 值 | 附註   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;播放磁頭位置&gt;50，60,70 | 此參數會反映播放點目前的位置。 |
+| `l:event:playhead` | &lt;playhead position&gt;，例如50,60,70 | 此參數會反映播放點目前的位置。 |
 
 ## 心率內容完成 {#section_33BCC4C3181940C39446A57C25D82179}
 
