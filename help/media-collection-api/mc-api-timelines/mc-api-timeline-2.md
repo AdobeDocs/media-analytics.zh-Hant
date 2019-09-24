@@ -1,7 +1,7 @@
 ---
 seo-title: 時間軸 2 - 使用者放棄工作階段
 title: 時間軸 2 - 使用者放棄工作階段
-uuid: 74b89e8f-ef56-4e0 c-b9 a8-40739e15 b4 cf
+uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD、前段廣告、中段廣告、使用者提早放棄內容
 
-下列圖表說明播放磁頭時間軸和使用者動作的對應時間軸。每個動作及其隨附請求的詳細資訊如下。
+下圖說明播放頭時間軸和使用者動作的對應時間軸。 以下列出每項行動及其隨附要求的詳細資料。
 
 
 ![](assets/va_api_content_2.png)
@@ -23,7 +23,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 動作詳細資訊
 
-### Action 1 - Start session {#Action-1}
+### 操作1 —— 啟動會話 {#Action-1}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -31,7 +31,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **實施詳細資料**
 
-這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;視訊。It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器狀態尚未進入「正在播放」，而是「正在開始」。[要求的作業參數](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) 必須包含在請求主體的 `params` 地圖中。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
+這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;視訊。It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. 播放器狀態尚未進入「正在播放」，而是「正在開始」。[必要的工作階段參數](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) ，必須包含在請 `params` 求主體的地圖中。  在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
 
 **範例要求內文**
 
@@ -58,7 +58,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### 動作2 - Ping計時器開始 {#Action-2}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -66,9 +66,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **實施詳細資料**
 
-啓動應用程式的ping計時器。接著，第一個ping事件應在有前段廣告時觸發1秒，其他廣告則為10秒。
+啟動應用程式的ping計時器。 如果有前段廣告，則先ping事件應觸發1秒，否則觸發10秒。
 
-### Action 3 - Ad break start {#Action-3}
+### 動作3 —— 廣告插播開始 {#Action-3}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -94,7 +94,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### 動作4 —— 廣告開始 {#Action-4}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -129,7 +129,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### 動作5 - Ad ping {#Action-5}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -137,7 +137,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 **實施詳細資料**
 
-每秒Ping後端。(未顯示後續的廣告轉換率，但符合簡短程度)。
+每1秒Ping一次後端。 （為了簡短起見，未顯示後續的和ping。）
 
 **範例要求內文**
 
@@ -151,7 +151,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### 動作6 —— 廣告完成 {#Action-6}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -173,7 +173,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 7 - Ad break complete {#Action-7}
+### 動作7 —— 廣告插播完成 {#Action-7}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -195,7 +195,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 8 - Play content {#Action-8}
+### 動作8 —— 播放內容 {#Action-8}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -218,7 +218,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 9 - Ping {#Action-9}
+### 動作9 - Ping {#Action-9}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -240,7 +240,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 10 - Ping {#Action-10}
+### 動作10 - Ping {#Action-10}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -262,7 +262,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 11 - Error {#Action-11}
+### 動作11 —— 錯誤 {#Action-11}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -283,7 +283,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 12 - Play content {#Action-12}
+### 動作12 —— 播放內容 {#Action-12}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -305,7 +305,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 13 - Ping {#Action-13}
+### 動作13 - Ping {#Action-13}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -327,7 +327,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 14 - Ad break start {#Action-14}
+### 動作14 —— 廣告插播開始 {#Action-14}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -353,7 +353,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 15 - Ad start {#Action-15}
+### 動作15 —— 廣告開始 {#Action-15}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
@@ -386,7 +386,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 }
 ```
 
-### Action 16 - Close app {#Action-16}
+### 動作16 —— 關閉應用程式 {#Action-16}
 
 | Action | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
