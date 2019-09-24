@@ -1,7 +1,7 @@
 ---
 seo-title: 在 iOS 上追蹤錯誤
 title: 在 iOS 上追蹤錯誤
-uuid: 18ea93d3-5948-4375-bcdb-72309268e38 d
+uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -26,5 +26,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
 
