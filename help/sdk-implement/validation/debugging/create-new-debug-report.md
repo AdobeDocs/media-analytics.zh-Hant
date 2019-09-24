@@ -1,7 +1,7 @@
 ---
 seo-title: 建立新的 Debug 報表
 title: 建立新的 Debug 報表
-uuid: 438fde3d-98f9-46d1-9672-75d204261568
+uuid: 438fde3d-98f9-46d1-9672-75d204361568
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -28,11 +28,11 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
          * [!UICONTROL 「Analytics &gt; 管理員 &gt; 公司設定 &gt; 網站服務」]
          * [!UICONTROL 「Analytics &gt; 管理員 &gt; 使用者管理 &gt; 使用者 &gt; 個別使用者設定」]若要為新使用者建立網站服務 API 認證，請在[!UICONTROL 「使用者管理」]中將使用者新增到&#x200B;**「網站服務存取」**&#x200B;使用者群組。
       * [!UICONTROL 預設端點] -此欄位中的資料由Adobe提供，無法變更。
-      * [!UICONTROL 額外端點] -新增 `CNAMES`、如果您使用的追蹤伺服器 `metrics.companyname.com`
-   * **視訊活動訊號(Media Analytics)**
+      * [!UICONTROL 額外端點] -如果您 `CNAMES`使用，則新增用於追蹤伺服器(例如 `metrics.companyname.com`
+   * **視訊心率（媒體分析）**
 
       * [!UICONTROL 預設端點] -此欄位中的資料由Adobe提供，無法變更。
-      * [!UICONTROL 額外端點] -新增 `CNAMES`、在追蹤伺服器上使用，例如 `metrics.companyname.com`：
+      * [!UICONTROL 額外端點] -如 `CNAMES`果您使用端點，請為追蹤伺服器新增，例如 `metrics.companyname.com`:
 
 
 
