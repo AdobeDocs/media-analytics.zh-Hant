@@ -1,7 +1,7 @@
 ---
 seo-title: 媒體同時檢閱者
 title: 媒體同時檢閱者
-uuid: e61c50e5-8196-4538-b67 c-ebc01 c6 e6 ba7
+uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
@@ -14,7 +14,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 >[!TIP]
 >
->如果選取的間隔不是整個日，則不會顯示資料。
+>如果所選間隔不是整天，則不會顯示任何資料。
 
 ![](assets/video-concurrent-viewers.png)
 
