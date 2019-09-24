@@ -18,7 +18,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒體播放器API來識別與QoS和錯誤追蹤相關的變數。
 
-## Player events {#player-events}
+## 播放器事件 {#player-events}
 
 ### 所有位元速率變更事件
 
@@ -37,7 +37,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!TIP]
    >
-   >只有當您打算追蹤QoS時才需要這些變數。
+   >只有在您計畫追蹤QoS時，才需要這些變數。
 
    | 變數 | 說明 | 必要 |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >更新QoS物件，並呼叫每個位元速率變更上的位元速率變更事件。如此可提供最精確的 QoS 資料。
+   >更新QoS物件，並在每次位元速率變更時呼叫位元速率變更事件。 如此可提供最精確的 QoS 資料。
 
 1. 請確定 `getQoSObject()` 方法會傳回最新的 QoS 資訊。
 1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
