@@ -1,7 +1,7 @@
 ---
 seo-title: 工作階段要求
 title: 工作階段要求
-uuid: 9609192d-4f7f-4fb5-844f-ea89 d47 c4 e30
+uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 translation-type: tm+mt
 source-git-commit: f1c9f5f4cbcd4c043e1c7b4a5037c134b2bdd380
 
@@ -21,7 +21,7 @@ https://{uri}/api/v1/sessions
 
 ## 要求內文
 
-請求主體必須是JSON，且必須具有與此範例要求主體相同的結構：
+請求內文必須是JSON，且必須具有與此範例請求內文相同的結構：
 
 ```
 { 
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` 標題- `/api/v1/` 部分提供API版本。The part after `[…]sessions/` is the Session ID.
+`Location:` header —— 部 `/api/v1/` 件提供API版本。 後面的部 `[…]sessions/` 件是會話ID。
 
 ## 回應代碼
 
