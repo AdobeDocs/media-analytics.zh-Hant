@@ -1,25 +1,25 @@
 ---
 seo-title: 從 1.x 轉換為 2.x API
 title: 從 1.x 轉換為 2.x API
-uuid: 6e619288-c082-4cb4-8685-e90823 dadf4 a
+uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
 source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
 ---
 
 
-# API 1.x to 2.x conversion {#one-x-to-two-x-conv}
+# API 1.x到2.x的轉換 {#one-x-to-two-x-conv}
 
-## Media SDK2.x API參考資料
+## Media SDK 2.x API參考
 
 * [Android API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [iOS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [JS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [Chromecast API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
-## 必要追蹤* API：
+## 必要的追蹤* API:
 
-| VHL1.x | VHL2.x |
+|  VHL 1.x  | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | 不適用 |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject、mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
