@@ -1,7 +1,7 @@
 ---
 seo-title: 具有已略過廣告的 VOD 播放
 title: 具有已略過廣告的 VOD 播放
-uuid: f3ab3524-abcb-4051-b64 e-a1 aad6 e3 d3 f
+uuid: f3ab3524-abcb-4051-b64e-a1ad6e3dd3f
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 此案例包含的 VOD 內容播放具有已略過的廣告。
 
-### 一個VOD含跳過的前置廣告廣告
+### 一個具有跳過的前段廣告的VOD
 
 此案例等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)，除了應用程式具有可讓使用者略過廣告 (也許是在點擊略過按鈕時) 的佈建。
 
