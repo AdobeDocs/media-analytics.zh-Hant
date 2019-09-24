@@ -1,7 +1,7 @@
 ---
 seo-title: 事件類型和說明
 title: 事件類型和說明
-uuid: bc4f75a-ea22-47eb-a50 d-5f41274 c6 d41
+uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## sessionStart
 
-Sent with the `sessions` call. 當回應傳回時，您可以從 Location 標題擷取工作階段 ID，並使用於後續發送給收集伺服器的事件呼叫。
+隨電話 `sessions` 傳送。 當回應傳回時，您可以從 Location 標題擷取工作階段 ID，並使用於後續發送給收集伺服器的事件呼叫。
 
 ## play
 
@@ -25,17 +25,17 @@ Sent when the player changes state to "playing" from another state (i.e., the `o
 
 Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
-## BitrateChange
+## 位元速率變更
 
-當點陣圖變更時傳送。
+在位元變更時傳送。
 
 ## bufferStart
 
-在緩衝開始時傳送。`bufferResume` 事件類型並不存在。A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+在緩衝開始時傳送。 `bufferResume` 事件類型並不存在。A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
 
 ## pauseStart
 
-當使用者按下「暫停」時傳送。`resume` 事件類型並不存在。A `resume` is inferred when you send a `play` event after a `pauseStart`.
+當使用者按「暫停」時傳送。 `resume` 事件類型並不存在。A `resume` is inferred when you send a `play` event after a `pauseStart`.
 
 ## adBreakStart
 
@@ -43,7 +43,7 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 ## adStart
 
-訊號開始
+發出廣告開始的信號
 
 ## adComplete
 
@@ -51,7 +51,7 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 ## adSkip
 
-訊號略過廣告
+發出廣告跳過的信號
 
 ## adBreakComplete
 
@@ -63,7 +63,7 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 ## chapterSkip
 
-訊號章節跳過
+指示章節跳過
 
 ## chapterComplete
 
@@ -71,11 +71,11 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 ## error
 
-指出發生錯誤。
+發出錯誤信號。
 
 ## sessionEnd
 
-這可用來通知Media Analytics後端，當使用者放棄檢視內容時立即關閉工作階段，且不可能返回。
+當使用者放棄檢視內容且不太可能返回時，這會用來通知Media Analytics後端以立即關閉作業。
 
 If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
