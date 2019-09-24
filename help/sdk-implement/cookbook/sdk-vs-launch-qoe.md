@@ -1,6 +1,6 @@
 ---
-seo-title: 瞭解Launch與Media SDK差異
-title: 瞭解Launch與Media SDK差異
+seo-title: 瞭解Launch與Media SDK的差異
+title: 瞭解Launch與Media SDK的差異
 uuid: null
 translation-type: tm+mt
 source-git-commit: 932af09a0692ef35ab46fb6f34b2dec5f2e1e562
@@ -8,22 +8,22 @@ source-git-commit: 932af09a0692ef35ab46fb6f34b2dec5f2e1e562
 ---
 
 
-# 瞭解Launch與Media SDK差異
+# 瞭解Launch與Media SDK的差異
 
 ## 功能差異
 
-* *Launch* - Launch提供使用者介面，讓您透過設定、設定和部署網頁媒體追蹤解決方案來引導您。啓動改進了動態標籤管理(DTM)。
-* *Media SDK* - Media SDK為您提供專為特定平台設計的媒體追蹤程式庫(例如：Android、iOS等)。Adobe建議Media SDK追蹤行動應用程式中的媒體使用情形。
+* *Launch* - Launch提供您一個UI，可引導您設定、設定和部署網路媒體追蹤解決方案。 Launch在動態標籤管理(DTM)上有所改進。
+* *Media SDK* - Media SDK提供您專為特定平台所設計的媒體追蹤程式庫(例如：Android、iOS等)。 Adobe建議使用Media SDK來追蹤行動應用程式中的媒體使用情形。
 
 ## 追蹤器建立差異
 
 ### Launch
 
-Launch提供兩種建立追蹤基礎架構的方法。這兩種方法都使用Media Analytics Launch Extension：
+Launch提供兩種建立追蹤基礎架構的方法。 這兩種方法都使用Media Analytics Launch Extension:
 
-1. 從網頁使用媒體追蹤API。
+1. 使用網頁中的媒體追蹤API。
 
-   在此情況下，Media Analytics Extension會將媒體追蹤API匯出至全域視窗物件中的設定變數：
+   在此案例中，媒體分析擴充功能會將媒體追蹤API匯出至全域視窗物件中已設定的變數：
 
    ```
    window["CONFIGURED_VARIABLE_NAME"].MediaHeartbeat.getInstance
@@ -31,27 +31,27 @@ Launch提供兩種建立追蹤基礎架構的方法。這兩種方法都使用Me
 
 1. 使用其他Launch擴充功能的媒體追蹤API。
 
-   在此情況下，您會使用由 `get-instance` 和 `media-heartbeat` 共用模組公開的媒體追蹤API。
+   在此案例中，您會使用「和共用模組」公開的媒 `get-instance` 體追 `media-heartbeat` 蹤API。
 
    >[!NOTE]
    >
-   >共用模組無法用於網頁中。您只能從其他擴充功能使用共用模組。
+   >共用模組無法用於網頁。 您只能使用其他擴充功能的共用模組。
 
-   使用 `MediaHeartbeat``get-instance` 共用模組建立例項。
-傳遞委派物件至 `get-instance` 展示 `getQoSObject()` 和 `getCurrentPlaybackTime()` 函數。
+   使用共 `MediaHeartbeat` 用模組建立 `get-instance` 例項。
+將委派物件傳遞至 `get-instance` 公開 `getQoSObject()` 和函 `getCurrentPlaybackTime()` 數。
 
    ```
    var getMediaHeartbeatInstance =
    turbine.getSharedModule('adobe-video-analytics', 'get-instance');
    ```
 
-   透過 `MediaHeartbeat``media-heartbeat` 共用模組存取常數。
+   通過 `MediaHeartbeat` 共用模組訪 `media-heartbeat` 問常數。
 
 ### Media SDK
 
-1. 將Media Analytics程式庫新增至您的開發專案。
-1. 建立config物件(`MediaHeartbeatConfig`)。
-1. 實作委派通訊協定，公開 `getQoSObject()` 和 `getCurrentPlaybackTime()` 功能。
+1. 將媒體分析程式庫新增至您的開發專案。
+1. 建立配置對象(`MediaHeartbeatConfig`)。
+1. 實作委派通訊協定，公開 `getQoSObject()` 和函 `getCurrentPlaybackTime()` 數。
 1. 建立媒體心率例項(`MediaHeartbeat`)。
 
 ```
@@ -77,8 +77,8 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 
 ### Launch
 
-* [Launch概觀](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-* [MA Extension](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [啟動概觀](https://docs.adobe.com/content/help/en/launch/using/overview.html)
+* [MA擴充功能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 ### Media SDK
 
