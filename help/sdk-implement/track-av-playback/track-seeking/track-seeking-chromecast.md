@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Chromecast 上追蹤搜尋
 title: 在 Chromecast 上追蹤搜尋
-uuid: 8018e6c4-ed9-4de7-9eae-c720 da55 ad8 c
+uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
