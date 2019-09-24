@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 實作QoS
+## 實施QoS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >只有當您打算追蹤QoS時才需要這些變數。
+   >只有在您計畫追蹤QoS時，才需要這些變數。
 
    | 變數 | 說明 | 必要 |
    | --- | --- | :---: |
@@ -52,5 +52,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >更新QoS物件，並呼叫每個位元速率變更上的位元速率變更事件。如此可提供最精確的 QoS 資料。
+   >更新QoS物件，並在每次位元速率變更時呼叫位元速率變更事件。 如此可提供最精確的 QoS 資料。
 
