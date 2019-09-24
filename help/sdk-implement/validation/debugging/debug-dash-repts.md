@@ -1,7 +1,7 @@
 ---
 seo-title: Debug 控制面板和報表
 title: Debug 控制面板和報表
-uuid: 8e6f6245-d8 bd-4329-89e1-4c5595 e04 ec5
+uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -16,7 +16,7 @@ Adobe Debug 提供即時報表功能，因此您可以檢視點擊數和視訊�
 
 >[!NOTE]
 >
->一次只能啓用一個工作階段。您可以從控制面板開啟作用中的工作階段。
+>一次只能有一個作業。 您可以從控制面板開啟作用中的工作階段。
 
 ![](assets/debug-dashboard.png)
 
