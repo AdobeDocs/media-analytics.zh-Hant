@@ -1,7 +1,7 @@
 ---
 seo-title: 在播放期間處理應用程式中斷
 title: 在播放期間處理應用程式中斷
-uuid: ccb4507-bda6-462d-bb67-e22978 a4 db3 d
+uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,20 +10,20 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # 在播放期間處理應用程式中斷{#handling-application-interrupts-during-playback}
 
-媒體應用程式中的播放可能會以多種方式中斷：使用者明確按下暫停，或當使用者將應用程式放入背景時。無論媒體播放的中斷為何，追蹤指示都相同：
+媒體應用程式中的播放可透過多種方式中斷：使用者會明確按下暫停，或當使用者將應用程式置入背景時。 不論媒體播放中斷的原因為何，追蹤指示都相同：
 
 1. Call **`trackPause`** when the application is interrupted (goes to background, media pauses, etc.).
 1. Call **`trackPlay`** when the application returns to the foreground and/or the media resumes playing.
 
 >[!NOTE]
 >
->The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. 這麼做會導致播放不計入總播放時間，以及遺失較早的進度標記、區段等。Instead, call `trackPlay` when the app returns and/or the media resumes playing.
+>The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. 如此會導致播放至該時段不會計入總播放時間，並遺失先前的進度標籤、區段等。 Instead, call `trackPlay` when the app returns and/or the media resumes playing.
 
 ## 有關如何處理應用程式中斷的常見問題集: {#section_osf_xqs_h2b}
 
 * _應用程式要在背景停留多長的時間後，才應關閉工作階段?_
 
-   如果應用程式允許背景播放，它能呼叫我們的 API 來繼續追蹤，我們也會照常傳送所有追蹤 Ping。除了YouTube Red以外，並非許多視訊應用程式允許背景播放，不過，所有音訊應用程式都允許這麼做。如果應用程式不允許背景播放，則建議在暫停狀態中停留一分鐘，然後結束追蹤工作階段。應用程式無法繼續傳送Pause ping，因為在大多數情況下，它無法判斷使用者是否要返回繼續檢視媒體，或決定何時將會被殺。如果應用程式停留在背景時繼續傳送 Ping，也會帶來不良的體驗。
+   如果應用程式允許背景播放，它能呼叫我們的 API 來繼續追蹤，我們也會照常傳送所有追蹤 Ping。除了YouTube Red之外，許可背景播放的視訊應用程式不多，但是所有音訊應用程式都允許。 如果應用程式不允許背景播放，則建議您在暫停狀態停留一分鐘，然後結束追蹤工作階段。 應用程式無法繼續傳送「暫停」ping，因為在大多數情況下，它無法判斷使用者是要返回繼續檢視媒體，還是決定何時會停止檢視媒體。 如果應用程式停留在背景時繼續傳送 Ping，也會帶來不良的體驗。
 
 * _應用程式長時間停留在背景之後，要怎麼處理重新啟動追蹤才是正確的做法?_
 
