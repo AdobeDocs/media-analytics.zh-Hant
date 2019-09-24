@@ -1,7 +1,7 @@
 ---
 seo-title: 必要條件
 title: 必要條件
-uuid: 4c0b37f3-8615-4cc0-b9 c9-eeb02906764
+uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # 必備條件{#prerequisites}
 
-## Decisions {#decision}
+## 決策 {#decision}
 
 在開始實作追蹤前，請先決定與您的情況最為相關的實作：
 
@@ -20,11 +20,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 工作 {#prereq-tasks}
 
-For a *Media Analytics* implementation, here are the tasks you must complete before you begin:
+對於 *Media Analytics* 實作，您必須先完成下列工作：
 
 1. **啟用 Experience Cloud。**
 
-   您必須實作Adobe Experience Platform Identity Service。
+   您需要實作Adobe Experience Platform Identity Service。
 
     Identity 服務可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和觀眾啟用共同識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實施 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
 
@@ -36,7 +36,7 @@ For a *Media Analytics* implementation, here are the tasks you must complete bef
 
    >[!IMPORTANT]
    >
-   >若要加入Adobe Experience Cloud Device Co-op，需要Experience Cloud ID服務。
+   >若要參與Adobe Experience Cloud Device Co-op，必須有Experience Cloud ID服務。
 
    如果您尚未實施 ID 服務，現在就是開始考慮移轉策略的最佳時機。For more information about the importance and role of the ID service, see [Why the Identity Service Should be on Your Radar.](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)
 
