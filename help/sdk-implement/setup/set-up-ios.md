@@ -1,7 +1,7 @@
 ---
 seo-title: 設定 iOS
 title: 設定 iOS
-uuid: a c6be79-a6 dc-47b6-93b3-ac7 b42 f1 f3 b
+uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,13 +12,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 必備條件
 
-* **取得有效的媒體SDK設定參數**&#x200B;您可以在設定分析帳戶後，向Adobe代表取得這些參數。
-* **在您的應用程式中實作ADBMobile
-for iOS**&#x200B;如需有關Adobe Mobile SDK文件的詳細資訊，請參閱 [適用於Experience Cloud解決方案的iOS SDK4.x。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **取得Media SDK的有效設定參**&#x200B;數在您設定分析帳戶後，這些參數可向Adobe代表取得。
+* **在您的應用程式中實作** iOS適用的ADBMobile如需Adobe Mobile SDK檔案的詳細資訊，請參閱 [Experience cloud解決方案適用的iOS SDK 4.x。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >從iOS開始，Apple推出了一個稱為App Transport Security(ATS)的功能。此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此為預設啟用功能，但您可透過設定選項自行選擇是否使用 ATS。For details on ATS, see [App Transport Security.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >從iOS 9開始，Apple推出了一項稱為App Transport Security(ATS)的功能。 此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此為預設啟用功能，但您可透過設定選項自行選擇是否使用 ATS。如需ATS的詳細資訊，請參閱 [App Transport Security。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **在您的媒體播放器中提供下列功能:**
 
