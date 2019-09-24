@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Android 上追蹤緩衝
 title: 在 Android 上追蹤緩衝
-uuid: f16ce76d-1db3-4b51-4c98-54cb781f71d
+uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `MediaHeartbeat.Event.BufferStart` | 用於追蹤緩衝開始事件的常數 |
 | `MediaHeartbeat.Event.BufferComplete` | 用於追蹤緩衝完成事件的常數 |
 
-## 實施緩衝
+## 實現緩衝
 
 1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝:
 
