@@ -1,7 +1,7 @@
 ---
 seo-title: 設定 Android
 title: 設定 Android
-uuid: 3ffe3276-a104-4182-9220-038729e9 f3 d5
+uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,9 +12,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## 必備條件
 
-* **取得有效的媒體SDK設定參數**&#x200B;您可以在設定分析帳戶後，向Adobe代表取得這些參數。
-* **在您的應用程式中實作ADBMobile
-for Android**，如需有關Adobe Mobile SDK文件的詳細資訊，請參閱 [適用於Experience Cloud解決方案的Android SDK4.x。](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **取得Media SDK的有效設定參**&#x200B;數在您設定分析帳戶後，這些參數可向Adobe代表取得。
+* **在您的應用程式中實作Android適用的ADBMobile**&#x200B;如需Adobe Mobile SDK檔案的詳細資訊，請參閱 [Experience cloud解決方案適用的Android SDK 4.x。](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **在您的媒體播放器中提供下列功能:**
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * *提供播放器資訊的 API* - 此資訊包含媒體名稱和播放點位置等等的詳細內容。
@@ -129,4 +128,4 @@ for Android**，如需有關Adobe Mobile SDK文件的詳細資訊，請參閱 [�
 
 在 2.x 版中，所有公用方法皆已整合至 `com.adobe.primetime.va.simple.MediaHeartbeat` 類別，讓開發人員更容易操作。此外，所有的設定現已整合至 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 類別。
 
-For detailed information about migrating from 1.x to 2.x, see [mig-1x-2x-overview.md.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+有關從1.x遷移到2.x的詳細資訊，請參 [閱mig-1x-2x-overview.md。](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
