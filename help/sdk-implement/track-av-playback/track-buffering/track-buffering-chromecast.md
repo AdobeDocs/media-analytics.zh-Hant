@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Chromecast 上追蹤緩衝
 title: 在 Chromecast 上追蹤緩衝
-uuid: f6fa3a1a-d7 de-4293-bd11-ebe9 e130 badd
+uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `BufferStart` | 用於追蹤緩衝開始事件的常數 |
 | `BufferComplete` | 用於追蹤緩衝完成事件的常數 |
 
-## 實施緩衝
+## 實現緩衝
 
 1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
