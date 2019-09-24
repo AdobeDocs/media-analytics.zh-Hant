@@ -1,7 +1,7 @@
 ---
 seo-title: 具有緩衝的 VOD 播放
 title: 具有緩衝的 VOD 播放
-uuid: 958f7692-7193-40fb-a8 e7-2ff4 fa805330
+uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
