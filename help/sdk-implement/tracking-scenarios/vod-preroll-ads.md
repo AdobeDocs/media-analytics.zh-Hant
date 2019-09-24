@@ -2,7 +2,7 @@
 seo-title: 具有前段廣告的 VOD 播放
 title: 具有前段廣告的 VOD 播放
 description: 在此案例中，前段廣告已插入到主要內容之前。
-seo-description: 在Adobe Media Analytics中，廣告前廣告已插入主要內容之前。
+seo-description: 在Adobe Media Analytics的此案例中，前段廣告已插入在主要內容之前。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
@@ -24,13 +24,13 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 已播放廣告 #2 的第一個時間格。 | `trackEvent:AdStart` | Analytics 廣告開始、心率廣告開始 |  |
 | 廣告播放。 |  | 廣告心率 |  |
 | 廣告 #2 完成播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率廣告完成 | 已到達廣告和 Pod 的結尾。 |
-| 內容播放。 |  | 內容心率 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| 內容已完成。 | `trackComplete` | 心率內容完成 | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 內容播放。 |  | 內容心率 | 此網路呼叫與無廣告 [的VOD播放相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
+| 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫與無廣告 [的VOD播放相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
 | 工作階段已結束 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 參數 {#section_33CDFB6CB230437480B67A3D149EC44E}
 
-When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
+當廣告播放開始時，會 `Heartbeat Ad Start` 傳送呼叫。 If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
 ### 心率廣告開始
 
@@ -39,7 +39,7 @@ When ad playback begins, a `Heartbeat Ad Start` call is sent. If the beginning o
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call is similar to the `Content Play` call.
+廣告採用與相同的基本模 `Content Heartbeats`型，因此 `Ad Play` 呼叫與呼叫類似 `Content Play` 。
 
 ### 心率廣告播放呼叫
 
@@ -74,7 +74,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** 若要在Android中檢視此案例，請設定下列程式碼：
+* **Android To view this scenario in Android, set up the following code:**
 
    ```java
    // Set up  mediaObject 
@@ -178,7 +178,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS-** 若要在iOS中檢視此案例，請設定下列程式碼：
+* **iOS —— 若要** 在iOS中檢視此藍本，請設定下列程式碼：
 
    ```
    //  Set up mediaObject 
@@ -282,7 +282,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** 若要在JavaScript中檢視此案例，請輸入下列文字：
+* **JavaScript** 若要在JavaScript中檢視此藍本，請輸入下列文字：
 
    ```js
    // Set up mediaObject 
@@ -384,7 +384,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** 若要在Android中檢視此案例，請設定下列程式碼：
+* **Android** 若要在Android中檢視此藍本，請設定下列程式碼：
 
    ```java
    // Set up mediaObject 
@@ -561,7 +561,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS** 若要在iOS中檢視此案例，請設定下列程式碼：
+* **iOS** 若要在iOS中檢視此藍本，請設定下列程式碼：
 
    ```
    //  Set up mediaObject 
@@ -748,7 +748,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** 若要在JavaScript中檢視此案例，請輸入下列文字：
+* **JavaScript** 若要在JavaScript中檢視此藍本，請輸入下列文字：
 
    ```js
    // Set up mediaObject 
