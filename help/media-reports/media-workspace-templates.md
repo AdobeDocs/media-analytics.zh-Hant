@@ -1,7 +1,7 @@
 ---
 seo-title: 媒體工作區範本
 title: 媒體工作區範本
-uuid: 0024b06a-eAF5-4d2 e-be45-aeda9 d0554 c
+uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
