@@ -37,13 +37,13 @@ source-git-commit: 4ffdc10559c7c25072bb7cd34165c9df9311a65e
 
 * **Adobe 諮詢合約:**&#x200B;若要進行接收者和傳送者之間同盟規則的初始設定，建議您與諮詢服務人員合作檢閱資料並建立資料共享協定。
 
-## Download the Federated Analytics Form
+## 下載同盟分析表單
 
 **請從此處下載目前版本的表單：聯合**&#x200B;規 [則合約表單。](/assets/federated_analytics_form.pdf)
 
 ## 程序 {#section_byb_kb3_vbb}
 
-1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [免費下載 Acrobat。](https://get.adobe.com/reader/)
+1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。Federated Rules Agreement表單包含我們工程團隊的特殊欄位，且僅能使用Adobe Acrobat編輯。 [免費下載 Acrobat。](https://get.adobe.com/reader/)
 1. 在能取得資料檔案的前提下，諮詢服務可提供接收者範例資料檔案，內含來自傳送者播放器的實際資料，以便進一步確認資料共享規則已妥善定義。
 1. 傳送者與接收者可確保資料共享協定符合雙方之間的所有合約要求。
 1. 諮詢服務會將填妥的表單傳送至 Adobe 工程技術部門以建立資料共享規則。
