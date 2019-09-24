@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: 在 Roku 上實作標準中繼資料
 title: 在 Roku 上實作標準中繼資料
-uuid: ae14d809-343f-452c-832a-f94 bd3 d83 a90
+uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
