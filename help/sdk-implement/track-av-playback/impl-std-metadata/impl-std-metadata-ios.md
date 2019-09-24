@@ -3,7 +3,7 @@ description: 'null'
 seo-description: 'null'
 seo-title: 在 iOS 上實作標準中繼資料
 title: 在 iOS 上實作標準中繼資料
-uuid: 75a80f08-4a95-49d4-a27 a-8ce531 d64 d31
+uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 ## 實施
 
 1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [iOS中繼資料金鑰](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [IOS中繼資料金鑰](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. 對中繼資料使用標準中繼資料常數，在 `MediaInfo``ADBMediaObject`   例項上設定標準中繼資料字典。
 
