@@ -1,7 +1,7 @@
 ---
 seo-title: SDK 除錯
 title: SDK 除錯
-uuid: a5972d87-c593-4b4 f-a56 f-dca6 e25268 e1
+uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -10,7 +10,7 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 # SDK 除錯{#sdk-debugging}
 
-您可以啓用和停用記錄。媒體SDK在媒體追蹤堆疊中提供了廣泛的追蹤/記錄機制。You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+您可以啟用和停用記錄。 Media SDK提供廣泛的媒體追蹤堆疊追蹤／記錄機制。 You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## 除錯記錄的程式碼範例
 
@@ -71,9 +71,9 @@ ADBMobile.config.setDebugLogging(true)
 
 >[!IMPORTANT]
 >
->自2017年月30日起，Adobe Bloodhound已經日落。自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care 支援。
+>自2017年4月30日起，Adobe Bloodhound就日落了。 自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care 支援。
 
-## 記錄檔訊息
+## 日誌消息
 
 記錄訊息會遵循此格式:
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag**: 發出記錄訊息的子元件的名稱 (通常是類別名稱)
 * **message**: 實際追蹤訊息
 
-您可以使用Media SDK程式庫輸出來驗證實施。良好的策略是搜尋整個記錄中是否有字串 `#track`. This will highlight all the `track*()` calls made by your application.
+您可以使用Media SDK程式庫輸出的記錄檔來驗證實作。 良好的策略是搜尋整個記錄中是否有字串 `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
