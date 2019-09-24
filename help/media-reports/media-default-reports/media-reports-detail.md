@@ -1,7 +1,7 @@
 ---
 seo-title: 媒體詳細資料
 title: 媒體詳細資料
-uuid: 57d7f5b0-41dd-41d7-1a5a-5a-474528839
+uuid: 57d7f5b0-41dd-41d7-9a5a-47452839be5
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
