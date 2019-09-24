@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Chromecast 上追蹤錯誤
 title: 在 Chromecast 上追蹤錯誤
-uuid: efa9d8d-c626-4cb6-b46 d-108495dd013 a
+uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,5 +24,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!NOTE]
 >
->追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
+>追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd` after calling `trackError`.
 
