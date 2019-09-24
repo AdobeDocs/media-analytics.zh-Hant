@@ -1,7 +1,7 @@
 ---
 seo-title: 概述
 title: 概述
-uuid: 4d73c47f-d0 a4-4228-9040-d6432311 c9 eb
+uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -14,7 +14,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 >
 >下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒體播放器API來識別與QoS和錯誤追蹤相關的變數。以下為追蹤體驗品質的重要元素:
+Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒體播放器API來識別與QoS和錯誤追蹤相關的變數。 以下為追蹤體驗品質的重要元素:
 
 ## 播放器事件 {#player-events}
 
@@ -26,7 +26,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 呼叫 `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## 實施者QoS
+## 實施QOS
 
 1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
 
@@ -34,7 +34,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!TIP]
    >
-   >只有當您打算追蹤QoS時才需要這些變數。
+   >只有在您計畫追蹤QoS時，才需要這些變數。
 
    | 變數 | 說明 | 必要 |
    | --- | --- | :---: |
@@ -48,9 +48,9 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >更新QoS物件，並呼叫每個位元速率變更上的位元速率變更事件。如此可提供最精確的 QoS 資料。
+   >更新QoS物件，並在每次位元速率變更時呼叫位元速率變更事件。 如此可提供最精確的 QoS 資料。
 
-下列範例程式碼使用HTML媒體播放器的JavaScript2.x SDK。您應使用此程式碼搭配核心媒體播放程式碼。
+下列范常式式碼使用JavaScript 2.x SDK做為HTML5媒體播放器。 您應將此程式碼與核心媒體播放程式碼搭配使用。
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
