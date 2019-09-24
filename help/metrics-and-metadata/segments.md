@@ -1,14 +1,14 @@
 ---
 seo-title: 區段
 title: 區段
-uuid: 61906b8c-3362-4463-82be-fe0 e741 a5 eb3
+uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 ---
 
 
-# 群體{#segments}
+# 區段{#segments}
 
 >[!NOTE]
 >
