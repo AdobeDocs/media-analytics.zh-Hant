@@ -1,7 +1,7 @@
 ---
 seo-title: 在 Chromecast 上追蹤章節和區段
 title: 在 Chromecast 上追蹤章節和區段
-uuid: 5ea562b9-1e07-4fb-9a3b-213d746304f
+uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->下列指示提供使用2.x SDK進行實施的指引。If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>以下說明提供使用2.x SDK實作的指引。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
 1. 識別章節開始事件何時發生，並使用章節資訊建立 `ChapterObject` 例項。
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >只有當您打算追蹤章節時，才需要這些變數。
+   >只有在您打算追蹤章節時，才需要這些變數。
 
    | 變數名稱 | 說明 | 必要 |
    | --- | --- | :---: |
