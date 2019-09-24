@@ -1,7 +1,7 @@
 ---
 seo-title: Roku 中繼資料索引鍵
 title: Roku 中繼資料索引鍵
-uuid: 2ca6bb1d-c545-43d3-9c3 e-63b890 aa268 d
+uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -10,7 +10,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 # Roku 中繼資料索引鍵{#roku-metadata-keys}
 
-您可以分別在媒體和廣告資訊物件上設定標準視訊、音訊和廣告中繼資料。在呼叫追蹤 API 之前，使用視訊/廣告中繼資料的常數索引鍵，設定包含資訊物件之標準中繼資料的字典。請參閱下列表格以獲取標準中繼資料常數的完整清單，然後是範例。
+標準視訊、音訊和廣告中繼資料可分別設定在媒體和廣告資訊物件上。 在呼叫追蹤 API 之前，使用視訊/廣告中繼資料的常數索引鍵，設定包含資訊物件之標準中繼資料的字典。請參閱下列表格以獲取標準中繼資料常數的完整清單，然後是範例。
 
 ## 視訊中繼資料常數 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
 
@@ -34,7 +34,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 資訊源 | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
 | 資料流格式 | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` |
 
-## Audio metadata constants {#audio-metadata-constants}
+## 音訊中繼資料常數 {#audio-metadata-constants}
 
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
@@ -70,8 +70,8 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 | 常數 | 說明   |
 | --- | --- |
-| `MEDIA_STANDARD_MEDIA_METADATA` | Constant to set metadata on the `MediaInfo` `trackLoad` |
-| `MEDIA_STANDARD_AD_METADATA` | Constant to set the ad metadata on the `EventData` `trackEvent` |
+| `MEDIA_STANDARD_MEDIA_METADATA` | 常數，以在 `MediaInfo``trackLoad` |
+| `MEDIA_STANDARD_AD_METADATA` | 常數，以在 `EventData``trackEvent` |
 | `MEDIA_RESUMED` | 傳送影片繼續心率的常數。To resume video tracking of previously stopped content, you need to set the `MEDIA_RESUMED` property on the `mediaInfo` object when you call `mediaTrackLoad`. (`MEDIA_RESUMED` is not an event that you can track using the `mediaTrackEvent` API.) 當應用程式想要繼續，以追蹤使用者暫停觀看但現在打算繼續觀看的內容時，應將 `MEDIA_RESUMED` 設定為 true。<br/><br/>例如，假設使用者觀看了 30% 的內容，然後關閉該應用程式。這會導致作業結束。Later, if the same user returns to the same content, and the application allows that user to resume from the same point where they left off, then the application should set `MEDIA_RESUMED` to "true" while calling the `mediaTrackLoad` API. 結果是針對相同影片內容的這兩個不同媒體工作階段可以連結在一起。以下為實作範例: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>這將會為該影片建立一個新的工作階段，但也會導致 SDK 傳送含有「繼續」事件類型的心率請求，其可用於報表，以將兩個不同的媒體工作階段繫結在一起。 |
 
 ### 內容類型常數
