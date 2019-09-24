@@ -1,7 +1,7 @@
 ---
 seo-title: 具有一個章節的 VOD 播放
 title: 具有一個章節的 VOD 播放
-uuid: 1566a6f5-cf22-42e7-1e1 a-6976c6 c4 e649
+uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,11 +25,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 章節已完成。 | `trackEvent:trackChapterComplete` | 心率章節完成 | 已到達章節的結尾。 |
 | 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。即使使用者不觀看媒體，也必須呼叫此API。 |
+| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。即使使用者未看到媒體完成，也必須呼叫此API。 |
 
 ## 參數 {#section_869319D99A474FEA8EA840415EA97FBD}
 
-When chapter playback begins, a `Heartbeat Chapter Start` call is sent. If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
+當章節播放開始時， `Heartbeat Chapter Start` 會傳送呼叫。 If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
 
 發生此情況時，會以相同的間隔傳出 `Content Heartbeat` 呼叫。您可以透過檢查事件類型和資產類型來區分這兩者:
 
