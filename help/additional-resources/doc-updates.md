@@ -1,7 +1,7 @@
 ---
 seo-title: 文件更新
 title: 文件更新
-uuid: 1f3e48df-83b6-418c-8cf7-d79466481 f79
+uuid: 1f3e48df-83b6-418c-8cf7-d7946481f79
 index: y
 internal: n
 snippet: y
@@ -15,8 +15,8 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 ## 上次更新日期: 2019 年 3 月 7 日 {#March-2019-update}
 
-* 此更新主要用於JavaScript和OTT平台上的2.2Media SDK版本。
-* JavaScript和OTT平台上的2.2Media SDK版本提供下列iOS和Android平台適用的相同支援(2018年11月日更新)。
+* 此更新主要針對JavaScript和OTT平台上的2.2 Media SDK版本。
+* JavaScript和OTT平台上的2.2 Media SDK版本針對iOS和Android平台提供與下文所述相同的支援（2018年11月1日更新）。
 
 ## 上次更新: 2018 年 11 月 1 日 {#November-2018-update}
 
@@ -38,7 +38,7 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 ## 更新: 2018 年 10 月 10 日 {#October-2018-update}
 
 * 「SDK 實作」區域的文件結構已經過「重組」，將個別 (但大致相同) 的平台實施指南合併成一個 SDK 實作區段，並將平台專用的追蹤範例呈現在通用追蹤主題下方的子區段。
-* 為了因應移轉到新文件系統的需求，檔案已全數重新命名。已移除所有DITA首碼(c_、r_、t_)指出概念、參考和任務主題類型。所有底線 (’_’) 均已以連字號取代 ('-')。另外，檔案名稱與主題的標題也更相似。
+* 為了因應移轉到新文件系統的需求，檔案已全數重新命名。已刪除所有分別指示概念、引用和任務主題類型的DITA前置詞(c_、r_、t_)。 所有底線 (’_’) 均已以連字號取代 ('-')。另外，檔案名稱與主題的標題也更相似。
 * 更新一般驗證與認證主題。
 * 加入測量選項解說等介紹性素材，另更新必備條件、實施路徑及 Audience Manager 啟用。
 * 更新「量度和中繼資料」與「Reporting and Analysis」區段，藉此反應新增的 Audio Analytics 功能。
