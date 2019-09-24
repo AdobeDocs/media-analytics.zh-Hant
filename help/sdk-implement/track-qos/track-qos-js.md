@@ -1,7 +1,7 @@
 ---
 seo-title: 在 JavaScript 上追蹤體驗品質
 title: 在 JavaScript 上追蹤體驗品質
-uuid: 3bc762a2-9706-4b62-aua91-747f461 dd13 d
+uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 實施者QoS
+## 實施QOS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >只有當您打算追蹤QoS時才需要這些變數。
+   >只有在您計畫追蹤QoS時，才需要這些變數。
 
    | 變數 | 說明 | 必要 |
    | --- | --- | :---: |
@@ -52,12 +52,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >更新QoS物件，並呼叫每個位元速率變更上的位元速率變更事件。如此可提供最精確的 QoS 資料。
+   >更新QoS物件，並在每次位元速率變更時呼叫位元速率變更事件。 如此可提供最精確的 QoS 資料。
 
 1. 請確定 `getQoSObject()` 方法會傳回最新的 QoS 資訊。
 1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
