@@ -1,7 +1,7 @@
 ---
 seo-title: 從里程碑移轉至自訂連結
 title: 從里程碑移轉至自訂連結
-uuid: 1c8edde5-0ef1-4bc0-a62 d-1747f4007 f09
+uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -95,8 +95,7 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData
-= true；
+  trackUsingContextData = true;
 </pre>
 </td>
 <td>
@@ -104,9 +103,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linkTrackVars='events，contextData. video. name'；
-s. contextData['video. name']=
- mediaName；
+s.linkTrackVars = 'events, contextData.video.name';
+s.contextData[『video.name'] = mediaName;
 </pre>
 </td>
 </tr>
@@ -117,22 +115,7 @@ Media.contextDataMapping
 <td>
 <pre>
 s.Media.
-  contextDataMapping={「a.
- media. name」：
-「eVar2、prop2」、「a.
- media. segment」：
-「eVar3」，「a.
- contentType」：
-「eVar1」，「a.
- media. TimePlayed」：
-「event3」，「a.
- media. view」：
-「event1」，「a.
- media. segmentView」：
-「event2」，「a.
- media. complete」：
-「event7」，「a.
- media. milestones」：{25：「event4」，50：「event5」，75：「event6」}}；
+  contextDataMapping = { "a.media.name":    "eVar2,prop2"、"a.media.segment":    "eVar3"、"a.contentType":    "eVar1"、"a.media.timePlayed":    "event3"、"a.media.view":    "event1"、"a.media.segmentView":    "event2"、"a.media.complete":    "event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>不適用
@@ -146,7 +129,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s. Media. trackVars=「events，prop2，eVar1，eVar2，eVar3」；
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>
@@ -154,9 +137,9 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linkTrackVars='events、prop10、eVar10、eVar12、eVar13、eVar15、contextData。
- video. name，contextData.
- video. view'；
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData。
+       video.name、contextData。
+       video.view';
 </pre>
 </td>
 </tr>
@@ -166,7 +149,7 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s. Media. trackEvents=「event1、event2、event3、event4、event5、event6、event7」
+s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
 </pre>
 </td>
 <td>
@@ -174,7 +157,7 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s. linkTrackEvents='event2'；
+s.linkTrackEvents = 'event2';
 </pre>
 </td>
 </tr>
@@ -202,8 +185,7 @@ Media.trackUsingContextData
 <td>
 <pre>
 s.Media.
-  trackUsingContextData
-= true；
+  trackUsingContextData = true;
 </pre>
 </td>
 <td>
@@ -211,9 +193,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linkTrackVars='events，contextData. video. name'；
-s. contextData['video. name']=
- mediaName；
+s.linkTrackVars = 'events, contextData.video.name';
+s.contextData[『video.name'] = mediaName;
 </pre>
 </td>
 </tr>
@@ -223,15 +204,7 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s. Media. contextDataMapping={a.
- media. name」：「eVar2、prop2」、「a.
- media. segment」：「eVar3」，「a.
- contentType」：「eVar1」，「a.
- media. TimePlayed」：「event3」，「a.
- media. view」：「event1」，「a.
- media. segmentView」：「event2」，「a.
- media. complete」：「event7」，「a.
- media. milestones」：{25：「event4」，50：「event5」，75：「event6」}}；
+s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view", "a.media.media.segmentView":"event2", "a.media.complete":"event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
 </pre>
 </td>
 <td>不適用
@@ -245,7 +218,7 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s. Media. trackVars=「events，prop2，eVar1，eVar2，eVar3」；
+s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
 </pre>
 </td>
 <td>
@@ -253,9 +226,9 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s. linkTrackVars='events、prop10、eVar10、eVar12、eVar13、eVar15、contextData。
- video. name，contextData.
- video. view'；
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData。
+       video.name、contextData。
+       video.view';
 </pre>
 </td>
 </tr>
@@ -265,7 +238,7 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s. Media. trackEvents=「event1、event2、event3、event4、event5、event6、event7」
+s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
 </pre>
 </td>
 <td>
@@ -273,7 +246,7 @@ linkTrackEvents
 </td>
 <td>
 <pre>
-s. linkTrackEvents='event2'；
+s.linkTrackEvents = 'event2';
 </pre>
 </td>
 </tr>
@@ -345,7 +318,7 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  completeLoseOffsetThreshold=1
+  completeCloseOffsetThreshold = 1
 </pre>
 </td>
 <td>不適用
@@ -367,8 +340,7 @@ s.Media.playerName = "Custom Player Name"
 </td>
 <td>
 <pre>
-s. contextData['video. player']=「CustomPlayer
- Name」；
+s.contextData['video.player'] ="CustomPlayer名稱";
 </pre>
 </td>
 </tr>
@@ -435,8 +407,7 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  segmentByOffsetMilestones=
- true；
+  segmentByOffsetMilestones = true;
 </pre>
 </td>
 <td>不適用
@@ -498,8 +469,7 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMilestones
-=「20,40,60」；
+  adTrackOffsetMilestones = "20,40,60";
 </pre>
 </td>
 <td>不適用
@@ -514,8 +484,7 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  adsegmentBymilestones=
- true；
+  adSegmentByMilestones = true;
 </pre>
 </td>
 <td>不適用
@@ -530,8 +499,7 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adsegmentByOffsetMilestones=
- true；
+  adSegmentByOffsetMilestones = true;
 </pre>
 </td>
 <td>不適用
@@ -568,37 +536,17 @@ s.Media.open(mediaName,mediaLength,mediaPlayerName)
 <td>s.tl()</td>
 <td>
 <pre>
-s. linkTrackVars='events，prop10，eVar10，eVar12，eVar15，contextData. video. name，contextData. video. view'；
-s. linkTrackEvents
-='event2'；
-s. prop10
-= mediaName；
-s. eVar10
-= mediaName；
-s. eVar12
-=「video」；
-s. eVar15
-= mediaPlayerName；
-s. events
-='event2'；
-s. contextData['video. name']
-= mediaName；
-s. contextData['video. view']
-='true'；
-s. tl(this，'o'，'Video Start')；
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData.video.name, contextData.video.view';s.linkTrackEvents = 'event2';s.prop10 = mediaName;s.eVar10 = mediaName;s.eVar12 = "video";s.eVar15 = mediaPlayerName;s.events = 'event2';s.contextData['video.name'] = mediaName;s.contextData['video.view'] = 'true';s.tl(this,'o','Video Start');
 </pre>
 </td>
 </tr>
 <tr>
 <td>mediaName</td>
-<td><b>MediaName：</b> (必要)您要顯示在視訊報表中的影片名稱。</td>
+<td><b></b> mediaName:（必要）視訊的名稱，如您所希望的顯示在視訊報表中。</td>
 <td>在連結呼叫設定 eVar 或內容資料變數</td>
 <td>
 <pre>
-s. prop10= mediaName；
-s. eVar10= mediaName；
-s. contextData['video. name']=
- mediaName；
+s.prop10 = mediaName;s.eVar10 = mediaName;s.contextData['video.name'] = mediaName;
 </pre>
 </td>
 </tr>
@@ -607,14 +555,14 @@ s. contextData['video. name']=
 mediaLength
 </td>
 <td>
-<b>mediaLength：</b> (必要)秒內視訊長度。
+<b></b> mediaLength:（必要）視訊長度（以秒為單位）。
 </td>
 <td>
 在連結呼叫設定 eVar 或內容資料變數
 </td>
 <td>
 <pre>
-s. contextData['video. length']=」90」；
+s.contextData['video.length'] ="90";
 </pre>
 </td>
 </tr>
@@ -623,15 +571,14 @@ s. contextData['video. length']=」90」；
 mediaPlayerName
 </td>
 <td>
-<b>mediaPlayerName：</b> (必要)用於檢視視訊的媒體播放器名稱，您希望它顯示在視訊報表中。
+<b></b> mediaPlayerName:（必要）用於檢視視訊的媒體播放器名稱，如您想要它顯示在視訊報表中。
 </td>
 <td>
 在連結呼叫設定 eVar 或內容資料變數
 </td>
 <td>
 <pre>
-s. contextData['video. player']=「CustomPlayer
- Name」；
+s.contextData['video.player'] ="CustomPlayer名稱";
 </pre>
 </td>
 </tr>
@@ -650,7 +597,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 </tr>
 <tr>
 <td>name</td>
-<td><b>名稱：</b> (必要)廣告的名稱或ID。</td>
+<td><b></b> 名稱：（必要）廣告的名稱或ID。</td>
 <td>不適用</td>
 <td>無法使用</td>
 </tr>
@@ -659,7 +606,7 @@ s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM
 length
 </td>
 <td>
-<b>長度：</b> (必要)廣告長度。
+<b></b> 長度：（必要）廣告的長度。
 </td>
 <td>不適用
 </td>
@@ -671,7 +618,7 @@ length
 playerName
 </td>
 <td>
-<b>playerName：</b> (必要)用於檢視廣告的媒體播放器名稱。
+<b></b> playerName:（必要）用於檢視廣告的媒體播放器名稱。
 </td>
 <td>不適用
 </td>
@@ -771,25 +718,9 @@ s.tl()
 </td>
 <td>
 <pre>
-s. linkTrackVars='events、prop10、eVar10、eVar12、eVar15、contextData。
- video. name，contextData.
- video. complete'；
-s. linkTrackEvents
-='event3'；
-s. prop10
-= mediaName；
-s. eVar10
-= mediaName；
-s. eVar12
-=「video」；
-s. eVar15
-= mediaPlayerName；
-s. events
-='event3'；
-s. contextData['video. name']=
- mediaName；
-s. contextData['video. complete']='true'；
-s. tl(this，'o'，'Video Complete')；
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData。
+       video.name、contextData。
+       video.complete';s.linkTrackEvents = 'event3';s.prop10 = mediaName;s.eVar10 = mediaName;s.eVar12 = "video";s.eVar15 = mediaPlayerName;s.events = 'event3';s.contextData['video.name'] = mediaName;s.contextData['video.complete'] = 'true';s.tl(this,'o','Video Complete');
 </pre>
 </td>
 </tr>
@@ -835,10 +766,9 @@ s.Media.monitor(s, media)
 </td>
 <td>
 <pre>
-s. linkTrackVars='events、prop10、eVar10、eVar12、eVar15、contextData。
- video. name，contextData.
- video. view'；
-s. linkTrackEvents='event2'；
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar15, contextData。
+       video.name、contextData。
+       video.view';s.linkTrackEvents = 'event2';
 </pre>
 </td>
 </tr>
