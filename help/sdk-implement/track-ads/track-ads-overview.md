@@ -1,7 +1,7 @@
 ---
 seo-title: 概述
 title: 概述
-uuid: 1607798b-c6 ef-4d60-8e40-e958 c345 c09 c
+uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,17 +12,17 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->下列指示提供使用2.x SDK進行實施的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
+>以下說明提供使用2.x SDK實作的指引。 若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
 
-廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。使用媒體播放器的API來識別關鍵播放器事件，並填入必要和選擇性的廣告變數。請參閱此處完整的中繼資料清單： [廣告參數。](/help/metrics-and-metadata/ad-parameters.md)
+廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。使用媒體播放器的API來識別關鍵播放器事件，並填入必要和選用的廣告變數。 請在這裡檢視完整的中繼資料清單：廣 [告參數。](/help/metrics-and-metadata/ad-parameters.md)
 
 ## 播放器事件 {#player-events}
 
 
-### 在廣告插播開始時
+### 廣告插播開始時
 
 >[!NOTE]
->包括前置卷
+>包括前滾
 
 * 為廣告插播建立 `adBreak` 物件例項，例如, `adBreakObject`.
 
@@ -100,9 +100,9 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->請確定您在廣告播放期間不會增加內容播放器播放磁頭(`l:event:playhead`)`s:asset:type=ad`。如果您執行，「內容逗留時間」度量會受到負面影響。
+>請確定您在廣告播放期間未增加內容播放`l:event:playhead`器播放頭(`s:asset:type=ad`)。 若您這麼做，「內容逗留時間」量度將受到負面影響。
 
-下列範例程式碼使用HTML媒體播放器的JavaScript2.x SDK。
+下列范常式式碼使用JavaScript 2.x SDK建立HTML5媒體播放器。
 
 ```js
 /* Call on ad break start */ 
