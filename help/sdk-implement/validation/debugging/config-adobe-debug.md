@@ -1,7 +1,7 @@
 ---
 seo-title: 設定 Adobe Debug
 title: 設定 Adobe Debug
-uuid: e416458d-f23 c-41ce-8d99-fa5076 c455 f0
+uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
 source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
@@ -18,7 +18,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
    >[!TIP]
    >
-   >此登入不與您用來登入Adobe Analytics的使用者名稱/密碼相同。
+   >此登入不是您用來登入Adobe Analytics的使用者名稱／密碼。
 
 1. 擁有 Experience Cloud 帳戶後，請聯絡 Adobe 代表索取 Adobe Debug 存取權限。
 1. After access has been granted, go to [https://debug.adobe.com](https://debug.adobe.com) and use your Experience Cloud credentials to log in.
@@ -35,7 +35,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
 ## 除錯代理 {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
 
-下載並設定除錯代理程式：
+下載並設定除錯代理：
 
 1. Download the Debug Proxy app at [App Downloads.](https://debug.adobe.com/#/downloads)
 
@@ -70,16 +70,16 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
-    1.對於Firefox，請完成「在Mozilla Firefox中安裝根憑證」程序。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+    1.對於Firefox，請完成[在Mozilla Firefox中安裝根證書中的過程。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
     
-    You might need to quit and reopen Firefox to see the change.
+    您可能需要退出並重新開啟Firefox，才能查看變更。
     
-    ** iOS裝置**
-    1。按一下**[！UICOHTROL設定應用程式]****&gt;****[！UICOHTROL Wifi設定]**。
+    **iOS裝置**
+    1。 按一下**[!UICONCONTROL設定應用程式]** **** **[!UICONTROL Wifi設定]**，將iOS裝置設定為使用Adobe Debug做為HTTP Proxy。
     
-    1. 在Safari中，前往[除錯]。](https://proxy.debug.adobe.com/ssl)
+    1. 在Safari中，請至[Debug。](https://proxy.debug.adobe.com/ssl)
     
-    Safari will prompt you to install the SSL certificate.
+    Safari將提示您安裝SSL憑證。
 
 ## 為行動裝置安裝 SSL 憑證 {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
 
