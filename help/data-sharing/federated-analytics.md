@@ -3,7 +3,7 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 4ffdc10559c7c25072bb7cd34165c9df9311a65e
+source-git-commit: b20cce8df3631690a7de6de502828e961d154665
 
 ---
 
@@ -37,9 +37,9 @@ source-git-commit: 4ffdc10559c7c25072bb7cd34165c9df9311a65e
 
 * **Adobe 諮詢合約:**&#x200B;若要進行接收者和傳送者之間同盟規則的初始設定，建議您與諮詢服務人員合作檢閱資料並建立資料共享協定。
 
-## 下載同盟分析表單
+## Download the Federated Analytics Form
 
-**請從此處下載目前版本的表單：聯合**&#x200B;規 [則合約表單。](/assets/federated_analytics_form.pdf)
+**Download the current version of the form here:`===>`**   [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) `<===`
 
 ## 程序 {#section_byb_kb3_vbb}
 
