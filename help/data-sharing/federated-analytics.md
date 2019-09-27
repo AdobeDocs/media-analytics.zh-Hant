@@ -3,7 +3,7 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 3ca6743e34d40e5826dbe50edcbec6aa77ef66f4
+source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: 3ca6743e34d40e5826dbe50edcbec6aa77ef66f4
 
 ## 下載同盟分析表單
 
-**Download the current version of the form here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
+**`===>`請從以下網址下載目前版本：聯**[ 邦](/assets/federated_analytics_form.pdf)規則合約表。 **`<===`**
 
 ## 程序 {#section_byb_kb3_vbb}
 
