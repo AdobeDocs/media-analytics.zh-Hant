@@ -3,14 +3,15 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ca44520b532aee7a0647f0c5be69af58ead61444
+source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
 
 ---
 
 
 # 同盟分析{#federated-analytics}
 
-同盟分析服務提供一套系統，可供在兩個合作夥伴間分享 Adobe Media (音訊與視訊) Analytics 資料。Media Analytics 建立的標準化視訊測量資料是同盟分析的一大特徵，可讓相同的資料從多個來源匯入單一報表。透過同盟分析管理的規則和邏輯，可輕鬆控管資料，並依照不同合作關係的需求個別調整資料。同盟分析讓音訊與視訊測量更有效率、更簡化且更易於付諸執行。
+Federated Analytics服務提供在兩個合作夥伴之間共用Adobe Media Analytics資料（音訊和視訊）的系統。
+Media Analytics 建立的標準化視訊測量資料是同盟分析的一大特徵，可讓相同的資料從多個來源匯入單一報表。透過同盟分析管理的規則和邏輯，可輕鬆控管資料，並依照不同合作關係的需求個別調整資料。同盟分析讓音訊與視訊測量更有效率、更簡化且更易於付諸執行。
 
 ## 福利 {#section_804FFE8671594A6FB769CBE79EF9D627}
 
