@@ -3,14 +3,15 @@ seo-title: 自訂連結實施指南
 title: 自訂連結實施指南
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
+source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
 
 ---
 
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. 自訂視訊連結視訊追蹤經常用於不太需要視訊測量的平台與裝置上。
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
+自訂視訊連結視訊追蹤經常用於不太需要視訊測量的平台與裝置上。
 
 * 在JavaScript中：函 `s.tl()` 數
 * 在行動應用程式中: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
@@ -50,7 +51,6 @@ if (e.type == "ended") {
 * 所有計算 (如逗留時間或四分位數) 都必須在自訂指令碼中進行
 * 非常簡單明瞭，沒有隱藏的資料庫或指令碼
 * 全面掌握視訊資料的各個層面
-* 移除範例播放器的連結
 
 ## HTML5 播放器適用的範例 JavaScript
 
@@ -126,4 +126,3 @@ if (e.type == "ended") {
   }; 
 </script>
 ```
-
