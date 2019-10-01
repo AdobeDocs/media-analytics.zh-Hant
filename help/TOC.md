@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 終端使用者
 user-guide-title: 音訊與視訊專用的Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
+source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
          + [在Android上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在iOS上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + [在JavaScript上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-js.md)
-         + [Track Core Playback on Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
+         + [在Chromecast上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [在Roku上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Track Buffering {#track-buffering}
          + [在Android上追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
@@ -51,7 +51,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
          + [在Roku上追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
          + [Android上的追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
-         + [Track Seeking on iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
+         + [在iOS上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [在JavaScript上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Chromecast的追蹤](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Roku上的追蹤](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
@@ -68,8 +68,8 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [概述](sdk-implement/track-ads/track-ads-overview.md)
       + [在Android上追蹤廣告](sdk-implement/track-ads/track-ads-android.md)
       + [在iOS上追蹤廣告](sdk-implement/track-ads/track-ads-ios.md)
-      + [Track Ads on JavaScript](sdk-implement/track-ads/track-ads-js.md)
-      + [Track Ads on Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
+      + [在JavaScript上追蹤廣告](sdk-implement/track-ads/track-ads-js.md)
+      + [在Chromecast上追蹤廣告](sdk-implement/track-ads/track-ads-chromecast.md)
       + [在Roku上追蹤廣告](sdk-implement/track-ads/track-ads-roku.md)
       + 實作標準廣告中繼資料 {#impl-std-ad-metadata}
          + [在 Android 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
@@ -87,17 +87,17 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [概述](sdk-implement/track-qos/track-qos-overview.md)
       + [在Android上追蹤體驗品質](sdk-implement/track-qos/track-qos-android.md)
       + [在iOS上追蹤體驗品質](sdk-implement/track-qos/track-qos-ios.md)
-      + [Track Quality of Experience on JavaScript](sdk-implement/track-qos/track-qos-js.md)
-      + [Track Quality of Experience on Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
-      + [Track Quality of Experience on Roku](sdk-implement/track-qos/track-qos-roku.md)
+      + [在JavaScript上追蹤體驗品質](sdk-implement/track-qos/track-qos-js.md)
+      + [追蹤Chromecast的體驗品質](sdk-implement/track-qos/track-qos-chromecast.md)
+      + [追蹤Roku的體驗品質](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [概述](sdk-implement/track-errors/track-errors-overview.md)
-      + [Track Errors on Android](sdk-implement/track-errors/track-errors-android.md)
-      + [Track Errors on iOS](sdk-implement/track-errors/track-errors-ios.md)
-      + [Track Errors on JavaScript](sdk-implement/track-errors/track-errors-js.md)
-      + [Track Errors on Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
-      + [Track Errors on Roku](sdk-implement/track-errors/track-errors-roku.md)
-   + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
+      + [在Android上追蹤錯誤](sdk-implement/track-errors/track-errors-android.md)
+      + [在iOS上追蹤錯誤](sdk-implement/track-errors/track-errors-ios.md)
+      + [在JavaScript上追蹤錯誤](sdk-implement/track-errors/track-errors-js.md)
+      + [在Chromecast上追蹤錯誤](sdk-implement/track-errors/track-errors-chromecast.md)
+      + [在Roku上追蹤錯誤](sdk-implement/track-errors/track-errors-roku.md)
+   + [退出與隱私權](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
       + [沒有廣告的 VOD 播放](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
       + [具有前段廣告的 VOD 播放](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
@@ -111,13 +111,13 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [即時主要內容](sdk-implement/tracking-scenarios/live-main-content.md)
       + [具有循序追蹤的即時主要內容](sdk-implement/tracking-scenarios/live-sequential.md)
    + 驗證 {#validation}
-      + [Validation Overview](sdk-implement/validation/validation-overview.md)
+      + [驗證概觀](sdk-implement/validation/validation-overview.md)
       + [測試 1: 標準播放](sdk-implement/validation/test1-standard-playback.md)
       + [測試2:媒體中斷](sdk-implement/validation/test2-media-interrupt.md)
-      + [Test Call Details](sdk-implement/validation/test-call-details.md)
+      + [測試呼叫詳細資訊](sdk-implement/validation/test-call-details.md)
       + [心率參數說明](sdk-implement/validation/heartbeat-params.md)
       + 除錯 {#debugging}
-         + [SDK Debugging](sdk-implement/validation/debugging/sdk-debugging.md)
+         + [SDK除錯](sdk-implement/validation/debugging/sdk-debugging.md)
          + [設定 Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
          + [建立新的 Debug 報表](sdk-implement/validation/debugging/create-new-debug-report.md)
          + [Debug 控制面板和報表](sdk-implement/validation/debugging/debug-dash-repts.md)
@@ -182,3 +182,4 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 + [同盟分析](data-sharing/federated-analytics.md)
 + 其他資源 {#additional-resources}
    + [文件更新](additional-resources/doc-updates.md)
+
