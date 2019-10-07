@@ -3,14 +3,14 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 99a8908499ab0e43964fd3d7e6e419b5a78ce66b
+source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
 
 ---
 
 
 # 同盟分析{#federated-analytics}
 
-The Federated Analytics service provides a system for sharing Adobe Media Analytics data (audio and video) between two partners.
+Federated Analytics服務提供在兩個合作夥伴之間共用Adobe Media Analytics資料（音訊和視訊）的系統。
 Media Analytics 建立的標準化視訊測量資料是同盟分析的一大特徵，可讓相同的資料從多個來源匯入單一報表。透過同盟分析管理的規則和邏輯，可輕鬆控管資料，並依照不同合作關係的需求個別調整資料。同盟分析讓音訊與視訊測量更有效率、更簡化且更易於付諸執行。
 
 ## 福利 {#section_804FFE8671594A6FB769CBE79EF9D627}
@@ -38,13 +38,13 @@ Media Analytics 建立的標準化視訊測量資料是同盟分析的一大特�
 
 * **Adobe 諮詢合約:**&#x200B;若要進行接收者和傳送者之間同盟規則的初始設定，建議您與諮詢服務人員合作檢閱資料並建立資料共享協定。
 
-## Download the Federated Analytics Form
+## 下載同盟分析表單
 
-Download the current version of the form here: [Federation Rules Agreement Form](/assets/federated_analytics_form.pdf)
+請從以下網址下載目前版本的表單：聯 [邦規則協定表](federated_analytics_form.pdf)
 
 ## 程序 {#section_byb_kb3_vbb}
 
-1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。The Federated Rules Agreement form contains special fields for our engineering team and should ONLY be edited using Adobe Acrobat. [免費下載 Acrobat。](https://get.adobe.com/reader/)
+1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。Federated Rules Agreement表單包含我們工程團隊的特殊欄位，且僅能使用Adobe Acrobat編輯。 [免費下載 Acrobat。](https://get.adobe.com/reader/)
 1. 在能取得資料檔案的前提下，諮詢服務可提供接收者範例資料檔案，內含來自傳送者播放器的實際資料，以便進一步確認資料共享規則已妥善定義。
 1. 傳送者與接收者可確保資料共享協定符合雙方之間的所有合約要求。
 1. 諮詢服務會將填妥的表單傳送至 Adobe 工程技術部門以建立資料共享規則。
