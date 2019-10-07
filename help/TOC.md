@@ -3,21 +3,21 @@ product: Media Analytics
 audience: 終端使用者
 user-guide-title: 音訊與視訊專用的Adobe Analytics
 translation-type: tm+mt
-source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
+source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
 
 ---
 
 
 # Adobe Analytics for Audio and Video {#using}
 
-+ [Measuring Audio and Video in Adobe Analytics](media-overview.md)
++ [在Adobe Analytics中測量音訊和視訊](media-overview.md)
 + Measurement Options {#measurement-options}
    + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [里程碑概述](measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [Migrate Milestone to Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [將里程碑移轉至媒體分析](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [從里程碑移轉至自訂連結](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Analytics 中的自訂連結 {#cl-in-aa}
-      + [Custom Link Implementation Guide](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [自訂連結實作指南](measurement-options/cl-in-aa/cl-impl-guide.md)
 + 音訊和視訊分析簡介 {#intro-to-ava}
    + [必要條件](intro-to-ava/prereqs.md)
    + 實施路徑 {#implementation-paths}
@@ -54,11 +54,11 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
          + [在iOS上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
          + [在JavaScript上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Chromecast的追蹤](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Track Seeking on Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Roku上的追蹤](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + 實作標準中繼資料 {#impl-std-metadata}
          + [在 Android 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-         + [iOS Metadata Keys](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + [iOS中繼資料索引鍵](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + [在 JavaScript 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
          + [在 Chromecast 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [標準中繼資料參數- Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
@@ -66,7 +66,7 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
          + [標準中繼資料參數- Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 追蹤廣告 {#track-ads}
       + [概述](sdk-implement/track-ads/track-ads-overview.md)
-      + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
+      + [在Android上追蹤廣告](sdk-implement/track-ads/track-ads-android.md)
       + [在iOS上追蹤廣告](sdk-implement/track-ads/track-ads-ios.md)
       + [在JavaScript上追蹤廣告](sdk-implement/track-ads/track-ads-js.md)
       + [在Chromecast上追蹤廣告](sdk-implement/track-ads/track-ads-chromecast.md)
@@ -86,9 +86,9 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
    + 追蹤體驗品質 {#track-qos}
       + [概述](sdk-implement/track-qos/track-qos-overview.md)
       + [在Android上追蹤體驗品質](sdk-implement/track-qos/track-qos-android.md)
-      + [Track Quality of Experience on iOS](sdk-implement/track-qos/track-qos-ios.md)
-      + [Track Quality of Experience on JavaScript](sdk-implement/track-qos/track-qos-js.md)
-      + [Track Quality of Experience on Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
+      + [在iOS上追蹤體驗品質](sdk-implement/track-qos/track-qos-ios.md)
+      + [在JavaScript上追蹤體驗品質](sdk-implement/track-qos/track-qos-js.md)
+      + [追蹤Chromecast的體驗品質](sdk-implement/track-qos/track-qos-chromecast.md)
       + [追蹤Roku的體驗品質](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [概述](sdk-implement/track-errors/track-errors-overview.md)
@@ -97,7 +97,7 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
       + [在JavaScript上追蹤錯誤](sdk-implement/track-errors/track-errors-js.md)
       + [在Chromecast上追蹤錯誤](sdk-implement/track-errors/track-errors-chromecast.md)
       + [在Roku上追蹤錯誤](sdk-implement/track-errors/track-errors-roku.md)
-   + [Opt-out and Privacy](sdk-implement/opt-out-privacy.md)
+   + [退出與隱私權](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
       + [沒有廣告的 VOD 播放](sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
       + [具有前段廣告的 VOD 播放](sdk-implement/tracking-scenarios/vod-preroll-ads.md)
@@ -111,13 +111,13 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
       + [即時主要內容](sdk-implement/tracking-scenarios/live-main-content.md)
       + [具有循序追蹤的即時主要內容](sdk-implement/tracking-scenarios/live-sequential.md)
    + 驗證 {#validation}
-      + [Validation Overview](sdk-implement/validation/validation-overview.md)
+      + [驗證概觀](sdk-implement/validation/validation-overview.md)
       + [測試 1: 標準播放](sdk-implement/validation/test1-standard-playback.md)
-      + [Test 2: Media Interruption](sdk-implement/validation/test2-media-interrupt.md)
-      + [Test Call Details](sdk-implement/validation/test-call-details.md)
+      + [測試2:媒體中斷](sdk-implement/validation/test2-media-interrupt.md)
+      + [測試呼叫詳細資訊](sdk-implement/validation/test-call-details.md)
       + [心率參數說明](sdk-implement/validation/heartbeat-params.md)
       + 除錯 {#debugging}
-         + [SDK Debugging](sdk-implement/validation/debugging/sdk-debugging.md)
+         + [SDK除錯](sdk-implement/validation/debugging/sdk-debugging.md)
          + [設定 Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
          + [建立新的 Debug 報表](sdk-implement/validation/debugging/create-new-debug-report.md)
          + [Debug 控制面板和報表](sdk-implement/validation/debugging/debug-dash-repts.md)
@@ -182,4 +182,3 @@ source-git-commit: f49f816de12f227ae30da4f3e1ac57c783a58f7b
 + [同盟分析](data-sharing/federated-analytics.md)
 + 其他資源 {#additional-resources}
    + [文件更新](additional-resources/doc-updates.md)
-
