@@ -3,7 +3,7 @@ seo-title: 要求參數
 title: 要求參數
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 
 ---
 
@@ -103,6 +103,13 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 | `media.qoe.droppedFrames` | N | 任何 | 資料流掉格的數量 |
 | `media.qoe.framesPerSecond` | N | 任何 | 每秒時間格數量 |
 | `media.qoe.timeToStart` | N | 任何 | 從使用者點擊播放到內容載入並開始播放之間的時間量 (以毫秒為單位) |
+
+## 加州消費者隱私權法案(CCPA)參數 {#ccpa-params}
+
+| 請求金鑰 | 必填 | 設定於... |  說明  |
+| --- | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | `sessionStart` | 當使用者選擇不在Adobe Analytics和其他Experience cloud解決方案（例如Audience Manager）之間共用其資料時，設為true |
+| `analytics.optOutShare` | N | `sessionStart` | 當使用者選擇退出其資料的同盟時（例如，退出至其他Adobe Analytics用戶端），設為true。 |
 
 ## 其他詳細資料 {#section_ryt_ccy_lcb}
 
