@@ -3,7 +3,7 @@ seo-title: 在 Adobe Analytics 測量音訊和視訊
 title: 在 Adobe Analytics 測量音訊和視訊
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 ---
 
@@ -35,7 +35,7 @@ Adobe 的媒體測量解決方案提供的部分優勢包括:
 
 * **及時分析 -** 使用跨越多個管道的關鍵效能量度 (例如持續時間) 來做出即時且可行的決定。主要內容事件是以 **10 秒鐘**&#x200B;的間隔來測量，以擷取其發生所有活動。廣告追蹤事件則為 **1 秒鐘**&#x200B;的發生間隔。
 * **促進參與 -** 透過較少的緩衝事件和瞭解廣告播放在內容中的時間和位置，提供較少干擾的流暢體驗，讓使用者回頭重複造訪，進而與使用者全面互動。
-* **全貌-** 跨所有內容發佈商合併多個資料點，以取得所有媒體活動的完整檢視，並透過 [](data-sharing/federated-analytics.md) Federated Analytics功能衡量所有可能通道的參與度和檢視／監聽。
+* **全貌-** 跨所有內容發佈商合併多個資料點，以取得所有媒體活動的完整檢視，並透過 [](/help/federated-analytics.md) Federated Analytics功能衡量所有可能通道的參與度和檢視／監聽。
 * **提高粒度 -** 從最精細的層級評估檢視行為，包括個別訪客的每日時間、每分鐘的同時檢閱者/聽眾人數以及使用內容的平均持續時間。
 * **精準的測量 -** 跨越用來使用媒體的多項裝置進行測量，包括 OTT、智慧型手機、平板電腦、桌面等，以監控使用者的參與類型和習慣。
 * **區段 -** 套用分類至您的播放器、裝置、類型、章節，並顯示每一個類別如何影響整體的檢視/收聽次數，以及客戶對內容、音訊、廣告和複合上述項目的參與度。
@@ -107,4 +107,4 @@ Adobe Analytics for Media 隨業界發展與時俱進，提供強大的資料收
 
 >[!NOTE]
 >
->TLS is currently the most-widely deployed security protocol used in web browsers and other applications that require data to be securely exchanged over a network.
+>TLS目前是部署最廣泛的安全通訊協定，適用於網頁瀏覽器和其他需要透過網路安全交換資料的應用程式。
