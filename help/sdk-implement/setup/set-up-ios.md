@@ -3,7 +3,7 @@ seo-title: 設定 iOS
 title: 設定 iOS
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ---
 
@@ -140,7 +140,7 @@ For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migrat
 
 ## 設定 tvOS 的原生應用程式
 
-隨著新 Apple TV 的推出，您現在可以建立應用程式以在原生 tvOS 環境中執行。在 iOS 提供的數個架構中，您可以使用任一架構來建立單純的原生應用程式，或可以使用 XML 範本和 JavaScript 來建立您的應用程式。從 MediaSDK 2.0 版開始，已對 tvOS 提供支援。For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/documentation/)
+隨著新 Apple TV 的推出，您現在可以建立應用程式以在原生 tvOS 環境中執行。在 iOS 提供的數個架構中，您可以使用任一架構來建立單純的原生應用程式，或可以使用 XML 範本和 JavaScript 來建立您的應用程式。從 MediaSDK 2.0 版開始，已對 tvOS 提供支援。For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/)
 
 在您的 Xcode 專案中執行以下步驟。本指南的編寫是假設您的專案具有的一個目標為以 tvOS 為目標的 Apple TV 應用程式:
 
