@@ -3,7 +3,7 @@ seo-title: 同盟分析
 title: 同盟分析
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 
 ---
 
@@ -40,7 +40,7 @@ Media Analytics 建立的標準化視訊測量資料是同盟分析的一大特�
 
 ## 下載同盟分析表單
 
-請從以下網址下載此表單的最新版本：聯 [邦規則協定](federated-analytics-form.pdf)
+請從以下網址下載此表單的最新版本：聯 [邦規則協定](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
 ## 程序 {#section_byb_kb3_vbb}
 
