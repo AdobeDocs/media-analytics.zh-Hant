@@ -3,7 +3,7 @@ seo-title: 啟用媒體報表
 title: 啟用媒體報表
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -16,12 +16,12 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 >
 >為了運用新功能，現有的Media Analytics客戶應重新啟用其RSID的媒體追蹤。
 
-1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] &gt; [!UICONTROL Report Suites].
-1. Select the report suite(s) where you are collecting media data and click [!UICONTROL Edit Settings] &gt; [!UICONTROL Media Management] &gt; [!UICONTROL Media Reporting].
+1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click **[!UICONTROL Admin &gt; Report Suites].**
+1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings &gt; Media Management &gt; Media Reporting].**
 
    ![](assets/media-reporting.png){width="400px"}
 
-1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
+1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core],** and optionally enable **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** and **[!UICONTROL Media Quality].**
 
    媒體測量包含下列模組:
 
@@ -52,16 +52,16 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
    如果您尚未追蹤廣告、章節或播放品質，您可以隨時啟用其他選項。
 
-1. 按一下&#x200B;**[!UICONTROL 「儲存」]**。
+1. Click **[!UICONTROL Save].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. 如果您看見[!UICONTROL 「媒體核心測量」]頁面，請繼續進行下一個步驟。
+   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. 如果您看見&#x200B;**[!UICONTROL 「媒體核心測量」]頁面，請繼續進行下一個步驟。**
 
-1. (Conditional) On the [!UICONTROL Media Core measurement] page, choose to continue using custom variables or choose to use solution variables.
+1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables.
 
    | 選項 | 附註 |
    | --- | --- |
-   | 繼續使用自訂變數 | 利弊：<ul> <li> **優點:** 內容趨勢會在移轉之後繼續運作。 </li> <li> **** 缺點：需要您保留兩個自訂eVar和三個自訂事件，以分配給媒體。 您會重新獲得一個自訂 eVar 和一個自訂事件的使用。 </li> </ul> 若要繼續使用自訂變數: <ol> <li>選取「使用自訂變數」，然後按一下「儲存」。 </li> <li>提示時，映射您目前的自訂 eVar 和事件，然後按一下儲存: </li> </ol> |
-   | 移轉至解決方案變數 | 利弊：<ul> <li> **優點:** 您會重新獲得三個自訂 eVar 和四個自訂事件的使用。 </li> <li> **缺點:** 您會遺失媒體報表的&#x200B;**所有**&#x200B;歷史趨勢和比較。這表示在移轉至心率之前，您無法追蹤任何日期的內容檢視或內容播放時間。 </li> </ul> **限制:** 請勿移轉至解決方案變數，除非您確定不要保留此趨勢。所有客戶應只在他們需要保留歷史持續性時，才使用解決方案變數及處理規則，將媒體資料放置到現有的 prop 和 eVar。若要移轉至解決方案變數：選取「 [!UICONTROL 使用解決方案變數] 」，然後按一 [!UICONTROL 下「儲存]」。 <br><br> 重要：移轉至解決方案變數會導致您遺失 **媒體報告的** 所有歷史趨勢和比較。 |
+   | 繼續使用自訂變數 | 利弊：<ul> <li> **優點:** 內容趨勢會在移轉之後繼續運作。 </li> <li> **** 缺點：需要您保留兩個自訂eVar和三個自訂事件，以分配給媒體。 您會重新獲得一個自訂 eVar 和一個自訂事件的使用。 </li> </ul> 若要繼續使用自訂變數: <ol> <li>Select **[!UICONTROL Use Custom Variables,]** then click **[!UICONTROL Save.]** </li> <li>When prompted, map your current custom eVars and events and then click **[!UICONTROL Save:]** </li> </ol> |
+   | 移轉至解決方案變數 | 利弊：<ul> <li> **優點:** 您會重新獲得三個自訂 eVar 和四個自訂事件的使用。 </li> <li> **缺點:** 您會遺失媒體報表的&#x200B;**所有**&#x200B;歷史趨勢和比較。這表示在移轉至心率之前，您無法追蹤任何日期的內容檢視或內容播放時間。 </li> </ul> **限制:** 請勿移轉至解決方案變數，除非您確定不要保留此趨勢。所有客戶應只在他們需要保留歷史持續性時，才使用解決方案變數及處理規則，將媒體資料放置到現有的 prop 和 eVar。若要移轉至解決方案變數：選取「 **[!UICONTROL 使用解決方案變數]** 」，然後按一 **[!UICONTROL 下「儲存]」。** 重 <br><br> 要：移轉至解決方案變數會導致您遺失 **媒體報告的** 所有歷史趨勢和比較。 |
 
 >[!IMPORTANT]
 >
