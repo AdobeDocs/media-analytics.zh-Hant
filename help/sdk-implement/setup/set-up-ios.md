@@ -3,7 +3,7 @@ seo-title: 設定 iOS
 title: 設定 iOS
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -26,7 +26,7 @@ source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ## SDK 實作
 
-1. 將[下載的](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) Media SDK 新增至專案。
+1. 將[下載的](/help/sdk-implement/download-sdks.md#download-2x-sdks) Media SDK 新增至專案。
 
    1. 驗證 `libs` 目錄中存在下列軟體元件:
 
@@ -48,7 +48,7 @@ source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
          ![](assets/choose-options_ios.png)
 
-      1. Click **[!UICONTROL Finish]**.
+      1. 按一下&#x200B;**[!UICONTROL 完成]**。
       1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
       1. 在&#x200B;**[!UICONTROL 「一般」]**&#x200B;標籤的&#x200B;**[!UICONTROL 「連結架構」]**&#x200B;和&#x200B;**[!UICONTROL 「程式庫」]**&#x200B;區段中，連結所需的架構和程式庫。
 
