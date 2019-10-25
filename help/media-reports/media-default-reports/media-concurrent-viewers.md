@@ -3,7 +3,7 @@ seo-title: 媒體同時檢閱者
 title: 媒體同時檢閱者
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 ![](assets/video-concurrent-viewers.png)
 
-## 報表功能 {#section_11F8BCB98042490DAD0EA0B7EDA80569}
+## 報表功能 {#report-features}
 
 以下為此報表的部分功能:
 
@@ -30,7 +30,7 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 * 此報表僅顯示一天當中的資料。
 * 客戶可檢視同時觀看者報表的歷史記錄 (僅限單一天)。
 
-## 限制 {#section_F159BC0213134FE4A997E52EECC7BB9D}
+## 限制 {#limitations}
 
 以下為此報表的部分限制:
 
