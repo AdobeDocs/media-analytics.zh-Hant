@@ -3,20 +3,20 @@ seo-title: 從里程碑移轉至 Media Analytics
 title: 從里程碑移轉至 Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 從里程碑移轉至 Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## 概述 {#section_ihl_nbz_cfb}
+## 概述 {#overview}
 
 「里程碑」和 Media Analytics 追蹤的視訊測量核心概念相同，也就是擷取視訊播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實 [作媒體分析的詳細資訊](/help/sdk-implement/setup/setup-overview.md) ，請參 [閱SDK概觀和追蹤概述](/help/sdk-implement/track-av-playback/track-core-overview.md) 。
 
 下列表格為「里程碑」解決方案和 Media Analytics 解決方案的對照表。
 
-## 移轉指南 {#section_iyb_pbz_cfb}
+## 移轉指南 {#migration-guide}
 
 ### 變數參考
 
