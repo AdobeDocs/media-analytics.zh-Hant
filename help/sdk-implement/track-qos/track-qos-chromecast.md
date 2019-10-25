@@ -3,7 +3,7 @@ seo-title: 在 Chromecast 上追蹤體驗品質
 title: 在 Chromecast 上追蹤體驗品質
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
 
-## 概述 {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
+## 概述 {#overview}
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒體播放器API來識別與QoS和錯誤追蹤相關的變數。
 
@@ -29,7 +29,7 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 呼叫 `trackError(“media error id”);`
 
-## 實作 {#section_3B8EBEB167624D0481E8AF4761F83047}
+## 實作 {#implement}
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
