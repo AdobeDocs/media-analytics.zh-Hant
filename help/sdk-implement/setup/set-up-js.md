@@ -3,7 +3,7 @@ seo-title: 設定 JavaScript
 title: 設定 JavaScript
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * *提供播放器資訊的 API* - 此資訊包含媒體名稱和播放點位置等等的詳細內容。
 
-1. 將[下載的](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211)程式庫新增至專案。為方便起見，請建立類別的本機參照。
+1. 將[下載的](/help/sdk-implement/download-sdks.md#download-2x-sdks)程式庫新增至專案。為方便起見，請建立類別的本機參照。
 
    1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
