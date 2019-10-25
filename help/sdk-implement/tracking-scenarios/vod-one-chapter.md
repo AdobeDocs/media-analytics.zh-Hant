@@ -3,14 +3,14 @@ seo-title: 具有一個章節的 VOD 播放
 title: 具有一個章節的 VOD 播放
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 具有一個章節的 VOD 播放{#vod-playback-with-one-chapter}
 
-## 藍本 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 藍本 {#scenario}
 
 在此案例中，會將一部分的 VOD 內容標示為章節。
 
@@ -27,7 +27,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。即使使用者未看到媒體完成，也必須呼叫此API。 |
 
-## 參數 {#section_869319D99A474FEA8EA840415EA97FBD}
+## 參數 {#parameters}
 
 當章節播放開始時， `Heartbeat Chapter Start` 會傳送呼叫。 If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
 
@@ -42,7 +42,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `s:stream:chapter_*` |  | 章節資料特定的資料流資訊。 |
 | `s:meta:*` |  | 具有特定上下文資料的章節。 |
 
-## 程式碼範例、中間的章節 {#section_icd_5bj_x2b}
+## 程式碼範例、中間的章節 {#sample-code-chapter-in-the-middle}
 
 在此案例中，一部分的 VOD 內容為章節。
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## 程式碼範例、開頭的章節 {#section_flj_5bj_x2b}
+## 程式碼範例、開頭的章節 {#sample-code-chapter-at-the-beginning}
 
 在此案例中，VOD 內容會播放，而在播放的開頭具有一個章節。
 
