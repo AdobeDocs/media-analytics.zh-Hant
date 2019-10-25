@@ -3,14 +3,14 @@ seo-title: 具有已略過廣告的 VOD 播放
 title: 具有已略過廣告的 VOD 播放
 uuid: f3ab3524-abcb-4051-b64e-a1ad6e3dd3f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 具有已略過廣告的 VOD 播放{#vod-playback-with-skipped-ads}
 
-## 藍本 {#section_DAC4BCE25F4A4C4991AD0AE495D15B00}
+## 藍本 {#scenario}
 
 此案例包含的 VOD 內容播放具有已略過的廣告。
 
@@ -29,11 +29,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 內容已完成播放。 | `trackComplete()` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 工作階段已結束。 | `trackSessionEnd()` |  | `SessionEnd` |
 
-## 參數 {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
+## 參數 {#parameters}
 
 除了沒有廣告完成和廣告插播完成呼叫之外，這些參數完全等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)案例中的參數。
 
-## 程式碼範例 {#section_lxt_qz3_x2b}
+## 程式碼範例 {#sample-code}
 
 ![](assets/ad-skip.png)
 
