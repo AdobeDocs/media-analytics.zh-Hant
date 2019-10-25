@@ -3,14 +3,14 @@ seo-title: 沒有廣告的 VOD 播放
 title: 沒有廣告的 VOD 播放
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 沒有廣告的 VOD 播放{#vod-playback-with-no-ads}
 
-## 藍本 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 藍本 {#scenario}
 
 此案例有一個 VOD 資產，沒有廣告，從開始到結束播放一次。
 
@@ -21,7 +21,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | 內容播放 |  | 內容心率 |  |
 | 內容已完成 | `trackComplete` | 心率內容完成 | *完成*&#x200B;表示已到播放點的結尾。 |
 
-## 參數 {#section_45D7B10031524411B91E2C569F7818B0}
+## 參數 {#parameters}
 
 您在心率內容開始呼叫上看到的許多相同值，也會在 Adobe Analytics `Content Start` 呼叫上看到。Adobe使用許多參數來填入各種媒體報表，但下表僅列出最重要的參數：
 
@@ -37,7 +37,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 | `s:asset:media_id` | &lt;您的媒體名稱&gt; |  |
 | `s:meta:*` | 可選 | 在媒體上設定的自訂中繼資料。 |
 
-## 心率內容播放 {#section_2ABBD51D3A6D45ABA92CC516E414417A}
+## 心率內容播放 {#heartbeat-content-play}
 
 These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. 所有其他參數應該仍存在。
 
@@ -46,7 +46,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 內容心率 {#section_3B5945336E464160A94518231CEE8F53}
+## 內容心率 {#content-heartbeats}
 
 在媒體播放期間，計時器至少每10秒發送一個心跳。 這些心率包含關於播放、廣告、緩衝等等的資訊。每個心率的確切內容不在本文件的範圍，但重要問題為，當播放繼續時會一致地觸發心率。
 
@@ -57,7 +57,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;playhead position&gt;，例如50,60,70 | 此參數會反映播放點目前的位置。 |
 
-## 心率內容完成 {#section_33BCC4C3181940C39446A57C25D82179}
+## 心率內容完成 {#heartbeat-content-complete}
 
 When playback has completed, which means that the end of the playhead is reached, a `Heartbeat Content Complete` call is sent. 此呼叫類似其他 Heartbeat 呼叫，但它包含某些特定參數:
 
@@ -66,7 +66,7 @@ When playback has completed, which means that the end of the playhead is reached
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 程式碼範例 {#section_glq_vw3_x2b}
+## 程式碼範例 {#sample-code}
 
 在此案例中，內容長度為 40 秒，其播放到結尾而沒有任何岔斷。
 
