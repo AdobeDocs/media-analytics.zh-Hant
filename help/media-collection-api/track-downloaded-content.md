@@ -3,14 +3,14 @@ seo-title: 追蹤下載內容
 title: 追蹤下載內容
 uuid: 0718689d-9602-4e3f-833c-8297ae1d909
 translation-type: tm+mt
-source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 追蹤下載內容{#track-downloaded-content}
 
-## 概述 {#section_hcy_3pk_cfb}
+## 概述 {#overview}
 
 「已下載內容」功能可讓使用者離線時追蹤媒體使用。 舉例來說，使用者在行動裝置上下載並安裝應用程式，然後使用應用程式將內容下載至裝置上的本機儲存。為追蹤此下載資料，Adobe已開發「下載內容」功能。 使用此功能，當使用者從裝置儲存空間播放內容時，追蹤資料會儲存在裝置上，而不論裝置的連線性為何。 當使用者完成播放作業，而裝置返回線上時，儲存的追蹤資訊會在單一裝載內傳送至Media Collection API後端。 在此之後，處理和報告會如常在Media Collection API中進行。
 
@@ -28,7 +28,7 @@ source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
 * 線上場景即時跟蹤；這需要在每次網路呼叫前先檢查連通性。
 * 離線案例（「下載內容」功能）只需檢查一次網路連線，但需要在裝置上增加記憶體使用量。
 
-## 實施 {#section_jhp_jpk_cfb}
+## 實施 {#implementation}
 
 ### 事件結構
 
@@ -47,11 +47,11 @@ source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
 * 201 - Created: Successful Request；資料有效，工作階段已建立且將進行處理。
 * 400 - Bad Request；結構驗證失敗，已捨棄所有資料，不會處理任何工作階段資料。
 
-## 與 Adobe Analytics 整合 {#section_cty_kpk_cfb}
+## 與 Adobe Analytics 整合 {#integration-with-adobe-analtyics}
 
 在計算下載內容藍本的Analytics開始／關閉呼叫時，後端會設定一個額外的Analytics欄位，稱為 `ts.` Thees are timestamps for the first and last events received(start and complete)。 此機制可讓完成的媒體作業置於正確的時間點（即即使使用者連續數天未連線，媒體作業仍會報告在實際檢視內容時發生）。 您必須透過建立&#x200B;_可選時間戳記報表套裝，以在 Adobe Analytics 端啟用此機制。_ 若要啟用可選時間戳記報表套裝，請參閱 [可選時間戳記。](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
 
-## 範例工作階段比較 {#section_qnk_lpk_cfb}
+## 範例工作階段比較 {#sample-session-comparison}
 
 ```
 [url]/api/v1/sessions
