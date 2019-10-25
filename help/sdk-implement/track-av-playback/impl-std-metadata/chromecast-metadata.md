@@ -3,7 +3,7 @@ seo-title: Chromecast 中繼資料索引鍵
 title: Chromecast 中繼資料索引鍵
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 標準視訊和廣告中繼資料可分別在媒體和廣告資訊物件上設定。在呼叫追蹤 API 之前，使用視訊/廣告中繼資料的常數索引鍵，設定包含資訊物件之標準中繼資料的字典。請參閱下列表格以獲取標準中繼資料常數的完整清單，然後是範例。
 
-## 中繼資料常數 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## 中繼資料常數 {#video-metadata-constants}
 
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 資訊源 | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | 資料流格式 | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
-## 廣告中繼資料常數 {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## 廣告中繼資料常數 {#ad-metadata-constants}
 
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 網站 ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | 創作 URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+## Chromecast的範例實作 {#sample-implementations-for-chromecast}
 
 ### 影片
 
