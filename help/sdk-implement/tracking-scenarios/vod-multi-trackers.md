@@ -3,14 +3,14 @@ seo-title: 多個 VOD 追蹤器並行
 title: 多個 VOD 追蹤器並行
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 多個 VOD 追蹤器並行{#vod-multiple-trackers-in-parallel}
 
-## 藍本 {#section_1AFCA33B322B46818BA4F1BDD3B40B4E}
+## 藍本 {#scenario}
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
@@ -18,7 +18,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 
 除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例相同。
 
-## 參數 {#section_45D7B10031524411B91E2C569F7818B0}
+## 參數 {#parameters}
 
 ### 心率工作階段
 
@@ -26,7 +26,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 |---|---|---|
 | `s:event:sid` | 唯一工作階段 ID | 呼叫 `trackSessionEnd` 方法之前，存在於所有心率網路呼叫的唯一工作階段 ID。 |
 
-## 程式碼範例 {#section_qpy_4dj_x2b}
+## 程式碼範例 {#sample-code}
 
 ![](assets/multi-sessions-in-parallel.png)
 
