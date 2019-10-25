@@ -1,17 +1,19 @@
 ---
-title: 媒體追蹤以外的媒體維度
-seo-title: 媒體追蹤以外的媒體維度
+title: 媒體串流歸因
+seo-title: 媒體串流歸因
 translation-type: tm+mt
-source-git-commit: 5d20df537cd244a10f6c2e66cea622e98aa17a16
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
 
-# 媒體追蹤以外的媒體維度
+# 媒體串流歸因
 
 此功能可讓您將應用程式動作連結至媒體追蹤資料，而不需要額外的處理規則和自訂變數。
 
-客戶現在可以將任何媒體維度新增至所有其他分析呼叫，例如頁面檢視和自訂連結。 在實作期間，您必須將媒體內容資料參數新增至Analytics追蹤呼叫。 媒體上使用的上下文資料參數完整清單可從以下網址取得：音 [訊和視訊參數。](/help/metrics-and-metadata/audio-video-parameters.md)
+## 媒體追蹤以外的媒體維度
+
+透過「媒體串流歸因」，客戶現在可以將任何媒體維度新增至所有其他分析呼叫，例如頁面檢視和自訂連結。 在實作期間，您必須將媒體內容資料參數新增至Analytics追蹤呼叫。 媒體上使用的上下文資料參數完整清單可從以下網址取得：音 [訊和視訊參數。](/help/metrics-and-metadata/audio-video-parameters.md)
 
 您也需要從管理控制台重新啟用媒體追蹤設定，以便針對每個要啟用此功能的報表進行媒體追蹤設定。
 
