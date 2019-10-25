@@ -3,7 +3,7 @@ seo-title: 廣告參數
 title: 廣告參數
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 >可透過檢查變數名稱來啟用分類。 如果有任何
 >遺失，Adobe會再次新增遺失的。
 
-## 廣告視訊資料 {#section_hq3_nbv_51b}
+## 廣告視訊資料 {#ad-video-data}
 
 ### 廣告 ID
 
@@ -115,7 +115,7 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 
 
-## 標準廣告中繼資料 {#section_EFB805867916411E84DE1BA5A183D86A}
+## 標準廣告中繼資料 {#standard-ad-metadata}
 
 ### 廣告商
 
@@ -166,7 +166,7 @@ source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 
 
-## 廣告量度 {#section_22AA1565F11C4F3990E2AB51CD3213F7}
+## 廣告量度 {#ad-metrics}
 
 ### 廣告開始
 
