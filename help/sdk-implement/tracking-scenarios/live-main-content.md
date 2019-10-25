@@ -3,14 +3,14 @@ seo-title: 即時主要內容
 title: 即時主要內容
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 即時主要內容{#live-main-content}
 
-## 藍本 {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## 藍本 {#scenario}
 
 在此案例中，有一個沒有廣告的即時資產，在加入即時資料流後播放了 40 秒。
 
@@ -21,7 +21,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | 內容播放。 |  | 內容心率 |  |
 | 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未使用媒體完成，也必須呼叫此API。 |
 
-## 參數 {#section_D52B325B99DA42108EF560873907E02C}
+## 參數 {#parameters}
 
 您在 Adobe Analytics 內容開始呼叫上看到的許多相同值，也會在 Heartbeat 內容開始呼叫上看到。您也會看到Adobe在Adobe Analytics中用來填入各種媒體報表的許多其他參數。 我們不會在此說明所有內容，只會說明真正重要的那些內容。
 
@@ -38,7 +38,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | `s:stream:type` | live |  |
 | `s:meta:*` | 可選 | 媒體上的自訂中繼資料集 |
 
-## 內容心率 {#section_7B387303851A43E5993F937AE2B146FE}
+## 內容心率 {#content-heartbeats}
 
 在媒體播放期間，計時器會每10秒傳送一或多個心率（或ping），以用於主要內容，而每秒傳送一個或多個廣告。 這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
 
@@ -49,7 +49,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;playhead position&gt; 例如 50、60、70 | 這應該反映播放點目前的位置。 |
 
-## 心率內容完成 {#section_2CA970213AF2457195901A93FC9D4D0D}
+## 心率內容完成 {#heartbeat-content-complete}
 
 在此情景中，不會有完整呼叫，因為即時串流從未完成。
 
@@ -67,7 +67,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 當使用者暫停播放時，必須套用在播放開始時套用的相同「即時播放磁頭」邏輯。 當使用者返回播放LIVE串流時，您必須將 `l:event:playhead` 值設定為新的偏移播放頭位置， __ 而非使用者暫停LIVE串流的點。
 
-## 程式碼範例 {#section_vct_j2j_x2b}
+## 程式碼範例 {#sample-code}
 
 ![](assets/live-content-playback.png)
 
