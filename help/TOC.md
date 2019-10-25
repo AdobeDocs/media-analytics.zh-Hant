@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 終端使用者
 user-guide-title: 音訊與視訊專用的Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
+source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
 
 ---
 
@@ -186,3 +186,4 @@ source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 + [同盟分析](federated-analytics.md)
 + 其他資源 {#additional-resources}
    + [資源](additional-resources/doc-updates.md)
+
