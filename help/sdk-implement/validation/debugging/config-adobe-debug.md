@@ -3,14 +3,14 @@ seo-title: 設定 Adobe Debug
 title: 設定 Adobe Debug
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 translation-type: tm+mt
-source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
 
 # 設定 Adobe Debug{#configure-adobe-debug}
 
-## 存取 Adobe Debug {#section_AF81E7AD331E41FFA371AB9DA924BFBB}
+## 存取 Adobe Debug {#accessing-adobe-debug}
 
 若要存取 Adobe Debug:
 
@@ -33,7 +33,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
 建議的瀏覽器是最新版本的 Chrome 和 Firefox。
 
-## 除錯代理 {#section_8D3493B8426B46DEB9CD7E2ABD785D66}
+## 除錯代理 {#debug-proxy}
 
 下載並設定除錯代理：
 
@@ -48,7 +48,7 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
 
    您可能需要根據 OS 和瀏覽器調整瀏覽器設定。
 
-## 下載 SSL 憑證並安裝在桌上型電腦或應用程式上 {#section_2F9547E301CB413299A67BD59AFBEE0D}
+## 下載 SSL 憑證並安裝在桌上型電腦或應用程式上 {#download-and-install-sSL-desktop}
 
 首次執行 Adobe Debug 時，系統會產生唯一的 SSL 憑證。如果您的桌上型電腦和/或應用程式支援 HTTPS 流量，便需要下載及安裝我們的 SSL 憑證。
 
@@ -75,13 +75,13 @@ source-git-commit: 5ff3566fae2c1df559341057fafdd289774e4b2f
     您可能需要退出並重新開啟Firefox，才能查看變更。
     
     **iOS裝置**
-    1。 按一下**[!UICONCONTROL設定應用程式]** **** **[!UICONTROL Wifi設定]**，將iOS裝置設定為使用Adobe Debug做為HTTP Proxy。
+    1。 Set your iOS device to use Adobe Debug as its HTTP proxy by clicking **[!UICONTROL Settings app]** **&gt;** **[!UICONTROL Wifi settings]**.
     
     1. 在Safari中，請至[Debug。](https://proxy.debug.adobe.com/ssl)
     
     Safari將提示您安裝SSL憑證。
 
-## 為行動裝置安裝 SSL 憑證 {#section_F2A3336F482C43E2ABEA742AD5CCACCA}
+## 為行動裝置安裝 SSL 憑證 {#install-sSL-for-mobile-device}
 
 如果您的 Adobe Debug 遺失 HTTPS 呼叫，就必須在行動裝置上安裝 Adobe Debug 的 SSL 憑證。
 
