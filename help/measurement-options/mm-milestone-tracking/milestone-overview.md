@@ -3,7 +3,7 @@ seo-title: 里程碑概述
 title: 里程碑概述
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356cc5
 translation-type: tm+mt
-source-git-commit: 7eb14c8e4da742fb426a6e5d0d60ebf8c2063bb6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: 7eb14c8e4da742fb426a6e5d0d60ebf8c2063bb6
 
 [舊版里程碑文件](milestone_analytics_video.pdf)
 
-## 設定 {#section_rzx_j1z_cfb}
+## 設定 {#configuration}
 
 ### 里程碑視訊設定
 
@@ -47,7 +47,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 <!--![](assets/0clip_image008_-92166399.png)-->
 ![](assets/rs3.png)
 
-## 視訊變數參考資料 {#section_emg_c1z_cfb}
+## 視訊變數參考資料 {#video-variable-reference}
 
 下表包含視訊的商務變數和自訂事件的其他詳細資料:
 
@@ -59,7 +59,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | 視訊起始 | Event <br/>Type: Counter | 指出有訪客檢視了視訊的某部分。但此量度並不會針對訪客所檢視的視訊提供任何關於檢視內容的多少、哪一部分的資訊。 |
 | 視訊完成 | 事件 <br/>類型: 計數器 | 指出使用者已檢視完整的視訊。預設情況下，完成事件會在視訊結尾之前 1 秒測量。<br/>實施期間，您可以指定想要將距離視訊結尾幾秒視為檢視完成。針對即時視訊和沒有已定義結尾的其他資料流，您可以指定測量完成的自訂點。例如，在檢視特定時間之後。 |
 
-## 媒體模組變數 {#section_ts5_11z_cfb}
+## 媒體模組變數 {#media-module-variables}
 
 下列變數可讓您設定視訊測量。您必須為需要的變數表格中的變數定義值。此外，若要追蹤您的視訊播放器中的事件，您必須使用開啟、播放、停止和關閉方法來啟用 autoTrack (針對支援的播放器)，或實施自訂播放器事件追蹤。
 
@@ -70,7 +70,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | `Media.trackVars` | **語法:** <br/><br/> `s.Media.trackVars =` <br/>    `"events,` `prop2,` `eVar1,` `eVar2,` `eVar3";` <br/><br/>A comma-separated list of all variables that are set in your video tracking code. |
 | `Media.trackEvents` | **語法:** <br/><br/> `s.Media.trackEvents =` <br/>    `"event1,` `event2,` `event3,` `event4,` `event5,` `event6,` `event7"` <br/><br/>A comma-separated list of all events that are set in your video tracking code. |
 
-## 選擇性變數 {#section_ufg_zzy_cfb}
+## 選擇性變數 {#optional-variables}
 
 |  變數    | 說明 |
 | --- | --- |
@@ -85,7 +85,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | `Media.segmentByMilestones` | **語法:** <br/><br/> `s.Media.segmentByMilestones = true;` 根據 <br/><br/>媒體長度自動產生區段名稱、區段編號和區段長度資料，而使用「依里程碑分段」中指定的里程碑是定義區段的唯一方式 `Media.trackMilestones`<br/><br/>`autoTrack`。 <br/><br/>預設值： `false` |
 | `Media.segmentByOffsetMilestones` | **語法:** <br/><br/> `s.Media.segmentByOffsetMilestones = true;` 根據 <br/><br/>媒體長度自動產生區段名稱、區段編號和區段長度資料，而使用「依里程碑分段」中指定的里程碑是定義區段的唯一方式 `Media.trackOffsetMilestones`<br/><br/>`autoTrack`。  <br/><br/>預設值： `false` |
 
-## 廣告追蹤變數 {#section_bhv_xzy_cfb}
+## 廣告追蹤變數 {#ad-tracking-variables}
 
 這些變數用來結合 openAd 方法傳送廣告資訊。See [VAST Video Ad Tracking.](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_ads.html)
 
@@ -97,7 +97,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | `Media.adSegmentByMilestones` | **語法:** <br/><br/> `s.Media.adSegmentByMilestones = true;` 根據 <br/><br/>媒體長度自動產生區段名稱、區段編號和區段長度資料，而使用「依里程碑分段」中指定的里程碑是定義區段的唯一方式 `Media.adTrackMilestones`<br/><br/>`autoTrack`。  <br/><br/>預設值： `false` |
 | `Media.adSegmentByOffsetMilestones` | **語法:** <br/><br/> `s.Media.adSegmentByOffsetMilestones = true;` 根據 <br/><br/>媒體長度自動產生區段名稱、區段編號和區段長度資料，而使用「依里程碑分段」中指定的里程碑是定義區段的唯一方式 `Media.adTrackOffsetMilestones`<br/><br/>`autoTrack`。 <br/><br/>預設值： `false` |
 
-## 媒體模組方法 {#section_xp1_wzy_cfb}
+## 媒體模組方法 {#media-module-methods}
 
 媒體模組方法可用來手動追蹤播放器事件和追蹤不屬於標準視訊報表的其他度量。
 
@@ -117,7 +117,7 @@ On the next screen, select **[!UICONTROL Use Custom Variables].**
 | `Media.track` | **語法:** <br/><br/> `s.Media.track(mediaName)`<br/><br/>立即傳送目前的視訊狀態，以及您定義的任何 `Media.trackVars` 和 Media.trackEvents。此方法是在 `Media.monitor` 內使用。<br/><br/>請參 [閱使用Media.monitor測量其他量度。](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/video/video_mediamonitor.html) 呼 <br/><br/>叫 `Media.open` 此方 `Media.play` 法之前，先呼叫和在視訊上。 此方法會採用下列參數: <ul> <li> **mediaName**: 視訊的名稱。這必須符合 `Media.open` 中使用的名稱。</li> </ul> 此方法是在播放視訊時傳送其他變數的唯一方式。此方法會將秒數間隔和百分比里程碑計數器重設為零，以避免多個追蹤點擊。 |
 
 
-## 追蹤視訊播放器事件 {#section_dsg_rzy_cfb}
+## 追蹤視訊播放器事件 {#track-video-player-events}
 
 您可以透過建立附加至視訊播放器事件處理常式的函式來追蹤媒體播放器.This lets you call `Media.open`, `Media.play`, `Media.stop`, and `Media.close` at the appropriate times. 例如:
 
@@ -158,7 +158,7 @@ function endMovie() {
 } 
 ```
 
-## JavaScript 自動追蹤 {#section_ahz_pzy_cfb}
+## JavaScript 自動追蹤 {#javascript-autotrack}
 
 The JavaScript media module identifies all `<embed>` or `<object>` tags in the page HTML. 然後它會搜尋每個標記中的資料，以決定要使用的媒體播放器 (如果有的話)。如果播放器為 Windows Media Player、Quicktime 或 Real Player，則可以使用 `autoTrack`，不過 Windows Media Player 適用的 僅能對 Internet Explorer 運作。`autoTrack`需要手動追蹤 Windows Media Player，才能支援所有其他瀏覽器。
 
@@ -168,7 +168,7 @@ The JavaScript media module identifies all `<embed>` or `<object>` tags in the p
 s.Media.autoTrack = true
 ```
 
-## JavaScript 程式碼範例 {#section_i4g_4zy_cfb}
+## JavaScript 程式碼範例 {#javascript-sample-code}
 
 ```javascript
 // Sample implementation 
