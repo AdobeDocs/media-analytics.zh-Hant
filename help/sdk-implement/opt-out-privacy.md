@@ -3,14 +3,14 @@ seo-title: 退出與隱私權
 title: 退出與隱私權
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 translation-type: tm+mt
-source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 退出與隱私權{#opt-out-and-privacy}
 
-## 退出/加入 {#section_zfb_syq_v2b}
+## 退出/加入 {#opt-out-opt-in}
 
 您可以控制特定裝置上是否允許追蹤活動。
 
@@ -26,7 +26,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
 
    * The `privacyDefault` setting in the `ADBMobile.json` config file. 這會控制持續使用的初始設定，直到在程式碼中變更為止。
 
-   * 方 `ADBMobile().setPrivacyStatus()` 法。
+   * `ADBMobile().setPrivacyStatus()` 方法。
 
       * **選擇退出:**
 
@@ -73,7 +73,7 @@ source-git-commit: 80208f1c4773857f7907be0b8566c55a03e6106c
             ```
    使用 `setPrivacyStatus` 變更隱私權設定後，變更為永久有效，直到使用此方法再次變更，或者應用程式解除安裝並重新安裝為止。
 
-## 擷取儲存的識別碼 (OTT 應用程式) {#section_mky_2yq_v2b}
+## 擷取儲存的識別碼 (OTT 應用程式) {#retrieving-stored-identifiers-ott-apps}
 
 這些資訊有助於從 Roku 應用程式擷取存放在本機的使用者身分識別資料。
 
