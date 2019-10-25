@@ -3,14 +3,14 @@ seo-title: 具有已略過章節的 VOD 播放
 title: 具有已略過章節的 VOD 播放
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 具有已略過章節的 VOD 播放{#vod-playback-with-a-skipped-chapter}
 
-## 藍本 {#section_34DCAFE0E64949C4A6DF2D98F8A12B41}
+## 藍本 {#scenario}
 
 在此案例中，使用者會在主要內容中略過某個章節。
 
@@ -29,11 +29,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 內容已完成播放。 | `trackComplete` | 心率內容完成 | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未看到媒體完成，也必須呼叫此API。 |
 
-## 參數 {#section_1874F6B7880B43C5856BD11FF85B382E}
+## 參數 {#parameters}
 
 在章節播放期間使用的參數與 [VOD播放中的參數相同，只不過沒有章節完整的網路呼叫](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) 。
 
-## 程式碼範例 {#section_fyl_ncj_x2b}
+## 程式碼範例 {#sample-code}
 
 ![](assets/chapter-skip.png)
 
