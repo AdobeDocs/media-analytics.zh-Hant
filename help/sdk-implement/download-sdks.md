@@ -3,14 +3,14 @@ seo-title: 下載 SDK
 title: 下載 SDK
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 下載 SDK{#download-sdks}
 
-## 下載 2.x Media SDK {#section_551A10AD7880426BB29AE52482BB4211}
+## 下載 2.x Media SDK {#download-2x-sdks}
 
 | 2.x媒體SDK | 最新媒體SDK下載 |  API   |  文件  |
 | --- | --- | --- | --- |
@@ -20,13 +20,13 @@ source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 | Roku | [Roku 適用的 Media SDK v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [設定Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Chromecast 適用的 Media SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [設定 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
-## Media Analytics 啟動擴展元件 {#section_o54_gsd_12b}
+## Media Analytics 啟動擴展元件 {#media-analytics-launch-extension}
 
 | MA 啟動元件   | 下載 | 文件 |
 |---|---|---|
 | **MA 啟動擴展元件** | [範例 HTML5 播放器擴展元件](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video 擴充功能](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
 
-## 下載 1.x Media SDK {#section_B91B3A02E68B4B42917E392AAE666522}
+## 下載 1.x Media SDK {#download-the-1.x-media-sDKs}
 
 | 1.x SDK |  媒體SDK下載 |  快速入門手冊 |
 | --- | --- | --- |
