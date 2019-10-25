@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -34,7 +34,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 * 呼叫 `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## 實施章節追蹤 {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## 實施章節追蹤 {#implement-chapter-tracking}
 
 1. 識別章節開始事件何時發生，並使用章節資訊建立 `ChapterObject` 例項。
 
