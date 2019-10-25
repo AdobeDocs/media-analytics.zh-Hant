@@ -3,7 +3,7 @@ seo-title: 品質參數
 title: 品質參數
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
@@ -39,13 +39,11 @@ source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 | <ul> <li> **SDK 索引鍵:**<br/>  [位元速率](./quality-parameters.md#related_apis_section) </li> <li> **API 索引鍵:**<br/>media.qoe.bitrate </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/>關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> ****<br/> 範例值：800-899 </li><li> **說明：**<br/>平均位元速率（以kbps為單位）。 值預先定義為 100kbps 間隔的貯體。平均位元速率的計算方式，為播放作業工作階段期間發生、與播放期間相關的所有位元速率值的加權平均。實施流量分類。  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.qoe)。<br/>bitrateAverageBucket) </li> <li> ****<br/> 心率：(l:stream:bitrate) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>平均位元速率 </li> <li> ****<br/> 上下文資料：(a.media.qoe)。<br/>bitrateAverageBucket) </li> <li> **資料摘要:**<br/>videoqoebitrateaverageevar </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.qoe。<br/>bitrateAverageBucket) </li> </ul> |
 
 
-
 ### 開始時間
 
 |   實施   | 網路參數 | 報告 |
 | --- | --- | --- |
 | <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/>media.qoe.timeToStart </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> ****<br/> 傳送方式：媒體開始，媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> ****<br/> 範例值：三萬 </li><li> **說明：**<br/>如果您未透過QoSObject設定此值，此值預設為零。 您將此值設為毫秒。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics:(a.media.qoe)。<br/>timeToStart) </li> <li> ****<br/> 心率：(l:stream:startup_time) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>開始時間 </li> <li> ****<br/> 上下文資料：(a.media.qoe)。<br/>timeToStart) </li> <li> **資料饋送:**<br/>videoqoetimetostartevar </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.qoe。<br/>timeToStart) </li> </ul> |
-
 
 
 ### FPS
