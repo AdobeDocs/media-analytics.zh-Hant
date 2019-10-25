@@ -3,7 +3,7 @@ seo-title: 在播放期間處理應用程式中斷
 title: 在播放期間處理應用程式中斷
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. 如此會導致播放至該時段不會計入總播放時間，並遺失先前的進度標籤、區段等。 Instead, call `trackPlay` when the app returns and/or the media resumes playing.
 
-## 有關如何處理應用程式中斷的常見問題集: {#section_osf_xqs_h2b}
+## 有關如何處理應用程式中斷的常見問題集: {#faq-about-handling-application-interrupts}
 
 * _應用程式要在背景停留多長的時間後，才應關閉工作階段?_
 
