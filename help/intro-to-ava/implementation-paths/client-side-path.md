@@ -3,7 +3,7 @@ seo-title: 用戶端
 title: 用戶端
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -22,5 +22,4 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!NOTE]
 >
->客戶需要聯絡他們的銷售代表/客戶經理以簽署新的銷售訂單，因為 Media Analytics 具有獨特的 SKU，並且從基於伺服器呼叫的定價模式變更為基於媒體資料流的模式。
-
+>客戶必須聯絡其銷售代表／客戶經理才能簽署新的銷售訂單，因為Media Analytics有獨特的SKU，而且從根據伺服器呼叫的定價模型變更為基於媒體串流的模型。
