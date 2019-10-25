@@ -3,7 +3,7 @@ seo-title: Roku 中繼資料索引鍵
 title: Roku 中繼資料索引鍵
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 標準視訊、音訊和廣告中繼資料可分別設定在媒體和廣告資訊物件上。 在呼叫追蹤 API 之前，使用視訊/廣告中繼資料的常數索引鍵，設定包含資訊物件之標準中繼資料的字典。請參閱下列表格以獲取標準中繼資料常數的完整清單，然後是範例。
 
-## 視訊中繼資料常數 {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## 視訊中繼資料常數 {#video-metadata-constants}
 
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 電台 | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
 | 發行者 | `a.media.publisher` | `MEDIA_AudioMetadataKeyPUBLISHER` |
 
-## 廣告中繼資料常數 {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## 廣告中繼資料常數 {#ad-metadata-constants}
 
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 | 網站 ID | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | 創作 URL | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` |
 
-## 常數 {#section_F55145DBE77F45B988849C42C044C7DA}
+## 常數 {#constants}
 
 您可以使用下列常數來追蹤媒體事件:
 
