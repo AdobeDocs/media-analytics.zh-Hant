@@ -3,7 +3,7 @@ seo-title: 媒體概述
 title: 媒體概述
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,13 +14,13 @@ source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
 ![](assets/media_overview.png){width="672px"}
 
-## 快速篩選 {#section_8DF3E4A6734145B082657C6BECFA0BBE}
+## 快速篩選 {#quick-filters}
 
 依裝置或地理區域快速顯示媒體量度:
 
 ![](assets/video-overview-report-filters.png){width="400px"}
 
-## 媒體效能 {#section_288FB476EDA44761BB8A86551F0A110C}
+## 媒體效能 {#media-performance}
 
 按一下並拖曳以放大，然後暫留以檢視特定媒體的詳細量度。按一下  ![](assets/video-overview-report-revert.png)
 
