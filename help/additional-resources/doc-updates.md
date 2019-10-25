@@ -6,19 +6,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: b0816d87f66f95f347cf391176b5c46457c9a790
 
 ---
 
 
-# 文件更新{#documentation-updates}
+# 資源{#resources}
 
-## 上次更新日期: 2019 年 3 月 7 日 {#March-2019-update}
+## 發行說明{#release-notes}
+
+* [發行說明](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+
+## 文件更新{#documentation-updates}
+
+### Last updated: October, 2019 {#October-2019-update}
+
+許多編輯和格式修正。
+Cookbook主題已擴充至Media SDK以外，包括有關「媒體追蹤以外的媒體維度」的新一般Cookbook主題。
+
+
+### 上次更新日期: 2019 年 3 月 7 日 {#March-2019-update}
 
 * 此更新主要針對JavaScript和OTT平台上的2.2 Media SDK版本。
 * JavaScript和OTT平台上的2.2 Media SDK版本針對iOS和Android平台提供與下文所述相同的支援（2018年11月1日更新）。
 
-## 上次更新: 2018 年 11 月 1 日 {#November-2018-update}
+### 上次更新: 2018 年 11 月 1 日 {#November-2018-update}
 
 * 本次更新主要是為了在 Android 與 iOS 平台上發行的 2.2 版 Media SDK。
 * Android 與 iOS 平台上的 2.2 版 Media SDK 支援在前述平台上追蹤音訊，另改善了一些內部功能。
@@ -35,11 +47,10 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 * Federated Analytics 表單已更新為 3.2 版，藉此反應與追蹤音訊有關的新參數。
 
-## 更新: 2018 年 10 月 10 日 {#October-2018-update}
+### 更新: 2018 年 10 月 10 日 {#October-2018-update}
 
 * 「SDK 實作」區域的文件結構已經過「重組」，將個別 (但大致相同) 的平台實施指南合併成一個 SDK 實作區段，並將平台專用的追蹤範例呈現在通用追蹤主題下方的子區段。
 * 為了因應移轉到新文件系統的需求，檔案已全數重新命名。已刪除所有分別指示概念、引用和任務主題類型的DITA前置詞(c_、r_、t_)。 所有底線 (’_’) 均已以連字號取代 ('-')。另外，檔案名稱與主題的標題也更相似。
 * 更新一般驗證與認證主題。
 * 加入測量選項解說等介紹性素材，另更新必備條件、實施路徑及 Audience Manager 啟用。
 * 更新「量度和中繼資料」與「Reporting and Analysis」區段，藉此反應新增的 Audio Analytics 功能。
-
