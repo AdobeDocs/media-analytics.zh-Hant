@@ -5,7 +5,7 @@ description: 在此案例中，前段廣告已插入到主要內容之前。
 seo-description: 在Adobe Media Analytics的此案例中，前段廣告已插入在主要內容之前。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫與無廣告 [的VOD播放相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
 | 工作階段已結束 | `trackSessionEnd` |  | `SessionEnd` |
 
-## 參數 {#section_33CDFB6CB230437480B67A3D149EC44E}
+## 參數 {#parameters}
 
 當廣告播放開始時，會 `Heartbeat Ad Start` 傳送呼叫。 If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
 
@@ -68,13 +68,13 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## 前段廣告插播的程式碼範例 {#section_nwf_xy3_x2b}
+## 前段廣告插播的程式碼範例 {#sample-code-for-a-pre-roll-ad-break}
 
 在此案例中，VOD 包含一個前段廣告、第二個前段廣告，然後播放內容。
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android To view this scenario in Android, set up the following code:**
+* **Android** 若要在Android中檢視此藍本，請設定下列程式碼：
 
    ```java
    // Set up  mediaObject 
@@ -378,7 +378,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    .......
    ```
 
-## 多個廣告插播的程式碼範例 {#section_ojy_zy3_x2b}
+## 多個廣告插播的程式碼範例 {#sample-code-for-multiple-ad-breaks}
 
 在此案例中，VOD 內容的播放會是前段廣告、內容、中段廣告、內容和後段廣告。
 
