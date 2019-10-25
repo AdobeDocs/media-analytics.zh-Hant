@@ -3,14 +3,14 @@ seo-title: 在 SceneGraph (Roku) 中進行追蹤
 title: 在 SceneGraph (Roku) 中進行追蹤
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 在 SceneGraph (Roku) 中進行追蹤{#tracking-in-scenegraph-roku}
 
-## 簡介 {#section_vfr_zcz_y2b}
+## 簡介 {#introduction}
 
 Roku 推出一款用於開發應用程式的新程式設計架構: SceneGraph XML 程式設計架構。這個新架構包含兩個新的重要概念:
 
@@ -19,7 +19,7 @@ Roku 推出一款用於開發應用程式的新程式設計架構: SceneGraph XM
 
 Adobe Mobile SDK for Roku 是以 BrightScript 撰寫。SDK 使用許多不適用於在 SceneGraph 上執行的應用程式 (例如執行緒) 的元件。因此，打算使用 SceneGraph 架構的 Roku 應用程式開發人員無法呼叫 Adobe Mobile SDK API (後者類似於舊版 BrightScript 應用程式中提供的 API)。
 
-## 架構 {#section_dj5_1dz_y2b}
+## 架構 {#architecture}
 
 為了將 SceneGraph 支援加入 AdobeMobile SDK，Adobe 已新增一個新的 API，該 API 在 AdobeMobile SDK 和 `adbmobileTask` 之間建立連接器橋接器。後者是用於 SDK 之 API 執行的 SceneGraph 節點。(在本文件其他章節中詳細說明 `adbmobileTask` 的用法。)
 
@@ -31,7 +31,7 @@ Adobe Mobile SDK for Roku 是以 BrightScript 撰寫。SDK 使用許多不適用
 
 ![](assets/SceneGraph_arch.png)
 
-## 元件 {#section_jwl_wqx_1bb}
+## 元件 {#components}
 
 **SceneGraph 應用程式:**
 
@@ -49,7 +49,7 @@ Adobe Mobile SDK for Roku 是以 BrightScript 撰寫。SDK 使用許多不適用
 * 在背景執行緒上執行 `AdobeMobileLibrary` API 的 SceneGraph 任務節點。
 * 作為委派以將資料傳回應用程式場景。
 
-## 公用 SceneGraph API {#section_jyd_hdz_y2b}
+## 公用 SceneGraph API {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -193,7 +193,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 | `adb_media_init_adbreakinfo` | This method returns initialized AdBreak Information object.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | This method returns an initialized QoS Information object.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## 實施 {#section_dbz_ydz_y2b}
+## 實施 {#implementation}
 
 1. **下載Roku程式庫** -下載最 [新的Roku程式庫。](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
@@ -293,7 +293,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
       end function 
       ```
 
-## 實作範例 {#section_mld_lfz_y2b}
+## 實作範例 {#sample-implementation}
 
 ### 舊版 SDK 上的 API 呼叫範例
 
