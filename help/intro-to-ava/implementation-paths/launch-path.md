@@ -3,7 +3,7 @@ seo-title: Adobe Experience Platform Launch
 title: Adobe Experience Platform Launch
 uuid: d6f9daf2-6f61-4475-9a77-94361bdd9d9d95
 translation-type: tm+mt
-source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -14,7 +14,7 @@ Media Analytics (心率) 是 Adobe 的標準化媒體追蹤解決方案。它已
 
 Adobe Experience Platform Launch是動態標籤管理的後續產品，其Launch擴充功能可協助在媒體播放器中實作追蹤。
 
-You can learn more about the Launch extension here: [Adobe Media Analytics for Audio and Video Extension](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension)
+You can learn more about the Launch extension here: [Adobe Media Analytics for Audio and Video Extension.](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
 
 >[!NOTE]
 >
