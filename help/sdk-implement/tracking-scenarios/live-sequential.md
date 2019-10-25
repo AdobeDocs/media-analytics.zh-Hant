@@ -3,14 +3,14 @@ seo-title: 具有循序追蹤的即時主要內容
 title: 具有循序追蹤的即時主要內容
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 具有循序追蹤的即時主要內容{#live-main-content-with-sequential-tracking}
 
-## 藍本 {#section_E4B558253AD84ED59256EDB60CED02AE}
+## 藍本 {#scenario}
 
 在此案例中，有一個沒有廣告的即時資產，在加入即時資料流後播放了 40 秒。
 
@@ -27,7 +27,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | 內容播放 |  | 內容心率 |  |
 | 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成表示已到達第 2 集的工作階段 2，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
 
-## 參數 {#section_D52B325B99DA42108EF560873907E02C}
+## 參數 {#parameters}
 
 ### 心率內容開始
 
@@ -42,7 +42,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *可選* | 媒體上的自訂中繼資料集 |
 
-## 心率內容播放 {#section_B6AD9225747943F881DCA8E6A1D5710E}
+## 心率內容播放 {#heartbeat-content-play}
 
 這應該看起來大多與心率內容開始呼叫完全相同，但主要的差異在於「s:event:type」參數。所有參數應該仍在此就定位。
 
@@ -51,7 +51,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 內容心率 {#section_7B387303851A43E5993F937AE2B146FE}
+## 內容心率 {#content-heartbeats}
 
 在媒體播放期間，計時器會每10秒傳送一或多個心率，以用於主要內容，而每秒傳送一個或多個心率。 這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
 
@@ -62,7 +62,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;playhead position&gt; 例如 50、60、70 | 這應該反映播放點目前的位置。 |
 
-## 心率內容完成 {#section_2CA970213AF2457195901A93FC9D4D0D}
+## 心率內容完成 {#heartbeat-content-complete}
 
 播放任何集完成時 (播放點跨過集界限)，會傳送心率內容完成呼叫。這類似其他 Heartbeat 呼叫，但將包含某些特定項目:
 
@@ -71,7 +71,7 @@ source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## 程式碼範例 {#section_mpx_q2j_x2b}
+## 程式碼範例 {#sample-code}
 
 ![](assets/ios-live-noads-multiplesessions.png)
 
