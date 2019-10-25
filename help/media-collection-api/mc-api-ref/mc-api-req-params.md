@@ -3,7 +3,7 @@ seo-title: 要求參數
 title: 要求參數
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | 當使用者選擇不在Adobe Analytics和其他Experience cloud解決方案（例如Audience Manager）之間共用其資料時，設為true |
 | `analytics.optOutShare` | N | `sessionStart` | 當使用者選擇退出其資料的同盟時（例如，退出至其他Adobe Analytics用戶端），設為true。 |
 
-## 其他詳細資料 {#section_ryt_ccy_lcb}
+## 其他詳細資料 {#additional-details}
 
 ### visitor.marketingCloudUserId
 
