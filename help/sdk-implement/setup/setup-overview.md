@@ -3,7 +3,7 @@ seo-title: 設定概觀
 title: 設定概觀
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 | Safari | v7+ |
 | IE | v11+ |
 
-## 一般實施指引 {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## 一般實施指引 {#general-implementation-guidelines}
 
 有三個主要的 SDK 元件與媒體追蹤有關:
 * 媒體心率設定 - 此設定包含報表的基本設定。
@@ -119,7 +119,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## 驗證 {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## 驗證 {#validate}
 
 媒體分析追蹤實施會產生兩種類型的追蹤呼叫：
 
@@ -138,7 +138,7 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。音訊追蹤目前適用於行動平台。 在所有追蹤呼叫中，有一些要驗證的關鍵通用變數:
 
-## SDK 1.x檔案 {#section_acj_tkk_t2b}
+## SDK 1.x檔案 {#sdk-1x-documentation}
 
 | 視訊分析1.x SDK |  開發人員指南（僅限PDF） |
 | --- | --- |
