@@ -3,7 +3,7 @@ seo-title: 追蹤概述
 title: 追蹤概述
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -59,9 +59,9 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!TIP]
 >
->播放頭位置是設定和設定代碼的一部分。 如需詳細資訊，請 `getCurrentPlayheadTime`參閱 [概述：一般實施指引。](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>播放頭位置是設定和設定代碼的一部分。 如需詳細資訊，請 `getCurrentPlayheadTime`參閱 [概述：一般實施指引。](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## 實作 {#section_BB217BE6585D4EDEB34C198559575004}
+## 實作 {#implement}
 
 1. **初始追蹤設定 -** 識別使用者何時觸發播放意圖 (使用者點按播放和/或自動播放已開啟)，然後使用媒體資訊建立 `MediaObject` 例項，以設定內容名稱、內容 ID、內容長度和資料流類型。
 
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## 驗證 {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## 驗證 {#validate}
 
 如需驗證實作的詳細資訊，請參閱驗 [證。](/help/sdk-implement/validation/validation-overview.md)
 
