@@ -3,20 +3,20 @@ seo-title: 用於多個工作階段的 VOD 一個追蹤器
 title: 用於多個工作階段的 VOD 一個追蹤器
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
 
 ---
 
 
 # 用於多個工作階段的 VOD 一個追蹤器{#vod-one-tracker-for-multiple-sessions}
 
-## 藍本 {#section_45D7B10031524411B91E2C569F7818B0}
+## 藍本 {#scenario}
 
 在此案例中，`MediaHeartbeat` 例項用來循序建立兩個不同的工作階段。
 
 此案例等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。
 
-## 參數 {#section_D52B325B99DA42108EF560873907E02C}
+## 參數 {#parameters}
 
 ### 心率工作階段
 
@@ -24,11 +24,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | --- | --- | --- |
 | `s:event:sid` | 唯一工作階段 ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
 
-## 程式碼範例 {#section_ndg_wdj_x2b}
+## 程式碼範例 {#sample-code}
 
 ![](assets/multi-sessions-one-at-a-time.png)
 
-### Android
+### Android {#android}
 
 To create two instances of `MediaHeartbeat` for two media players, set up the following code:
 
@@ -183,7 +183,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 應用程式
+### iOS {#ios}
 
 To create two instances of `MediaHeartbeat` for two media players, enter the following:
 
@@ -329,7 +329,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-### JavaScript
+### JavaScript {#javascript}
 
 ```js
 var MediaHeartbeat = ADB.va.MediaHeartbeat; 
