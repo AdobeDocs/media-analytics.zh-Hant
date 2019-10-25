@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 終端使用者
 user-guide-title: 音訊與視訊專用的Adobe Analytics
 translation-type: tm+mt
-source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
+source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
    + Analytics 中的自訂連結 {#cl-in-aa}
       + [自訂連結實作指南](measurement-options/cl-in-aa/cl-impl-guide.md)
 + 音訊和視訊分析簡介 {#intro-to-ava}
-   + [必要條件](intro-to-ava/prereqs.md)
+   + [必備條件](intro-to-ava/prereqs.md)
    + 實施路徑 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
       + [用戶端](intro-to-ava/implementation-paths/client-side-path.md)
@@ -128,6 +128,7 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [OTT 與 Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT 與 Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + 逐步指南 {#cookbook}
+      + [SDK Cookbook](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [在播放期間處理應用程式中斷](sdk-implement/cookbook/app-interrupts.md)
       + [解決 main:play 出現在廣告之間的問題](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [繼續非活動會話](sdk-implement/cookbook/resuming-inactive.md)
@@ -162,6 +163,9 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
       + [時間軸 2 - 使用者放棄工作階段](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [時間軸 3 - 章節](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [追蹤下載的內容](media-collection-api/track-downloaded-content.md)
++ 逐步指南 {#media-analytics-cookbook}
+   + [Cookbook概觀](media-analytics-cookbook/cookbook-overview.md)
+   + [媒體追蹤以外的媒體維度](media-analytics-cookbook/media-dimensions.md)
 + 量度和中繼資料 {#metrics-and-metadata}
    + [音訊和視訊參數](metrics-and-metadata/audio-video-parameters.md)
    + [廣告參數](metrics-and-metadata/ad-parameters.md)
@@ -181,4 +185,4 @@ source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
 + [同盟分析](federated-analytics.md)
 + 其他資源 {#additional-resources}
-   + [文件更新](additional-resources/doc-updates.md)
+   + [資源](additional-resources/doc-updates.md)
