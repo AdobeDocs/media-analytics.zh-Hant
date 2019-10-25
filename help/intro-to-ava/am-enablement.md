@@ -3,7 +3,7 @@ seo-title: 啟用 Audience Manager
 title: 啟用 Audience Manager
 uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
 translation-type: tm+mt
-source-git-commit: 8ae15f1e14731a97d212ab66816a777b4dcc897e
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -22,7 +22,7 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
 
 同盟資料完全支援將資料共用到 AAM。請與 Adobe 團隊合作確認同盟資料設定。
 
-## OTT / AAM 方法 {#section_yqq_5br_v2b}
+## OTT / AAM 方法 {#ott-aam-methods}
 
 您可以使用這些方法來傳送訊號，並從 Audience Manager 擷取訪客區段:
 
