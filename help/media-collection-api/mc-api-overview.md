@@ -3,7 +3,7 @@ seo-title: 概述
 title: 概述
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -18,7 +18,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 媒體收集 API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示Media SDK檔案的某些方面也與Media Collection API相關。 例如，兩個解決方案都使用相同的 [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)，而收集的音訊和視訊追蹤資料會導致相同的報 [告和分析。](/help/media-reports/media-reports-enable.md)
 
-## 媒體追蹤資料流程 {#section_pwq_n34_qbb}
+## 媒體追蹤資料流程 {#media-tracking-data-flows}
 
 實作Media Collection API的媒體播放器會直接對媒體追蹤後端伺服器進行REST風格的API追蹤呼叫，而實作Media SDK的播放器則會對播放器應用程式內的SDK API進行追蹤呼叫。 透過網路發出呼叫的其中一個效應，就是實作媒體收集 API 的播放器需要處置一些 Media SDK 自動處置的處理工作。(媒體收集實 [作的詳細資訊。](mc-api-impl/mc-api-quick-start.md))
 
@@ -26,7 +26,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ![](assets/col_api_overview_simple.png)
 
-## API概觀 {#section_y4n_mcl_kcb}
+## API概觀 {#api-overview}
 
 **URI:** 請向 Adobe 代表索取。
 
