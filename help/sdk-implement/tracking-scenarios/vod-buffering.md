@@ -3,14 +3,14 @@ seo-title: 具有緩衝的 VOD 播放
 title: 具有緩衝的 VOD 播放
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # 具有緩衝的 VOD 播放{#vod-playback-with-buffering}
 
-## 藍本 {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## 藍本 {#scenario}
 
 在此案例中，播放 VOD 內容時發生一些緩衝。
 
@@ -28,7 +28,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | 內容已完成播放。 | `trackComplete` | 心率內容完成 | 已到播放點的結尾。 |
 | 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未觀看視訊到完成，也必須呼叫此 API。 |
 
-## 參數 {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
+## 參數 {#parameters}
 
 ### 心率緩衝
 
@@ -36,7 +36,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 |---|---|---|
 | `s:event:type` | `"buffer"` |  |
 
-## 程式碼範例 {#section_hxn_fdj_x2b}
+## 程式碼範例 {#sample-code}
 
 在此案例中，播放 VOD 內容時會發生緩衝。
 
