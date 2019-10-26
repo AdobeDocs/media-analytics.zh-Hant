@@ -4,14 +4,14 @@ seo-title: SDK Cookbook概觀
 description: 'SDK專用的範例主題 '
 seo-description: 'SDK專用的範例主題 '
 translation-type: tm+mt
-source-git-commit: cafe29452f5c0a14849b15aaf2af557dc4721d9f
+source-git-commit: 9736c939b40ecdf72d3faa6d25cc9f3ee6e14419
 
 ---
 
 
 # SDK Cookbook概觀
 
-您可在以下網址找到一般Media Analytics Cookbook主題，這些主題同時套用至Media SDK和Media Collection API:媒 [體分析Cookbook。](/help/media-analytics-cookbook/cookbook-overview.md)
+您可在以下網址找到一般Media Analytics Cookbook主題，這些主題同時套用至Media SDK和Media Collection API:媒 [體分析Cookbook。](/help/media-analytics-cookbook/media-analytics-cookbook.md)
 
 以下列出的Cookbook主題是Media Analytics的Media SDK版本：
 
