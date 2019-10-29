@@ -3,7 +3,7 @@ seo-title: 音訊與視訊參數
 title: 音訊與視訊參數
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 35224b77881802c742b15ecd6e9f6b0e12b316e3
 
 ---
 
@@ -434,17 +434,19 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> ****<br/> 傳送方式：媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> ****<br/> 說明：主要內容的檢視次數。 A Content Segment View is counted when there is at least one frame viewed.  <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。 </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>內容區段檢視次數 </li> <li> ****<br/> 上下文資料：(a.media.segmentView) </li> <li> **資料饋送:**<br/>不適用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.segmentView) </li> </ul> |
 
-### 廣告計數
+<!--
+### Ad Count 
 
-|   實施   | 網路參數 | 報告 |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> SDK金鑰：不適用 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>數字 </li> <li> ****<br/> 傳送方式：媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> ****<br/> 範例值：2 </li> <li> ****<br/> 說明：媒體作業期間開始的廣告數。   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>使用自訂處理規則 </li> <li> **預留變數:**<br/>不適用 </li> <li> **報表名稱:**<br/>自訂 </li> <li> ****<br/> 上下文資料：(a.media.adCount) </li> <li> **資料饋送:**<br/>不適用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.adCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of ads started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.adCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.adCount) </li> </ul> |
 
-### 章節計數
+### Chapter Count 
 
-|   實施   | 網路參數 | 報告 |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> SDK金鑰：不適用 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>數字 </li> <li> ****<br/> 傳送方式：媒體關閉 </li> <li> **最小 SDK 版本:**&#x200B;任何版本 </li> <li> ****<br/> 範例值：2 </li> <li> ****<br/> 說明：媒體作業期間開始的章節數。   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>使用自訂處理規則 </li> <li> **預留變數:**<br/>不適用 </li> <li> **報表名稱:**<br/>自訂 </li> <li> ****<br/> 上下文資料：(a.media.chapterCount) </li> <li> **資料饋送:**<br/>不適用 </li> <li> ****<br/> Audience Manager:(c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of chapters started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.chapterCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+-->
 
 ## 加州消費者隱私權法案(CCPA)參數 {#ccpa-params}
 
