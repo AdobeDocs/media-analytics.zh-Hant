@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 在 Chromecast 上實作標準中繼資料
 title: 在 Chromecast 上實作標準中繼資料
+description: 說明在Chromecast上設定標準視訊和廣告中繼資料。
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
