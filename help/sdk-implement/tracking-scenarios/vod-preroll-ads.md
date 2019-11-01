@@ -1,11 +1,9 @@
 ---
-seo-title: 具有前段廣告的 VOD 播放
 title: 具有前段廣告的 VOD 播放
-description: 在此案例中，前段廣告已插入到主要內容之前。
-seo-description: 在Adobe Media Analytics的此案例中，前段廣告已插入在主要內容之前。
+description: 如何使用Media SDK追蹤包含前段廣告的VOD內容範例。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
