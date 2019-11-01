@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Chromecast 上追蹤章節和區段
 title: 在 Chromecast 上追蹤章節和區段
+description: 本主題說明如何使用Chromecast上的Media SDK來實作章節和區段追蹤。
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
