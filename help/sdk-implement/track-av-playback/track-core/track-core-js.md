@@ -1,9 +1,9 @@
 ---
-seo-title: 在 JavaScript 上追蹤核心播放
 title: 在 JavaScript 上追蹤核心播放
+description: 本主題說明如何在瀏覽器應用程式(JS)中使用Media SDK實作核心追蹤。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
