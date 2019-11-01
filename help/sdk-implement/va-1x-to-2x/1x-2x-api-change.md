@@ -1,9 +1,9 @@
 ---
-seo-title: 從 1.x 轉換為 2.x API
 title: 從 1.x 轉換為 2.x API
+description: 本主題包含API參考的連結，並列出1.x和2.x版Media SDK的必要和選用追蹤API。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
 ## 必要的追蹤* API:
 
-|  VHL 1.x  | VHL 2.x |
+|  VHL 1.x | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | 不適用 |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject、mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
