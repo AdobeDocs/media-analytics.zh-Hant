@@ -1,9 +1,9 @@
 ---
-seo-title: SDK 除錯
 title: SDK 除錯
+description: 本主題說明Media SDK中可用的追蹤／記錄。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -25,7 +25,7 @@ config.debugLogging = true;
 MediaHeartbeat _heartbeat = new MediaHeartbeat(this, config); 
 ```
 
-### iOS 
+### iOS 應用程式
 
 ```
 // Media Heartbeat Initialization 
@@ -71,7 +71,7 @@ ADBMobile.config.setDebugLogging(true)
 
 >[!IMPORTANT]
 >
->自2017年4月30日起，Adobe Bloodhound就日落了。 自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care 支援。
+>Adobe Bloodhound 已於 2017 年 4 月 30 日起停止服務。自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care 支援。
 
 ## 日誌消息
 
