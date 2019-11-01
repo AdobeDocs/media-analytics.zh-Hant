@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Roku 上追蹤章節和區段
 title: 在 Roku 上追蹤章節和區段
+description: 本主題說明如何使用Roku上的Media SDK來實作章節和區段追蹤。
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
