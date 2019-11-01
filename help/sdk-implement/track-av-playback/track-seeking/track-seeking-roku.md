@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Roku 上追蹤搜尋
 title: 在 Roku 上追蹤搜尋
+description: 本主題說明如何使用Roku上的Media SDK實作搜尋追蹤。
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
