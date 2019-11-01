@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Roku 上追蹤體驗品質
 title: 在 Roku 上追蹤體驗品質
+description: 本主題說明使用Roku上的Media SDK來實作體驗品質(QoE、QoS)追蹤。
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
