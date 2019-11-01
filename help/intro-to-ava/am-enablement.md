@@ -1,9 +1,9 @@
 ---
-seo-title: 啟用 Audience Manager
 title: 啟用 Audience Manager
+description: null
 uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
