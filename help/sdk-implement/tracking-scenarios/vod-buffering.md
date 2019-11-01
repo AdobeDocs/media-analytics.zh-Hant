@@ -1,9 +1,9 @@
 ---
-seo-title: 具有緩衝的 VOD 播放
 title: 具有緩衝的 VOD 播放
+description: 如何使用Media SDK追蹤VOD內容的範例。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
