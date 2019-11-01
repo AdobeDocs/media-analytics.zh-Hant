@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Android 上追蹤章節和區段
 title: 在 Android 上追蹤章節和區段
+description: 本主題說明在Android上使用Media SDK實作章節和區段追蹤。
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
