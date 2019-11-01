@@ -1,9 +1,9 @@
 ---
-seo-title: OTT 與 Experience Cloud
 title: OTT 與 Experience Cloud
+description: 有關整合OTT應用程式與Experience cloud的詳細資訊。
 uuid: 89264403-0fc8-4c76-b001-22e20e57bef2
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
