@@ -1,9 +1,9 @@
 ---
-seo-title: 事件要求
 title: 事件要求
+description: null
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -21,7 +21,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 ## 要求內文
 
-The request body must be JSON, and must have the same structure as this sample request body:
+請求內文必須是JSON，且必須具有與此範例請求內文相同的結構：
 
 ```
 { 
