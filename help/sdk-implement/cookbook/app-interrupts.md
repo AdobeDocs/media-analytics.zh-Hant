@@ -1,9 +1,9 @@
 ---
-seo-title: 在播放期間處理應用程式中斷
 title: 在播放期間處理應用程式中斷
+description: 如何處理媒體播放期間追蹤的中斷。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
