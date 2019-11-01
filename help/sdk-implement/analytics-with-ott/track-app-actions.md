@@ -1,9 +1,9 @@
 ---
-seo-title: 追蹤應用程式動作
 title: 追蹤應用程式動作
+description: 應用程式動作是您要測量的應用程式中發生的事件。
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
