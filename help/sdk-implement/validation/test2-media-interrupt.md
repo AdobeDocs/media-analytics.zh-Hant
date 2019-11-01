@@ -1,9 +1,9 @@
 ---
-seo-title: 測試2媒體中斷
 title: 測試2媒體中斷
+description: 本主題說明在驗證中使用的媒體中斷測試。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 translation-type: tm+mt
-source-git-commit: 5822e634c51cb53a60400623d115c6d862dad44f
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
