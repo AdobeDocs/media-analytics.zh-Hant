@@ -1,9 +1,9 @@
 ---
-seo-title: 心率參數說明
 title: 心率參數說明
+description: Adobe在Media Analytics（心率）伺服器上收集和處理的心率參數清單。
 uuid: e9dda32-0952-43d0-a702-49f5b1bfd8cf
 translation-type: tm+mt
-source-git-commit: 10a5d921953339bef1cde2f802eb9ce0cb1bbe4b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
