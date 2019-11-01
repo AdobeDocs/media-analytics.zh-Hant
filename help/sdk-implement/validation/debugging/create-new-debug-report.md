@@ -1,9 +1,9 @@
 ---
-seo-title: 建立新的 Debug 報表
 title: 建立新的 Debug 報表
+description: 本主題說明如何建立新的除錯報表。
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
