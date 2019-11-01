@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 在 JavaScript 上實作標準廣告中繼資料
 title: 在 JavaScript 上實作標準廣告中繼資料
+description: 如何在瀏覽器(JS)應用程式中的廣告追蹤中使用標準廣告中繼資料。
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
