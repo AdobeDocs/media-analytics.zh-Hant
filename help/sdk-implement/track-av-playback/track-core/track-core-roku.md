@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Roku 上追蹤核心播放
 title: 在 Roku 上追蹤核心播放
+description: 本主題說明如何使用Roku上的Media SDK實作核心追蹤。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -11,23 +11,23 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # 在 Roku 上追蹤核心播放{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->This documentation covers tracking in version 2.x of the SDK. 若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
+>本檔案涵蓋SDK 2.x版的追蹤。 若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
 
-1. **Initial tracking setup**
+1. **初始追蹤設定**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
-   **`MediaObject`reference:**
+   **`MediaObject`參考：**
 
    | 變數名稱 | 說明 | 必要 |
    | --- | --- | :---: |
    | `name` | 視訊名稱 | 是 |
    | `mediaid` | 視訊唯一識別碼 | 是 |
    | `length` | 視訊長度 | 是 |
-   | `streamType` | Stream type (see StreamType constants below)__ | 是 |
-   | `mediaType` | Media type (see MediaType constants below)__ | 是 |
+   | `streamType` | 串流類型(請參 _閱下方的StreamType常數_ ) | 是 |
+   | `mediaType` | 媒體類型(請參 _閱下方的MediaType常數_ ) | 是 |
 
-   **`StreamType`constants:**
+   **`StreamType`常數：**
 
    | 常數名稱 | 說明   |
    |---|---|
@@ -38,14 +38,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | 有聲書的資料流類型 |
    | `MEDIA_STREAM_TYPE_PODCAST` | 播客的資料流類型 |
 
-   **`MediaType`constants:**
+   **`MediaType`常數：**
 
    | 常數名稱 | 說明 |
    |---|---|
    | `MEDIA_STREAM_TYPE_AUDIO` | 音效資料流的媒體類型。 |
    | `MEDIA_STREAM_TYPE_VIDEO` | 視訊資料流的媒體類型。 |
 
-   **Create a media info object for video with VOD content:**
+   **為具有VOD內容的視訊建立媒體資訊物件：**
 
    ```
     mediaInfo = adb_media_init_mediainfo(
@@ -57,7 +57,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    )
    ```
 
-   或 
+   或
 
    ```
    mediaInfo = adb_media_init_mediainfo()
@@ -68,7 +68,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaInfo.mediaType = ADBMobile().MEDIA_TYPE_VIDEO
    ```
 
-   **Create a media info object for video with AOD content:**
+   **建立包含AOD內容的視訊媒體資訊物件：**
 
    ```
    mediaInfo = adb_media_init_mediainfo(
@@ -80,7 +80,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    )
    ```
 
-   或 
+   或
 
    ```
    mediaInfo = adb_media_init_mediainfo()
@@ -91,9 +91,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaInfo.mediaType = ADBMobile().MEDIA_TYPE_AUDIO
    ```
 
-1. **Attach metadata**
+1. **附加中繼資料**
 
-   Optionally attach standard and/or custom metadata objects to the tracking session through context data variables.
+   （可選）透過上下文資料變數，將標準和／或自訂中繼資料物件附加至追蹤工作階段。
 
    * **標準中繼資料**
 
@@ -101,14 +101,14 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >Attaching the standard metadata object to the media object is optional.
+      >將標準中繼資料物件附加至媒體物件是選擇性的。
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
          See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **自訂中繼資料**
 
-      Create a variable object for the custom variables and populate with the data for this media. 例如:
+      建立自訂變數的變數物件，並填入此媒體的資料。 例如:
 
       ```js
       /* Set custom context data */ 
@@ -120,9 +120,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **Track the intention to start playback**
+1. **追蹤開始播放的意圖**
 
-   To begin tracking a media session, call  on the Media Heartbeat instance:`trackSessionStart`
+   若要開始追蹤媒體工作階段，請呼叫 `trackSessionStart` 媒體心率例項：
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -130,17 +130,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >The second value is the custom media metadata object name that you created in step 2.
+   >第二個值是您在步驟2中建立的自訂媒體中繼資料物件名稱。
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` tracks the user intention of playback, not the beginning of the playback. 此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
+   >`trackSessionStart` 追蹤使用者的播放意圖，而非播放的開始。 此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
 
    >[!NOTE]
    >
    >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
 
-1. **Track the actual start of playback**
+1. **追蹤實際播放開始時間**
 
    Identify the event from the media player for the beginning of the playback, where the first frame of the media is rendered on the screen, and call `trackPlay`:
 
@@ -148,7 +148,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaHeartbeat.trackPlay();
    ```
 
-1. **Track the completion of playback**
+1. **追蹤播放的完成情況**
 
    Identify the event from the media player for the completion of the playback, where the user has watched the content until the end, and call `trackComplete`:
 
@@ -176,7 +176,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    mediaInfo.length = "600"
    ```
 
-1. **Attach video metadata**
+1. **附加視訊中繼資料**
 
    可選擇透過上下文資料變數，將標準和／或自訂視訊中繼資料物件附加至視訊追蹤工作階段。
 
@@ -265,7 +265,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    ```
 
    >[!TIP]
-   >This may be the same event source that was used in Step 4. 在視訊播放繼續時，使用後續的 `trackPause()` API 呼叫確保 `trackPlay()` API 呼叫成對。
+   >這可能是步驟4中使用的相同事件來源。 在視訊播放繼續時，使用後續的 `trackPause()` API 呼叫確保 `trackPlay()` API 呼叫成對。
 
 * 追蹤案例: [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 Roku SDK 包含範例播放器。
