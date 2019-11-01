@@ -1,9 +1,9 @@
 ---
-seo-title: 追蹤概述
 title: 追蹤概述
+description: '本主題說明追蹤核心播放，包括追蹤媒體載入、媒體開始、媒體暫停和媒體完成。 '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
