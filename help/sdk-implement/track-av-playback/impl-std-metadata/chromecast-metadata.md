@@ -1,9 +1,9 @@
 ---
-seo-title: Chromecast 中繼資料索引鍵
 title: Chromecast 中繼資料索引鍵
+description: 說明如何設定標準視訊和廣告中繼資料，以便在Chromecast上隨追蹤呼叫傳送。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
