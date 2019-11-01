@@ -1,9 +1,9 @@
 ---
-seo-title: 從里程碑移轉至自訂連結
 title: 從里程碑移轉至自訂連結
+description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -83,7 +83,7 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 </th>
 <th>自訂連結
 </th>
-<th>自訂連結語法
+<th>自訂連結 語法
 </th>
 </tr>
 </thead>
@@ -173,7 +173,7 @@ s.linkTrackEvents = 'event2';
 </th>
 <th>自訂連結
 </th>
-<th>自訂連結語法
+<th>自訂連結 語法
 </th>
 </tr>
 </thead>
@@ -264,7 +264,7 @@ s.linkTrackEvents = 'event2';
 </th>
 <th>自訂連結
 </th>
-<th>自訂連結語法
+<th>自訂連結 語法
 </th>
 </tr>
 </thead>
@@ -429,7 +429,7 @@ s.Media.
 </th>
 <th>自訂連結
 </th>
-<th>自訂連結語法
+<th>自訂連結 語法
 </th>
 </tr>
 </thead>
@@ -521,7 +521,7 @@ s.Media.
 </th>
 <th>自訂連結
 </th>
-<th>自訂連結語法
+<th>自訂連結 語法
 </th>
 </tr>
 </thead>
