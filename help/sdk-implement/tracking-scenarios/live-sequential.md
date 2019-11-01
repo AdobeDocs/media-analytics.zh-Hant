@@ -1,9 +1,9 @@
 ---
-seo-title: 具有循序追蹤的即時主要內容
 title: 具有循序追蹤的即時主要內容
+description: 如何使用Media SDK使用循序追蹤來追蹤即時內容的範例。
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
