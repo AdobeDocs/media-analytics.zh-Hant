@@ -1,9 +1,9 @@
 ---
-seo-title: 設定概觀
 title: 設定概觀
+description: 在您的行動裝置、OTT和瀏覽器(JS)應用程式中設定媒體追蹤的媒體SDK概觀。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
