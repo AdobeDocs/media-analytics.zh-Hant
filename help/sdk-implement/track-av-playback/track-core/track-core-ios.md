@@ -1,9 +1,9 @@
 ---
-seo-title: 在 iOS 上追蹤核心播放
 title: 在 iOS 上追蹤核心播放
+description: 本主題說明如何使用iOS上的Media SDK實作核心追蹤。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
