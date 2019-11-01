@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 在 iOS 上實作標準中繼資料
 title: 在 iOS 上實作標準中繼資料
+description: 說明如何設定在iOS上隨追蹤呼叫傳送的標準視訊和廣告中繼資料。
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
