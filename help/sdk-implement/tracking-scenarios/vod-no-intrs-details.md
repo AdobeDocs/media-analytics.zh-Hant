@@ -1,9 +1,9 @@
 ---
-seo-title: 沒有廣告的 VOD 播放
 title: 沒有廣告的 VOD 播放
+description: 追蹤不含廣告的VOD播放範例。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -117,7 +117,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 
+### iOS 應用程式
 
 ```
 when the user clicks Play 
