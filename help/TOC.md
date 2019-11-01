@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 終端使用者
 user-guide-title: 音訊與視訊專用的Adobe Analytics
 translation-type: tm+mt
-source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
+source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
 
 ---
 
@@ -133,7 +133,6 @@ source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
       + [解決 main:play 出現在廣告之間的問題](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [繼續非活動會話](sdk-implement/cookbook/resuming-inactive.md)
       + [在 SceneGraph (Roku) 中進行追蹤](sdk-implement/cookbook/sdk-track-scenegraph.md)
-      + [SDK與啟動差異](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
    + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
       + [移轉概述](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [程式碼比較: 1.x 和 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
