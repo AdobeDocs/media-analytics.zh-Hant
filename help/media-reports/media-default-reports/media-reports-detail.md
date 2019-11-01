@@ -1,9 +1,9 @@
 ---
-seo-title: 媒體詳細資料
 title: 媒體詳細資料
+description: null
 uuid: 57d7f5b0-41dd-41d7-9a5a-47452839be5
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
