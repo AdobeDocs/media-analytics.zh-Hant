@@ -1,9 +1,9 @@
 ---
-seo-title: 概述
 title: 概述
+description: 使用媒體SDK追蹤體驗品質(QoE、QoS)的概述。
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
