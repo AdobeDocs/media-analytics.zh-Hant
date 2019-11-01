@@ -1,9 +1,9 @@
 ---
-seo-title: 用於多個工作階段的 VOD 一個追蹤器
 title: 用於多個工作階段的 VOD 一個追蹤器
+description: 如何使用一個追蹤器使用Media SDK追蹤多個工作階段的範例。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
