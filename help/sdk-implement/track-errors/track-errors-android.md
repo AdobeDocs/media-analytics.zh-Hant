@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Android 上追蹤錯誤
 title: 在 Android 上追蹤錯誤
+description: 本主題說明在Android上使用Media SDK實作錯誤追蹤。
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
