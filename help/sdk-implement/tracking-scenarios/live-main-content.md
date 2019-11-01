@@ -1,9 +1,9 @@
 ---
-seo-title: 即時主要內容
 title: 即時主要內容
+description: 如何使用Media SDK追蹤即時內容的範例。
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
