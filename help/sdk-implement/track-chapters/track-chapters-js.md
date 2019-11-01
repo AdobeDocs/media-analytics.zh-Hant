@@ -1,9 +1,9 @@
 ---
-seo-title: 在 JavaScript 上追蹤章節和區段
 title: 在 JavaScript 上追蹤章節和區段
+description: 本主題說明在瀏覽器應用程式(JS)中使用Media SDK實作章節和區段追蹤。
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
