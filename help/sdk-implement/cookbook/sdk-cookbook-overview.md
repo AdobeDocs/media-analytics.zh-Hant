@@ -1,10 +1,8 @@
 ---
 title: SDK Cookbook概觀
-seo-title: SDK Cookbook概觀
 description: 'SDK專用的範例主題 '
-seo-description: 'SDK專用的範例主題 '
 translation-type: tm+mt
-source-git-commit: 9736c939b40ecdf72d3faa6d25cc9f3ee6e14419
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
