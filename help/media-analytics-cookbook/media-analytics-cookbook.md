@@ -1,10 +1,8 @@
 ---
 title: Media Analytics Cookbook
-seo-title: Media Analytics Cookbook
 description: 頂層Cookbook頁面，包含一般MA Cookbook連結和SDK特定連結。
-seo-description: 頂層Cookbook頁面，包含一般MA Cookbook連結和SDK特定連結。
 translation-type: tm+mt
-source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
