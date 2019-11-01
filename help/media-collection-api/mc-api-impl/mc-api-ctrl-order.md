@@ -1,9 +1,9 @@
 ---
-seo-title: 控制事件順序
 title: 控制事件順序
+description: null
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
