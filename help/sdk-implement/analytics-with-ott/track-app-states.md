@@ -1,9 +1,9 @@
 ---
-seo-title: 追蹤應用程式狀態
 title: 追蹤應用程式狀態
+description: '應用程式狀態是您應用程式中不同的畫面或檢視，當顯示時應會產生trackState呼叫。 '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 translation-type: tm+mt
-source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
