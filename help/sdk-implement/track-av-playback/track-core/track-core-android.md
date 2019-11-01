@@ -1,9 +1,9 @@
 ---
-seo-title: 在 Android 上追蹤核心播放
 title: 在 Android 上追蹤核心播放
+description: 本主題說明如何使用Android上的Media SDK實作核心追蹤。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
