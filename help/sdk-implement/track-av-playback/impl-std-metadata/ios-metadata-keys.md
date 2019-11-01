@@ -1,9 +1,9 @@
 ---
-seo-title: iOS 中繼資料索引鍵
 title: iOS 中繼資料索引鍵
+description: 本主題說明可用的iOS中繼資料索引鍵。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
