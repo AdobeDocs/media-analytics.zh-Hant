@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 在 Android 上實作標準中繼資料
 title: 在 Android 上實作標準中繼資料
+description: 說明如何設定標準視訊和廣告中繼資料，以便在Android上隨追蹤呼叫傳送。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
-source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
