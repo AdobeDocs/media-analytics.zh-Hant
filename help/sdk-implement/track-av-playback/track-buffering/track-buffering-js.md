@@ -1,9 +1,9 @@
 ---
-seo-title: 在 JavaScript 上追蹤緩衝
 title: 在 JavaScript 上追蹤緩衝
+description: 說明在瀏覽器應用程式(JS)中追蹤緩衝事件。
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
