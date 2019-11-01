@@ -1,9 +1,9 @@
 ---
-seo-title: 解決廣告間出現的主重頭戲
 title: 解決廣告間出現的主重頭戲
+description: 如何處理未預期的main：在廣告之間播放呼叫。
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
-source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
