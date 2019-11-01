@@ -1,9 +1,9 @@
 ---
-seo-title: 具有已略過章節的 VOD 播放
 title: 具有已略過章節的 VOD 播放
+description: 如何追蹤使用者使用Media SDK跳過章節的VOD內容範例。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
