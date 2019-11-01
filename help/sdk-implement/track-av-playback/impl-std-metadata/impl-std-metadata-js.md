@@ -1,11 +1,9 @@
 ---
-description: 'null'
-seo-description: 'null'
-seo-title: 在 JavaScript 上實作標準中繼資料
 title: 在 JavaScript 上實作標準中繼資料
+description: 說明如何設定在瀏覽器應用程式(JS)中隨追蹤呼叫傳送的標準視訊和廣告中繼資料。
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
