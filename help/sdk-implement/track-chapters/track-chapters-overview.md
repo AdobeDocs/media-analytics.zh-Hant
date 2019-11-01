@@ -1,9 +1,9 @@
 ---
-seo-title: 概述
 title: 概述
+description: 如何使用Media SDK實作章節和區段追蹤。
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
