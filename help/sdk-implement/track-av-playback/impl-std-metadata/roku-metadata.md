@@ -1,9 +1,9 @@
 ---
-seo-title: Roku 中繼資料索引鍵
 title: Roku 中繼資料索引鍵
+description: 本主題說明可用的Roku中繼資料索引鍵。
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
