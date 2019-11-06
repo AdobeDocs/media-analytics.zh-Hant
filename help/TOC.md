@@ -3,7 +3,7 @@ product: Media Analytics
 audience: 終端使用者
 user-guide-title: 音訊與視訊專用的Adobe Analytics
 translation-type: tm+mt
-source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
+source-git-commit: 8eb90f83aa81f15caf509fe1e44f6396df7701aa
 
 ---
 
@@ -137,6 +137,12 @@ source-git-commit: 6bf606e97dc11c20b4523393523feffe632ae287
       + [移轉概述](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [程式碼比較: 1.x 和 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [從 1.x 轉換為 2.x API](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
+   + 啟動移轉的Media Analytics SDK {#sdk-to-launch}
+      + [啟動移轉的SDK](sdk-implement/sdk-to-launch/sdk-to-launch-migration.md)
+      + SDK啟動移轉平台指南 {#sdk-to-launch-migration-platforms}
+         + [Android](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+         + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+         + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Media Collection API(RESTful) {#media-collection-api}
    + [概述](media-collection-api/mc-api-overview.md)
    + API 參考 {#mc-api-ref}
