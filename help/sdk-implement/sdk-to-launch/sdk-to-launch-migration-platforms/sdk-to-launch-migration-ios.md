@@ -1,10 +1,8 @@
 ---
-seo-title: 從單機版Media SDK移轉至Adobe Launch - iOS
 title: 從單機版Media SDK移轉至Adobe Launch - iOS
-seo-description: 說明和程式碼範例，以協助從Media SDK移轉至Launch for iOS。
 description: 說明和程式碼範例，以協助從Media SDK移轉至Launch for iOS。
 translation-type: tm+mt
-source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
+source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
@@ -12,15 +10,6 @@ source-git-commit: b479f6623566b6a6989f625b757a97bba5f6aafd
 # 從單機版Media SDK移轉至Adobe Launch - iOS
 
 ## 設定
-
-### 啟動擴充功能
-
-1. 在Experience Platform Launch中，按一下您行動 [!UICONTROL 裝置屬性的] 「擴充功能」標籤
-1. 在「目 [!UICONTROL 錄] 」標籤上，找到「Adobe Media Analytics for Audio and Video Extension」，然後按一下「 [!UICONTROL 安裝」]。
-1. 在擴充功能設定頁面中，設定追蹤參數。
-媒體擴充功能會使用已設定的參數進行追蹤。
-
-[設定媒體分析擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ### 獨立媒體SDK
 
@@ -42,40 +31,18 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
 ```
 
-## 建立追蹤器
-
 ### 啟動擴充功能
 
-[媒體API參考——建立媒體追蹤器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+1. 在Experience Platform Launch中，按一下您行動 [!UICONTROL 裝置屬性的] 「擴充功能」標籤
+1. 在「目 [!UICONTROL 錄] 」標籤上，找到「Adobe Media Analytics for Audio and Video Extension」，然後按一下「 [!UICONTROL 安裝」]。
+1. 在擴充功能設定頁面中，設定追蹤參數。
+媒體擴充功能會使用已設定的參數進行追蹤。
 
-建立追蹤器前，請先向行動核心註冊媒體擴充功能和相依擴充功能。
+   ![](assets/launch_config_mobile.png)
 
-```objective-c
-// Register the extension once during app launch
-#import <ACPCore.h>
-#import <ACPAnalytics.h>
-#import <ACPMedia.h>
-#import <ACPIdentity.h>
+[設定媒體分析擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [ACPCore setLogLevel:ACPMobileLogLevelDebug];
-    [ACPCore configureWithAppId:@"your-launch-app-id"];
-    [ACPMedia registerExtension];
-    [ACPAnalytics registerExtension];
-    [ACPIdentity registerExtension];
-    [ACPCore start:nil];
-    return YES;
-}
-```
-
-在註冊媒體擴充功能後，就可使用下列API建立追蹤器。
-追蹤器會自動從已設定的啟動屬性中挑選設定。
-
-```objective-c
-[ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
-    // Use the instance for tracking media.
-}];
-```
+## 建立追蹤器
 
 ### 獨立媒體SDK
 
@@ -116,7 +83,45 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
+### 啟動擴充功能
+
+[媒體API參考——建立媒體追蹤器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+
+建立追蹤器前，請先向行動核心註冊媒體擴充功能和相依擴充功能。
+
+```objective-c
+// Register the extension once during app launch
+#import <ACPCore.h>
+#import <ACPAnalytics.h>
+#import <ACPMedia.h>
+#import <ACPIdentity.h>
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [ACPCore setLogLevel:ACPMobileLogLevelDebug];
+    [ACPCore configureWithAppId:@"your-launch-app-id"];
+    [ACPMedia registerExtension];
+    [ACPAnalytics registerExtension];
+    [ACPIdentity registerExtension];
+    [ACPCore start:nil];
+    return YES;
+}
+```
+
+在註冊媒體擴充功能後，就可使用下列API建立追蹤器。
+追蹤器會自動從已設定的啟動屬性中挑選設定。
+
+```objective-c
+[ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
+    // Use the instance for tracking media.
+}];
+```
+
 ## 更新播放頭和體驗品質值。
+
+### 獨立媒體SDK
+
+在獨立的Media SDK中，建置通訊協定的委派物件`ADBMediaHeartbeartDelegate` ，會在建立追蹤器時傳遞。
+當追蹤器呼叫和介面方法時，實作應傳回最新的QoE `getQoSObject()` 和播 `getCurrentPlaybackTime()` 放頭。
 
 ### 啟動擴充功能
 
@@ -128,59 +133,7 @@ ADBMediaHeartbeat* tracker =
 
 [媒體API參考——更新QoE物件](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-### 獨立媒體SDK
-
-在獨立的Media SDK中，建置通訊協定的委派物件`ADBMediaHeartbeartDelegate` ，會在建立追蹤器時傳遞。
-當追蹤器呼叫和介面方法時，實作應傳回最新的QoE `getQoSObject()` 和播 `getCurrentPlaybackTime()` 放頭。
-
 ## 傳遞標準媒體／廣告中繼資料
-
-### 啟動擴充功能
-
-* 標準媒體中繼資料：
-
-   ```objective-c
-   NSDictionary *mediaObject = 
-     [ACPMedia createMediaObjectWithName:@"media-name" 
-               mediaId:@"media-id" 
-               length:60 
-               streamType:ACPMediaStreamTypeVod 
-               mediaType:ACPMediaTypeVideo];
-   
-   NSMutableDictionary *mediaMetadata = 
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
-   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
-   
-   // Custom metadata keys
-   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
-   ```
-
-* 標準廣告中繼資料:
-
-   ```objective-c
-   NSDictionary* adObject = 
-     [ACPMedia createAdObjectWithName:@"ad-name" 
-               adId:@"ad-id" 
-               position:1 
-               length:15];
-   
-   NSMutableDictionary* adMetadata = 
-     [[NSMutableDictionary alloc] init];
-   
-   // Standard metadata keys provided by adobe.
-   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
-   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
-   
-   // Custom metadata keys
-   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
-   
-   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
-   ```
 
 ### 獨立媒體SDK
 
@@ -236,3 +189,49 @@ ADBMediaHeartbeat* tracker =
             data:adDictionary];
    ```
 
+### 啟動擴充功能
+
+* 標準媒體中繼資料：
+
+   ```objective-c
+   NSDictionary *mediaObject = 
+     [ACPMedia createMediaObjectWithName:@"media-name" 
+               mediaId:@"media-id" 
+               length:60 
+               streamType:ACPMediaStreamTypeVod 
+               mediaType:ACPMediaTypeVideo];
+   
+   NSMutableDictionary *mediaMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [mediaMetadata setObject:@"Sample show" forKey:ACPVideoMetadataKeyShow];
+   [mediaMetadata setObject:@"Sample season" forKey:ACPVideoMetadataKeySeason];
+   
+   // Custom metadata keys
+   [mediaMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+   [mediaMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+   [_tracker trackSessionStart:mediaObject data:mediaMetadata];
+   ```
+
+* 標準廣告中繼資料:
+
+   ```objective-c
+   NSDictionary* adObject = 
+     [ACPMedia createAdObjectWithName:@"ad-name" 
+               adId:@"ad-id" 
+               position:1 
+               length:15];
+   
+   NSMutableDictionary* adMetadata = 
+     [[NSMutableDictionary alloc] init];
+   
+   // Standard metadata keys provided by adobe.
+   [adMetadata setObject:@"Sample Advertiser" forKey:ACPAdMetadataKeyAdvertiser];
+   [adMetadata setObject:@"Sample Campaign" forKey:ACPAdMetadataKeyCampaignId];
+   
+   // Custom metadata keys
+   [adMetadata setObject:@"Sample affiliate" forKey:@"affiliate"];
+   
+   [tracker trackEvent:ACPMediaEventAdStart mediaObject:adObject data:adMetadata];
+   ```
