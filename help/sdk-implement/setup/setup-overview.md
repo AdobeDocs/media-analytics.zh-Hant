@@ -1,28 +1,28 @@
 ---
-title: 設定概觀
-description: 在您的行動裝置、OTT和瀏覽器(JS)應用程式中設定媒體追蹤的媒體SDK概觀。
+title: 設定概述
+description: 在行動裝置、OTT 和瀏覽器 (JS) 應用程式設定 Media SDK 進行媒體追蹤的相關概述。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 設定概觀{#setup-overview}
+# 設定概述{#setup-overview}
 
 >[!IMPORTANT]
 >
->下列指示適用於2.x Media SDK。 若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md) 如需Primetime整合商，請參 _閱以下Primetime Media SDK檔案_ 。
+>下列指示適用於 2.x Media SDK。若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md)如需 Primetime 整合器的相關資訊，請參閱以下的 _Primetime Media SDK 文件_。
 
 
 ## 最低平台版本支援 {#minimum-platform-version}
 
-下表說明自2019年2月19日起，每個SDK支援的最低平台版本。
+下表說明自 2019 年 2 月 19 日起各個 SDK 支援的最低平台版本。
 
-| 作業系統／瀏覽器 | 需要的最小版本 |
+| 作業系統/瀏覽器 | 需要的最低版本 |
 | --- | --- |
 | iOS 應用程式 | iOS 6+ |
-| Android | Android 5.0+ —— 棒棒糖 |
+| Android | Android 5.0+ - Lollipop |
 | Chrome | v22+ |
 | Mozilla | v27+ |
 | Safari | v7+ |
@@ -35,9 +35,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 媒體心率代理人 - 代理人可控制播放時間和 QoS 物件。
 * 媒體心率 - 包含成員與方法的主要程式庫。
 
-完成下列實作步驟：
+完成下列實施步驟:
 
-1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
+1. 建立 `MediaHeartbeatConfig` 例項並設定您的設定參數值。
 
    |  變數名稱  | 說明  | 必填 |  預設值  |
    |---|---|:---:|---|
@@ -58,7 +58,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >服務質量(QoS)對象是可選的。 若 QoS 資料可供您的播放器使用，且您希望追蹤該資料，則需要下列變數:
+   >服務品質 (QoS) 物件為選用。若 QoS 資料可供您的播放器使用，且您希望追蹤該資料，則需要下列變數:
 
    | 變數名稱 | 說明   | 必填 |
    | --- | --- | :---: |
@@ -67,17 +67,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `fps` | 每秒顯示的畫面。 | 是 |
    | `droppedFrames` | 目前掉格的數量。 | 是 |
 
-1. Create the `MediaHeartbeat` instance.
+1. 建立 `MediaHeartbeat` 例項。
 
-   Use the `MediaHertbeatConfig` and `MediaHertbeatDelegate` to create the `MediaHeartbeat` instance.
+   使用 `MediaHertbeatConfig` 和 `MediaHertbeatDelegate` 來建立 `MediaHeartbeat` 例項。
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the session. 此例項將用於下列所有媒體追蹤事件。
+   >請確保您的 `MediaHeartbeat` 例項可供存取，並且不會在工作階段結束前遭到取消配置。此例項將用於下列所有媒體追蹤事件。
 
    >[!TIP]
    >
-   >`MediaHeartbeat` 需要執行個 `AppMeasurement` 體來傳送呼叫至Adobe Analytics。
+   >`MediaHeartbeat` 需要 `AppMeasurement` 的例項，才能傳送呼叫至 Adobe Analytics。
 
 1. 組合所有片段。
 
@@ -119,37 +119,39 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## 驗證 {#validate}
+## 驗證{#validate}
 
-媒體分析追蹤實施會產生兩種類型的追蹤呼叫：
+Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫:
 
-* 媒體和廣告開始呼叫會直接傳送至Adobe Analytics(AppMeasurement)伺服器。
-* 心率呼叫會傳送至Media Analytics（心率）追蹤伺服器，並在該處處理，然後傳遞至Adobe Analytics伺服器。
+* 媒體和廣告開始呼叫會直接傳送到 Adobe Analytics (AppMeasurement) 伺服器。
+* 心率呼叫會傳送到 Media Analytics (心率) 追蹤伺服器並於該位置處理，然後再傳遞到 Adobe Analytics 伺服器。
 
-* **Adobe Analytics(AppMeasurement)伺服器如需追蹤伺**&#x200B;服器選項的詳細資訊，請參 [閱正確填入trackingServer和trackingServerSecure變數。](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Adobe Analytics (AppMeasurement) 伺服器**
+如需有關追蹤伺服器選項的詳細資訊，請參閱[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html)。
 
    >[!IMPORTANT]
    >
-   >Experience cloud訪客ID服務需要解析為RDC伺服器的RDC追蹤伺服器或CNAME。
+   >Experience Cloud 訪客 ID 服務需要 RDC 追蹤伺服器，或 CNAME 解析至 RDC 伺服器。
 
-   The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
+   分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
-* ** Media Analytics(Heartbeats)伺服器**此格式一律為「`[your_namespace].hb.omtrdc.net`」。 「」的值會指`[your_namespace]`定您的公司，並由Adobe提供。
+* ** Media Analytics (心率) 伺服器**
+此格式一律為「`[your_namespace].hb.omtrdc.net`」。「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
 
-媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。音訊追蹤目前適用於行動平台。 在所有追蹤呼叫中，有一些要驗證的關鍵通用變數:
+媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。目前音訊追蹤可在行動平台運作。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數:
 
-## SDK 1.x檔案 {#sdk-1x-documentation}
+## SDK 1.x 文件 {#sdk-1x-documentation}
 
-| 視訊分析1.x SDK |  開發人員指南（僅限PDF） |
+| Video Analytics 1.x SDK |  開發人員指南 (僅提供 PDF) |
 | --- | --- |
 | Android | [為 Android 進行配置 ](vhl-dev-guide-v15_android.pdf) |
 | AppleTV | [為 AppleTV 進行配置 ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [為 Chromecast 進行配置 ](chromecast_1.x_sdk.pdf) |
 | iOS 應用程式 | [為 iOS 進行配置 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [為 JavaScript 進行配置 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android: [設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS: [設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [為 TVML 進行配置 ](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 文件 {#primetime-docs}
 
-* [Primetime使用指南](https://helpx.adobe.com/primetime/user-guide.html)
+* [Primetime 使用手冊](https://helpx.adobe.com/tw/primetime/user-guide.html)
