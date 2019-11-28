@@ -1,8 +1,8 @@
 ---
 title: 多個 VOD 追蹤器並行
-description: 如何使用多個追蹤器並行追蹤VOD的範例。
+description: 如何使用多個追蹤器並行追蹤 VOD 的範例。
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,9 +12,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 藍本 {#scenario}
 
-In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
+在此案例中，有兩個工作階段並行執行兩個不同的媒體，並使用兩個不同的 `MediaHeartbeat` 例項。
 
-This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. 每一個工作階段會使用不同的 `MediaHeartbeat` 例項。
+除了有兩個工作階段並行執行兩個不同的媒體以外，此案例等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。每一個工作階段會使用不同的 `MediaHeartbeat` 例項。
 
 除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例相同。
 
