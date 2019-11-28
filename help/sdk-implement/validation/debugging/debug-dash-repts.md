@@ -1,8 +1,8 @@
 ---
 title: Debug 控制面板和報表
-description: 本主題說明Adobe除錯控制面板。
+description: 本主題說明 Adobe Debug 控制面板。
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -16,7 +16,7 @@ Adobe Debug 提供即時報表功能，因此您可以檢視點擊數和視訊�
 
 >[!NOTE]
 >
->一次只能有一個作業。 您可以從控制面板開啟作用中的工作階段。
+>一次只能有一個作用中的工作階段。您可以從控制面板開啟作用中的工作階段。
 
 ![](assets/debug-dashboard.png)
 
