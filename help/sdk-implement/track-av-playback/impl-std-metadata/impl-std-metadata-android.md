@@ -1,8 +1,8 @@
 ---
 title: 在 Android 上實作標準中繼資料
-description: 說明如何設定標準視訊和廣告中繼資料，以便在Android上隨追蹤呼叫傳送。
+description: 說明如何在 Android 上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -16,15 +16,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardMediaMetadata` | 用於在 `MediaObject` 上附加標準中繼資料的常數。 |
 
-## 中繼資料金鑰API參考
+## 中繼資料索引鍵 API 參考資料
 
-* 建立標準 `HashMap` 中繼資料索引鍵值配對。
-   * [視訊中繼資料金鑰](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+* 建立標準中繼資料索引鍵值配對的 `HashMap`。
+   * [視訊中繼資料索引鍵](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
    * [音訊中繼資料索引鍵](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.AudioMetadataKeys.html)
 * 對中繼資料使用標準中繼資料常數，在 `HashMap` 上設定標準視訊中繼資料 `MediaInfo`。
-* Provide this `MediaInfo` object while invoking the `trackSessionStart()` API.
+* 叫用 `MediaInfo` API 時，提供此 `trackSessionStart()` 物件。
 
-## 實作範例
+## 實施範例
 
 ### 影片
 
