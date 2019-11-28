@@ -2,7 +2,7 @@
 title: 媒體同時檢閱者
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!TIP]
 >
->如果所選間隔不是整天，則不會顯示任何資料。
+>若選擇的間隔並非一整天，資料將不會顯示。
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -30,7 +30,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 * 此報表僅顯示一天當中的資料。
 * 客戶可檢視同時觀看者報表的歷史記錄 (僅限單一天)。
 
-## 限制 {#limitations}
+## 限制{#limitations}
 
 以下為此報表的部分限制:
 
