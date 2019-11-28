@@ -1,8 +1,8 @@
 ---
 title: 在 Roku 上追蹤緩衝
-description: 說明追蹤Roku上的緩衝事件。
+description: 說明如何在 Roku 上追蹤緩衝事件。
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下列指示提供所有 2.x SDK 之間實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 緩衝追蹤常數
 
@@ -21,7 +21,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `BufferStart` | 用於追蹤緩衝開始事件的常數 |
 | `BufferComplete` | 用於追蹤緩衝完成事件的常數 |
 
-## 實現緩衝
+## 實作緩衝
 
 1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝。
 
