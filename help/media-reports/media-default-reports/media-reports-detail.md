@@ -1,8 +1,8 @@
 ---
 title: 媒體詳細資料
 description: null
-uuid: 57d7f5b0-41dd-41d7-9a5a-47452839be5
-translation-type: tm+mt
+uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
