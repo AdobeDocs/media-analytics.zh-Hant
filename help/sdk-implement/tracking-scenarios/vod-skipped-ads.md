@@ -1,8 +1,8 @@
 ---
 title: 具有已略過廣告的 VOD 播放
-description: 如何追蹤使用者使用Media SDK跳過廣告的VOD內容範例。
-uuid: f3ab3524-abcb-4051-b64e-a1ad6e3dd3f
-translation-type: tm+mt
+description: 有關如何使用 Media SDK 追蹤使用者已略過廣告之 VOD 內容的範例。
+uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 此案例包含的 VOD 內容播放具有已略過的廣告。
 
-### 一個具有跳過的前段廣告的VOD
+### 具有已略過前段廣告的一個 VOD
 
 此案例等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)，除了應用程式具有可讓使用者略過廣告 (也許是在點擊略過按鈕時) 的佈建。
 
@@ -25,7 +25,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 已播放廣告的第一個時間格。 | `trackPlay()` | 心率廣告播放 | 當廣告內容在主要內容之前播放時，Heartbeats 將在廣告開始播放時啟動。 |
 | 廣告播放。 |  | 廣告心率 |  |
 | 廣告已略過。 | `trackEvent:trackAdSkip` |  | 沒有廣告完成網路呼叫。 |
-| 內容播放。 |  | 內容心率 | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 內容播放。 |  | 內容心率 | 這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 內容已完成播放。 | `trackComplete()` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 工作階段已結束。 | `trackSessionEnd()` |  | `SessionEnd` |
 
@@ -33,7 +33,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 除了沒有廣告完成和廣告插播完成呼叫之外，這些參數完全等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)案例中的參數。
 
-## 程式碼範例 {#sample-code}
+## 程式碼範例{#sample-code}
 
 ![](assets/ad-skip.png)
 
