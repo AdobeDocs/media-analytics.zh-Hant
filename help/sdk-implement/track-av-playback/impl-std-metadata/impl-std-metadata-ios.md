@@ -1,8 +1,8 @@
 ---
 title: 在 iOS 上實作標準中繼資料
-description: 說明如何設定在iOS上隨追蹤呼叫傳送的標準視訊和廣告中繼資料。
+description: 說明如何在 iOS 上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,16 +14,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 常數名稱 | 說明   |
 |---|---|
-| `ADBMediaObjectKeyStandardMediaMetadata` | Constant for attaching standard metadata on `MediaInfo ADBMediaObject` |
+| `ADBMediaObjectKeyStandardMediaMetadata` | 用於在 `MediaInfo ADBMediaObject` 上附加標準中繼資料的常數 |
 
 ## 實施
 
-1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [IOS中繼資料金鑰](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+1. 使用 `ADBStandardMetadataKeys`，建立標準中繼資料索引鍵值配對的字典。
+   [iOS 中繼資料索引鍵](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. 對中繼資料使用標準中繼資料常數，在 `MediaInfo``ADBMediaObject`   例項上設定標準中繼資料字典。
 
-1. Provide this `MediaInfo` object while invoking the `trackSessionStart` API.
+1. 叫用 `MediaInfo` API 時，提供此 `trackSessionStart` 物件。
 
 ### 以下是實作範例
 
