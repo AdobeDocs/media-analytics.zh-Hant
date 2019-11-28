@@ -1,8 +1,8 @@
 ---
 title: 概述
-description: 使用媒體SDK追蹤體驗品質(QoE、QoS)的概述。
+description: 使用 Media SDK 追蹤體驗品質 (QoE、QoS) 的相關概述。
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,29 +12,29 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下列指示提供所有 2.x SDK 之間實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. 您可以使用媒體播放器API來識別與QoS和錯誤追蹤相關的變數。 以下為追蹤體驗品質的重要元素:
+體驗品質追蹤包含服務品質 (QoS) 和錯誤追蹤，此兩項皆為選用元素，且&#x200B;**不是**&#x200B;核心媒體追蹤實施的必要元素。您可以使用媒體播放器 API 識別 QoS 相關的變數以及錯誤追蹤。以下為追蹤體驗品質的重要元素:
 
 ## 播放器事件 {#player-events}
 
 ### 對於任何 QoS 量度變更:
 
-建立或更新播放適用的 QoS 物件例項。[QoS API參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
+建立或更新播放適用的 QoS 物件例項。[QoS API 參考資料](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
 ### 所有位元速率變更事件
 
 呼叫 `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## 實施QOS
+## 實作 QoS
 
-1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
+1. 識別媒體播放中何時有任何 QoS 量度變更，並利用 QoS 資訊建立 `MediaObject`，以及更新新的 QoS 資訊。
 
    QoSObject 變數:
 
    >[!TIP]
    >
-   >只有在您計畫追蹤QoS時，才需要這些變數。
+   >唯有在您計劃追蹤 QoS 時，才須使用這些變數。
 
    | 變數 | 說明 | 必要 |
    | --- | --- | :---: |
@@ -48,9 +48,9 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
    >[!IMPORTANT]
    >
-   >更新QoS物件，並在每次位元速率變更時呼叫位元速率變更事件。 如此可提供最精確的 QoS 資料。
+   >更新 QoS 物件，並在每次位元速率變更時呼叫位元速率變更事件。如此可提供最精確的 QoS 資料。
 
-下列范常式式碼使用JavaScript 2.x SDK做為HTML5媒體播放器。 您應將此程式碼與核心媒體播放程式碼搭配使用。
+以下程式碼範例將 JavaScript 2.x SDK 用於 HTML5 媒體播放器。您應該將此程式碼與核心媒體播放程式碼一起使用。
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
