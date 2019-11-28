@@ -2,7 +2,7 @@
 title: 退出與隱私權
 description: 如何處理選擇加入、選擇退出和隱私權。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,17 +14,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 您可以控制特定裝置上是否允許追蹤活動。
 
-* **行動應用程式 -** VA 資料庫會依照 `AdobeMobile` 資料庫的隱私權和退出設定。若要退出追蹤，必須使用 `AdobeMobile` 資料庫。如需 `AdobeMobile` 資料庫的退出和隱私權設定詳細資訊，請參閱[退出和隱私權設定](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html)。
-* **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。若要退出追蹤，您需要從訪客 API 服務退出。For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **OTT Apps(Chromecast, Roku)**`opt` - OTT SDK提供通用資料保護規則(GDPR)適用的API，可讓您設定資料收集和傳輸的狀態標幟，並擷取本機儲存的身分。
+* **行動應用程式 -** VA 資料庫會依照 `AdobeMobile` 資料庫的隱私權和退出設定。若要退出追蹤，必須使用 `AdobeMobile` 資料庫。如需 `AdobeMobile` 資料庫的退出和隱私權設定詳細資訊，請參閱[退出和隱私權設定](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/gdpr-privacy-android/privacy.html)。
+* **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。若要退出追蹤，您需要從訪客 API 服務退出。如需有關選擇退出和隱私權的進一步資訊，請參閱 [Adobe Experience Platform Identity 服務](https://marketing.adobe.com/resources/help/zh_TW/mcvid/)。
+* **OTT 應用程式 (Chromecast、Roku) -** OTT SDK 提供符合一般資料保護規範 (GDPR) 的 API，讓您將資料收集和傳輸的狀態標幟設為 `opt`，並擷取儲存於本機的身分識別資料。
 
    >[!NOTE]
    >
-   >如果隱私權狀態設為選擇退出，媒體心率追蹤呼叫也會停用。
+   >如果隱私權狀態設為退出，也會停用媒體心率追蹤呼叫。
 
    您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料:
 
-   * The `privacyDefault` setting in the `ADBMobile.json` config file. 這會控制持續使用的初始設定，直到在程式碼中變更為止。
+   * `privacyDefault` 設定檔案中的 `ADBMobile.json` 設定。這會控制持續使用的初始設定，直到在程式碼中變更為止。
 
    * `ADBMobile().setPrivacyStatus()` 方法。
 
@@ -43,7 +43,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
             ```
          >[!IMPORTANT]
          >
-         >當使用者退出追蹤時，所有持續的裝置資料和ID都會被清除，直到使用者返回為止。
+         >當使用者選擇退出追蹤時，應用程式將清除所有保存的裝置資料和 ID，直到使用者重新加入為止。
 
       * **再次加入:**
 
@@ -79,7 +79,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->擷取所有識別碼的方法會取得SDK已知並持續存在的所有使用者識別碼。 您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
+>擷取所有識別碼的方法會取得已知且由 SDK 保存的所有使用者身分識別資料。您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
 
 存放在本機的身分識別資料會以 JSON 字串傳回，其中包括:
 
