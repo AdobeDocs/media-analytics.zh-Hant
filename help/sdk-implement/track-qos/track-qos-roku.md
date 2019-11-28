@@ -1,8 +1,8 @@
 ---
 title: 在 Roku 上追蹤體驗品質
-description: 本主題說明使用Roku上的Media SDK來實作體驗品質(QoE、QoS)追蹤。
+description: 本主題說明如何在 Roku 上使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,17 +12,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下列指示提供所有 2.x SDK 之間實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
-## 實施QOS
+## 實作 QoS
 
-1. 識別媒體播放期間位元速率的變更，並使用 `mediaUpdateQoS` API更新媒體SDK上的QoS資訊。
+1. 識別媒體播放期間位元速率是否變更，並且利用 `mediaUpdateQoS` API 更新 Media SDK 上的 QoS 資訊。
 
    QoSObject 變數:
 
    >[!TIP]
    >
-   >只有在追蹤QoS時，才需要這些變數。
+   >只有在追蹤 QoS 時，才須使用這些變數。
 
    | 變數 | 說明 | 必要 |
    | --- | --- | :---: |
@@ -55,7 +55,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     ```
     -->
 
-1. 當播放切換位元速率時， `trackEvent(BitrateChange)` 請呼叫以通知Media SDK位元速率已變更。
+1. 當播放轉換位元速率時，請呼叫 `trackEvent(BitrateChange)`，通知 Media SDK 位元速率已變更。
 
    ```
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
@@ -63,7 +63,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!NOTE]
    >
-   >您必須使用更 `updateQoSObject` 新的位元速率值來呼叫。
+   >您必須使用更新的位元速率值來呼叫 `updateQoSObject`。
 
    <!--
     ```
@@ -76,9 +76,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (See [Overview](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊(請參閱[概述](/help/sdk-implement/track-errors/track-errors-overview.md))。
 
    >[!TIP]
    >
-   >追蹤媒體播放器錯誤不會停止媒體追蹤工作階段。 If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >追蹤媒體播放器錯誤將不會停止媒體追蹤工作階段。如果媒體播放器錯誤使得播放無法繼續，請透過在呼叫 `trackError()` 之後呼叫 `trackSessionEnd()`，以確定媒體追蹤工作階段已關閉。
 
