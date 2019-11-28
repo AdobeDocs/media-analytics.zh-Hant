@@ -1,18 +1,18 @@
 ---
-title: Media Analytics Cookbook
-description: 頂層Cookbook頁面，包含一般MA Cookbook連結和SDK特定連結。
-translation-type: tm+mt
+title: Media Analytics 逐步指南
+description: 頂層逐步指南頁面，包含一般 MA 逐步指南連結和 SDK 專用連結。
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Media Analytics Cookbook
+# Media Analytics 逐步指南
 
-## 一般媒體分析範例主題
+## 一般 Media Analytics 逐步指南主題
 
-[媒體串流歸因](/help/media-analytics-cookbook/media-dimensions.md)
+[媒體資料流歸因](/help/media-analytics-cookbook/media-dimensions.md)
 
-## Media SDK Cookbook主題
+## Media SDK 逐步指南主題
 
-[Media SDK Cookbook](/help/sdk-implement/cookbook/sdk-cookbook-overview.md)
+[Media SDK 逐步指南](/help/sdk-implement/cookbook/sdk-cookbook-overview.md)
