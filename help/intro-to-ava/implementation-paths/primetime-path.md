@@ -2,7 +2,7 @@
 title: Primetime
 description: null
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -24,8 +24,8 @@ Primetime 藉由提供模組化平台以進行媒體發佈、廣告刊登、個�
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK 已與 Media SDK 整合，使得在每個支援的平台上實作時更加簡單快速。<!--Primetime also supports the partnership with Nielsen.--> 若要運用Primetime，請遵循用戶端中的相 [同准則](/help/intro-to-ava/implementation-paths/client-side-path.md) 、必要條件，以及您平台的下列檔案：Primetime使 [用指南。](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK 已與 Media SDK 整合，使得在每個支援的平台上實作時更加簡單快速。<!--Primetime also supports the partnership with Nielsen.-->若要利用 Primetime，請遵循在以下內容中找到的相同指引和必要條件: [用戶端](/help/intro-to-ava/implementation-paths/client-side-path.md)以及適用於您平台的下列文件: [Primetime 使用手冊](https://helpx.adobe.com/tw/primetime/user-guide.html)。
 
 >[!NOTE]
 >
->對於此實作路徑，客戶必須聯絡其銷售代表／客戶經理以簽署新的銷售訂單，因為Media Analytics有獨特的SKU，而且從根據伺服器呼叫的定價模型變更為基於媒體串流的模型。 您也應該聯絡銷售代表/客戶經理，討論購買 TVSDK 事宜。
+>若採取此實施方法，客戶必須聯絡他們的銷售代表/客戶經理以簽署新的銷售訂單，因為 Media Analytics 具有獨特的 SKU，並且從基於伺服器呼叫的定價模式變更為基於媒體資料流的模式。您也應該聯絡銷售代表/客戶經理，討論購買 TVSDK 事宜。
