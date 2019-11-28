@@ -2,7 +2,7 @@
 title: 事件類型和說明
 description: null
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,11 +12,11 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## sessionStart
 
-隨電話 `sessions` 傳送。 當回應傳回時，您可以從 Location 標題擷取工作階段 ID，並使用於後續發送給收集伺服器的事件呼叫。
+連同 `sessions` 呼叫一起傳送。當回應傳回時，您可以從 Location 標題擷取工作階段 ID，並使用於後續發送給收集伺服器的事件呼叫。
 
 ## play
 
-Sent when the player changes state to "playing" from another state (i.e., the `on('Playing')` callback is triggered by the player). 在播放器改變為「正在播放」之前，其他可能的狀態包括「正在緩衝」、使用者從「已暫停」狀態繼續播放、播放器從錯誤中恢復、自動播放等。
+當播放器從其他狀態變更為「正在播放」狀態時傳送 (即播放器觸發 `on('Playing')` 回呼)。在播放器改變為「正在播放」之前，其他可能的狀態包括「正在緩衝」、使用者從「已暫停」狀態繼續播放、播放器從錯誤中恢復、自動播放等。
 
 ## ping
 
@@ -25,17 +25,17 @@ Sent when the player changes state to "playing" from another state (i.e., the `o
 
 Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
-## 位元速率變更
+## bitrateChange
 
-在位元變更時傳送。
+位元速率變更時傳送。
 
 ## bufferStart
 
-在緩衝開始時傳送。 `bufferResume` 事件類型並不存在。A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+緩衝開始時傳送。`bufferResume` 事件類型並不存在。在 `bufferStart` 後傳送 `play` 事件即代表 `bufferResume`。
 
 ## pauseStart
 
-當使用者按「暫停」時傳送。 `resume` 事件類型並不存在。A `resume` is inferred when you send a `play` event after a `pauseStart`.
+使用者按下「暫停」時傳送。`resume` 事件類型並不存在。在 `pauseStart` 後傳送 `play` 事件即代表 `resume`。
 
 ## adBreakStart
 
@@ -43,7 +43,7 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 ## adStart
 
-發出廣告開始的信號
+代表廣告開始
 
 ## adComplete
 
@@ -51,7 +51,7 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 ## adSkip
 
-發出廣告跳過的信號
+代表廣告略過
 
 ## adBreakComplete
 
@@ -63,21 +63,21 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 ## chapterSkip
 
-指示章節跳過
+代表章節略過
 
 ## chapterComplete
 
-表示章節完成
+代表章節結束
 
 ## error
 
-發出錯誤信號。
+代表已發生錯誤。
 
 ## sessionEnd
 
-當使用者放棄檢視內容且不太可能返回時，這會用來通知Media Analytics後端以立即關閉作業。
+當使用者放棄檢視內容，而且不太可能返回工作階段時，用來通知 Media Analytics 後端立即關閉工作階段.
 
-If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
+如果您未傳送 `sessionEnd`，放棄的工作階段通常會逾時 (在 10 分鐘內未接收到任何事件，或播放點在 30 分鐘內未移動) 而遭到後端刪除。
 
 ## sessionComplete
 
@@ -85,5 +85,5 @@ If you don't send a `sessionEnd`, an abandoned session will time-out normally (a
 
 >[!IMPORTANT]
 >
->You should refer to the [JSON validation schemas](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) for each event type, to verify correct event parameter types and requirements.
+>若要驗證事件參數類型和需求是否正確，請參考 [JSON 驗證結構](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)以瞭解每種事件類型。
 
