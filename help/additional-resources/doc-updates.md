@@ -1,11 +1,11 @@
 ---
 title: 文件更新
 description: null
-uuid: 1f3e48df-83b6-418c-8cf7-d7946481f79
+uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -15,20 +15,20 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 發行說明{#release-notes}
 
-* [發行說明](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* [發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)
 
 ## 文件更新{#documentation-updates}
 
-### Last updated: October, 2019 {#October-2019-update}
+### 上次更新: 2019 年 10 月 {#October-2019-update}
 
-許多編輯和格式修正。
-Cookbook主題已擴充至Media SDK以外，包括有關「媒體追蹤以外的媒體維度」的新一般Cookbook主題。
+多項編輯和格式修正。
+擴展到 Media SDK 以外的逐步指南主題，包括有關「媒體追蹤以外的媒體維度」的全新一般逐步指南主題。
 
 
 ### 上次更新日期: 2019 年 3 月 7 日 {#March-2019-update}
 
-* 此更新主要針對JavaScript和OTT平台上的2.2 Media SDK版本。
-* JavaScript和OTT平台上的2.2 Media SDK版本針對iOS和Android平台提供與下文所述相同的支援（2018年11月1日更新）。
+* 本次更新主要是為了在 JavaScript 和 OTT 平台上發行的 2.2 版 Media SDK。
+* JavaScript 和 OTT 平台上發行的 2.2 版 Media SDK 提供與下述 iOS 和 Android 平台相同的支援 (2018 年 11 月 1 日更新)。
 
 ### 上次更新: 2018 年 11 月 1 日 {#November-2018-update}
 
@@ -50,7 +50,7 @@ Cookbook主題已擴充至Media SDK以外，包括有關「媒體追蹤以外的
 ### 更新: 2018 年 10 月 10 日 {#October-2018-update}
 
 * 「SDK 實作」區域的文件結構已經過「重組」，將個別 (但大致相同) 的平台實施指南合併成一個 SDK 實作區段，並將平台專用的追蹤範例呈現在通用追蹤主題下方的子區段。
-* 為了因應移轉到新文件系統的需求，檔案已全數重新命名。已刪除所有分別指示概念、引用和任務主題類型的DITA前置詞(c_、r_、t_)。 所有底線 (’_’) 均已以連字號取代 ('-')。另外，檔案名稱與主題的標題也更相似。
+* 為了因應移轉到新文件系統的需求，檔案已全數重新命名。所有 DITA 字首 ( c_、r_、t_ ) 分別代表概念、參照及工作等主題類型) 已刪除。所有底線 (’_’) 均已以連字號取代 ('-')。另外，檔案名稱與主題的標題也更相似。
 * 更新一般驗證與認證主題。
 * 加入測量選項解說等介紹性素材，另更新必備條件、實施路徑及 Audience Manager 啟用。
 * 更新「量度和中繼資料」與「Reporting and Analysis」區段，藉此反應新增的 Audio Analytics 功能。
