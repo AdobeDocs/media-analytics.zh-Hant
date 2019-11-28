@@ -1,57 +1,57 @@
 ---
-title: 測試2媒體中斷
-description: 本主題說明在驗證中使用的媒體中斷測試。
+title: '測試 2: 媒體中斷'
+description: 本主題說明用於驗證的媒體中斷測試。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# 測試2:媒體中斷{#test-media-interruption}
+# 測試 2: 媒體中斷{#test-media-interruption}
 
-此測試案例可驗證行動中斷行為。 這是您認證要求的必要元素。
+本測試案例可用來驗證行動裝置中斷行為。這是認證申請的必要元素。
 
-## 認證申請表
+## 認證申請表單
 
-**請從這裡下載認證申請表：==&gt;認**&#x200B;證 [申請表。](cert_req_form.docx)
+**在這裡下載認證申請表單: ==&gt;**  [認證申請表單](cert_req_form.docx)。
 
-## 測試程式
+## 測試程序
 
 您必須依照以下順序完成這些工作並加以錄製:
 
 1. **啟動媒體播放器**
 
-   媒體播放器啟動時，會依下列順序傳送下列呼叫：
+   當媒體播放器開始時，以下呼叫的傳送順序如下:
 
-   1. Adobe Analytics(AppMeasurement)開始
-   1. 媒體分析（心率）開始
-   1. 請求Media Analytics（心率）Adobe Analytics start呼叫
-   上述前兩個呼叫包含其他中繼資料和變數。 如需呼叫參數和中繼資料，請參閱「測 [試呼叫詳細資訊」。](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   1. Adobe Analytics (AppMeasurement) 開始
+   1. Media Analytics (心率) 開始
+   1. 已要求 Media Analytics (心率) Adobe Analytics 開始呼叫
+   以上前兩個呼叫含有額外的中繼資料和變數。如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)。
 
-   上述第三個呼叫會告訴Media Analytics伺服器，Media SDK要求將Adobe Analytics開始呼叫(`pev2=ms_s`)傳送至Adobe Analytics伺服器。
+   以上第三個呼叫會通知 Media Analytics 伺服器，Media SDK 已要求將 Adobe Analytics 開始呼叫 (`pev2=ms_s`) 傳送到 Adobe Analytics 伺服器。
 
-1. **播放主要內容至少5分鐘不中斷**
+1. **播放主要內容至少 5 分鐘並避免中斷**
 
    **內容播放**
 
-   在內容播放期間，Media SDK會每十秒傳送播放呼叫（心率）至Media Analytics伺服器。
+   在內容播放期間，Media SDK 會每隔十秒將播放呼叫 (心率) 傳送到 Media Analytics 伺服器。
 
-   如需呼叫參數和中繼資料，請參閱「測 [試呼叫詳細資訊」。](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+   如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#play-main-content)。
 
-   Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+   如需這些廣告呼叫的其他資訊，另請參閱平台的[追蹤廣告](/help/sdk-implement/track-ads/track-ads-overview.md)指示。
 
 1. **將應用程式或瀏覽器移動到背景**
 
-   While the app runs in the background, only `main:pause` calls should be sent to the Media Analytics server, starting with VHL version 1.6.6 and later.
+   從 VHL 1.6.6 版和更新版本開始，當應用程式在背景執行時，只應將 `main:pause` 呼叫傳送到 Media Analytics 伺服器。
 
-1. **將應用程式或瀏覽器帶回前景**
+1. **將應用程式或瀏覽器移回前景**
 
    從背景返回時，應繼續播放內容。
 
-1. **播放主要內容媒體至少5分鐘不中斷**
+1. **播放主要內容媒體至少 5 分鐘並避免中斷**
 
-   如需呼叫參數和中繼資料，請參閱 [測試呼叫詳細資訊。](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+   如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#play-main-content)。
 
 1. **關閉媒體播放器**
 
