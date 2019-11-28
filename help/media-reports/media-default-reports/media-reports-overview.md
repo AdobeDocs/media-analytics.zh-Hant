@@ -2,7 +2,7 @@
 title: 媒體概述
 description: null
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -24,7 +24,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 按一下並拖曳以放大，然後暫留以檢視特定媒體的詳細量度。按一下  ![](assets/video-overview-report-revert.png)
 
-來重設檢視。
+在縮放之後重設檢視。
 
 ![](assets/media_overview_zoom.png){width="400px"}
 
