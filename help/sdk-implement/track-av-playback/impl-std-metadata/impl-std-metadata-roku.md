@@ -1,8 +1,8 @@
 ---
 title: 在 Roku 上實作標準中繼資料
-description: 說明如何設定在Roku上隨追蹤呼叫傳送的標準視訊和廣告中繼資料。
+description: 說明如何在 Roku 上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -34,5 +34,5 @@ standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyLABEL] = "sample label"
 mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata 
 ```
 
-請在這裡參閱完整的視訊中繼資料清單: [音訊與視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
+請在這裡參閱完整的視訊中繼資料清單: [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
 
