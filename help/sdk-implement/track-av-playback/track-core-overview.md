@@ -2,7 +2,7 @@
 title: 追蹤概述
 description: '本主題說明追蹤核心播放，包括追蹤媒體載入、媒體開始、媒體暫停和媒體完成。 '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->本檔案涵蓋SDK 2.x版的追蹤。 若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK.](/help/sdk-implement/download-sdks.md)
+>本文件涵蓋 SDK 2.x 版中的追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 播放器事件
 
@@ -22,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 建立媒體物件
 * 填入中繼資料
-* 電 `trackSessionStart`話；例如： `trackSessionStart(mediaObject, contextData)`
+* 呼叫 `trackSessionStart`；例如: `trackSessionStart(mediaObject, contextData)`
 
 ### 媒體開始時
 
@@ -31,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ### 暫停/繼續時
 
 * 呼叫 `trackPause`
-* Call `trackPlay`   _when playback resumes_
+* _繼續播放時_，呼叫 `trackPlay`
 
 ### 媒體完成時
 
@@ -59,13 +59,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!TIP]
 >
->播放頭位置是設定和設定代碼的一部分。 如需詳細資訊，請 `getCurrentPlayheadTime`參閱 [概述：一般實施指引。](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
+>播放點位置已設為設定和配置程式碼的一部分。如需 `getCurrentPlayheadTime` 的詳細資訊，請參閱[概述: 一般實施指引](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)。
 
 ## 實作 {#implement}
 
 1. **初始追蹤設定 -** 識別使用者何時觸發播放意圖 (使用者點按播放和/或自動播放已開啟)，然後使用媒體資訊建立 `MediaObject` 例項，以設定內容名稱、內容 ID、內容長度和資料流類型。
 
-   **`MediaObject`參考：**
+   **`MediaObject`參考資料:**
 
    | 變數名稱 | 說明 | 必要 |
    |---|---|---|
@@ -75,7 +75,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `streamType` | 資料流類型 | 是 |
    | `mediaType` | 媒體類型 (音效或視訊內容) | 是 |
 
-   **`StreamType`常數：**
+   **`StreamType`常數:**
 
    | 常數名稱 | 說明 |
    |---|---|
@@ -86,14 +86,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | 有聲書的資料流類型 |
    | `PODCAST` | 播客的資料流類型 |
 
-   **`MediaType`常數：**
+   **`MediaType`常數:**
 
    | 常數名稱 | 說明 |
    |---|---|
    | `Audio` | 音效資料流的媒體類型。 |
    | `Video` | 視訊資料流的媒體類型。 |
 
-   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
+   建立 `MediaObject` 的一般格式為 `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
 
 1. **附加中繼資料 -** 可選擇透過內容資料變數，將標準和/或自訂中繼資料物件附加到追蹤工作階段。
 
@@ -101,7 +101,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >將標準中繼資料物件附加至媒體物件是選擇性的。
+      >將標準中繼資料物件附加到媒體物件為選用。
 
       在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。
 
@@ -113,11 +113,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 追蹤使用者的播放意圖，而非播放的開始。 此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
+   >`trackSessionStart` 會追蹤使用者的播放意圖，而非播放的開始。此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
 
    >[!NOTE]
    >
-   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >如果您未使用自訂中繼資料，只要為 `trackSessionStart` 中的 `data` 引數傳送空白物件即可。
 
 1. **追蹤實際的播放開始 -**&#x200B;找出來自媒體播放器的播放開始 (畫面上產生內容的第一個影格) 事件，並呼叫 `trackPlay`。
 
@@ -127,7 +127,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 標示追蹤工作階段的結束。 如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` 會標記追蹤工作階段的結尾。如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。在 `trackSessionEnd` 之後會忽略任何其他 `track*` API 呼叫 (除了新追蹤工作階段的 `trackSessionStart`)。
 
 1. **追蹤所有可能的暫停情況 -** 識別來自媒體播放器的暫停事件，並呼叫 `trackPause`。
 
@@ -142,7 +142,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >這可能是步驟4中使用的相同事件來源。 Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >這可能與在步驟 4 使用的事件來源相同。確保播放恢復時，每個 `trackPause()` API 呼叫都與下列 `trackPlay()` API 呼叫成對。
 
 1. 從媒體播放器上聽取播放搜尋事件。在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋。
 1. 在來自媒體播放器的搜尋完成通知上，使用 `SeekComplete` 事件來追蹤搜尋的結尾.
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## 驗證 {#validate}
+## 驗證{#validate}
 
-如需驗證實作的詳細資訊，請參閱驗 [證。](/help/sdk-implement/validation/validation-overview.md)
+如需有關驗證實施的資訊，請參閱[驗證](/help/sdk-implement/validation/validation-overview.md)。
 
