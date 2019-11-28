@@ -1,8 +1,8 @@
 ---
 title: 繼續非作用中工作階段
-description: 如何處理恢復非活動會話。
+description: 如何處理繼續非作用中工作階段。
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,18 +12,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 長暫停
 
-Media SDK會自動追蹤媒體播放在下列非作用中狀態中的時間長度：
+Media SDK 會自動追蹤媒體播放處於以下非作用中狀態之一的時間:
 
 * 已暫停
 * 搜尋
 * 已停止
 * 緩衝處理
 
-如果媒體追蹤工作階段在非活動狀態中停留超過30分鐘，工作階段會自動關閉。 如果使用者在先前的非作用中視訊追蹤工作階段之後繼續 (`trackPlay`)，媒體心率會使用先前使用的視訊資訊和中繼資料自動建立新視訊工作階段，並傳送繼續心率事件。For more information, see [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+如果媒體追蹤工作階段保持在非作用中狀態超過 30 分鐘，將自動關閉工作階段。如果使用者在先前的非作用中視訊追蹤工作階段之後繼續 (`trackPlay`)，媒體心率會使用先前使用的視訊資訊和中繼資料自動建立新視訊工作階段，並傳送繼續心率事件。如需詳細資訊，請參閱[音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)。
 
 ## 手動繼續先前關閉的工作階段
 
-Media SDK只有在應用程式未關閉時才會自動繼續工作階段。 如果應用程式儲存用戶資料並能夠恢復先前關閉的介質，則可以手動觸發恢復事件。 開始視訊追蹤工作階段時，請設定選用的 Video Resumed 屬性。
+只有在應用程式未關閉時，Media SDK 才會自動繼續工作階段。如果應用程式儲存使用者資料並有能力繼續先前關閉的媒體，您便可以手動觸發繼續事件。開始視訊追蹤工作階段時，請設定選用的 Video Resumed 屬性。
 
 ### Android
 
