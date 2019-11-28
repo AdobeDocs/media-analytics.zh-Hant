@@ -1,8 +1,8 @@
 ---
 title: 具有一個章節的 VOD 播放
-description: 追蹤包含一章的VOD播放範例。
+description: 追蹤含有一個章節之 VOD 播放的範例。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -18,18 +18,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發   | 心率方法   | 網路呼叫   | 附註   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 我們尚未告知 Measurement Library 有前段廣告，因此這些網路呼叫仍完全等同於單一 VoD。 |
+| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 我們尚未告知 Measurement Library 有前段廣告，因此這些網路呼叫仍完全等同於單一 VoD。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
 | 章節播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
 | 章節播放。 |  | 章節心率 |  |
 | 章節已完成。 | `trackEvent:trackChapterComplete` | 心率章節完成 | 已到達章節的結尾。 |
 | 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。即使使用者未看到媒體完成，也必須呼叫此API。 |
+| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。即使使用者未持續觀看到媒體完成，仍必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 
-當章節播放開始時， `Heartbeat Chapter Start` 會傳送呼叫。 If the beginning of the chapter does not coincide with the 10-second timer, the `Heartbeat Chapter Start` call is delayed by a few seconds, and the call goes to the next 10-second interval.
+當章節播放開始時，會傳送 `Heartbeat Chapter Start` 呼叫。如果章節的開頭不符合 10 秒的計時器，`Heartbeat Chapter Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。
 
 發生此情況時，會以相同的間隔傳出 `Content Heartbeat` 呼叫。您可以透過檢查事件類型和資產類型來區分這兩者:
 
@@ -42,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:chapter_*` |  | 章節資料特定的資料流資訊。 |
 | `s:meta:*` |  | 具有特定上下文資料的章節。 |
 
-## 程式碼範例、中間的章節 {#sample-code-chapter-in-the-middle}
+## 程式碼範例、中間的章節 {#sample-code-chapter-in-the-middle}
 
 在此案例中，一部分的 VOD 內容為章節。
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## 程式碼範例、開頭的章節 {#sample-code-chapter-at-the-beginning}
+## 程式碼範例、開頭的章節 {#sample-code-chapter-at-the-beginning}
 
 在此案例中，VOD 內容會播放，而在播放的開頭具有一個章節。
 
