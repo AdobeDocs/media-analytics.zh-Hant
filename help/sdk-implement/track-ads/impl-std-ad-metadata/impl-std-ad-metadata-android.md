@@ -1,8 +1,8 @@
 ---
 title: 在 Android 上實作標準廣告中繼資料
-description: 如何在Android上的廣告追蹤中使用標準廣告中繼資料。
+description: 如何在 Android 上將標準廣告中繼資料用於廣告追蹤。
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -16,9 +16,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `MediaHeartbeat.MediaObjectKey.StandardAdMetadata` | 在「廣告 `MediaObject`」上附加標準廣告中繼資料的常數。 |
 
-## 實施標準廣告中繼資料
+## 實作標準廣告中繼資料
 
-對於標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對的字典：
+針對標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對字典:
 
 ```java
 // Setting standard Ad Metadata 
