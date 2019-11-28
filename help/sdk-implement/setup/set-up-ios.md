@@ -1,8 +1,8 @@
 ---
 title: 設定 iOS
-description: 在iOS上實作的媒體SDK應用程式設定。
+description: 適用於 iOS 實施的 Media SDK 應用程式設定。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,12 +12,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 必備條件
 
-* **取得Media SDK的有效設定參**&#x200B;數在您設定分析帳戶後，這些參數可向Adobe代表取得。
-* **在您的應用程式中實作** iOS適用的ADBMobile如需Adobe Mobile SDK檔案的詳細資訊，請參閱 [Experience cloud解決方案適用的iOS SDK 4.x。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **取得適用於 Media SDK 的有效設定參數**
+在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
+* **在您的應用程式實作 iOS 適用的 ADBMobile**
+如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 iOS SDK 4.x](https://marketing.adobe.com/resources/help/zh_TW/mobile/ios/)。
 
    >[!IMPORTANT]
    >
-   >從iOS 9開始，Apple推出了一項稱為App Transport Security(ATS)的功能。 此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此為預設啟用功能，但您可透過設定選項自行選擇是否使用 ATS。如需ATS的詳細資訊，請參閱 [App Transport Security。](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >Apple 自 iOS 9 起推出 App Transport Security (ATS) 功能。此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此為預設啟用功能，但您可透過設定選項自行選擇是否使用 ATS。如需 ATS 的詳細資訊，請參閱 [App Transport Security](https://marketing.adobe.com/resources/help/zh_TW/mobile/ios/app_transport_security.html)。
 
 * **在您的媒體播放器中提供下列功能:**
 
@@ -49,7 +51,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
          ![](assets/choose-options_ios.png)
 
       1. 按一下&#x200B;**[!UICONTROL 完成]**。
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. 在&#x200B;**[!UICONTROL 專案導覽器]**&#x200B;中，選取您的應用程式並選取您的目標。
       1. 在&#x200B;**[!UICONTROL 「一般」]**&#x200B;標籤的&#x200B;**[!UICONTROL 「連結架構」]**&#x200B;和&#x200B;**[!UICONTROL 「程式庫」]**&#x200B;區段中，連結所需的架構和程式庫。
 
          **iOS 應用程式目標:**
@@ -75,7 +77,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    #import "ADBMediaHeartbeatConfig.h" 
    ```
 
-1. Create a `ADBMediaHeartbeatConfig` instance.
+1. 建立 `ADBMediaHeartbeatConfig` 例項。
 
    本節可協助您瞭解 `MediaHeartbeat` 設定參數，以及在您的 `MediaHeartbeat` 例項上設定正確的設定值以提高追蹤準確率。
 
@@ -93,7 +95,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    config.debugLogging   = <YES/NO>; 
    ```
 
-1. Implement the `ADBMediaHeartbeatDelegate` protocol.
+1. 實施 `ADBMediaHeartbeatDelegate` 通訊協定。
 
    ```
    @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -120,7 +122,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    @end
    ```
 
-1. Use the `ADBMediaHeartBeatConfig` and `ADBMediaHeartBeatDelegate` to create the `ADBMediaHeartbeat` instance.
+1. 使用 `ADBMediaHeartBeatConfig` 和 `ADBMediaHeartBeatDelegate` 來建立 `ADBMediaHeartbeat` 例項。
 
    ```
    //Replace <ADBMediaHeartBeatDelegate> with your delegate instance 
@@ -130,21 +132,21 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `ADBMediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. 此例項將用於下列所有追蹤事件。
+   >請確保您的 `ADBMediaHeartbeat` 例項可供存取，並且&#x200B;*不會在工作階段結束前遭到取消配置*。此例項將用於下列所有追蹤事件。
 
 ## 在 iOS 中從 1.x 版移轉至 2.x 版 {#migrate-to-two-x}
 
 在 2.x 版中，所有公用方法皆已整合至 `ADBMediaHeartbeat` 類別，讓開發人員更容易操作。所有設定皆已整合至 `ADBMediaHeartbeatConfig` 類別。
 
-For more information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+如需有關從 1.x 移轉至 2.x 的詳細資訊，請參閱[從 VHL 1.x 移轉至 2.x](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)。
 
 ## 設定 tvOS 的原生應用程式
 
-隨著新 Apple TV 的推出，您現在可以建立應用程式以在原生 tvOS 環境中執行。在 iOS 提供的數個架構中，您可以使用任一架構來建立單純的原生應用程式，或可以使用 XML 範本和 JavaScript 來建立您的應用程式。從 MediaSDK 2.0 版開始，已對 tvOS 提供支援。For more information about tvOS, see [tvOS Developer site.](https://developer.apple.com/tvos/)
+隨著新 Apple TV 的推出，您現在可以建立應用程式以在原生 tvOS 環境中執行。在 iOS 提供的數個架構中，您可以使用任一架構來建立單純的原生應用程式，或可以使用 XML 範本和 JavaScript 來建立您的應用程式。從 MediaSDK 2.0 版開始，已對 tvOS 提供支援。如需 tvOS 的詳細資訊，請參閱 [tvOS 開發人員網站](https://developer.apple.com/tvos/)。
 
 在您的 Xcode 專案中執行以下步驟。本指南的編寫是假設您的專案具有的一個目標為以 tvOS 為目標的 Apple TV 應用程式:
 
-1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder.
+1. 將 `VideoHeartbeat_TV.a``lib` 程式庫檔案拖曳至您的專案的 資料夾。
 
 1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建置階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與程式庫」]**&#x200B;區段，並新增下列程式庫:
 
