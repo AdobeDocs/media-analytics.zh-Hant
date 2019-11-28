@@ -1,8 +1,8 @@
 ---
 title: 在 JavaScript 上追蹤搜尋
-description: 本主題說明在瀏覽器應用程式(JS)中使用Media SDK實作搜尋追蹤。
+description: 本主題說明如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作搜尋追蹤。
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。If you are implementing a 1.x version of the SDK, you can download the 1.x Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下列指示提供所有 2.x SDK 之間實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 搜尋追蹤常數
 
