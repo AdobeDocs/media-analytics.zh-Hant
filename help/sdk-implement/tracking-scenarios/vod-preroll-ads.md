@@ -1,8 +1,8 @@
 ---
 title: 具有前段廣告的 VOD 播放
-description: 如何使用Media SDK追蹤包含前段廣告的VOD內容範例。
+description: 有關如何使用 Media SDK 追蹤含有前段廣告之 VOD 內容的範例。
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫   | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫仍完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 |  |
 | 已播放廣告 #1 的時間格。 | `trackPlay` | 心率廣告播放 | 廣告內容在主要內容之前播放，而心率在廣告開始時啟動。 |
 | 廣告播放。 |  | 廣告心率 |  |
@@ -22,13 +22,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 已播放廣告 #2 的第一個時間格。 | `trackEvent:AdStart` | Analytics 廣告開始、心率廣告開始 |  |
 | 廣告播放。 |  | 廣告心率 |  |
 | 廣告 #2 完成播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率廣告完成 | 已到達廣告和 Pod 的結尾。 |
-| 內容播放。 |  | 內容心率 | 此網路呼叫與無廣告 [的VOD播放相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
-| 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫與無廣告 [的VOD播放相同](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) 。 |
+| 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 工作階段已結束 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 參數 {#parameters}
 
-當廣告播放開始時，會 `Heartbeat Ad Start` 傳送呼叫。 If the beginning of the ad does not coincide with the 10-second timer, the `Heartbeat Ad Start` call is delayed by a few seconds, and the call goes to the next 10-second interval. When this happens, a `Content Heartbeat` goes out in the same interval, and you can differentiate between the two calls by looking at the event type and the asset type:
+當廣告播放開始時，會傳送 `Heartbeat Ad Start` 呼叫。如果廣告的開頭不符合 10 秒的計時器，`Heartbeat Ad Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。發生此情況時，`Content Heartbeat` 會以相同的間隔傳出，而您可以透過查看事件類型和資產類型來區分這兩個呼叫:
 
 ### 心率廣告開始
 
@@ -37,7 +37,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-廣告採用與相同的基本模 `Content Heartbeats`型，因此 `Ad Play` 呼叫與呼叫類似 `Content Play` 。
+廣告會遵循與 `Content Heartbeats` 相同的基本模式，因此 `Ad Play` 呼叫類似於 `Content Play` 呼叫。
 
 ### 心率廣告播放呼叫
 
@@ -46,7 +46,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
 
-These parameters are similar to the `Content Heartbeats` call, but the `Ad Heartbeats` call contains a few extra parameters:
+這些參數類似於 `Content Heartbeats` 呼叫，但 `Ad Heartbeats` 呼叫包含一些額外的參數:
 
 ### 廣告心率
 
@@ -57,7 +57,7 @@ These parameters are similar to the `Content Heartbeats` call, but the `Ad Heart
 | `s:asset:ad_id` | &lt;ad ID&gt; |  |
 | `s:asset:pod_id` | &lt;ad pod ID&gt; |  |
 
-Similar to `Heartbeat Content Complete` calls, when ad playback has completed, and the end of the playhead is reached, a `Heartbeat Ad Complete` call is sent. This call looks like other `Heartbeat Ad` calls but contains a couple specific things:
+類似於 `Heartbeat Content Complete` 呼叫，當完成時，以及到達播放點結尾時，會傳送 `Heartbeat Ad Complete` 呼叫。此呼叫看起來類似其他 `Heartbeat Ad` 呼叫，但包含某些特定項目:
 
 ### 心率廣告完成呼叫
 
@@ -72,7 +72,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** 若要在Android中檢視此藍本，請設定下列程式碼：
+* **Android** 若要在 Android 中查看此案例，請設定下列程式碼:
 
    ```java
    // Set up  mediaObject 
@@ -176,7 +176,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS —— 若要** 在iOS中檢視此藍本，請設定下列程式碼：
+* **iOS -** 若要在 iOS 中查看此案例，請設定下列程式碼:
 
    ```
    //  Set up mediaObject 
@@ -280,7 +280,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** 若要在JavaScript中檢視此藍本，請輸入下列文字：
+* **JavaScript** 若要在 JavaScript 中檢視此案例，請輸入下列文字:
 
    ```js
    // Set up mediaObject 
@@ -382,7 +382,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** 若要在Android中檢視此藍本，請設定下列程式碼：
+* **Android** 若要在 Android 中查看此案例，請設定下列程式碼:
 
    ```java
    // Set up mediaObject 
@@ -559,7 +559,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ........ 
    ```
 
-* **iOS** 若要在iOS中檢視此藍本，請設定下列程式碼：
+* **iOS** 若要在 iOS 中查看此案例，請設定下列程式碼:
 
    ```
    //  Set up mediaObject 
@@ -746,7 +746,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
    ....... 
    ```
 
-* **JavaScript** 若要在JavaScript中檢視此藍本，請輸入下列文字：
+* **JavaScript** 若要在 JavaScript 中檢視此案例，請輸入下列文字:
 
    ```js
    // Set up mediaObject 
