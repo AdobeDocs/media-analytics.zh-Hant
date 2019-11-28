@@ -1,8 +1,8 @@
 ---
 title: 在 Chromecast 上實作標準中繼資料
-description: 說明在Chromecast上設定標準視訊和廣告中繼資料。
+description: 說明如何在 Chromecast 上設定標準視訊和廣告中繼資料。
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -28,4 +28,4 @@ standardAudioMetadata[AudioMetadataKeys.ALBUM] = "Sample album";
 mediaObject[ADBMobile.media.MediaObjectKey.StandardAudioMetadata] = standardAudioMetadata;
 ```
 
-See the comprehensive list of audio and video metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+請在這裡參閱完整的音訊和視訊中繼資料清單: [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)。
