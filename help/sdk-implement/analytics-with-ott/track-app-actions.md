@@ -1,8 +1,8 @@
 ---
 title: 追蹤應用程式動作
-description: 應用程式動作是您要測量的應用程式中發生的事件。
+description: 應用程式動作為發生在您要測量之應用程式中的事件。
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,11 +12,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 動作為發生在您要測量之應用程式中的事件。
 
-每個動作有一或多個對應度量，會隨著每次事件發生而增量。For example, you might send a `trackAction` call for each new subscription, or each time content is rated, or each time a level is completed.
+每個動作有一或多個對應度量，會隨著每次事件發生而增量。例如，您可能會針對每個新訂閱、每次對內容進行分級或每次完成某個層級時，傳送 `trackAction` 呼叫。
 
 應用程式不會自動追蹤動作，因此您必須在要追蹤的事件發生時呼叫 `trackAction`，然後將動作對應至自訂事件。
 
-1. When an event that you want to track occurs, call `trackAction`.
+1. 在要追蹤的事件發生時呼叫 `trackAction`。
 
    * **Roku:**
 
