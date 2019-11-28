@@ -1,8 +1,8 @@
 ---
 title: 在 Android 上追蹤章節和區段
-description: 本主題說明在Android上使用Media SDK實作章節和區段追蹤。
+description: 本主題說明如何在 Android 上使用 Media SDK 實作章捷和區段追蹤。
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,17 +12,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 >[!IMPORTANT]
 >
->以下說明提供使用2.x SDK實作的指引。 If you are implementing a 1.x version of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下列指示提供使用 2.x SDK 實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
-## 實施章節追蹤
+## 實作章節追蹤 
 
 1. 識別章節開始事件何時發生，並使用章節資訊建立 `ChapterObject` 例項。
 
-   `ChapterObject` 章節追蹤參考：
+   `ChapterObject` 章節追蹤參考資料:
 
    >[!NOTE]
    >
-   >只有在您打算追蹤章節時，才需要這些變數。
+   >唯有在您計劃追蹤章節時，才須使用這些變數。
 
    | 變數名稱 | 說明 | 必要 |
    | --- | --- | :---: |
