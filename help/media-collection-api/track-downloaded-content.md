@@ -1,8 +1,8 @@
 ---
 title: 追蹤下載內容
 description: null
-uuid: 0718689d-9602-4e3f-833c-8297ae1d909
-translation-type: tm+mt
+uuid: 0718689d-9602-4e3f-833c-8297aae1d909
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,34 +12,34 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 概述 {#overview}
 
-「已下載內容」功能可讓使用者離線時追蹤媒體使用。 舉例來說，使用者在行動裝置上下載並安裝應用程式，然後使用應用程式將內容下載至裝置上的本機儲存。為追蹤此下載資料，Adobe已開發「下載內容」功能。 使用此功能，當使用者從裝置儲存空間播放內容時，追蹤資料會儲存在裝置上，而不論裝置的連線性為何。 當使用者完成播放作業，而裝置返回線上時，儲存的追蹤資訊會在單一裝載內傳送至Media Collection API後端。 在此之後，處理和報告會如常在Media Collection API中進行。
+「下載內容」功能提供可在使用者離線時追蹤媒體消耗的功能。舉例來說，使用者在行動裝置上下載並安裝應用程式，然後使用應用程式將內容下載至裝置上的本機儲存。Adobe 已開發「下載內容」功能以追蹤此下載資料。透過此功能，當使用者從裝置的儲存播放內容時，無論裝置是否連線，追蹤資料都會儲存在裝置上。當使用者完成播放工作階段且裝置回到上線狀態時，儲存的追蹤資訊會傳送至單一裝載中的媒體收集 API 後端。從該位置，處理和報表程序會在 Media Collection API 中正常進行。
 
-對比兩種方法：
+對照下列兩種方法:
 
 * 線上
 
-   使用這種即時方法，媒體播放器會在每個播放器事件上傳送追蹤資料，並且每十秒（廣告每秒）傳送網路ping，逐一傳送至後端。
+   透過此即時方法，媒體播放器會傳送每個播放器事件的追蹤資料，且每十秒傳送一次網路 Ping (廣告則是每一秒)，依序傳送至後端。
 
-* 離線（下載內容功能）
+* 離線 (「下載內容」功能)
 
-   使用此批次處理方法，需要產生相同的作業階段事件，但這些事件會儲存在裝置上，直到以單一作業階段傳送至後端（請參閱以下範例）。
+   透過此批次處理方法，需要產生相同的工作階段事件，且將其儲存在裝置上，直到以單一工作階段形式將其傳送到後端為止 (請參閱下方範例)。
 
-每種方法都有其優缺點：
-* 線上場景即時跟蹤；這需要在每次網路呼叫前先檢查連通性。
-* 離線案例（「下載內容」功能）只需檢查一次網路連線，但需要在裝置上增加記憶體使用量。
+每種方法都有各自的優缺點:
+* 線上情況可進行即時追蹤，但需要在每個網路呼叫前進行連線檢查。
+* 離線情況 (「下載內容」功能) 僅需要一次網路連線檢查，但也會在裝置上佔用更大的記憶體空間。
 
 ## 實施 {#implementation}
 
 ### 事件結構
 
-「下載的內容」功能只是（標準）線上Media Collection API的離線版本，因此您的播放器批次和傳送至後端的事件資料必須使用與進行線上呼叫時相同的事件結構。 有關這些方案的資訊，請參閱：
+「下載內容」功能只是離線版本的 (標準) 線上 Media Collection API，因此播放器批次處理和傳送到後端的事件資料，必須使用與進行線上呼叫時相同的事件結構。如需這些結構的詳細資訊，請參閱:
 * [概述;](/help/media-collection-api/mc-api-overview.md)
 * [驗證事件要求](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 事件順序
 
-* 批次裝載中的第一個事件必須 `sessionStart` 與平常一樣，與Media Collection API一起使用。
-* **您必須在`media.downloaded: true`** 事件上加入標準中繼資料參數(`params` 索引鍵), `sessionStart` 以向後端指出您要傳送下載的內容。 如果此參數不存在或在您傳送下載的資料時設為false,API將傳回400個回應碼（錯誤請求）。 此參數可區分下載內容與後端即時內容。 (Note that if `media.downloaded: true` is set on a live session, this will likewise result in a 400 response from the API.)
+* 根據 Media Collection API 通常的情況，批次裝載中的第一個事件必須為 `sessionStart`。
+* 在 `sessionStart` 事件上，**您必須將`media.downloaded: true`包含**&#x200B;在標準中繼資料參數 (`params` 索引鍵) 中，以表示您要將下載內容傳送到哪個後端。若此參數不存在或設為 false，在傳送下載資料時，API 會傳回 400 回應代碼 (Bad Request)。此參數會區分傳送到後端的下載內容與即時內容(請注意，若 `media.downloaded: true` 設在即時工作階段上，則同樣會導致 API 傳回 400 回應代碼)。
 * 實施時應負責依照其外觀的順序，正確地儲存播放器事件。
 
 ### 回應代碼
@@ -49,7 +49,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 與 Adobe Analytics 整合 {#integration-with-adobe-analtyics}
 
-在計算下載內容藍本的Analytics開始／關閉呼叫時，後端會設定一個額外的Analytics欄位，稱為 `ts.` Thees are timestamps for the first and last events received(start and complete)。 此機制可讓完成的媒體作業置於正確的時間點（即即使使用者連續數天未連線，媒體作業仍會報告在實際檢視內容時發生）。 您必須透過建立&#x200B;_可選時間戳記報表套裝，以在 Adobe Analytics 端啟用此機制。_ 若要啟用可選時間戳記報表套裝，請參閱 [可選時間戳記。](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
+計算下載內容情況的 Analytics 開啟/關閉呼叫時，後端會設定一個稱為 `ts.` 的額外 Analytics 欄位。這些是第一個和最後一個收到事件的時間戳記 (開始和完成)。此機制可將完成的媒體工作階段放置在正確的時間點 (換句話說，即使使用者數天未重新上線，媒體工作階段也會依照實際檢視內容的時間，回報媒體工作階段)。您必須透過建立&#x200B;_可選時間戳記報表套裝，以在 Adobe Analytics 端啟用此機制。_&#x200B;若要啟用可選時間戳記報表套裝，請參閱[可選時間戳記](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/timestamp-optional.html)。
 
 ## 範例工作階段比較 {#sample-session-comparison}
 
