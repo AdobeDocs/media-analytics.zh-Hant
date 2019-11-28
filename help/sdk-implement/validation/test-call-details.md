@@ -1,8 +1,8 @@
 ---
 title: 測試呼叫詳細資料
-description: 本主題詳細說明您為驗證實作所必須進行的呼叫。
-uuid: d3a0e62f-2fc3-413d-ac56-adbc9b3e983
-translation-type: tm+mt
+description: 本主題詳細說明驗證實施所必須進行的呼叫。
+uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 啟動媒體播放器 {#start-the-media-player}
 
-### Adobe Analytics(AppMeasurement)開始呼叫 {#aa-start-call}
+### Adobe Analytics (AppMeasurement) 開始呼叫 {#aa-start-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -31,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 線性資料流的長度應設定為目前節目的最佳預估值。
 
-### Adobe Analytics(AppMeasurement)開始呼叫中的標準中繼資料 {#std-metadata-aa}
+### Adobe Analytics (AppMeasurement) 開始呼叫中的標準中繼資料 {#std-metadata-aa}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -50,14 +50,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics(AppMeasurement)開始呼叫中的自訂中繼資料 {#custom-metadata-aa}
+### Adobe Analytics (AppMeasurement) 開始呼叫中的自訂中繼資料 {#custom-metadata-aa}
 
 | 參數 |  值 (範例)  |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### 媒體分析（心率）開始呼叫 {#ma-start-call}
+### Media Analytics (心率) 開始呼叫 {#ma-start-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -77,7 +77,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 視訊開始時的線性資料流播放點位置，應設定為目前節目開始後經過的秒數，而不是 0。
 
-### Media Analytics（心率）開始呼叫中的標準中繼資料 {#std-metadata-ma}
+### Media Analytics (心率) 開始呼叫中的標準中繼資料 {#std-metadata-ma}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -96,14 +96,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Media Analytics（心率）中的自訂中繼資料開始呼叫 {#custom-metadata-ma}
+### Media Analytics (心率) 開始呼叫中的自訂中繼資料 {#custom-metadata-ma}
 
 | 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics（心率）Adobe Analytics Start呼叫 {#ma-aa-start}
+### Media Analytics (心率) Adobe Analytics 開始呼叫 {#ma-aa-start}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -118,12 +118,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 **附註:**
 
-* 此呼叫表示Media SDK已要求將Adobe Analytics呼 `pev2=ms_s` 叫傳送至Adobe Analytics(AppMeasurement)伺服器。
+* 這個呼叫代表 Media SDK 已要求將 Adobe Analytics `pev2=ms_s` 呼叫傳送到 Adobe Analytics (AppMeasurement) 伺服器。
 * 該呼叫不含自訂中繼資料。
 
-## 檢視廣告播放 {#view-ad-playback}
+## 檢視廣告播放{#view-ad-playback}
 
-### Adobe Analytics(AppMeasurement)廣告開始呼叫 {#aa-ad-start-call}
+### Adobe Analytics (AppMeasurement) 廣告開始呼叫 {#aa-ad-start-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -146,7 +146,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
 
-### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
+### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的標準中繼資料 {#std-metadata-aa-ad-start}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -165,14 +165,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Adobe Analytics(AppMeasurement)廣告開始呼叫中的自訂中繼資料 {#custom-metadata-aa-ad-start}
+### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-aa-ad-start}
 
 | 參數 |  值 (範例)  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### 媒體分析（心率）廣告開始呼叫 {#ma-ad-start-call}
+### Media Analytics (心率) 廣告開始呼叫 {#ma-ad-start-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -191,7 +191,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
 
-### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
+### Media Analytics (心率) 廣告開始呼叫中的標準中繼資料 {#std-metadata-ma-ad-start}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -210,14 +210,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Media Analytics（心率）廣告開始呼叫中的自訂中繼資料 {#custom-metadata-ma-ad-start}
+### Media Analytics (心率) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-ma-ad-start}
 
 | 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics（心率）Adobe Analytics廣告開始呼叫 {#ma-aa-ad-start-call}
+### Media Analytics (心率) Adobe Analytics 廣告開始呼叫 {#ma-aa-ad-start-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -229,7 +229,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | VOD |
 | `s:asset:type` | ad |
 
-### 媒體分析（心率）廣告播放呼叫 {#ma-ad-play-call}
+### Media Analytics (心率) 廣告播放呼叫 {#ma-ad-play-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -241,7 +241,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### 媒體分析（心率）廣告暫停呼叫 {#ma-ad-pause-call}
+### Media Analytics (心率) 廣告暫停呼叫 {#ma-ad-pause-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -253,7 +253,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | VOD |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### 媒體分析（心率）Adobe Analytics廣告完整呼叫 {#ma-aa-ad-complete-call}
+### Media Analytics (心率) Adobe Analytics 廣告完成呼叫 {#ma-aa-ad-complete-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -267,7 +267,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 播放主要內容 {#play-main-content}
 
-### 媒體分析（心率）播放呼叫 {#ma-play-call}
+### Media Analytics (心率) 播放呼叫 {#ma-play-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
@@ -282,12 +282,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 **附註:**
 
-* 每次播放呼叫的播放磁頭位置應增加10秒。
+* 每個播放呼叫的播放點位置應該要以 10 秒為單位遞增。
 * `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
 
 ## 暫停主要內容 {#pause-main-content}
 
-### 媒體分析（心率）暫停呼叫 {#ma-pause-call}
+### Media Analytics (心率) 暫停呼叫 {#ma-pause-call}
 
 | 參數 |  值 (範例)  |
 |---|---|
