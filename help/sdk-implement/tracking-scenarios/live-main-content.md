@@ -1,8 +1,8 @@
 ---
 title: 即時主要內容
-description: 如何使用Media SDK追蹤即時內容的範例。
+description: 有關如何使用 Media SDK 追蹤即時內容的範例。
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -16,31 +16,31 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 這可以是使用者點按&#x200B;**[!UICONTROL 播放]或自動播放事件。** |
-| 媒體播放的第一個畫格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要播放繼續，便會每 10 秒傳送心率。 |
+| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 這可以是使用者點按&#x200B;**[!UICONTROL 播放]或自動播放事件。** |
+| 媒體播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要播放繼續，便會每 10 秒傳送心率。 |
 | 內容播放。 |  | 內容心率 |  |
-| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未使用媒體完成，也必須呼叫此API。 |
+| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未持續使用到媒體完成，仍必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 
-您在 Adobe Analytics 內容開始呼叫上看到的許多相同值，也會在 Heartbeat 內容開始呼叫上看到。您也會看到Adobe在Adobe Analytics中用來填入各種媒體報表的許多其他參數。 我們不會在此說明所有內容，只會說明真正重要的那些內容。
+您在 Adobe Analytics 內容開始呼叫上看到的許多相同值，也會在 Heartbeat 內容開始呼叫上看到。您也將看到 Adobe 用來在 Adobe Analytics 中填入各種「媒體」報表的許多其他參數。我們不會在此說明所有內容，只會說明真正重要的那些內容。
 
 ### 心率內容開始
 
 | 參數 | 值 | 附註 |
 |---|---|---|
-| `s:sc:rsid` | &lt;Your Adobe Report Suite ID&gt; |  |
-| `s:sc:tracking_serve` | &lt;Your Analytics Tracking Server URL&gt; |  |
+| `s:sc:rsid` | &lt;Analytics 報表套裝 ID&gt; |  |
+| `s:sc:tracking_serve` | &lt;您的 Analytics 追蹤伺服器 URL&gt; |  |
 | `s:user:mid` | `s:user:mid` | 應該符合 Adobe Analytics 內容開始呼叫上的中間值 |
 | `s:event:type` | "start" |  |
 | `s:asset:type` | "main" |  |
 | `s:asset:mediao_id` | &lt;您的媒體名稱&gt; |  |
 | `s:stream:type` | live |  |
-| `s:meta:*` | 可選 | 媒體上的自訂中繼資料集 |
+| `s:meta:*` | 可選 | 媒體上設定的自訂中繼資料 |
 
 ## 內容心率 {#content-heartbeats}
 
-在媒體播放期間，計時器會每10秒傳送一或多個心率（或ping），以用於主要內容，而每秒傳送一個或多個廣告。 這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
+在媒體播放期間，對於主要內容，計時器將每隔 10 秒傳送一或多個心率 (或 Ping)；對於廣告，則為每秒。這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
 
 在內容心率中，尋找一些特定項目:
 
@@ -49,23 +49,23 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;playhead position&gt; 例如 50、60、70 | 這應該反映播放點目前的位置。 |
 
-## 心率內容完成 {#heartbeat-content-complete}
+## 心率內容完成{#heartbeat-content-complete}
 
-在此情景中，不會有完整呼叫，因為即時串流從未完成。
+在此案例中，不會有完成呼叫，因為即時資料流從不會結束。
 
-## 播放頭值設定
+## 播放點值設定
 
-對於LIVE串流，您必須將播放磁頭設為與程式設計開始時的偏移值，如此，在報告中，分析師就可判斷使用者在24小時檢視內加入和離開LIVE串流的時間點。
+若為「即時」資料流，您必須將播放點設為節目開始的位移，這樣分析師就能在報表的 24 小時檢視內，判斷使用者在哪個時間點加入及離開「即時」資料流。
 
 ### 開始時
 
-對於即時媒體，當使用者開始播放串流時，您必須在數 `l:event:playhead` 秒內設定目前的偏移。 這與VOD不同，您可將播放頭設為"0"。
+若為「即時」媒體，當使用者開始播放資料流時，您必須將 `l:event:playhead` 設為目前的位移 (以秒為單位)。與此相對的是，在 VOD 中，您會將播放點設為「0」。
 
-例如，假設一個即時串流活動從午夜開始，持續24小時(`a.media.length=86400`; `l:asset:length=86400`)。 然後，假設使用者在下午12:00開始播放該即時串流。 在此案例中，您應設 `l:event:playhead` 定為43200（在串流中為12小時）。
+例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。接著，假設使用者在中午 12:00 開始播放該「即時」資料流。在此案例中，您應將 `l:event:playhead` 設為 43200 (12 小時進入資料流)。
 
 ### 暫停時
 
-當使用者暫停播放時，必須套用在播放開始時套用的相同「即時播放磁頭」邏輯。 當使用者返回播放LIVE串流時，您必須將 `l:event:playhead` 值設定為新的偏移播放頭位置， __ 而非使用者暫停LIVE串流的點。
+使用者暫停播放時，必須套用開始播放時所套用的同一個「即時播放點」邏輯。當使用者繼續播放「即時」資料流時，您必須將 `l:event:playhead` 值設為新的位移播放點位置，而&#x200B;_不是設為_&#x200B;使用者暫停「即時」資料流的時間點。
 
 ## 程式碼範例 {#sample-code}
 
@@ -180,9 +180,4 @@ this._mediaHeartbeat.trackPlay();
 // 3. Call trackSessionEnd() when user ends the playback session.  
 //    Since user does not watch live media to completion, there is  
 //    no need to call trackComplete(). 
-this._mediaHeartbeat.trackSessionEnd(); 
-
-........ 
-........ 
-```
-
+this._mediaHeartbeat.trackSessionEn
