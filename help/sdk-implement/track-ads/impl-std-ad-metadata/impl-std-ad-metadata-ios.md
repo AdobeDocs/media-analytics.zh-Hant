@@ -1,8 +1,8 @@
 ---
 title: 在 iOS 上實作標準廣告中繼資料
-description: 如何在iOS上的廣告追蹤中使用標準廣告中繼資料。
+description: 如何在 iOS 上將標準廣告中繼資料用於廣告追蹤。
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -14,11 +14,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 常數名稱 | 說明   |
 |---|---|
-| `ADBMediaObjectKeyStandardAdMetadata` | Constant for attaching standard ad metadata on `AdInfo ADBMediaObject` |
+| `ADBMediaObjectKeyStandardAdMetadata` | 用於在 上附加標準廣告中繼資料的常數`AdInfo ADBMediaObject` |
 
-## 實施標準廣告中繼資料
+## 實作標準廣告中繼資料
 
-對於標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對的字典：
+針對標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對字典:
 
 ```
 // Sample implementation for using standard metadata keys for Ad 
