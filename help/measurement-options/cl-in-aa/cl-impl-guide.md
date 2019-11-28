@@ -2,20 +2,19 @@
 title: 自訂連結實施指南
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Custom Link Implementation Guide{#custom-link-implementation-guide}
+# 自訂連結實施指南{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
-自訂視訊連結視訊追蹤經常用於不太需要視訊測量的平台與裝置上。
+自訂視訊追蹤採用 Analytics `appMeasurement` 中的[使用自訂連結程式碼手動追蹤連結](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/link_manual.html)。自訂視訊連結視訊追蹤經常用於不太需要視訊測量的平台與裝置上。
 
-* 在JavaScript中：函 `s.tl()` 數
-* 在行動應用程式中: [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* 在 JavaScript 中: `s.tl()` 函數
+* 在行動應用程式中: [trackAction() Android](https://marketing.adobe.com/resources/help/zh_TW/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/zh_TW/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 在 Data Insertion API 中: [linktype 標記](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 要求
 
@@ -26,7 +25,7 @@ Custom Video Tracking uses [manual link tracking using custom link code](https:/
 ## 中繼資料
 
 * 您可以將中繼資料視為連結資料的一部分，新增到任何追蹤呼叫中
-* Remember to update the `linkTrackVars` and `linkTrackEvents`
+* 請記得更新 `linkTrackVars` 與 `linkTrackEvents`
 
 ```javascript
 /* Call on video complete */ 
