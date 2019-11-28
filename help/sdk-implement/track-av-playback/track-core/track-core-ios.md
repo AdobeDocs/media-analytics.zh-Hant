@@ -1,8 +1,8 @@
 ---
 title: 在 iOS 上追蹤核心播放
-description: 本主題說明如何使用iOS上的Media SDK實作核心追蹤。
+description: 本主題說明如何在 iOS 上使用 Media SDK 實作核心追蹤。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -11,11 +11,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 # 在 iOS 上追蹤核心播放{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->本檔案涵蓋SDK 2.x版的追蹤。 若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
+>本文件涵蓋 SDK 2.x 版中的追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始追蹤設定**
 
-   Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
+   識別使用者何時觸發播放的意圖 (使用者點擊「播放」及/或開啟自動播放) 並建立 `MediaObject` 例項。
 
    [createMediaObjectWithName API](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:length:streamType:mediaType:)
 
@@ -24,10 +24,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `name` | 視訊名稱 | 是 |
    | `mediaid` | 視訊唯一識別碼 | 是 |
    | `length` | 視訊長度 | 是 |
-   | `streamType` | 串流類型(請參 _閱下方的StreamType常數_ ) | 是 |
-   | `mediaType` | 媒體類型(請參 _閱下方的MediaType常數_ ) | 是 |
+   | `streamType` | 資料流類型 (請參閱下列 _StreamType 常數_) | 是 |
+   | `mediaType` | 媒體類型 (請參閱下列 _MediaType 常數_) | 是 |
 
-   **`StreamType`常數：**
+   **`StreamType`常數:**
 
    | 常數名稱 | 說明 |
    |---|---|
@@ -38,7 +38,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `ADBMediaHeartbeatStreamTypeAUDIOBOOK` | 有聲書的資料流類型 |
    | `ADBMediaHeartbeatStreamTypePODCAST` | 播客的資料流類型 |
 
-   **`MediaType`常數：**
+   **`MediaType`常數:**
 
    | 常數名稱 | 說明 |
    |---|---|
@@ -58,7 +58,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **附加視訊中繼資料**
 
-   可選擇透過上下文資料變數，將標準和／或自訂視訊中繼資料物件附加至視訊追蹤工作階段。
+   可選擇透過內容資料變數，將標準和/或自訂視訊中繼資料物件附加到視訊追蹤工作階段。
 
    * **標準視訊中繼資料**
 
@@ -66,14 +66,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       * **視訊中繼資料索引鍵**
          [iOS 中繼資料索引鍵](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-      * 請在這裡參閱完整的視訊中繼資料清單: [音訊與視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
+      * 請在這裡參閱完整的視訊中繼資料清單: [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
       >[!NOTE]
       >
-      >將標準視訊中繼資料物件附加至媒體物件是選擇性的。
+      >將標準視訊中繼資料物件附加到媒體物件為選用。
 
    * **自訂中繼資料**
 
-      建立自訂變數的變數物件，並填入此視訊的資料。 例如:
+      為自訂變數建立變數物件，並為此視訊填入資料。例如:
 
       ```
       NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
@@ -84,11 +84,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. **追蹤開始播放的意圖**
 
-   若要開始追蹤媒體工作階段，請呼叫 `trackSessionStart` 「媒體心率」例項。
+   若要開始追蹤媒體工作階段，請呼叫媒體心率例項上的 `trackSessionStart`。
 
    >[!TIP]
    >
-   >第二個值是您在步驟2中建立的自訂視訊中繼資料物件名稱。
+   >秒數值是您在步驟 2 建立的自訂視訊中繼資料物件名稱。
 
    ```
    - (void)onMainVideoLoaded:(NSNotification *)notification { 
@@ -99,13 +99,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 追蹤使用者的播放意圖，而非播放的開始。 此 API 用來載入視訊資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
+   >`trackSessionStart` 會追蹤使用者的播放意圖，而非播放的開始。此 API 用來載入視訊資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
 
    >[!NOTE]
    >
-   >If you are not using custom video metadata, simply send an empty object for the `data` argument in `trackSessionStart`, as shown in the commented out line in the iOS example above.
+   >若您未使用自訂視訊中繼資料，只要對 `trackSessionStart` 中的 `data` 引數傳送空白物件即可，如上方 iOS 範例中的備註行所示。
 
-1. **追蹤實際播放開始時間**
+1. **追蹤實際的播放開始**
 
    識別來自視訊播放器的視訊播放開始 (在畫面上轉譯了視訊的第一個時間格) 事件，並呼叫 `trackPlay`:
 
@@ -115,7 +115,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. **追蹤播放的完成情況**
+1. **追蹤播放完成**
 
    識別來自視訊播放器的視訊播放完成 (使用者已觀看內容至結尾) 事件，並呼叫 `trackComplete`:
 
@@ -125,7 +125,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-1. **追蹤工作階段結束**
+1. **追蹤工作階段結尾**
 
    識別來自視訊播放器的視訊播放卸載/關閉 (使用者關閉視訊和/或視訊完成及卸載) 事件，並呼叫 `trackSessionEnd`:
 
@@ -137,11 +137,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 標示視訊追蹤工作階段的結束。 如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new video tracking session.
+   >`trackSessionEnd` 會標記視訊追蹤工作階段的結尾。如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。除了新視訊追蹤工作階段的 `trackSessionStart` 外，在 `trackSessionEnd` 之後會忽略任何其他 `track*` API 呼叫。
 
-1. **追蹤所有可能的暫停藍本**
+1. **追蹤所有可能的暫停情況**
 
-   Identify the event from the video player for video pause and call `trackPause`:
+   識別來自視訊播放器視訊暫停的事件，並呼叫 `trackPause`:
 
    ```
    - (void)onVideoPause:(NSNotification *)notification { 
@@ -149,9 +149,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    }
    ```
 
-   **暫停藍本**
+   **暫停情況**
 
-   Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. 以下情形都要求應用程式呼叫 `trackPause()`:
+   識別視訊播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`:
 
    * 使用者明確在應用程式中點擊暫停。
    * 播放器自行進入「暫停」狀態。
@@ -168,7 +168,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >這可能是步驟4中使用的相同事件來源。 在視訊播放繼續時，使用後續的 `trackPause()` API 呼叫確保 `trackPlay()` API 呼叫成對。
+   >這可能與在步驟 4 使用的事件來源相同。在視訊播放繼續時，使用後續的 `trackPause()` API 呼叫確保 `trackPlay()` API 呼叫成對。
 
 如需有關追蹤核心播放的詳細資訊，請參閱下列內容:
 
