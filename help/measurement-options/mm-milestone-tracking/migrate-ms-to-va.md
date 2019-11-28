@@ -2,7 +2,7 @@
 title: 從里程碑移轉至 Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,20 +12,20 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 概述 {#overview}
 
-「里程碑」和 Media Analytics 追蹤的視訊測量核心概念相同，也就是擷取視訊播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實 [作媒體分析的詳細資訊](/help/sdk-implement/setup/setup-overview.md) ，請參 [閱SDK概觀和追蹤概述](/help/sdk-implement/track-av-playback/track-core-overview.md) 。
+「里程碑」和 Media Analytics 追蹤的視訊測量核心概念相同，也就是擷取視訊播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實作 Media Analytics 的詳細資訊，請參閱 [SDK 概述](/help/sdk-implement/setup/setup-overview.md)和[追蹤概述](/help/sdk-implement/track-av-playback/track-core-overview.md)。
 
 下列表格為「里程碑」解決方案和 Media Analytics 解決方案的對照表。
 
 ## 移轉指南 {#migration-guide}
 
-### 變數參考
+### 變數參考資料
 
 | 里程碑量度 | 變數類型 | Media Analytics 量度 |
 | --- | --- | --- |
-| 內容 | eVarDefault<br/><br/>有效期：瀏覽 | 內容 |
-| 內容類型 | eVar<br/><br/> Default expiration: Page view | 內容類型 |
-| 內容逗留時間 | Event<br/><br/> Type: Counter | 內容逗留時間 |
-| 視訊起始 | Event<br/><br/> Type: Counter | 視訊起始 |
+| 內容 | eVar<br/><br/>預設過期時間: 造訪 | 內容 |
+| 內容類型 | eVar<br/><br/> 預設過期時間: 頁面檢視 | 內容類型 |
+| 內容逗留時間 | 事件<br/><br/>類型: 計數器 | 內容逗留時間 |
+| 視訊起始 | 事件<br/><br/>類型: 計數器 | 視訊起始 |
 | 視訊完成 | 事件<br/><br/> 類型: 計數器 | 內容完成 |
 
 ### 媒體模組變數
@@ -64,7 +64,20 @@ Media.contextDataMapping
 </td>
 <td>
 <pre>
-s.Media.contextDataMapping = { "a.media.name":"eVar2,prop2", "a.media.segment":"eVar3", "a.contentType":"eVar1", "a.media.timePlayed":"event3", "a.media.view", "a.media.media.segmentView":"event2", "a.media.complete":"event7", "a.media.milestones":{ 25:"event4", 50:"event5", 75:"event6" }};
+s.Media.contextDataMapping = {
+  "a.media.name":"eVar2,prop2",
+  "a.media.segment":"eVar3",
+  "a.contentType":"eVar1",
+  "a.media.timePlayed":"event3",
+  "a.media.view":"event1",
+  "a.media.segmentView":"event2",
+  "a.media.complete":"event7",
+  "a.media.milestones": {
+    25:"event4",
+    50:"event5",
+    75:"event6"
+  }
+};
 </pre>
 </td>
 <td>不適用
@@ -78,7 +91,12 @@ Media.trackVars
 </td>
 <td>
 <pre>
-s.Media.trackVars = "events, prop2, eVar1, eVar2, eVar3";
+s.Media.trackVars = 
+  "events,
+  prop2,
+  eVar1,
+  eVar2,
+  eVar3";
 </pre>
 </td>
 <td>不適用
@@ -92,7 +110,14 @@ Media.trackEvents
 </td>
 <td>
 <pre>
-s.Media.trackEvents = "event1, event2, event3, event4, event5, event6, event7"
+s.Media.trackEvents = 
+  "event1,
+  event2,
+  event3,
+  event4,
+  event5,
+  event6,
+  event7"
 </pre>
 </td>
 <td>不適用
@@ -140,7 +165,8 @@ Media.autoTrackNetStreams
 <td>
 <pre>
 s.Media.
-  autoTrackNetStreams = true
+  autoTrackNetStreams
+  = true
 </pre>
 </td>
 <td>不適用
@@ -155,7 +181,8 @@ Media.completeByCloseOffset
 <td>
 <pre>
 s.Media.
-  completeByCloseOffset = true
+  completeByCloseOffset
+  = true
 </pre>
 </td>
 <td>不適用
@@ -170,7 +197,8 @@ Media.completeCloseOffsetThreshold
 <td>
 <pre>
 s.Media.
-  completeCloseOffsetThreshold = 1
+  completeCloseOffsetThreshold
+  = 1
 </pre>
 </td>
 <td>不適用
@@ -188,8 +216,8 @@ s.Media.playerName = "Custom Player Name"
 </pre>
 </td>
 <td>
-SDK金鑰：playerName;
-API金鑰：media.playerName
+SDK Key: playerName; 
+API Key: media.playerName
 </td>
 <td>
 <pre>
@@ -206,7 +234,8 @@ Media.trackSeconds
 <td>
 <pre>
 s.Media.
-  trackSeconds = 15
+  trackSeconds
+  = 15
 </pre>
 </td>
 <td>不適用
@@ -221,7 +250,8 @@ Media.trackMilestones
 <td>
 <pre>
 s.Media.
-  trackMilestones = "25,50,75";
+  trackMilestones
+  = "25,50,75";
 </pre>
 </td>
 <td>不適用
@@ -236,7 +266,8 @@ Media.trackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  trackOffsetMilestones = "20,40,60";
+  trackOffsetMilestones
+  = "20,40,60";
 </pre>
 </td>
 <td>不適用
@@ -265,7 +296,8 @@ Media.segmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  segmentByOffsetMilestones = true;
+  segmentByOffsetMilestones
+  = true;
 </pre>
 </td>
 <td>不適用
@@ -299,7 +331,8 @@ Media.adTrackSeconds
 <td>
 <pre>
 s.Media.
-  adTrackSeconds = 15
+  adTrackSeconds
+  = 15
 </pre>
 </td>
 <td>不適用
@@ -314,7 +347,8 @@ Media.adTrackMilestones
 <td>
 <pre>
 s.Media.
-  adTrackMilestones = "25,50,75";
+  adTrackMilestones
+  = "25,50,75";
 </pre>
 </td>
 <td>不適用
@@ -329,7 +363,8 @@ Media.adTrackOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adTrackOffsetMilestones = "20,40,60";
+  adTrackOffsetMilestones
+  = "20,40,60";
 </pre>
 </td>
 <td>不適用
@@ -344,7 +379,8 @@ Media.adSegmentByMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByMilestones = true;
+  adSegmentByMilestones
+  = true;
 </pre>
 </td>
 <td>不適用
@@ -359,7 +395,8 @@ Media.adSegmentByOffsetMilestones
 <td>
 <pre>
 s.Media.
-  adSegmentByOffsetMilestones = true;
+  adSegmentByOffsetMilestones
+  = true;
 </pre>
 </td>
 <td>不適用
@@ -402,13 +439,15 @@ trackSessionStart
 </td>
 <td>
 <pre>
-trackSessionStart(mediaObject, contextData)
+trackSessionStart(
+  mediaObject, 
+  contextData)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-mediaName -（必要）您要在視訊報表中顯示的視訊名稱。
+mediaName - (必要) 您要其顯示在視訊報表中的名稱。
 </td>
 <td>
 <pre>
@@ -422,13 +461,17 @@ name
 </td>
 <td>
 <pre>
-createMediaObject(name, mediaId, length, streamType)
+createMediaObject(
+  name, 
+  mediaId, 
+  length, 
+  streamType)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-mediaLength -（必要）視訊秒數的長度。
+mediaLength - (必要) 視訊的長度 (以秒為單位)。
 </td>
 <td>
 <pre>
@@ -442,13 +485,17 @@ length
 </td>
 <td>
 <pre>
-createMediaObject(name, mediaId, length, streamType)
+createMediaObject(
+  name, 
+  mediaId, 
+  length, 
+  streamType)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-mediaPlayerName -（必要）用於檢視視訊的媒體播放器名稱，如您要它顯示在視訊報表中。
+mediaPlayerName - (必要) 用來檢視視訊的媒體播放器名稱，您要其顯示在視訊報表中的名稱。
 </td>
 <td>
 <pre>
@@ -483,17 +530,24 @@ trackEvent
 </td>
 <td>
 <pre>
-mediaHeartbeat.trackEvent(MediaHeartbeat。
-    事件.
-    AdBreakStart、adBreakObject);...trackEvent(MediaHeartbeat。
-    事件.
-    AdStart、adObject、adCustomMetadata);
+mediaHeartbeat.trackEvent(
+  MediaHeartbeat.
+    Event.
+    AdBreakStart, 
+  adBreakObject);
+...
+trackEvent(
+  MediaHeartbeat.
+    Event.
+    AdStart, 
+  adObject, 
+  adCustomMetadata);
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-name -（必要）廣告的名稱或ID。
+name - (必要) 廣告的名稱或 ID。
 </td>
 <td>
 <pre>
@@ -507,13 +561,18 @@ name
 </td>
 <td>
 <pre>
-createAdObject(name, adId, position, length)
+createAdObject(
+  name, 
+  adId, 
+  position, 
+  length)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-length（必要）廣告的長度。
+length
+(必要) 廣告的長度。
 </td>
 <td>
 <pre>
@@ -527,13 +586,17 @@ length
 </td>
 <td>
 <pre>
-createAdObject(name, adId, position, length)
+createAdObject(
+  name, 
+  adId, 
+  position, 
+  length)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-playerName -（必要）用於檢視廣告的mediaplayer名稱。
+playerName - (必要) 用來檢視廣告的媒體播放器的名稱。
 </td>
 <td>
 <pre>
@@ -554,7 +617,7 @@ MediaHeartbeatConfig.
 </tr>
 <tr>
 <td>
-parentName —嵌入廣告的主要內容的名稱或ID。
+parentName - 內嵌廣告所在主要內容的名稱或 ID。
 </td>
 <td>
 <pre>
@@ -568,7 +631,7 @@ parentName
 </tr>
 <tr>
 <td>
-parentPod —— 播放廣告的主要內容中的位置。
+parentPod - 主要內容中播放廣告的位置。
 </td>
 <td>
 <pre>
@@ -582,13 +645,16 @@ position
 </td>
 <td>
 <pre>
-createAdBreakObject(name, position, startTime)
+createAdBreakObject(
+  name, 
+  position, 
+  startTime)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-parentPodPosition —— 播放廣告的pod內位置。
+parentPodPosition - Pod 內播放廣告的位置。
 </td>
 <td>
 <pre>
@@ -602,13 +668,18 @@ position
 </td>
 <td>
 <pre>
-createAdObject(name, adId, position, length)
+createAdObject(
+  name, 
+  adId, 
+  position, 
+  length)
 </pre>
 </td>
 </tr>
 <tr>
 <td>
-CPMT套用至此播放的CPM或加密CPM（前置詞為"~"）。
+CPM
+套至用此播放的 CPM 或加密的 CPM (首碼為「~」)。
 </td>
 <td>
 <pre>
@@ -617,7 +688,7 @@ CPM
 </td>
 <td>不適用
 </td>
-<td>Media Analytics預設不提供
+<td>Media Analytics 預設為無法使用
 </td>
 </tr>
 <tr>
@@ -721,13 +792,14 @@ trackPause()
 </pre> 
 或
 <pre>
-trackEvent(MediaHeartbeat。
-  事件.
+trackEvent(
+  MediaHeartbeat.
+  Event.
   SeekStart)
 </pre> 或
 <pre>
-trackEvent(MediaHeartbeat。
-  事件.
+trackEvent(
+  MediaHeartbeat.Event.
   BufferStart);
 </pre>
 </td>
@@ -747,16 +819,33 @@ s.Media.monitor(s, media)
 </td>
 <td>
 <pre>
-var customVideoMetadata = { isUserLoggedIn:
-    "false",tvStation:
-    節目編排者：
-    「程式設計師示例"};...var standardVideoMetadata = {};standardVideoMetadata [MediaHeartbeat。
+var customVideoMetadata = 
+{
+  isUserLoggedIn: 
+    "false",
+  tvStation: 
+    "Sample TV station",
+  programmer: 
+    "Sample programmer"
+};
+...
+var standardVideoMetadata 
+  = {};
+standardVideoMetadata
+  [MediaHeartbeat.
    VideoMetadataKeys.
-   ESIPOSE] = 「Sample Expose」;standardVideoMetadata [MediaHeartbeat。
+   EPISODE] = 
+  "Sample Episode";
+standardVideoMetadata
+  [MediaHeartbeat.
    VideoMetadataKeys.
-   SHOW] = "Sample Show";...mediaObject.setValue(MediaHeartbeat)。
-  MediaObjectKey。
-  標準視訊中繼資料，標準視訊中繼資料);
+   SHOW] = "Sample Show";
+...
+mediaObject.setValue(
+  MediaHeartbeat.
+  MediaObjectKey.
+  StandardVideoMetadata, 
+  standardVideoMetadata);
 </pre>
 </td>
 </tr>
