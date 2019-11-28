@@ -1,8 +1,8 @@
 ---
-title: 程式碼比較1.x和2.x
-description: 本主題會比較1.x和2.x版Media SDK中的程式碼。
+title: '程式碼比較: 1.x 和 2.x'
+description: 本主題說明 Media SDK 1.x 和 2.x 版中的程式碼比較。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,26 +10,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 程式碼比較: 1.x 和 2.x {#code-comparison-x-to-x}
 
-所有 設定參數與追蹤 API 現已整合至 `MediaHeartbeats` 和 `MediaHeartbeatConfig` 類別。
+所有設定參數與追蹤 API 現已整合至 `MediaHeartbeats` 和 `MediaHeartbeatConfig` 類別。
 
 **設定 API 變更:**
 
-* `AdobeHeartbeatPluginConfig.sdk` -重新命名為 `MediaConfig.appVersion`
-* `MediaHeartbeatConfig.playerName` -現在設定為 `MediaHeartbeatConfig` 透過， `VideoPlayerPluginDelegate`
+* `AdobeHeartbeatPluginConfig.sdk` - 已重新命名為 `MediaConfig.appVersion`
+* `MediaHeartbeatConfig.playerName` - 現可透過 `MediaHeartbeatConfig` (而非 `VideoPlayerPluginDelegate`) 設定
 * (僅適用於JavaScript): `AppMeasurement` 例項 - 現可透過 `MediaHeartbeat` 建構函式傳送。
 
 **設定屬性變更:**
 
-* `sdk` -重新命名為 `appVersion`
-* `publisher` -移除；Experience cloud組織ID會改用為發行者
+* `sdk` - 已重新命名為 `appVersion`
+* `publisher` - 已移除；使用 Experience Cloud 組織 ID 取代發佈者
 * `quiteMode` - 已移除
 
-**1.x和2.x範例播放器的連結：**
+**1.x 和 2.x 範例播放器的連結:**
 
 * [1.x 範例播放器 ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
 * [2.x 範例播放器 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
-以下各節提供1.x和2.x之間的程式碼比較，包括初始化、核心播放、廣告播放、章節播放和某些其他事件。
+下列章節提供 1.x 與 2.x 的程式碼比較，包括「初始化」、「核心播放」、「廣告播放」、「章節播放」以及其他事件。
 
 ## VHL 程式碼比較: 初始化
 
@@ -42,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `AdobeAnalyticsPlugin()` |  |
 | `HeartbeatPlugin()` |  |
 
-#### 視訊播放器外掛程式初始化(1.x) {#plugin-init-1.x}
+#### 視訊播放器外掛程式初始化 (1.x) {#plugin-init-1.x}
 
 ```js
 this._playerPlugin = new VideoPlayerPlugin( new SampleVideoPlayerPluginDelegate(this._player));
@@ -71,7 +71,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-#### 媒體心率初始化(2.x) {#mh-init-2.x}
+#### 媒體心率初始化 (2.x) {#mh-init-2.x}
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -85,7 +85,7 @@ mediaConfig.appVersion = Configuration.HEARTBEAT.SDK;
 this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this._player), mediaConfig, appMeasurement);
 ```
 
-### 委派
+### 代理人
 
 | 1.x API | 2.x API |
 | --- | --- |
@@ -98,7 +98,7 @@ this._mediaHeartbeat = new MediaHeartbeat( new SampleMediaHeartbeatDelegate(this
 | `VideoPlayerPluginDelegate().get.onError` |  |
 | `AdobeAnalyticsPluginDelegate()` |  |
 
-#### VideoPlayerPluginDelegate(1.x) {#player-plugin-delegate-1.x}
+#### VideoPlayerPluginDelegate (1.x) {#player-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleVideoPlayerPluginDelegate.prototype, VideoPlayerPluginDelegate.prototype);
@@ -128,7 +128,7 @@ SampleVideoPlayerPluginDelegate.prototype.getQoSInfo = function() {
 };
 ```
 
-#### AdobeAnalyticsPluginDelegate(1.x) {#analytics-plugin-delegate-1.x}
+#### AdobeAnalyticsPluginDelegate (1.x) {#analytics-plugin-delegate-1.x}
 
 ```js
 $.extend(SampleAdobeAnalyticsPluginDelegate.prototype, AdobeAnalyticsPluginDelegate.prototype);
@@ -140,7 +140,7 @@ SampleAdobeAnalyticsPluginDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### HeartbeatDelegate(1.x) {#hb-delegate-1.x}
+#### HeartbeatDelegate (1.x) {#hb-delegate-1.x}
 
 ```js
 $.extend(SampleHeartbeatDelegate.prototype, HeartbeatDelegate.prototype);
@@ -152,7 +152,7 @@ SampleHeartbeatDelegate.prototype.onError = function(errorInfo) {
 };
 ```
 
-#### MediaHeartbeatDelegate(2.x) {#mh-delegate-2.x}
+#### MediaHeartbeatDelegate (2.x) {#mh-delegate-2.x}
 
 ```js
 ADB.core.extend(SampleMediaHeartbeatDelegate.prototype, MediaHeartbeatDelegate.prototype);
@@ -181,7 +181,7 @@ this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this.
 | `VideoPlayerPluginDelegate.trackVideoLoad()` | `MediaHeartbeat.createMediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### 會話開始(1.x) {#session-start-1.x}
+#### 工作階段開始 (1.x) {#session-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -198,7 +198,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### 會話開始(2.x) {#session-start-2.x}
+#### 工作階段開始 (2.x) {#session-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -216,7 +216,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### 標準中繼資料(1.x) {#std-meta-1.x}
+#### 標準中繼資料 (1.x) {#std-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -238,7 +238,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### 標準中繼資料(2.x) {#std-meta-2.x}
+#### 標準中繼資料 (2.x) {#std-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -262,7 +262,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Standard Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the MediaObject key `MediaObject.MediaObjectKey.StandardVideoMetadata()`.
+>注意: 在 VHL 2.0 中，設定「標準視訊中繼資料」不再透過 `AdobeAnalyticsPlugin.setVideoMetadata()` API，而是透過 MediaObject key `MediaObject.MediaObjectKey.StandardVideoMetadata()`。
 
 ### 自訂視訊中繼資料
 
@@ -271,7 +271,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### 自訂中繼資料(1.x) {#custom-meta-1.x}
+#### 自訂中繼資料 (1.x) {#custom-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -285,7 +285,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### 自訂中繼資料(2.x) {#custom-meta-2.x}
+#### 自訂中繼資料 (2.x) {#custom-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -302,7 +302,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Custom Video Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Video Metadata is set through the `MediaHeartbeat.trackSessionStart()` API.
+>在 VHL 2.0 中，設定「自訂視訊中繼資料」不再透過 `AdobeAnalyticsPlugin.setVideoMetadata()` API，而是透過 `MediaHeartbeat.trackSessionStart()` API 設定標準視訊中繼資料。
 
 
 ### 播放
@@ -311,7 +311,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackPlay()` | `MediaHeartbeat.trackPlay()` |
 
-#### 播放(1.x) {#playback-1.x}
+#### 播放 (1.x) {#playback-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -320,7 +320,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 };
 ```
 
-#### 播放(2.x) {#playback-2.x}
+#### 播放 (2.x) {#playback-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -335,7 +335,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackPause()` | `MediaHeartbeat.trackPausel()` |
 
-#### 暫停(1.x) {#pause-1.x}
+#### 暫停 (1.x) {#pause-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onPause = function() { 
@@ -344,7 +344,7 @@ VideoAnalyticsProvider.prototype._onPause = function() {
 };
 ```
 
-#### 暫停(2.x) {#pause-2.x}
+#### 暫停 (2.x) {#pause-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -359,7 +359,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackSeekComplete()` | `MediaHeartbeat.`<br/>  `trackEvent(MediaHeartbeat.Event.SeekComplete)` |
 
-#### 搜尋(1.x) {#seek-1.x}
+#### 搜尋 (1.x) {#seek-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -368,7 +368,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 };
 ```
 
-#### 搜尋(2.x) {#seek-2.x}
+#### 搜尋 (2.x) {#seek-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -383,7 +383,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferStart()` | `MediaHeartbeat.trackEvent(`<br/>  `MediaHeartbeat.Event.BufferStart)` |
 
-#### 緩衝區開始(1.x) {#buffer-start-1.x}
+#### 緩衝開始 (1.x) {#buffer-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -392,7 +392,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 };
 ```
 
-#### 緩衝區開始(2.x) {#buffer-start-2.x}
+#### 緩衝開始 (2.x) {#buffer-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -407,7 +407,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BufferComplete)` |
 
-#### 緩衝區完成(1.x) {#buffer-complete-1.x}
+#### 緩衝完成 (1.x) {#buffer-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -416,7 +416,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-#### 緩衝區完成(2.x) {#buffer-complete-2.x}
+#### 緩衝完成 (2.x) {#buffer-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -431,7 +431,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackComplete()` | `MediaHeartbeat.trackComplete()` |
 
-#### 播放完成(1.x) {#playback-complete-1.x}
+#### 播放完成 (1.x) {#playback-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -442,7 +442,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-#### 播放完成(2.x) {#playback-complete-2.x}
+#### 播放完成 (2.x) {#playback-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -462,7 +462,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
 |  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
-#### 廣告開始(1.x) {#ad-start-1.x}
+#### 廣告開始 (1.x) {#ad-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -477,7 +477,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### 廣告開始(2.x) {#ad-start-2.x}
+#### 廣告開始 (2.x) {#ad-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -503,7 +503,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdMetadataKeys()` | `MediaHeartbeat.createAdObject()` |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.trackAdStart()` |
 
-#### 標準廣告中繼資料(1.x) {#ad-meta-1.x}
+#### 標準廣告中繼資料 (1.x) {#ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -522,7 +522,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### 標準廣告中繼資料(2.x) {#ad-meta-2.x}
+#### 標準廣告中繼資料 (2.x) {#ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -548,7 +548,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Standard Ad Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata()` API, in VHL 2.0, the Standard Ad Metadata is set through the `AdMetadata` key `MediaObject.MediaObjectKey.StandardVideoMetadata`
+>在 VHL 2.0 中，設定「標準廣告中繼資料」不再透過 `AdobeAnalyticsPlugin.setVideoMetadata()` API，而是透過 `AdMetadata` 索引鍵 `MediaObject.MediaObjectKey.StandardVideoMetadata`
 
 ### 自訂廣告中繼資料
 
@@ -557,7 +557,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 |  | `MediaHeartbeat.trackAdStart()` |
 
-#### 自訂廣告中繼資料(1.x) {#custom-ad-meta-1.x}
+#### 自訂廣告中繼資料 (1.x) {#custom-ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -576,7 +576,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### 自訂廣告中繼資料(2.x) {#custom-ad-meta-2.x}
+#### 自訂廣告中繼資料 (2.x) {#custom-ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -599,7 +599,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 ```
 
 >[!NOTE]
->Instead of setting the Custom Ad Metadata through the `AdobeAnalyticsPlugin.setVideoMetadata` API, in VHL 2.0, the Standard Ad Metadata is set through the `MediaHeartbeat.trackAdStart()` API.
+>在 VHL 2.0 中，設定「自訂廣告中繼資料」不再透過 `AdobeAnalyticsPlugin.setVideoMetadata` API，而是透過 `MediaHeartbeat.trackAdStart()` API 設定標準廣告中繼資料。
 
 ### 廣告略過
 
@@ -608,7 +608,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 |  | `MediaHeartbeat.trackAdStart()` |
 
-#### 廣告略過(1.x) {#ad-skip-1.x}
+#### 廣告略過 (1.x) {#ad-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() { 
@@ -616,7 +616,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### 廣告略過(2.x) {#ad-skip-2.x}
+#### 廣告略過 (2.x) {#ad-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdSkip = function() { 
@@ -626,7 +626,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 ```
 
 >[!NOTE]
->In VHL 1.5.X APIs; `getAdinfo()` and `getAdBreakInfo()` must return null if the player is outside the Ad break boundaries.
+>在 VHL 1.5.X API；如果播放器超出廣告插播界限，`getAdinfo()` 和 `getAdBreakInfo()` 必須傳回 null。
 
 ### 廣告完成
 
@@ -635,7 +635,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
 |  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
-#### 廣告完成(1.x) {#ad-complete-1.x}
+#### 廣告完成 (1.x) {#ad-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -644,7 +644,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-#### 廣告完成(2.x) {#ad-complete-2.x}
+#### 廣告完成 (2.x) {#ad-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -663,7 +663,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.createChapterObject` |
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### 第1.x章開始 {#chap-start-1.x}
+#### 章節開始 (1.x) {#chap-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -678,7 +678,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 };
 ```
 
-#### 章節開始(2.x) {#chap-start-2.x}
+#### 章節開始 (2.x) {#chap-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -698,7 +698,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterSkip)` |
 
-#### 跳過一章(1.x) {#chap-skip-1.x}
+#### 章節略過 (1.x) {#chap-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() { 
@@ -707,9 +707,9 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 ```
 
 >[!NOTE]
->In VHL 1.5.X APIs; `getChapterinfo()` must return null if the player is outside the Chapter boundaries.
+>在 VHL 1.5.X API；如果播放器超出章節界限，`getChapterinfo()` 必須傳回 null。
 
-#### 跳過一章(2.x) {#chap-skip-2.x}
+#### 章節略過 (2.x) {#chap-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() { 
@@ -724,7 +724,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.createChapterObject()` |
 | `AdobeAnalyticsPlugin.setChapterMetadata()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### 章節自訂中繼資料(1.x) {#chap-cust-meta-1.x}
+#### 章節自訂中繼資料 (1.x) {#chap-cust-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -736,7 +736,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-#### 章節自訂中繼資料(2.x) {#chap-cust-meta-2.x}
+#### 章節自訂中繼資料 (2.x) {#chap-cust-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -758,7 +758,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `trackChapterComplete()` | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
-#### 章節完成(1.x) {#chap-complete-1.x}
+#### 章節完成 (1.x) {#chap-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -767,7 +767,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-#### 章節完整(2.x) {#chap-complete-2.x}
+#### 章節完成 (2.x) {#chap-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -784,7 +784,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBitrateChange()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BitrateChange)` |
 
-#### 位元速率變更(1.x) {#bitrate-chg-1.x}
+#### 位元速率變更 (1.x) {#bitrate-chg-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -795,7 +795,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 };
 ```
 
-#### 位元速率變更(2.x) {#bitrate-chg-2.x}
+#### 位元速率變更 (2.x) {#bitrate-chg-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -814,7 +814,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` |  |
 
-#### 視訊繼續(1.x) {#video-resume-1.x}
+#### 視訊恢復 (1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -827,7 +827,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### 視訊繼續(2.x) {#video-resume-2.x}
+#### 視訊恢復 (2.x) {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
