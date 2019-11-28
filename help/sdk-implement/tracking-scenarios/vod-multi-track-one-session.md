@@ -1,8 +1,8 @@
 ---
 title: 用於多個工作階段的 VOD 一個追蹤器
-description: 如何使用一個追蹤器使用Media SDK追蹤多個工作階段的範例。
+description: 如何透過 Media SDK 使用一個追蹤器追蹤多個工作階段。
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -22,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 參數 | 值 | 附註   |
 | --- | --- | --- |
-| `s:event:sid` | 唯一工作階段 ID | A unique session ID that exists in all the heartbeat network calls until `trackSessionEnd` |
+| `s:event:sid` | 唯一工作階段 ID | 直到 `trackSessionEnd` 之前一直存在於所有心率網路呼叫的唯一工作階段 ID |
 
 ## 程式碼範例 {#sample-code}
 
@@ -30,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Android {#android}
 
-To create two instances of `MediaHeartbeat` for two media players, set up the following code:
+若要為兩個媒體播放器建立兩個 `MediaHeartbeat` 例項，請設定下列程式碼:
 
 ```java
 public class MediaAnalyticsProvider implements MediaHeartbeatDelegate { 
@@ -139,7 +139,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+若要顯示第二個工作階段，您可以使用與第一個工作階段相同的 `MediaAnalyticsProvider` (`MediaHeartbeat`) 例項，但對於新工作階段:
 
 ```java
 // Set up mediaObject 
@@ -185,7 +185,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS {#ios}
 
-To create two instances of `MediaHeartbeat` for two media players, enter the following:
+若要為兩個媒體播放器建立兩個 `MediaHeartbeat` 例項，請輸入下列內容:
 
 ```
 @interface MediaAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -291,7 +291,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-To display the second session, you can use the same `MediaAnalyticsProvider` ( `MediaHeartbeat`) instance as the first session, but for a new session:
+若要顯示第二個工作階段，您可以使用與第一個工作階段相同的 `MediaAnalyticsProvider` (`MediaHeartbeat`) 例項，但對於新工作階段:
 
 ```
 // Set up mediaObject 
