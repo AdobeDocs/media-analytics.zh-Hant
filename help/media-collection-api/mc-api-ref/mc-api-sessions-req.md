@@ -2,7 +2,7 @@
 title: 工作階段要求
 description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -15,13 +15,13 @@ POST
 https://{uri}/api/v1/sessions
 ```
 
-## URI參數
+## URI 參數
 
 無
 
 ## 要求內文
 
-請求內文必須是JSON，且必須具有與此範例請求內文相同的結構：
+要求內文必須是 JSON，而且結構必須與以下範例要求內文相同:
 
 ```
 { 
@@ -62,7 +62,7 @@ https://{uri}/api/v1/sessions
    * `ts` - 時間戳記；必須以毫秒為單位。
 * `eventType` (必要)
 
-   **有效值：**`sessionStart`
+   **有效值:** `sessionStart`
 * `params` (必要)
 * `customMetadata` (可選)
 * `qoeData` (可選)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header —— 部 `/api/v1/` 件提供API版本。 後面的部 `[…]sessions/` 件是會話ID。
+`Location:` 標頭 - `/api/v1/` 部分提供 API 版本。`[…]sessions/` 後的部分則為工作階段 ID。
 
 ## 回應代碼
 
