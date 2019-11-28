@@ -1,8 +1,8 @@
 ---
 title: 在 JavaScript 上實作標準廣告中繼資料
-description: 如何在瀏覽器(JS)應用程式中的廣告追蹤中使用標準廣告中繼資料。
+description: 如何在瀏覽器 (JS) 應用程式中將標準廣告中繼資料用於廣告追蹤。
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -16,9 +16,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `StandardAdMetadata` | 用於在 Ad Object 上附加標準廣告中繼資料的常數 |
 
-## 實施標準廣告中繼資料
+## 實作標準廣告中繼資料
 
-對於標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對的字典：
+針對標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對字典:
 
 ```js
 var adObject =  
