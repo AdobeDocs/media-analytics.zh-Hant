@@ -2,7 +2,7 @@
 title: 區段
 description: null
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!NOTE]
 >
->These reporting segments associated with Media Stream Type were introduced on 9/13/18 along with the `streamType` parameter.
+>我們在 2018 年 9 月 13 日，推出了這些與媒體資料流類型相關的報表區段及 `streamType` 參數。
 
 | 區段 | 說明 | 規則 |
 |---|---|---|
