@@ -1,8 +1,8 @@
 ---
 title: iOS 中繼資料索引鍵
-description: 本主題說明可用的iOS中繼資料索引鍵。
+description: 本主題說明可用的 iOS 中繼資料索引鍵。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,13 +12,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 [iOS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
-開始日期 `ADBStandardMetadataKeys.h`:
+從 `ADBStandardMetadataKeys.h`:
 
-## 視訊中繼資料金鑰
+## 視訊中繼資料索引鍵
 
 | 常數名稱 | 說明 | 類型 |
 |---|---|---|
-| `ADBVideoMetadataKeySHOW` | Show | 影片 |
+| `ADBVideoMetadataKeySHOW` | 節目 | 影片 |
 | `ADBVideoMetadataKeySEASON` | 季數 | 影片 |
 | `ADBVideoMetadataKeyEPISODE` | 集數 | 影片 |
 | `ADBVideoMetadataKeyASSET_ID` | 資產 | 影片 |
@@ -40,7 +40,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 常數名稱 | 說明 | 類型 |
 |---|---|---|
-| `ADBAudioMetadataKeyALBUM` | Show | 音訊 |
+| `ADBAudioMetadataKeyALBUM` | 節目 | 音訊 |
 | `ADBAudioMetadataKeyARTIST` | 季數 | 音訊 |
 | `ADBAudioMetadataKeyAUTHOR` | 季數 | 音訊 |
 | `ADBAudioMetadataKeyLABEL` | 集數 | 音訊 |
