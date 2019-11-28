@@ -1,8 +1,8 @@
 ---
 title: 設定 JavaScript
-description: 在JavaScript上實作的媒體SDK應用程式設定。
+description: 適用於 JavaScript 實施的 Media SDK 應用程式設定。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,8 +12,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 必備條件
 
-* **取得有效的設定參**&#x200B;數在您設定分析帳戶後，這些參數可從Adobe代表取得。
-* **在您的`AppMeasurement`媒體應用程式中實作JavaScript**&#x200B;如需Adobe Mobile SDK檔案的詳細資訊，請參 [閱使用JavaScript實作分析。](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **取得有效的設定參數**
+在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
+* **在您的媒體應用程式實作 JavaScript 適用的`AppMeasurement`**
+如需有關 Adobe Mobile SDK 文件的詳細資訊，請參閱[利用 JavaScript 實作分析](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/js_implementation.html)。
 
 * **在您的媒體播放器中提供下列功能:**
 
@@ -22,16 +24,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 將[下載的](/help/sdk-implement/download-sdks.md#download-2x-sdks)程式庫新增至專案。為方便起見，請建立類別的本機參照。
 
-   1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
-   1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
+   1. 展開您下載的 `MediaSDK-js-v2.*.zip` 檔案。
+   1. 驗證 `MediaSDK.min.js` 目錄中存在 `libs` 檔案:
 
-   1. Host the `MediaSDK.min.js` file.
+   1. 主控 `MediaSDK.min.js` 檔案。
 
       此核心 JavaScript 檔案必須放置您網站所有頁面都能存取的網站伺服器上。下一個步驟需要用到前往這些檔案的路徑。
 
    1. 在所有網站頁面上參考 `MediaSDK.min.js`
 
-      Include `MediaSDK` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. 例如:
+      在每一頁的 `<head>` 或 `<body>` 標籤中新增下列程式碼行，加入 JavaScript 適用的 `MediaSDK`。例如:
 
       ```
       <script type="text/javascript" 
@@ -42,7 +44,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `VideoHeartbeat.min.js` can also be used with compatible module loaders.
+      >從 2.1.0 版本開始，JavaScript SDK 符合 AMD 和 CommonJS 模組規格，`VideoHeartbeat.min.js` 也可以與相容的模組載入器搭配使用。
 
 1. 請建立對 `MediaHeartbeat` 類別的本機參照，以方便您存取 API。
 
@@ -52,7 +54,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
    ```
 
-1. Create a `MediaHeartbeatConfig` instance.
+1. 建立 `MediaHeartbeatConfig` 例項。
 
    本節可協助您瞭解 `MediaHeartbeat` 設定參數，以及如何在您的 `MediaHeartbeat` 例項上設定正確的設定值，以提高追蹤準確率。
 
@@ -70,7 +72,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP; 
    ```
 
-1. Implement the `MediaHeartbeatDelegate` protocol.
+1. 實施 `MediaHeartbeatDelegate` 通訊協定。
 
    ```js
    var mediaDelegate = new MediaHeartbeatDelegate(); 
@@ -86,9 +88,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    };
    ```
 
-1. Create the `MediaHeartbeat` instance.
+1. 建立 `MediaHeartbeat` 例項。
 
-   Use the `MediaHeartbeatConfig` and `MediaHeartbeatDelegate` to create the `MediaHeartbeat` instance.
+   使用 `MediaHeartbeatConfig` 和 `MediaHeartbeatDelegate` 來建立 `MediaHeartbeat` 例項。
 
    ```js
    this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
@@ -96,11 +98,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the media session. 此例項將用於下列所有追蹤事件。
+   >請確保您的 `MediaHeartbeat` 例項可供存取，並且不會在媒體工作階段結束前遭到取消配置。此例項將用於下列所有追蹤事件。
 
    >[!TIP]
    >
-   >`MediaHeartbeat` 需要執行個 `AppMeasurement` 體來傳送呼叫至Adobe Analytics。 以下是 `AppMeasurement` 例項的範例:
+   >`MediaHeartbeat` 需要 `AppMeasurement` 的例項，才能傳送呼叫至 Adobe Analytics。以下是 `AppMeasurement` 例項的範例:
 
    ```js
    var appMeasurement = new AppMeasurement(); 
@@ -115,4 +117,4 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 在 2.x 版中，所有公用方法皆已整合至 `ADB.va.MediaHeartbeat` 類別，讓開發人員更容易操作。此外，所有的設定現已整合至 `ADB.va.MediaHeartbeatConfig` 類別。
 
-For detailed information about migrating from 1.x to 2.x, see [VHL 1.x to 2.x Migration.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+如需有關從 1.x 移轉至 2.x 的詳細資訊，請參閱[從 VHL 1.x 移轉至 2.x](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)。
