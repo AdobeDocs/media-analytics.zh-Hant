@@ -1,8 +1,8 @@
 ---
 title: SDK 除錯
-description: 本主題說明Media SDK中可用的追蹤／記錄。
+description: 本主題說明 Media SDK 中可供使用的追蹤/記錄功能。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,7 +10,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # SDK 除錯{#sdk-debugging}
 
-您可以啟用和停用記錄。 Media SDK提供廣泛的媒體追蹤堆疊追蹤／記錄機制。 You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+您可以啟用和停用記錄功能。Media SDK 提供可在整個媒體追蹤堆疊中使用的追蹤/記錄擴充功能機制。您可以在「設定」物件上設定 `debugLogging` 標幟，藉此啟用或停用記錄功能。
 
 ## 除錯記錄的程式碼範例
 
@@ -66,14 +66,14 @@ ADBMobile.config.setDebugLogging(true)
 
 在應用程式開發期間，Bloodhound 可讓您在本機檢視伺服器呼叫，以及選擇將資料轉送至 Adobe 收集伺服器。如需 Bloodhound 的詳細資訊，請參閱下列指南:
 
-* [Mac 適用的 Bloodhound 3.x](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [Windows 適用的 Bloodhound 2.2](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&sig2=K0waTKxdMj_2kfNXdMI2yg)
+* [Mac 適用的 Bloodhound 3.x](https://marketing.adobe.com/resources/help/zh_TW/mobile/bloodhound/)
+* [Windows 適用的 Bloodhound 2.2](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
 
 >[!IMPORTANT]
 >
 >Adobe Bloodhound 已於 2017 年 4 月 30 日起停止服務。自 2017 年 5 月 1 日起，不再提供額外的增強功能、額外工程支援，或 Adobe Expert Care 支援。
 
-## 日誌消息
+## 記錄訊息
 
 記錄訊息會遵循此格式:
 
@@ -91,9 +91,9 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag**: 發出記錄訊息的子元件的名稱 (通常是類別名稱)
 * **message**: 實際追蹤訊息
 
-您可以使用Media SDK程式庫輸出的記錄檔來驗證實作。 良好的策略是搜尋整個記錄中是否有字串 `#track`. This will highlight all the `track*()` calls made by your application.
+您可以使用 Media SDK 程式庫的記錄輸出來驗證實施。良好的策略是搜尋整個記錄中是否有字串 `#track`.這將會反白顯示應用程式呼叫的所有 `track*()`。
 
-For instance, this is what the logs filtered for `#track` could look like:
+例如，這是篩選了 `#track` 之記錄的外觀:
 
 ```js
 [16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
