@@ -2,7 +2,7 @@
 title: 驗證事件要求
 description: null
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 每種事件類型的 JSON 要求內文，都會在後端以 JSON 結構加以驗證。當 API 呼叫驗證失敗時，系統會在 HTTP 回應內文中填入錯誤訊息。
 
-JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}` (e.g., `{uri}/api/v1/schemas/sessionEnd`). 這些JSON驗證結構描述是絕對權限，可用來針對每種事件類型判斷正確的請求主體參數。
+每種事件類型的 JSON 驗證結構均可公開存取，請前往: `{uri}/api/v1/schemas/{eventType}` (例如 `{uri}/api/v1/schemas/sessionEnd`)。JSON 驗證結構是判斷每種事件類型之正確要求內容參數的絕對可信來源。
 
 例如，`sessionStart` 驗證結構之要求的回應將與以下範例相似 (稍微調整格式以利閱讀):
 
@@ -125,5 +125,5 @@ Connection: keep-alive
 
 >[!NOTE]
 >
->作業階層驗證不可能，因為作業上下文不適用於收集層。
+>由於無法在收集層取得工作階段內容，因此無法進行工作階段層級驗證。
 
