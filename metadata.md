@@ -6,10 +6,10 @@ solution-image: assets/analytics-icon-24.png
 getting-started-title: 快速入門
 getting-started-url: https://helpx.adobe.com/tw/analytics/get-started.html
 tutorials-title: 教學課程
-tutorials-url: https://helpx.adobe.com/analytics/kt/index/analytics-videos.html
+tutorials-url: https://helpx.adobe.com/tw/analytics/kt/index/analytics-videos.html
 git-repo: https://github.com/AdobeDocs/media-analytics.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
 
 ---
