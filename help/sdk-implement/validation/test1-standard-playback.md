@@ -1,8 +1,8 @@
 ---
-title: 測試1標準播放
-description: 本主題說明在驗證中使用的標準播放測試。
+title: '測試 1: 標準播放'
+description: 本主題說明用於驗證的標準播放測試。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -10,39 +10,39 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 測試 1: 標準播放{#test-standard-playback}
 
-此測試案例可驗證一般播放和順序。 這是您認證要求的必要元素。
+本測試案例可用來驗證一般播放和序列是否正常。這是認證申請的必要元素。
 
-## 認證申請表
+## 認證申請表單
 
-**請從這裡下載認證申請表：==&gt;認**&#x200B;證 [申請表。](cert_req_form.docx)
+**在這裡下載認證申請表單: ==&gt;**  [認證申請表單](cert_req_form.docx)。
 
-## 認證測試1概觀
+## 認證測試 1 概述
 
-Media Analytics實作包含兩種類型的追蹤呼叫：
-* 直接對您的Adobe Analytics(AppMeasurement)伺服器進行的呼叫——這些呼叫會發生在「媒體開始」和「廣告開始」事件上。
-* 對媒體分析（心率）伺服器的呼叫——這些呼叫包括帶內和帶外呼叫：
-   * 帶內- SDK會在內容播放期間以10秒間隔傳送計時播放呼叫或「ping」，並在廣告期間以1秒間隔傳送。
-   * 帶外——這些呼叫可在任何時候發生，包括暫停、緩衝、錯誤、內容完成、廣告完成等。
+Media Analytics 實施包含兩種類型的追蹤呼叫:
+* 直接對 Adobe Analytics (AppMeasurement) 伺服器進行的呼叫 - 這些呼叫會在「媒體開始」和「廣告開始」事件中發生。
+* 對 Media Analytics (心率) 伺服器進行呼叫 - 這些包含頻內和頻外呼叫。
+   * 頻內 - SDK 會在內容播放期間以 10 秒的間隔並在廣告期間以 1 秒的間隔傳送播放時間呼叫或「Ping」。
+   * 頻外 - 這些呼叫會在任何時間點發生，且會包含暫停、緩衝處理、錯誤、內容完成和廣告完成等。
 
 >[!NOTE]
->媒體追蹤在所有平台上的運作都相同。
+>媒體追蹤的行為在所有平台上都一樣。
 
-## 測試程式
+## 測試程序
 
-完成並記錄下列動作（依順序）:
+完成並記錄下列動作 (依序):
 
 1. **載入頁面或應用程式**
 
    **追蹤伺服器** (適用於所有網站與應用程式):
 
-   * **Adobe Analytics(AppMeasurement)伺服器** - Experience cloud訪客ID服務需要解析為RDC追蹤伺服器的RDC追蹤伺服器或CNAME。 The Adobe Analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
+   * **Adobe Analytics (AppMeasurement) 伺服器 -** Experience Cloud 訪客 ID 服務須有 RDC 追蹤伺服器，或是解析為 RDC 追蹤伺服器的 CNAME。Adobe Analytics 追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
-   * **媒體分析(Heartbeats)伺服器** -此伺服器的格式一律為"`[namespace].hb.omtrdc.net`", `[namespace]` 指定您的公司名稱。 此名稱由Adobe提供。
-   您必須驗證所有追蹤呼叫都通用的特定關鍵變數：
+   * **Media Analytics (心率) 伺服器 -** 這部伺服器的格式一律為「`[namespace].hb.omtrdc.net`」，其中 `[namespace]` 會指定您的公司名稱。此名稱由 Adobe 提供。
+   您需要驗證所有追蹤呼叫的某些重要通用變數:
 
-   **`mid`Adobe訪客ID(**):變 `mid` 數可用來擷取AMCV cookie中設定的值。 The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. 它可在Adobe Analytics(AppMeasurement)和Media Analytics（心率）呼叫中找到。
+   **Adobe 訪客 ID (`mid`):** `mid` 變數可以用來擷取 AMCV Cookie 中設定的值。`mid` 變數是網站與行動應用程式的主要識別值，也代表 Experience Cloud 訪客 ID 服務設定正確。您可以在 Adobe Analytics (AppMeasurement) 與 Media Analytics (心率) 呼叫中找到它。
 
-   * **Adobe Analytics Start呼叫**
+   * **Adobe Analytics 開始呼叫**
 
       | 參數 | 值 (範例) |
       |---|---|
@@ -62,7 +62,7 @@ Media Analytics實作包含兩種類型的追蹤呼叫：
       | `pev2` | ADBINTERNAL:Lifecycle |
       | `mid` | 30250035503789876473484580554595324209 |
 
-   * **Media Analytics開始呼叫**
+   * **Media Analytics 開始呼叫**
 
       | 參數 | 值 (範例) |
       |---|---|
@@ -70,9 +70,9 @@ Media Analytics實作包含兩種類型的追蹤呼叫：
 
       >[!NOTE]
       >
-      >在「媒體分析開始」呼`s:event:type=start`叫中() `mid` 可能不存在值。 這沒有關係。直到「媒體分析播放」呼叫( `s:event:type=play`)才會顯示。
+      >`mid` 值不一定會存在 Media Analytics 開始呼叫 (`s:event:type=start`) 中。這沒有關係。在 Media Analytics 播放呼叫 (`s:event:type=play`) 之前，它們不一定會出現。
 
-   * **媒體分析播放呼叫**
+   * **Media Analytics 播放呼叫**
 
       | 參數 | 值 (範例) |
       |---|---|
@@ -82,67 +82,67 @@ Media Analytics實作包含兩種類型的追蹤呼叫：
 
 1. **啟動媒體播放器**
 
-   當媒體播放器啟動時，Media SDK會依下列順序將金鑰呼叫傳送至兩部伺服器：
+   當媒體播放器啟動時，Media SDK 會依照下列順序將重要的呼叫傳送給兩個伺服器:
 
-   1. Adobe Analytics伺服器——開始呼叫
-   1. Media Analytics伺服器——開始呼叫
-   1. Media Analytics伺服器- 「已要求Adobe Analytics開始呼叫」
-   上述前兩個呼叫包含其他中繼資料和變數。 如需呼叫參數和中繼資料，請參閱「測 [試呼叫詳細資訊」。](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   1. Adobe Analytics 伺服器 - 開始呼叫
+   1. Media Analytics 伺服器 - 開始呼叫
+   1. Media Analytics 伺服器 -「已要求 Adobe Analytics 開始呼叫」
+   以上前兩個呼叫含有額外的中繼資料和變數。如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)。
 
-   上述第三個呼叫會告訴Media Analytics伺服器，Media SDK要求將Adobe Analytics開始呼叫(`pev2=ms_s`)傳送至Adobe Analytics伺服器。
+   以上第三個呼叫會通知 Media Analytics 伺服器，Media SDK 已要求將 Adobe Analytics 開始呼叫 (`pev2=ms_s`) 傳送到 Adobe Analytics 伺服器。
 
 1. **檢視廣告插播 (可以的話)**
 
    * **廣告開始**
-   當廣告開始時，會依下列順序傳送下列關鍵呼叫：
+   當廣告開始時，重要呼叫的傳送順序如下:
 
-   1. Adobe Analytics伺服器——廣告開始呼叫
-   1. Media Analytics伺服器——廣告開始呼叫
-   1. Media Analytics伺服器- 「已要求Adobe Analytics廣告開始呼叫」
-   前兩個呼叫包含其他中繼資料和變數。 如需呼叫參數和中繼資料，請參閱「測 [試呼叫詳細資訊」。](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)
+   1. Adobe Analytics 伺服器 - 廣告開始呼叫
+   1. Media Analytics 伺服器 - 廣告開始呼叫
+   1. Media Analytics 伺服器 -「已要求 Adobe Analytics 廣告開始呼叫」
+   前兩個呼叫含有額外的中繼資料和變數。如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)。
 
-   第三個呼叫會告訴Media Analytics伺服器，Media SDK要求將Adobe Analytics廣告開始呼叫(`pev2=msa_s`)傳送至Adobe Analytics伺服器。
+   第三個呼叫會通知 Media Analytics 伺服器，Media SDK 已要求將 Adobe Analytics 廣告開始呼叫 (`pev2=msa_s`) 傳送到 Adobe Analytics 伺服器。
 
    * **廣告播放**
 
-      在廣告播放期間，Media Analytics SDK會每秒傳送「ad」類型的播放事件至Media Analytics伺服器。
+      在廣告播放期間，Media Analytics SDK 每秒都會將「廣告」類型的的播放事件傳送到 Media Analytics 伺服器。
 
    * **廣告完成**
 
-      在廣告的100%點，應傳送媒體分析完整呼叫。
+      在廣告的 100% 點上，應傳送 Media Analytics 完成呼叫。
 
 
 
 1. **暫停廣告播放 30 秒 (可以的話)。**  **廣告暫停**
 
-   在「廣告暫停」期間，媒體分析心率或「ping」呼叫會由SDK每秒傳送至媒體分析伺服器。
+   在廣告暫停期間，SDK 會每秒將 Media Analytics 心率或「Ping」呼叫傳送到 Media Analytics 伺服器。
 
    >[!NOTE]
    >
-   >暫停期間，播放頭值應維持不變。
+   >播放點值在暫停期間應保持不變。
 
-   如需呼叫參數和中繼資料，請參閱「測 [試呼叫詳細資訊」。](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
+   如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)。
 
-1. **播放主要內容10分鐘不中斷。**  **內容播放**
+1. **播放主要內容 10 分鐘並避免中斷。**  **內容播放**
 
-   在主要內容播放期間，Media SDK會每10秒傳送心率（播放呼叫）至Media Analytics伺服器。
+   在主要內容播放期間，Media SDK 會每隔 10 秒將心率 (播放呼叫) 傳送到 Media Analytics 伺服器。
 
    附註:
 
-   * 每次播放呼叫時，播放頭位置應增加10。
+   * 每個「播放」呼叫的播放點位置應該要以 10 為單位遞增。
    * `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
 
-      如需呼叫參數和中繼資料，請參閱「測 [試呼叫詳細資訊」。](/help/sdk-implement/validation/test-call-details.md#play-main-content)
+      如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#play-main-content)。
 
-1. **在播放期間暫停至少 30 秒。** 在暫停媒體播放器時，SDK會每10秒傳送一次暫停事件呼叫至媒體分析伺服器。 暫停結束後，視訊將繼續播放。
+1. **在播放期間暫停至少 30 秒。** 暫停媒體播放器時，SDK 會每隔 10 秒將暫停事件呼叫傳送到 Media Analytics 伺服器。暫停結束後，視訊將繼續播放。
 
-   如需呼叫參數和中繼資料，請參閱「測 [試呼叫詳細資訊」。](/help/sdk-implement/validation/test-call-details.md#pause-main-content)
+   如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#pause-main-content)。
 
-1. **尋找／拖曳媒體。** 在拖曳媒體播放頭時，不會傳送任何特殊追蹤呼叫，但是，當媒體播放在拖曳後繼續時，播放頭值應反映主內容中的新位置。
+1. **尋找/拖曳媒體。**&#x200B;拖曳媒體播放點時，不會傳送任何特殊的追蹤呼叫，不過當拖曳結束後繼續播放媒體時，播放點值應該要反映主要內容中的新位置。
 
-1. **重播媒體（僅限VOD）。** 當重播媒體時，應傳送新的媒體開始呼叫集（如同新開始）。
+1. **重播媒體 (僅限 VOD)。**&#x200B;重播媒體時，應傳送一組新的媒體開始呼叫 (就像重新開始一樣)。
 
-1. **在播放清單中檢視下一個媒體。** 在播放清單中下一個媒體的「媒體開始」上，應傳送新的「媒體開始」呼叫集。
+1. **檢視播放清單中的下一個媒體。**&#x200B;開始播放播放清單中的下一個媒體時，應傳送一組新的媒體開始呼叫。
 
-1. **切換媒體或串流。** 切換即時串流時，不應傳送媒體分析對第一個串流的完整呼叫。 「媒體開始」呼叫和「播放」呼叫應以新節目和串流名稱開頭，並使用新節目的正確播放磁頭和持續時間值。
+1. **切換媒體或資料流。**&#x200B;切換即時資料流時，不應傳送第一個資料流的 Media Analytics 心率完成呼叫。媒體開始呼叫和播放呼叫的開頭，應該要是新節目和資料流名稱，以及新節目的正確播放點和持續時間值。
 
