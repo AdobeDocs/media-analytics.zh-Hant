@@ -1,8 +1,8 @@
 ---
 title: Chromecast 中繼資料索引鍵
-description: 說明如何設定標準視訊和廣告中繼資料，以便在Chromecast上隨追蹤呼叫傳送。
+description: 說明如何在 Chromecast 上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 標準視訊和廣告中繼資料可分別在媒體和廣告資訊物件上設定。在呼叫追蹤 API 之前，使用視訊/廣告中繼資料的常數索引鍵，設定包含資訊物件之標準中繼資料的字典。請參閱下列表格以獲取標準中繼資料常數的完整清單，然後是範例。
 
-## 中繼資料常數 {#video-metadata-constants}
+## 中繼資料常數{#video-metadata-constants}
 
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 網站 ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | 創作 URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Chromecast的範例實作 {#sample-implementations-for-chromecast}
+## Chromecast 實施範例 {#sample-implementations-for-chromecast}
 
 ### 影片
 
