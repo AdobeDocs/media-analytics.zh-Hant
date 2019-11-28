@@ -1,36 +1,36 @@
 ---
-title: 媒體串流歸因
+title: 媒體資料流歸因
 description: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# 媒體串流歸因
+# 媒體資料流歸因
 
-此功能可讓您將應用程式動作連結至媒體追蹤資料，而不需要額外的處理規則和自訂變數。
+此功能可讓您將應用程式動作連結到媒體追蹤資料，而不需要其他處理規則和自訂變數。
 
 ## 媒體追蹤以外的媒體維度
 
-透過「媒體串流歸因」，客戶現在可以將任何媒體維度新增至所有其他分析呼叫，例如頁面檢視和自訂連結。 在實作期間，您必須將媒體內容資料參數新增至Analytics追蹤呼叫。 媒體上使用的上下文資料參數完整清單可從以下網址取得：音 [訊和視訊參數。](/help/metrics-and-metadata/audio-video-parameters.md)
+透過媒體資料流歸因，客戶現在可以將任何媒體維度新增到所有其他分析呼叫，例如頁面檢視和自訂連結。在實施期間，您必須將媒體內容資料參數新增到 Analytics 追蹤呼叫。您可以在這裡取得媒體專用內容資料參數的完整清單: [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)。
 
-您也需要從管理控制台重新啟用媒體追蹤設定，以便針對每個要啟用此功能的報表進行媒體追蹤設定。
+針對您要啟用此功能的每個報表，您也必須從 Admin Console 重新啟用媒體追蹤設定。
 
 >[!NOTE]
->媒體量度不 _能用於_ 「媒體追蹤」以外的位置，因為大部分量度是由媒體分析計算
->基於心率事件。 此外，媒體量度不要因不同實作而誇大也很重要。
+>媒體量度&#x200B;_無法_用於媒體追蹤以外，因為其中大多數是由 Media Analytics 
+>根據心率事件計算。此外，請務必確保媒體量度不會因不同的實施而膨脹。
 
 ## 做法
 
-以下JavaScript範例將產生名稱設為「英雄橫幅」的自訂連結追蹤呼叫。
+下列 JavaScript 範例將產生「自訂連結」追蹤呼叫，且名稱會設為「Hero Banner」。
 
 ```javascript
 s.contextData["a.media.show"]="Mi Amore"
 s.tl(this,'o','Hero Banner');
 ```
 
-在Analytics報表中，您可以使 `Show` 用eVar來劃分資料，並且可以計算追蹤連結例項。 報表看起來類似：
+在 Analytics 報表中，您可以使用 `Show` eVar 來劃分資料，且將能計算追蹤連結例項的數目。報表看起來類似以下畫面:
 
 ![](/assets/myShow-rpt-1.png)
 
