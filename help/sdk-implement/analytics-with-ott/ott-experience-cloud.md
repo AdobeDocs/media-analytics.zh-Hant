@@ -1,8 +1,8 @@
 ---
 title: OTT 與 Experience Cloud
-description: 有關整合OTT應用程式與Experience cloud的詳細資訊。
+description: 如何整合 OTT 應用程式與 Experience Cloud 的相關詳細資訊。
 uuid: 89264403-0fc8-4c76-b001-22e20e57bef2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -13,5 +13,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 如需整合 OTT 應用程式和 Experience Cloud 的詳細資訊，請參閱 Chromecast 和 Roku 的「設定」主題:
 
 * [設定 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md)
-* [設定Roku](/help/sdk-implement/setup/set-up-roku.md)
+* [設定 Roku](/help/sdk-implement/setup/set-up-roku.md)
 
