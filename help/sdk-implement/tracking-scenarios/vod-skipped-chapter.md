@@ -1,8 +1,8 @@
 ---
 title: 具有已略過章節的 VOD 播放
-description: 如何追蹤使用者使用Media SDK跳過章節的VOD內容範例。
+description: 有關如何使用 Media SDK 追蹤使用者已略過章節之 VOD 內容的範例。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
@@ -18,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫   | 附註 |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於 [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
+| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於  [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)案例。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
 | 已播放章節的第一個時間格。 | `trackPlay` | 心率章節播放 | 當章節內容在主要內容之前播放時，我們想要在章節開始時啟動 Heartbeats。 |
 | 章節播放。 |  | 章節心率 |  |
@@ -26,12 +26,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 搜尋已完成。 | `trackEvent:trackSeekComplete` |  | 心率會在此之後繼續。 |
 | 應用程式發現使用者已搜尋超出正常章節界限。 | `trackEvent:trackChapterSkip` |  |  |
 | 內容播放。 |  | 內容心率 |  |
-| 內容已完成播放。 | `trackComplete` | 心率內容完成 | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未看到媒體完成，也必須呼叫此API。 |
+| 內容已完成播放。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於 [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)案例。 |
+| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未持續觀看到媒體完成，仍必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 
-在章節播放期間使用的參數與 [VOD播放中的參數相同，只不過沒有章節完整的網路呼叫](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md) 。
+除了沒有章節完成網路呼叫以外，章節播放期間使用的參數完全等同於 [具有一個章節的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)案例中的參數。
 
 ## 程式碼範例 {#sample-code}
 
