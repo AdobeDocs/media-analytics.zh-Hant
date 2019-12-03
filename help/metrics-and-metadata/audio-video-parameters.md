@@ -250,7 +250,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>NETWORK </li> <li> **API 索引鍵:**<br/>media.network </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值:<br/>**「Fox」、「Bravo」、「ESPN」等 </li> <li> **說明:**<br/> 網路/頻道名稱。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.network) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.network) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>網路 </li> <li> **內容資料:**<br/> (a.media.network) </li> <li> **資料饋送:**<br/>videonetwork </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.network) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>NETWORK </li> <li> **API 索引鍵:**<br/>media.network </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值:**<br/>「Fox」、「Bravo」、「ESPN」等 </li> <li> **說明:**<br/> 網路/頻道名稱。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.network) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.network) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>網路 </li> <li> **內容資料:**<br/> (a.media.network) </li> <li> **資料饋送:**<br/>videonetwork </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.network) </li> </ul> |
 
 ### 節目類型
 
