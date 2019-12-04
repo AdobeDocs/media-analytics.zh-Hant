@@ -2,8 +2,8 @@
 title: 在 Adobe Analytics 測量音訊和視訊
 description: 'Adobe Analytics for Media (亦稱為 Media Analytics) 可提供客戶強大的內容、音訊和廣告媒體測量。 '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Analytics for Media 讓用戶端可以追蹤客戶在其網站上的完整
 
 媒體解決方案不只測量與 QoS 相關的重要傳送量度，如中斷、緩衝逗留時間和平均位元速率。亦可結合網站或應用程式資料，將客戶和客戶興趣流程視覺化，更能提出建議，並透過 Adobe Experience Cloud 客製化客戶體驗。
 
-## 福利{#benefits}
+## 福利 {#benefits}
 
 Adobe 的媒體測量解決方案提供的部分優勢包括:
 
@@ -40,7 +40,7 @@ Adobe 的媒體測量解決方案提供的部分優勢包括:
 * **精準的測量 -** 跨越用來使用媒體的多項裝置進行測量，包括 OTT、智慧型手機、平板電腦、桌面等，以監控使用者的參與類型和習慣。
 * **區段 -** 套用分類至您的播放器、裝置、類型、章節，並顯示每一個類別如何影響整體的檢視/收聽次數，以及客戶對內容、音訊、廣告和複合上述項目的參與度。
 
-## 心率優點對比里程碑優點{#heartbeat-versus-milestone-benefits}
+## 心率優點對比里程碑優點 {#heartbeat-versus-milestone-benefits}
 
 Adobe Analytics for Media 可透過兩種方式來測量: 舊版的「里程碑」方法 (僅限視訊) 和目前的「心率」方法 (同時包括 Media SDK 和媒體收集 API 中提供的音訊與視訊)。我們建議使用「心率」方法進行測量，也鼓勵所有用戶端改用此版本 (如果還沒改用的話)，以充分利用下述的各項優點。
 
@@ -66,7 +66,7 @@ Adobe Analytics for Media 可透過兩種方式來測量: 舊版的「里程碑�
 | **合作夥伴共用** | 不適用 | 同盟分析與經認證的量度 |
 | **進階追蹤** | 不適用 | 錯誤修復追蹤和同時觀看者 |
 
-## 支援的裝置{#devices-supported}
+## 支援的裝置 {#devices-supported}
 
 Adobe Analytics for Media 隨業界發展與時俱進，提供強大的資料收集工具，以確保在所有重要的裝置，對每一個媒體資料流進行收集和報表。我們開發的 Media SDK 可適用於所有最多人使用的裝置，包括:
 
@@ -107,3 +107,4 @@ Adobe Analytics for Media 隨業界發展與時俱進，提供強大的資料收
 >[!NOTE]
 >
 >TLS 是目前在須透過網路安全交換資料的網頁瀏覽器和其他應用程式中，最廣為部署的安全性通訊協定。
+
