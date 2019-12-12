@@ -49,7 +49,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;playhead position&gt; 例如 50、60、70 | 這應該反映播放點目前的位置。 |
 
-## 心率內容完成{#heartbeat-content-complete}
+## 心率內容完成 {#heartbeat-content-complete}
 
 在此案例中，不會有完成呼叫，因為即時資料流從不會結束。
 
@@ -180,4 +180,9 @@ this._mediaHeartbeat.trackPlay();
 // 3. Call trackSessionEnd() when user ends the playback session.  
 //    Since user does not watch live media to completion, there is  
 //    no need to call trackComplete(). 
-this._mediaHeartbeat.trackSessionEn
+this._mediaHeartbeat.trackSessionEnd(); 
+
+........ 
+........ 
+```
+
