@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 Media Analytics (心率) 是 Adobe 的標準化媒體追蹤解決方案。它已經取代 Adobe 的舊版里程碑模型。
 
-Adobe Primetime 是 Adobe Experience Cloud 解決方案，可幫助內容程式設計師和經銷商在每個連線的裝置上透過媒體獲利。
+ Adobe Primetime 是 Adobe Experience Cloud 解決方案，可幫助內容程式設計師和經銷商在每個連線的裝置上透過媒體獲利。
 
 Primetime 藉由提供模組化平台以進行媒體發佈、廣告刊登、個人化和分析，消除了各裝置之間的觸及範圍、創造營收和啟動全域對象的複雜性。此外，Primetime 也提供了以下解決方案和值:
 
