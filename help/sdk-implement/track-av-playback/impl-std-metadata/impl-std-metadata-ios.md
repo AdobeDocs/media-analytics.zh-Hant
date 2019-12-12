@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 中繼資料常數
 
-| 常數名稱 | 說明   |
+| 常數名稱 | 說明 |
 |---|---|
 | `ADBMediaObjectKeyStandardMediaMetadata` | 用於在 `MediaInfo ADBMediaObject` 上附加標準中繼資料的常數 |
 
@@ -21,7 +21,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 使用 `ADBStandardMetadataKeys`，建立標準中繼資料索引鍵值配對的字典。
    [iOS 中繼資料索引鍵](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-1. 對中繼資料使用標準中繼資料常數，在 `MediaInfo``ADBMediaObject`   例項上設定標準中繼資料字典。
+1. 對中繼資料使用標準中繼資料常數，在 `MediaInfo``ADBMediaObject` 例項上設定標準中繼資料字典。
 
 1. 叫用 `MediaInfo` API 時，提供此 `trackSessionStart` 物件。
 
