@@ -16,13 +16,13 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!NOTE]
 >
->從 2018 年 9 月 13 日開始，我們變更了某些維度、量度與報表的標籤，以便交叉追蹤 Video Analytics 與 Audio Analytics 的內容。變更的標籤包括: *視訊起始*&#x200B;變更為&#x200B;*媒體起始*、*視訊長度*&#x200B;變更為&#x200B;*內容長度*、*視訊名稱*&#x200B;變更為&#x200B;*內容名稱*。Reports and Analytics 中的視訊報表已全數更新，捨棄「視訊」一名而改用「媒體」。標籤變更並未改變資料收集或歷史資料。如果您要在報表建立工具或其他任何受到前述變更影響的外部自動化資料提取中使用這些標籤，請多加留意。
+>從 2018 年 9 月 13 日開始，我們變更了某些維度、量度與報表的標籤，以便交叉追蹤 Video Analytics 與 Audio Analytics 的內容。變更的標籤包括: *視訊起始*&#x200B;變更為&#x200B;*媒體起始*、*視訊長度*&#x200B;變更為&#x200B;*內容長度*、*視訊名稱*&#x200B;變更為&#x200B;*內容名稱*。Reports and Analytics 中的視訊報表已全數更新，捨棄「視訊」一名而改用「媒體」。標籤變更並未改變資料收集或歷史資料。如果您要在 Report Builder 或其他任何受到前述變更影響的外部自動化資料提取中使用這些標籤，請多加留意。
 
 本主題介紹音訊與視訊內容資料清單，包含 Adobe 透過解決方案變數收集的內容資料值。
 
 表格資料說明:
 
-* **實作:**&#x200B;實作數值和要求的資訊
+* **實作:**&#x200B;實作數值和需求的資訊
    * *索引鍵* - 在您的應用程式中手動設定，或由 Adobe Media SDK 自動設定的變數。
    * *必要* - 指出基本音訊與視訊追蹤是否需要參數。
    * *類型* - 指明預計設定的變數類型 (字串或數字)。
@@ -164,7 +164,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>  [名稱](./audio-video-parameters.md#config-media-object) </li> <li> **API 索引鍵:**<br/>media.name </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** 1.5.1 </li> <li> **範例值:** <br/>"The Big Bang Theory" </li> <li> **說明:**<br/> 這是內容的「易記」(人類看得懂的) 名稱，等於 `s:asset:name.` 的最後一個值<br/>在報表中，以「視訊名稱」為其分類，以「內容名稱 (變數)」為 eVAR。<br/> **發行日期: 2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>friendlyName) </li> <li> **心率:**<br/> (s:asset:name) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>分類 </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/> 視訊名稱 </li> <li> **內容資料:**<br/> (a.media.friendlyName) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.friendlyName) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>  [name](./audio-video-parameters.md#config-media-object) </li> <li> **API 索引鍵:**<br/>media.name </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** 1.5.1 </li> <li> **範例值:** <br/>"The Big Bang Theory" </li> <li> **說明:**<br/> 這是內容的「易記」(人類看得懂的) 名稱，等於 `s:asset:name.` 的最後一個值<br/>在報表中，以「視訊名稱」為其分類，以「內容名稱 (變數)」為 eVAR。<br/> **發行日期: 2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.<br/>friendlyName) </li> <li> **心率:**<br/> (s:asset:name) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>分類 </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/> 視訊名稱 </li> <li> **內容資料:**<br/> (a.media.friendlyName) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.friendlyName) </li> </ul> |
 
 ### 視訊路徑
 
@@ -186,7 +186,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 ## 標準音訊和視訊中繼資料 {#standard-audio-and-video-metadata}
 
-### Show
+### 節目
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
@@ -250,7 +250,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>NETWORK </li> <li> **API 索引鍵:**<br/>media.network </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值:**<br/>「Fox」、「Bravo」、「ESPN」等 </li> <li> **說明:**<br/> 網路/頻道名稱。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.network) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.network) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>網路 </li> <li> **內容資料:**<br/> (a.media.network) </li> <li> **資料饋送:**<br/>videonetwork </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.network) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>NETWORK </li> <li> **API 索引鍵:**<br/>media.network </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值:<br/>**「Fox」、「Bravo」、「ESPN」等 </li> <li> **說明:**<br/> 網路/頻道名稱。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.network) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.network) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>網路 </li> <li> **內容資料:**<br/> (a.media.network) </li> <li> **資料饋送:**<br/>videonetwork </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.network) </li> </ul> |
 
 ### 節目類型
 
@@ -342,49 +342,49 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/> 105 </li> <li> **說明:**<br/> 主要內容中屬於「播放」類型之所有事件持續時間的總和 (以秒為單位)。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。  <br/> **發行日期: 2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>內容逗留時間 </li> <li> **內容資料:**<br/> (a.media.timePlayed) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.timePlayed) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/> 105 </li> <li> **說明:**<br/> 主要內容中屬於「播放」類型之所有事件持續時間的總和 (以秒為單位)。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。<br/> **發行日期: 2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>內容逗留時間 </li> <li> **內容資料:**<br/> (a.media.timePlayed) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.timePlayed) </li> </ul> |
 
 ### 媒體逗留時間
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/> 120 </li> <li> **說明:**<br/> 主要內容和廣告內容中，屬於「播放」類型之所有事件持續時間的總和 (以秒為單位)。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。  <br/> **發行日期: 2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/> 媒體逗留時間 </li> <li> **內容資料:**<br/> (a.media.totalTimePlayed) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.totalTimePlayed) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/> 120 </li> <li> **說明:**<br/> 主要內容和廣告內容中，屬於「播放」類型之所有事件持續時間的總和 (以秒為單位)。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。<br/> **發行日期: 2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/> 媒體逗留時間 </li> <li> **內容資料:**<br/> (a.media.totalTimePlayed) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.totalTimePlayed) </li> </ul> |
 
 ### 不重複播放時間
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/> 94 </li> <li> **說明:**<br/> 在工作階段期間，播放不重複之內容區段的值 (以秒為單位)。不包括觀看者向前尋找，並多次觀看同一個內容區段時的播放時間。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。  <br/> **發行日期: 2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>自訂 </li> <li> **內容資料:**<br/> (a.media.uniqueTimePlayed) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.uniqueTimePlayed) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/> 94 </li> <li> **說明:**<br/> 在工作階段期間，播放不重複之內容區段的值 (以秒為單位)。不包括觀看者向前尋找，並多次觀看同一個內容區段時的播放時間。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。<br/> **發行日期: 2018 年 9 月 13 日** </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>自訂 </li> <li> **內容資料:**<br/> (a.media.uniqueTimePlayed) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.uniqueTimePlayed) </li> </ul> |
 
 ### 10% 進度標記
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據長度，播放點超過內容的 10% 標記。此標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。  <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>10% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress10) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress10) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據長度，播放點超過內容的 10% 標記。此標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。    <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>10% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress10) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress10) </li> </ul> |
 
 ### 25% 進度標記
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 25% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。  <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>25% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress25) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress25) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 25% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。    <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>25% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress25) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress25) </li> </ul> |
 
 ### 50% 進度標記
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 50% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。  <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>50% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress50) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress50) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 50% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。    <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>50% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress50) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress50) </li> </ul> |
 
 ### 75% 進度標記
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 密鑰:**<br/> **不適用** </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 75% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。  <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>75% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress75) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress75) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 密鑰:**<br/> **不適用** </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 75% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。    <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>75% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress75) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress75) </li> </ul> |
 
 ### 95% 進度標記
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 95% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。  <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>95% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress95) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress95) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>自動設定 </li> <li> **API 索引鍵:**<br/>不適用 </li> <li> **類型:**<br/>字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/>TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 95% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。    <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>不適用 </li> <li> **心率:**<br/>不適用 </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>事件 </li> <li> **報表名稱:**<br/>95% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress95) </li> <li> **資料饋送:**<br/>不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress95) </li> </ul> |
 
 ### 平均每分鐘觀眾
 
