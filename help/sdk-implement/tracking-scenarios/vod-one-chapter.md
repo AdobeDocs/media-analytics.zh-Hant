@@ -16,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 除非另有指定，否則此案例中的網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。網路呼叫會同時發生，但裝載不同。
 
-| 觸發   | 心率方法   | 網路呼叫   | 附註   |
+| 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
 | 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 我們尚未告知 Measurement Library 有前段廣告，因此這些網路呼叫仍完全等同於單一 VoD。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
@@ -42,7 +42,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:chapter_*` |  | 章節資料特定的資料流資訊。 |
 | `s:meta:*` |  | 具有特定上下文資料的章節。 |
 
-## 程式碼範例、中間的章節 {#sample-code-chapter-in-the-middle}
+## 程式碼範例、中間的章節{#sample-code-chapter-in-the-middle}
 
 在此案例中，一部分的 VOD 內容為章節。
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## 程式碼範例、開頭的章節 {#sample-code-chapter-at-the-beginning}
+## 程式碼範例、開頭的章節{#sample-code-chapter-at-the-beginning}
 
 在此案例中，VOD 內容會播放，而在播放的開頭具有一個章節。
 
