@@ -18,9 +18,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 此案例等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)，除了應用程式具有可讓使用者略過廣告 (也許是在點擊略過按鈕時) 的佈建。
 
-| 觸發   | 心率方法  | 網路呼叫   | 附註   |
+| 觸發 | 心率方法 | 網路呼叫 | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart()` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 使用者點按[!UICONTROL 播放] | `trackSessionStart()` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於   [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 |  |
 | 已播放廣告的第一個時間格。 | `trackPlay()` | 心率廣告播放 | 當廣告內容在主要內容之前播放時，Heartbeats 將在廣告開始播放時啟動。 |
 | 廣告播放。 |  | 廣告心率 |  |
@@ -33,7 +33,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 除了沒有廣告完成和廣告插播完成呼叫之外，這些參數完全等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)案例中的參數。
 
-## 程式碼範例{#sample-code}
+## 程式碼範例 {#sample-code}
 
 ![](assets/ad-skip.png)
 
