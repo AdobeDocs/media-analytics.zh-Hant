@@ -19,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    **`MediaObject`參考資料:**
 
-   | 變數名稱 | 說明 | 必要 |
+   | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
    | `name` | 視訊名稱 | 是 |
    | `mediaid` | 視訊唯一識別碼 | 是 |
@@ -29,7 +29,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    **`StreamType`常數:**
 
-   | 常數名稱 | 說明   |
+   | 常數名稱 | 說明 |
    |---|---|
    | `MEDIA_STREAM_TYPE_VOD` | 隨選視訊的資料流類型。 |
    | `MEDIA_STREAM_TYPE_LIVE` | LIVE 內容的資料流類型。 |
