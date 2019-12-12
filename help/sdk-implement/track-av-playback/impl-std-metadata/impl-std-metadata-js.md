@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 中繼資料常數
 
-| 常數名稱 | 說明   |
+| 常數名稱 | 說明 |
 | --- | --- |
 | `StandardMediaMetadata` | 用於在 `MediaObject` 上附加標準中繼資料的常數 |
 
