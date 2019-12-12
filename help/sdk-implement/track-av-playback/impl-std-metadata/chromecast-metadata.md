@@ -12,18 +12,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 標準視訊和廣告中繼資料可分別在媒體和廣告資訊物件上設定。在呼叫追蹤 API 之前，使用視訊/廣告中繼資料的常數索引鍵，設定包含資訊物件之標準中繼資料的字典。請參閱下列表格以獲取標準中繼資料常數的完整清單，然後是範例。
 
-## 中繼資料常數{#video-metadata-constants}
+## 中繼資料常數 {#video-metadata-constants}
 
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
-| Show | `a.media.show` | `ADBMobile.media.VideoMetadataKeys.SHOW` |
+| 節目 | `a.media.show` | `ADBMobile.media.VideoMetadataKeys.SHOW` |
 | 季數 | `a.media.season` | `ADBMobile.media.VideoMetadataKeys.SEASON` |
 | 集數 | `a.media.episode` | `ADBMobile.media.VideoMetadataKeys.EPISODE` |
 | 資產 | `a.media.asset` | `ADBMobile.media.VideoMetadataKeys.TMS_ID` |
 | 類型 | `a.media.genre` | `ADBMobile.media.VideoMetadataKeys.GENRE` |
 | 首播日期 | `a.media.airDate` | `ADBMobile.media.VideoMetadataKeys.FIRST_AIR_DATE` |
 | 數位化首播日期 | `a.media.digitalDate` | `ADBMobile.media.VideoMetadataKeys.FIRST_DIGITAL_DATE` |
-| 排名 | `a.media.rating` | `ADBMobile.media.VideoMetadataKeys.RATING` |
+| 評等 | `a.media.rating` | `ADBMobile.media.VideoMetadataKeys.RATING` |
 | 創作者 | `a.media.originator` | `ADBMobile.media.VideoMetadataKeys.ORIGINATOR` |
 | 網路 | `a.media.network` | `ADBMobile.media.VideoMetadataKeys.NETWORK` |
 | 節目類型 | `a.media.type` | `ADBMobile.media.VideoMetadataKeys.SHOW_TYPE` |
@@ -31,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | MVPD | `a.media.pass.mvpd` | `ADBMobile.media.VideoMetadataKeys.MVPD` |
 | 已驗證 | `a.media.pass.auth` | `ADBMobile.media.VideoMetadataKeys.AUTHORIZED` |
 | 時段 | `a.media.dayPart` | `ADBMobile.media.VideoMetadataKeys.DAY_PART` |
-| 資訊源 | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
+| 動態消息 | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | 資料流格式 | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
 ## 廣告中繼資料常數 {#ad-metadata-constants}
