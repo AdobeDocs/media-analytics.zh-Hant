@@ -14,7 +14,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 表格資料說明:
 
-* **實作:**&#x200B;實作數值和要求的資訊
+* **實作:**&#x200B;實作數值和需求的資訊
    * *索引鍵* - 在您的應用程式中手動設定，或由 Adobe Media SDK 自動設定的變數。
    * *必要* - 指出基本視訊追蹤是否需要參數。
    * *類型* - 指明預計設定的變數類型 (字串或數字)。
@@ -43,7 +43,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/>media.qoe.timeToStart </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/> 30,000 </li><li> **說明:**<br/>如未透過 QoSObject 設定，則此值預設為零。您將此值設為毫秒。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **心率:**<br/> (l:stream:startup_time) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>開始時間 </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **資料饋送:**<br/>videoqoetimetostartevar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/>media.qoe.timeToStart </li> <li> **必要:**<br/>否 </li> <li> **類型:**<br/>數字 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值:**<br/> 30,000 </li><li> **說明:**<br/>如未透過 QoSObject 設定，則此值預設為零。您將此值設為毫秒。該值在 Analysis Workspace 與 Reports &amp; Analytics 中將以時間格式 (HH:MM:SS) 顯示。在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。    </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **心率:**<br/> (l:stream:startup_time) </li> </ul> | <ul> <li> **可用:**<br/>是 </li> <li> **預留變數:**<br/>eVar </li> <li> **過期時間:**<br/>點擊時 </li> <li> **報表名稱:**<br/>開始時間 </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **資料饋送:**<br/>videoqoetimetostartevar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
 
 
 ### FPS
