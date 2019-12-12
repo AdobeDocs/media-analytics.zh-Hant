@@ -57,7 +57,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;播放點位置&gt; 例如 50,60,70 | 此參數會反映播放點目前的位置。 |
 
-## 心率內容完成 {#heartbeat-content-complete}
+## 心率內容完成 {#heartbeat-content-complete}
 
 當播放完成時，其表示到達播放點結尾，會傳送 `Heartbeat Content Complete` 呼叫。此呼叫類似其他 Heartbeat 呼叫，但它包含某些特定參數:
 
