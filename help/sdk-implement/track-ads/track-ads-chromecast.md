@@ -16,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 廣告追蹤常數
 
-| 常數名稱 | 說明   |
+| 常數名稱 | 說明 |
 |---|---|
 | `AdBreakStart` | 用於追蹤廣告插播開始事件的常數 |
 | `AdBreakComplete` | 用於追蹤廣告插播事件的常數 |
