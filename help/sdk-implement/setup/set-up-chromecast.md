@@ -91,7 +91,7 @@ Experience Cloud 解決方案適用的 Chromecast SDK 2.x 可讓您測量在 Jav
       >如果 `mediaHeartbeat` 的設定不正確，媒體模組 (VHL) 會進入錯誤狀態並停止傳送追蹤呼叫。
 
       適用於 mediaHeartbeat 索引鍵的 ADBMobile 設定參數:
-   | 設定參數 | 說明     |
+   | 設定參數 | 說明 |
    | --- | --- |
    | `server` | 代表後端追蹤端點之 URL 的字串。 |
    | `publisher` | 代表內容發行者唯一識別碼的字串。 |
