@@ -40,7 +40,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       src="https://INSERT-DOMAIN-AND-PATH-TO-CODE-HERE/MediaSDK.min.js"></script>
       ```
 
-   1. 若要快速確認   程式庫是否已成功匯入，請實例化 `ADB.va.MediaHeartbeatConfig` 類別。
+   1. 若要快速確認程式庫是否已成功匯入，請實例化 `ADB.va.MediaHeartbeatConfig` 類別。
 
       >[!NOTE]
       >
