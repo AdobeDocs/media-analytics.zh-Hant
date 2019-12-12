@@ -12,7 +12,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 廣告常數
 
-| 常數名稱 | 說明   |
+| 常數名稱 | 說明 |
 |---|---|
 | `ADBMediaObjectKeyStandardAdMetadata` | 用於在 上附加標準廣告中繼資料的常數`AdInfo ADBMediaObject` |
 
