@@ -8,7 +8,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ---
 
 
-# 從 API 1.x 轉換至 2.x  {#one-x-to-two-x-conv}
+# 從 API 1.x 轉換至 2.x {#one-x-to-two-x-conv}
 
 ## Media SDK 2.x API 參考資料
 
