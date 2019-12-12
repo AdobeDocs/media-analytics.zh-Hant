@@ -360,7 +360,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次
+每隔 10 秒 Ping 後端一次。
 
 **範例要求內文**
 
@@ -425,7 +425,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次
+每隔 10 秒 Ping 後端一次。
 
 **範例要求內文**
 
@@ -508,7 +508,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次
+每隔 10 秒 Ping 後端一次。
 
 **範例要求內文**
 
@@ -573,7 +573,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次
+每隔 10 秒 Ping 後端一次。
 
 **範例要求內文**
 
@@ -617,7 +617,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次播放器依然處於「正在緩衝」狀態；使用者在內容中停滯 20 秒。怒氣沖沖...
+每隔 10 秒 Ping 後端一次。播放器依然處於「正在緩衝」狀態；使用者在內容中停滯 20 秒。怒氣沖沖...
 
 **範例要求內文**
 
@@ -659,7 +659,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次
+每隔 10 秒 Ping 後端一次。
 
 **範例要求內文**
 
