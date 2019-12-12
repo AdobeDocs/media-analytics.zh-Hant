@@ -1,19 +1,20 @@
 ---
-title: 從單機版Media SDK移轉至Adobe Launch - iOS
-description: 說明和程式碼範例，以協助從Media SDK移轉至Launch for iOS。
-translation-type: tm+mt
+title: 從獨立 Media SDK 移轉至 Adobe Launch - iOS
+description: 協助從 Media SDK 移轉至 iOS 適用的 Launch 的指示和程式碼範例。
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# 從單機版Media SDK移轉至Adobe Launch - iOS
+# 從獨立 Media SDK 移轉至 Adobe Launch - iOS
 
 ## 設定
 
-### 獨立媒體SDK
+### 獨立 Media SDK
 
-在獨立的Media SDK中，您在應用程式中設定追蹤設定，並在建立追蹤器時將其傳遞至SDK。
+在獨立 Media SDK 中，您可在應用程式中設定追蹤，
+並在建立追蹤器時將其傳遞至 SDK。
 
 ```objective-c
 ADBMediaHeartbeatConfig *config = 
@@ -31,24 +32,25 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
 ```
 
-### 啟動擴充功能
+### Launch 擴充功能
 
-1. 在Experience Platform Launch中，按一下您行動 [!UICONTROL 裝置屬性的] 「擴充功能」標籤
-1. 在「目 [!UICONTROL 錄] 」標籤上，找到「Adobe Media Analytics for Audio and Video Extension」，然後按一下「 [!UICONTROL 安裝」]。
-1. 在擴充功能設定頁面中，設定追蹤參數。
-媒體擴充功能會使用已設定的參數進行追蹤。
+1. 在 Experience Platform Launch 中，按一下您行動屬性的[!UICONTROL 「擴充功能」]標籤
+1. 在[!UICONTROL 「編目」]標籤上，找到 Adobe Media Analytics for Audio and Video 擴充功能，然後按一下[!UICONTROL 「安裝」]。
+1. 在擴充功能設定頁面中，設定追蹤參數。Media 擴充功能會使用已設定的參數進行追蹤。
 
    ![](assets/launch_config_mobile.png)
 
-[設定媒體分析擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[設定 Media Analytics 擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## 建立追蹤器
 
-### 獨立媒體SDK
+### 獨立 Media SDK
 
-在獨立的Media SDK中，您可手動建立物 `ADBMediaHeartbeatConfig` 件並設定追蹤參數。 實作委派介面`getQoSObject()` , `getCurrentPlaybackTime()functions.`
+在獨立 Media SDK中，您可手動建立 `ADBMediaHeartbeatConfig` 物件
+並設定追蹤參數。實施委派介面公開
+`getQoSObject()` 和 `getCurrentPlaybackTime()functions.`
 
-建立MediaHeartbeat例項以進行追蹤：
+建立 MediaHeartbeat 例項以供追蹤：
 
 ```objective-c
 @interface PlayerDelegate : NSObject<ADBMediaHeartbeatDelegate>
@@ -83,11 +85,11 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
-### 啟動擴充功能
+### Launch 擴充功能
 
-[媒體API參考——建立媒體追蹤器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[媒體 API 參考 - 建立媒體追蹤器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-建立追蹤器前，請先向行動核心註冊媒體擴充功能和相依擴充功能。
+建立追蹤器前，請先透過行動核心註冊媒體擴充功能和相依擴充功能。
 
 ```objective-c
 // Register the extension once during app launch
@@ -107,7 +109,7 @@ ADBMediaHeartbeat* tracker =
 }
 ```
 
-在註冊媒體擴充功能後，就可使用下列API建立追蹤器。
+註冊媒體擴充功能後，可使用以下 API 建立追蹤器。
 追蹤器會自動從已設定的啟動屬性中挑選設定。
 
 ```objective-c
@@ -116,28 +118,35 @@ ADBMediaHeartbeat* tracker =
 }];
 ```
 
-## 更新播放頭和體驗品質值。
+## 更新播放點和體驗品質值。
 
-### 獨立媒體SDK
+### 獨立 Media SDK
 
-在獨立的Media SDK中，建置通訊協定的委派物件`ADBMediaHeartbeartDelegate` ，會在建立追蹤器時傳遞。
-當追蹤器呼叫和介面方法時，實作應傳回最新的QoE `getQoSObject()` 和播 `getCurrentPlaybackTime()` 放頭。
+在獨立 Media SDK 中，實施 `ADBMediaHeartbeartDelegate` 通訊協定的委派物件
+會在建立追蹤器時傳遞。
+當追蹤器呼叫 `getQoSObject()` 和 `getCurrentPlaybackTime()` 介面方法時，
+實施應傳回最新的 QoE
+和播放點。
 
-### 啟動擴充功能
+### Launch 擴充功能
 
-實作應依追蹤器公開的呼叫方法`updateCurrentPlayhead` ，更新目前播放器播放頭。 為了精確追蹤，您應至少每秒呼叫一次此方法。
+實施應呼叫追蹤器公開的 `updateCurrentPlayhead` 方法，
+以更新目前播放器播放點。您應每秒至少
+呼叫一次此方法以精確追蹤。
 
-[媒體API參考——更新目前的播放磁頭](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[媒體 API 參考 - 更新目前的播放點](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-實現應通過調用跟蹤器公開的方法`updateQoEObject` ，更新QoE資訊。 只要品質量度有變更，您就應該呼叫此方法。
+實施應呼叫追蹤器公開的 `updateQoEObject` 方法，
+以更新 QoE 資訊。您應該在品質量度變更時
+呼叫此方法。
 
-[媒體API參考——更新QoE物件](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[媒體 API 參考 - 更新 QoE 物件](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-## 傳遞標準媒體／廣告中繼資料
+## 傳遞標準媒體 / 廣告中繼資料
 
-### 獨立媒體SDK
+### 獨立 Media SDK
 
-* 標準媒體中繼資料：
+* 標準媒體中繼資料:
 
    ```objective-c
    ADBMediaObject *mediaObject = 
@@ -189,9 +198,9 @@ ADBMediaHeartbeat* tracker =
             data:adDictionary];
    ```
 
-### 啟動擴充功能
+### Launch 擴充功能
 
-* 標準媒體中繼資料：
+* 標準媒體中繼資料:
 
    ```objective-c
    NSDictionary *mediaObject = 
