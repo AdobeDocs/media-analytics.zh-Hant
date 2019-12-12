@@ -20,7 +20,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    QoSObject 變數:
 
-   | 變數 | 說明 | 必要 |
+   | 變數 | 說明 | 必填 |
    | --- | --- | :---: |
    | `bitrate` | 目前位元速率 | 是 |
    | `startupTime` | 啟動時間 | 是 |
