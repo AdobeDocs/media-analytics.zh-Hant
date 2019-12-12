@@ -14,7 +14,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Adobe Analytics (AppMeasurement) 開始呼叫 {#aa-start-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
@@ -33,7 +33,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Adobe Analytics (AppMeasurement) 開始呼叫中的標準中繼資料 {#std-metadata-aa}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -52,14 +52,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Adobe Analytics (AppMeasurement) 開始呼叫中的自訂中繼資料 {#custom-metadata-aa}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
 ### Media Analytics (心率) 開始呼叫 {#ma-start-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
@@ -79,9 +79,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) 開始呼叫中的標準中繼資料 {#std-metadata-ma}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
-| `s:meta:a.media.show` | Show |
+| `s:meta:a.media.show` | 節目 |
 | `s:meta:a.media.season` | 6 |
 | `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
@@ -98,14 +98,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) 開始呼叫中的自訂中繼資料 {#custom-metadata-ma}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
 ### Media Analytics (心率) Adobe Analytics 開始呼叫 {#ma-aa-start}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
@@ -125,7 +125,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫 {#aa-ad-start-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
@@ -148,7 +148,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的標準中繼資料 {#std-metadata-aa-ad-start}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -167,14 +167,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-aa-ad-start}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
 ### Media Analytics (心率) 廣告開始呼叫 {#ma-ad-start-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | _**`s:event:type`**_ | _**start**_ |
 | `l:event:playhead` | 0 |
@@ -193,9 +193,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) 廣告開始呼叫中的標準中繼資料 {#std-metadata-ma-ad-start}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
-| `s:meta:a.media.show` | Show |
+| `s:meta:a.media.show` | 節目 |
 | `s:meta:a.media.season` | 6 |
 | `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
@@ -212,14 +212,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-ma-ad-start}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
 ### Media Analytics (心率) Adobe Analytics 廣告開始呼叫 {#ma-aa-ad-start-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | _**`s:event:type`**_ | _**aa_ad_start**_ |
 | `l:event:playhead` | 0 |
@@ -231,7 +231,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) 廣告播放呼叫 {#ma-ad-play-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | _**`s:event:type`**_ | _**play**_ |
 | `l:event:playhead` | 15 |
@@ -243,7 +243,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) 廣告暫停呼叫 {#ma-ad-pause-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | `l:event:playhead` | 15 |
@@ -255,7 +255,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) Adobe Analytics 廣告完成呼叫 {#ma-aa-ad-complete-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | _**`s:event:type`**_ | _**complete**_ |
 | `l:event:playhead` | 15 |
@@ -269,7 +269,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) 播放呼叫 {#ma-play-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
@@ -289,7 +289,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Media Analytics (心率) 暫停呼叫 {#ma-pause-call}
 
-| 參數 |  值 (範例)  |
+| 參數 |  值 (範例) |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
