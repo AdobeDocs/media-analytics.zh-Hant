@@ -16,7 +16,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 除非另有指定，否則此案例中的網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。
 
-| 觸發   | 心率方法   | 網路呼叫   | 附註   |
+| 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
 | 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 這可以是使用者點按&#x200B;**[!UICONTROL 播放]或自動播放事件。** |
 | 播放視訊的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要播放繼續，便會每 10 秒傳送心率。 |
