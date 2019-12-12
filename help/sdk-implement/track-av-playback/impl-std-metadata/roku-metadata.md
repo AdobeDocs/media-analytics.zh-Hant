@@ -16,14 +16,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
-| Show | `a.media.show` | `MEDIA_VideoMetadataKeySHOW` |
+| 節目 | `a.media.show` | `MEDIA_VideoMetadataKeySHOW` |
 | 季數 | `a.media.season` | `MEDIA_VideoMetadataKeySEASON` |
 | 集數 | `a.media.episode` | `MEDIA_VideoMetadataKeyEPISODE` |
 | 資產 | `a.media.asset` | `MEDIA_VideoMetadataKeyASSET_ID` |
 | 類型 | `a.media.genre` | `MEDIA_VideoMetadataKeyGENRE` |
 | 首播日期 | `a.media.airDate` | `MEDIA_VideoMetadataKeyFIRST_AIR_DATE` |
 | 數位化首播日期 | `a.media.digitalDate` | `MEDIA_VideoMetadataKeyFIRST_DIGITAL_DATE` |
-| 排名 | `a.media.rating` | `MEDIA_VideoMetadataKeyRATING` |
+| 評等 | `a.media.rating` | `MEDIA_VideoMetadataKeyRATING` |
 | 創作者 | `a.media.originator` | `MEDIA_VideoMetadataKeyORIGINATOR` |
 | 網路 | `a.media.network` | `MEDIA_VideoMetadataKeyNETWORK` |
 | 節目類型 | `a.media.type` | `MEDIA_VideoMetadataKeySHOW_TYPE` |
@@ -31,7 +31,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | MVPD | `a.media.pass.mvpd` | `MEDIA_VideoMetadataKeyMVPD` |
 | 已驗證 | `a.media.pass.auth` | `MEDIA_VideoMetadataKeyAUTHORIZED` |
 | 時段 | `a.media.dayPart` | `MEDIA_VideoMetadataKeyDAY_PART` |
-| 資訊源 | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
+| 動態消息 | `a.media.feed` | `MEDIA_VideoMetadataKeyFEED` |
 | 資料流格式 | `a.media.format` | `MEDIA_VideoMetadataKeySTREAM_FORMAT` |
 
 ## 音訊中繼資料常數 {#audio-metadata-constants}
@@ -62,28 +62,28 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### 其他常數
 
-| 常數 | 說明   |
+| 常數 | 說明 |
 |---|---|
 | `ERROR_SOURCE_PLAYER` | 錯誤來源的常數為播放器 |
 
 ### MediaObjectkey 常數 (用於作為 MediaObject 例項內的索引鍵)
 
-| 常數 | 說明   |
+| 常數 | 說明 |
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | 可在 `MediaInfo` `trackLoad` 上設定中繼資料的常數 |
 | `MEDIA_STANDARD_AD_METADATA` | 可在 `EventData` `trackEvent` 上設定廣告中繼資料的常數 |
-| `MEDIA_RESUMED` | 傳送影片繼續心率的常數。如要延續先前暫停內容繼續影片追蹤，您必須在您呼叫 `MEDIA_RESUMED` 時設定在 `mediaInfo` 物件上的 `mediaTrackLoad` 屬性。(`MEDIA_RESUMED` 不是可以使用 `mediaTrackEvent` API 追蹤的事件。)當應用程式想要繼續，以追蹤使用者暫停觀看但現在打算繼續觀看的內容時，應將 `MEDIA_RESUMED` 設定為 true。<br/><br/>例如，假設使用者觀看了 30% 的內容，然後關閉該應用程式。這會導致作業結束。稍後，如果同一位使用者返回觀看同一個內容，而應用程式允許使用者從中斷的地方繼續，則應用程式應將 `MEDIA_RESUMED` 設定為「true」，同時呼叫 `mediaTrackLoad` API。結果是針對相同影片內容的這兩個不同媒體工作階段可以連結在一起。以下為實作範例: <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>這將會為該影片建立一個新的工作階段，但也會導致 SDK 傳送含有「繼續」事件類型的心率請求，其可用於報表，以將兩個不同的媒體工作階段繫結在一起。 |
+| `MEDIA_RESUMED` | 傳送影片繼續心率的常數。如要延續先前暫停內容繼續影片追蹤，您必須在您呼叫 `MEDIA_RESUMED` 時設定在 `mediaInfo` 物件上的 `mediaTrackLoad` 屬性。(`MEDIA_RESUMED` 不是可以使用 `mediaTrackEvent` API 追蹤的事件。)當應用程式想要繼續，以追蹤使用者暫停觀看但現在打算繼續觀看的內容時，應將 `MEDIA_RESUMED` 設定為 true。<br/><br/>例如，假設使用者觀看了 30% 的內容，然後關閉該應用程式。這會導致作業結束。稍後，如果同一位使用者返回觀看同一個內容，而應用程式允許使用者從中斷的地方繼續，則應用程式應將 `MEDIA_RESUMED` 設定為「true」，同時呼叫 `mediaTrackLoad` API。結果是針對相同影片內容的這兩個不同媒體工作階段可以連結在一起。以下為實作範例:  <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>這將會為該影片建立一個新的工作階段，但也會導致 SDK 傳送含有「繼續」事件類型的心率請求，其可用於報表，以將兩個不同的媒體工作階段繫結在一起。 |
 
 ### 內容類型常數
 
-| 常數 | 說明   |
+| 常數 | 說明 |
 |---|---|
 | `MEDIA_STREAM_TYPE_LIVE` | LIVE 資料流類型常數 |
 | `MEDIA_STREAM_TYPE_VOD` | VOD 資料流類型的常數 |
 
 ### 事件類型常數 (用於 trackEvent 呼叫)
 
-| 常數 | 說明   |
+| 常數 | 說明 |
 |---|---|
 | `MEDIA_BUFFER_START` | 緩衝區開始的事件類型 |
 | `MEDIA_BUFFER_COMPLETE` | 緩衝區完成的事件類型 |
