@@ -17,7 +17,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## 緩衝追蹤常數
 
 
-| 常數名稱 | 說明     |
+| 常數名稱 | 說明 |
 |---|---|
 | `BufferStart` | 用於追蹤緩衝開始事件的常數 |
 | `BufferComplete` | 用於追蹤緩衝完成事件的常數 |
