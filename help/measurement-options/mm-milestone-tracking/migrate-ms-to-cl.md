@@ -16,7 +16,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 下列表格為「里程碑」解決方案和「自訂連結」解決方案的對照表。
 
-## 移轉指南{#migration-guide}
+## 移轉指南 {#migration-guide}
 
 ### 視訊變數參考
 
@@ -300,8 +300,10 @@ s.linkTrackVars
      eVar12,
      eVar13,
      eVar15,
-     contextData.video.name,
-     contextData.video.view';
+     contextData.
+       video.name,
+     contextData.
+       video.view';
 </pre>
 </td>
 </tr>
