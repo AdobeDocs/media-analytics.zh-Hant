@@ -226,7 +226,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次
+每隔 10 秒 Ping 後端一次。
 
 **範例要求內文**
 
@@ -248,7 +248,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次
+每隔 10 秒 Ping 後端一次。
 
 **範例要求內文**
 
@@ -313,7 +313,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 **實施詳細資料**
 
-每隔 10 秒 Ping 後端一次
+每隔 10 秒 Ping 後端一次。
 
 **範例要求內文**
 
