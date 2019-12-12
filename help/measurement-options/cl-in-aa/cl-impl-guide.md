@@ -16,7 +16,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 * 在行動應用程式中: [trackAction() Android](https://marketing.adobe.com/resources/help/zh_TW/mobile/android/actions.html)、[trackAction() iOS](https://marketing.adobe.com/resources/help/zh_TW/mobile/ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * 在 Data Insertion API 中: [linktype 標記](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
-## 要求
+## 需求
 
 * 視訊播放器 API 事件與資料的存取權限
 * 若使用 Analytics SDK: 新增指令碼的能力
