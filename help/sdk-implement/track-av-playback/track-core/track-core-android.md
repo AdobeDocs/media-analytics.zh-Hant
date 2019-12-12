@@ -19,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    [createMediaObject API](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
 
-   | 變數名稱 | 說明 | 必要 |
+   | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
    | `name` | 媒體名稱 | 是 |
    | `mediaId` | 媒體唯一識別碼 | 是 |
