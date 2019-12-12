@@ -186,7 +186,7 @@ API 簽章: `ADBMobile().sgConstants()`
 
 ### ADBMobile 常數
 
-|  功能  | 常數名稱 | 說明   |
+|  功能  | 常數名稱 | 說明 |
 |---|---|---|
 | 版本設定 | `version` | 擷取 AdobeMobileLibrary 版本資訊的常數 |
 | 隱私權/選擇退出 | `PRIVACY_STATUS_OPT_IN` | 隱私權狀態選擇加入的常數 |
