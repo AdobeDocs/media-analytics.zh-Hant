@@ -66,7 +66,7 @@ ADBMobile.config.setDebugLogging(true)
 
 在應用程式開發期間，Bloodhound 可讓您在本機檢視伺服器呼叫，以及選擇將資料轉送至 Adobe 收集伺服器。如需 Bloodhound 的詳細資訊，請參閱下列指南:
 
-* [Mac 適用的 Bloodhound 3.x](https://marketing.adobe.com/resources/help/zh_TW/mobile/bloodhound/)
+* [Mac 適用的 Bloodhound 3.x](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
 * [Windows 適用的 Bloodhound 2.2](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
 
 >[!IMPORTANT]
