@@ -18,14 +18,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 |  網路呼叫 |  附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | trackSessionStart | Analytics 內容開始, 心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 使用者點按[!UICONTROL 播放] | trackSessionStart | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 內容播放的第一個時間格。 | trackPlay | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
 | 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 工作階段 1 結束(第 1 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成表示已到達第 1 集的工作階段 1，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
-| 第 2 集開始(工作階段 2 開始) | trackSessionStart | Analytics 內容開始,心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
+| 第 2 集開始(工作階段 2 開始) | trackSessionStart | Analytics 內容開始、心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
 | 媒體的第一個時間格 | trackPlay | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，只要播放繼續，便會每 10 秒傳送心率。 |
 | 內容播放 |  | 內容心率 |  |
-| 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成表示已到達第 2 集的工作階段 2，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
+| 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成表示已到達第 2 集的工作階段 2，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
 
 ## 參數 {#parameters}
 
@@ -62,7 +62,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;playhead position&gt; 例如 50、60、70 | 這應該反映播放點目前的位置。 |
 
-## 心率內容完成 {#heartbeat-content-complete}
+## 心率內容完成 {#heartbeat-content-complete}
 
 播放任何集完成時 (播放點跨過集界限)，會傳送心率內容完成呼叫。這類似其他 Heartbeat 呼叫，但將包含某些特定項目:
 
