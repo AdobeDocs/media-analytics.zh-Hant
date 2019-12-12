@@ -84,7 +84,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
       }
       ```
 
-      | 設定參數 | 說明     |
+      | 設定參數 | 說明 |
       | --- | --- |
       | `server` | 代表後端追蹤端點之 URL 的字串。 |
       | `publisher` | 代表內容發行者唯一識別碼的字串。 |
@@ -125,7 +125,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    >
    >Experience Cloud 訪客 ID 方法的前置詞為 `visitor`。
 
-   |  方法   | 說明 |
+   |  方法 | 說明 |
    | --- | --- |
    | `visitorMarketingCloudID` | 從訪客 ID 服務中擷取 Experience Cloud 訪客 ID。 <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | 透過 Experience Cloud 訪客 ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 `setCustomerIDs`。例如: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
