@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 決策 {#decision}
 
-在開始實作追蹤前，請先決定與您的情況最為相關的實作：
+在開始實作追蹤前，請先決定與您的情況最為相關的實作:
 
 * **Media Analytics -** 使用最新 Media SDK (標準建議實作) 及/或媒體收集 API (RESTful)
 * **里程碑 -** 舊版 Adobe 追蹤實作
@@ -42,7 +42,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
    >[!IMPORTANT]
    >
-   >如果媒體專屬呼叫中未出現任何使用者 ID 資訊，則會套用預設分析[備援 ID 方法](https://docs-author.corp.adobe.com/content/help/zh-Hant/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)。
+   >如果媒體專屬呼叫中未出現任何使用者 ID 資訊，則會套用預設分析[備援 ID 方法](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)。
 
    如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 概述](https://marketing.adobe.com/resources/help/zh_TW/mcvid/mcvid-overview.html)和 [Adobe Experience Platform Identity 服務](https://marketing.adobe.com/resources/help/zh_TW/mcvid/)。
 
