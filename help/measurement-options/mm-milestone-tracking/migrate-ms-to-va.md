@@ -26,7 +26,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | 內容類型 | eVar<br/><br/> 預設過期時間: 頁面檢視 | 內容類型 |
 | 內容逗留時間 | 事件<br/><br/>類型: 計數器 | 內容逗留時間 |
 | 視訊起始 | 事件<br/><br/>類型: 計數器 | 視訊起始 |
-| 視訊完成 | 事件<br/><br/> 類型: 計數器 | 內容完成 |
+| 視訊完成 | 事件<br/><br/>類型: 計數器 | 內容完成 |
 
 ### 媒體模組變數
 
@@ -799,7 +799,8 @@ trackEvent(
 </pre> 或
 <pre>
 trackEvent(
-  MediaHeartbeat.Event.
+  MediaHeartbeat.
+  Event.
   BufferStart);
 </pre>
 </td>
