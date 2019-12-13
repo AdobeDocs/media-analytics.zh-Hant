@@ -14,7 +14,7 @@ Adobe 收集並於 Media Analytics (心率) 伺服器上處理的 Media Analytic
 
 ## 所有事件
 
-| 名稱 | 資料來源 |  說明  |
+| 名稱 | 資料來源 |  說明 |
 | ---  | --- | --- |
 | s:event:type | Media SDK | (必要)<br/><br/>要追蹤的事件類型。事件類型: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | Media SDK | (必要)<br/><br/>此工作階段中相同類型的上次事件時間戳記。值為 -1。 |
@@ -24,7 +24,7 @@ Adobe 收集並於 Media Analytics (心率) 伺服器上處理的 Media Analytic
 | s:event:sid | Media SDK | (必要)<br/><br/>工作階段 ID (隨機產生的字串)。某個工作階段 (視訊 + 廣告) 中的所有事件應該是相同的。 |
 | l:asset:duration / l:asset:length <br/>(已將長度重新命名為持續時間) | VideoInfo | (必要)<br/><br/>主要資產的影片資產長度。 |
 | s:asset:publisher | MediaHeartbeatConfig | (必要)<br/><br/>資產的發佈者。 |
-| s:asset:video_id | VideoInfo | (必要)<br/><br/>此 ID 會唯一識別發佈者目錄中的影片。 |
+| s:asset:video_id | VideoInfo | (必要)<br/><br/>此 ID 會唯一識別發佈者編目中的影片。 |
 | s:asset:type | Media SDK | (必要)<br/><br/>資產類型 (主要或廣告)。 |
 | s:stream:type | VideoInfo | (必要)<br/><br/>資料流類型。可以是下列其中一項: <ul> <li> live </li> <li> VOD </li> <li> 線性 </li> </ul> |
 | s:user:id | 行動應用程式測量 VisitorID 的設定物件 | (選用)<br/><br/>使用者明確設定的訪客 ID。 |
@@ -45,14 +45,14 @@ Adobe 收集並於 Media Analytics (心率) 伺服器上處理的 Media Analytic
 
 ## 錯誤事件
 
-| 名稱 | 資料來源 | 說明   |
+| 名稱 | 資料來源 | 說明 |
 | ---  | --- | --- |
 | s:event:source | Media SDK | (必要)<br/><br/>錯誤的來源，可能是播放器內部或應用程式層級。 |
 | s:event:id | Media SDK | (必要)<br/><br/>錯誤 ID，可唯一識別錯誤。 |
 
 ## 廣告事件
 
-| 名稱 | 資料來源 | 說明   |
+| 名稱 | 資料來源 | 說明 |
 | ---  | --- | --- |
 | s:asset:ad_id | AdInfo | (必要)<br/><br/>廣告的名稱。 |
 | s:asset:ad_sid | Media SDK | (必要)<br/><br/>Media SDK 產生的唯一識別碼會附加至所有與廣告相關的 Ping 上。 |
@@ -63,7 +63,7 @@ Adobe 收集並於 Media Analytics (心率) 伺服器上處理的 Media Analytic
 
 ## 章節事件
 
-| 名稱 | 資料來源 | 說明   |
+| 名稱 | 資料來源 | 說明 |
 | ---  | --- | --- |
 | s:stream:chapter_sid | Media SDK | (必要)<br/><br/>與章節的播放例項相關聯的唯一識別碼。<br/> **注意:** 由於使用者執行的向後搜尋操作，章節可以播放許多次。 |
 | s:stream:chapter_name | ChapterInfo | (選用)<br/><br/>章節的易記 (亦即人類看得懂的) 名稱。 |
@@ -75,7 +75,7 @@ Adobe 收集並於 Media Analytics (心率) 伺服器上處理的 Media Analytic
 
 ## 作業結束事件
 
-| 名稱 | 資料來源 | 說明   |
+| 名稱 | 資料來源 | 說明 |
 | ---  | --- | --- |
 | s:event:type=end | Media SDK | (必要)<br/><br/> `end` `close` |
 
