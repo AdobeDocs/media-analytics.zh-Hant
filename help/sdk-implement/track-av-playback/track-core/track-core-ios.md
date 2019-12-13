@@ -19,7 +19,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    [createMediaObjectWithName API](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:length:streamType:mediaType:)
 
-   | 變數名稱 | 說明 | 必要 |
+   | 變數名稱 | 說明 | 必填 |
    |---|---|---|
    | `name` | 視訊名稱 | 是 |
    | `mediaid` | 視訊唯一識別碼 | 是 |
