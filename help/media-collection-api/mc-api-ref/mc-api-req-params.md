@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Analytics 資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 伺服器的 URL |
 | `analytics.reportSuite` | Y | `sessionStart` | 識別 Analytics 報表資料的 ID |
@@ -21,16 +21,16 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 訪客資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 組織 ID，能在 Adobe Experience Cloud 生態系統中識別您的組織 |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | 這是 Experience Cloud 使用者 ID (ECID)。在大多數案例中，這是識別使用者時應使用的 ID。心率 `marketingCloudUserId` 等於 Adobe Analytics 中的  `MID`。此參數就技術上而言雖然並非必要，但在存取 Experience Cloud 應用程式系列時則需使用此參數。 |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | 這是 Experience Cloud 使用者 ID (ECID)。在大多數案例中，這是識別使用者時應使用的 ID。心率 `marketingCloudUserId` 等於 Adobe Analytics 中的 `MID`。此參數就技術上而言雖然並非必要，但在存取 Experience Cloud 應用程式系列時則需使用此參數。 |
 | `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 資料 |
 | `appInstallationId` | N | `sessionStart` | 唯一識別應用程式和裝置的 appInstallationId |
 
 ## 內容資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `media.id` | Y | `sessionStart` | 內容的唯一識別碼 |
 | `media.name` | N | `sessionStart` | 內容的人類可讀名稱 |
@@ -43,7 +43,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 內容標準中繼資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | 節目或影集名稱 |
 | `media.season` | N | `sessionStart` | 節目或影集隸屬的季數 |
@@ -64,7 +64,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 廣告資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | 廣告插播的易記名稱 |
 | `media.ad.podIndex` | Y | `adBreakStart` | 視訊中的廣告 Pod 索引 |
@@ -77,7 +77,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 廣告標準中繼資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | 廣告中精選產品的公司或品牌 |
 | `media.ad.campaignId` | N | `adStart` | 廣告促銷活動 ID |
@@ -88,7 +88,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 章節資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | Y | `chapterStart` | 識別章節在內容中的位置 |
 | `media.chapter.offset` | Y | `chapterStart` | 章節開始播放的秒數 |
@@ -97,7 +97,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 品質資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | 任何 | 資料流的位元速率 |
 | `media.qoe.droppedFrames` | N | 任何 | 資料流掉格的數量 |
@@ -106,7 +106,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 加州消費者隱私法 (CCPA) 參數 {#ccpa-params}
 
-| 要求索引鍵 | 必填 | 設定於... |  說明  |
+| 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | 若使用者已選擇退出其在 Adobe Analytics 與其他 Experience Cloud 解決方案 (例如 Audience Manager) 之間共用的資料，則設為 true |
 | `analytics.optOutShare` | N | `sessionStart` | 若使用者已選擇退出為其資料建立同盟 (例如與其他 Adobe Analytics 用戶端建立同盟)，則設為 true。 |
