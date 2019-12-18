@@ -5,8 +5,8 @@ uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 
 ---
 
@@ -15,42 +15,49 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 發行說明{#release-notes}
 
-* [發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)
+* [發行說明](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
 
-## 文件更新{#documentation-updates}
+<!--
+## Documentation Updates{#documentation-updates}
 
-### 上次更新: 2019 年 10 月 {#October-2019-update}
+### Last updated: October, 2019 {#October-2019-update}
 
-多項編輯和格式修正。
-擴展到 Media SDK 以外的逐步指南主題，包括有關「媒體追蹤以外的媒體維度」的全新一般逐步指南主題。
+Numerous editing and formatting corrections. 
+Cookbook topics expanded beyond Media SDK, including a new general cookbook topic on "Media Dimensions
+outside Media Tracking."
 
 
-### 上次更新日期: 2019 年 3 月 7 日 {#March-2019-update}
+### Last updated: March 7, 2019 {#March-2019-update}
 
-* 本次更新主要是為了在 JavaScript 和 OTT 平台上發行的 2.2 版 Media SDK。
-* JavaScript 和 OTT 平台上發行的 2.2 版 Media SDK 提供與下述 iOS 和 Android 平台相同的支援 (2018 年 11 月 1 日更新)。
+* This update was primarily for the 2.2 Media SDK release on the JavaScript and OTT platforms. 
+* The 2.2 Media SDK release on JavaScript and OTT platforms provides the same support as 
+  described below for the iOS and Android platforms (November 1, 2018 update).
 
-### 上次更新: 2018 年 11 月 1 日 {#November-2018-update}
+### Last updated: November 1, 2018 {#November-2018-update}
 
-* 本次更新主要是為了在 Android 與 iOS 平台上發行的 2.2 版 Media SDK。
-* Android 與 iOS 平台上的 2.2 版 Media SDK 支援在前述平台上追蹤音訊，另改善了一些內部功能。
-* 加入音訊追蹤功能後，Media SDK 與媒體收集 API 均提供音訊與視訊追蹤功能，因此我們需要相對廣義的命名更新:
+* This update was primarily for the 2.2 Media SDK release on the Android and iOS platforms. 
+* The 2.2 Media SDK release on Android and iOS provides support for tracking audio on those 
+  platforms, along with internal improvements.
+* With the addition of audio tracking, and with both audio and video tracking capabilities 
+  now available in both the Media SDK and the Media Collection API, a relatively wholesale 
+  naming update is called for:
 
-   * 整套解決方案的名稱為 Adobe Analytics for Audio and Video
-   * 先前各式文件中所用的簡稱「Video Analytics」現改為「Media Analytics」
-   * SDK 中參照「視訊心率程式庫」(VHL) 的文句現改為「Media SDK」
-   * 先前提及「視訊」或「vhl」的檔案名稱與 URL (如 API 參考的連結) 現於原處改用「媒體」
-   * 在程式碼中，中繼資料索引鍵的名稱現以「MEDIA」取代「VIDEO」
-   * 依此類推...
+    * The overall solution is titled Adobe Analytics for Audio and Video
+    * The shorthand formerly used throughout the docs, "Video Analytics", is now "Media Analytics"
+    * In the SDK, references to "Video Heartbeat Library (VHL)" are now "Media SDK"
+    * Filenames and URLs (e.g., links to API references) that formerly referenced "video" or "vhl" now use "media" in their place
+    * In the code, the names of metadata keys now include "MEDIA" instead of "VIDEO"
+    * and so on...
 
-* 除了前述改變之外，我們另重新建構了 Media SDK 區段，包括標準中繼資料實作與返回各自主題的參照 (它們在前一次文件更新時收錄在&#x200B;*追蹤核心*&#x200B;主題)。這些主題與&#x200B;*追蹤核心*、*追蹤搜尋*&#x200B;及&#x200B;*追蹤緩衝*&#x200B;等主題現歸納在同一個組別，收錄在&#x200B;*追蹤音訊與視訊播放*&#x200B;之下。
+* Along with the above, some additional restructuring has occurred in the Media SDK section, including Standard Metadata implementation and reference returning to their own topics (they had been absorbed into the *Track Core* topics in the previous doc update). These topics, along with the *Track core*, and *Track seeking*, and *Track buffering* topics are now grouped together under *Track audio and video playback*.
 
-* Federated Analytics 表單已更新為 3.2 版，藉此反應與追蹤音訊有關的新參數。
+* The Federated Analytics form was updated to Version 3.2, to reflect new parameters involved with tracking audio.
 
-### 更新: 2018 年 10 月 10 日 {#October-2018-update}
+### Update: October 10, 2018 {#October-2018-update}
 
-* 「SDK 實作」區域的文件結構已經過「重組」，將個別 (但大致相同) 的平台實施指南合併成一個 SDK 實作區段，並將平台專用的追蹤範例呈現在通用追蹤主題下方的子區段。
-* 為了因應移轉到新文件系統的需求，檔案已全數重新命名。所有 DITA 字首 ( c_、r_、t_ ) 分別代表概念、參照及工作等主題類型) 已刪除。所有底線 (’_’) 均已以連字號取代 ('-')。另外，檔案名稱與主題的標題也更相似。
-* 更新一般驗證與認證主題。
-* 加入測量選項解說等介紹性素材，另更新必備條件、實施路徑及 Audience Manager 啟用。
-* 更新「量度和中繼資料」與「Reporting and Analysis」區段，藉此反應新增的 Audio Analytics 功能。
+* Document structure was "refactored" in the SDK Implementation area, by combining the individual (but mostly identical) platform implementation guides into one SDK implementation section, with platform-specific tracking examples presented in sub-sections beneath common tracking topics. 
+* Files were renamed throughout in anticipation of a migration to a new doc system. All DITA prefixes ( c_, r_, t_ ) indicating concept, reference, and task topic types respectively) were eliminated. All underscores ('_') were replaced with hyphens ('-'). Also, file names now more closely resemble the titles of the topics.
+* Updates to general Validation and Certification topics.
+* New introductory material including a presentation of measurement options, along with updates to prerequisites, implementation paths, and Audience Manager enablement.
+* Updates to Metrics and Metadata and Reporting and Analysis sections, reflecting the addition of Audio Analytics capabilities.
+-->
