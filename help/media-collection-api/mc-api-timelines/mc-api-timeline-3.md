@@ -3,7 +3,7 @@ title: 時間軸 3 - 章節
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
+source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
 
@@ -287,7 +287,7 @@ Ping 計時器開始。如果有前段廣告，第一個 Ping 事件則應在 1 
 
 **實施詳細資料**
 
-在 `adBreakComplete` 事件之後，使用 `play` 事件將播放器置於「正在播放」狀態。
+After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
 
 **範例要求內文**
 
