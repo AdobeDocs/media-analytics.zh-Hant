@@ -2,7 +2,7 @@
 title: 在 Adobe Analytics 測量音訊和視訊
 description: 'Adobe Analytics for Media (亦稱為 Media Analytics) 可提供客戶強大的內容、音訊和廣告媒體測量。 '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ---
@@ -50,7 +50,7 @@ Adobe Analytics for Media 可透過兩種方式來測量: 舊版的「里程碑�
 
 * **簡化實作程序 -** 透過播放器 API 對應變數更為輕鬆，並可透過 Adobe Debug 工具來驗證實作，確保所有必要的變數均已準確追蹤。
 * **Adobe Experience Cloud 自動整合** - 透過 Experience Cloud ID 與 Adobe Experience Cloud 自動整合、劃分和鎖定媒體受眾、以及根據使用者偏好提出媒體建議。
-* **透過同盟分析共用資訊 -** 利用我們業界領先的媒體共用功能，跨越所有媒體經銷商合作夥伴 (操作員、程式設計人員和經銷商) 全面評估資料。
+* **透過 Federated Analytics 共用資訊 -** 利用我們業界領先的媒體共用功能，跨越所有媒體經銷商合作夥伴 (操作員、程式設計人員和經銷商) 全面評估資料。
 * **跨所有平台的標準化解決方案 -** 啟用跨越所有媒體和平台一致的標準化變數，以進行更有效率的跨促銷活動、裝置和廠商的比較。
 * **追蹤下載內容 -** 追蹤下載並在裝置播放 (不論是否有連線) 的媒體內容 (視訊與音訊)。
 
@@ -63,7 +63,7 @@ Adobe Analytics for Media 可透過兩種方式來測量: 舊版的「里程碑�
 | **與 Adobe 產品的整合** | 包含配對和整合的個別工作階段 | 連結至完整 Adobe Experience Cloud 以及輕鬆進行交叉分析之已結合的 Experience Cloud ID |
 | **定價** | 針對每個伺服器呼叫進行追蹤和計費 | 透過媒體資料流 (單次) 進行透明化的追蹤 |
 | **實作與支援** | 與舊版延長整合，提供有限的支援，但不再進行更新 | 包含持續更新和改良之簡化設定 |
-| **合作夥伴共用** | 不適用 | 同盟分析與經認證的量度 |
+| **合作夥伴共用** | 不適用 | Federated Analytics 與經認證的量度 |
 | **進階追蹤** | 不適用 | 錯誤修復追蹤和同時觀看者 |
 
 ## 支援的裝置 {#devices-supported}
