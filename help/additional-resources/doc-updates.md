@@ -5,7 +5,7 @@ uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 
 ---
@@ -15,7 +15,7 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 
 ## 發行說明{#release-notes}
 
-* [發行說明](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+* [發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)
 
 <!--
 ## Documentation Updates{#documentation-updates}
