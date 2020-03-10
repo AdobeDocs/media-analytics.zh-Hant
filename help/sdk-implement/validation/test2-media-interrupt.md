@@ -2,19 +2,15 @@
 title: '測試 2: 媒體中斷'
 description: 本主題說明用於驗證的媒體中斷測試。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 測試 2: 媒體中斷{#test-media-interruption}
 
-本測試案例可用來驗證行動裝置中斷行為。這是認證申請的必要元素。
-
-## 認證申請表單
-
-**在這裡下載認證申請表單: ==&gt;**  [認證申請表單](cert_req_form.docx)。
+本測試案例可用來驗證行動裝置中斷行為。
 
 ## 測試程序
 
@@ -56,4 +52,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. **關閉媒體播放器**
 
    媒體播放器關閉後，不應觸發其他追蹤呼叫。
-
