@@ -1,20 +1,17 @@
 ---
+seo-title: 概述
 title: 概述
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 概述{#overview}
 
-媒體收集 API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過媒體收集 API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。媒體收集 API 具有與 Media SDK 相同的即時追蹤功能，以及一項額外功能:
-
-* **下載內容追蹤**
-
-   此功能可讓您在使用者裝置再度連線前，將事件資料儲存於本機，以在使用者離線時追蹤媒體。(如需詳細資訊，請參閱[追蹤下載內容](track-downloaded-content.md)。)
+媒體收集 API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過媒體收集 API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。
 
 媒體收集 API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示 Media SDK 文件某些方面也與媒體收集 API 有關。例如，這兩個解決方案都使用相同的[音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)，而且收集的音訊和視訊追蹤資料會產生相同的[報表和分析](/help/media-reports/media-reports-enable.md)。
 
@@ -34,13 +31,13 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ### API 呼叫 {#mc-api-calls}
 
-* **`sessions`-** 與伺服器建立工作階段，並傳回後續 `events` 呼叫使用的工作階段 ID。應用程式會在追蹤工作階段開始時呼叫一次。
+* **`sessions`-**建立與伺服器的作業，並傳回用於後續呼叫的作業`events`ID。 應用程式會在追蹤工作階段開始時呼叫一次。
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-** 傳送媒體追蹤資料。
+* **`events`-傳送&#x200B;**媒體追蹤資料。
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -49,28 +46,28 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 ### 要求內文 {#mc-api-request-body}
 
 ```
-{ 
-    "playerTime": { 
-        "playhead": {playhead position in seconds}, 
-        "ts": {timestamp in milliseconds} 
-    }, 
-    "eventType": {event-type}, 
-    "params": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "qoeData" : { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "customMetadata": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    } 
-} 
+{
+    "playerTime": {
+        "playhead": {playhead position in seconds},
+        "ts": {timestamp in milliseconds}
+    },
+    "eventType": {event-type},
+    "params": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "qoeData" : {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "customMetadata": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    }
+}
 ```
 
 * `playerTime` - 所有要求均強制使用。
@@ -99,4 +96,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
-
