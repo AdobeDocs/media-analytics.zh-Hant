@@ -2,21 +2,15 @@
 title: '測試 1: 標準播放'
 description: 本主題說明用於驗證的標準播放測試。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # 測試 1: 標準播放{#test-standard-playback}
 
-本測試案例可用來驗證一般播放和序列是否正常。這是認證申請的必要元素。
-
-## 認證申請表單
-
-**在這裡下載認證申請表單: ==&gt;**  [認證申請表單](cert_req_form.docx)。
-
-## 認證測試 1 概述
+本測試案例可用來驗證一般播放和序列是否正常。
 
 Media Analytics 實施包含兩種類型的追蹤呼叫:
 * 直接對 Adobe Analytics (AppMeasurement) 伺服器進行的呼叫 - 這些呼叫會在「媒體開始」和「廣告開始」事件中發生。
@@ -145,4 +139,3 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
 1. **檢視播放清單中的下一個媒體。**&#x200B;開始播放播放清單中的下一個媒體時，應傳送一組新的媒體開始呼叫。
 
 1. **切換媒體或資料流。**&#x200B;切換即時資料流時，不應傳送第一個資料流的 Media Analytics 心率完成呼叫。媒體開始呼叫和播放呼叫的開頭，應該要是新節目和資料流名稱，以及新節目的正確播放點和持續時間值。
-
