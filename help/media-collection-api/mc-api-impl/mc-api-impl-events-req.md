@@ -2,7 +2,7 @@
 title: 實作事件要求
 description: null
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
-translation-type: ht
+translation-type: tm+mt
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
