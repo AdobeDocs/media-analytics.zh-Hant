@@ -10,28 +10,28 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 具有已略過章節的 VOD 播放{#vod-playback-with-a-skipped-chapter}
 
-## 藍本 {#scenario}
+## 情境 {#scenario}
 
-在此案例中，使用者會在主要內容中略過某個章節。
+此情境中，使用者會在主要內容中略過某個章節。
 
-這是與[具有一個章節的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)相同的案例，除了此案例中的使用者要搜尋超出章節，因此略過它以著陸到主要內容。
+這是與[單一章節 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)相同的情境，只是此情境中的使用者要超出章節範圍搜尋，因此略過該章節，直接進入主要內容。
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註 |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於   [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)案例。 |
+| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於    [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)情境。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
-| 已播放章節的第一個時間格。 | `trackPlay` | 心率章節播放 | 當章節內容在主要內容之前播放時，我們想要在章節開始時啟動 Heartbeats。 |
+| 播放章節的第一個時間格。 | `trackPlay` | 心率章節播放 | 當章節內容在主要內容之前播放，我們想在章節開始時啟動心率。 |
 | 章節播放。 |  | 章節心率 |  |
-| 搜尋開始略過第一個章節。 | `trackEvent:trackSeekStart` |  | 搜尋期間沒有心率 |
+| 搜尋會開始略過第一個章節。 | `trackEvent:trackSeekStart` |  | 搜尋期間沒有心率 |
 | 搜尋已完成。 | `trackEvent:trackSeekComplete` |  | 心率會在此之後繼續。 |
-| 應用程式發現使用者已搜尋超出正常章節界限。 | `trackEvent:trackChapterSkip` |  |  |
+| 應用程式發現使用者的搜尋已超出正常章節範圍。 | `trackEvent:trackChapterSkip` |  |  |
 | 內容播放。 |  | 內容心率 |  |
-| 內容已完成播放。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於 [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)案例。 |
+| 內容已完成播放。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於 [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)情境。 |
 | 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未持續觀看到媒體完成，仍必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 
-除了沒有章節完成網路呼叫以外，章節播放期間使用的參數完全等同於 [具有一個章節的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)案例中的參數。
+除了沒有章節完成網路呼叫以外，章節播放期間使用的參數完全等同於 [具有一個章節的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md)情境中的參數。
 
 ## 程式碼範例 {#sample-code}
 
@@ -39,7 +39,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Android
 
-如要在 Android 中查看此案例，請設定下列程式碼:
+如要在 Android 中查看此情境，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -125,7 +125,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS 應用程式
 
-如要在 iOS 中查看此案例，請設定下列程式碼:
+如要在 iOS 中查看此情境，請設定下列程式碼：
 
 ```
 // Set up mediaObject 
@@ -202,7 +202,7 @@ id chapterInfo =
 
 ### JavaScript
 
-若要在 JavaScript 中檢視此案例，請輸入下列文字:
+若要在 JavaScript 中檢視此情境，請輸入下列文字：
 
 ```js
 // Set up mediaObject 
