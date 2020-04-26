@@ -10,11 +10,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 用於多個工作階段的 VOD 一個追蹤器{#vod-one-tracker-for-multiple-sessions}
 
-## 藍本 {#scenario}
+## 情境 {#scenario}
 
-在此案例中，`MediaHeartbeat` 例項用來循序建立兩個不同的工作階段。
+此情境中，`MediaHeartbeat` 例項用來循序建立兩個不同的工作階段。
 
-此案例等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。
+此情境等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。
 
 ## 參數 {#parameters}
 
@@ -30,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Android {#android}
 
-若要為兩個媒體播放器建立兩個 `MediaHeartbeat` 例項，請設定下列程式碼:
+若要為兩個媒體播放器建立兩個 `MediaHeartbeat` 例項，請設定下列程式碼：
 
 ```java
 public class MediaAnalyticsProvider implements MediaHeartbeatDelegate { 
@@ -95,7 +95,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-如要在 Android 中使用 `MediaAnalyticsProvider` (因此是 `MediaHeartbeat`) 例項顯示第一個工作階段，請設定下列程式碼:
+如要在 Android 中使用 `MediaAnalyticsProvider` (因此是 `MediaHeartbeat`) 例項顯示第一個工作階段，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -139,7 +139,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-若要顯示第二個工作階段，您可以使用與第一個工作階段相同的 `MediaAnalyticsProvider` (`MediaHeartbeat`) 例項，但對於新工作階段:
+若要顯示第二個工作階段，您可以使用與第一個工作階段相同的 `MediaAnalyticsProvider` (`MediaHeartbeat`) 例項，但對於新工作階段：
 
 ```java
 // Set up mediaObject 
@@ -185,7 +185,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS {#ios}
 
-若要為兩個媒體播放器建立兩個 `MediaHeartbeat` 例項，請輸入下列內容:
+若要為兩個媒體播放器建立兩個 `MediaHeartbeat` 例項，請輸入下列內容：
 
 ```
 @interface MediaAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -253,7 +253,7 @@ _mediaHeartbeat.trackSessionEnd();
 } 
 ```
 
-如要在 iOS 中使用 `MediaAnalyticsProvider` (因此，也就是 `MediaHeartbeat`) 例項來顯示第一個工作階段，請設定下列程式碼:
+如要在 iOS 中使用 `MediaAnalyticsProvider` (因此，也就是 `MediaHeartbeat`) 例項來顯示第一個工作階段，請設定下列程式碼：
 
 ```
 // Set up mediaObject 
@@ -291,7 +291,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 ....... 
 ```
 
-若要顯示第二個工作階段，您可以使用與第一個工作階段相同的 `MediaAnalyticsProvider` (`MediaHeartbeat`) 例項，但對於新工作階段:
+若要顯示第二個工作階段，您可以使用與第一個工作階段相同的 `MediaAnalyticsProvider` (`MediaHeartbeat`) 例項，但對於新工作階段：
 
 ```
 // Set up mediaObject 
