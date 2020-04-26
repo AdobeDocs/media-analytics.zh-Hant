@@ -10,13 +10,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 多個 VOD 追蹤器並行{#vod-multiple-trackers-in-parallel}
 
-## 藍本 {#scenario}
+## 情境 {#scenario}
 
-在此案例中，有兩個工作階段並行執行兩個不同的媒體，並使用兩個不同的 `MediaHeartbeat` 例項。
+此情境中，有兩個工作階段並行執行兩個不同的媒體，並使用兩個不同的 `MediaHeartbeat` 例項。
 
-除了有兩個工作階段並行執行兩個不同的媒體以外，此案例等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。每一個工作階段會使用不同的 `MediaHeartbeat` 例項。
+除了有兩個工作階段並行執行兩個不同的媒體以外，此情境等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。每一個工作階段會使用不同的 `MediaHeartbeat` 例項。
 
-除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例相同。
+除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境相同。
 
 ## 參數 {#parameters}
 
@@ -108,7 +108,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-`MediaAnalyticsProvider` 和 `MediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。Charles 除錯工具或除錯記錄中的兩個工作階段，可透過使用工作階段 ID 值來加以識別。如要在 Android 上顯示此情境，請設定下列程式碼:
+`MediaAnalyticsProvider` 和 `MediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。Charles 除錯工具或除錯記錄中的兩個工作階段，可透過使用工作階段 ID 值來加以識別。如要在 Android 上顯示此情境，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -274,7 +274,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 `MediaAnalyticsProvider` 和 `ADBMediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。Charles 除錯工具或除錯記錄中的兩個工作階段，可透過使用工作階段 ID 值來加以識別。
 
-如要在 iOS 上顯示此情境，請設定下列程式碼:
+如要在 iOS 上顯示此情境，請設定下列程式碼：
 
 ```
 // Set up mediaObject 
