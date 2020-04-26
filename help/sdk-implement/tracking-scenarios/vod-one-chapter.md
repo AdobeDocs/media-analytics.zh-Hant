@@ -10,28 +10,28 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 具有一個章節的 VOD 播放{#vod-playback-with-one-chapter}
 
-## 藍本 {#scenario}
+## 情境 {#scenario}
 
-在此案例中，會將一部分的 VOD 內容標示為章節。
+此情境中，部分 VOD 內容會標示為章節。
 
-除非另有指定，否則此案例中的網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。網路呼叫會同時發生，但裝載不同。
+除非另有指定，否則此情境中的網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境中的呼叫相同。網路呼叫會同時發生，但裝載不同。
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 我們尚未告知 Measurement Library 有前段廣告，因此這些網路呼叫仍完全等同於單一 VoD。 |
+| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 我們尚未通知 Measurement Library 有前段廣告，因此這些網路呼叫仍完全等同於單一 VoD。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
-| 章節播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
+| 章節播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放，Heartbeats 會在章節開始時啟動。 |
 | 章節播放。 |  | 章節心率 |  |
-| 章節已完成。 | `trackEvent:trackChapterComplete` | 心率章節完成 | 已到達章節的結尾。 |
-| 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 章節已完成。 | `trackEvent:trackChapterComplete` | 心率章節完成 | 此時已到達章節的結尾。 |
+| 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。即使使用者未持續觀看到媒體完成，仍必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 
 當章節播放開始時，會傳送 `Heartbeat Chapter Start` 呼叫。如果章節的開頭不符合 10 秒的計時器，`Heartbeat Chapter Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。
 
-發生此情況時，會以相同的間隔傳出 `Content Heartbeat` 呼叫。您可以透過檢查事件類型和資產類型來區分這兩者:
+發生此情況時，會以相同的間隔傳出 `Content Heartbeat` 呼叫。您可以透過檢查事件類型和資產類型來區分這兩者：
 
 ### 心率章節開始
 
@@ -42,15 +42,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:chapter_*` |  | 章節資料特定的資料流資訊。 |
 | `s:meta:*` |  | 具有特定上下文資料的章節。 |
 
-## 程式碼範例、中間的章節{#sample-code-chapter-in-the-middle}
+## 程式碼範例、中間的章節 {#sample-code-chapter-in-the-middle}
 
-在此案例中，一部分的 VOD 內容為章節。
+此情境中，部分 VOD 內容為章節。
 
 ![](assets/chapter-regular-playback.png)
 
 ### Android
 
-如要在 Android 中查看此案例，請設定下列程式碼:
+如要在 Android 中查看此情境，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -116,7 +116,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS 應用程式
 
-如要在 iOS 中查看此案例，請設定下列程式碼:
+如要在 iOS 中查看此情境，請設定下列程式碼：
 
 ```
 when the user clicks Play 
@@ -180,7 +180,7 @@ id chapterInfo =
 
 ### JavaScript
 
-若要在 JavaScript 中檢視此案例，請輸入下列文字:
+若要在 JavaScript 中檢視此情境，請輸入下列文字：
 
 ```js
 // Set up mediaObject 
@@ -254,15 +254,15 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## 程式碼範例、開頭的章節{#sample-code-chapter-at-the-beginning}
+## 程式碼範例、開頭的章節 {#sample-code-chapter-at-the-beginning}
 
-在此案例中，VOD 內容會播放，而在播放的開頭具有一個章節。
+此情境中，VOD 內容會播放，而在播放的開頭具有一個章節。
 
 ![](assets/pre-chapter-regular.png)
 
 ### Android
 
-如要在 Android 中查看此案例，請設定下列程式碼:
+如要在 Android 中查看此情境，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -329,7 +329,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS 應用程式
 
-如要在 iOS 中查看此案例，請設定下列程式碼:
+如要在 iOS 中查看此情境，請設定下列程式碼：
 
 ```
 when the user clicks Play 
@@ -393,7 +393,7 @@ id chapterInfo =
 
 ### JavaScript
 
-若要在 JavaScript 中檢視此案例，請輸入下列文字:
+若要在 JavaScript 中檢視此情境，請輸入下列文字：
 
 ```js
 // Set up mediaObject 
