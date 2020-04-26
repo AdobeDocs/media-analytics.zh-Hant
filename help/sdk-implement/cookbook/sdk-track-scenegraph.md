@@ -12,44 +12,44 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 簡介 {#introduction}
 
-Roku 推出一款用於開發應用程式的新程式設計架構: SceneGraph XML 程式設計架構。這個新架構包含兩個新的重要概念:
+Roku 已推出開發應用程式的新程式設計架構：SceneGraph XML 程式設計架構。此新架構有兩個新的重要概念：
 
-* SceneGraph 轉譯應用程式螢幕畫面
-* SceneGraph 螢幕畫面的 XML 設定
+* SceneGraph 演算應用程式畫面
+* SceneGraph 畫面的 XML 設定
 
-Adobe Mobile SDK for Roku 是以 BrightScript 撰寫。SDK 使用許多不適用於在 SceneGraph 上執行的應用程式 (例如執行緒) 的元件。因此，打算使用 SceneGraph 架構的 Roku 應用程式開發人員無法呼叫 Adobe Mobile SDK API (後者類似於舊版 BrightScript 應用程式中提供的 API)。
+Adobe Mobile SDK for Roku 是以 BrightScript 編寫。此 SDK 有許多元件不適用於 SceneGraph 上執行的應用程式 (如執行緒)。因此，想使用 SceneGraph 架構的 Roku 應用程式開發人員，無法呼叫 Adobe Mobile SDK API (後者類似於舊版 BrightScript 應用程式中的 API)。
 
-## 架構{#architecture}
+## 架構 {#architecture}
 
 為了將 SceneGraph 支援加入 AdobeMobile SDK，Adobe 已新增一個新的 API，該 API 在 AdobeMobile SDK 和 `adbmobileTask` 之間建立連接器橋接器。後者是用於 SDK 之 API 執行的 SceneGraph 節點。(在本文件其他章節中詳細說明 `adbmobileTask` 的用法。)
 
-連接器橋接器的執行方式如下所示:
+連接器橋接器專為執行下列功能所設計：
 
-* 橋接器傳回 AdobeMobile SDK 的 SceneGraph 相容例項。SceneGraph 相容 SDK 具有舊版 SDK 開放的所有 API。
-* 您在 SceneGraph 中使用 AdobeMobile SDK API 的方式與使用舊版 API 的方式非常類似。
-* 橋接器也開放針對傳回某些資料之 API 接聽回呼的機制。
+* 橋接器會傳回 Adobe Mobile SDK 與 SceneGraph 相容的執行個體。與 SceneGraph 相容的 SDK 包含舊版 SDK 揭露的所有 API。
+* 您在 SceneGraph 中使用 Adobe Mobile SDK API 的方式，與使用舊版 API 的方式非常類似。
+* 橋接器也會揭露機制，監聽傳回部分資料的 API 回呼。
 
 ![](assets/SceneGraph_arch.png)
 
 ## 元件 {#components}
 
-**SceneGraph 應用程式:**
+**SceneGraph 應用程式：**
 
 * 透過 SceneGraph 連接器橋接器 API 使用 `AdobeMobileLibrary` API。
 * 針對預期的輸出資料變數在 `adbmobileTask` 上註冊回應回呼。
 
-**AdobeMobileLibrary:**
+**AdobeMobileLibrary：**
 
-* 公開一組公用 API (舊版)，包括連接器橋接器 API。
-* 傳回包裝所有舊版公用 API 的 SceneGraph 連接器例項。
+* 揭露一組公用 API (舊版)，包括連接器橋接器 API。
+* 傳回納入所有舊版公用 API 的 SceneGraph 連接器執行個體。
 * 與 `adbmobileTask` SceneGraph 節點通訊以執行 API。
 
-**adbmobileTask 節點:**
+**adbmobileTask 節點：**
 
 * 在背景執行緒上執行 `AdobeMobileLibrary` API 的 SceneGraph 任務節點。
 * 作為委派以將資料傳回應用程式場景。
 
-## 公用 SceneGraph API{#public-scenegraph-apis}
+## 公用 SceneGraph API {#public-scenegraph-apis}
 
 ### ADBMobileConnector
 
@@ -91,16 +91,16 @@ Adobe Mobile SDK for Roku 是以 BrightScript 撰寫。SDK 使用許多不適用
 |  | 如需更多資訊，請參閱舊版 SDK 的「Audience Manager」一節。 |  |
 |  |  |  |
 | **MediaHeartbeat** |  |  |
-|  | `mediaTrackLoad` | SceneGraph API 可為 MediaHeartbeat 追蹤載入視訊內容。 |
-|  | mediaTrackStart | SceneGraph API 可使用 MediaHeartbeat 啟動視訊追蹤工作階段。 |
-|  | `mediaTrackUnload` | SceneGraph API 可從 MediaHeartbeat 追蹤卸載視訊內容。 |
-|  | `mediaTrackPlay` | SceneGraph API 可追蹤視訊內容的播放。 |
-|  | mediaTrackPause | SceneGraph API 可追蹤暫停的視訊內容。 |
-|  | `mediaTrackComplete` | SceneGraph API 可完成視訊內容的追蹤播放。 |
-|  | `mediaTrackError` | SceneGraph API 可追蹤播放錯誤。 |
-|  | mediaTrackEvent | SceneGraph API 可在追蹤期間追蹤播放事件。例如: 廣告、章節。 |
-|  | `mediaUpdatePlayhead` | SceneGraph API 可在視訊追蹤期間將播放點更新傳送至 MediaHeartbeat。 |
-|  | `mediaUpdateQoS` | SceneGraph API 可在視訊追蹤期間將 QoS 更新傳送至 MediaHeartbeat。 |
+|  | `mediaTrackLoad` | 載入影片內容以追蹤 MediaHeartbeat 的 SceneGraph API。 |
+|  | mediaTrackStart | 使用 MediaHeartbeat 開始影片追蹤工作階段的 SceneGraph API。 |
+|  | `mediaTrackUnload` | SceneGraph API 可從 MediaHeartbeat 追蹤卸載影片內容。 |
+|  | `mediaTrackPlay` | 追蹤播放影片內容的 SceneGraph API。 |
+|  | mediaTrackPause | 追蹤暫停影片內容的 SceneGraph API。 |
+|  | `mediaTrackComplete` | 追蹤影片內容播放完成的 SceneGraph API。 |
+|  | `mediaTrackError` | 追蹤播放錯誤的 SceneGraph API。 |
+|  | mediaTrackEvent | 在追蹤期間追蹤播放事件的 SceneGraph API。例如「廣告」、「章節」。 |
+|  | `mediaUpdatePlayhead` | SceneGraph API 可在影片追蹤期間將播放點更新傳送至 MediaHeartbeat。 |
+|  | `mediaUpdateQoS` | SceneGraph API 可在影片追蹤期間將 QoS 更新傳送至 MediaHeartbeat。 |
 |  | 如需更多資訊，請參閱舊版 SDK 的「MediaHeartbeat」一節。 |  |
 
 ### SceneGraphConstants
@@ -122,7 +122,7 @@ Adobe Mobile SDK for Roku 是以 BrightScript 撰寫。SDK 使用許多不適用
 <table>
 <thead>
 <tr>
-<td> 欄位 </td><td> 類型 </td><td> 預設值 </td><td> 使用狀況 </td>
+<td> 欄位 </td><td> 類型 </td><td> 預設 </td><td> 使用狀況 </td>
 </tr>
 </thead>
 <tbody>
@@ -130,13 +130,13 @@ Adobe Mobile SDK for Roku 是以 BrightScript 撰寫。SDK 使用許多不適用
 <td> adbmobileApiCall </td>
 <td> assocarray </td>
 <td> Invalid </td>
-<td> 請勿修改此欄位或讓應用程式使用此欄位。此欄位由 ADBMobile SceneGraphConnector 用於透過 SceneGraph 節點路由 API 呼叫並擷取回應。因此，此索引鍵/欄位已針對 SceneGraph 相容性保留供 AdobeMobileSDK 使用。<b>重要:</b> 此欄位的任何修改都可能導致 AdobeMobileSDK 無法正常運作。</td>
+<td> 請勿修改此欄位或讓應用程式使用此欄位。此欄位由 ADBMobile SceneGraphConnector 用於透過 SceneGraph 節點路由 API 呼叫並擷取回應。因此，此索引鍵/欄位已針對 SceneGraph 相容性保留供 AdobeMobileSDK 使用。<b>重要：</b>此欄位的任何修改都可能導致 AdobeMobileSDK 無法正常運作。</td>
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> Invalid </td>
-<td> 唯讀: 在 AdobeMobileSDK 上執行的所有 API 將在此欄位上傳回回應。註冊回呼以接聽此欄位的更新，藉此接收回應物件。以下是回應物件的格式:  
+<td> 唯讀：在 AdobeMobileSDK 上執行的所有 API 將在此欄位上傳回回應。登錄回呼以監聽此欄位的更新，以接收回應物件。回應物件的格式如下：  
 <codeblock>
 response = {
   "apiName" : &lt;SceneGraphConstants.
@@ -144,7 +144,7 @@ response = {
   "returnValue : &lt;API_RESPONSE&gt; 
 } 
 </codeblock>
-此回應物件的例項將在 AdobeMobileSDK 上針對任何 API 呼叫傳送，預計該 API 呼叫會根據 API 參考指南傳回值。例如，visitorMarketingCloudID() 的 API 呼叫將傳回以下回應物件: 
+此回應物件的例項將在 AdobeMobileSDK 上針對任何 API 呼叫傳送，預計該 API 呼叫會根據 API 參考指南傳回值。例如，visitorMarketingCloudID() 的 API 呼叫將傳回以下回應物件： 
 <codeblock>
 response = {
   "apiName" : m.
@@ -153,7 +153,7 @@ response = {
   "returnValue : "07050x25671x33760x72644x14"  
 } 
 </codeblock>
-或者，回應資料也可能無效: 
+或者，回應資料也可能無效： 
 <codeblock>
 response = {  
   "apiName" : m.
@@ -171,15 +171,15 @@ response = {
 
 #### `getADBMobileConnectorInstance`
 
-API 簽章: `ADBMobile().getADBMobileConnectorInstance()`\
-輸入: `adbmobileTask`
-傳回類型: `ADBMobileConnector`
+API 簽章：`ADBMobile().getADBMobileConnectorInstance()`\
+輸入：`adbmobileTask`
+傳回類型：`ADBMobileConnector`
 
 #### `sgConstants`
 
-API 簽章: `ADBMobile().sgConstants()`
-輸入: 無\
-傳回類型: `SceneGraphConstants`
+API 簽章：`ADBMobile().sgConstants()`
+輸入：無\
+傳回類型：`SceneGraphConstants`
 
 >[!NOTE]
 >如需詳細資料，請參閱 `ADBMobileConnector` API 參考資料。
@@ -188,13 +188,13 @@ API 簽章: `ADBMobile().sgConstants()`
 
 |  功能  | 常數名稱 | 說明 |
 |---|---|---|
-| 版本設定 | `version` | 擷取 AdobeMobileLibrary 版本資訊的常數 |
+| 版本設定 | `version` | 用於擷取 AdobeMobileLibrary 版本資訊的常數 |
 | 隱私權/選擇退出 | `PRIVACY_STATUS_OPT_IN` | 隱私權狀態選擇加入的常數 |
 |  | `PRIVACY_STATUS_OPT_OUT` | 隱私權狀態選擇退出的常數 |
-| MediaHeartbeat 常數 | 請參閱此頁面的常數: <br/><br/>[媒體心率方法](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md)。 | 將這些常數與 MediaHeartbeat API 搭配使用 |
-| 標準中繼資料 | 請參閱此頁面的常數: <br/><br/>[標準中繼資料參數](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)。 | 使用這些常數以附加 MediaHeartbeat API 中的標準視訊/廣告中繼資料 |
+| MediaHeartbeat 常數 | 請參閱此頁面的常數：<br/><br/>[媒體心率方法](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md)。 | 將這些常數與 MediaHeartbeat API 搭配使用 |
+| 標準中繼資料 | 請參閱此頁面的常數：<br/><br/>[標準中繼資料參數](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)。 | 使用這些常數附加 MediaHeartbeat API 中的標準影片/廣告中繼資料 |
 
-傳統 AdobeMobileLibrary 上全域定義之公用程式 `MediaHeartbeat` API 的存取方式&#x200B;*如同*&#x200B;在 SceneGraph 環境中存取一樣，因為這些 API 未使用任何在 SceneGraph 節點中無法使用的 Brightscript 元件。如需關於這些方法的更多資訊，請參閱下表:
+傳統 AdobeMobileLibrary 上全域定義之公用程式 `MediaHeartbeat` API 的存取方式&#x200B;*如同*&#x200B;在 SceneGraph 環境中存取一樣，因為這些 API 未使用任何在 SceneGraph 節點中無法使用的 Brightscript 元件。如需這些方法的詳細資訊，請參閱下表：
 
 ### 適用於 MediaHeartbeat 的全域方法
 
@@ -206,7 +206,7 @@ API 簽章: `ADBMobile().sgConstants()`
 | `adb_media_init_adbreakinfo` | 此方法會傳回初始化的 AdBreak 資訊物件。`Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | 此方法會傳回初始化的 QoS 資訊物件。`Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## 實施 {#implementation}
+## 實作 {#implementation}
 
 1. **下載 Roku 程式庫 -** 下載[最新 Roku 程式庫](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)。
 
