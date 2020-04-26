@@ -10,22 +10,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 具有循序追蹤的即時主要內容{#live-main-content-with-sequential-tracking}
 
-## 藍本 {#scenario}
+## 情境 {#scenario}
 
-在此案例中，有一個沒有廣告的即時資產，在加入即時資料流後播放了 40 秒。
+此情境中，一個沒有廣告的即時資產在加入即時資料流後播放了 40 秒。
 
-這是與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例相同的案例，只是一部分內容被刪除，並且搜尋是從主要內容中的某個點到另一個點間完成。
+此情境與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境相同，只是一部分內容遭到擦除，而且從主要內容中的某個時間點到另一個時間點期間，已完成搜尋作業。
 
 | 觸發 | 心率方法 |  網路呼叫 |  附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | trackSessionStart | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 內容播放的第一個時間格。 | trackPlay | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
-| 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 工作階段 1 結束(第 1 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成表示已到達第 1 集的工作階段 1，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
-| 第 2 集開始(工作階段 2 開始) | trackSessionStart | Analytics 內容開始、心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
-| 媒體的第一個時間格 | trackPlay | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，只要播放繼續，便會每 10 秒傳送心率。 |
+| 使用者點按[!UICONTROL 播放] | trackSessionStart | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 播放內容的第一個時間格。 | trackPlay | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
+| 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 工作階段 1 結束 (第 1 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成是指內容已播放到第 1 集的工作階段 1，並已完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
+| 第 2 集開始 (工作階段 2 開始) | trackSessionStart | Analytics 內容開始、心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
+| 媒體的第一個時間格 | trackPlay | 心率內容播放 | 此方法會觸發計時器，從此時間點開始，只要繼續播放，便會每 10 秒傳送心率。 |
 | 內容播放 |  | 內容心率 |  |
-| 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成表示已到達第 2 集的工作階段 2，並完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
+| 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成是指內容已播放到第 2 集的工作階段 2，並已完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
 
 ## 參數 {#parameters}
 
@@ -33,18 +33,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 參數 | 值 | 附註 |
 |---|---|---|
-| `s:sc:rsid` | &lt;Analytics 報表套裝 ID&gt; |  |
-| `s:sc:tracking_serve` | &lt;您的 Analytics 追蹤伺服器 URL&gt; |  |
+| `s:sc:rsid` | &lt;Analytics 報表套裝 ID> |  |
+| `s:sc:tracking_serve` | &lt;您的 Analytics 追蹤伺服器 URL> |  |
 | `s:user:mid` | `s:user:mid` | 應該符合 Adobe Analytics 內容開始呼叫上的中間值 |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;您的媒體名稱&gt; |  |
+| `s:asset:media_id` | &lt;您的媒體名稱> |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *可選* | 媒體上設定的自訂中繼資料 |
 
 ## 心率內容播放 {#heartbeat-content-play}
 
-這應該看起來大多與心率內容開始呼叫完全相同，但主要的差異在於「s:event:type」參數。所有參數應該仍在此就定位。
+這看起來應該與「心率內容開始」呼叫幾乎完全相同，但主要的差異在於「s:event:type」參數。所有參數應該依然不受影響。
 
 | 參數 | 值 | 附註 |
 |---|---|---|
@@ -53,18 +53,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 內容心率 {#content-heartbeats}
 
-在媒體播放期間，對於主要內容，計時器將每隔 10 秒傳送一或多個心率；對於廣告，則為每隔一秒。這些心率將包含關於播放、廣告、緩衝和一些其他項目的資訊。每個心率的確切內容不在本文件的範圍，要驗證的重要項目為，當播放繼續時會一致地觸發心率。
+在媒體播放期間，對於主要內容，計時器將每隔 10 秒傳送一或多個心率；對於廣告，則為每隔一秒。這些心率將包含播放、廣告、緩衝和其他部分項目的相關資訊。每個心率的確切內容不在本文件的討論範圍，這裡要確認的重點在於，繼續播放能否會一致觸發心率。
 
-在內容心率中，尋找一些特定項目:
+在內容心率中，尋找一些特定項目：
 
 | 參數 | 值 | 附註 |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;playhead position&gt; 例如 50、60、70 | 這應該反映播放點目前的位置。 |
+| `l:event:playhead` | &lt;playhead position> 例如 50、60、70 | 這應該反映播放點目前的位置。 |
 
 ## 心率內容完成 {#heartbeat-content-complete}
 
-播放任何集完成時 (播放點跨過集界限)，會傳送心率內容完成呼叫。這類似其他 Heartbeat 呼叫，但將包含某些特定項目:
+任何集數播放完成時 (播放點越過各集之間的界限)，就會傳送「心率內容完成」呼叫。這類似其他 Heartbeat 呼叫，但將包含某些特定項目：
 
 | 參數 | 值 | 附註 |
 |---|---|---|
@@ -77,7 +77,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Android
 
-以下是預期的 API 呼叫順序:
+以下是預期的 API 呼叫順序：
 
 ```java
 // Set up mediaObject 
@@ -164,7 +164,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS 應用程式
 
-以下是預期的 API 呼叫順序:
+以下是預期的 API 呼叫順序：
 
 ```
 // Set up mediaObject 
@@ -241,7 +241,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 
 ### JavaScript
 
-以下是預期的 API 呼叫順序:
+以下是預期的 API 呼叫順序：
 
 ```js
 // Set up mediaObject 
