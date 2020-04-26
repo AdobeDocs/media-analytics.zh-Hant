@@ -10,16 +10,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 具有緩衝的 VOD 播放{#vod-playback-with-buffering}
 
-## 藍本 {#scenario}
+## 情境 {#scenario}
 
-在此案例中，播放 VOD 內容時發生一些緩衝。
+此情境中，播放 VOD 內容時發生一些緩衝。
 
-除非另有指定，否則此案例中的網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。
+除非另有指定，否則此情境中的網路呼叫與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境中的呼叫相同。
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 這可以是使用者點按&#x200B;**[!UICONTROL 播放]或自動播放事件。** |
-| 播放視訊的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要播放繼續，便會每 10 秒傳送心率。 |
+| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 可能是使用者點按&#x200B;**[!UICONTROL 播放]**&#x200B;或自動播放事件。 |
+| 播放視訊的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要繼續播放，便會每 10 秒傳送心率。 |
 | 內容播放。 |  | 內容心率 |  |
 | 緩衝開始。 | `trackEvent:BufferStart` | 心率緩衝 |  |
 | 內容已緩衝。 |  | 內容心率 |  |
@@ -38,13 +38,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 程式碼範例 {#sample-code}
 
-在此案例中，播放 VOD 內容時會發生緩衝。
+此情境中，播放 VOD 內容時會發生緩衝。
 
 ![](assets/buffer-regular-content.png)
 
 ### Android
 
-如要在 Android 中查看此案例，請設定下列程式碼:
+如要在 Android 中查看此情境，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -105,7 +105,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS 應用程式
 
-如要在 iOS 中查看此案例，請設定下列程式碼:
+如要在 iOS 中查看此情境，請設定下列程式碼：
 
 ```
 // Set up mediaObject 
@@ -161,7 +161,7 @@ NSMutableDictionary *videoContextData = [[NSMutableDictionary alloc] init];
 
 ### JavaScript
 
-若要檢視此案例，請輸入下列文字:
+若要檢視此情境，請輸入下列文字：
 
 ```js
 // Set up mediaObject 
