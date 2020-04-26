@@ -27,11 +27,11 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 自動播放或按下「播放」按鈕，開始載入視訊。 | 0 | 0 | `/api/v1/sessions` |
+| 按下「自動播放」或「播放」按鈕後，影片開始載入。 | 0 | 0 | `/api/v1/sessions` |
 
-**實施詳細資料**
+**實作詳細資料**
 
-這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;視訊。<br/><br/>它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。播放器狀態尚未進入「正在播放」，而是「正在開始」。<br/><br/>要求內容的 `params` 對映必須包含[強制工作階段參數](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。<br/><br/>在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
+這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。<br/><br/>這會傳回工作階段 ID (`{sid}`) 給用於識別工作階段中所有後續追蹤呼叫的用戶端。播放器狀態尚未進入「正在播放」，而是「正在開始」。要求內容的 <br/><br/>[ 對映必須包含](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)強制工作階段參數`params`。<br/><br/>這個呼叫會在後端產生 Adobe Analytics 起始呼叫。
 
 **範例要求內文**
 
@@ -61,9 +61,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 應用程式開始 Ping 事件計時器 | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| 應用程式啟動 Ping 事件計時器 | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
 
-**實施詳細資料**
+**實作詳細資料**
 
 啟動應用程式的 Ping 計時器。如果有前段廣告，第一個 Ping 事件則應在 1 秒引發；如果沒有，則為 10 秒。
 
@@ -73,7 +73,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告插播開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 廣告追蹤只能在廣告插播中進行。
 
@@ -99,7 +99,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告 #1 開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 開始追蹤第一個前段廣告，其持續時間為 15 秒。包括該 `adStart` 的中繼資料。
 
@@ -141,7 +141,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 在廣告內時，每隔 1 秒 Ping 後端一次。
 
@@ -163,7 +163,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 2 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 在廣告內時，每隔 1 秒 Ping 後端一次。
 
@@ -186,7 +186,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 3 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 在廣告內時，每隔 1 秒 Ping 後端一次。
 
@@ -213,7 +213,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告 #1 完成 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 追蹤第一個前段廣告的結尾。
 
@@ -235,7 +235,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告 #2 開始 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 追蹤第二個前段廣告開始，其持續時間為 7 秒。
 
@@ -270,7 +270,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 20 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 每隔 1 秒 Ping 後端一次。
 
@@ -292,7 +292,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告 #2 完成 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 追蹤第二個前段廣告的結尾。
 
@@ -314,9 +314,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告插播完成 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
-廣告插播結束。在整個廣告插播期間，播放狀態均保持「正在播放」。
+廣告插播結束。整個廣告插播期間，播放狀態一直保持「正在播放」。
 
 **範例要求內文**
 
@@ -336,7 +336,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤播放事件 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 在 `adBreakComplete` 事件之後，使用 `play` 事件將播放器置於「正在播放」狀態。
 
@@ -358,7 +358,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 30 | 8 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 每隔 10 秒 Ping 後端一次。
 
@@ -380,7 +380,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 發生緩衝開始事件 | 33 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 追蹤播放器到「緩衝處理」狀態的轉變。
 
@@ -399,9 +399,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 緩衝結束後，應用程式追蹤內容的繼續播放 | 36 | 11 | `/api/v1/sessions/{sid}/events` |
+| 緩衝結束，應用程式追蹤內容繼續播放作業 | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 緩衝在 3 秒後結束，因此請讓播放器回復「正在播放」狀態。您必須傳送另一個追蹤播放事件來結束緩衝狀態。**`bufferStart`之後的`play`呼叫意味著傳送「bufferEnd」呼叫到後端**，因此不需要 `bufferEnd` 事件。
 
@@ -423,7 +423,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 40 | 15 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 每隔 10 秒 Ping 後端一次。
 
@@ -444,9 +444,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤中段廣告插播開始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
-持續 8 秒的中段廣告: 傳送 `adBreakStart`。
+持續 8 秒的中段廣告：傳送 `adBreakStart`。
 
 **範例要求內文**
 
@@ -471,7 +471,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤中段廣告 #3 開始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 追蹤中段廣告。
 
@@ -506,7 +506,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 50 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 每隔 10 秒 Ping 後端一次。
 
@@ -527,7 +527,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤中段廣告 #1 完成 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 中段廣告完成。
 
@@ -549,7 +549,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 追蹤中段廣告插播完成 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 廣告插播完成。
 
@@ -571,7 +571,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 60 | 27 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 每隔 10 秒 Ping 後端一次。
 
@@ -593,7 +593,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 使用者按下「暫停」 | 64 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 使用者的動作將播放狀態改變為「已暫停」。
 
@@ -615,9 +615,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 70 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
-每隔 10 秒 Ping 後端一次。播放器依然處於「正在緩衝」狀態；使用者在內容中停滯 20 秒。怒氣沖沖...
+每隔 10 秒 Ping 後端一次。播放器仍處於「正在緩衝」狀態；使用者卡在內容的 20 秒處。非常憤怒...
 
 **範例要求內文**
 
@@ -634,9 +634,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 使用者按下「播放」繼續播放主要內容 | 74 | 31 | `/api/v1/sessions/{sid}/events` |
+| 使用者按下「播放」以繼續播放主要內容 | 74 | 31 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 將播放狀態改變為「正在播放」。**`pauseStart`之後的`play`呼叫意味著傳送「resume」呼叫到後端**，因此不需要 `resume` 事件。
 
@@ -657,7 +657,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 80 | 37 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 每隔 10 秒 Ping 後端一次。
 
@@ -676,9 +676,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 使用者完成觀賞內容到結束為止。 | 88 | 45 | `/api/v1/sessions/{sid}/events` |
+| 使用者觀看內容到結束為止。 | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
-**實施詳細資料**
+**實作詳細資料**
 
 傳送 `sessionComplete` 到後端，指出使用者已完成所有內容的觀賞。
 
@@ -695,5 +695,5 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!NOTE]
 >
->**沒有搜尋事件? -** 媒體收集 API 對於 `seekStart` 或 `seekComplete` 事件的支援並不明確。這是因為有些播放器會在使用者拖曳時產生大量的此類事件，因此只要數百位使用者就能輕易讓後端服務的網路頻寬遇到瓶頸。Adobe 根據裝置時間戳記來運算心率持續時間，而非依賴播放點位置，藉此解決搜尋事件明確支援的問題。
+>**沒有搜尋事件？-** 媒體收集 API 對於 `seekStart` 或 `seekComplete` 事件的支援並不明確。這是因為特定播放器會在使用者拖曳時，產生大量這類事件，若有數百位使用者這麼做，即可輕易造成後端服務的網路頻寬產生瓶頸。Adobe 會根據裝置時間戳記 (而非播放點位置) 計算心率持續時間，以明確支援搜尋事件。
 
