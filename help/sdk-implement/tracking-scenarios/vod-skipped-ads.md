@@ -10,28 +10,28 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 具有已略過廣告的 VOD 播放{#vod-playback-with-skipped-ads}
 
-## 藍本 {#scenario}
+## 情境 {#scenario}
 
-此案例包含的 VOD 內容播放具有已略過的廣告。
+此情境包含的 VOD 內容播放具有已略過的廣告。
 
 ### 具有已略過前段廣告的一個 VOD
 
-此案例等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)，除了應用程式具有可讓使用者略過廣告 (也許是在點擊略過按鈕時) 的佈建。
+此情境等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)，除了應用程式具有可讓使用者略過廣告 (也許是在點擊略過按鈕時) 的佈建。
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart()` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於   [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 使用者點按[!UICONTROL 播放] | `trackSessionStart()` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於    [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 |  |
-| 已播放廣告的第一個時間格。 | `trackPlay()` | 心率廣告播放 | 當廣告內容在主要內容之前播放時，Heartbeats 將在廣告開始播放時啟動。 |
+| 播放廣告的第一個時間格。 | `trackPlay()` | 心率廣告播放 | 當廣告內容在主要內容之前播放，心率會在廣告開始播放時啟動。 |
 | 廣告播放。 |  | 廣告心率 |  |
 | 廣告已略過。 | `trackEvent:trackAdSkip` |  | 沒有廣告完成網路呼叫。 |
-| 內容播放。 |  | 內容心率 | 這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 內容已完成播放。 | `trackComplete()` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 內容播放。 |  | 內容心率 | 這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 內容已完成播放。 | `trackComplete()` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 工作階段已結束。 | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## 參數 {#parameters}
 
-除了沒有廣告完成和廣告插播完成呼叫之外，這些參數完全等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)案例中的參數。
+除了沒有廣告完成和廣告插播完成呼叫之外，這些參數完全等同於[具有前段廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md)情境中的參數。
 
 ## 程式碼範例 {#sample-code}
 
@@ -39,7 +39,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ### Android
 
-如要在 Android 中查看此案例，請設定下列程式碼:
+如要在 Android 中查看此情境，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -125,7 +125,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS 應用程式
 
-若要檢視此案例，請輸入下列文字:
+若要檢視此情境，請輸入下列文字：
 
 ```
 when the user clicks Play 
@@ -207,7 +207,7 @@ NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
 
 ### JavaScript
 
-若要在 JavaScript 中檢視此案例，請輸入下列文字:
+若要在 JavaScript 中檢視此情境，請輸入下列文字：
 
 ```js
 // Set up mediaObject 
