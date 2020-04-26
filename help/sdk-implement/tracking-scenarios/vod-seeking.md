@@ -10,31 +10,31 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # 主要內容中具有搜尋的 VOD 播放{#vod-playback-with-seeking-in-the-main-content}
 
-## 藍本 {#scenario}
+## 情境 {#scenario}
 
-此案例包含在播放期間於主要內容中搜尋。
+此情境包含在播放期間搜尋主要內容。
 
-這是與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例相同的案例，只是一部分內容被刪除，並且搜尋是從主要內容中的某個點到另一個點間完成。
+此情境與[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境相同，只是一部分內容遭到擦除，而且從主要內容中的某個時間點到另一個時間點期間，已完成搜尋作業。
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 內容播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
-| 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
-| 使用者在內容上開始搜尋作業 | `trackSeekStart` |  | 在搜尋完成前 (例如 `trackSeekComplete`) 不會傳出任何心率。 |
-| 搜尋作業完成 | `trackSeekComplete` |  | 因為搜尋已完成，即會開始傳出心率。提示: 在搜尋之後，播放點值應該呈現正確的新播放點。 |
-| 內容已完成 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 播放內容的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
+| 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 使用者開始搜尋內容 | `trackSeekStart` |  | 在搜尋完成前 (例如 `trackSeekComplete`) 不會傳出任何心率。 |
+| 搜尋作業完成 | `trackSeekComplete` |  | 因為搜尋已完成，即會開始傳出心率。提示：搜尋之後，播放點值應該呈現正確的新播放點。 |
+| 內容已完成 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 工作階段結束 | `trackSessionEnd` |  | `SessionEnd` |
 
 ## 程式碼範例 {#sample-code}
 
-在此案例中，使用者在播放主要內容時進行搜尋。
+此情境中，使用者在播放主要內容時進行搜尋。
 
 ![](assets/seek-main-to-main.png)
 
 ### Android
 
-如要在 Android 中查看此案例，請設定下列程式碼:
+如要在 Android 中查看此情境，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -92,7 +92,7 @@ _mediaHeartbeat.trackSessionEnd();
 
 ### iOS 應用程式
 
-如要在 iOS 中查看此案例，請設定下列程式碼:
+如要在 iOS 中查看此情境，請設定下列程式碼：
 
 ```
 // Set up mediaObject 
@@ -148,7 +148,7 @@ NSMutableDictionary *mediaContextData = [[NSMutableDictionary alloc] init];
 
 ### JavaScript
 
-若要檢視此案例，請輸入下列文字:
+若要檢視此情境，請輸入下列文字：
 
 ```js
 // Set up mediaObject 
