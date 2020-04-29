@@ -2,8 +2,8 @@
 title: 里程碑概述
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
 
 ---
 
@@ -28,23 +28,32 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ### 里程碑報表設定
 
-若要設定「里程碑」實施的視訊報表，請前往&#x200B;**[!UICONTROL 「管理員 &gt; 報表套裝管理器」]。**&#x200B;選取報表套裝，然後選擇&#x200B;**[!UICONTROL 「視訊管理 &gt; 視訊報表」]:**
+若要設定里程碑實作的視訊報告，請前往 **[!UICONTROL Admin > Report Suite Manager]。**選取報表套裝，然後選擇**[!UICONTROL Video Management > Video Reporting]:**
 
-<!--![](assets/0clip_image002_1537416456.png){width="248"}-->
+<!--
+![](assets/0clip_image002_1537416456.png){width="248"}
+-->
+
 ![](assets/rs1.png)
 
-第一個畫面，只有「視訊核心」可搭配「里程碑」中繼資料使用。選取&#x200B;**[!UICONTROL 「視訊核心」]**，然後按一下&#x200B;**[!UICONTROL 「儲存」]。**
+第一個畫面，只有「視訊核心」可搭配「里程碑」中繼資料使用。選擇 **[!UICONTROL Video Core]** 並按一下 **[!UICONTROL Save]。**
 
 ![](assets/video-core-check.png)
 
-在下一個畫面，選取&#x200B;**[!UICONTROL 「使用自訂變數」]**。
+在下一個畫面上，選取 **[!UICONTROL Use Custom Variables]。**
 
-<!--![](assets/0clip_image006_-1561510960.png){width="470"}-->
+<!--
+![](assets/0clip_image006_-1561510960.png){width="470"}
+-->
+
 ![](assets/rs2.png)
 
 在最後一個畫面，選取要搭配視訊測量使用的兩個 eVar 和三個事件:
 
-<!--![](assets/0clip_image008_-92166399.png)-->
+<!--
+![](assets/0clip_image008_-92166399.png)
+-->
+
 ![](assets/rs3.png)
 
 ## 視訊變數參考資料 {#video-variable-reference}
@@ -79,9 +88,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | `Media.completeByCloseOffset` | **語法:** <br/><br/> <br/><br/>`s.Media.completeByCloseOffset = true`<br/><br/>此設定可讓您在視訊實際結束之前幾秒計算所完成的視訊檢視。<br/><br/>會根據 `completeCloseOffsetThreshold` 中指定的秒數來傳送事件。這可讓您在從不會報告等於視訊長度的位移的視訊播放器中測量完成。<br/><br/>預設情況下，此值會設為 true，而臨界值設為 1 秒。有了這些預設值，完成事件會在視訊結尾之前 1 秒傳送。 |
 | `Media.completeCloseOffsetThreshold` | **語法:** <br/><br/> `s.Media.completeCloseOffsetThreshold = 1`<br/><br/>此臨界值可讓您在視訊實際結束之前幾秒計算所完成的視訊檢視。必須將 `Media.completeByCloseOffset` 設為 true，才能使用此臨界值。<br/><br/>您提供的整數值會決定位移可以距離視訊長度關閉處，仍被計為完成的秒數。這可讓您在從不會報告等於視訊長度的位移的視訊播放器中測量完成。<br/><br/>預設臨界值為 1 秒。 |
 | `Media.playerName` | **語法:** <br/><br/> `s.Media.playerName = "Custom Player Name"`<br/><br/>指定自訂視訊播放器名稱。 |
-| `Media.trackSeconds` | **語法:** <br/><br/> `s.Media.trackSeconds = 15`<br/><br/>以秒數定義間隔，用於在視訊播放時傳送視訊追蹤資料至 Adobe 資料收集伺服器。值必須設定為 5 秒的增量。<br/><br/>僅對 `Media.contextDataMapping` 中定義的事件啟用 `Media.trackSeconds` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 Media.monitor。 |
+| `Media.trackSeconds` | **語法:** <br/><br/> `s.Media.trackSeconds = 15`<br/><br/>以秒數定義間隔，用於在視訊播放時傳送視訊追蹤資料至 Adobe 資料收集伺服器。值必須設定為 5 秒的增量。<br/><br/>僅對 `Media.trackSeconds` 中定義的事件啟用 `Media.contextDataMapping` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 Media.monitor。 |
 | `Media.trackMilestones` | 以視訊長度的百分比追蹤里程碑。<br/><br/> **語法:** <br/><br/> `s.Media.trackMilestones = "25, 50, 75";`<br/><br/>以視訊長度的百分比定義間隔，用於傳送視訊追蹤資料至 Adobe 資料收集伺服器。以整數、逗號分隔的清單指定里程碑。例如: 10 = 10%, 23 = 23%。<br/><br/>因為這些里程碑在視訊中是固定的點，如果訪客檢視超過 10% 里程碑，然後倒轉並再次超過 10% 里程碑，媒體模組會傳送多次追蹤資料。類似地，如果訪客快轉超過某個里程碑，媒體模組不會為該里程碑傳送追蹤資料。<br/><br/>僅對 `Media.trackMilestones` 中定義的事件啟用 `Media.contextDataMapping` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 Media.monitor。 |
-| `Media.trackOffsetMilestones` | 以從視訊開始的經過秒數來追蹤里程碑。<br/><br/> **語法:** <br/><br/> `s.Media.trackOffsetMilestones = "20, 40, 60";`<br/><br/>以從視訊開始的經過秒數定義間隔，用於傳送視訊追蹤資料至 Adobe 資料收集伺服器。以整數、逗號分隔的清單指定里程碑。例如: 20 = 20 秒, 40 = 40 秒。<br/><br/>因為這些里程碑在視訊中是固定的點，如果訪客檢視超過里程碑 20 秒，然後倒轉並再次超過 20 秒里程碑，媒體模組會傳送多次追蹤資料。類似地，如果訪客快轉超過某個里程碑，媒體模組不會為該里程碑傳送追蹤資料。<br/><br/>僅對 `Media.contextDataMapping` 中定義的事件啟用 `Media.trackOffsetMilestones` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 Media.monitor。 |
+| `Media.trackOffsetMilestones` | 以從視訊開始的經過秒數來追蹤里程碑。<br/><br/> **語法:** <br/><br/> `s.Media.trackOffsetMilestones = "20, 40, 60";`<br/><br/>以從視訊開始的經過秒數定義間隔，用於傳送視訊追蹤資料至 Adobe 資料收集伺服器。以整數、逗號分隔的清單指定里程碑。例如: 20 = 20 秒, 40 = 40 秒。<br/><br/>因為這些里程碑在視訊中是固定的點，如果訪客檢視超過里程碑 20 秒，然後倒轉並再次超過 20 秒里程碑，媒體模組會傳送多次追蹤資料。類似地，如果訪客快轉超過某個里程碑，媒體模組不會為該里程碑傳送追蹤資料。<br/><br/>僅對 `Media.trackOffsetMilestones` 中定義的事件啟用 `Media.contextDataMapping` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 Media.monitor。 |
 | `Media.segmentByMilestones` | **語法:** <br/><br/> `s.Media.segmentByMilestones = true;` <br/><br/>根據 `Media.trackMilestones` 中指定的媒體和里程碑的長度，自動產生區段名稱、區段號碼和區段長度資料。<br/><br/>使用 `autoTrack` 時，依里程碑劃分是定義區段的唯一方式。<br/><br/>預設值: `false` |
 | `Media.segmentByOffsetMilestones` | **語法:** <br/><br/> `s.Media.segmentByOffsetMilestones = true;` <br/><br/>根據 `Media.trackOffsetMilestones` 中指定的媒體和里程碑的長度，自動產生區段名稱、區段號碼和區段長度資料。<br/><br/>使用 `autoTrack` 時，依里程碑劃分是定義區段的唯一方式。<br/><br/>預設值: `false` |
 
@@ -91,9 +100,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 變數 | 說明 |
 | --- | --- |
-| `Media.adTrackSeconds` | **語法:** <br/><br/> `s.Media.adTrackSeconds = 15;`<br/><br/>以秒數定義間隔，用於在視訊播放時傳送視訊廣告追蹤資料至 Adobe 資料收集伺服器。值必須設定為 5 秒的增量。<br/><br/>僅對 `Media.contextDataMapping` 中定義的事件啟用 `Media.adTrackSeconds` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 `Media.monitor`。 |
-| `Media.adTrackMilestones` | 以廣告長度的百分比追蹤廣告里程碑。 <br/><br/> **語法:** <br/><br/> `s.Media.adTrackMilestones = "25, 50, 75";`<br/><br/>以廣告長度的百分比定義間隔，用於傳送廣告追蹤資料至 Adobe 資料收集伺服器。以整數、逗號分隔的清單指定里程碑。例如: 10 = 10%, 23 = 23%。<br/><br/>因為這些里程碑在廣告中是固定的點，如果訪客檢視超過 10% 里程碑，然後倒轉並再次超過 10% 里程碑，媒體模組會傳送多次追蹤資料。類似地，如果訪客快轉超過某個里程碑，媒體模組不會為該里程碑傳送追蹤資料。<br/><br/>僅對 `Media.contextDataMapping` 中定義的事件啟用 `Media.adTrackMilestones` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 `Media.monitor`。 |
-| `Media.adTrackOffsetMilestones` | 以從廣告開始的經過秒數來追蹤廣告里程碑。<br/><br/> **語法:** <br/><br/> `s.Media.adTrackOffsetMilestones = "20, 40, 60";`<br/><br/>以從廣告開始的經過秒數定義間隔，用於傳送廣告追蹤資料至 Adobe 資料收集伺服器。以整數、逗號分隔的清單指定里程碑。例如: 20 = 20 秒, 40 = 40 秒。<br/><br/>因為這些里程碑在廣告中是固定的點，如果訪客檢視超過里程碑 20 秒，然後倒轉並再次超過 20 秒里程碑，媒體模組會傳送多次追蹤資料。類似地，如果訪客快轉超過某個里程碑，媒體模組不會為該里程碑傳送追蹤資料。<br/><br/>僅對 `Media.contextDataMapping` 中定義的事件啟用 `Media.adTrackOffsetMilestones` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 `Media.monitor`。 |
+| `Media.adTrackSeconds` | **語法:** <br/><br/> `s.Media.adTrackSeconds = 15;`<br/><br/>以秒數定義間隔，用於在視訊播放時傳送視訊廣告追蹤資料至 Adobe 資料收集伺服器。值必須設定為 5 秒的增量。<br/><br/>僅對 `Media.adTrackSeconds` 中定義的事件啟用 `Media.contextDataMapping` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 `Media.monitor`。 |
+| `Media.adTrackMilestones` | 以廣告長度的百分比追蹤廣告里程碑。 <br/><br/> **語法:** <br/><br/> `s.Media.adTrackMilestones = "25, 50, 75";`<br/><br/>以廣告長度的百分比定義間隔，用於傳送廣告追蹤資料至 Adobe 資料收集伺服器。以整數、逗號分隔的清單指定里程碑。例如: 10 = 10%, 23 = 23%。<br/><br/>因為這些里程碑在廣告中是固定的點，如果訪客檢視超過 10% 里程碑，然後倒轉並再次超過 10% 里程碑，媒體模組會傳送多次追蹤資料。類似地，如果訪客快轉超過某個里程碑，媒體模組不會為該里程碑傳送追蹤資料。<br/><br/>僅對 `Media.adTrackMilestones` 中定義的事件啟用 `Media.contextDataMapping` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 `Media.monitor`。 |
+| `Media.adTrackOffsetMilestones` | 以從廣告開始的經過秒數來追蹤廣告里程碑。<br/><br/> **語法:** <br/><br/> `s.Media.adTrackOffsetMilestones = "20, 40, 60";`<br/><br/>以從廣告開始的經過秒數定義間隔，用於傳送廣告追蹤資料至 Adobe 資料收集伺服器。以整數、逗號分隔的清單指定里程碑。例如: 20 = 20 秒, 40 = 40 秒。<br/><br/>因為這些里程碑在廣告中是固定的點，如果訪客檢視超過里程碑 20 秒，然後倒轉並再次超過 20 秒里程碑，媒體模組會傳送多次追蹤資料。類似地，如果訪客快轉超過某個里程碑，媒體模組不會為該里程碑傳送追蹤資料。<br/><br/>僅對 `Media.adTrackOffsetMilestones` 中定義的事件啟用 `Media.contextDataMapping` 觸發。除了為視訊測量指定的這些以外，若要傳送其他變數，您必須使用 `Media.monitor`。 |
 | `Media.adSegmentByMilestones` | **語法:** <br/><br/> `s.Media.adSegmentByMilestones = true;` <br/><br/>根據 `Media.adTrackMilestones` 中指定的媒體和里程碑的長度，自動產生區段名稱、區段號碼和區段長度資料。<br/><br/>使用 `autoTrack` 時，依里程碑劃分是定義區段的唯一方式。<br/><br/>預設值: `false` |
 | `Media.adSegmentByOffsetMilestones` | **語法:** <br/><br/> `s.Media.adSegmentByOffsetMilestones = true;` <br/><br/>根據 `Media.adTrackOffsetMilestones` 中指定的媒體和里程碑的長度，自動產生區段名稱、區段號碼和區段長度資料。<br/><br/>使用 `autoTrack` 時，依里程碑劃分是定義區段的唯一方式。<br/><br/>預設值: `false` |
 
@@ -106,11 +115,11 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | 方法 | 說明 |
 | --- | --- |
 | `Media.open` | **語法:** <br/><br/> `s.Media.open(mediaName, mediaLength, mediaPlayerName)`<br/><br/>準備用來收集視訊追蹤資料的媒體模組。此方法會採用下列參數: <ul><li> **mediaName:** (必要) 您要其顯示在視訊報表中的名稱。 </li><li>  **mediaLength:** (必要) 視訊的長度 (以秒為單位)。  </li><li> **mediaPlayerName:** (必要) 用來檢視視訊的媒體播放器名稱，您要其顯示在視訊報表中的名稱。 </li></ul> |
-| `Media.openAd` | **語法:** <br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/>   `parentPod, parentPodPosition, CPM)` <br/><br/>準備用來收集廣告追蹤資料的媒體模組。此方法會採用下列參數: <ul> <li> **name:** (必要) 廣告的名稱或 ID。  </li> <li> **length:** (必要) 廣告的長度。  </li> <li> **playerName:** (必要) 用來檢視廣告的媒體播放器的名稱。  </li> <li> **parentName:** 內嵌廣告所在主要內容的名稱或 ID。  </li> <li> **parentPod:** 主要內容中播放廣告的位置。  </li> <li> **parentPodPosition:** Pod 內播放廣告的位置。  </li> <li> **CPM:** 套至用此播放的 CPM 或加密的 CPM (首碼為 "~")。  </li> </ul> |
+| `Media.openAd` | **語法:** <br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/>   準 `parentPod, parentPodPosition, CPM)` 備媒體模 <br/><br/>組以收集和追蹤資料。 此方法會採用下列參數: <ul> <li> **name:** (必要) 廣告的名稱或 ID。  </li> <li> **length:** (必要) 廣告的長度。  </li> <li> **playerName:** (必要) 用來檢視廣告的媒體播放器的名稱。  </li> <li> **parentName:** 內嵌廣告所在主要內容的名稱或 ID。  </li> <li> **parentPod:** 主要內容中播放廣告的位置。  </li> <li> **parentPodPosition:** Pod 內播放廣告的位置。  </li> <li> **CPM:** 套至用此播放的 CPM 或加密的 CPM (首碼為 &quot;~&quot;)。  </li> </ul> |
 | `Media.click` | **語法:** <br/><br/> `s.Media.click(name, offset)`<br/><br/>追蹤何時在視訊中點按了廣告。此方法會採用下列參數: <ul> <li> **name:** 廣告的名稱。這必須符合 Media.openAd 中使用的名稱。  </li> <li> **offset:** 發生按一下時進入廣告的位移。  </li> </ul> |
-| `Media.close` | **語法:** <br/><br/> `s.Media.close(mediaName)`<br/><br/>結束視訊資料收集並傳送資訊至 Adobe 資料收集伺服器。在視訊結束時呼叫此方法。此方法會採用下列參數: <br/><br/> **mediaName:** 視訊的名稱。這必須符合 `Media.open` 中使用的名稱。 |
-| `Media.complete` | **語法:** <br/><br/> `s.Media.complete(name, offset)`<br/><br/>此方法會手動追蹤完成的事件。當您需要觸發無法使用`Media.completeByCloseOffset` 處理的特殊邏輯事件時，會使用此方法。<br/><br/>例如，如果您要測量未定義結尾的即時資料流，則可以在使用者檢視即時資料流 X 秒後觸發完成。您可能會使用百分比計算根據內容的長度和類型來測量完成。此方法會採用下列參數: <ul> <li> **mediaName:** 視訊的名稱。這必須符合 Media.open 中使用的名稱。    </li> <li> **mediaOffset:** 視訊中應該傳送結束事件的秒數。根據從零秒開始的視訊指定位移。<br/><br/>如果您的媒體播放器使用毫秒追蹤，在呼叫 Media.complete 之前，請確定值轉換為秒。  </li> </ul> 如果您計劃手動呼叫完成，請設定 <br/><br/> `s.Media.completeByCloseOffset = false`。 |
-| `Media.play` | **語法:** <br/><br/> `s.Media.play(name, offset, segmentNum, segment, segmentLength)`<br/><br/>在視訊開始播放對隨時可呼叫此方法。使用手動視訊測量時，您可以在傳送視訊測量資料時提供目前的區段資料。<br/><br/>如果您的播放器因任何原因從一個區段變更為另一個，則應呼叫 `Media.stop` `Media.play`。<br/><br/>此方法會採用下列參數: <br/><br/> **mediaName:** 視訊的名稱。這必須符合 Media.open 中使用的名稱。    <br/><br/> **mediaOffset:** 視訊中開始播放的秒數。根據從零秒開始的視訊指定位移。如果您的媒體播放器使用毫秒追蹤，在呼叫 Media.play 之前，請確定值轉換為秒。    <br/><br/> **segmentNum:** (可選) 目前的區段號碼，行銷報表用來在報表中排序顯示區段。segmentNum 參數必須大於零。    <br/><br/> **segment:** (選用) 目前的區段名稱。<br/><br/> **segmentLength:** (選用) <br/><br/>目前的區段長度 (以秒為單位)。<br/><br/>例如: <br/><br/> `s.Media.play("My Video", 1800, 2,"Second Quarter", 1800)` <br/><br/> `s.Media.play("My Video", 0, 1,"Preroll", 30)` |
+| `Media.close` | **語法:** <br/><br/> `s.Media.close(mediaName)`<br/><br/>結束視訊資料收集並傳送資訊至 Adobe 資料收集伺服器。在視訊結束時呼叫此方法。此方法會採用下列參數:  <br/><br/> **mediaName:** 視訊的名稱。這必須符合 `Media.open` 中使用的名稱。 |
+| `Media.complete` | **語法:** <br/><br/> `s.Media.complete(name, offset)`<br/><br/>此方法會手動追蹤完成的事件。當您需要觸發無法使用`Media.completeByCloseOffset` 處理的特殊邏輯事件時，會使用此方法。<br/><br/>例如，如果您要測量未定義結尾的即時資料流，則可以在使用者檢視即時資料流 X 秒後觸發完成。您可能會使用百分比計算根據內容的長度和類型來測量完成。此方法會採用下列參數: <ul> <li> **mediaName:** 視訊的名稱。這必須符合 Media.open 中使用的名稱。      </li> <li> **mediaOffset:** 視訊中應該傳送結束事件的秒數。根據從零秒開始的視訊指定位移。<br/><br/>如果您的媒體播放器使用毫秒追蹤，在呼叫 Media.complete 之前，請確定值轉換為秒。  </li> </ul> 如果您計劃手動呼叫完成，請設定 <br/><br/> `s.Media.completeByCloseOffset = false`。 |
+| `Media.play` | **語法:** <br/><br/> `s.Media.play(name, offset, segmentNum, segment, segmentLength)`<br/><br/>在視訊開始播放對隨時可呼叫此方法。使用手動視訊測量時，您可以在傳送視訊測量資料時提供目前的區段資料。<br/><br/>如果您的播放器因任何原因從一個區段變更為另一個，則應呼叫 `Media.stop` `Media.play`。<br/><br/>此方法會採用下列參數: <br/><br/> **mediaName:** 視訊的名稱。這必須符合 Media.open 中使用的名稱。      <br/><br/> **mediaOffset:** 視訊中開始播放的秒數。根據從零秒開始的視訊指定位移。如果您的媒體播放器使用毫秒追蹤，在呼叫 Media.play 之前，請確定值轉換為秒。      <br/><br/> **segmentNum:** (可選) 目前的區段號碼，行銷報表用來在報表中排序顯示區段。segmentNum 參數必須大於零。      <br/><br/> **segment:** (選用) 目前的區段名稱。<br/><br/> **segmentLength:** (選用) <br/><br/>目前的區段長度 (以秒為單位)。<br/><br/>例如: <br/><br/> `s.Media.play("My Video", 1800, 2,"Second Quarter", 1800)` <br/><br/> `s.Media.play("My Video", 0, 1,"Preroll", 30)` |
 | `Media.stop` | **語法:** <br/><br/> `s.Media.stop(mediaName, mediaOffset)`<br/><br/>追蹤指定的視訊的停止事件 (停止、暫停等等)。此方法會採用下列參數: <ul> <li> **mediaName:** 視訊的名稱。這必須符合 `Media.open` 中使用的名稱。  </li> <li> **mediaOffset:** 視訊中發生停止或暫停事件的秒數。根據從零秒開始的視訊指定位移。  </li> </ul> |
 | `Media.monitor` | **語法:** <br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight 語法:** <br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Silverlight 應用程式媒體監視會實施 Objective-C 委派設計模式。`myMediaMonitor` 類別方法採用 `s` 和 `media` 參數。<br/><br/>使用此方法來傳送其他視訊測量。您可以設定其他變數 (Prop、eVar、事件)，並在播放視訊時根據視訊的目前狀態，使用 `Media.track` 傳送它們。<br/><br/>請參閱[使用 Media.monitor 測量其他度量。](https://marketing.adobe.com/resources/help/zh_TW/sc/appmeasurement/video/video_mediamonitor.html) <br/><br/>此方法會採用下列參數: <br/><br/>  **s:** `AppMeasurement` 例項 (或 JavaScript `s` 物件)。<br/><br/> **media:** 物件，其成員提供視訊的狀態。這些成員包括:  <ul><li> `media.name:` 視訊的名稱。這必須符合 `Media.open` 中使用的名稱； </li><li> `media.length:` 在對 `Media.open` 的呼叫中提供的視訊的長度 (以秒為單位)； </li><li> `media.playerName:` 在對 `Media.open` 的呼叫中指定的媒體播放器名稱； </li><li> `media.openTime:` 包含呼叫 `Media.open` 時資料的 NSDate 物件； </li><li> `media.offset:` 進入視訊的目前位移 (以秒為單位) (視訊中的實際點)。位移從零開始 (視訊的第一個秒數為 0 秒)； </li><li> `media.percent:` 目前已播放視訊的百分比，根據視訊長度和目前的位移；  </li><li> `media.timePlayed:` 目前播放的總秒數；  </li><li> `media.eventFirstTime:` 指出這是否為第一次為此視訊呼叫此媒體事件； </li><li> `media.mediaEvent:` 包含造成監控呼叫的事件名稱的字串。 </li></ul> |
 |  | `media.mediaEvent` events: <ul><li> `OPEN:` 透過 `Media.autoTrack` 或對 `Media.play` 呼叫第一次觀察到播放時； </li><li> `CLOSE:` 當播放透過 `Media.autoTrack` 或對 `Media.close` 的呼叫在完成視訊結束時；</li><li> `PLAY:` 當播放在暫停或擦除之後，透過 `Media.autoTrack` 或對 `Media.play` 的第二個呼叫繼續；</li><li> `STOP:` 當播放由於透過 `Media.autoTrack` 或對 `Media.stop` 呼叫的擦除開始的暫停而停止時；</li><li> `MONITOR:` 我們的自動監視在播放視訊時檢查視訊的狀態時 (每秒)；</li><li> `SECONDS:` 以 `Media.trackSeconds` 變數定義的秒數間隔；</li><li> `MILESTONE:` 在 `Media.trackMilestones` 變數定義的里程碑； </li></ul> |
