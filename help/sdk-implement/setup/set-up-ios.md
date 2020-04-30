@@ -2,8 +2,8 @@
 title: 設定 iOS
 description: 適用於 iOS 實施的 Media SDK 應用程式設定。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,11 +15,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **取得適用於 Media SDK 的有效設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
 * **在您的應用程式實作 iOS 適用的 ADBMobile**
-如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 iOS SDK 4.x](https://marketing.adobe.com/resources/help/zh_TW/mobile/ios/)。
+如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 iOS SDK 4.x](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/overview.html)。
 
    >[!IMPORTANT]
    >
-   >Apple 自 iOS 9 起推出 App Transport Security (ATS) 功能。此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此為預設啟用功能，但您可透過設定選項自行選擇是否使用 ATS。如需 ATS 的詳細資訊，請參閱 [App Transport Security](https://marketing.adobe.com/resources/help/zh_TW/mobile/ios/app_transport_security.html)。
+   >Apple 自 iOS 9 起推出 App Transport Security (ATS) 功能。此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此為預設啟用功能，但您可透過設定選項自行選擇是否使用 ATS。如需 ATS 的詳細資訊，請參閱 [App Transport Security](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)。
 
 * **在您的媒體播放器中提供下列功能:**
 
@@ -44,15 +44,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    1. 將程式庫新增至專案:
 
       1. 啟動 Xcode IDE 並開啟您的應用程式。
-      1. 在&#x200B;**[!UICONTROL 專案導覽器]**&#x200B;中，拖曳 `libs` 目錄，並將它放置在您的專案下。
+      1. In **[!UICONTROL Project Navigator]**, drag the `libs` directory and drop it under your project.
 
-      1. 確保已選取&#x200B;**[!UICONTROL 若需要則複製項目]**&#x200B;核取方塊、已選取&#x200B;**[!UICONTROL 建立群組]，並且未選取**&#x200B;新增至目標]中的任何核取方塊。**[!UICONTROL **
+      1. 確保選中 **[!UICONTROL Copy Items if Needed]** 了該複選框、 **[!UICONTROL Create Groups]** 選中了該複選框，且未選中中的 **[!UICONTROL Add to Target]** 複選框。
 
          ![](assets/choose-options_ios.png)
 
-      1. 按一下&#x200B;**[!UICONTROL 完成]**。
-      1. 在&#x200B;**[!UICONTROL 專案導覽器]**&#x200B;中，選取您的應用程式並選取您的目標。
-      1. 在&#x200B;**[!UICONTROL 「一般」]**&#x200B;標籤的&#x200B;**[!UICONTROL 「連結架構」]**&#x200B;和&#x200B;**[!UICONTROL 「程式庫」]**&#x200B;區段中，連結所需的架構和程式庫。
+      1. 按一下 **[!UICONTROL Finish]**.
+      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
 
          **iOS 應用程式目標:**
 
@@ -148,7 +148,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 將 `VideoHeartbeat_TV.a``lib` 程式庫檔案拖曳至您的專案的 資料夾。
 
-1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建置階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與程式庫」]**&#x200B;區段，並新增下列程式庫:
+1. 在tvOS應 **[!UICONTROL Build Phases]** 用程式目標的標籤中，展開區 **[!UICONTROL Link Binary with Libraries]** 段並新增下列程式庫：
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
