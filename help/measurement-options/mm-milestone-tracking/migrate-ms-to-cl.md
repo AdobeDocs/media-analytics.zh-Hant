@@ -2,8 +2,8 @@
 title: 從里程碑移轉至自訂連結
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 概述 {#overview}
 
-「里程碑」和「自訂連結」追蹤的視訊測量核心概念相同，也就是擷取視訊播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。「自訂連結」方法應視為同時減少及簡化實作和收集的資料。使用「自訂連結」解決方案，不會預先定義視訊測量的變數或方法，須完全自訂。應可更新播放器事件程式碼，以顯示可能有基本播放器事件 (如開始和結束) 的自訂連結追蹤呼叫。如需詳細資訊，請參閱[自訂連結實作指南](/help/measurement-options/cl-in-aa/cl-impl-guide.md)和[使用自訂連結程式碼的手動追蹤連結](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/link_manual.html)。
+「里程碑」和「自訂連結」追蹤的視訊測量核心概念相同，也就是擷取視訊播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。「自訂連結」方法應視為同時減少及簡化實作和收集的資料。使用「自訂連結」解決方案，不會預先定義視訊測量的變數或方法，須完全自訂。應可更新播放器事件程式碼，以顯示可能有基本播放器事件 (如開始和結束) 的自訂連結追蹤呼叫。如需詳細資訊，請參閱[自訂連結實作指南](/help/measurement-options/cl-in-aa/cl-impl-guide.md)和[使用自訂連結程式碼的手動追蹤連結](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html)。
 
 下列表格為「里程碑」解決方案和「自訂連結」解決方案的對照表。
 
