@@ -2,8 +2,8 @@
 title: 設定 JavaScript
 description: 適用於 JavaScript 實施的 Media SDK 應用程式設定。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **取得有效的設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
 * **在您的媒體應用程式實作 JavaScript 適用的`AppMeasurement`**
-如需有關 Adobe Mobile SDK 文件的詳細資訊，請參閱[利用 JavaScript 實作分析](https://marketing.adobe.com/resources/help/zh_TW/sc/implement/js_implementation.html)。
+如需有關 Adobe Mobile SDK 文件的詳細資訊，請參閱[利用 JavaScript 實作分析](https://docs.adobe.com/content/help/zh-Hant/analytics/implementation/js/overview.html)。
 
 * **在您的媒體播放器中提供下列功能:**
 
