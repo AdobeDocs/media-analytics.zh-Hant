@@ -2,8 +2,8 @@
 title: 設定 Android
 description: 適用於 Android 實施的 Media SDK 應用程式設定。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * **取得適用於 Media SDK 的有效設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
 * **在您的應用程式實作 Android 適用的 ADBMobile**
-如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 Android SDK 4.x](https://marketing.adobe.com/resources/help/en_US/mobile/android/)。
+如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 Android SDK 4.x](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html)。
 * **在您的媒體播放器中提供下列功能:**
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * *提供播放器資訊的 API* - 此資訊包含媒體名稱和播放點位置等等的詳細內容。
@@ -31,23 +31,23 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       **IntelliJ IDEA:**
 
-      1. 在&#x200B;**[!UICONTROL 「專案導覽」]**&#x200B;面板中，以滑鼠右鍵按一下專案。
-      1. 選取&#x200B;**[!UICONTROL 開啟模組設定]**。
-      1. 在&#x200B;**[!UICONTROL 專案設定]**&#x200B;下，選取&#x200B;**[!UICONTROL 資料庫]**。
+      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
+      1. 選擇 **[!UICONTROL Open Module Settings]**.
+      1. 在下 **[!UICONTROL Project Settings]**&#x200B;面，選擇 **[!UICONTROL Libraries]**。
 
-      1. 按一下 **[!UICONTROL +]** 以新增新程式庫。
-      1. 選取 **[!UICONTROL Java]** 並導覽至 `MediaSDK.jar` 檔案。
+      1. Click **[!UICONTROL +]** to add a new library.
+      1. Select **[!UICONTROL Java]** and navigate to the `MediaSDK.jar` file.
 
       1. 選取您計劃使用行動程式庫所在的模組。
-      1. 按一下&#x200B;**[!UICONTROL 「套用」]**，然後按&#x200B;**[!UICONTROL 「確定」]**，關閉「模組設定」視窗。
+      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
       **Eclipse:**
 
       1. 在 Eclipse IDE 中，用滑鼠右鍵按一下專案名稱。
-      1. 按一下&#x200B;**[!UICONTROL 建立路徑]** &gt; **[!UICONTROL 新增外部封存檔]**。
+      1. 按一下  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
       1. 選擇 `MediaSDK.jar`.
-      1. 按一下&#x200B;**[!UICONTROL 開啟]**。
-      1. 再次以滑鼠右鍵按一下專案，然後按一下&#x200B;**[!UICONTROL 「組建路徑]** &gt; **[!UICONTROL 設定組建路徑」]**。
-      1. 依序按一下&#x200B;**[!UICONTROL 「順序」]**&#x200B;和&#x200B;**[!UICONTROL 「匯出」]**&#x200B;標籤。
+      1. 按一下 **[!UICONTROL Open]**.
+      1. 再次以滑鼠右鍵按一下專案，然後按一 **[!UICONTROL Build Path]** 下> **[!UICONTROL Configure Build Path]** 。
+      1. 按一下 **[!UICONTROL Order]** 和標 **[!UICONTROL Export]** 簽。
 
       1. 確認已選取 `MediaSDK.jar` 檔案。
 
