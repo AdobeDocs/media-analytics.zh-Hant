@@ -3,12 +3,18 @@ title: 設定 iOS
 description: 適用於 iOS 實施的 Media SDK 應用程式設定。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 ---
 
 
 # 設定 iOS{#set-up-ios}
+
+>[!IMPORTANT]
+>
+>自2020年10月起，Adobe將停止支援版本4 Mobile SDK和iOS專用的獨立Media Analytics SDK。 您可以繼續下載並使用第4版SDK，但客戶服務支援和論壇存取權將會終止。 您應移轉至iOS適用的Adobe Experience Platform(AEP)SDK。 AEP Mobile SDK（先前稱為v5）將獨家支援Adobe Experience Cloud的功能和功能。 如需此變更的詳細資訊，請參 [閱第4版行動SDK支援終止常見問答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 建議您移轉至新的AEP Mobile SDK。
+移轉至AEP Mobile SDK後，您必須實作Analytics Launch擴充功能和Media Analytics Launch擴充功能，以啟用Adobe Analytics for Audio和Video。 如需移轉至新AEP Mobile SDK的詳細資訊，請參 [閱從獨立媒體SDK移轉至Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+
 
 ## 必備條件
 
@@ -73,8 +79,8 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 1. 匯入資料庫。
 
    ```
-   #import "ADBMediaHeartbeat.h" 
-   #import "ADBMediaHeartbeatConfig.h" 
+   #import "ADBMediaHeartbeat.h"
+   #import "ADBMediaHeartbeatConfig.h"
    ```
 
 1. 建立 `ADBMediaHeartbeatConfig` 例項。
@@ -84,40 +90,40 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    以下示範 `ADBMediaHeartbeatConfig` 初始化:
 
    ```
-   // Media Heartbeat Initialization 
-   ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init]; 
-   config.trackingServer = <SAMPLE_HEARTBEAT_TRACKING_SERVER>; 
-   config.channel        = <SAMPLE_HEARTBEAT_CHANNEL>; 
-   config.appVersion     = <SAMPLE_HEARTBEAT_SDK_VERSION>; 
-   config.ovp            = <SAMPLE_HEARTBEAT_OVP_NAME>; 
-   config.playerName     = <SAMPLE_PLAYER_NAME>; 
-   config.ssl            = <YES/NO>; 
-   config.debugLogging   = <YES/NO>; 
+   // Media Heartbeat Initialization
+   ADBMediaHeartbeatConfig *config = [[ADBMediaHeartbeatConfig alloc] init];
+   config.trackingServer = <SAMPLE_HEARTBEAT_TRACKING_SERVER>;
+   config.channel        = <SAMPLE_HEARTBEAT_CHANNEL>;
+   config.appVersion     = <SAMPLE_HEARTBEAT_SDK_VERSION>;
+   config.ovp            = <SAMPLE_HEARTBEAT_OVP_NAME>;
+   config.playerName     = <SAMPLE_PLAYER_NAME>;
+   config.ssl            = <YES/NO>;
+   config.debugLogging   = <YES/NO>;
    ```
 
 1. 實施 `ADBMediaHeartbeatDelegate` 通訊協定。
 
    ```
-   @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
+   @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate>
    
-   @end 
+   @end
    
-   @implementation VideoAnalyticsProvider 
+   @implementation VideoAnalyticsProvider
    
    // Replace <bitrate>, <startuptime>, <fps> and <droppeFrames>  
-   // with the current playback QoS values. 
-   - (ADBMediaObject *)getQoSObject { 
+   // with the current playback QoS values.
+   - (ADBMediaObject *)getQoSObject {
        return [ADBMediaHeartbeat createQoSObjectWithBitrate:<bitrate>  
                                  startupTime:<startuptime>   
                                  fps:<fps>  
-                                 droppedFrames:<droppedFrames>]; 
-   } 
+                                 droppedFrames:<droppedFrames>];
+   }
    
-   // Return the current video player playhead position. 
-   // Replace <currentPlaybackTime> with the video player current playback time 
-   - (NSTimeInterval)getCurrentPlaybackTime { 
-       return <currentPlaybackTime>; 
-   } 
+   // Return the current video player playhead position.
+   // Replace <currentPlaybackTime> with the video player current playback time
+   - (NSTimeInterval)getCurrentPlaybackTime {
+       return <currentPlaybackTime>;
+   }
    
    @end
    ```
@@ -125,8 +131,8 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 1. 使用 `ADBMediaHeartBeatConfig` 和 `ADBMediaHeartBeatDelegate` 來建立 `ADBMediaHeartbeat` 例項。
 
    ```
-   //Replace <ADBMediaHeartBeatDelegate> with your delegate instance 
-   _mediaHeartbeat = [[ADBMediaHeartbeat alloc] initWithDelegate: 
+   //Replace <ADBMediaHeartBeatDelegate> with your delegate instance
+   _mediaHeartbeat = [[ADBMediaHeartbeat alloc] initWithDelegate:
      <ADBMediaHeartBeatDelegate> config:config];
    ```
 
@@ -154,4 +160,3 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    * `AdobeMobileLibrary_TV.a`
    * `libsqlite3.0.tbd`
    * `SystemConfiguration.framework`
-
