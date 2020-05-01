@@ -2,8 +2,8 @@
 title: 時間軸 1 - 檢視內容到結束為止
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -696,4 +696,3 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >[!NOTE]
 >
 >**沒有搜尋事件？-** 媒體收集 API 對於 `seekStart` 或 `seekComplete` 事件的支援並不明確。這是因為特定播放器會在使用者拖曳時，產生大量這類事件，若有數百位使用者這麼做，即可輕易造成後端服務的網路頻寬產生瓶頸。Adobe 會根據裝置時間戳記 (而非播放點位置) 計算心率持續時間，以明確支援搜尋事件。
-
