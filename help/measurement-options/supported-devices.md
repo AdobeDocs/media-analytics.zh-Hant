@@ -3,7 +3,7 @@ title: 支援的裝置
 description: null
 uuid: null
 translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
 
 ---
 
@@ -46,4 +46,4 @@ Adobe Analytics for Audio and Video支援所有主要裝置，包括：
 |  | 全新連接的裝置 |  |  | X |
 
 
-若為 Media SDK，請另行參閱[最低平台版本支援](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+若為 Media SDK，請另行參閱[最低平台版本支援](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)
