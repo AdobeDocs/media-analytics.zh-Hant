@@ -1,5 +1,5 @@
 ---
-source-git-commit: e8b232d0771863e739f806daefa344b58cbc661c
+source-git-commit: 18d6b140df7211190dd9597ef03059d8b9285fe9
 translation-type: tm+mt
 
 ---
@@ -7,7 +7,7 @@ translation-type: tm+mt
 
 | 生產 | Stage |
 |---|---|
-| [![建置狀態](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![建置狀態](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/collaborative-doc-instructions.en_stage/lastBuild) |
+| [![建置狀態](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_production/lastBuild) | [![建置狀態](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/badge/icon)](https://docs.ci.corp.adobe.com/job/media-analytics.en_stage/lastBuild) |
 | [輸出產品](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/media-overview.html) | [輸出Stg](https://docs-stg.corp.adobe.com/content/help/en/media-analytics/using/media-overview.html) |
 
 我們歡迎我們社群及文件團隊以外的 Adobe 員工貢獻心力。
