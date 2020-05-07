@@ -18,10 +18,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 |  |
 | 已播放廣告 #1 的時間格。 | `trackPlay` | 心率廣告播放 | 廣告內容在主要內容之前播放，而心率在廣告開始時啟動。 |
 | 廣告播放。 |  | 廣告心率 |  |
-| 廣告 #2 完成播放。 | `trackEvent:trackAdComplete` | 心率廣告完成 | 已到達廣告的結尾。 |
+| 廣告 #2 完成播放。 | `trackEvent:trackAdComplete` | 心率廣告完成 | 已到達廣告結尾。 |
 | 已播放廣告 #2 的第一個時間格。 | `trackEvent:AdStart` | Analytics 廣告開始、心率廣告開始 |  |
 | 廣告播放。 |  | 廣告心率 |  |
-| 廣告 #2 完成播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率廣告完成 | 已到達廣告和 Pod 的結尾。 |
+| 廣告 #2 完成播放。 | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | 心率廣告完成 | 已到達廣告和 Pod 結尾。 |
 | 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 工作階段已結束 | `trackSessionEnd` |  | `SessionEnd` |
@@ -54,8 +54,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
-| `s:asset:ad_id` | &lt;ad ID&gt; |  |
-| `s:asset:pod_id` | &lt;ad pod ID&gt; |  |
+| `s:asset:ad_id` | &lt;ad ID> |  |
+| `s:asset:pod_id` | &lt;ad pod ID> |  |
 
 類似於 `Heartbeat Content Complete` 呼叫，當完成時，以及到達播放點結尾時，會傳送 `Heartbeat Ad Complete` 呼叫。此呼叫看起來類似其他 `Heartbeat Ad` 呼叫，但包含某些特定項目:
 
