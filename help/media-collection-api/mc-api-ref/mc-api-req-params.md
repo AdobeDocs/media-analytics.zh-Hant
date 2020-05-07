@@ -37,7 +37,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | `media.length` | Y | `sessionStart` | 內容長度 (秒) |
 | `media.contentType` | Y | `sessionStart` | 資料流的格式 (可以是任何字串；幾個建議的值包括「即時」、「VOD」或「線性」) |
 | `media.playerName` | Y | `sessionStart` | 負責轉譯內容之播放器的名稱 |
-| `media.channel` | Y | `sessionStart` | 內容分送的管道。可以是行動應用程式名稱或網站名稱、屬性名稱 |
+| `media.channel` | Y | `sessionStart` | 內容發佈的管道。可以是行動應用程式名稱或網站名稱、屬性名稱 |
 | `media.resume` | N | `sessionStart` | 指出使用者是否正在繼續先前的工作階段 (相對於開始新的工作階段) |
 | `media.sdkVersion` | N | `sessionStart` | 播放器使用的 SDK 版本 |
 
@@ -55,12 +55,12 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | `media.rating` | N | `sessionStart` | 依美國電視分級制度 (TV Parental Guidelines) 的定義進行分級 |
 | `media.originator` | N | `sessionStart` | 內容的建立者 |
 | `media.network` | N | `sessionStart` | 網路 / 頻道名稱 |
-| `media.showType` | N | `sessionStart` | 內容的類型，以 0 到 3 的整數來表示: <ul> <li>0 – 全集 </li> <li>1 – 預覽 </li> <li>2 – 片段 </li> <li>3 – 其他 </li> </ul> |
+| `media.showType` | N | `sessionStart` | 內容的類型，以 0 到 3 的整數來表示： <ul> <li>0 – 全集 </li> <li>1 – 預覽 </li> <li>2 – 片段 </li> <li>3 – 其他 </li> </ul> |
 | `media.adLoad` | N | `sessionStart` | 載入的廣告類型 |
 | `media.pass.mvpd` | N | `sessionStart` | Adobe 驗證提供的 MVPD |
 | `media.pass.auth` | N | `sessionStart` | 指出使用者已獲得 Adobe 驗證授權 (若有設定，只能為 True) |
 | `media.dayPart` | N | `sessionStart` | 內容播出當天的時間 |
-| `media.feed` | N | `sessionStart` | 摘要類型，如 "West-HD" |
+| `media.feed` | N | `sessionStart` | 摘要類型，如 &quot;West-HD&quot; |
 
 ## 廣告資料
 
