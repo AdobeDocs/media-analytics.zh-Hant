@@ -19,7 +19,7 @@ Adobe 收集並於 Media Analytics (心率) 伺服器上處理的 Media Analytic
 | s:event:type | Media SDK | (必要)<br/><br/>要追蹤的事件類型。事件類型: <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | Media SDK | (必要)<br/><br/>此工作階段中相同類型的上次事件時間戳記。值為 -1。 |
 | l:event:ts | Media SDK | (必要)<br/><br/>事件的時間戳記。 |
-| l:event:duration | Media SDK | (必要)<br/><br/>此值是由 Media SDK 從內部 (而非由播放器) 設定 (以毫秒為單位)。它是用於運算後端量度所花時間。例如，a.media.totalTimePlayed 是以產生所有 Play (type=play) 心率持續時間的總和來計算。<br/>*注意:*&#x200B;某些事件的這個參數會設為 0，因為這些事件是「狀態變更事件」(例如 type=complete, type=chapter_complete, or type=bitrate_change)。 |
+| l:event:duration | Media SDK | (必要)<br/><br/>此值是由 Media SDK 從內部 (而非由播放器) 設定 (以毫秒為單位)。它是用於運算後端量度所花時間。例如，a.media.totalTimePlayed 是以產生所有 Play (type=play) 心率持續時間的總和來計算。<br/>*注意:*某些事件的這個參數會設為 0，因為這些事件是「狀態變更事件」(例如 type=complete, type=chapter_complete, or type=bitrate_change)。 |
 | l:event:playhead | VideoInfo | (必要)<br/><br/>事件記錄時，播放點位於目前作用中的資產內 (主要內容或廣告)。 |
 | s:event:sid | Media SDK | (必要)<br/><br/>工作階段 ID (隨機產生的字串)。某個工作階段 (視訊 + 廣告) 中的所有事件應該是相同的。 |
 | l:asset:duration / l:asset:length <br/>(已將長度重新命名為持續時間) | VideoInfo | (必要)<br/><br/>主要資產的影片資產長度。 |
