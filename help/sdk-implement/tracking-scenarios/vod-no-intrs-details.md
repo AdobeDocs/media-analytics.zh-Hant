@@ -16,8 +16,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 這可以是使用者點按播放或自動播放事件中的一個。 |
-| 媒體的第一個時間格 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，在播放期間便會每 10 秒傳送心率。 |
+| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 這可以是使用者點按播放或自動播放事件中的一個。 |
+| 媒體的第一個時間格 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器，並且從此點開始，在播放期間每 10 秒即傳送心率。 |
 | 內容播放 |  | 內容心率 |  |
 | 內容已完成 | `trackComplete` | 心率內容完成 | *完成*&#x200B;表示已到播放點的結尾。 |
 
@@ -29,17 +29,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 參數 | 值 | 附註   |
 |---|---|---|
-| `s:sc:rsid` | &lt;Analytics 報表套裝 ID&gt; |  |
-| `s:sc:tracking_server` | &lt;您的 Analytics 追蹤伺服器 URL&gt; |  |
+| `s:sc:rsid` | &lt;Analytics 報表套裝 ID> |  |
+| `s:sc:tracking_server` | &lt;您的 Analytics 追蹤伺服器 URL> |  |
 | `s:user:mid` | 必須設定 | 應該符合 `Adobe Analytics Content Start` 呼叫上的中間值。 |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;您的媒體名稱&gt; |  |
+| `s:asset:media_id` | &lt;您的媒體名稱> |  |
 | `s:meta:*` | 可選 | 媒體上設定的自訂中繼資料。 |
 
 ## 心率內容播放 {#heartbeat-content-play}
 
-這些參數看起來應該與 `Heartbeat Content Start` 呼叫大致相同，但主要的差異為 `s:event:type` 參數。所有其他參數應該仍存在。
+這些參數看起來應該與 `Heartbeat Content Start` 呼叫大致相同，但主要的差異為 `s:event:type` 參數。所有其他參數仍應存在。
 
 | 參數 | 值 | 附註   |
 |---|---|---|
@@ -48,18 +48,18 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 內容心率 {#content-heartbeats}
 
-在媒體播放期間，計時器至少會每 10 秒傳送一個心率。這些心率包含關於播放、廣告、緩衝等等的資訊。每個心率的確切內容不在本文件的範圍，但重要問題為，當播放繼續時會一致地觸發心率。
+在媒體播放期間，計時器至少會每 10 秒傳送一個心率。這些心率包含關於播放、廣告、緩衝等資訊。每個心率的確切內容不在本文件的範圍，但重要問題為，當播放繼續時會一致地觸發心率。
 
-在內容心率中，尋找下列參數:
+在內容心率中，尋找下列參數：
 
 | 參數 | 值 | 附註   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;播放點位置&gt; 例如 50,60,70 | 此參數會反映播放點目前的位置。 |
+| `l:event:playhead` | &lt;播放點位置> 例如 50,60,70 | 此參數會反映播放點目前的位置。 |
 
 ## 心率內容完成 {#heartbeat-content-complete}
 
-當播放完成時，其表示到達播放點結尾，會傳送 `Heartbeat Content Complete` 呼叫。此呼叫類似其他 Heartbeat 呼叫，但它包含某些特定參數:
+當播放完成時，其表示到達播放點結尾，會傳送 `Heartbeat Content Complete` 呼叫。此呼叫與其他心率呼叫類似，但包含幾個特定參數：
 
 | 參數 | 值 | 附註   |
 |---|---|---|
