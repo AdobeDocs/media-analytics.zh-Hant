@@ -30,7 +30,7 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
 
 * `getVisitorProfile() -`
 
-   傳回最近取得的訪客設定檔。若尚未提交任何訊號，則傳回空白物件。
+   傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
 
    ```js
    ADBMobile.audienceManager.getVisitorProfile();
@@ -38,7 +38,7 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
 
 * `getDpid() -`
 
-   傳回最近取得的訪客設定檔。若尚未提交任何訊號，則傳回空白物件。
+   傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
 
    ```js
    ADBMobile.audienceManager.getDpid();
@@ -72,7 +72,7 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
 
 * `audienceVisitorProfile -`
 
-   傳回最近取得的訪客設定檔。若尚未提交任何訊號，則傳回空白物件。
+   傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
 
    ```js
    ADBMobile().audienceVisitorProfile()
@@ -80,7 +80,7 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
 
 * `audienceDpid -`
 
-   傳回最近取得的訪客設定檔。若尚未提交任何訊號，則傳回空白物件。
+   傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
 
    ```js
    ADBMobile().audienceDpid()
