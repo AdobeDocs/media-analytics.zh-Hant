@@ -14,7 +14,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >
 >收集向 Media Analytics (MA) Collection API 後端伺服器發出成功[工作階段要求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)所需的要求資料。您可以手動傳送要求 (利用 `curl` 或 Postman 等)，進而迅速驗證要求資料。如此一來，您將能立即獲知要求中是否有因為資料類型錯誤或資訊錯誤而引起的問題。請使用 [JSON 驗證結構](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)來確認您提供的要求資料是否適當。
 
-1. 收集必要的標準 Adobe Analytics 和訪客資料；您必須提供這些資料才能執行任何 Experience Cloud 應用程式:
+1. 收集必要的標準 Adobe Analytics 和訪客資料；您必須提供這些資料才能執行任何 Experience Cloud 應用程式：
 
    * 訪客 Experience Cloud 組織 ID
    * 訪客 Experience Cloud 使用者 ID
