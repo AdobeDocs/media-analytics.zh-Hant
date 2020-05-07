@@ -30,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 一般實施指引 {#general-implementation-guidelines}
 
-有三個主要的 SDK 元件與媒體追蹤有關:
+有三個主要的 SDK 元件與媒體追蹤有關：
 * 媒體心率設定 - 此設定包含報表的基本設定。
 * 媒體心率代理人 - 代理人可控制播放時間和 QoS 物件。
 * 媒體心率 - 包含成員與方法的主要程式庫。
@@ -41,12 +41,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    |  變數名稱 | 說明 | 必填 |  預設值  |
    |---|---|:---:|---|
-   | `trackingServer` | 適用於媒體分析的追蹤伺服器。這與您的分析追蹤伺服器不同。 | 是 | 空白字串 |
-   | `channel` | 管道名稱 | 無 | 空白字串 |
-   | `ovp` | 線上媒體平台的名稱，透過它分送內容 | 無 | 空白字串 |
-   | `appVersion` | 媒體播放器應用程式/SDK 的版本 | 無 | 空白字串 |
-   | `playerName` | 使用的媒體播放器名稱，例如「AVPlayer」、「HTML5 播放器」、「我的自訂播放器」 | 無 | 空白字串 |
-   | `ssl` | 指出呼叫是否應透過 HTTPS 進行 | 無 | false |
+   | `trackingServer` | 適用於媒體分析的追蹤伺服器。這與您的分析追蹤伺服器不同。 | 是 | 空字串 |
+   | `channel` | 頻道名稱 | 無 | 空字串 |
+   | `ovp` | 線上媒體平台的名稱，透過它分送內容 | 無 | 空字串 |
+   | `appVersion` | 媒體播放器應用程式/SDK 的版本 | 無 | 空字串 |
+   | `playerName` | 使用的媒體播放器名稱，例如「AVPlayer」、「HTML5 播放器」、「我的自訂播放器」 | 無 | 空字串 |
+   | `ssl` | 指出是否應透過 HTTPS 進行呼叫 | 無 | false |
    | `debugLogging` | 指出是否已啟用除錯記錄 | 無 | false |
 
 1. 實作 `MediaHeartbeatDelegate`.
@@ -58,11 +58,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!TIP]
    >
-   >服務品質 (QoS) 物件為選用。若 QoS 資料可供您的播放器使用，且您希望追蹤該資料，則需要下列變數:
+   >服務品質 (QoS) 物件為選用。若 QoS 資料可供您的播放器使用，且您希望追蹤該資料，則需要下列變數：
 
    | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
-   | `bitrate` | 媒體的位元速率，以每秒位元組數為單位。 | 是 |
+   | `bitrate` | 媒體的位元速率 (以每秒位元組數為單位)。 | 是 |
    | `startupTime` | 媒體的啟動時間 (以毫秒為單位) | 是 |
    | `fps` | 每秒顯示的畫面。 | 是 |
    | `droppedFrames` | 目前掉格的數量。 | 是 |
@@ -81,7 +81,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. 組合所有片段。
 
-   以下範例程式碼將 JavaScript 2.x SDK 用於 HTML5 視訊播放器:
+   以下範例程式碼將 JavaScript 2.x SDK 用於 HTML5 視訊播放器：
 
    ```javascript
    // Create local references to the heartbeat classes 
@@ -119,7 +119,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## 驗證{#validate}
+## 驗證 {#validate}
 
 Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫:
 
