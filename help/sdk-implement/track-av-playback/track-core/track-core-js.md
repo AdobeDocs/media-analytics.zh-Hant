@@ -158,6 +158,6 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >這可能與在步驟 4 使用的事件來源相同。確保播放恢復時，每個 `trackPause()` API 呼叫都與下列 `trackPlay()` API 呼叫成對。
 
-* 追蹤案例: [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
-* 完整追蹤範例的 JavaScript SDK 包含範例播放器。
+* 追蹤案例：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 完整追蹤範例的含 JavaScript SDK 範例播放器。
 
