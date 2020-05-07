@@ -2,7 +2,7 @@
 title: '測試 1: 標準播放'
 description: 本主題說明用於驗證的標準播放測試。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
