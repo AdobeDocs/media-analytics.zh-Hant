@@ -3,7 +3,10 @@ title: 必備條件
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '424'
+ht-degree: 99%
 
 ---
 
@@ -14,9 +17,9 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 在開始實作追蹤前，請先決定與您的情況最為相關的實作:
 
-* **Media Analytics -** 使用最新 Media SDK (標準建議實作) 及/或媒體收集 API (RESTful)
-* **里程碑 -** 舊版 Adobe 追蹤實作
-* **Data Insertion API -** 不使用 Media SDK 實作追蹤
+* **Media Analytics -** 使用最新 Media SDK (標準建議實施) 及/或媒體收集 API (RESTful)
+* **里程碑 -** 舊版 Adobe 追蹤實施
+* **Data Insertion API -** 不使用 Media SDK 實施追蹤
 
 ## 工作 {#prereq-tasks}
 
@@ -30,7 +33,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
    ![](assets/mc_id_service_graphic.png)
 
-   ID 服務也可以取代不同的解決方案特定 ID (例如，Analytics AID)。透過[客戶 ID 和驗證狀態](https://docs.adobe.com/content/help/zh-Hant/id-service/using/reference/authenticated-state.html)功能，ID 服務可讓您將您的客戶 ID 傳遞至 Experience Cloud。請記住，ID 服務僅適用於您已訂閱的解決方案。如果您未註冊存取其他產品，則 ID 服務不提供存取權。
+   ID 服務也可以取代不同的解決方案特定 ID (例如 Analytics AID)。透過[客戶 ID 和驗證狀態](https://docs.adobe.com/content/help/zh-Hant/id-service/using/reference/authenticated-state.html)功能，ID 服務可讓您將您的客戶 ID 傳遞至 Experience Cloud。請記住，ID 服務僅適用於您已訂閱的解決方案。如果您未註冊存取其他產品，則 ID 服務不提供存取權。
 
    展望未來，ID 服務將成為許多目前與未來 Experience Cloud 特色、增強功能與服務的必要元件。目前 ID 服務支援 [Analytics](https://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/tw/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。
 
@@ -38,7 +41,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    >
    >若要參與 Adobe Experience Cloud Device Co-op，需要 Experience Cloud ID 服務。
 
-   如果您尚未實施 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://blogs.adobe.com/digitalmarketing/analytics/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
+   如果您尚未實施 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
    >[!IMPORTANT]
    >
