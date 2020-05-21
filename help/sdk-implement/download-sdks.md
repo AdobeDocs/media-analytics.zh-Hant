@@ -3,7 +3,10 @@ title: 下載 SDK
 description: 各平台適用的 SDK 下載內容連結，包括 Android、iOS、JavaScript、Chromecast 和 Roku。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '359'
+ht-degree: 90%
 
 ---
 
@@ -12,11 +15,7 @@ source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
 
 >[!IMPORTANT]
 >
->自2020年10月起，Adobe將停止支援版本4 Mobile SDK和iOS和Android專用的獨立媒體分析SDK。 您可以繼續下載並使用第4版SDK，但客戶服務支援和論壇存取權將會終止。 您應移轉至iOS或Android適用的Adobe Experience Platform(AEP)SDK。 AEP Mobile SDK（先前稱為v5）將獨家支援Adobe Experience Cloud的功能和功能。 如需此變更的詳細資訊，請參 [閱第4版行動SDK支援終止常見問答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 建議您移轉至新的AEP Mobile SDK。
-移轉至AEP Mobile SDK後，您必須實作Analytics Launch擴充功能和Media Analytics Launch擴充功能，以啟用Adobe Analytics for Audio和Video。 如需移轉至新AEP Mobile SDK的詳細資訊，請參 [閱從獨立媒體SDK移轉至Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
-
-
-
+>在2021年8月31日終止對第4版行動SDK的支援後，Adobe也將終止對iOS和Android專用Media Analytics SDK的支援。  如需詳細資訊，請 [參閱「媒體分析SDK終止支援常見問答」](/help/sdk-implement/end-of-support-faqs.md)。
 
 ## 下載 2.x Media SDK {#download-2x-sdks}
 
@@ -39,7 +38,7 @@ source-git-commit: 06e32cbea61ed56220787e2bcb822f6bf02b44ac
 | 1.x SDK |  Media SDK 下載內容 |  快速入門指南 |
 | --- | --- | --- |
 | Android | [Android 適用的 SDK v1.5.8](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/android-v1.5.8) | [快速入門 - Android 適用的媒體 1.x](setup/vhl-dev-guide-v15_android.pdf) |
-| iOS 應用程式 | [iOS 適用的 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [快速入門 - iOS 適用的媒體 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
+| iOS | [iOS 適用的 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [快速入門 - iOS 適用的媒體 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 適用的 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [快速入門 - JS 適用的媒體 1.x](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [TVML 適用的 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [快速入門 - TVML 適用的 Media 1.x](setup/vhl_tvml.pdf) |
 | Apple TV | Apple TV 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)) | [快速入門 - Apple TV 適用的媒體 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
