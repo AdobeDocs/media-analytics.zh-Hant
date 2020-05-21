@@ -1,8 +1,11 @@
 ---
 title: 從獨立 Media SDK 移轉至 Adobe Launch - Web (JS)
 description: 協助從 Media SDK 移轉至 Launch 的指示和程式碼範例。
-translation-type: ht
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+translation-type: tm+mt
+source-git-commit: 0f9a985d04969eeca837a2655c666259ce30aee4
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 100%
 
 ---
 
@@ -77,7 +80,8 @@ mediaDelegate.getQoSObject = function() {
 this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
 ```
 
-[Media SDK - 建立追蹤器](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html)
+<!--  Dead Link - from 2019 - can't locate where this should go
+[Media SDK - Tracker Creation](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/cookbook/sdk-vs-launch-qoe.html) -->
 
 ### Launch
 
