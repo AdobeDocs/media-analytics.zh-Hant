@@ -4,10 +4,10 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 841e02e5f4fdd6eebd6eac0c1d42997db49b071e
+source-git-commit: 48de18b022d004bf301a55ec71b6a889f7b9ebb3
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
    + 實施路徑 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
       + [用戶端](intro-to-ava/implementation-paths/client-side-path.md)
-      + 其他實作路徑 {#other-paths}
+      + 其他實施路徑 {#other-paths}
          + 媒體模組里程碑追蹤 {#mm-milestone-tracking}
             + [里程碑概述](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [從里程碑移轉至 Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
@@ -41,7 +41,7 @@ ht-degree: 98%
       + [設定 JavaScript](sdk-implement/setup/set-up-js.md)
       + [設定 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [設定 Roku](sdk-implement/setup/set-up-roku.md)
-   + 追蹤音效和視訊播放 {#track-av-playback}
+   + Track Audio and Video Playback {#track-av-playback}
       + [概述](sdk-implement/track-av-playback/track-core-overview.md)
       + 追蹤核心音訊和視訊播放 {#track-core}
          + [在 Android 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -61,7 +61,7 @@ ht-degree: 98%
          + [在 JavaScript 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [在 Chromecast 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [在 Roku 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + 實作標準中繼資料 {#impl-std-metadata}
+      + Implement Standard Metadata {#impl-std-metadata}
          + [在 Android 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 中繼資料索引鍵](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -77,7 +77,7 @@ ht-degree: 98%
       + [在 JavaScript 上追蹤廣告](sdk-implement/track-ads/track-ads-js.md)
       + [在 Chromecast 上追蹤廣告](sdk-implement/track-ads/track-ads-chromecast.md)
       + [在 Roku 上追蹤廣告](sdk-implement/track-ads/track-ads-roku.md)
-      + 實作標準廣告中繼資料 {#impl-std-ad-metadata}
+      + Implement Standard ad Metadata {#impl-std-ad-metadata}
          + [在 Android 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [在 iOS 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + [在 JavaScript 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
