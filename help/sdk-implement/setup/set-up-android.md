@@ -3,7 +3,10 @@ title: 設定 Android
 description: 適用於 Android 實施的 Media SDK 應用程式設定。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
-source-git-commit: be82be2eb58f89344f2125288599fef461db441e
+source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+workflow-type: tm+mt
+source-wordcount: '427'
+ht-degree: 92%
 
 ---
 
@@ -12,21 +15,19 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 >[!IMPORTANT]
 >
->自2020年10月起，Adobe將停止支援第4版Mobile SDK和Android專用的獨立Media Analytics SDK。 您可以繼續下載並使用第4版SDK，但客戶服務支援和論壇存取權將會終止。 您應移轉至Android專用的Adobe Experience Platform(AEP)SDK。 AEP Mobile SDK（先前稱為v5）將獨家支援Adobe Experience Cloud的功能和功能。 如需此變更的詳細資訊，請參 [閱第4版行動SDK支援終止常見問答](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。 建議您移轉至新的AEP Mobile SDK。
-移轉至AEP Mobile SDK後，您必須實作Analytics Launch擴充功能和Media Analytics Launch擴充功能，以啟用Adobe Analytics for Audio和Video。 如需移轉至新AEP Mobile SDK的詳細資訊，請參 [閱從獨立媒體SDK移轉至Adobe Launch ](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+>在2021年8月31日終止對第4版行動SDK的支援後，Adobe也將終止對iOS和Android專用Media Analytics SDK的支援。  如需詳細資訊，請 [參閱「媒體分析SDK終止支援常見問答」](/help/sdk-implement/end-of-support-faqs.md)。
 
 
 ## 必備條件
-
 
 * **取得適用於 Media SDK 的有效設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
 * **在您的應用程式實作 Android 適用的 ADBMobile**
 如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 Android SDK 4.x](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html)。
 
-* **在您的媒體播放器中提供下列功能:**
+* **在您的媒體播放器中提供下列功能：**
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
-   * *提供播放器資訊的 API* - 此資訊包含媒體名稱和播放點位置等等的詳細內容。
+   * *提供播放器資訊的 API* - 此資訊包含媒體名稱和播放點位置等詳細內容。
 
 ## SDK 實作
 
@@ -37,25 +38,25 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
    1. 將程式庫新增至專案。
 
-      **IntelliJ IDEA:**
+      **IntelliJ IDEA：**
 
-      1. Right click your project in the **[!UICONTROL Project navigation]** panel.
-      1. 選擇 **[!UICONTROL Open Module Settings]**.
-      1. 在下 **[!UICONTROL Project Settings]**&#x200B;面，選擇 **[!UICONTROL Libraries]**。
+      1. 在&#x200B;**[!UICONTROL 「專案導覽」]**&#x200B;面板中，以滑鼠右鍵按一下專案。
+      1. 選取&#x200B;**[!UICONTROL 「開啟模組設定」]**。
+      1. 在&#x200B;**[!UICONTROL 「專案設定」]**&#x200B;下，選取&#x200B;**[!UICONTROL 「資料庫」]**。
 
-      1. Click **[!UICONTROL +]** to add a new library.
-      1. Select **[!UICONTROL Java]** and navigate to the `MediaSDK.jar` file.
+      1. 按一下 **[!UICONTROL +]** 新增新程式庫。
+      1. 選取&#x200B;**[!UICONTROL 「Java」]** 並導覽至 `MediaSDK.jar` 檔案。
 
       1. 選取您計劃使用行動程式庫所在的模組。
-      1. Click **[!UICONTROL Apply]** and then **[!UICONTROL OK]** to close the Module Settings window.
-      **Eclipse:**
+      1. 按一下&#x200B;**[!UICONTROL 「套用」]**，然後按&#x200B;**[!UICONTROL 「確定」]**，關閉「模組設定」視窗。
+      **Eclipse：**
 
       1. 在 Eclipse IDE 中，用滑鼠右鍵按一下專案名稱。
-      1. 按一下  **[!UICONTROL Build Path]** > **[!UICONTROL Add External Archives]** .
+      1. 按一下「**[!UICONTROL 建立路徑]** > **[!UICONTROL 新增外部封存檔]**」。
       1. 選擇 `MediaSDK.jar`.
-      1. 按一下 **[!UICONTROL Open]**.
-      1. 再次以滑鼠右鍵按一下專案，然後按一 **[!UICONTROL Build Path]** 下> **[!UICONTROL Configure Build Path]** 。
-      1. 按一下 **[!UICONTROL Order]** 和標 **[!UICONTROL Export]** 簽。
+      1. 按一下&#x200B;**[!UICONTROL 「開啟」]**。
+      1. 再次以滑鼠右鍵按一下專案，然後按一下「**[!UICONTROL 組建路徑]** > **[!UICONTROL 設定組建路徑]**」。
+      1. 依序按一下&#x200B;**[!UICONTROL 「順序」]**&#x200B;和&#x200B;**[!UICONTROL 「匯出」]**&#x200B;標籤。
 
       1. 確認已選取 `MediaSDK.jar` 檔案。
 
@@ -124,7 +125,7 @@ source-git-commit: be82be2eb58f89344f2125288599fef461db441e
 
 **新增應用程式權限**
 
-使用 Media SDK 的應用程式需要下列權限，才能在追蹤呼叫中傳送資料:
+使用 Media SDK 的應用程式需要下列權限，才能在追蹤呼叫中傳送資料：
 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
