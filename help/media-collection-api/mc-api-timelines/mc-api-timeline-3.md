@@ -2,8 +2,11 @@
 title: 時間軸 3 - 章節
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
+translation-type: tm+mt
+source-git-commit: 197041df4c985cdc572564652a976bd733448787
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 100%
 
 ---
 
@@ -745,4 +748,3 @@ Ping 計時器開始。如果有前段廣告，第一個 Ping 事件則應在 1 
 >[!NOTE]
 >
 >**沒有搜尋事件？-** 媒體收集 API 對於 `seekStart` 或 `seekComplete` 事件的支援並不明確。這是因為特定播放器會在使用者拖曳時，產生大量這類事件，若有數百位使用者這麼做，即可輕易造成後端服務的網路頻寬產生瓶頸。Adobe 會根據裝置時間戳記 (而非播放點位置) 計算心率持續時間，以明確支援搜尋事件。
-
