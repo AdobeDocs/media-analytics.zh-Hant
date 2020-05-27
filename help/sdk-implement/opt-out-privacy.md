@@ -2,8 +2,11 @@
 title: 退出與隱私權
 description: 如何處理選擇加入、選擇退出和隱私權。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '360'
+ht-degree: 100%
 
 ---
 
@@ -22,21 +25,21 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
    >
    >如果隱私權狀態設為退出，也會停用媒體心率追蹤呼叫。
 
-   您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料:
+   您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料：
 
    * `privacyDefault` 設定檔案中的 `ADBMobile.json` 設定。這會控制持續使用的初始設定，直到在程式碼中變更為止。
 
    * `ADBMobile().setPrivacyStatus()` 方法。
 
-      * **選擇退出:**
+      * **選擇退出：**
 
-         * **Chromecast:**
+         * **Chromecast：**
 
             ```
             ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
             ```
 
-         * **Roku:**
+         * **Roku：**
 
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
@@ -45,28 +48,28 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
          >
          >當使用者選擇退出追蹤時，應用程式將清除所有保存的裝置資料和 ID，直到使用者重新加入為止。
 
-      * **再次加入:**
+      * **再次加入：**
 
-         * **Chromecast:**
+         * **Chromecast：**
 
             ```
             ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
             ```
 
-         * **Roku:**
+         * **Roku：**
 
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
-      * **傳回目前設定:**
+      * **傳回目前設定：**
 
-         * **Chromecast:**
+         * **Chromecast：**
 
             ```
             ADBMobile.config.getPrivacyStatus()
             ```
 
-         * **Roku:**
+         * **Roku：**
 
             ```
             ADBMobile().getPrivacyStatus()
@@ -81,7 +84,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 >
 >擷取所有識別碼的方法會取得已知且由 SDK 保存的所有使用者身分識別資料。您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
 
-存放在本機的身分識別資料會以 JSON 字串傳回，其中包括:
+存放在本機的身分識別資料會以 JSON 字串傳回，其中包括：
 
 * 公司內容 - IMS 組織 ID
 * 使用者 ID
@@ -90,15 +93,15 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 * Analytics ID (AVID、AID、VID 以及相關 RSID)
 * Audience Manager ID (UUID)
 
-例如:
+例如：
 
-* **Chromecast:**
+* **Chromecast：**
 
    ```
    ADBMobile.config.getAllIdentifiersAsync(callback)
    ```
 
-* **Roku:**
+* **Roku：**
 
    ```
    vids = ADBMobile().getAllIdentifiers()
