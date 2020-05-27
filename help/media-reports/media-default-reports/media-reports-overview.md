@@ -2,8 +2,11 @@
 title: 媒體概述
 description: null
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
+workflow-type: ht
+source-wordcount: '91'
+ht-degree: 100%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
 
 ## 快速篩選 {#quick-filters}
 
-依裝置或地理區域快速顯示媒體量度:
+依裝置或地理區域快速顯示媒體量度：
 
 ![](assets/video-overview-report-filters.png)
 
@@ -30,7 +33,7 @@ source-git-commit: 5a4f15616712ee91bc028258991fc4e7359698a5
 
 ## 媒體效能 {#media-performance}
 
-按一下並拖曳以放大，然後暫留以檢視特定媒體的詳細量度。按一下  ![](assets/video-overview-report-revert.png)
+按一下並拖曳以放大，然後暫留以檢視特定媒體的詳細量度。按一下 ![](assets/video-overview-report-revert.png) 
 
 在縮放之後重設檢視。
 
