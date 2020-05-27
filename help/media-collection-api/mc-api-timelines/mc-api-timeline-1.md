@@ -2,8 +2,11 @@
 title: 時間軸 1 - 檢視內容到結束為止
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+workflow-type: ht
+source-wordcount: '1164'
+ht-degree: 100%
 
 ---
 
