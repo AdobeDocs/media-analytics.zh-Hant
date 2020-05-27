@@ -2,8 +2,11 @@
 title: 時間軸 2 - 使用者放棄工作階段
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+workflow-type: ht
+source-wordcount: '634'
+ht-degree: 100%
 
 ---
 
