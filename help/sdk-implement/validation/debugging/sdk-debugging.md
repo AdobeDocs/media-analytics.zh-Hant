@@ -2,8 +2,11 @@
 title: SDK 除錯
 description: 本主題說明 Media SDK 中可供使用的追蹤/記錄功能。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '271'
+ht-degree: 100%
 
 ---
 
@@ -25,7 +28,7 @@ config.debugLogging = true;
 MediaHeartbeat _heartbeat = new MediaHeartbeat(this, config); 
 ```
 
-### iOS 應用程式
+### iOS
 
 ```
 // Media Heartbeat Initialization 
@@ -64,7 +67,7 @@ ADBMobile.config.setDebugLogging(true)
 
 ## 使用 Adobe Bloodhound 來測試 Chromecast 應用程式
 
-在應用程式開發期間，Bloodhound 可讓您在本機檢視伺服器呼叫，以及選擇將資料轉送至 Adobe 收集伺服器。
+應用程式開發期間，Bloodhound 可讓您在本機檢視伺服器呼叫，並可選擇將資料轉送至 Adobe 收集伺服器。
 
 <!--
 For more information about Bloodhound, see the following guides:
@@ -79,25 +82,25 @@ For more information about Bloodhound, see the following guides:
 
 ## 記錄訊息
 
-記錄訊息會遵循此格式:
+記錄訊息會遵循此格式：
 
 ```js
 Format: [<timestamp>] [<level>] [<tag>] [<message>] 
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
-* **timestamp**: 這是目前的 CPU 時間 (GMT 時區)
-* **level**: 定義的訊息層次有 4 個:
-   * INFO - 通常是來自應用程式的輸入資料 (驗證播放器名稱、視訊 ID 等等)
+* **timestamp**：這是目前的 CPU 時間 (GMT 時區)
+* **level**：定義的訊息層次有 4 個：
+   * INFO - 通常是來自應用程式的輸入資料 (驗證播放器名稱、視訊 ID 等)
    * DEBUG - 除錯記錄檔，開發人員用來除錯更複雜的問題
    * WARN - 指出可能的整合/設定錯誤或 Heartbeats SDK 錯誤
    * ERROR - 指出重要的整合錯誤或 Heartbeats SDK 錯誤
-* **tag**: 發出記錄訊息的子元件的名稱 (通常是類別名稱)
-* **message**: 實際追蹤訊息
+* **tag**：發出記錄訊息的子元件的名稱 (通常是類別名稱)
+* **message**：實際追蹤訊息
 
-您可以使用 Media SDK 程式庫的記錄輸出來驗證實施。良好的策略是搜尋整個記錄中是否有字串 `#track`.這將會反白顯示應用程式呼叫的所有 `track*()`。
+您可以使用 Media SDK 程式庫的記錄輸出驗證實作。在整個記錄中搜尋字串 `#track`，會是不錯的策略。這將會反白顯示應用程式呼叫的所有 `track*()`。
 
-例如，這是篩選了 `#track` 之記錄的外觀:
+例如，這是篩選了 `#track` 之記錄的外觀：
 
 ```js
 [16:10:29 GMT­0700 (PDT).222] [INFO] [plugin::player] #trackVideoLoad() 
