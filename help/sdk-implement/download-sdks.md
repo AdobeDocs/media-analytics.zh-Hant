@@ -3,10 +3,10 @@ title: 下載 SDK
 description: 各平台適用的 SDK 下載內容連結，包括 Android、iOS、JavaScript、Chromecast 和 Roku。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: fe109e9d670bf7fb6379f3c3631d10cecd2d48ac
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 90%
+source-wordcount: '493'
+ht-degree: 74%
 
 ---
 
@@ -17,21 +17,31 @@ ht-degree: 90%
 >
 >在2021年8月31日終止對第4版行動SDK的支援後，Adobe也將終止對iOS和Android專用Media Analytics SDK的支援。  如需詳細資訊，請 [參閱「媒體分析SDK終止支援常見問答」](/help/sdk-implement/end-of-support-faqs.md)。
 
+
+## 下載 3.x Media SDK {#download-3x-sdks}
+
+| 3.x Media SDK | 最新的 Media SDK 下載內容 |  API   |  文件 |
+| --- | --- | --- | --- |
+| JavaScript | [JS 適用的 Media SDK v3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.0) | [JS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [設定JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
+
+
 ## 下載 2.x Media SDK {#download-2x-sdks}
 
 | 2.x Media SDK | 最新的 Media SDK 下載內容 |  API   |  文件 |
 | --- | --- | --- | --- |
 | Android/FireTV | [Android 適用的 Media SDK v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Android API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [設定 Android](/help/sdk-implement/setup/set-up-android.md) |
 | iOS/AppleTV | [iOS 適用的 Media SDK v2.2.7](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.7) (若要取得舊版 2.0 SDK，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)) | [iOS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [設定 iOS](/help/sdk-implement/setup/set-up-ios.md) |
-| JavaScript | [JS 適用的 Media SDK v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [設定 JavaScript](/help/sdk-implement/setup/set-up-js.md) |
+| JavaScript | [JS 適用的 Media SDK v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [JS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [設定JavaScript 2.x](/help/sdk-implement/setup/setup-javascript/set-up-js-2.md) |
 | Roku | [Roku 適用的 Media SDK v2.2.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.3) |  | [設定 Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [Chromecast 適用的 Media SDK v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Chromecast API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [設定 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Media Analytics Launch 擴充功能 {#media-analytics-launch-extension}
 
-| MA 啟動元件   | 下載 | 文件 |
+| MA 啟動元件   | 文件 | 示例 |
 |---|---|---|
-| **MA Launch 擴充功能** | [範例 HTML5 播放器擴充功能](https://github.com/adobe/reactor-adobe-va-sample-player) | [Adobe Media Analytics for Audio and Video 擴充功能](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
+| **Web Extension** | [Adobe Media Analytics for Audio and Video 擴充功能](https://docs.adobe.com/content/help/zh-Hant/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html) | [Adobe Media Analytics for Audio and Video 擴充功能](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
+| **網頁延伸模組(3.x SDK)** | [Adobe Media Analytics for Audio and Video 擴充功能](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-3x-extension/overview.html) | [音訊與視訊延伸功能的Adobe Media Analytics(3.x SDK)](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
+| **行動延伸功能** | [Adobe Analytics —— 音訊和視訊的媒體分析](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) | [Adobe Analytics —— 音訊和視訊擴充功能的媒體分析](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile) |
 
 ## 下載 1.x Media SDK {#download-the-1.x-media-sDKs}
 
