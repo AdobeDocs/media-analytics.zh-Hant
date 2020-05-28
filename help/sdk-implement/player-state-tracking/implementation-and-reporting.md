@@ -2,9 +2,9 @@
 title: 實施與報告
 description: 本主題說明如何實作播放器狀態追蹤功能，包括。
 translation-type: tm+mt
-source-git-commit: b0bfe74d1f6083e700dbf98f504a17518bd19ecb
+source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '326'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Media SDK包含兩種新的自訂狀態追蹤方法：
 `trackStateClose("state_name")`
 
 
-Media Collection API包含兩個以&quot;media.stateName&quot;為必要參數的新事件：
+Media Collection API包含兩個新事件，其中 `media.stateName` 為必要參數：
 
 `stateStart` 與 `stateEnd`
 
@@ -84,14 +84,19 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 針對每個個別狀態提供的量度會計算並推送至Adobe Analytics作為「內容資料」參數，並儲存以供報告之用。 每個狀態有三個可用的度量：
 
-* `a.media.states.(media.state.name).set = true` — 如果每個流的特定播放至少將狀態設定一次，則設為true。
-* `a.media.states.(media.state.name).count = 4` — 識別每次個別播放串流期間發生狀態的次數
-* `a.media.states.(media.state.name).time = 240` — 識別每個串流個別播放的總狀態持續時間（秒）
+* `a.media.states.[state.name].set = true` — 如果每個流的特定播放至少將狀態設定一次，則設為true。
+* `a.media.states.[state.name].count = 4` — 識別每次個別播放串流期間發生狀態的次數
+* `a.media.states.[state.name].time = 240` — 識別每個串流個別播放的總狀態持續時間（秒）
 
 ## 報表
 
-所有狀態度量都可用於任何報表視覺化或元件（區段、計算度量）。
-TBD —— 檢查源／維基以瞭解更新資訊——從AW拍攝螢幕
+在報表套裝啟用播放器狀態追蹤後，所有播放器狀態度量都可用於分析工作區或元件（區段、計算量度）中的任何報表視覺化。 新量度可從「管理控制台」使用「媒體報表設定」（編輯設定>媒體管理>媒體報表），針對每個個別報表啟用。
+
+![](assets/report-setup.png)
+
+在Analytics工作區中，所有新屬性都位於量度面板中。 例如，您可以依據搜尋， `full screen` 在量度面板中檢視全螢幕資料。
+
+![](assets/full-screen-report.png)
 
 ## 將播放器指定的量度匯入Adobe Experience Platform
 
