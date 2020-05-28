@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 上實作標準廣告中繼資料
-description: 如何在瀏覽器 (JS) 應用程式中將標準廣告中繼資料用於廣告追蹤。
+title: 使用JavaScript 2.x實作標準廣告中繼資料
+description: 如何使用JavaScript 2.x應用程式，在瀏覽器中使用廣告追蹤中的標準廣告中繼資料。
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 55%
 
 ---
 
 
-# 在 JavaScript 上實作標準廣告中繼資料{#implement-standard-ad-metadata-on-javascript}
+# 使用JavaScript 2.x實作標準廣告中繼資料{#implement-standard-ad-metadata-on-javascript}
 
 ## 廣告常數
 
@@ -25,12 +28,11 @@ var adObject =
 MediaHeartbeat.createAdObject(<AD_NAME>,  
                               <AD_ID>,  
                               <POSITION>,  
-                              <LENGTH>); 
-   
-// Set standard Ad Metadata 
-var standardAdMetadata = {}; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser"; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign"; 
+                              <LENGTH>);
+
+// Set standard Ad Metadata
+var standardAdMetadata = {};
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser";
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign";
 adObject.setValue(MediaObjectKey.StandardAdMetadata, standardAdMetadata);
 ```
-
