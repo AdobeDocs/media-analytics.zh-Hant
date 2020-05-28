@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 上追蹤緩衝
+title: 使用JavaScript 2.x追蹤緩衝
 description: 說明如何在瀏覽器應用程式 (JS) 中追蹤緩衝事件。
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 8235fee973623c168dbf83f43aa85f13b4e06cff
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 91%
 
 ---
 
 
-# 在 JavaScript 上追蹤緩衝{#track-buffering-on-javascript}
+# 使用JavaScript 2.x追蹤緩衝{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝。
 
    ```js
-   _onBufferStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
+   _onBufferStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
    };
    ```
 
 1. 在來自媒體播放器的緩衝完成通知上，使用 `BufferComplete` 事件來追蹤緩衝的結尾。
 
    ```js
-   _onBufferComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+   _onBufferComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
    };
    ```
 
