@@ -2,9 +2,9 @@
 title: 關於標準和自訂狀態
 description: 本主題說明播放器狀態追蹤功能，包括實作和報告標準與自訂播放器狀態的需求與准則。
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '280'
 ht-degree: 1%
 
 ---
@@ -30,14 +30,15 @@ ht-degree: 1%
 
 ## 準則
 
-* 一個視訊作業限制為10個獨特的自訂播放器狀態。
-* 如果多個播放器狀態通過，則僅保留前10個並轉發到下游的VA(?video analytics)處理元件。
+* 一個視訊作業限制為10個播放器狀態。
+* 允許任何狀態組合。
+* 如果多個播放器狀態通過，則僅保留前10個並轉發到下游的VA處理元件。
 * 所有狀態最多應用10個狀態，無論它們是否關閉。
-* 同一狀態可以啟動和結束任意次數，並計為單一狀態。
-* 超過自訂上限的每個狀態？ 狀態(10)被丟棄。
+* 狀態可以多次啟動和結束，並計為單一狀態。 例如，可 `closedCapationing` 以啟動和停止5次，但會計為單一狀態。
+* 每個超過10個允許狀態上限的狀態都會被捨棄。
 
 ## 自訂狀態
 
 您可以建立自訂狀態，在播放作業階段期間擷取自訂動作並更新自訂中繼資料。
 
-需要有關自訂狀態的更多資訊
+如需建立自訂狀態的詳細資訊，請參閱「媒 [體API參考指南」: `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
