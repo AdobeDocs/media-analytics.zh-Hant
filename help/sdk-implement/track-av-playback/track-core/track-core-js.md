@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 上追蹤核心播放
-description: 本主題說明如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作核心追蹤。
+title: 使用JavaScript 2.x追蹤核心播放
+description: 本主題說明如何使用JavaScript 2.x應用程式，在瀏覽器中使用Media SDK實作核心追蹤。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 95%
 
 ---
 
 
-# 在 JavaScript 上追蹤核心播放{#track-core-playback-on-javascript}
+# 使用JavaScript 2.x追蹤核心播放{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >本文件涵蓋 SDK 2.x 版中的追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
@@ -49,7 +52,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var mediaObject =  
      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                      <MEDIA_ID,  
-                                     <MEDIA_LENGTH>, 
+                                     <MEDIA_LENGTH>,
                                      MediaHeartbeat.StreamType.VOD,
                                      <MEDIA_TYPE>);
    ```
@@ -74,11 +77,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       為自訂變數建立變數物件，並為此媒體填入資料。例如:
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -160,4 +163,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * 追蹤案例：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的含 JavaScript SDK 範例播放器。
-
