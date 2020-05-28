@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 上追蹤搜尋
+title: 使用JavaScript 2.x追蹤搜尋
 description: 本主題說明如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作搜尋追蹤。
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 5f274452b9ff5770908f7e2e450935be572a22ea
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 92%
 
 ---
 
 
-# 在 JavaScript 上追蹤搜尋{#track-seeking-on-javascript}
+# 使用JavaScript 2.x追蹤搜尋{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 從媒體播放器上聽取播放搜尋事件，並在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋:
 
    ```js
-   _onSeekStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
+   _onSeekStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
    };
    ```
 
 1. 在來自媒體播放器的搜尋完成通知上，使用 `SeekComplete` 事件來追蹤搜尋的結尾:
 
    ```js
-   _onSeekComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
+   _onSeekComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
    };
    ```
 
