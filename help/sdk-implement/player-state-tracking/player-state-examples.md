@@ -2,17 +2,15 @@
 title: 播放器狀態追蹤範例
 description: 本主題包含播放器狀態追蹤功能的範例。
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '119'
 ht-degree: 0%
 
 ---
 
 
 # 播放器狀態追蹤範例
-
-新增範例
 
 
 ## 長暫停範例
