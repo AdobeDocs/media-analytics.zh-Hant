@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 上追蹤章節和區段
+title: 使用JavaScript 2.x追蹤章節和區段
 description: 本主題說明如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作章節和區段追蹤。
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b14b56aea4a1821a2a160b9cd301cd181f1ba8dd
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 92%
 
 ---
 
 
-# 在 JavaScript 上追蹤章節和區段{#track-chapters-and-segments-on-javascript}
+# 使用JavaScript 2.x追蹤章節和區段{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -42,38 +45,37 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 如果您包含該章節的自訂中繼資料，請為中繼資料建立內容資料變數:
 
    ```js
-   var chapterCustomMetadata = { 
+   var chapterCustomMetadata = {
        segmentType: "Sample segment type",  
        segmentName: "Sample segment name",  
-       segmentInfo: "Sample segment info" 
+       segmentInfo: "Sample segment info"
    };
    ```
 
 1. 若要開始追蹤章節播放，請呼叫 `ChapterStart` 例項中的 `MediaHeartbeat` 事件:
 
    ```js
-   _onChapterStart = function() { 
+   _onChapterStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                        chapterObject,  
-                                       chapterCustomMetadata); 
+                                       chapterCustomMetadata);
    };
    ```
 
 1. 當播放達到由您的自訂程式碼定義之章節結束界限時，請呼叫 `ChapterComplete` 例項中的 `MediaHeartbeat` 事件:
 
    ```js
-   _onChapterComplete = function() { 
-      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+   _onChapterComplete = function() {
+      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
    };
    ```
 
 1. 如果因為使用者選擇略過章節而未完成章節播放 (例如，如果使用者搜尋超出章節界限)，請呼叫 MediaHeartbeat 例項中的 `ChapterSkip` 事件:
 
    ```js
-   _onChapterSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
+   _onChapterSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
    };
    ```
 
 1. 如果有任何其他章節，請重複步驟 1 到 5。
-
