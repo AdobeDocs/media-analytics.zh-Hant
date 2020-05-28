@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 上追蹤廣告
+title: 使用JavaScript 2.x追蹤廣告
 description: 使用 Media SDK 在瀏覽器 (JS) 應用程式中實作廣告追蹤。
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: f5b3961e0525c26b682490a4376d244c2703ae24
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 97%
 
 ---
 
 
-# 在 JavaScript 上追蹤廣告{#track-ads-on-javascript}
+# 使用JavaScript 2.x追蹤廣告{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -78,11 +81,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告的資料:
 
       ```js
-      /* Set custom context data */ 
-      var adCustomMetadata = { 
-          affiliate: "Sample affiliate", 
-          campaign: "Sample ad campaign", 
-          creative: "Sample creative" 
+      /* Set custom context data */
+      var adCustomMetadata = {
+          affiliate: "Sample affiliate",
+          campaign: "Sample ad campaign",
+          creative: "Sample creative"
       };
       ```
 
@@ -91,26 +94,26 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    將參考加入您的自訂中繼資料變數 (或空白物件)，作為事件呼叫中的第三個參數:
 
    ```js
-   _onAdStart = function() { 
+   _onAdStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdStart,  
                                        adObject,  
-                                       adCustomMetadata); 
+                                       adCustomMetadata);
    };
    ```
 
 1. 當廣告播放達到廣告結尾時，請使用 `AdComplete` 事件呼叫 `trackEvent()`:
 
    ```js
-   _onAdComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete); 
+   _onAdComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdComplete);
    };
    ```
 
 1. 如果由於使用者選擇略過廣告而導致廣告播放未完成，請追蹤 `AdSkip` 事件:
 
    ```js
-   _onAdSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip); 
+   _onAdSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdSkip);
    };
    ```
 
@@ -118,8 +121,8 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 當廣告插播完成時，請使用 `AdBreakComplete` 事件進行追蹤:
 
    ```js
-   _onAdBreakComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
+   _onAdBreakComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
    };
    ```
 
