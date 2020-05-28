@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 上追蹤錯誤
+title: 使用JavaScript 2.x追蹤錯誤
 description: 本主題說明如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作錯誤追蹤。
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 5f274452b9ff5770908f7e2e450935be572a22ea
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 89%
 
 ---
 
 
-# 在 JavaScript 上追蹤錯誤{#track-errors-on-javascript}
+# 使用JavaScript 2.x追蹤錯誤{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -19,12 +22,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. 追蹤媒體播放器錯誤:
 
    ```js
-   onPlayerError = function() { 
-       this._mediaHeartbeat.trackError("mediaErrorId"); 
+   onPlayerError = function() {
+       this._mediaHeartbeat.trackError("mediaErrorId");
    };
    ```
 
 >[!NOTE]
 >
 >追蹤媒體播放器錯誤將不會停止媒體追蹤工作階段。如果媒體播放器錯誤使得播放無法繼續，請透過在呼叫 `trackError` 之後呼叫 `trackSessionEnd`，以確定媒體追蹤工作階段已關閉。
-
