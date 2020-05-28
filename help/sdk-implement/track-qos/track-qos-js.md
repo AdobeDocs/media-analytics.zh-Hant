@@ -1,14 +1,17 @@
 ---
-title: 在 JavaScript 上追蹤體驗品質
-description: 本主題說明如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。
+title: 使用JavaScript 2.x追蹤體驗品質
+description: 本主題說明在使用JavaScript 2.x的瀏覽器應用程式中使用媒體SDK實作體驗品質(QoE、QoS)追蹤。
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b165c9d133637fd0f1c529a98a936f8f31b72465
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 84%
 
 ---
 
 
-# 在 JavaScript 上追蹤體驗品質{#track-quality-of-experience-on-javascript}
+# 使用JavaScript 2.x追蹤體驗品質{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -39,14 +42,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var qosObject = MediaHeartbeat.createQoSObject(<bitrate>,  
                                                   <startuptime>,  
                                                   <fps>,  
-                                                  <droppedFrames>); 
+                                                  <droppedFrames>);
    ```
 
 1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件:
 
    ```js
-   _onBitrateChange = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+   _onBitrateChange = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
    };
    ```
 
@@ -60,4 +63,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >追蹤媒體播放器錯誤將不會停止媒體追蹤工作階段。如果媒體播放器錯誤使得播放無法繼續，請透過在呼叫 `trackError()` 之後呼叫 `trackSessionEnd()`，以確定媒體追蹤工作階段已關閉。
-
