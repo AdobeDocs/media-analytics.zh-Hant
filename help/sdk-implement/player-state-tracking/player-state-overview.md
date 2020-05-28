@@ -2,19 +2,19 @@
 title: 關於播放器狀態追蹤
 description: 本主題說明播放器狀態追蹤功能，包括實作和報告播放器狀態的需求和准則。
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 1%
 
 ---
 
 
 # 關於播放器狀態追蹤
 
-為了最佳化您的產品體驗並提升業務價值，在觀看視訊時，請務必瞭解客戶的行為。 這包括在不同播放器狀態中逗留的時間。  此外，若要最佳化您的瞭解，您需要有彈性來建立和測量新的播放器狀態和事件。
+為了最佳化您的產品體驗並提升業務價值，在觀看視訊時，請務必瞭解客戶的行為。 這包括在不同播放器狀態中逗留的時間。  此外，必須具備視需要建立和測量新播放器狀態和事件的彈性。
 
-播放器狀態追蹤功能可讓您在播放時，使用全螢幕、隱藏字幕、靜音、圖片和焦點的標準解決方案變數集來擷取檢視器互動。  播放器狀態追蹤也提供建立自訂播放器狀態的彈性。  而「播放器狀態追蹤」變數則可用於分析工作區中的報告。
+播放器狀態追蹤功能可讓您在播放時，使用全螢幕、隱藏字幕、靜音、圖片和焦點的標準解決方案變數集來擷取檢視器互動。  播放器狀態追蹤也提供建立自訂播放器狀態的彈性。 您可以在分析工作區中使用播放器狀態追蹤變數進行報告。
 
 若要擷取對播放器狀態的變更，「播放器狀態追蹤」會更新視訊測量中繼資料。 例如，若要判斷「真」視訊參與度，「播放器狀態追蹤」會測量在關閉音效或在「正常」與「全螢幕」模式下逗留的視訊檢視與被動或非參與的視訊檢視之間的聲音逗留時間。
 
@@ -29,13 +29,12 @@ ht-degree: 0%
 
 ## 要求
 
-Media Analytics Extension若要與Adobe Experience Platform(AEP SDK)搭配使用，「播放器狀態追蹤」需要下列項目：
-* Web: 音訊與視訊v1.0+專用的Adobe Media Analytics(3.x SDK)
-* 行動： Adobe Media Analytics for Audio and Video v2.0+
-
-如果您決定不使用AEP SDK，則可搭配「播放器狀態追蹤」使用下列項目：
+播放器狀態追蹤需要下列其中一項才能收集資料：
 * Media JS SDK 3.0+
-* Media Collection API版本？
+* Media Analytics擴充功能(與Adobe Experience Platform(AEP)SDK搭配使用)
+   * Web: 音訊與視訊v1.0+專用的Adobe Media Analytics(3.x SDK)
+   * 行動： Adobe Media Analytics for Audio and Video v2.0+
+* 媒體收集 API
 
 ## 準則
 
