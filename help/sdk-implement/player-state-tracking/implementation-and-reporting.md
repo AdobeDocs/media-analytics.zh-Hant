@@ -2,9 +2,9 @@
 title: 實施與報告
 description: 本主題說明如何實作播放器狀態追蹤功能，包括。
 translation-type: tm+mt
-source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
+source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -100,4 +100,4 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 將播放器指定的量度匯入Adobe Experience Platform
 
-儲存在Analytics中的資料可用於任何用途，而播放器狀態量度可使用XDM匯入至Adobe Experience Platform，並與客戶歷程分析搭配使用。 標準狀態屬性具有特定屬性，而自訂狀態是屬性可透過自訂事件使用。 如需詳細資訊，請參閱XDM身分的屬性清單，網址為「連結至量度清單」。
+儲存在Analytics中的資料可用於任何用途，而播放器狀態量度可使用XDM匯入至Adobe Experience Platform，並與客戶歷程分析搭配使用。 標準狀態屬性具有特定屬性，而自訂狀態是屬性可透過自訂事件使用。
