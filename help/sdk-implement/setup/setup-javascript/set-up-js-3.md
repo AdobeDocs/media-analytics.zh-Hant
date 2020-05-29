@@ -2,10 +2,10 @@
 title: 設定JavaScript 3.x
 description: 在JavaScript 3.x上實作的媒體SDK應用程式設定。
 translation-type: tm+mt
-source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
+source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 50%
+source-wordcount: '398'
+ht-degree: 47%
 
 ---
 
@@ -46,6 +46,16 @@ ht-degree: 50%
       >
       >The JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `MediaSDK.js` can also be used with compatible module loaders.
 
+1. 建立和設 `AppMeasurement` 定例項 `visitor`。
+
+   Media SDK設定需要已設定 `AppMeasurement` 的例 `visitor` 項。
+
+```js
+var appMeasurement = new AppMeasurement(“<rsid>”);
+appMeasurement.visitor = visitor;
+appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+```
+
 1. 設定媒體SDK
 
    Media SDK應依網頁設定一次，且組態會套用至所有建立的追蹤器例項。
@@ -53,6 +63,7 @@ ht-degree: 50%
    >[!IMPORTANT]
    >
    > Media SDK(3.x)使用Media Collection API來追蹤與2.x SDK中使用的HB端點不同的媒體。 請連絡您的Adobe代表以取得更多資訊。
+
 
    以下示範 `MediaConfig` 初始化：
 
