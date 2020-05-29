@@ -4,9 +4,9 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: a73536bd7a818ac23ad322a15f109644e75ee0d5
+source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '809'
 ht-degree: 79%
 
 ---
@@ -48,30 +48,34 @@ ht-degree: 79%
       + 追蹤核心音訊和視訊播放 {#track-core}
          + [在 Android 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在 iOS 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
-         + [在JavaScript 2.x上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-js.md)
-         + [在JavaScript 3.x上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-js3.md)
+         + 在 JavaScript 上追蹤核心播放 {#track-core-javascript}
+            + [在JavaScript 2.x上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js.md)
+            + [在JavaScript 3.x上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
          + [在 Chromecast 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [在 Roku 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + 追蹤緩衝 {#track-buffering}
          + [在 Android 上追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [在 iOS 上追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-         + [追蹤JavaScript 2.x上的緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
-         + [追蹤JavaScript 3.x上的緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-js3.md)
+         + 在 JavaScript 上追蹤緩衝 {#track-buffering-js}
+            + [追蹤JavaScript 2.x上的緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+            + [追蹤JavaScript 3.x上的緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
          + [在 Chromecast 上追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
          + [在 Roku 上追蹤緩衝](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + 追蹤搜尋 {#track-seeking}
          + [在 Android 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [在 iOS 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
-         + [在JavaScript 2.x上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
-         + [在JavaScript 3.x上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js3.md)
+         + 在 JavaScript 上追蹤搜尋 {#track-seeking-js}
+            + [在JavaScript 2.x上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+            + [在JavaScript 3.x上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [在 Chromecast 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [在 Roku 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Implement Standard Metadata {#impl-std-metadata}
          + [在 Android 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 中繼資料索引鍵](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + [在JavaScript 2.x上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
-         + [在JavaScript 3.x上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js3.md)
+         + Implement Standard Metadata on JavaScript {#impl-std-md-js}
+            + [在JavaScript 2.x上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [在JavaScript 3.x上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [在 Chromecast 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [標準中繼資料參數 - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [在 Roku 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -80,38 +84,43 @@ ht-degree: 79%
       + [概述](sdk-implement/track-ads/track-ads-overview.md)
       + [在 Android 上追蹤廣告](sdk-implement/track-ads/track-ads-android.md)
       + [在 iOS 上追蹤廣告](sdk-implement/track-ads/track-ads-ios.md)
-      + [在JavaScript 2.x上追蹤廣告](sdk-implement/track-ads/track-ads-js.md)
-      + [在JavaScript 3.x上追蹤廣告](sdk-implement/track-ads/track-ads-js3.md)
+      + 在 JavaScript 上追蹤廣告 {#track-ads-js}
+         + [在JavaScript 2.x上追蹤廣告](sdk-implement/track-ads/track-ads-js/track-ads-js.md)
+         + [在JavaScript 3.x上追蹤廣告](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [在 Chromecast 上追蹤廣告](sdk-implement/track-ads/track-ads-chromecast.md)
       + [在 Roku 上追蹤廣告](sdk-implement/track-ads/track-ads-roku.md)
       + Implement Standard ad Metadata {#impl-std-ad-metadata}
          + [在 Android 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [在 iOS 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + [在JavaScript 2.x上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
-         + [在JavaScript 3.x上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js3.md)
+         + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
+            + [在JavaScript 2.x上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+            + [在JavaScript 3.x上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [在 Roku 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + 追蹤章節和區段 {#track-chapters}
       + [概述](sdk-implement/track-chapters/track-chapters-overview.md)
       + [在 Android 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-android.md)
       + [在 iOS 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [在JavaScript 2.x上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-js.md)
-      + [在JavaScript 3.x上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-js3.md)
+      + 在 JavaScript 上追蹤章節和區段 {#track-chapters-js}
+         + [在JavaScript 2.x上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-js/track-chapters-js.md)
+         + [在JavaScript 3.x上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [在 Chromecast 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [在 Roku 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-roku.md)
    + 追蹤體驗品質 {#track-qos}
       + [概述](sdk-implement/track-qos/track-qos-overview.md)
       + [在 Android 上追蹤體驗品質](sdk-implement/track-qos/track-qos-android.md)
       + [在 iOS 上追蹤體驗品質](sdk-implement/track-qos/track-qos-ios.md)
-      + [在JavaScript 2.x上追蹤體驗品質](sdk-implement/track-qos/track-qos-js.md)
-      + [在JavaScript 3.x上追蹤體驗品質](sdk-implement/track-qos/track-qos-js3.md)
+      + 在 JavaScript 上追蹤體驗品質 {#track-qos-js}
+         + [在JavaScript 2.x上追蹤體驗品質](sdk-implement/track-qos/track-qos-js/track-qos-js.md)
+         + [在JavaScript 3.x上追蹤體驗品質](sdk-implement/track-qos/track-qos-js/track-qos-js3.md)
       + [在 Chromecast 上追蹤體驗品質](sdk-implement/track-qos/track-qos-chromecast.md)
       + [在 Roku 上追蹤體驗品質](sdk-implement/track-qos/track-qos-roku.md)
    + 追蹤錯誤 {#track-errors}
       + [概述](sdk-implement/track-errors/track-errors-overview.md)
       + [在 Android 上追蹤錯誤](sdk-implement/track-errors/track-errors-android.md)
       + [在 iOS 上追蹤錯誤](sdk-implement/track-errors/track-errors-ios.md)
-      + [在JavaScript 2.x上追蹤錯誤](sdk-implement/track-errors/track-errors-js.md)
-      + [在JavaScript 3.x上追蹤錯誤](sdk-implement/track-errors/track-errors-js3.md)
+      + 在 JavaScript 上追蹤錯誤 {#track-errors-js}
+         + [在JavaScript 2.x上追蹤錯誤](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
+         + [在JavaScript 3.x上追蹤錯誤](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
       + [在 Chromecast 上追蹤錯誤](sdk-implement/track-errors/track-errors-chromecast.md)
       + [在 Roku 上追蹤錯誤](sdk-implement/track-errors/track-errors-roku.md)
    + [選擇退出與隱私權](sdk-implement/opt-out-privacy.md)
