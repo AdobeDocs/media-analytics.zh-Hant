@@ -1,12 +1,12 @@
 ---
 title: 設定 iOS
-description: 適用於 iOS 實施的 Media SDK 應用程式設定。
+description: 適用於 iOS 實作的 Media SDK 應用程式設定。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 >[!IMPORTANT]
 >
->在2021年8月31日終止對第4版行動SDK的支援後，Adobe也將終止對iOS和Android專用Media Analytics SDK的支援。  如需詳細資訊，請 [參閱「媒體分析SDK終止支援常見問答」](/help/sdk-implement/end-of-support-faqs.md)。
+>我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。  如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/sdk-implement/end-of-support-faqs.md)。
 
 ## 必備條件
 
@@ -26,7 +26,7 @@ ht-degree: 93%
 
    >[!IMPORTANT]
    >
-   >Apple 自 iOS 9 起推出 App Transport Security (ATS) 功能。此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此功能預設為已啟用，但您可透過設定選項自行選擇是否使用 ATS。如需 ATS 的詳細資訊，請參閱 [App Transport Security](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)。
+   >Apple 自 iOS 9 起推出 App Transport Security (ATS) 功能。此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此功能預設為已啟用，但您可透過設定選項自行選擇是否使用 ATS。如需 ATS 的詳細資訊，請參閱 [App Transport Security](https://docs.adobe.com/content/help/zh-Hant/mobile-services/ios/config-ios/app-transport-security.html)。
 
 * **在您的媒體播放器中提供下列功能：**
 
@@ -37,15 +37,15 @@ ht-degree: 93%
 
 1. 將[下載的](/help/sdk-implement/download-sdks.md#download-2x-sdks) Media SDK 新增至專案。
 
-   1. 驗證 `libs` 目錄中存在下列軟體元件:
+   1. 驗證 `libs` 目錄中存在下列軟體元件：
 
-      * `ADBMediaHeartbeat.h`: 用於 iOS 心率追蹤 API 的 Objective-C 標題檔案。
-      * `ADBMediaHeartbeatConfig.h`: SDK 設定的 Objective-C 標題檔案。
-      * `MediaSDK.a`: 已啟用 bitcode 的大型程式庫，其中包含 iOS 裝置 (armv7、armv7s、arm64) 和模擬器 (i386 和 x86_64) 適用的程式庫組建。
+      * `ADBMediaHeartbeat.h`：用於 iOS 心率追蹤 API 的 Objective-C 標題檔案。
+      * `ADBMediaHeartbeatConfig.h`：SDK 設定的 Objective-C 標題檔案。
+      * `MediaSDK.a`：已啟用 bitcode 的大型程式庫，其中包含 iOS 裝置 (armv7、armv7s、arm64) 和模擬器 (i386 和 x86_64) 適用的程式庫組建。
 
          當預期目標為 iOS 應用程式時，應連結此二進位檔。
 
-      * `MediaSDK_TV.a`: 已啟用 bitcode 的大型程式庫，其中包含新 Apple TV 裝置 (arm64) 和模擬器 (x86_64) 適用的程式庫組建。
+      * `MediaSDK_TV.a`：已啟用 bitcode 的大型程式庫，其中包含新 Apple TV 裝置 (arm64) 和模擬器 (x86_64) 適用的程式庫組建。
 
          當預期目標為 Apple TV (tvOS) 應用程式時，應該連結此程式庫。
    1. 將程式庫新增至專案：
@@ -61,7 +61,7 @@ ht-degree: 93%
       1. 在&#x200B;**[!UICONTROL 「專案導覽器」]**&#x200B;中，選取您的應用程式並選取您的目標。
       1. 在&#x200B;**[!UICONTROL 「一般」]**&#x200B;標籤的&#x200B;**[!UICONTROL 「連結架構」]**&#x200B;和&#x200B;**[!UICONTROL 「程式庫」]**&#x200B;區段中，連結所需的架構和程式庫。
 
-         **iOS 應用程式目標:**
+         **iOS 應用程式目標：**
 
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
@@ -88,7 +88,7 @@ ht-degree: 93%
 
    本節可協助您瞭解 `MediaHeartbeat` 設定參數，以及在您的 `MediaHeartbeat` 例項上設定正確的設定值以提高追蹤準確率。
 
-   以下示範 `ADBMediaHeartbeatConfig` 初始化:
+   以下示範 `ADBMediaHeartbeatConfig` 初始化：
 
    ```
    // Media Heartbeat Initialization
@@ -102,7 +102,7 @@ ht-degree: 93%
    config.debugLogging   = <YES/NO>;
    ```
 
-1. 實施 `ADBMediaHeartbeatDelegate` 通訊協定。
+1. 實作 `ADBMediaHeartbeatDelegate` 通訊協定。
 
    ```
    @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate>
@@ -155,7 +155,7 @@ ht-degree: 93%
 
 1. 將 `VideoHeartbeat_TV.a``lib` 程式庫檔案拖曳至您的專案的 資料夾。
 
-1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建置階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與程式庫」]**&#x200B;區段，並新增下列程式庫:
+1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建置階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與程式庫」]**&#x200B;區段，並新增下列程式庫：
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
