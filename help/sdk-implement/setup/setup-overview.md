@@ -2,11 +2,11 @@
 title: 設定概述
 description: 在行動裝置、OTT 和瀏覽器 (JS) 應用程式設定 Media SDK 進行媒體追蹤的相關概述。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->在2021年8月31日終止對第4版行動SDK的支援後，Adobe也將終止對iOS和Android專用Media Analytics SDK的支援。  如需詳細資訊，請 [參閱「媒體分析SDK終止支援常見問答」](/help/sdk-implement/end-of-support-faqs.md)。
+>我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/sdk-implement/end-of-support-faqs.md)。
 
 下列指示適用於 2.x Media SDK。若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md)如需 Primetime 整合器的相關資訊，請參閱以下的 _Primetime Media SDK 文件_。
 
@@ -39,7 +39,7 @@ ht-degree: 95%
 * 媒體心率代理人 - 代理人可控制播放時間和 QoS 物件。
 * 媒體心率 - 包含成員與方法的主要程式庫。
 
-完成下列實施步驟:
+完成下列實施步驟：
 
 1. 建立 `MediaHeartbeatConfig` 例項並設定您的設定參數值。
 
@@ -53,7 +53,7 @@ ht-degree: 95%
    | `ssl` | 指出是否應透過 HTTPS 進行呼叫 | 無 | false |
    | `debugLogging` | 指出是否已啟用除錯記錄 | 無 | false |
 
-1. 實作 `MediaHeartbeatDelegate`.
+1. 實作 `MediaHeartbeatDelegate`。
 
    |  方法名稱  |  說明 | 必填 |
    | --- | --- | :---: |
@@ -125,7 +125,7 @@ ht-degree: 95%
 
 ## 驗證 {#validate}
 
-Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫:
+Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫：
 
 * 媒體和廣告開始呼叫會直接傳送到 Adobe Analytics (AppMeasurement) 伺服器。
 * 心率呼叫會傳送到 Media Analytics (心率) 追蹤伺服器並於該位置處理，然後再傳遞到 Adobe Analytics 伺服器。
@@ -142,7 +142,7 @@ Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫:
 * ** Media Analytics (心率) 伺服器**
 此格式一律為「`[your_namespace].hb.omtrdc.net`」。「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
 
-媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。目前音訊追蹤可在行動平台運作。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數:
+媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。目前音訊追蹤可在行動平台運作。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數：
 
 ## SDK 1.x 文件 {#sdk-1x-documentation}
 
@@ -153,7 +153,7 @@ Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫:
 | Chromecast | [為 Chromecast 進行配置 ](chromecast_1.x_sdk.pdf) |
 | iOS 應用程式 | [為 iOS 進行配置 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [為 JavaScript 進行配置 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android: [設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS: [設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS: [設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android：[設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS：[設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [為 TVML 進行配置 ](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 文件 {#primetime-docs}
