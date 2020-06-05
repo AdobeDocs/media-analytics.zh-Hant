@@ -4,7 +4,7 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
+source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 83%
@@ -193,7 +193,6 @@ ht-degree: 83%
       + [時間軸 1 - 檢視內容到結束為止](media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
       + [時間軸 2 - 使用者放棄工作階段](media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
       + [時間軸 3 - 章節](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
-   + [追蹤下載內容](media-collection-api/track-downloaded-content.md)
 + 逐步指南 {#media-analytics-cookbook}
    + [逐步指南](media-analytics-cookbook/media-analytics-cookbook.md)
    + [媒體資料流歸因](media-analytics-cookbook/media-dimensions.md)
@@ -215,6 +214,7 @@ ht-degree: 83%
       + [媒體同時觀看者](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [取得同時觀看者 JSON 報表資料](media-reports/media-default-reports/get-concurrent-json.md)
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
++ [追蹤下載內容](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + 播放器狀態追蹤 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
