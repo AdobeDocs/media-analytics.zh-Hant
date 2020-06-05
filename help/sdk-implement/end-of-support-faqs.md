@@ -1,11 +1,11 @@
 ---
 title: Media Analytics SDK 支援終止常見問題集
 description: 此主題包含有關 Media Analytics SDK 支援終止的常見問題集。
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
+workflow-type: tm+mt
+source-wordcount: '703'
+ht-degree: 88%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ## 5 大須知事項
 
-1. 2021 年 8 月 31 日後，我們將不再支援 Mobile v4 SDK。請改用 iOS 和 Android 專用的 Adobe Experience Platform (AEP) SDK。
+1. 2021 年 8 月 31 日後，我們將不再支援 Mobile v4 SDK。請改用 iOS 和 Android 專用的 Adobe Experience Platform (AEP) SDK。如需詳細資訊，請 [參閱第4版行動SDK終止支援常見問答集](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。
 
 1. Analytics for Audio and Video 實作需要 AEP SDK，而且必須使用 Analytics 和 Media Analytics 擴充功能。自 2021 年 9 月 1 日起，您必須使用新的 AEP SDK 和擴充功能。請使用 Adobe Launch 來設定 Media Analytics 擴充功能。  如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
@@ -49,7 +49,7 @@ ht-degree: 100%
 
 1. **我是否需要將 Launch 作為標記管理系統？ 如果我不想使用 Launch，該怎麼辦？**
 
-   在行動裝置上，必須使用 Launch 設定 Media 擴充功能，例如 Mobile Services UI。使用行動應用程式時，Launch 不會作為標記管理系統使用。
+   對於行動應用程式使用案例，Launch不會像Web一樣用作標籤管理系統。  配置SDK擴充功能時，必須使用Launch UI。 這類似於您使用Adobe Mobile Services UI來設定行動v4 SDK的方式。 對於安裝，使用Launch的好處是，它可根據您選擇的擴充功能提供自訂的安裝指示。
 
 1. **此支援終止是否會影響 tvOS 的 SDK？**
 
