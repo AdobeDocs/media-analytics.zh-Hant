@@ -2,11 +2,11 @@
 title: 必備條件
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 99%
 
 ## 決策 {#decision}
 
-在開始實作追蹤前，請先決定與您的情況最為相關的實作:
+在開始實作追蹤前，請先決定與您的情況最為相關的實作：
 
-* **Media Analytics -** 使用最新 Media SDK (標準建議實施) 及/或媒體收集 API (RESTful)
-* **里程碑 -** 舊版 Adobe 追蹤實施
-* **Data Insertion API -** 不使用 Media SDK 實施追蹤
+* **Media Analytics -** 使用最新 Media SDK (標準建議實作) 及/或媒體收集 API (RESTful)
+* **里程碑 -** 舊版 Adobe 追蹤實作
+* **Data Insertion API -** 不使用 Media SDK 實作追蹤
 
 ## 工作 {#prereq-tasks}
 
-若為 *Media Analytics* 實施，以下是您必須在開始前完成的工作:
+若為 *Media Analytics* 實作，以下是您必須在開始前完成的工作：
 
 1. **啟用 Experience Cloud。**
 
@@ -41,7 +41,7 @@ ht-degree: 99%
    >
    >若要參與 Adobe Experience Cloud Device Co-op，需要 Experience Cloud ID 服務。
 
-   如果您尚未實施 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
+   如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
    >[!IMPORTANT]
    >
