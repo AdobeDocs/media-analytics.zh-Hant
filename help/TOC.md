@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: f26816d37f30e9e4ae08dbf7af78f2135e8403f4
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 79%
    + 實作路徑 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
       + [用戶端](intro-to-ava/implementation-paths/client-side-path.md)
-      + Other Implementation Paths {#other-paths}
+      + 其他實作方式 {#other-paths}
          + 媒體模組里程碑追蹤 {#mm-milestone-tracking}
             + [里程碑概述](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [從里程碑移轉至 Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
@@ -32,7 +32,7 @@ ht-degree: 79%
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Audience Manager 啟用](intro-to-ava/am-enablement.md)
 + Media Analytics SDK {#sdk-implement}
-   + [Media Analytics SDK終止支援常見問答集](sdk-implement/end-of-support-faqs.md)
+   + [Media Analytics SDK 支援終止常見問題集](sdk-implement/end-of-support-faqs.md)
    + [下載 SDK](sdk-implement/download-sdks.md)
    + 設定和配置 {#setup}
       + [概述](sdk-implement/setup/setup-overview.md)
@@ -43,7 +43,7 @@ ht-degree: 79%
          + [設定JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [設定 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [設定 Roku](sdk-implement/setup/set-up-roku.md)
-   + Track Audio and Video Playback {#track-av-playback}
+   + 追蹤音訊和視訊播放 {#track-av-playback}
       + [概述](sdk-implement/track-av-playback/track-core-overview.md)
       + 追蹤核心音訊和視訊播放 {#track-core}
          + [在 Android 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -69,7 +69,7 @@ ht-degree: 79%
             + [在JavaScript 3.x上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [在 Chromecast 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [在 Roku 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implement Standard Metadata {#impl-std-metadata}
+      + 實作標準中繼資料 {#impl-std-metadata}
          + [在 Android 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [在 iOS 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 中繼資料索引鍵](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -89,7 +89,7 @@ ht-degree: 79%
          + [在JavaScript 3.x上追蹤廣告](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [在 Chromecast 上追蹤廣告](sdk-implement/track-ads/track-ads-chromecast.md)
       + [在 Roku 上追蹤廣告](sdk-implement/track-ads/track-ads-roku.md)
-      + Implement Standard ad Metadata {#impl-std-ad-metadata}
+      + 實作標準廣告中繼資料 {#impl-std-ad-metadata}
          + [在 Android 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [在 iOS 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
@@ -219,7 +219,7 @@ ht-degree: 79%
 + 播放器狀態追蹤 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準和自訂狀態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-   + [實施與報告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [實作與報告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [播放器狀態追蹤範例](sdk-implement/player-state-tracking/player-state-examples.md)
 + 其他資源 {#additional-resources}
    + [發行說明](additional-resources/doc-updates.md)
