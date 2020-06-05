@@ -1,12 +1,12 @@
 ---
 title: 設定 Android
-description: 適用於 Android 實施的 Media SDK 應用程式設定。
+description: 適用於 Android 實作的 Media SDK 應用程式設定。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '427'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 >[!IMPORTANT]
 >
->在2021年8月31日終止對第4版行動SDK的支援後，Adobe也將終止對iOS和Android專用Media Analytics SDK的支援。  如需詳細資訊，請 [參閱「媒體分析SDK終止支援常見問答」](/help/sdk-implement/end-of-support-faqs.md)。
+>我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/sdk-implement/end-of-support-faqs.md)。
 
 
 ## 必備條件
@@ -72,7 +72,7 @@ ht-degree: 92%
 
 1. 建立 `MediaHeartbeatConfig` 例項。
 
-   以下示範 `MediaHeartbeatConfig` 初始化:
+   以下示範 `MediaHeartbeatConfig` 初始化：
 
    ```java
    // Media Heartbeat Initialization
@@ -85,7 +85,7 @@ ht-degree: 92%
    config.debugLogging = <true/false>;
    ```
 
-1. 實施 `MediaHeartbeatDelegate` 介面。
+1. 實作 `MediaHeartbeatDelegate` 介面。
 
    ```java
    public class VideoAnalyticsProvider implements Observer, MediaHeartbeatDelegate{}
@@ -130,7 +130,7 @@ ht-degree: 92%
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
 
-若要新增這些權限，請在應用程式專案目錄裡的 `AndroidManifest.xml` 檔案中加入下列各行:
+若要新增這些權限，請在應用程式專案目錄裡的 `AndroidManifest.xml` 檔案中加入下列各行：
 
 * `<uses-permission android:name="android.permission.INTERNET" />`
 * `<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />`
