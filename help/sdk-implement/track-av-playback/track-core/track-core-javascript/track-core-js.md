@@ -1,17 +1,17 @@
 ---
-title: 使用JavaScript 2.x追蹤核心播放
-description: 本主題說明如何使用JavaScript 2.x應用程式，在瀏覽器中使用Media SDK實作核心追蹤。
+title: 使用 JavaScript 2.x 追蹤核心播放
+description: 本主題說明如何在使用 JavaScript 2.x 應用程式的瀏覽器中，使用 Media SDK 實作核心追蹤。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 
-# 使用JavaScript 2.x追蹤核心播放{#track-core-playback-on-javascript}
+# 使用 JavaScript 2.x 追蹤核心播放{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >本文件涵蓋 SDK 2.x 版中的追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
@@ -74,7 +74,7 @@ ht-degree: 95%
          請在此處參閱完整的可用中繼資料組: [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
    * **自訂中繼資料**
 
-      為自訂變數建立變數物件，並為此媒體填入資料。例如:
+      為自訂變數建立變數物件，並為此媒體填入資料。例如：
 
       ```js
       /* Set custom context data */
