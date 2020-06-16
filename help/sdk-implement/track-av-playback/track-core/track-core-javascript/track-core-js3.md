@@ -1,19 +1,19 @@
 ---
-title: 使用JavaScript v3.x追蹤核心播放
-description: 本主題說明如何使用JavaScript 3.x應用程式，在瀏覽器中使用Media SDK實作核心追蹤。
-translation-type: tm+mt
+title: 使用 JavaScript 3.x 版追蹤核心播放
+description: 本主題說明如何在使用 JavaScript 3.x 應用程式的瀏覽器中，使用 Media SDK 實作核心追蹤。
+translation-type: ht
 source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# 使用JavaScript 3.x追蹤核心播放{#track-core-playback-on-javascript}
+# 使用 JavaScript 3.x 追蹤核心播放{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->本文件涵蓋 SDK 3.x 版中的追蹤。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>本文件涵蓋 SDK 3.x 版中的追蹤。若您正在實作任何舊版的 SDK，您可以在此處下載開發人員指南：[下載 SDK](/help/sdk-implement/download-sdks.md)。
 
 1. **初始追蹤設定**
 
@@ -23,11 +23,11 @@ ht-degree: 81%
 
    | 變數名稱 | 類型 | 說明 |
    | --- | --- | --- |
-   | `name` | string | 表示媒體名稱的非空字串。 |
-   | `id` | string | 表示唯一媒體識別碼的非空字串。 |
-   | `length` | 數字 | 表示介質長度（秒）的正數。 如果長度未知，請使用0。 |
-   | `streamType` | string |  |
-   | `mediaType` |  | 媒體類型（音訊或視訊）。 |
+   | `name` | 字串 | 表示媒體名稱的非空白字串。 |
+   | `id` | 字串 | 表示唯一媒體識別碼的非空白字串。 |
+   | `length` | 數字 | 表示媒體秒數長度的正數。如果長度未知，請使用 0。 |
+   | `streamType` | 字串 |  |
+   | `mediaType` |  | 媒體類型 (音訊或視訊)。 |
 
    **`StreamType`常數:**
 
@@ -53,20 +53,20 @@ ht-degree: 81%
 
 1. **附加中繼資料**
 
-   （可選）透過上下文資料變數，將標準和／或自訂中繼資料附加至追蹤工作階段。
+   可選擇透過內容資料變數，將標準和/或自訂中繼資料附加到追蹤工作階段。
 
    * **標準中繼資料**
 
       >[!NOTE]
       >
-      >附加標準中繼資料是選擇性的。
+      >附加標準中繼資料為選用。
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
          請在此處參閱完整的可用中繼資料組: [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
    * **自訂中繼資料**
 
-      為自訂變數建立變數物件，並為此媒體填入資料。例如:
+      為自訂變數建立變數物件，並為此媒體填入資料。例如：
 
       ```js
       /* Set context data */
@@ -112,7 +112,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >如果您未使用 contextData，只要為 `trackSessionStart` 中的 `data` 引數傳送空白物件即可。
 
 1. **追蹤實際的播放開始**
 
