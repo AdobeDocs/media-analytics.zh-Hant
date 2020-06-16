@@ -1,11 +1,11 @@
 ---
 title: 實作與報告
 description: 此主題說明如何實作播放器狀態追蹤功能，包括
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Media SDK 提供兩種新的自訂狀態追蹤方法：
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have `media.stateName` as the required parameter:
+媒體收集 API 提供兩種含必要參數 `media.stateName` 的新事件：
 
 `stateStart` 與 `stateEnd`
 
@@ -82,7 +82,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 狀態量度
 
-針對每個個別狀態提供的量度在經過計算後會推送至 Adobe Analytics，作為「內容資料」參數，並儲存以供產生報告。 每個狀態有三種可用的量度：
+針對每個個別狀態提供的量度在經過計算後會推送至 Adobe Analytics，作為「內容資料」參數，並儲存以供產生報告。每個狀態有三種可用的量度：
 
 * `a.media.states.[state.name].set = true` — 如果每個特定資料流播放至少設定一次狀態，則此量度設為 true。
 * `a.media.states.[state.name].count = 4` — 識別每個個別資料流播放期間的狀態發生次數
@@ -90,14 +90,14 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 報表
 
-在報表套裝啟用播放器狀態追蹤後，所有播放器狀態度量都可用於分析工作區或元件（區段、計算量度）中的任何報表視覺化。 新量度可從「管理控制台」使用「媒體報表設定」（編輯設定>媒體管理>媒體報表），針對每個個別報表啟用。
+在播放器狀態追蹤啟用報表套裝後，所有的播放器狀態量度，均可用來產生任何可在 Analysis Workspace 中使用的視覺化報表或元件 (區段、計算量度)。您可以使用「媒體報表設定」(「編輯設定 > 媒體管理 > 媒體報表」)，在 Admin Console 中針對每個個別報表啟用新量度。
 
 ![](assets/report-setup.png)
 
-在Analytics工作區中，所有新屬性都位於量度面板中。 例如，您可以依據搜尋， `full screen` 在量度面板中檢視全螢幕資料。
+在 Analytics Workspac 中，所有新屬性都位於量度面板中。例如，您可以依 `full screen` 搜尋，在量度面板中檢視全螢幕資料。
 
 ![](assets/full-screen-report.png)
 
 ## 將播放器狀態量度匯入至 Adobe Experience Platform
 
-儲存在 Analytics 中的資料可用於任何用途，而您可以使用 XDM 將播放器狀態量度匯入至 Adobe Experience Platform，並與 Customer Journey Analytics 搭配使用。標準狀態屬性具有特定屬性，而自訂狀態是屬性，則可使用自訂事件。 有關標準狀態屬性的其他資訊，請參 *閱「播放器狀態參數」頁面上的「XDM身份的屬性清單*[](/help/metrics-and-metadata/player-state-parameters.md) 」部分。
+儲存在 Analytics 中的資料可用於任何用途，而您可以使用 XDM 將播放器狀態量度匯入至 Adobe Experience Platform，並與 Customer Journey Analytics 搭配使用。標準狀態屬性具有特定屬性，自訂狀態則是可用自訂事件使用的屬性。如需有關標準狀態屬性的詳細資訊，請參閱[播放器狀態參數](/help/metrics-and-metadata/player-state-parameters.md)頁面上的 *XDM 身分識別的屬性清單*&#x200B;區段。
