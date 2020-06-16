@@ -1,9 +1,9 @@
 ---
 title: 播放器狀態追蹤範例
 description: 此主題舉例說明「播放器狀態追蹤」功能。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '119'
 ht-degree: 100%
 
