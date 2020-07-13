@@ -1,8 +1,11 @@
 ---
 title: 媒體資料流歸因
 description: null
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 100%
 
 ---
 
@@ -18,8 +21,8 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 針對您要啟用此功能的每個報表，您也必須從 Admin Console 重新啟用媒體追蹤設定。
 
 >[!NOTE]
->媒體量度&#x200B;_無法_用於媒體追蹤以外，因為其中大多數是由 Media Analytics 
->根據心率事件計算。此外，請務必確保媒體量度不會因不同的實施而膨脹。
+>
+>媒體量度&#x200B;_無法_&#x200B;用於媒體追蹤以外，因為其中大多數是由 Media Analytics 根據心率事件計算。此外，請務必確保媒體量度不會因不同的實施而膨脹。
 
 ## 做法
 
