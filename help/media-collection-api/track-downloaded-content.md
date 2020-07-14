@@ -2,8 +2,11 @@
 title: 追蹤下載內容
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 56%
 
 ---
 
@@ -12,17 +15,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 概述 {#overview}
 
-「下載內容」功能提供可在使用者離線時追蹤媒體消耗的功能。舉例來說，使用者在行動裝置上下載並安裝應用程式，然後使用應用程式將內容下載至裝置上的本機存放區。Adobe 已開發「下載內容」功能以追蹤此下載資料。透過此功能，當使用者從裝置的儲存播放內容時，無論裝置是否連線，追蹤資料都會儲存在裝置上。當使用者完成播放工作階段且裝置回到上線狀態時，儲存的追蹤資訊會傳送至單一裝載中的媒體收集 API 後端。從該位置，處理和報表程序會在 Media Collection API 中正常進行。
+「下載內容」功能提供可在使用者離線時追蹤媒體消耗的功能。例如，使用者下載應用程式並在行動裝置上安裝應用程式，然後使用應用程式將內容下載至裝置上的本機儲存。 為追蹤下載的資料，Adobe開發了「下載內容」功能。 使用此功能，當使用者從裝置儲存空間播放內容時，追蹤資料會儲存在裝置上，而不論裝置的連線性為何。 當使用者完成播放工作階段，而裝置返回線上時，儲存的追蹤資訊會傳送至單一裝載內的Media Collection API後端。 儲存的追蹤資訊會照常在媒體收集API中處理和報告。
 
 對照下列兩種方法:
 
 * 線上
 
-   透過此即時方法，媒體播放器會傳送每個播放器事件的追蹤資料，且每十秒傳送一次網路 Ping (廣告則是每一秒)，依序傳送至後端。
+   使用這種即時方法，媒體播放器會傳送每個播放器事件的追蹤資料，並且每十秒（廣告每秒）傳送網路ping，逐一傳送至後端。
 
 * 離線 (「下載內容」功能)
 
-   透過此批次處理方法，需要產生相同的工作階段事件，且將其儲存在裝置上，直到以單一工作階段形式將其傳送到後端為止 (請參閱下方範例)。
+   使用此批次處理方法，需要產生相同的作業事件，但這些事件會儲存在裝置上，直到以單一作業傳送至後端（請參閱以下範例）。
 
 每種方法都有各自的優缺點:
 * 線上情況可進行即時追蹤，但需要在每個網路呼叫前進行連線檢查。
@@ -30,16 +33,20 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## 實施 {#implementation}
 
+### 支援的平台
+
+iOS和Android行動裝置支援內容追蹤。
+
 ### 事件結構
 
-「下載內容」功能只是離線版本的 (標準) 線上 Media Collection API，因此播放器批次處理和傳送到後端的事件資料，必須使用與進行線上呼叫時相同的事件結構。如需這些結構的詳細資訊，請參閱:
+「下載內容」功能是（標準）線上Media Collection API的離線版本，因此您的播放器批次和傳送至後端的事件資料必須使用與進行線上呼叫時相同的事件結構。 如需這些結構的詳細資訊，請參閱:
 * [概述;](/help/media-collection-api/mc-api-overview.md)
 * [驗證事件要求](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 事件順序
 
 * 根據 Media Collection API 通常的情況，批次裝載中的第一個事件必須為 `sessionStart`。
-* 在 **事件上，`media.downloaded: true`**您必須將`params`包含在標準中繼資料參數 (`sessionStart`索引鍵) 中，以表示您要將下載內容傳送到哪個後端。若此參數不存在或設為 false，在傳送下載資料時，API 會傳回 400 回應代碼 (Bad Request)。此參數會區分傳送到後端的下載內容與即時內容(請注意，若`media.downloaded: true`設在即時工作階段上，則同樣會導致 API 傳回 400 回應代碼)。
+* 在 **事件上，`media.downloaded: true`**您必須將`params`包含在標準中繼資料參數 (`sessionStart`索引鍵) 中，以表示您要將下載內容傳送到哪個後端。若此參數不存在或設為 false，在傳送下載資料時，API 會傳回 400 回應代碼 (Bad Request)。此參數會區分傳送到後端的下載內容與即時內容If`media.downloaded: true`is set on a live session, this will likewise result in a 400 response from the API.
 * 實施時應負責依照其外觀的順序，正確地儲存播放器事件。
 
 ### 回應代碼
@@ -60,42 +67,45 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 ### 線上內容
 
 ```
-{ 
-  eventType: "sessionStart", 
-  playerTime: { 
+{
+  eventType: "sessionStart",
+  playerTime: {
     playhead: 0,  
     ts: 1529997923478},  
   params: { /* Standard metadata parameters as documented */ },  
   customMetadata: { /* Custom metadata parameters as documented */ },  
-  qoeData: { /* QoE parameters as documented */ } 
+  qoeData: { /* QoE parameters as documented */ }
 }
 ```
 
 ### 下載內容
 
 ```
-[{ 
-    eventType: "sessionStart", 
+[{
+    eventType: "sessionStart",
     playerTime:{
-      playhead: 0, 
+      playhead: 0,
       ts: 1529997923478},  
     params:{
         "media.downloaded": true
         ...
-    }, 
+    },
     customMetadata:{},  
-    qoeData:{} 
-}, 
+    qoeData:{}
+},
     {eventType: "play", playerTime:
-        {playhead: 0,  ts: 1529997928174}}, 
+        {playhead: 0,  ts: 1529997928174}},
     {eventType: "ping", playerTime:
-        {playhead: 10, ts: 1529997937503}}, 
+        {playhead: 10, ts: 1529997937503}},
     {eventType: "ping", playerTime:
-        {playhead: 20, ts: 1529997947533}}, 
+        {playhead: 20, ts: 1529997947533}},
     {eventType: "ping", playerTime:
-        {playhead: 30, ts: 1529997957545},}, 
+        {playhead: 30, ts: 1529997957545},},
     {eventType: "sessionComplete", playerTime:
-        {playhead: 35, ts: 1529997960559} 
+        {playhead: 35, ts: 1529997960559}
 }]
 ```
 
+## 媒體追蹤器API參考
+
+如需如何設定下載內容的詳細資訊，請參閱媒 [體追蹤器API參考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#media-api-reference)。
