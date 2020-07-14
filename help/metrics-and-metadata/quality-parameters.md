@@ -2,9 +2,9 @@
 title: 品質參數
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2984'
 ht-degree: 100%
 
