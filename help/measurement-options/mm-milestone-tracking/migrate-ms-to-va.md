@@ -2,9 +2,9 @@
 title: 從里程碑移轉至 Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
-source-git-commit: aa2a230daa96b823f9963345ac4578799e59d3f5
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
+workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 ### 選擇性變數
 
-| 里程碑 | 里程碑語法 | Media Analytics | Media Analytics 語法 |
+| 里程碑 | 里程碑語法 | 媒體分析 | Media Analytics 語法 |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | 不適用 | 不再提供預先建立的播放器對應。 |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | 不適用 | 不再提供預先建立的播放器對應。 |
@@ -50,14 +50,14 @@ ht-degree: 100%
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | 不適用 | 「內容完成」僅支援 100% 進度標記。 |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK 金鑰：playerName；<br>API 金鑰：media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 不適用 | Media Analytics 針對內容設為 10 秒，廣告則設為 1 秒。無其他可用選項。 |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 不適用 | Media Analytics 一律追蹤 10%、25%、50%、75%、95% 進度標記。 |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 不適用 | Media Analytics 一律追蹤 10%、25%、50%、75%、95% 進度標記。 |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 不適用 | Media Analytics 一律追蹤 10%、25%、50%、75%、95% 進度標記。。 |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 不適用 | Media Analytics 一律追蹤 10%、25%、50%、75%、95% 進度標記。。 |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 不適用 | 不再提供自動追蹤功能。 |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 不適用 | 不再提供自動追蹤功能。 |
 
 ### 廣告追蹤變數
 
-| 里程碑 | 里程碑語法 | Media Analytics | Media Analytics 語法 |
+| 里程碑 | 里程碑語法 | 媒體分析 | Media Analytics 語法 |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 不適用 | Media Analytics 針對內容設為 10 秒，廣告則設為 1 秒。無其他可用選項。 |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 不適用 | 廣告預設不提供進度標記。請使用計算量度建立廣告進度標記。 |
@@ -67,25 +67,24 @@ ht-degree: 100%
 
 ### 媒體模組方法
 
-| 里程碑 | 里程碑語法 | Media Analytics | Media Analytics 語法 |
+| 里程碑 | 里程碑語法 | 媒體分析 | Media Analytics 語法 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
-| mediaName - (必要) <br> 您要顯示在影片報表中的影片名稱。 | `mediaName` | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaLength - (必要) <br> 影片長度 (以秒為單位)。 | `mediaLength` | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaPlayerName - (必要) <br> 用來檢視影片的媒體播放器名稱，與您要顯示在影片報表中的名稱一樣。 | `mediaPlayerName` | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| mediaName | `mediaName`: (必要) 您要其顯示在視訊報表中的名稱。 | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaLength | `mediaLength`: (必要) 視訊的長度 (以秒為單位)。 | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaPlayerName | `mediaPlayerName`: (必要) 用來檢視視訊的媒體播放器名稱，您要其顯示在視訊報表中的名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
-| name - (必要) <br> 廣告的名稱或 ID。 | `name` | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| length - (必要) <br> 廣告的長度。 | `length` | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| playerName - (必要) <br> 用來檢視廣告的媒體播放器名稱。 | `playerName` | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName <br> 內嵌廣告所在之主要內容的名稱或 ID。 | `parentName` | 不適用 | 自動繼承 |
-| parentPod <br> 主要內容中播放廣告的位置。 | `parentPod` | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition <br> Pod 內播放廣告的位置。 | `parentPodPosition` | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM <br> 套用至此播放的 CPM 或加密的 CPM (首碼為「~」)。 | `CPM` | 不適用 | 預設為不提供 Media Analytics。 |
-| Media.click | `s.Media.click(` <br> `  name,` <br> `  offset)` | 不適用 | 使用自訂連結分析呼叫追蹤點擊次數。 |
-| Media.close | `s.Media.close(` <br> `  mediaName)` | trackSessionEnd | `trackSessionEnd()` |
-| Media.complete | `s.Media.complete(` <br> `  name,` <br> `  offset)` | trackComplete | `trackComplete()` |
+| 名稱 | `name`: (必要) 廣告的名稱或 ID。 | 名稱 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| 長度 | `length`: (必要) 廣告的長度。 | 長度 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| playerName | `playerName`: (必要) 用來檢視廣告的媒體播放器的名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| parentName | `parentName`: 內嵌廣告所在主要內容的名稱或 ID。 | 不適用 | 自動繼承. |
+| parentPod | `parentPod`: 主要內容中播放廣告的位置. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| parentPodPosition | `parentPodPosition`: Pod 內播放廣告的位置. | 位置 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM | `CPM`: 套至用此播放的 CPM 或加密的 CPM (首碼為 &quot;~&quot;)。 | 不適用 | 預設為不提供 Media Analytics。 |
+| Media.click | `s.Media.click(name, offset)` | 不適用 | 使用自訂連結分析呼叫追蹤點擊次數。 |
+| Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
+| Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
 | Media.play | `s.Media.play(` <br> `  name,` <br> `  offset,` <br> `  segmentNum,` <br> `  segment, ` <br> `  segmentLength)` | trackPlay | `trackPlay()` |
-| Media.stop | `s.Media.stop(` <br> `  mediaName,` <br> `  mediaOffset)` | trackPause<br> 或 <br>trackEvent | `trackPause()`<br> 或 `trackEvent(`<br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)`<br> 或 <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
+| Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> 或 <br>trackEvent | `trackPause()`<br> 或 `trackEvent(`<br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)`<br> 或 <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | 使用自訂或標準中繼資料設定其他變數。 | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
-| Media.track | `s.Media.track(` <br> `  mediaName)` | 不適用 | 已自動設定追蹤呼叫頻率。 |
-
+| Media.track | `s.Media.track(mediaName)` | 不適用 | 已自動設定追蹤呼叫頻率。 |
