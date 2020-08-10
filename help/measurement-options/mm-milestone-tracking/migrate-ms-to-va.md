@@ -2,9 +2,9 @@
 title: 從里程碑移轉至 Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## 概述 {#overview}
 
-「里程碑」和 Media Analytics 追蹤的視訊測量核心概念相同，也就是擷取視訊播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實作 Media Analytics 的詳細資訊，請參閱 [SDK 概述](/help/sdk-implement/setup/setup-overview.md)和[追蹤概述](/help/sdk-implement/track-av-playback/track-core-overview.md)。
+「里程碑」和 Media Analytics 追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實作 Media Analytics 的詳細資訊，請參閱 [SDK 概述](/help/sdk-implement/setup/setup-overview.md)和[追蹤概述](/help/sdk-implement/track-av-playback/track-core-overview.md)。
 
 下列表格為「里程碑」解決方案和 Media Analytics 解決方案的對照表。
 
@@ -28,8 +28,8 @@ ht-degree: 100%
 | 內容 | eVar <br>預設過期時間：造訪 | 內容 |
 | 內容類型 | eVar <br>預設過期時間：頁面檢視 | 內容類型 |
 | 內容逗留時間 | 事件<br>類型：計數器 | 內容逗留時間 |
-| 視訊起始 | 事件<br>類型：計數器 | 視訊起始 |
-| 視訊完成 | 事件<br>類型：計數器 | 內容完成 |
+| 影片起始 | 事件<br>類型：計數器 | 影片起始 |
+| 影片完成 | 事件<br>類型：計數器 | 內容完成 |
 
 ### 媒體模組變數
 
@@ -42,7 +42,7 @@ ht-degree: 100%
 
 ### 選擇性變數
 
-| 里程碑 | 里程碑語法 | 媒體分析 | Media Analytics 語法 |
+| 里程碑 | 里程碑語法 | Media Analytics | Media Analytics 語法 |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | 不適用 | 不再提供預先建立的播放器對應。 |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | 不適用 | 不再提供預先建立的播放器對應。 |
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 ### 廣告追蹤變數
 
-| 里程碑 | 里程碑語法 | 媒體分析 | Media Analytics 語法 |
+| 里程碑 | 里程碑語法 | Media Analytics | Media Analytics 語法 |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | 不適用 | Media Analytics 針對內容設為 10 秒，廣告則設為 1 秒。無其他可用選項。 |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | 不適用 | 廣告預設不提供進度標記。請使用計算量度建立廣告進度標記。 |
@@ -67,20 +67,20 @@ ht-degree: 100%
 
 ### 媒體模組方法
 
-| 里程碑 | 里程碑語法 | 媒體分析 | Media Analytics 語法 |
+| 里程碑 | 里程碑語法 | Media Analytics | Media Analytics 語法 |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
-| mediaName | `mediaName`: (必要) 您要其顯示在視訊報表中的名稱。 | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaLength | `mediaLength`: (必要) 視訊的長度 (以秒為單位)。 | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
-| mediaPlayerName | `mediaPlayerName`: (必要) 用來檢視視訊的媒體播放器名稱，您要其顯示在視訊報表中的名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| mediaName | `mediaName`：(必填) 您希望在影片報表中顯示的名稱。 | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaLength | `mediaLength`：(必填) 影片長度 (以秒為單位)。 | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaPlayerName | `mediaPlayerName`：(必填) 觀看影片所使用的媒體播放器名稱，您希望影片報表中顯示的名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
-| 名稱 | `name`: (必要) 廣告的名稱或 ID。 | 名稱 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| 長度 | `length`: (必要) 廣告的長度。 | 長度 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| playerName | `playerName`: (必要) 用來檢視廣告的媒體播放器的名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName | `parentName`: 內嵌廣告所在主要內容的名稱或 ID。 | 不適用 | 自動繼承. |
-| parentPod | `parentPod`: 主要內容中播放廣告的位置. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition | `parentPodPosition`: Pod 內播放廣告的位置. | 位置 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM | `CPM`: 套至用此播放的 CPM 或加密的 CPM (首碼為 &quot;~&quot;)。 | 不適用 | 預設為不提供 Media Analytics。 |
+| name | `name`：(必填) 廣告名稱或 ID。 | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| length | `length`：(必填) 廣告長度。 | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| playerName | `playerName`：(必填) 觀看廣告所使用的媒體播放器名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| parentName | `parentName`：內嵌廣告所在主要內容的名稱或 ID。 | 不適用 | 自動繼承。 |
+| parentPod | `parentPod`：主要內容中播放廣告的位置。 | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| parentPodPosition | `parentPodPosition`：Pod 內播放廣告的位置。 | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM | `CPM`：此播放作業所採用的 CPM 或加密 CPM (首碼為「~」)。 | 不適用 | 預設為不提供 Media Analytics。 |
 | Media.click | `s.Media.click(name, offset)` | 不適用 | 使用自訂連結分析呼叫追蹤點擊次數。 |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
