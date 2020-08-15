@@ -1,11 +1,11 @@
 ---
 title: 播放器狀態追蹤簡介
 description: 此主題說明播放器狀態追蹤功能，包括實作和報告播放器狀態的要求與準則。
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4c11efd0b8bb457246c746621e7fbb9fbda621b2
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -31,6 +31,7 @@ ht-degree: 100%
 
 「播放器狀態追蹤」需要下列其中一項，才能進行資料收集：
 * Media JS SDK 3.0 以上版本
+* Adobe Marketing Cloud解決方案專用的Chromecast 3.0 SDK
 * Media Analytics 擴充功能 (以便與 Adobe Experience Platform (AEP) SDK 搭配使用)
    * 網頁版：Adobe Media Analytics (3.x SDK) for Audio and Video v1.0 以上版本
    * 行動版：Adobe Media Analytics for Audio and Video v2.0 以上版本
