@@ -2,8 +2,11 @@
 title: 設定 Adobe Debug
 description: 本主題說明如何設定可用來針對 Media SDK 實施進行疑難排解的 Adobe Debug。
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 95%
 
 ---
 
@@ -42,6 +45,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    支援的作業系統包括：
    * OS X 10.7 64 位元或更新版本
    * Windows 7.1 64 位元或更新版本
+
    ![](assets/debug-proxy-app.png)
 
 1. 除錯代理伺服器會在本機電腦上執行並透過連接埠 33284 通訊，同時也會設定為系統代理。
@@ -63,23 +67,23 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    1. 將根 CA 憑證移動 (拖曳) 到「系統」。
    1. 您必須將憑證複製到「系統」，確保獲得所有使用者和本機系統程序信任。
    1. 開啟根 CA 憑證、展開「信任」、選取「必須信任」，然後儲存變更。
+
    **Windows**
    1. 完成下列其中一項程序：
 
       * [將憑證新增到本機電腦的「受信任的根憑證授權單位」存放區](https://technet.microsoft.com/zh-tw/library/cc754841.aspx#BKMK_addlocal)
-<!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
--->
+   1. 若是Firefox，請完成 [在Mozilla Firefox中安裝根證書。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
 
-    1.Firefox 使用者，請完成在 Mozilla Firefox 中 [安裝根憑證的程序。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
-    
-    您可能需要結束及重新開啟 Firefox，變更才會生效。
-    
-    **iOS 裝置**
-    1.按一下 **[!UICONTROL 「設定應用程式]** **>** **[!UICONTROL Wifi 設定」]**，使用 Adobe Debug 做為 iOS 裝置的 HTTP 代理進行設定。
-    
-    1.在 Safari 中，前往 [Debug。](https://proxy.debug.adobe.com/ssl)
-    
-    Safari 會提示您安裝 SSL 憑證。
+      您可能需要結束及重新開啟 Firefox，變更才會生效。
+   **iOS 裝置**
+   1. 按一下&#x200B;**[!UICONTROL 「設定應用程式]** **>** **[!UICONTROL Wifi 設定」]**，使用 Adobe Debug 作為 iOS 裝置的 HTTP 代理進行設定。
+
+   1. 在Safari中，請至 [除錯。](https://proxy.debug.adobe.com/ssl)
+
+      Safari 會提示您安裝 SSL 憑證。
+
+
+
 
 ## 為行動裝置安裝 SSL 憑證 {#install-sSL-for-mobile-device}
 
