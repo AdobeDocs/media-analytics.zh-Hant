@@ -2,8 +2,11 @@
 title: 在 SceneGraph (Roku) 中進行追蹤
 description: 使用 Roku SceneGraph XML 程式設計架構追蹤媒體
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+workflow-type: tm+mt
+source-wordcount: '1171'
+ht-degree: 100%
 
 ---
 
@@ -134,34 +137,33 @@ Adobe Mobile SDK for Roku 是以 BrightScript 編寫。此 SDK 有許多元件�
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
-<td> assocarray </td>
-<td> Invalid </td>
+<td> 水母 </td>
+<td> 無效 </td>
 <td> 唯讀：在 AdobeMobileSDK 上執行的所有 API 將在此欄位上傳回回應。登錄回呼以監聽此欄位的更新，以接收回應物件。回應物件的格式如下：  
-<codeblock>
+<pre>
 response = {
   "apiName" : &lt;SceneGraphConstants.
                API_NAME&gt; 
   "returnValue : &lt;API_RESPONSE&gt; 
-} 
-</codeblock>
+}</pre>
 此回應物件的例項將在 AdobeMobileSDK 上針對任何 API 呼叫傳送，預計該 API 呼叫會根據 API 參考指南傳回值。例如，visitorMarketingCloudID() 的 API 呼叫將傳回以下回應物件： 
-<codeblock>
+<pre>
 response = {
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : "07050x25671x33760x72644x14"  
 } 
-</codeblock>
+</pre>
 或者，回應資料也可能無效： 
-<codeblock>
+<pre>
 response = {  
   "apiName" : m.
               adbmobileConstants.
               VISITOR_MARKETING_CLOUD_ID  
   "returnValue : invalid 
 } 
-</codeblock>
+</pre>
 </td>
 </tr>
 </tbody>
