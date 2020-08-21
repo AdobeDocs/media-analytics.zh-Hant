@@ -2,9 +2,9 @@
 title: 在 SceneGraph (Roku) 中進行追蹤
 description: 使用 Roku SceneGraph XML 程式設計架構追蹤媒體
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -137,8 +137,8 @@ Adobe Mobile SDK for Roku 是以 BrightScript 編寫。此 SDK 有許多元件�
 </tr>
 <tr>
 <td> adbmobileApiResponse </td>
-<td> 水母 </td>
-<td> 無效 </td>
+<td> assocarray </td>
+<td> Invalid </td>
 <td> 唯讀：在 AdobeMobileSDK 上執行的所有 API 將在此欄位上傳回回應。登錄回呼以監聽此欄位的更新，以接收回應物件。回應物件的格式如下：  
 <pre>
 response = {
