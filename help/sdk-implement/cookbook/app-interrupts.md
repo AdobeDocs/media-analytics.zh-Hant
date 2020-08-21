@@ -2,8 +2,11 @@
 title: 在播放期間處理應用程式中斷
 description: 如何處理媒體播放期間追蹤中斷的問題。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 29b0d38e904a561d467ba0432b255fdb17d6b829
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 100%
 
 ---
 
@@ -32,5 +35,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * _要如何重新啟動同一個工作階段?_
 
    如需重新啟動追蹤工作階段的詳細指示，請參閱頁面: [
-繼續非作用中工作階段。](/help/sdk-implement/cookbook/resuming-inactive.md)SDK 會傳送恢復 Ping 來通知後端，告知它使用者正在手動恢復工作階段。
+繼續非作用中工作階段](/help/sdk-implement/cookbook/resuming-inactive.md)。SDK 會傳送恢復 Ping 來通知後端，告知它使用者正在手動恢復工作階段。
 
