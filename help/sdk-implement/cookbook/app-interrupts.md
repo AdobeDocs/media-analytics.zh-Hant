@@ -34,6 +34,5 @@ ht-degree: 100%
 
 * _要如何重新啟動同一個工作階段?_
 
-   如需重新啟動追蹤工作階段的詳細指示，請參閱頁面: [
-繼續非作用中工作階段](/help/sdk-implement/cookbook/resuming-inactive.md)。SDK 會傳送恢復 Ping 來通知後端，告知它使用者正在手動恢復工作階段。
+   如需重新啟動追蹤工作階段的詳細指示，請參閱頁面: [繼續非作用中工作階段](/help/sdk-implement/cookbook/resuming-inactive.md)。SDK 會傳送恢復 Ping 來通知後端，告知它使用者正在手動恢復工作階段。
 
