@@ -1,10 +1,10 @@
 ---
 title: Media Analytics SDK 支援終止常見問題集
 description: 此主題包含有關 Media Analytics SDK 支援終止的常見問題集。
-translation-type: ht
-source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: ht
-source-wordcount: '703'
+translation-type: tm+mt
+source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
+workflow-type: tm+mt
+source-wordcount: '679'
 ht-degree: 100%
 
 ---
@@ -53,8 +53,8 @@ ht-degree: 100%
 
 1. **此支援終止是否會影響 tvOS 的 SDK？**
 
-   是。tvOS (10 以上版本) 的建議實作方法是移轉至 Media Analytics 擴充功能。  我們計畫於 2020 年 6 月推出 AEP SDK 支援和 Media Analytics 擴充功能支援。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch - iOS](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)。
+   是。tvOS (10 以上版本) 的建議實作方法是移轉至 Media Analytics 擴充功能。  如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch - iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)。
 
 1. **此支援終止是否會影響 FireTV 和 AndroidTV 的 SDK&#x200B;？**
 
-   是。FireTV 和 AndroidTV 的建議實作方法是移轉至 Media Analytics 擴充功能。我們計畫於 2020 年 6 月推出 AEP SDK 支援和 Media Analytics 擴充功能支援。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch - Android](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)。
+   是。FireTV 和 AndroidTV 的建議實作方法是移轉至 Media Analytics 擴充功能。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)。
