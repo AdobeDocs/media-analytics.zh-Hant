@@ -2,11 +2,11 @@
 title: 設定 Adobe Debug
 description: 本主題說明如何設定可用來針對 Media SDK 實施進行疑難排解的 Adobe Debug。
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -72,13 +72,13 @@ ht-degree: 95%
    1. 完成下列其中一項程序：
 
       * [將憑證新增到本機電腦的「受信任的根憑證授權單位」存放區](https://technet.microsoft.com/zh-tw/library/cc754841.aspx#BKMK_addlocal)
-   1. 若是Firefox，請完成 [在Mozilla Firefox中安裝根證書。](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+   1. Firefox 使用者，請完成[在 Mozilla Firefox 中安裝根憑證](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)中的程序。
 
-      您可能需要結束及重新開啟 Firefox，變更才會生效。
+      您可能需要結束並重新開啟 Firefox，變更才會生效。
    **iOS 裝置**
-   1. 按一下&#x200B;**[!UICONTROL 「設定應用程式]** **>** **[!UICONTROL Wifi 設定」]**，使用 Adobe Debug 作為 iOS 裝置的 HTTP 代理進行設定。
+   1. 按一下&#x200B;**[!UICONTROL 「設定應用程式]** **>** **[!UICONTROL Wifi 設定」]**，將 iOS 裝置設定為將 Adobe Debug 當作 HTTP 代理。
 
-   1. 在Safari中，請至 [除錯。](https://proxy.debug.adobe.com/ssl)
+   1. 在 Safari 中，前往[「Debug」](https://proxy.debug.adobe.com/ssl)。
 
       Safari 會提示您安裝 SSL 憑證。
 
