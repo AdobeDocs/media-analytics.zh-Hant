@@ -2,7 +2,7 @@
 title: 媒體並行檢視器報告
 description: 對於Media Analytics客戶，「分析工作區」中的「媒體並行檢視器」面板可讓您分析並行檢視器，以瞭解並行檢視器的並行性最高發生位置或中斷發生位置。
 translation-type: tm+mt
-source-git-commit: 9c87109477518dd647b263edfa6bcf89be3e067d
+source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 14%
