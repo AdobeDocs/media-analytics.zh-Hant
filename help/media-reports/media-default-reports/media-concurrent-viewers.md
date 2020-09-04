@@ -2,8 +2,11 @@
 title: 媒體同時檢閱者
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 85%
 
 ---
 
@@ -13,8 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 「媒體同時檢閱者」控制面板會顯示一天內同時檢視媒體的使用者。您可依內容、裝置類型或國家/地區來篩選這項資料。
 
 >[!TIP]
->
->若選擇的間隔並非一整天，資料將不會顯示。
+> 
+> 提示：此報告以並行活動媒體作業為基礎。  若要依獨特訪客檢視並行檢視器，以及套用區段、劃分和比較的額外功能，請使用 [分析工作區中的「媒體並行檢視器」面板](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -34,6 +38,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 此報表的部分限制如下：
 
+* 若選擇的間隔並非一整天，資料將不會顯示。
 * 無法匯出 ReportBuilder 等資料。
 * 資料無法以表格格式呈現。
 * 報表無法透過電子郵件傳送。
