@@ -1,9 +1,9 @@
 ---
 title: 媒體同時檢閱者報表
 description: Analysis Workspace 中的「媒體同時檢閱者」面板可供 Media Analytics 客戶分析同時觀看媒體的人數，了解人數高峰或趨勢反轉的時間。
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
 ht-degree: 100%
 
