@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 
 >[!TIP]
 >
-> 此報告以並行活動媒體作業為基礎。  若要依獨特訪客檢視並行檢視器，以及套用區段、劃分和比較的額外功能，請使用 [分析工作區中的「媒體並行檢視器」面板](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+> 此報告以並行活動媒體作業為基礎。  若要依不重複訪客檢視同時檢閱的情形，並使用套用區段、劃分及比較數據等其他功能，請使用 [Analysis Workspace 的「媒體同時檢閱者」面板](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)。
 
 
 ![](assets/video-concurrent-viewers.png)
