@@ -3,10 +3,10 @@ title: 媒體同時檢閱者
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 85%
+source-wordcount: '267'
+ht-degree: 86%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 85%
 「媒體同時檢閱者」控制面板會顯示一天內同時檢視媒體的使用者。您可依內容、裝置類型或國家/地區來篩選這項資料。
 
 >[!TIP]
-> 
-> 提示：此報告以並行活動媒體作業為基礎。  若要依獨特訪客檢視並行檢視器，以及套用區段、劃分和比較的額外功能，請使用 [分析工作區中的「媒體並行檢視器」面板](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
+> 此報告以並行活動媒體作業為基礎。  若要依獨特訪客檢視並行檢視器，以及套用區段、劃分和比較的額外功能，請使用 [分析工作區中的「媒體並行檢視器」面板](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -44,4 +44,3 @@ ht-degree: 85%
 * 報表無法透過電子郵件傳送。
 * 即使不追蹤廣告，也必須重新啟用媒體追蹤功能，並選取媒體廣告模組。
 * 心率資料庫必須具備暫停追蹤功能，此功能才有辦法提供精確資料。
-
