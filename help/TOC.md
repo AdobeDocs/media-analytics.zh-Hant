@@ -5,9 +5,9 @@ user-guide-description: Implement Analytics on audio or video sources. Includes 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
+source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '818'
 ht-degree: 97%
 
 ---
@@ -213,11 +213,10 @@ ht-degree: 97%
       + [媒體詳細資料](media-reports/media-default-reports/media-reports-detail.md)
       + [媒體日報表](media-reports/media-default-reports/media-reports-daypart.md)
       + [媒體並行檢視器報告](media-reports/media-default-reports/media-concurrent-viewers.md)
-      + [取得同時觀看者 JSON 報表資料](media-reports/media-default-reports/get-concurrent-json20.md)
    + 媒體工作區面板 {#media-workspace-panels}
       + [媒體並行檢視器面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
-   + [透過API取得並行檢視器資料](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)
+   + [透過API取得並行檢視器資料](media-reports/media-default-reports/get-concurrent-json20.md)
 + [追蹤下載內容](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
 + 播放器狀態追蹤 {#player-state-tracking}
