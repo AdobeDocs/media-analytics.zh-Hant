@@ -6,25 +6,25 @@ translation-type: tm+mt
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 32%
+ht-degree: 89%
 
 ---
 
 
 # 使用Analytics 2.0 API取得並行檢視器JSON報表資料{#get-concurrent-viewers-json-report-data}
 
-您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 取得同時檢閱者報表資料。
 
-1. 使用UI上建立的任何區段來篩選資料。 若要依據特定內容 ID 進行篩選，請建立新的區段。
+1. 使用 UI 上建置的任何區段來篩選資料。若要依據特定內容 ID 進行篩選，請建立新的區段。
 1. 將要求內文中的 `elements` -> `id` 設為 `metrics/concurrent_viewers_visitors`。
 1. 要求足夠的資料量。
 
-   * 您在報表中指定的資料範圍會&#x200B;_在視訊工作階段結束時_
-您必須說明從一天開始到午夜（即第二天）結束的作業。
+   * 您在報表中指定的資料範圍會&#x200B;_在視訊工作階段結束時_收集所有同時檢閱者資料。
+您必須說明在某一天開始並在午夜後結束 (亦即隔天) 的工作階段。
 
-   * 在您的請求中，但在您的分析中，請求您指定時段的一天資料 _*僅使用預期的資料。*_
+   * 在要求中要求比目標期間多一天的資料，但在分析中&#x200B;_*僅使用目標期間的資料*_。
 
-一天資料的範例要求裝載，如下範例所示。 請求會連續執行2天，但在報告中您只使用第一天。
+一天資料的範例要求裝載如以下範例所示。要求會連續執行 2 天，但在報表中僅使用第一天的資料。
 
 ## 範例要求
 
