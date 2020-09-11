@@ -1,17 +1,17 @@
 ---
-title: 使用Analytics 2.0 API取得並行檢視器JSON報表資料
+title: 使用 Analytics 2.0 API 取得同時檢閱者 JSON 報表資料
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
-# 使用Analytics 2.0 API取得並行檢視器JSON報表資料{#get-concurrent-viewers-json-report-data}
+# 使用 Analytics 2.0 API 取得同時檢閱者 JSON 報表資料{#get-concurrent-viewers-json-report-data}
 
 您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 取得同時檢閱者報表資料。
 
