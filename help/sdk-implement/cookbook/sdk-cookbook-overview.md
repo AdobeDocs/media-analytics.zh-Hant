@@ -1,8 +1,11 @@
 ---
 title: SDK 逐步指南概述
 description: 'SDK 專用逐步指南主題 '
-translation-type: ht
-source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
+translation-type: tm+mt
+source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
+workflow-type: tm+mt
+source-wordcount: '66'
+ht-degree: 100%
 
 ---
 
