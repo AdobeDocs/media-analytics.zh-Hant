@@ -2,9 +2,9 @@
 title: 下載 SDK
 description: 各平台適用的 SDK 下載內容連結，包括 Android、iOS、JavaScript、Chromecast 和 Roku。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
-translation-type: ht
-source-git-commit: b127e50efd0e5ecbb19ed617b1d1afc31d7d9417
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 44b3c3bb9361a5f99b74f704e56998b78add3c34
+workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 100%
 
@@ -22,8 +22,8 @@ ht-degree: 100%
 
 | 3.x Media SDK | 最新的 Media SDK 下載內容 |  API   |  文件 |
 | --- | --- | --- | --- |
-| JavaScript | [JS 適用的 Media SDK v3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.0) | [JS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [設定 JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
-| Chromecast | [Chromecast 適用的 Media SDK v3.0.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.0) | [Chromecast API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [設定 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
+| JavaScript | [JS 適用的 Media SDK v3.0.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.1) | [JS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [設定 JavaScript 3.x](/help/sdk-implement/setup/setup-javascript/set-up-js-3.md) |
+| Chromecast | [Chromecast 適用的 Media SDK v3.0.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.1) | [Chromecast API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [設定 Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 
 ## 下載 2.x Media SDK {#download-2x-sdks}
@@ -52,5 +52,5 @@ ht-degree: 100%
 | iOS | [iOS 適用的 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [快速入門 - iOS 適用的媒體 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 適用的 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [快速入門 - JS 適用的媒體 1.x](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [TVML 適用的 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [快速入門 - TVML 適用的 Media 1.x](setup/vhl_tvml.pdf) |
-| Apple TV | Apple TV 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)) | [快速入門 - Apple TV 適用的媒體 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | Chromecast 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)) | [快速入門 - Chromecast 適用的媒體 1.x](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | Apple TV 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)) | [快速入門 - Apple TV 適用的媒體 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | Chromecast 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)) | [快速入門 - Chromecast 適用的媒體 1.x](setup/chromecast_1.x_sdk.pdf) |
