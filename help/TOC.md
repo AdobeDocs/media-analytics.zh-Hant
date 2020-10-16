@@ -1,14 +1,14 @@
 ---
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
-breadcrumb-title: Media Analytics Guide
-user-guide-description: Implement Analytics on audio or video sources. Includes the Media SDK and the Media Collection API.
+breadcrumb-title: Media Analytics 指南
+user-guide-description: 對音訊或影片來源實作 Analytics。包含 Media SDK 和 Media Collection API。
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
 source-git-commit: 32865b998afc7b19ef328a2d43c3acd9970a4d5c
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '837'
 ht-degree: 97%
 
 ---
