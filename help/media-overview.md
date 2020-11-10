@@ -1,31 +1,31 @@
 ---
-title: 在 Adobe Analytics 測量音訊和視訊
+title: 在Adobe Analytics中測量蒸媒體
 description: Adobe Analytics for Media (亦稱為 Media Analytics) 可提供客戶強大的內容、音訊和廣告媒體測量。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: bddcbcd844145788518c60399bee9e4744e42d3a
-workflow-type: ht
-source-wordcount: '912'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '903'
+ht-degree: 85%
 
 ---
 
 
-# 在 Adobe Analytics 測量音訊和視訊{#measuring-audio-and-video-in-adobe-analytics}
+# 在Adobe Analytics中測量蒸媒體{#measuring-audio-and-video-in-adobe-analytics}
 
 ![橫幅](./assets/media_analytics_banner.png)
 
-## 關於 Adobe Analytics for Audio and Video
+## 關於Adobe Analytics for Streaming Media
 
-Adobe Analytics for Audio and Video 是 Adobe Analytics 的附加元件，針對音訊、視訊和廣告提供強大的測量工具。Adobe Analytics 隸屬於 Adobe Experience Platform。
+Adobe Analytics for Streaming Media是Adobe Analytics的附加元件，可為音訊、視訊和廣告提供強大的測量工具。 Adobe Analytics 隸屬於 Adobe Experience Platform。
 
-Adobe Analytics for Audio and Video 可讓您在整個網站上追蹤客戶歷程。這些量度可輕鬆整合至 Adobe Analytics 報表和其他 Adobe Experience Cloud 產品。媒體測量可讓您將資料分為多個維度和區段，以擷取完整詳細分析所需的所有中繼資料。如此便能分析資料，並將成功條件歸因於完整使用的媒體、平均逗留時間以及完成的廣告。
+Adobe Analytics for Streaming Media可讓您追蹤整個網站的客戶歷程。 這些量度可輕鬆整合至 Adobe Analytics 報表和其他 Adobe Experience Cloud 產品。媒體測量可讓您將資料分為多個維度和區段，以擷取完整詳細分析所需的所有中繼資料。如此便能分析資料，並將成功條件歸因於完整使用的媒體、平均逗留時間以及完成的廣告。
 
 您可以測量掉格、緩衝時間和平均位元速率等與 QoS 相關的重要傳送量度。這些量度可與您的網站或應用程式資料結合，將客戶路徑和興趣加以視覺化，從而透過 Adobe Experience Cloud 提供強化的建議，並個人化客戶體驗。
 
 ## 功能 {#features}
 
-Adobe Analytics for Audio and Video 擁有即時監控、詳細分析、可化為實際行動的深入分析和營利商機等多項優勢。
+Adobe Analytics for Streaming Media的優點包括即時監控、詳細分析、可操作見解和獲利機會。
 * **即時分析**—利用持續時間、ex2 和 ex3 等關鍵效能量度，在多個管道做出即時決策，以利化為實際行動。主要內容事件是以 10 秒的間隔來測量，在所有活動發生時加以擷取。廣告追蹤事件則以 1 秒為間隔。
 * **促進參與**—透過減少緩衝事件及瞭解廣告在內容中應該播放的時間和位置，提供干擾較少的流暢體驗，促使使用者重複造訪，強化使用者互動。
 * **全方位掌握**—合併所有內容經銷商的多個資料點，以便完整掌控所有媒體活動。透過 Federated Analytics 功能測量所有可能管道的參與度和檢視/收聽次數。
@@ -35,9 +35,9 @@ Adobe Analytics for Audio and Video 擁有即時監控、詳細分析、可化�
 
 ## 心率測量 {#heartbeat}
 
-Adobe Analytics 使用「心率」收集視訊量度。視訊播放期間，系統會將心率傳送至心率追蹤伺服器，以測量播放時間。心率呼叫每十秒傳送一次。心率可產生精細的視訊參與量度，以及更精確的視訊流失報表。Adobe Analytics for Audio and Video 使用 Adobe Launch 搭配 Media Analytics 擴充功能、Media SDK 和 Media Collection API 來測量心率。系統會使用 `AppMeasurement` 和 `VisitorID` 元件來接收視訊資料。
+Adobe Analytics 使用「心率」收集視訊量度。視訊播放期間，系統會將心率傳送至心率追蹤伺服器，以測量播放時間。心率呼叫每十秒傳送一次。心率可產生精細的視訊參與量度，以及更精確的視訊流失報表。Adobe Analytics for Streaming Media使用Adobe Launch搭配Media Analytics擴充功能、Media SDK和Media Collection API測量心率。 系統會使用 `AppMeasurement` 和 `VisitorID` 元件來接收視訊資料。
 
-使用 Adobe Analytics for Audio and Video 的心率功能有以下優勢：
+使用Adobe Analytics for Streaming Media的心率可提供下列優點：
 
 | 功能 | 說明 |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ Adobe Analytics 使用「心率」收集視訊量度。視訊播放期間，系�
 | 定價 | 依據媒體資料流 (單次) 進行透明化追蹤 |
 | 實作與支援 | 透過持續更新和改進來簡化設定<br>透過簡化的實作程序，您可以透過播放器 API 快速對映變數，並使用 Adobe Debug Tool 驗證實作，以確保所有必要變數皆受到精確追蹤。 |
 | 合作夥伴共用 | Federated Analytics 和認證量度<br>透過 Federated Analytics 的共用資訊，您可以利用我們領先業界的媒體共用功能，跨越所有媒體經銷商合作夥伴 (業者、程式設計人員和經銷商) 全面評估資料。 |
-| 進階追蹤 | 下載內容追蹤、錯誤修復追蹤和同時觀看者<br>您可追蹤下載到裝置上播放的音訊和視訊內容 (不論是否連上網路)。 |
+| 進階追蹤 | 下載的內容追蹤、錯誤復原追蹤和並行檢視器<br>您可以追蹤在裝置上下載和播放的串流媒體內容，不論其連線性為何。 |
 
 
 
