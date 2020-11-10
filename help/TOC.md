@@ -1,24 +1,24 @@
 ---
 audience: end-user
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 對音訊或影片來源實作 Analytics。包含 Media SDK 和 Media Collection API。
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 32865b998afc7b19ef328a2d43c3acd9970a4d5c
+source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 97%
+source-wordcount: '830'
+ht-degree: 93%
 
 ---
 
 
-# Adobe Analytics for Audio and Video {#using}
+# Adobe Analytics for Streaming Media {#using}
 
-+ [在 Adobe Analytics 測量音訊和視訊](media-overview.md)
++ [在Adobe Analytics中測量串流媒體](media-overview.md)
 + [支援的裝置和平台](measurement-options/supported-devices.md)
-+ Audio Analytics 和 Video Analytics 簡介 {#intro-to-ava}
++ 串流媒體分析簡介 {#intro-to-ava}
    + [必備條件](intro-to-ava/prereqs.md)
    + 實作路徑 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 97%
          + [設定 JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [設定 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [設定 Roku](sdk-implement/setup/set-up-roku.md)
-   + 追蹤音訊和視訊播放 {#track-av-playback}
+   + 追蹤蒸媒體播放 {#track-av-playback}
       + [概述](sdk-implement/track-av-playback/track-core-overview.md)
-      + 追蹤核心音訊和視訊播放 {#track-core}
+      + 追蹤核心Stamming Media播放 {#track-core}
          + [在 Android 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在 iOS 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + 在 JavaScript 上追蹤核心播放 {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 97%
    + [逐步指南](media-analytics-cookbook/media-analytics-cookbook.md)
    + [媒體資料流歸因](media-analytics-cookbook/media-dimensions.md)
 + 量度和中繼資料 {#metrics-and-metadata}
-   + [音訊和視訊參數](metrics-and-metadata/audio-video-parameters.md)
+   + [蒸媒介參數](metrics-and-metadata/audio-video-parameters.md)
    + [廣告參數](metrics-and-metadata/ad-parameters.md)
    + [章節參數](metrics-and-metadata/chapter-parameters.md)
    + [播放器狀態參數](metrics-and-metadata/player-state-parameters.md)
@@ -220,6 +220,8 @@ ht-degree: 97%
    + [透過API取得並行檢視器資料](media-reports/media-default-reports/get-concurrent-json20.md)
 + [追蹤下載內容](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
+
+<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + 播放器狀態追蹤 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準和自訂狀態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
