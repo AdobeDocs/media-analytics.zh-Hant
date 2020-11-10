@@ -1,28 +1,28 @@
 ---
 title: Media Analytics SDK 支援終止常見問題集
 description: 此主題包含有關 Media Analytics SDK 支援終止的常見問題集。
-translation-type: ht
-source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
-workflow-type: ht
-source-wordcount: '679'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 90%
 
 ---
 
 
 # Media Analytics SDK 支援終止常見問題集
 
-我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。2021 年 8 月 31 日後，Adobe 將不為 Media Analytics SDK 提供修正、作業系統相關更新或支援。提醒您，在移轉至這些新 Experience Platform SDK 的過程中，必須實作 [Media Analytics 擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)，才能啟用 Adobe Analytics for Audio and Video。
+我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。2021 年 8 月 31 日後，Adobe 將不為 Media Analytics SDK 提供修正、作業系統相關更新或支援。在移轉至這些新的Experience Platform SDK的過程中，請記住 [媒體分析擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) 必須實作才能啟用Adobe Analytics for Streaming Media。
 
 ## 5 大須知事項
 
 1. 2021 年 8 月 31 日後，我們將不再支援 Mobile v4 SDK。請改用 iOS 和 Android 專用的 Adobe Experience Platform (AEP) SDK。如需詳細資訊，請參閱[第 4 版行動 SDK 支援終止常見問題集](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。
 
-1. Analytics for Audio and Video 實作需要 AEP SDK，而且必須使用 Analytics 和 Media Analytics 擴充功能。自 2021 年 9 月 1 日起，您必須使用新的 AEP SDK 和擴充功能。請使用 Adobe Launch 來設定 Media Analytics 擴充功能。  如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+1. Analytics for Staming Media實作需要AEP SDK及使用Analytics和Media Analytics擴充功能。 自 2021 年 9 月 1 日起，您必須使用新的 AEP SDK 和擴充功能。請使用 Adobe Launch 來設定 Media Analytics 擴充功能。  如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
 1. 日後我們不會再開發 Media Analytics SDK iOS 版和 Android 版。從 2019 年秋季開始導入的新功能，會使用 Media Analytics 擴充功能和 Media Collection API 來啟用。
 
-1. Analytics for Audio and Video 客戶仍可使用 Roku 和 Chromecast SDK。我們仍會將 Roku 和 Chromecast SDK 視為獨立式 SDK，並繼續提供增強和支援服務。  如果您使用 Media Analytics JS SDK，則可繼續使用該獨立式 SDK，或是使用 Adobe Launch 啟用 Media Analytics 擴充功能。
+1. Roku和Chromecast SDK仍可供Analytics的Staming Media客戶使用。 我們仍會將 Roku 和 Chromecast SDK 視為獨立式 SDK，並繼續提供增強和支援服務。  如果您使用 Media Analytics JS SDK，則可繼續使用該獨立式 SDK，或是使用 Adobe Launch 啟用 Media Analytics 擴充功能。
 
 1. 在 2021 年 9 月 1 日前，Adobe 可能會自行決定針對高技術影響或商業曝光問題開發最新修正。Adobe 將根據客戶的意見判定影響和曝光程度，以及後續活動。
 
@@ -53,8 +53,8 @@ ht-degree: 100%
 
 1. **此支援終止是否會影響 tvOS 的 SDK？**
 
-   是。tvOS (10 以上版本) 的建議實作方法是移轉至 Media Analytics 擴充功能。  如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch - iOS](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)。
+   是。tvOS (10 以上版本) 的建議實作方法是移轉至 Media Analytics 擴充功能。  如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch - iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)。
 
 1. **此支援終止是否會影響 FireTV 和 AndroidTV 的 SDK&#x200B;？**
 
-   是。FireTV 和 AndroidTV 的建議實作方法是移轉至 Media Analytics 擴充功能。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch - Android](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)。
+   是。FireTV 和 AndroidTV 的建議實作方法是移轉至 Media Analytics 擴充功能。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)。
