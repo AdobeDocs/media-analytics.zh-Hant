@@ -1,9 +1,9 @@
 ---
-title: 在Adobe Analytics中測量蒸媒體
+title: 在Adobe Analytics中測量串流媒體
 description: Adobe Analytics for Media (亦稱為 Media Analytics) 可提供客戶強大的內容、音訊和廣告媒體測量。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# 在Adobe Analytics中測量蒸媒體{#measuring-audio-and-video-in-adobe-analytics}
+# 在Adobe Analytics中測量串流媒體{#measuring-audio-and-video-in-adobe-analytics}
 
 ![橫幅](./assets/media_analytics_banner.png)
 
@@ -47,7 +47,7 @@ Adobe Analytics 使用「心率」收集視訊量度。視訊播放期間，系�
 | 定價 | 依據媒體資料流 (單次) 進行透明化追蹤 |
 | 實作與支援 | 透過持續更新和改進來簡化設定<br>透過簡化的實作程序，您可以透過播放器 API 快速對映變數，並使用 Adobe Debug Tool 驗證實作，以確保所有必要變數皆受到精確追蹤。 |
 | 合作夥伴共用 | Federated Analytics 和認證量度<br>透過 Federated Analytics 的共用資訊，您可以利用我們領先業界的媒體共用功能，跨越所有媒體經銷商合作夥伴 (業者、程式設計人員和經銷商) 全面評估資料。 |
-| 進階追蹤 | 下載的內容追蹤、錯誤復原追蹤和並行檢視器<br>您可以追蹤在裝置上下載和播放的串流媒體內容，不論其連線性為何。 |
+| 進階追蹤 | 下載的內容追蹤、錯誤復原追蹤和並行檢視器<br>您可以追蹤在裝置上下載和播放的串流媒體內容，不論其連接性為何。 |
 
 
 
