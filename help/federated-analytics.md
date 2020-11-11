@@ -3,7 +3,7 @@ title: Federated Analytics
 description: Federated Analytics服務提供在兩個合作夥伴之間共用Adobe Analytics for Streaming Media資料的系統。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 92%
@@ -37,13 +37,13 @@ Federated Analytics 服務提供一套系統，可供在兩個合作夥伴間分
 * **媒體資料流合約：**&#x200B;傳送者與接收者在取得 Adobe Analytics 內音訊與視訊資料的存取權前，必須先簽署適用於媒體資料流的 Adobe Analytics 合約。如需更多詳細資訊，請與您的帳戶團隊聯絡。
 * **同盟增補合約：**&#x200B;每一位傳送者與接收者在傳送或接收資料前，必須擁有一份與 Adobe 簽署的增補合約。每位客戶須各擁有一份增補合約，而非一段合作關係共用一份。如需更多詳細資訊，請與您的帳戶團隊聯絡。
 
-* **Media Analytics 實施：**&#x200B;傳送者必須在將作為同盟資料組一部分的所有播放器上實施 Media Analytics。僅 Media Analytics 資料可用於同盟作業。請參閱檔案： [在Adobe Analytics中測量蒸媒體](/help/media-overview.md)
+* **Media Analytics 實施：**&#x200B;傳送者必須在將作為同盟資料組一部分的所有播放器上實施 Media Analytics。僅 Media Analytics 資料可用於同盟作業。請參閱檔案：[在Adobe Analytics中測量串流媒體](/help/media-overview.md)
 
 * **Adobe 諮詢合約:**&#x200B;若要進行接收者和傳送者之間同盟規則的初始設定，建議您與諮詢服務人員合作檢閱資料並建立資料共享協定。
 
 ## 下載 Federated Analytics 表單
 
-若要參與Federated Analytics，請下載並完成 [聯合規則協定](federated-analytics-form.pdf) 的雙曲餘切值。
+若要參與Federated Analytics，請下載並填妥[Federation Rules Agreement](federated-analytics-form.pdf)表格。
 
 
 ## 程序 {#process}
