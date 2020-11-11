@@ -6,10 +6,10 @@ user-guide-description: 對音訊或影片來源實作 Analytics。包含 Media 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 + [在Adobe Analytics中測量串流媒體](media-overview.md)
 + [支援的裝置和平台](measurement-options/supported-devices.md)
-+ 串流媒體分析簡介 {#intro-to-ava}
++ 串流媒體分析簡介{#intro-to-ava}
    + [必備條件](intro-to-ava/prereqs.md)
    + 實作路徑 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 93%
          + [設定 JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [設定 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [設定 Roku](sdk-implement/setup/set-up-roku.md)
-   + 追蹤蒸媒體播放 {#track-av-playback}
+   + 追蹤串流媒體播放{#track-av-playback}
       + [概述](sdk-implement/track-av-playback/track-core-overview.md)
-      + 追蹤核心Stamming Media播放 {#track-core}
+      + 追蹤核心串流媒體播放{#track-core}
          + [在 Android 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在 iOS 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + 在 JavaScript 上追蹤核心播放 {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 93%
    + [逐步指南](media-analytics-cookbook/media-analytics-cookbook.md)
    + [媒體資料流歸因](media-analytics-cookbook/media-dimensions.md)
 + 量度和中繼資料 {#metrics-and-metadata}
-   + [蒸媒介參數](metrics-and-metadata/audio-video-parameters.md)
+   + [串流媒體參數](metrics-and-metadata/audio-video-parameters.md)
    + [廣告參數](metrics-and-metadata/ad-parameters.md)
    + [章節參數](metrics-and-metadata/chapter-parameters.md)
    + [播放器狀態參數](metrics-and-metadata/player-state-parameters.md)
@@ -214,7 +214,7 @@ ht-degree: 93%
       + [媒體詳細資料](media-reports/media-default-reports/media-reports-detail.md)
       + [媒體日報表](media-reports/media-default-reports/media-reports-daypart.md)
       + [媒體並行檢視器報告](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + 媒體工作區面板 {#media-workspace-panels}
+   + 媒體工作區面板{#media-workspace-panels}
       + [媒體並行檢視器面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
    + [透過API取得並行檢視器資料](media-reports/media-default-reports/get-concurrent-json20.md)
