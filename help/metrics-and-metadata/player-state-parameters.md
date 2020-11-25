@@ -2,11 +2,11 @@
 title: 播放器狀態參數
 description: 此主題說明播放器狀態追蹤參數。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: ht
-source-git-commit: 73c579ec013d15ab47faa936cca1297f7052a8fb
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: 1cf631d7f3d5365a02be99af78655ac3b53fb3cb
+workflow-type: tm+mt
 source-wordcount: '2236'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -48,13 +48,13 @@ ht-degree: 100%
 
 |   實作   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>受全螢幕影響的資料流數量。只有在播放工作階段期間發生至少一個全螢幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.set<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>受全螢幕影響的資料流</li> <li> **內容資料&#x200B;**<br/>a.media.states.fullscreen.set<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatefullscreen</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.fullscreen.set</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;受全螢幕影響的資料流數量。只有在播放工作階段期間發生至少一個全螢幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.fullscreen.set<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 受全螢幕影響的資料流 </li> <li> **內容資料**<br/> a.media.states.fullscreen.set<br/> </li> <li> **資料摘要**<br/> videostatefullscreen </li> <li> **Audience Manager**<br/> c_contextdata.a.media.states.fullscreen.set </li> </ul> |
 
 #### 全螢幕次數
 
 |   實作   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>全螢幕顯示的次數。只有在播放工作階段期間發生至少一個全螢幕狀態時，此量度才會設為 1。<br/> **重要&#x200B;**<br/>若此事件已設定，則次數等於視訊處於全螢幕狀態的次數。若此事件未設定，則不會傳送值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.count<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>全螢幕次數</li> <li> **內容資料&#x200B;**<br/>a.media.states.fullscreen.count<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatefullscreencount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.fullscreen.count</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;全螢幕顯示的次數。只有在播放工作階段期間發生至少一個全螢幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則次數等於視訊處於全螢幕狀態的次數。若此事件未設定，則不會傳送值。</li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.fullscreen.count<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 全螢幕次數 </li> <li> **內容資料**<br/> a.media.states.fullscreen.count<br/> </li> <li> **資料摘要**<br/> videostatefullscreencount </li> <li> **Audience Manager**<br/> c_contextdata.media.states.fullscreen.count </li> </ul> |
 
 
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>全螢幕顯示的時間長度。只有在播放工作階段期間發生至少一個全螢幕狀態時，此量度才會設為 1。<br/> **重要&#x200B;**<br/>若此事件已設定，則時間等於視訊處於全螢幕狀態的時間長度。若此事件未設定，則不會傳送值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.fullscreen.time<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>全螢幕總時間</li> <li> **內容資料&#x200B;**<br/>a.media.states.fullscreen.time<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatefullscreentime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.fullscreen.time</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;全螢幕顯示的時間長度。只有在播放工作階段期間發生至少一個全螢幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則時間等於視訊處於全螢幕狀態的時間長度。若此事件未設定，則不會傳送值。  </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.fullscreen.time<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 全螢幕總時間 </li> <li> **內容資料**<br/> a.media.states.fullscreen.time<br/> </li> <li> **資料摘要**<br/> videostatefullscreentime </li> <li> **Audience Manager**<br/> c_contextdata.media.states.fullscreen.time </li> </ul> |
 
 
 ### 受隱藏式字幕屬性
@@ -71,21 +71,21 @@ ht-degree: 100%
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>受隱藏式字幕影響的資料流數量。只有在播放工作階段期間發生至少一個隱藏式字幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.closedcaptioning.set<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>受隱藏式字幕影響的資料流</li> <li> **內容資料&#x200B;**<br/>a.media.states.closedcaptioning.set<br/> </li> <li> **資料摘要&#x200B;**<br/>videostateclosedcaptioning</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.closedcaptioning.set</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;受隱藏式字幕影響的資料流數量。只有在播放工作階段期間發生至少一個隱藏式字幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.closedcaptioning.set<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 受隱藏式字幕影響的資料流 </li> <li> **內容資料**<br/> a.media.states.closedcaptioning.set<br/> </li> <li> **資料摘要**<br/> videostateclosedcaptioning </li> <li> **Audience Manager**<br/> c_contextdata.a.media.states.closedcaptioning.set </li> </ul> |
 
 
 #### 隱藏式字幕次數
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>隱藏式字幕的顯示次數。只有在播放工作階段期間發生至少一個隱藏式字幕狀態時，此量度才會設為 1。<br/> **重要&#x200B;**<br/>若此事件已設定，則次數等於視訊處於隱藏式字幕狀態的次數。若此事件未設定，則不會傳送值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>C19<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>隱藏式字幕次數</li> <li> **內容資料&#x200B;**<br/>a.media.states.closedcaptioning.count<br/> </li> <li> **資料摘要&#x200B;**<br/>videostateclosedcaptioningcount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.closedcaptioning.count</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;隱藏式字幕的顯示次數。只有在播放工作階段期間發生至少一個隱藏式字幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則次數等於視訊處於隱藏式字幕狀態的次數。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe**<br/> Analyticsa.media.states.clousedcaptioning.count<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 隱藏式字幕次數 </li> <li> **內容資料**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **資料摘要**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
 
 
 #### 隱藏式字幕總時間
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>隱藏式字幕的顯示時間長度。只有在播放工作階段期間發生至少一個全螢幕狀態時，此量度才會設為 1。<br/> **重要&#x200B;**<br/>若此事件已設定，則時間等於視訊處於隱藏式字幕狀態的時間。若此事件未設定，則不會傳送值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.closedcaptioning.time<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>隱藏式字幕總時間</li> <li> **內容資料&#x200B;**<br/>a.media.states.closedcaptioning.time<br/> </li> <li> **資料摘要&#x200B;**<br/>videostateclosedcaptioningtime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.closedcaptioning.time</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;隱藏式字幕的顯示時間長度。只有在播放工作階段期間發生至少一個全螢幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則時間等於視訊處於隱藏式字幕狀態的時間。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.closedcaptioning.time<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 隱藏式字幕總時間 </li> <li> **內容資料**<br/> a.media.states.closedcaptioning.time<br/> </li> <li> **資料摘要**<br/> videostateclosedcaptioningtime </li> <li> **Audience Manager**<br/> c_contextdata.media.states.closedcaptioning.time </li> </ul> |
 
 
 ### 靜音屬性
@@ -94,19 +94,19 @@ ht-degree: 100%
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>受靜音影響的資料流的數量。只有在播放工作階段期間發生至少一個靜音狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.set<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>受靜音影響的資料流</li> <li> **內容資料&#x200B;**<br/>a.media.states.mute.set<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatemute</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.mute.set</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;受靜音影響的資料流的數量。只有在播放工作階段期間發生至少一個靜音狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.mute.set<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 受靜音影響的資料流 </li> <li> **內容資料**<br/> a.media.states.mute.set<br/> </li> <li> **資料摘要**<br/> videostatemute </li> <li> **Audience Manager**<br/> c_contextdata.a.media.states.mute.set </li> </ul> |
 
 #### 靜音次數
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>靜音的顯示次數。只有在播放工作階段期間發生至少一個靜音狀態時，此量度才會設為 1。<br/> **重要&#x200B;**<br/>若此事件已設定，則次數等於視訊處於靜音狀態的次數。若此事件未設定，則不會傳送值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.count<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>靜音次數</li> <li> **內容資料&#x200B;**<br/>a.media.states.mute.count<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatemutecount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.mute.count</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;靜音的顯示次數。只有在播放工作階段期間發生至少一個靜音狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則次數等於視訊處於靜音狀態的次數。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.mute.count<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 靜音次數 </li> <li> **內容資料**<br/> a.media.states.mute.count<br/> </li> <li> **資料摘要**<br/> videostatemutecount </li> <li> **Audience Manager**<br/> c_contextdata.media.states.mute.count </li> </ul> |
 
 #### 靜音總時間
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>靜音的顯示時間長度。只有在播放工作階段期間發生至少一個靜音狀態時，此量度才會設為 1。<br/> **重要&#x200B;**<br/>若此事件已設定，則時間等於視訊處於靜音狀態的時間。若此事件未設定，則不會傳送值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.mute.time<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>靜音總時間</li> <li> **內容資料&#x200B;**<br/>a.media.states.mute.time<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatemutetime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.mute.time</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;靜音的顯示時間長度。只有在播放工作階段期間發生至少一個靜音狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則時間等於視訊處於靜音狀態的時間。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.mute.time<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 靜音總時間 </li> <li> **內容資料**<br/> a.media.states.mute.time<br/> </li> <li> **資料摘要**<br/> videostatemutetime </li> <li> **Audience Manager**<br/> c_contextdata.media.states.mute.time </li> </ul> |
 
 
 ### 子母畫面屬性
@@ -116,21 +116,21 @@ ht-degree: 100%
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>受子母畫面影響的資料流的數量。只有在播放工作階段期間發生至少一個子母畫面狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.pictureinpicture.set<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>受子母畫面影響的資料流</li> <li> **內容資料&#x200B;**<br/>a.media.states.pictureinpicture.set<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatepictureinpicture</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.pictureinpicture.set</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;受子母畫面影響的資料流的數量。只有在播放工作階段期間發生至少一個子母畫面狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.pictureinpicture.set<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 受子母畫面影響的資料流 </li> <li> **內容資料**<br/> a.media.states.pictureinpicture.set<br/> </li> <li> **資料摘要**<br/> videostatepictureinpicture </li> <li> **Audience Manager**<br/> c_contextdata.a.media.states.pictureinpicture.set </li> </ul> |
 
 
 #### 子母畫面次數
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>子母畫面顯示的次數。只有在播放工作階段期間發生至少一個子母畫面狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則次數等於視訊處於子母畫面狀態的次數。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.pictureinpicture.count<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>子母畫面次數</li> <li> **內容資料&#x200B;**<br/>a.media.states.pictureinpicture.count<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatepictureinpicturecount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.pictureinpicture.count</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;子母畫面顯示的次數。只有在播放工作階段期間發生至少一個子母畫面狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則次數等於視訊處於子母畫面狀態的次數。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.pictureinpicture.count<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 子母畫面次數 </li> <li> **內容資料**<br/> a.media.states.pictureinpicture.count<br/> </li> <li> **資料摘要**<br/> videostatepictureinpicturecount </li> <li> **Audience Manager**<br/> c_contextdata.media.states.pictureinpicture.count </li> </ul> |
 
 
 #### 子母畫面總時間
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>子母畫面顯示的時間長度。只有在播放工作階段期間發生至少一個子母畫面狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則時間等於視訊處於子母畫面狀態的時間。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.pictureinpicture.time<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>子母畫面總時間</li> <li> **內容資料&#x200B;**<br/>a.media.states.pictureinpicture.time<br/> </li> <li> **資料摘要&#x200B;**<br/>videostatepictureinpicturetime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.pictureinpicture.time</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;子母畫面顯示的時間長度。只有在播放工作階段期間發生至少一個子母畫面狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則時間等於視訊處於子母畫面狀態的時間。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.pictureinpicture.time<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 子母畫面總時間 </li> <li> **內容資料**<br/> a.media.states.pictureinpicture.time<br/> </li> <li> **資料摘要**<br/> videostatepictureinpicturetime </li> <li> **Audience Manager**<br/> c_contextdata.media.states.pictureinpicture.time </li> </ul> |
 
 
 ### 觀看中屬性
@@ -139,21 +139,21 @@ ht-degree: 100%
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>受觀看中影響的資料流的數量。只有在播放工作階段期間發生至少一個觀看中狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.set<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>受觀看中影響的資料流</li> <li> **內容資料&#x200B;**<br/>a.media.states.infocus.set<br/> </li> <li> **資料摘要&#x200B;**<br/>videostateinfocus</li> <li> **Audience Manager **<br/>c_contextdata.a.media.states.infocus.set</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;受觀看中影響的資料流的數量。只有在播放工作階段期間發生至少一個觀看中狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.infocus.set<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 受觀看中影響的資料流 </li> <li> **內容資料**<br/> a.media.states.infocus.set<br/> </li> <li> **資料摘要**<br/> videostateinfocus </li> <li> **Audience Manager**<br/> c_contextdata.a.media.states.infocus.set </li> </ul> |
 
 
 #### 觀看中次數
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>觀看中顯示的次數。只有在播放工作階段期間發生至少一個觀看中狀態時，此量度才會設為 1。<br/> **重要&#x200B;**<br/>若此事件已設定，則次數等於視訊處於觀看中狀態的次數。若此事件未設定，則不會傳送值。</li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.count<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>觀看中次數</li> <li> **內容資料&#x200B;**<br/>a.media.states.infocus.count<br/> </li> <li> **資料摘要&#x200B;**<br/>videostateinfocuscount</li> <li> **Audience Manager **<br/>c_contextdata.media.states.infocus.count</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;觀看中顯示的次數。只有在播放工作階段期間發生至少一個觀看中狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則次數等於視訊處於觀看中狀態的次數。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.infocus.count<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 觀看中次數 </li> <li> **內容資料**<br/> a.media.states.infocus.count<br/> </li> <li> **資料摘要**<br/> videostateinfocuscount </li> <li> **Audience Manager**<br/> c_contextdata.media.states.infocus.count </li> </ul> |
 
 
 #### 觀看中總時間
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵&#x200B;**<br/>自動設定</li> <li> **API 索引鍵&#x200B;**<br/>不適用</li> <li> **必要&#x200B;**<br/>否</li> <li> **類型&#x200B;**<br/>數字</li> <li> **伴隨傳送&#x200B;**<br/>媒體關閉</li> <li> **最低SDK 版本&#x200B;**<br/>3.0</li> <li> **範例值&#x200B;**<br/>TRUE</li><li> **說明&#x200B;**<br/>觀看中顯示的時間長度。只有在播放工作階段期間發生至少一個觀看中狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則時間等於視訊處於觀看中狀態的時間。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>a.media.states.infocus.time<br/></li> <li> **心率&#x200B;**<br/>不適用</li> </ul> | <ul> <li> **可用&#x200B;**<br/>是</li> <li> **預留變數&#x200B;**<br/>事件</li> <li> **報表名稱&#x200B;**<br/>觀看中總時間</li> <li> **內容資料&#x200B;**<br/>a.media.states.infocus.time<br/> </li> <li> **資料摘要&#x200B;**<br/>videostateinfocustime</li> <li> **Audience Manager **<br/>c_contextdata.media.states.infocus.time</li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;觀看中顯示的時間長度。只有在播放工作階段期間發生至少一個觀看中狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則時間等於視訊處於觀看中狀態的時間。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics**<br/> a.media.states.infocus.time<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 觀看中總時間 </li> <li> **內容資料**<br/> a.media.states.infocus.time<br/> </li> <li> **資料摘要**<br/> videostateinfocustime </li> <li> **Audience Manager**<br/> c_contextdata.media.states.infocus.time </li> </ul> |
 
 ## XDM 身分識別的屬性清單
 
