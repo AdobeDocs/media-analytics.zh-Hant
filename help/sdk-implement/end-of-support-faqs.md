@@ -2,10 +2,10 @@
 title: Media Analytics SDK 支援終止常見問題集
 description: 此主題包含有關 Media Analytics SDK 支援終止的常見問題集。
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 90%
+source-wordcount: '679'
+ht-degree: 86%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 90%
 
 ## 5 大須知事項
 
-1. 2021 年 8 月 31 日後，我們將不再支援 Mobile v4 SDK。請改用 iOS 和 Android 專用的 Adobe Experience Platform (AEP) SDK。如需詳細資訊，請參閱[第 4 版行動 SDK 支援終止常見問題集](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。
+1. 2021 年 8 月 31 日後，我們將不再支援 Mobile v4 SDK。您應移轉至iOS和Android專用的Adobe Experience Platform(AEP)Mobile SDK。 如需詳細資訊，請參閱[第 4 版行動 SDK 支援終止常見問題集](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)。
 
-1. Analytics for Streaming Media實作需要AEP SDK及使用Analytics和Media Analytics擴充功能。 自 2021 年 9 月 1 日起，您必須使用新的 AEP SDK 和擴充功能。請使用 Adobe Launch 來設定 Media Analytics 擴充功能。  如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
+1. Analytics for Streaming Media實作需要AEP Mobile SDK並使用Analytics和Media Analytics擴充功能。 自2021年9月1日起，您應使用新的AEP Mobile SDK和擴充功能。  請使用 Adobe Launch 來設定 Media Analytics 擴充功能。  如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html)
 
 1. 日後我們不會再開發 Media Analytics SDK iOS 版和 Android 版。從 2019 年秋季開始導入的新功能，會使用 Media Analytics 擴充功能和 Media Collection API 來啟用。
 
