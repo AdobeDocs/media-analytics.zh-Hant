@@ -2,10 +2,10 @@
 title: 支援的裝置和平台
 description: Adobe Analytics for Streaming Media可確保在所有裝置上收集和報告每個媒體串流。
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '337'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ Media SDK 會因應裝置發佈新版本而定時更新，以便您能將 SDK �
 
 目前支援的裝置和平台如下表所示。若要下載最新版 SDK，請參閱[下載 SDK](https://docs.adobe.com/content/help/zh-Hant/media-analytics/using/sdk-implement/download-sdks.html)。若裝置不在清單中，請連絡您的客戶服務人員或解決方案顧問，以瞭解該裝置的狀態。
 
-| 串流平台和裝置 |  | Media Launch 擴充功能搭配 AEP SDK | Media SDK | 媒體收集 API |
+| 串流平台和裝置 |  | 使用AEP Mobile SDK的Media Launch Extension | Media SDK | 媒體收集 API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | 網頁/行動網頁 |  |  |  |  |
 |  | JavaScript 瀏覽器 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
