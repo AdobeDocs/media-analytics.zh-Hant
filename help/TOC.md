@@ -6,7 +6,7 @@ user-guide-description: 對音訊或影片來源實作 Analytics。包含 Media 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
+source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -219,11 +219,16 @@ ht-degree: 94%
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
    + [透過API取得並行檢視器資料](media-reports/media-default-reports/get-concurrent-json20.md)
 + [追蹤下載內容](media-collection-api/track-downloaded-content.md)
-+ [Federated Analytics](federated-analytics.md)
 + 播放器狀態追蹤 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準和自訂狀態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [實作與報告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [播放器狀態追蹤範例](sdk-implement/player-state-tracking/player-state-examples.md)
++ [Federated Analytics](federated-analytics.md)
+<!-- + Player State Tracking {#player-state-tracking}
+    + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
+    + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+    + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
 + 其他資源 {#additional-resources}
    + [發行說明](additional-resources/doc-updates.md)
