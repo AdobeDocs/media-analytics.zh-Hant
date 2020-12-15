@@ -6,7 +6,7 @@ user-guide-description: 對音訊或影片來源實作 Analytics。包含 Media 
 product: adobe analytics
 sub-product: Media Analytics
 translation-type: tm+mt
-source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
+source-git-commit: a6f9c93c8c21f261eb5b592d4a2d8c9d2532efee
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -220,8 +220,6 @@ ht-degree: 94%
    + [透過API取得並行檢視器資料](media-reports/media-default-reports/get-concurrent-json20.md)
 + [追蹤下載內容](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
-
-<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + 播放器狀態追蹤 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準和自訂狀態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
