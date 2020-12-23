@@ -3,11 +3,11 @@ seo-title: 概述
 title: 概述
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '331'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 媒體收集 API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過媒體收集 API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。
 
-媒體收集 API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示 Media SDK 文件某些方面也與媒體收集 API 有關。例如，兩個解決方案都使用相同的[串流媒體參數](/help/metrics-and-metadata/audio-video-parameters.md)，而收集的串流媒體追蹤資料會導致相同的[報告與分析。](/help/media-reports/media-reports-enable.md)
+媒體收集 API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示 Media SDK 文件某些方面也與媒體收集 API 有關。例如，這兩個解決方案都使用相同的[串流媒體參數](/help/metrics-and-metadata/audio-video-parameters.md)，而且收集的串流媒體追蹤資料會產生相同的[報表和分析](/help/media-reports/media-reports-enable.md)。
 
 ## 媒體追蹤資料流程 {#media-tracking-data-flows}
 
