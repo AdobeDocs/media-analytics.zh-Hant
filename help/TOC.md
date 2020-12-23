@@ -9,16 +9,16 @@ translation-type: tm+mt
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 
 # Adobe Analytics for Streaming Media {#using}
 
-+ [在Adobe Analytics中測量串流媒體](media-overview.md)
++ [在 Adobe Analytics 中測量串流媒體](media-overview.md)
 + [支援的裝置和平台](measurement-options/supported-devices.md)
-+ 串流媒體分析簡介{#intro-to-ava}
++ Streaming Media Analytics 簡介 {#intro-to-ava}
    + [必備條件](intro-to-ava/prereqs.md)
    + 實作路徑 {#implementation-paths}
       + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 94%
          + [設定 JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [設定 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [設定 Roku](sdk-implement/setup/set-up-roku.md)
-   + 追蹤串流媒體播放{#track-av-playback}
+   + 追蹤串流媒體播放 {#track-av-playback}
       + [概述](sdk-implement/track-av-playback/track-core-overview.md)
-      + 追蹤核心串流媒體播放{#track-core}
+      + 追蹤核心串流媒體播放 {#track-core}
          + [在 Android 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在 iOS 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + 在 JavaScript 上追蹤核心播放 {#track-core-javascript}
@@ -212,12 +212,12 @@ ht-degree: 94%
       + [預設報表概述](media-reports/media-default-reports/default-reports-overview.md)
       + [媒體概述](media-reports/media-default-reports/media-reports-overview.md)
       + [媒體詳細資料](media-reports/media-default-reports/media-reports-detail.md)
-      + [媒體日報表](media-reports/media-default-reports/media-reports-daypart.md)
-      + [媒體並行檢視器報告](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + 媒體工作區面板{#media-workspace-panels}
-      + [媒體並行檢視器面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+      + [媒體播出時段報表](media-reports/media-default-reports/media-reports-daypart.md)
+      + [媒體同時檢閱者報表](media-reports/media-default-reports/media-concurrent-viewers.md)
+   + 媒體工作區面板 {#media-workspace-panels}
+      + [媒體同時檢閱者面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
-   + [透過API取得並行檢視器資料](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [透過 API 取得同時檢閱者資料](media-reports/media-default-reports/get-concurrent-json20.md)
 + [追蹤下載內容](media-collection-api/track-downloaded-content.md)
 + 播放器狀態追蹤 {#player-state-tracking}
    + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
