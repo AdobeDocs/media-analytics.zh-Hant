@@ -2,14 +2,14 @@
 audience: end-user
 user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
-user-guide-description: 實作Adobe Analytics for Streaming Media。 包含 Media SDK 和 Media Collection API。
+user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
 product: adobe analytics
 sub-product: Media Analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
