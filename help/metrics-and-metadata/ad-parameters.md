@@ -3,10 +3,10 @@ title: 廣告參數
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 99%
+source-wordcount: '1855'
+ht-degree: 100%
 
 ---
 
@@ -148,7 +148,7 @@ ht-degree: 99%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/> SITE_ID </li> <li> **API 索引鍵:**<br/> media.ad.siteId </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始、廣告關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值：**<br/> </li><li> **說明:**<br/>&#x200B;廣告網站 ID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>網站) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **可用:**<br/> <i>使用自訂處理規則</i> </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;自訂* </li> <li> **內容資料:**<br/> (a.media.ad.<br/>網站) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> *使用自訂處理規則 |
+| <ul> <li> **SDK 索引鍵:**<br/> SITE_ID </li> <li> **API 索引鍵:**<br/> media.ad.siteId </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始、廣告關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值：**<br/> </li><li> **說明:**<br/>&#x200B;廣告網站 ID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>網站) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **可用:**<br/> <i>使用自訂處理規則</i> </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;自訂 </li> <li> **內容資料:**<br/> (a.media.ad.<br/>網站) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> |
 
 
 
@@ -156,7 +156,7 @@ ht-degree: 99%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/> CREATIVE_URL </li> <li> **API 索引鍵:**<br/> media.ad.creativeURL </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始、廣告關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值：**<br/> </li><li> **說明:**<br/>&#x200B;廣告創意的 URL。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **可用:**<br/> <i>使用自訂處理規則</i> </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;自訂* </li> <li> **內容資料:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> *使用自訂處理規則 |
+| <ul> <li> **SDK 索引鍵:**<br/> CREATIVE_URL </li> <li> **API 索引鍵:**<br/> media.ad.creativeURL </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始、廣告關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值：**<br/> </li><li> **說明:**<br/>&#x200B;廣告創意的 URL。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **可用:**<br/> <i>使用自訂處理規則</i> </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;自訂 </li> <li> **內容資料:**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
 
 
 
@@ -164,7 +164,7 @@ ht-degree: 99%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/> PLACEMENT_ID </li> <li> **API 索引鍵:**<br/> media.ad.placementId </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始、廣告關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值：**<br/> </li><li> **說明:**<br/>&#x200B;廣告版位 ID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>placement) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **可用:**<br/> <i>使用自訂處理規則</i> </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;自訂* </li> <li> **內容資料:**<br/> (a.media.ad.<br/>位置) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul>*使用自訂處理規則 |
+| <ul> <li> **SDK 索引鍵:**<br/> PLACEMENT_ID </li> <li> **API 索引鍵:**<br/> media.ad.placementId </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始、廣告關閉 </li> <li> **最小SDK 版本:** 1.5.7 </li> <li> **範例值：**<br/> </li><li> **說明:**<br/>&#x200B;廣告版位 ID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>placement) </li> <li> **心率:**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **可用:**<br/> <i>使用自訂處理規則</i> </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;自訂 </li> <li> **內容資料:**<br/> (a.media.ad.<br/>位置) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
 
 
 
