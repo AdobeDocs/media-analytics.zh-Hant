@@ -3,9 +3,9 @@ title: 品質參數
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
 workflow-type: tm+mt
-source-wordcount: '3008'
+source-wordcount: '2992'
 ht-degree: 99%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 99%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>&#x200B;自動設定 </li> <li> **API 密鑰:**<br/> </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> </li><li> **說明:**<br/> Media SDK 在播放期間產生的唯一錯誤 ID。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>mediaSdkErrors) </li> <li> **心率:**<br/> (s:event:<br/>type=error) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;自訂* </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>mediaSdkErrors) </li> <li> **資料饋送:**<br/> mediaqoeexternalerrors </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>mediaSdkErrors) </li> </ul><br/>*使用自訂處理規則 |
+| <ul> <li> **SDK 索引鍵:**<br/>&#x200B;自動設定 </li> <li> **API 密鑰:**<br/> </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> </li><li> **說明:**<br/> Media SDK 在播放期間產生的唯一錯誤 ID。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>mediaSdkErrors) </li> <li> **心率:**<br/> (s:event:<br/>type=error) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;自訂 </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>mediaSdkErrors) </li> <li> **資料饋送:**<br/> mediaqoeexternalerrors </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>mediaSdkErrors) </li> </ul><br/> |
 
 
 
@@ -252,7 +252,7 @@ ht-degree: 99%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>&#x200B;自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 1.5+ </li> <li> **範例值:**<br/> TRUE </li><li> **說明:**<br/>&#x200B;發生事件逾時的資料流數量。只有在播放時發生了至少一次停頓，此量度才會設定為 1。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stall) </li> <li> **心率:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;使用自訂處理規則 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報告名稱:**<br/> 自訂*</li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>失速) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>失速) </li> </ul><br/>*使用自訂處理規則 |
+| <ul> <li> **SDK 索引鍵:**<br/>&#x200B;自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 1.5+ </li> <li> **範例值:**<br/> TRUE </li><li> **說明:**<br/>&#x200B;發生事件逾時的資料流數量。只有在播放時發生了至少一次停頓，此量度才會設定為 1。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stall) </li> <li> **心率:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;使用自訂處理規則 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;自訂</li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>失速) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>失速) </li> </ul><br/> |
 
 >[!IMPORTANT]
 >
@@ -262,7 +262,7 @@ ht-degree: 99%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>&#x200B;自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 1.5+ </li> <li> **範例值：**<br/>「3」 </li><li> **說明:**<br/>&#x200B;在播放作業期間播放逾期的次數。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **心率:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;使用自訂處理規則 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報告名稱:**<br/> 自訂*</li> <li> **內容資料:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>stallCount) </li> </ul><br/>*使用自訂處理規則 |
+| <ul> <li> **SDK 索引鍵:**<br/>&#x200B;自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 1.5+ </li> <li> **範例值：**<br/>「3」 </li><li> **說明:**<br/>&#x200B;在播放作業期間播放逾期的次數。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **心率:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;使用自訂處理規則 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;自訂</li> <li> **內容資料:**<br/> (a.media.qoe.<br/>stallCount) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>stallCount) </li> </ul><br/> |
 
 
 
@@ -270,7 +270,7 @@ ht-degree: 99%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/>&#x200B;自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 1.5+ </li> <li> **範例值：**<br/> 12 </li><li> **說明:**<br/>&#x200B;在播放作業期間播放停頓的總時間 (秒數，須為整數)。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **心率:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;使用自訂處理規則 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報告名稱:**<br/> 自訂*</li> <li> **內容資料:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>stallTime) </li> </ul> <br/>*使用自訂處理規則 |
+| <ul> <li> **SDK 索引鍵:**<br/>&#x200B;自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 1.5+ </li> <li> **範例值：**<br/> 12 </li><li> **說明:**<br/>&#x200B;在播放作業期間播放停頓的總時間 (秒數，須為整數)。客戶必須建立自己的處理規則，才能有可用於報表的值。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **心率:**<br/> (s:event:<br/>type=stall) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;使用自訂處理規則 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;自訂</li> <li> **內容資料:**<br/> (a.media.qoe.<br/>stallTime) </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>stallTime) </li> </ul> <br/> |
 
 
 
