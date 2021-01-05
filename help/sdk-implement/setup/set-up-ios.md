@@ -2,11 +2,11 @@
 title: 設定 iOS
 description: 適用於 iOS 實作的 Media SDK 應用程式設定。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 99%
 
 ---
 
@@ -34,6 +34,17 @@ ht-degree: 100%
    * _提供播放器資訊的 API_ - 此資訊包含媒體名稱和播放點位置等詳細內容。
 
 ## SDK 實作
+
+>[!IMPORTANT]
+>
+>自 2.3.0 版起，SDK 會透過 XCFramework 發佈。
+>
+>SDK 2.3.0 版需搭配 Xcode 12.0 以上版本，以及 Cocoapod 1.10.0 以上版本 (如果適用)。
+
+* 只要提到二進位程式庫檔案，就應改用其 XCFramework 加以取代：
+   * MediaSDK.a > MediaSDK.xcframework
+   * MediaSDK_TV.a > MediaSDKTV.xcframework
+* 如果在專案中手動新增 Adobe XCFramework，請確定其非內嵌型態。
 
 1. 將[下載的](/help/sdk-implement/download-sdks.md#download-2x-sdks) Media SDK 新增至專案。
 
@@ -66,6 +77,7 @@ ht-degree: 100%
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
          * **libsqlite3.0.tbd**
+
          **Apple TV (tvOS) 目標：**
 
          * **AdobeMobileLibrary_TV.a**
