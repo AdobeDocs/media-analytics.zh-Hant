@@ -1,11 +1,11 @@
 ---
-title: 媒體資料流歸因
-description: null
-translation-type: ht
-source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: ht
-source-wordcount: '209'
-ht-degree: 100%
+title: 什麼是媒體串流歸因？
+description: 瞭解如何將應用程式動作連結至媒體追蹤資料，而不需要額外的處理規則和自訂變數。
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 89%
 
 ---
 
@@ -46,4 +46,3 @@ s.tl(this,'o','Hero Banner');
 ![](/assets/show-engagement.png)
 
 ![](/assets/vid-stream-attr-subs.png)
-
