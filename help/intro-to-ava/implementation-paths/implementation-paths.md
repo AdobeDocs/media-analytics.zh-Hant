@@ -1,19 +1,18 @@
 ---
-title: 實施路徑
-description: null
-uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: ht
-source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+title: 有哪些串流媒體實作路徑可用？
+description: 瞭解Adobe Streaming Media實作途徑，包括Adobe Launch。
+translation-type: tm+mt
+source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 87%
 
 ---
 
 
 # 實作路徑 {#implementation-paths}
 
-對於每個實作方式，客戶需要聯絡他們的銷售代表/客戶經理以簽署新的銷售訂單，因為 Media Analytics 具有獨特的 SKU，並且從基於伺服器呼叫的定價模式變更為基於視訊資料流的模式。
+對於每個實作路徑，客戶都需要聯絡其銷售代表／客戶經理，以簽署新的銷售訂單，因為Streaming Media Analytics有唯一的SKU，而且從根據伺服器呼叫的定價模型變更為以視訊串流為基礎的模型。
 
 * **Adobe Launch 搭配 Adobe Media Analytics 擴充功能**
 
@@ -44,6 +43,7 @@ ht-degree: 100%
    * 支援測量包含 (或不包含) 動態廣告插入的廣告插播。
    * TVSDK 的流暢廣告插入模型允許直接測量廣告播放的分析，進而提高準確性。
    * 強大的事件和中繼資料集合，可確保跨 QoS 緩衝或行動連線中斷問題以及一般使用者互動 (例如在行動裝置上搜尋、暫停和背景處理) 的準確性。
+
 <!--
    * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
