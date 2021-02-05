@@ -1,16 +1,18 @@
 ---
-title: Primetime
-description: null
-uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: Adobe Primetime 是什麼?·
+description: 瞭解Adobe Primetime解決方案，以及它如何協助串流媒體獲利。
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 89%
 
 ---
 
 
 # Primetime{#primetime}
 
-Media Analytics (心率) 是 Adobe 的標準化媒體追蹤解決方案。它已經取代 Adobe 的舊版里程碑模型。
+媒體分析(Heartbeats)是Adobe的標準化媒體追蹤解決方案，取代了Adobe的里程碑模型。
 
  Adobe Primetime 是 Adobe Experience Cloud 解決方案，可幫助內容程式設計師和經銷商在每個連線的裝置上透過媒體獲利。
 
