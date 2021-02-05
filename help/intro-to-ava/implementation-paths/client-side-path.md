@@ -1,16 +1,19 @@
 ---
-title: 用戶端
-description: null
+title: 什麼是媒體分析和用戶端整合？
+description: 瞭解Media Analytics如何與用戶端整合、Media SDK和／或Media Collection API搭配運作。
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '152'
+ht-degree: 80%
 
 ---
 
 
 # 用戶端{#client-side}
 
-Media Analytics (心率) 是 Adobe 的標準化媒體追蹤解決方案。它已經取代 Adobe 的舊版里程碑模型。
+Media Analytics (心率) 是 Adobe 的標準化媒體追蹤解決方案。取代Adobe的里程碑模型。
 
 用戶端整合僅限採用 Media Analytics 實施。您可以選擇實施 Media SDK 或媒體收集 API (或兩者)。此用戶端路徑可用於任何播放器，包括客戶及/或 OVP 播放器，例如 Brightcove、Ooyala、thePlatform 等。
 
