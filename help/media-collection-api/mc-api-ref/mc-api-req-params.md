@@ -2,8 +2,11 @@
 title: 要求參數
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 99%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | 要求索引鍵 | 必填 | 設定於... |  說明 |
 | --- | :---: | :---: | --- |
+| `media.streamFormat` | N | `sessionStart` | 串流格式，例如&quot;HD&quot; |
 | `media.show` | N | `sessionStart` | 節目或影集名稱 |
 | `media.season` | N | `sessionStart` | 節目或影集隸屬的季數 |
 | `media.episode` | N | `sessionStart` | 集數 |
@@ -123,17 +127,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ### appInstallationId
 
-* **如果您&#x200B;*未*傳遞`appInstallationId`值 -** MA 後端將不再產生 MCID，而是會仰賴 Adobe Analytics 來產生。Adobe 建議您盡可能傳送 MCID 或 `appInstallationId` (連同目前仍為必要項目的 `marketingCloudOrgId`)，讓媒體收集 API 在每次呼叫時產生 MCID 並予以傳送。
+* **如果您&#x200B;*未*傳遞 `appInstallationId` 值 -** MA 後端將不再產生 MCID，而是會仰賴 Adobe Analytics 來產生。Adobe 建議您盡可能傳送 MCID 或 `appInstallationId` (連同目前仍為必要項目的 `marketingCloudOrgId`)，讓媒體收集 API 在每次呼叫時產生 MCID 並予以傳送。
 
-* **如果您&#x200B;*會*傳遞`appInstallationId`值 -** 如果您會傳遞 `appInstallationId` 的值和 (必要的) `marketingCloudOrgId` 參數，則 MA 後端&#x200B;*能*&#x200B;產生 MCID。如果您自行傳遞 `appInstallationId`，必須將其值保留在用戶端上。該值必須供裝置上的應用程式專用，而且只要您未重新安裝應用程式，該值就必須存在。
+* **如果您&#x200B;*會*傳遞 `appInstallationId` 值 -** 如果您會傳遞 `appInstallationId` 的值和 (必要的) `marketingCloudOrgId` 參數，則 MA 後端&#x200B;*能*&#x200B;產生 MCID。如果您自行傳遞 `appInstallationId`，必須將其值保留在用戶端上。該值必須供裝置上的應用程式專用，而且只要您未重新安裝應用程式，該值就必須存在。
 
 >[!NOTE]
 >
 >唯一識別應用程式&#x200B;*和裝置*&#x200B;的 `appInstallationId`。每部裝置上的每個應用程式都必須有專屬的值。也就是說，假設有兩位使用者在兩部相異裝置上使用同一款應用程式的相同版本，他們必須分別傳送不同 (唯一) 的 `appInstallationId`。
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-\<ul id="ul_iwc_fqt_pbb"\> 
- \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+\<ul id="ul_iwc_fqt_pbb"\>
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
 </ul> -->
 
 ### visitor.marketingCloudOrgId
@@ -152,7 +156,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
    ```js
    "<<insert your ID name here>>": {  
      "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>> 
+      "authState": <<insert one of 0, 1, 2>>
    }
    ```
 
