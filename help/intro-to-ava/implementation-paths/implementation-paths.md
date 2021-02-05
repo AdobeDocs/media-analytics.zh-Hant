@@ -1,18 +1,18 @@
 ---
-title: 有哪些串流媒體實作路徑可用？
-description: 瞭解Adobe Streaming Media實作途徑，包括Adobe Launch。
-translation-type: tm+mt
+title: 有哪些串流媒體實作路徑可以使用？
+description: 了解 Adobe 串流媒體實作途徑，包括 Adobe Launch。
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # 實作路徑 {#implementation-paths}
 
-對於每個實作路徑，客戶都需要聯絡其銷售代表／客戶經理，以簽署新的銷售訂單，因為Streaming Media Analytics有唯一的SKU，而且從根據伺服器呼叫的定價模型變更為以視訊串流為基礎的模型。
+不管採取哪個實作路徑，客戶都需連絡他們的銷售代表/客戶經理，以簽署新的銷售訂單，因為 Media Analytics 的 SKU 並不重複，而且會從伺服器呼叫型的定價模式變更為基於視訊資料流的模式。
 
 * **Adobe Launch 搭配 Adobe Media Analytics 擴充功能**
 
@@ -50,4 +50,4 @@ ht-degree: 87%
 
 TVSDK 已與 Media Analtyics (心率) SDK 整合，使得在每個支援的平台上實作時更加簡單快速。<!--Primetime also supports the partnership with Nielsen.-->若要利用 Primetime，請遵循在以下內容中找到的相同指引和必要條件：[用戶端](/help/intro-to-ava/implementation-paths/client-side-path.md)以及適用於您平台的下列文件：[Primetime 使用手冊](https://helpx.adobe.com/tw/primetime/user-guide.html)。
 
-您也應該聯絡銷售代表/客戶經理，討論購買 TVSDK 的所需作業。
+您也應該連絡銷售代表/客戶經理，討論購買 TVSDK 的所需作業。
