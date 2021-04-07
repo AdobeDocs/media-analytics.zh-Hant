@@ -2,14 +2,14 @@
 title: 在 Roku 上追蹤核心播放
 description: 本主題說明如何在 Roku 上使用 Media SDK 實作核心追蹤。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
+exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
-
 
 # 在 Roku 上追蹤核心播放{#track-core-playback-on-roku}
 
@@ -99,91 +99,6 @@ ht-degree: 100%
    可選擇透過內容資料變數，將標準和/或自訂中繼資料物件附加到追蹤工作階段。
 
    * **標準中繼資料**
-
-      [在 JavaScript 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-
-      >[!NOTE]
-      >
-      >將標準中繼資料物件附加到媒體物件為選用。
-
-      * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-         請在此處參閱完整的可用中繼資料組: [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
-   * **自訂中繼資料**
-
-      為自訂變數建立變數物件，並為此媒體填入資料。例如:
-
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
-
-1. **追蹤開始播放的意圖**
-
-   若要開始追蹤媒體工作階段，請呼叫媒體心率例項上的 `trackSessionStart`:
-
-   ```js
-   mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-   ```
-
-   >[!TIP]
-   >
-   >秒數值是您在步驟 2 建立的自訂媒體中繼資料物件名稱。
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionStart` 會追蹤使用者的播放意圖，而非播放的開始。此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
-
-   >[!NOTE]
-   >
-   >若您未使用自訂中繼資料，只要對 `trackSessionStart` 中的 `data` 引數傳送空白物件即可，如上方 iOS 範例中的備註行所示。
-
-1. **追蹤實際的播放開始**
-
-   識別來自媒體播放器的播放開始 (在畫面上轉譯了媒體的第一個時間格) 事件，並呼叫 `trackPlay`:
-
-   ```js
-   mediaHeartbeat.trackPlay();
-   ```
-
-1. **追蹤播放完成**
-
-   識別來自媒體播放器的播放完成 (使用者已觀看內容至結尾) 事件，並呼叫 `trackComplete`:
-
-   ```js
-   mediaHeartbeat.trackComplete();
-   ```
-
-1. **追蹤工作階段結尾**
-
-   識別來自媒體播放器的播放卸載/關閉 (使用者關閉媒體和/或媒體完成及卸載) 事件，並呼叫 `trackSessionEnd`:
-
-   ```js
-   mediaHeartbeat.trackSessionEnd();
-   ```
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionEnd` 會標記追蹤工作階段的結尾。如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。在 `trackSessionEnd` 之後會忽略任何其他 `track*` API 呼叫 (除了新追蹤工作階段的 `trackSessionStart`)。媒體播放追蹤方法以追蹤媒體負載並將目前的作業設定為作用中:
-
-   ```
-   ‘ Create a media info object
-   mediaInfo = adb_media_init_mediainfo()
-   mediaInfo.id = <MEDIA_ID>
-   mediaInfo.playhead = "0"
-   mediaInfo.length = "600"
-   ```
-
-1. **附加視訊中繼資料**
-
-   可選擇透過內容資料變數，將標準和/或自訂視訊中繼資料物件附加到視訊追蹤工作階段。
-
-   * **標準視訊中繼資料**
 
       [在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
