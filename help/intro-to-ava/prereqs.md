@@ -2,14 +2,14 @@
 title: 必備條件
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
+exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 translation-type: ht
-source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '424'
 ht-degree: 100%
 
 ---
-
 
 # 必備條件{#prerequisites}
 
@@ -52,4 +52,3 @@ ht-degree: 100%
 1. **啟用 Adobe Analytics 報表。**
 
    若要在 Analytics 中啟用報表及查看收集中的內容和廣告資料，請參閱[啟用媒體報表](/help/media-reports/media-reports-enable.md)。
-
