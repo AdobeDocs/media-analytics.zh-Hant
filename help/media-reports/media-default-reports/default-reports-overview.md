@@ -2,11 +2,14 @@
 title: 預設報表概述
 description: null
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
+exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
 translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '325'
+ht-degree: 100%
 
 ---
-
 
 # 預設報表概述{#default-reports-overview}
 
