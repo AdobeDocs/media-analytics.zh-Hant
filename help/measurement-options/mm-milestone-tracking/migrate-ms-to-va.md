@@ -2,14 +2,14 @@
 title: 從里程碑移轉至 Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
+exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 translation-type: ht
-source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '669'
 ht-degree: 100%
 
 ---
-
 
 # 從里程碑移轉至 Media Analytics {#migrating-from-milestone-to-media-analytics}
 
@@ -89,4 +89,3 @@ ht-degree: 100%
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> 或 <br>trackEvent | `trackPause()`<br> 或 `trackEvent(`<br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)`<br> 或 <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | 使用自訂或標準中繼資料設定其他變數。 | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | 不適用 | 已自動設定追蹤呼叫頻率。 |
-
