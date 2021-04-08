@@ -2,14 +2,14 @@
 title: 從里程碑移轉至自訂連結
 description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
+exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 translation-type: ht
-source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '576'
 ht-degree: 100%
 
 ---
-
 
 # 從里程碑移轉至自訂連結{#migrating-from-milestone-to-custom-link}
 
