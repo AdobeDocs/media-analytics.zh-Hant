@@ -2,14 +2,14 @@
 title: 媒體同時檢閱者
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
+exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 translation-type: ht
-source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '267'
 ht-degree: 100%
 
 ---
-
 
 # 媒體同時檢閱者{#media-concurrent-viewers}
 
