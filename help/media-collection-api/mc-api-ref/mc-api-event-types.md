@@ -1,12 +1,15 @@
 ---
 title: 事件類型和說明
-description: null
+description: 事件類型和說明
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
-
 
 # 事件類型和說明{#event-types-and-descriptions}
 
@@ -86,4 +89,3 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 >[!IMPORTANT]
 >
 >若要驗證事件參數類型和需求是否正確，請參考 [JSON 驗證結構](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md)以瞭解每種事件類型。
-
