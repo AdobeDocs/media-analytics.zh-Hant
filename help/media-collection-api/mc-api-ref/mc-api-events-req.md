@@ -1,12 +1,15 @@
 ---
 title: 事件要求
-description: null
+description: 事件要求
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
-
 
 # 事件要求{#events-request}
 
@@ -48,7 +51,7 @@ https://{uri}/api/v1/sessions/{sid}/events
 
 >[!IMPORTANT]
 >
->***廣告追蹤 -**您只能追蹤`adBreak`*內的廣告。
+>***廣告追蹤 -**您只能追蹤`adBreak`* 內的廣告。
 >
 >如果廣告周圍缺少 `adBreakStart` 和 `adBreakComplete`「書擋」，系統將會忽略 `adStart` 和 `adComplete` 事件，並將對應的廣告持續時間視為主要內容持續時間來追蹤。這可能會對 Adobe Analytics 提供的彙總資料產生重大影響。
 
@@ -74,4 +77,3 @@ Access-Control-Expose-Headers Location
 | **404** | **找不到。** <br/><br/>在後端服務找不到媒體工作階段的工作階段 ID。 | 用戶端應用程式應使用[工作階段要求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API，建立其他媒體工作階段並回報相關追蹤。 |
 | **410** | **已過期。** <br/><br/>在後端服務找到媒體工作階段，但用戶端無法回報相關活動。 | 用戶端應用程式應使用[工作階段要求](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) API，建立其他媒體工作階段並回報相關追蹤。 |
 | **500** | **伺服器錯誤** | 不適用 |
-
