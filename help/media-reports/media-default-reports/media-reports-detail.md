@@ -1,12 +1,12 @@
 ---
 title: 媒體詳細資料
-description: null
+description: 媒體詳細資料
 uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
 exl-id: 3c707539-95a4-4e16-97f0-f3fe0be4fe74
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '28'
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '30'
 ht-degree: 100%
 
 ---
