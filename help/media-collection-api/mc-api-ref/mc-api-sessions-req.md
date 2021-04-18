@@ -1,12 +1,15 @@
 ---
 title: 工作階段要求
-description: null
+description: 工作階段要求
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '80'
+ht-degree: 100%
 
 ---
-
 
 # 工作階段要求{#sessions-request}
 
@@ -93,4 +96,3 @@ Via: 1.1 wsg.sanjose08
 | 201 | Session created |
 | 400 | Bad Request |
 | 500 | Server error |
-
