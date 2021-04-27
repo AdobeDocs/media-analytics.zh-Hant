@@ -1,19 +1,19 @@
 ---
-title: 取得同時檢閱者 JSON 報表資料
-description: 取得同時檢閱者 JSON 報表資料
+title: 取得並行檢視者 JSON 報表資料
+description: 取得並行檢視者 JSON 報表資料
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
 
 
-# 取得同時檢閱者 JSON 報表資料{#get-concurrent-viewers-json-report-data}
+# 取得並行檢視者 JSON 報表資料{#get-concurrent-viewers-json-report-data}
 
-您可以使用 Analytics API _*1.4 版*_&#x200B;來取得同時觀看者報表資料:
+您可以使用 Analytics API _*1.4 版*_ 來取得並行檢視者報表資料：
 * [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
@@ -24,9 +24,9 @@ ht-degree: 100%
    * 您在報表中指定的資料範圍會&#x200B;_在視訊工作階段結束時_收集所有同時觀看者資料。
 因此，您必須說明在某一天開始並在午夜後結束 (亦即隔天) 的工作階段。
 
-   * 請要求超過一天的資料量，但在分析中，請&#x200B;_*僅使用第一天的資料*_。
+   * 請要求一天以上的資料量，但在您的分析中，_*只能使用第一天的資料*_。
 
-此案例的要求裝載範例看起來會像這樣:
+此案例的要求裝載範例如下所示：
 
 ```
 {
