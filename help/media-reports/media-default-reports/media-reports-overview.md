@@ -1,19 +1,19 @@
 ---
-title: 媒體概述
-description: 媒體概述
+title: 媒體總覽
+description: 媒體總覽
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
 ht-degree: 100%
 
 ---
 
-# 媒體概述{#media-overview}
+# 媒體總覽{#media-overview}
 
-「媒體概述」控制面板的設計可讓您監視網站上的各個媒體。「媒體概述」畫面會顯示數個彙總測量，供您快速監測媒體是否如預期般執行。圖形會在廣告開始旁顯示內容開始，讓您快速檢視每個媒體項目的這些量度。
+「媒體總覽」控制面板的設計可讓您監視網站上的各個媒體。「媒體總覽」畫面會顯示數個彙總測量，供您快速監測媒體是否如預期般執行。圖形會在廣告開始旁顯示內容開始，讓您快速檢視每個媒體項目的這些量度。
 
 ![](assets/media_overview.png)
 
