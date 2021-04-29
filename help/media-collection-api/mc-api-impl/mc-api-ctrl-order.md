@@ -4,7 +4,7 @@ description: 控制事件順序
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 translation-type: tm+mt
-source-git-commit: e0da35f364dc057a241fbb05a718a731ffee1e94
+source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 4%
@@ -16,6 +16,7 @@ ht-degree: 4%
 串流視訊追蹤是高度依時間而定的作業，有時候Media Collection API追蹤呼叫會在後端逾時到達。 在這種情況下，後端會嘗試根據`playerTime`物件中提供的時間戳記，將事件排入佇列並重新排序。  發生此情況時有一些限制。 目前，如果失序呼叫之間的延遲超過一秒，則重新排序可能會失敗。 在未來的更新中，「可接受的延遲時間」可能會最佳化並加以設定。
 
 ## 無序事件範例
+
 當事件通過網路時發生順序錯誤事件，這有時會導致延遲。
 
 例如，您可以傳送`adBreakStart`事件，後面接著`adStart`事件。 這是常見的使用案例，因為廣告必須從廣告插播中開始。
