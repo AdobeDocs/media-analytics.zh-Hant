@@ -2,14 +2,14 @@
 title: 要求參數
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
+exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 99%
+source-wordcount: '1205'
+ht-degree: 98%
 
 ---
-
 
 # 要求參數{#request-parameters}
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 組織 ID，能在 Adobe Experience Cloud 生態系統中識別您的組織 |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | 這是 Experience Cloud 使用者 ID (ECID)。在大多數案例中，這是識別使用者時應使用的 ID。心率 `marketingCloudUserId` 等於 Adobe Analytics 中的 `MID`。此參數就技術上而言雖然並非必要，但在存取 Experience Cloud 應用程式系列時則需使用此參數。 |
-| `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 資料 |
+| `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 資料 — 如果未輸入值，則該值為null。 |
 | `appInstallationId` | N | `sessionStart` | 唯一識別應用程式和裝置的 appInstallationId |
 
 ## 內容資料
