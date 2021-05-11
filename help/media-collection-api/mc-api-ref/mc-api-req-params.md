@@ -4,7 +4,7 @@ description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: tm+mt
-source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
 workflow-type: tm+mt
 source-wordcount: '1205'
 ht-degree: 98%
@@ -164,7 +164,7 @@ ht-degree: 98%
 
 ### visitor.aamLocationHint
 
-這個參數指出當 Adobe Analytics 將客戶資料傳送到 Audience Manager 時的目的地 Adobe Audience Manager (AAM) Edge。如果您未傳遞這個參數，Adobe 會將其硬式編碼為 1。當使用者傾向於在偏遠位置使用裝置 (如美國東部、美國西部、歐洲、亞洲) 時，這個參數尤其重要。否則，使用者資料將散佈到多個 AAM Edge。
+這個參數指出當 Adobe Analytics 將客戶資料傳送到 Audience Manager 時的目的地 Adobe Audience Manager (AAM) Edge。如果未輸入值，則該值為null。 當使用者傾向於在偏遠位置使用裝置 (如美國東部、美國西部、歐洲、亞洲) 時，這個參數尤其重要。否則，使用者資料將散佈到多個 AAM Edge。
 
 ### media.resume
 
