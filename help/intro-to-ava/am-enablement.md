@@ -2,9 +2,8 @@
 title: 什麼是 Adobe Audience Manager 輔助？
 description: 了解如何將應用程式動作連結到媒體追蹤資料，而不需要其他處理規則和自訂變數。
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: e781af84f23400aa7c899b686f0e9fee2c19d660
+workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -59,7 +58,7 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
    設定 DPID 和 DPUUID。若已設定 DPID 和 DPUUID，則會與各訊號一併傳送。
 
    ```js
-   ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
+   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
    ```
 
 * `submitSignal() -`
@@ -67,7 +66,7 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
    傳送具特徵的訊號至對象管理。
 
    ```js
-   ADBMobile.audienceManager.SubmitSignal();
+   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
    ```
 
 ### Roku {#am-roku}
@@ -109,5 +108,7 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
    傳送具特徵的訊號至對象管理。
 
    ```js
-   ADBMobile().audienceSubmitSignal()
+   traitData = {}
+   traitData["sampleTrait"] = "sampleValue"
+   ADBMobile().audienceSubmitSignal(traitData)
    ```
