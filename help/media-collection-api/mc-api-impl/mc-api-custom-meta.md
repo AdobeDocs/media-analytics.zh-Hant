@@ -3,11 +3,10 @@ title: 自訂中繼資料支援
 description: 自訂中繼資料支援
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+source-git-commit: 962bb8b6859ca8964efcb2f3ba0dc566a5e24c3e
 workflow-type: tm+mt
-source-wordcount: '59'
-ht-degree: 100%
+source-wordcount: '115'
+ht-degree: 54%
 
 ---
 
@@ -18,3 +17,30 @@ ht-degree: 100%
 `customMetadata` JSON 索引鍵應包含索引鍵:值配對的物件。索引鍵只能包含英數字元、底線及點/句號。
 
 [MA 收集 API 事件](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
+
+## 範例
+
+目前，您可以傳送`sessionStart`事件，其中包含下列索引鍵：值組：
+
+```
+params: { "media.channel": "channel-1" },
+  customMetadata: { "a.media.channel": "channel-2" }
+```
+
+針對上述設定，傳送至analytics的報表資料如下：
+
+`c.a.media.channel=channel-2`
+
+### 建議
+
+建議您為自訂中繼資料使用個別的命名空間。 例如：
+
+```
+params: { "media.channel": "channel-1" },
+  customMetadata: { "clientnamespace.media.channel": "channel-2" }
+```
+
+在建議的範例中，傳送至分析的自訂中繼資料的報表資料如下：
+
+`c.a.media.channel=channel-1`
+`c.clientnamespace.media.channel=channel-2`
