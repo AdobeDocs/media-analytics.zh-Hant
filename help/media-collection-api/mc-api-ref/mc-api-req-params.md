@@ -1,13 +1,12 @@
 ---
 title: 要求參數
-description: null
+description: 了解Adobe Analytics串流媒體請求參數。
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-translation-type: tm+mt
-source-git-commit: 786327371aa1fc8809c8a5827bc9c8991b1ecae1
+source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 98%
+source-wordcount: '1297'
+ht-degree: 94%
 
 ---
 
@@ -15,105 +14,105 @@ ht-degree: 98%
 
 ## Analytics 資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `analytics.trackingServer` | Y | `sessionStart` | Adobe Analytics 伺服器的 URL |
-| `analytics.reportSuite` | Y | `sessionStart` | 識別 Analytics 報表資料的 ID |
-| `analytics.enableSSL` | N | `sessionStart` | 是否啟用 SSL (True 或 False) |
-| `analytics.visitorId` | N | `sessionStart` | Adobe 訪客 ID 是可用於多款 Adobe 應用程式的自訂 ID。心率 `visitorId` 等於 Analytics `VID.` |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `analytics.trackingServer` | Y | 字串 | `sessionStart` | Adobe Analytics 伺服器的 URL |
+| `analytics.reportSuite` | Y | 字串 | `sessionStart` | 識別 Analytics 報表資料的 ID |
+| `analytics.enableSSL` | N | 布林值 | `sessionStart` | 是否啟用 SSL (True 或 False) |
+| `analytics.visitorId` | N | 字串 | `sessionStart` | Adobe 訪客 ID 是可用於多款 Adobe 應用程式的自訂 ID。心率 `visitorId` 等於 Analytics `VID.` |
 
 ## 訪客資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | `sessionStart` | Experience Cloud 組織 ID，能在 Adobe Experience Cloud 生態系統中識別您的組織 |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | 這是 Experience Cloud 使用者 ID (ECID)。在大多數案例中，這是識別使用者時應使用的 ID。心率 `marketingCloudUserId` 等於 Adobe Analytics 中的 `MID`。此參數就技術上而言雖然並非必要，但在存取 Experience Cloud 應用程式系列時則需使用此參數。 |
-| `visitor.aamLocationHint` | N | `sessionStart` | 提供 Adobe Audience Manager Edge 資料 — 如果未輸入值，則該值為null。 |
-| `appInstallationId` | N | `sessionStart` | 唯一識別應用程式和裝置的 appInstallationId |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `visitor.marketingCloudOrgId` | Y | 字串 | `sessionStart` | Experience Cloud 組織 ID，能在 Adobe Experience Cloud 生態系統中識別您的組織 |
+| `visitor.marketingCloudUserId` | N | 字串 | `sessionStart` | 這是 Experience Cloud 使用者 ID (ECID)。在大多數案例中，這是識別使用者時應使用的 ID。心率 `marketingCloudUserId` 等於 Adobe Analytics 中的 `MID`。此參數就技術上而言雖然並非必要，但在存取 Experience Cloud 應用程式系列時則需使用此參數。 |
+| `visitor.aamLocationHint` | N | 整數 | `sessionStart` | 提供Adobe Audience Manager Edge資料 — 如果未輸入值，則值為null。 |
+| `appInstallationId` | N | 字串 | `sessionStart` | 唯一識別應用程式和裝置的 appInstallationId |
 
 ## 內容資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `media.id` | Y | `sessionStart` | 內容的唯一識別碼 |
-| `media.name` | N | `sessionStart` | 內容的人類可讀名稱 |
-| `media.length` | Y | `sessionStart` | 內容長度 (秒) |
-| `media.contentType` | Y | `sessionStart` | 資料流的格式 (可以是任何字串；幾個建議的值包括「即時」、「VOD」或「線性」) |
-| `media.playerName` | Y | `sessionStart` | 負責轉譯內容之播放器的名稱 |
-| `media.channel` | Y | `sessionStart` | 內容發佈的管道。可以是行動應用程式名稱或網站名稱、屬性名稱 |
-| `media.resume` | N | `sessionStart` | 指出使用者是否正在繼續先前的工作階段 (相對於開始新的工作階段) |
-| `media.sdkVersion` | N | `sessionStart` | 播放器使用的 SDK 版本 |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `media.id` | Y | 字串 | `sessionStart` | 內容的唯一識別碼 |
+| `media.name` | N | 字串 | `sessionStart` | 內容的人類可讀名稱 |
+| `media.length` | Y | 數字 | `sessionStart` | 內容長度 (秒) |
+| `media.contentType` | Y | 字串 | `sessionStart` | 資料流的格式 (可以是任何字串；幾個建議的值包括「即時」、「VOD」或「線性」) |
+| `media.playerName` | Y | 字串 | `sessionStart` | 負責轉譯內容之播放器的名稱 |
+| `media.channel` | Y | 字串 | `sessionStart` | 內容發佈的管道。可以是行動應用程式名稱或網站名稱、屬性名稱 |
+| `media.resume` | N | 布林值 | `sessionStart` | 指出使用者是否正在繼續先前的工作階段 (相對於開始新的工作階段) |
+| `media.sdkVersion` | N | 字串 | `sessionStart` | 播放器使用的 SDK 版本 |
 
 ## 內容標準中繼資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | 串流格式，例如&quot;HD&quot; |
-| `media.show` | N | `sessionStart` | 節目或影集名稱 |
-| `media.season` | N | `sessionStart` | 節目或影集隸屬的季數 |
-| `media.episode` | N | `sessionStart` | 集數 |
-| `media.assetId` | N | `sessionStart` | 視訊資產的唯一識別碼，例如電視影集集數識別碼、電影資產識別碼，或即時事件識別碼。一般來說，這些 ID 衍生自中繼資料授權單位，如 EIDR、TMS/Gracenote 或 Rovi。這些識別碼也可能來自其他專屬或內部系統。 |
-| `media.genre` | N | `sessionStart` | 內容製作人定義的內容類型 |
-| `media.firstAirDate` | N | `sessionStart` | 內容在電視上的首播日期 |
-| `media.firstDigitalDate` | N | `sessionStart` | 內容在任何數位平台上的首播日期 |
-| `media.rating` | N | `sessionStart` | 依美國電視分級制度 (TV Parental Guidelines) 的定義進行分級 |
-| `media.originator` | N | `sessionStart` | 內容的建立者 |
-| `media.network` | N | `sessionStart` | 網路 / 頻道名稱 |
-| `media.showType` | N | `sessionStart` | 內容的類型，以 0 到 3 的整數來表示： <ul> <li>0 – 全集 </li> <li>1 – 預覽 </li> <li>2 – 片段 </li> <li>3 – 其他 </li> </ul> |
-| `media.adLoad` | N | `sessionStart` | 載入的廣告類型 |
-| `media.pass.mvpd` | N | `sessionStart` | Adobe 驗證提供的 MVPD |
-| `media.pass.auth` | N | `sessionStart` | 指出使用者已獲得 Adobe 驗證授權 (若有設定，只能為 True) |
-| `media.dayPart` | N | `sessionStart` | 內容播出當天的時間 |
-| `media.feed` | N | `sessionStart` | 摘要類型，如 &quot;West-HD&quot; |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `media.streamFormat` | N | 字串 | `sessionStart` | 資料流格式，例如&quot;HD&quot; |
+| `media.show` | N | 字串 | `sessionStart` | 節目或影集名稱 |
+| `media.season` | N | 字串 | `sessionStart` | 節目或影集隸屬的季數 |
+| `media.episode` | N | 字串 | `sessionStart` | 集數 |
+| `media.assetId` | N | 字串 | `sessionStart` | 視訊資產的唯一識別碼，例如電視影集集數識別碼、電影資產識別碼，或即時事件識別碼。一般來說，這些 ID 衍生自中繼資料授權單位，如 EIDR、TMS/Gracenote 或 Rovi。這些識別碼也可能來自其他專屬或內部系統。 |
+| `media.genre` | N | 字串 | `sessionStart` | 內容製作人定義的內容類型 |
+| `media.firstAirDate` | N | 字串 | `sessionStart` | 內容在電視上的首播日期 |
+| `media.firstDigitalDate` | N | 字串 | `sessionStart` | 內容在任何數位平台上的首播日期 |
+| `media.rating` | N | 字串 | `sessionStart` | 依美國電視分級制度 (TV Parental Guidelines) 的定義進行分級 |
+| `media.originator` | N | 字串 | `sessionStart` | 內容的建立者 |
+| `media.network` | N | 字串 | `sessionStart` | 網路 / 頻道名稱 |
+| `media.showType` | N | 字串 | `sessionStart` | 內容的類型，以 0 到 3 的整數來表示： <ul> <li>0 – 全集 </li> <li>1 – 預覽 </li> <li>2 – 片段 </li> <li>3 – 其他 </li> </ul> |
+| `media.adLoad` | N | 字串 | `sessionStart` | 載入的廣告類型 |
+| `media.pass.mvpd` | N | 字串 | `sessionStart` | Adobe 驗證提供的 MVPD |
+| `media.pass.auth` | N | 字串 | `sessionStart` | 指出使用者已獲得 Adobe 驗證授權 (若有設定，只能為 True) |
+| `media.dayPart` | N | 字串 | `sessionStart` | 內容播出當天的時間 |
+| `media.feed` | N | 字串 | `sessionStart` | 摘要類型，如 &quot;West-HD&quot; |
 
 ## 廣告資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `media.ad.podFriendlyName` | N | `adBreakStart` | 廣告插播的易記名稱 |
-| `media.ad.podIndex` | Y | `adBreakStart` | 視訊中的廣告 Pod 索引 |
-| `media.ad.podSecond` | Y | `adBreakStart` | Pod 開始的秒數 |
-| `media.ad.podPosition` | Y | `adStart` | 廣告插播中的廣告索引，從 1 開始 |
-| `media.ad.name` | N | `adStart` | 廣告的易記名稱 |
-| `media.ad.id` | Y | `adStart` | 廣告名稱 |
-| `media.ad.length` | Y | `adStart` | 視訊廣告長度 (以秒為單位) |
-| `media.ad.playerName` | Y | `adStart` | 負責轉譯廣告之播放器的名稱 |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `media.ad.podFriendlyName` | N | 字串 | `adBreakStart` | 廣告插播的易記名稱 |
+| `media.ad.podIndex` | Y | 整數 | `adBreakStart` | 視訊中的廣告 Pod 索引 |
+| `media.ad.podSecond` | Y | 數字 | `adBreakStart` | Pod 開始的秒數 |
+| `media.ad.podPosition` | Y | 整數 | `adStart` | 廣告插播中的廣告索引，從 1 開始 |
+| `media.ad.name` | N | 字串 | `adStart` | 廣告的易記名稱 |
+| `media.ad.id` | Y | 字串 | `adStart` | 廣告名稱 |
+| `media.ad.length` | Y | 數字 | `adStart` | 視訊廣告長度 (以秒為單位) |
+| `media.ad.playerName` | Y | 字串 | `adStart` | 負責轉譯廣告之播放器的名稱 |
 
 ## 廣告標準中繼資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `media.ad.advertiser` | N | `adStart` | 廣告中精選產品的公司或品牌 |
-| `media.ad.campaignId` | N | `adStart` | 廣告促銷活動 ID |
-| `media.ad.creativeId` | N | `adStart` | 廣告創意 ID |
-| `media.ad.siteId` | N | `adStart` | 廣告網站 ID |
-| `media.ad.creativeURL` | N | `adStart` | 廣告創意的 URL |
-| `media.ad.placementId` | N | `adStart` | 廣告版位 ID |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `media.ad.advertiser` | N | 字串 | `adStart` | 廣告中精選產品的公司或品牌 |
+| `media.ad.campaignId` | N | 字串 | `adStart` | 廣告促銷活動 ID |
+| `media.ad.creativeId` | N | 字串 | `adStart` | 廣告創意 ID |
+| `media.ad.siteId` | N | 字串 | `adStart` | 廣告網站 ID |
+| `media.ad.creativeURL` | N | 字串 | `adStart` | 廣告創意的 URL |
+| `media.ad.placementId` | N | 字串 | `adStart` | 廣告版位 ID |
 
 ## 章節資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `media.chapter.index` | Y | `chapterStart` | 識別章節在內容中的位置 |
-| `media.chapter.offset` | Y | `chapterStart` | 章節開始播放的秒數 |
-| `media.chapter.length` | Y | `chapterStart` | 章節的長度 (以秒為單位) |
-| `media.chapter.friendlyName` | N | `chapterStart` | 章節的人類易記名稱 |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `media.chapter.index` | Y | 整數 | `chapterStart` | 識別章節在內容中的位置 |
+| `media.chapter.offset` | Y | 數字 | `chapterStart` | 章節開始播放的秒數 |
+| `media.chapter.length` | Y | 數字 | `chapterStart` | 章節的長度 (以秒為單位) |
+| `media.chapter.friendlyName` | N | 字串 | `chapterStart` | 章節的人類易記名稱 |
 
 ## 品質資料
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | 任何 | 資料流的位元速率 |
-| `media.qoe.droppedFrames` | N | 任何 | 資料流掉格的數量 |
-| `media.qoe.framesPerSecond` | N | 任何 | 每秒時間格數量 |
-| `media.qoe.timeToStart` | N | 任何 | 從使用者點擊播放到內容載入並開始播放之間的時間量 (以毫秒為單位) |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `media.qoe.bitrate` | N | 整數 | 任何 | 資料流的位元速率 |
+| `media.qoe.droppedFrames` | N | 整數 | 任何 | 資料流掉格的數量 |
+| `media.qoe.framesPerSecond` | N | 整數 | 任何 | 每秒時間格數量 |
+| `media.qoe.timeToStart` | N | 整數 | 任何 | 從使用者點擊播放到內容載入並開始播放之間的時間量 (以毫秒為單位) |
 
 ## 加州消費者隱私法 (CCPA) 參數 {#ccpa-params}
 
-| 要求索引鍵 | 必填 | 設定於... |  說明 |
-| --- | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | `sessionStart` | 若使用者已選擇退出其在 Adobe Analytics 與其他 Experience Cloud 解決方案 (例如 Audience Manager) 之間共用的資料，則設為 true |
-| `analytics.optOutShare` | N | `sessionStart` | 若使用者已選擇退出為其資料建立同盟 (例如與其他 Adobe Analytics 用戶端建立同盟)，則設為 true。 |
+| 要求索引鍵 | 必填 | 請求類型索引鍵 | 設定於... |  說明 |
+| --- | :---: | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | 布林值 | `sessionStart` | 若使用者已選擇退出其在 Adobe Analytics 與其他 Experience Cloud 解決方案 (例如 Audience Manager) 之間共用的資料，則設為 true |
+| `analytics.optOutShare` | N | 布林值 | `sessionStart` | 若使用者已選擇退出為其資料建立同盟 (例如與其他 Adobe Analytics 用戶端建立同盟)，則設為 true。 |
 
 ## 其他詳細資料 {#additional-details}
 
@@ -164,7 +163,7 @@ ht-degree: 98%
 
 ### visitor.aamLocationHint
 
-這個參數指出當 Adobe Analytics 將客戶資料傳送到 Audience Manager 時的目的地 Adobe Audience Manager (AAM) Edge。如果未輸入值，則該值為null。 當使用者傾向於在偏遠位置使用裝置 (如美國東部、美國西部、歐洲、亞洲) 時，這個參數尤其重要。否則，使用者資料將散佈到多個 AAM Edge。
+這個參數指出當 Adobe Analytics 將客戶資料傳送到 Audience Manager 時的目的地 Adobe Audience Manager (AAM) Edge。如果未輸入值，則值為null。 當使用者傾向於在偏遠位置使用裝置 (如美國東部、美國西部、歐洲、亞洲) 時，這個參數尤其重要。否則，使用者資料將散佈到多個 AAM Edge。
 
 ### media.resume
 
