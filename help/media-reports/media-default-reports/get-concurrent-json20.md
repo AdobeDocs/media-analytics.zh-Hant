@@ -3,9 +3,8 @@ title: 使用 Analytics 2.0 API 取得同時檢閱者 JSON 報表資料
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 100%
 
@@ -129,7 +128,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/report-suites-admin.html)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 
