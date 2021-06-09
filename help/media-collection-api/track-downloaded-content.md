@@ -2,18 +2,17 @@
 title: 追蹤下載內容
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: ht
-source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
-workflow-type: ht
-source-wordcount: '611'
-ht-degree: 100%
+exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
 
-
 # 追蹤下載內容{#track-downloaded-content}
 
-## 概述 {#overview}
+## 概觀 {#overview}
 
 「下載內容」功能可供使用者在離線時追蹤媒體用量。例如，使用者可在行動裝置上下載及安裝應用程式，接著使用應用程式將內容下載至裝置上的本機儲存空間。 Adobe 特地開發「下載內容」功能，以便使用者追蹤其下載的資料。透過此功能，使用者從裝置的儲存空間播放內容時，無論裝置是否連線，追蹤資料都會儲存在裝置上。使用者完成播放工作階段，且裝置恢復成上線狀態時，儲存的追蹤資訊會隨即傳送至單一裝載中的 Media Collection API 後端。之後，儲存的追蹤資訊會照常在 Media Collection API 中處理及製成報告。
 
@@ -40,13 +39,13 @@ iOS 和 Android 行動裝置均支援內容追蹤功能。
 ### 事件結構
 
 「下載內容」功能是離線版本的 (標準) 線上 Media Collection API，因此播放器批次處理及傳送到後端的事件資料，必須使用與線上呼叫時相同的事件結構。如需這些結構的詳細資訊，請參閱：
-* [概述](/help/media-collection-api/mc-api-overview.md)
+* [概觀;](/help/media-collection-api/mc-api-overview.md)
 * [驗證事件要求](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 事件順序
 
 * 根據 Media Collection API 通常的情況，批次裝載中的第一個事件必須為 `sessionStart`。
-* 在 **事件上，`media.downloaded: true`**您必須將`params`包含在標準中繼資料參數 (`sessionStart`索引鍵) 中，以表示您要將下載內容傳送到哪個後端。若此參數不存在或設為 false，在傳送下載資料時，API 會傳回 400 回應代碼 (Bad Request)。此參數會區分傳送到後端的下載內容與即時內容。若`media.downloaded: true`設在即時工作階段上，同樣會導致 API 傳回 400 回應代碼。
+* 在 **事件上，`media.downloaded: true`**&#x200B;您必須將 `params` 包含在標準中繼資料參數 (`sessionStart` 索引鍵) 中，以表示您要將下載內容傳送到哪個後端。若此參數不存在或設為 false，在傳送下載資料時，API 會傳回 400 回應代碼 (Bad Request)。此參數會區分傳送到後端的下載內容與即時內容。若 `media.downloaded: true` 設在即時工作階段上，同樣會導致 API 傳回 400 回應代碼。
 * 實作時應負責依照其外觀的順序，正確地儲存播放器事件。
 
 ### 回應代碼
@@ -56,7 +55,7 @@ iOS 和 Android 行動裝置均支援內容追蹤功能。
 
 ## 與 Adobe Analytics 整合 {#integration-with-adobe-analtyics}
 
-計算下載內容情況的 Analytics 開啟/關閉呼叫時，後端會設定一個稱為 `ts.` 的額外 Analytics 欄位。這些是第一個和最後一個收到事件的時間戳記 (開始和完成)。此機制可將完成的媒體工作階段放置在正確的時間點 (換句話說，即使使用者數天未重新上線，媒體工作階段也會依照實際檢視內容的時間，回報媒體工作階段)。您必須透過建立&#x200B;_可選時間戳記報表套裝，以在 Adobe Analytics 端啟用此機制。_&#x200B;若要啟用可選時間戳記報表套裝，請參閱[可選時間戳記](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/timestamp-optional.html)。
+計算下載內容情況的 Analytics 開啟/關閉呼叫時，後端會設定一個稱為 `ts.` 的額外 Analytics 欄位。這些是第一個和最後一個收到事件的時間戳記 (開始和完成)。此機制可將完成的媒體工作階段放置在正確的時間點 (換句話說，即使使用者數天未重新上線，媒體工作階段也會依照實際檢視內容的時間，回報媒體工作階段)。您必須透過建立&#x200B;_可選時間戳記報表套裝，以在 Adobe Analytics 端啟用此機制。_&#x200B;若要啟用可選時間戳記報表套裝，請參閱[可選時間戳記](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)。
 
 ## 範例工作階段比較 {#sample-session-comparison}
 
