@@ -3,10 +3,10 @@ title: 設定 Chromecast
 description: 適用於 Chromecast 實作的 Media SDK 應用程式設定。
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 100%
+source-wordcount: '628'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ _我該使用 Chromecast JavaScript SDK 嗎？還是說，我可以使用標準 
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * *提供播放器資訊的 API* - 此資訊包含媒體名稱和播放點位置等詳細內容。
 
-Adobe Mobile Services 提供的新使用者介面，將 Adobe Marketing Cloud 適用於行動應用程式的各項行動行銷功能整合在一起。Mobile 服務起初是提供 Adobe Analytics 和 Adobe Target 解決方案的應用程式分析和定位功能流暢整合。如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://docs.adobe.com/content/help/zh-Hant/mobile-services/using/home.html)。
+Adobe Mobile Services 提供的新使用者介面，將 Adobe Marketing Cloud 適用於行動應用程式的各項行動行銷功能整合在一起。Mobile 服務起初是提供 Adobe Analytics 和 Adobe Target 解決方案的應用程式分析和定位功能流暢整合。如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)。
 
 Experience Cloud 解決方案適用的 Chromecast SDK 2.x 可讓您測量在 JavaScript 中撰寫的 Chromecast 應用程式、透過對象管理利用和收集對象資料，以及透過視訊心率測量視訊參與。
 
@@ -137,4 +137,4 @@ Experience Cloud 解決方案適用的 Chromecast SDK 2.x 可讓您測量在 Jav
 
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
