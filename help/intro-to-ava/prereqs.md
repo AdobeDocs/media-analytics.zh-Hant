@@ -3,11 +3,10 @@ title: 先決條件
 description: 先決條件
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +32,7 @@ ht-degree: 100%
 
    ![](assets/mc_id_service_graphic.png)
 
-   ID 服務也可以取代不同的解決方案特定 ID (例如 Analytics AID)。透過[客戶 ID 和驗證狀態](https://docs.adobe.com/content/help/zh-Hant/id-service/using/reference/authenticated-state.html)功能，ID 服務可讓您將您的客戶 ID 傳遞至 Experience Cloud。請記住，ID 服務僅適用於您已訂閱的解決方案。如果您未註冊存取其他產品，則 ID 服務不提供存取權。
+   ID 服務也可以取代不同的解決方案特定 ID (例如 Analytics AID)。透過[客戶 ID 和驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)功能，ID 服務可讓您將您的客戶 ID 傳遞至 Experience Cloud。請記住，ID 服務僅適用於您已訂閱的解決方案。如果您未註冊存取其他產品，則 ID 服務不提供存取權。
 
    展望未來，ID 服務將成為許多目前與未來 Experience Cloud 特色、增強功能與服務的必要元件。目前 ID 服務支援 [Analytics](https://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/tw/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。
 
@@ -47,7 +46,7 @@ ht-degree: 100%
    >
    >如果媒體專屬呼叫中未出現任何使用者 ID 資訊，則會套用預設分析[備援 ID 方法](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)。
 
-   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 概述](https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/overview.html)和 [Adobe Experience Platform Identity 服務](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.html)。
+   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)和 [Adobe Experience Platform Identity 服務](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.html)。
 
 1. **啟用 Adobe Analytics 報表。**
 
