@@ -3,9 +3,9 @@ title: 設定 Roku
 description: 適用於 Roku 實作的 Media SDK 應用程式設定。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '707'
 ht-degree: 81%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 81%
 
 Adobe Mobile Services 提供的新使用者介面，將 Adobe Marketing Cloud 適用於行動應用程式的各項行動行銷功能整合在一起。Mobile 服務起初是提供 Adobe Analytics 和 Adobe Target 解決方案的應用程式分析和定位功能流暢整合。
 
-如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://docs.adobe.com/content/help/zh-Hant/mobile-services/using/home.html)。
+如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)。
 
 Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScript 中撰寫的 Roku 應用程式、透過對象管理利用和收集觀眾資料，以及透過視訊心率測量視訊參與。
 
@@ -144,29 +144,29 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    **其他公用API**
 
    **DebugLogging**
-|方法   |說明 | | — | — | |  `setDebugLogging` |用於啟用或停用SDK的除錯記錄。<br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` |啟用除錯記錄時傳回true。   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+ |方法   |說明 | | — | — | |  `setDebugLogging` |用於啟用或停用SDK的偵錯記錄。<br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` |若已啟用偵錯記錄，則傳回true。   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    <br/><br/>
 
    **PrivacyStatus**
-|常數   |說明 | | — | — | |  `PRIVACY_STATUS_OPT_IN` |在呼叫setPrivacyStatus以選擇加入時傳遞的常數。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` |在呼叫setPrivacyStatus以選擇退出時傳遞的常數。  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+ |常數   |說明 | | — | — | |  `PRIVACY_STATUS_OPT_IN` |呼叫setPrivacyStatus以選擇加入時要傳遞的常數。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` |呼叫setPrivacyStatus以選擇退出時要傳遞的常數。  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
    <br/>
 
    |  方法 | 說明 |
    | --- | --- |
-   | `setPrivacyStatus` | 設定SDK的隱私權狀態。 <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `setPrivacyStatus` | 在SDK上設定隱私權狀態。 <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | 取得SDK上設定的目前隱私權狀態。 <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
    <br/><br/>
    >[!IMPORTANT]
    >
-   >請確定您每250毫秒在主事件循環中呼叫`processMessages`和`processMediaMessages`函式，以確保SDK會正確傳送ping。
+   >請務必每隔250毫秒呼叫主事件回圈中的`processMessages`和`processMediaMessages`函式，以確保SDK正確傳送Ping。
 
    |  方法 | 說明 |
    | --- | --- |
-   | `processMessages` | 負責將Analytics事件傳遞至要處理的SDK。 <br/><br/>`ADBMobile().processMessages()` |
-   | `processMediaMessages` | 負責將媒體事件傳遞至要處理的SDK。<br/><br/>`ADBMobile().processMediaMessages()` |
+   | `processMessages` | 負責將Analytics事件傳遞至SDK以進行處理。 <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | 負責將媒體事件傳遞至SDK以進行處理。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
