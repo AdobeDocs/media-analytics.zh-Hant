@@ -2,10 +2,10 @@
 title: 設定 JavaScript 3.x
 description: 適用於 JavaScript 3.x 實作的 Media SDK 應用程式設定。
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '396'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 92%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 100%
 
 * **取得有效的設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
-* **在您的媒體應用程式實作 JavaScript 適用的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
-如需詳細資訊，請參閱[使用 JavaScript 實作分析](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)和[實作 Experience Cloud Identity Service。](https://docs.adobe.com/content/help/zh-Hant/id-service/using/implementation/setup-analytics.html)
+* **在您的 `AppMeasurement` 媒體 `Experience Cloud Identity Service` 應用程式中實作和JavaScript適用**
+如需詳細資訊，請參閱 [使用JavaScript實作](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) 分析和實 [作Experience Cloud身分服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)。
 
 * **在您的媒體播放器中提供下列功能：**
 
