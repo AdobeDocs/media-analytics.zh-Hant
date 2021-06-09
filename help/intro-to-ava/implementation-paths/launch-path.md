@@ -1,11 +1,10 @@
 ---
 title: Adobe Launch 如何實作串流媒體追蹤技術？
 description: 了解適用於串流媒體的 Adobe 串流媒體 Launch 擴充功能。
-translation-type: ht
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: ht
-source-wordcount: '132'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 93%
 
 ---
 
@@ -16,7 +15,7 @@ Media Analytics (心率) 是 Adobe 的標準化媒體追蹤解決方案，現已
 
 Adobe Experience Platform Launch 為 Dynamic Tag Management 的後續產品，具有 Launch 擴充功能，有助於在媒體播放器實作追蹤。
 
-您可以在這裡深入了解 Launch 擴充功能: [Adobe Media Analytics for Audio and Video 擴充功能](https://docs.adobe.com/content/help/zh-Hant/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)。
+您可以在這裡深入了解 Launch 擴充功能: [Adobe Media Analytics for Audio and Video 擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)。
 
 >[!NOTE]
 >
