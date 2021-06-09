@@ -1,24 +1,23 @@
 ---
-title: Adobe Analytics for Streaming Media有哪些新功能？
-description: 瞭解Adobe Analytics for Streaming Media的新增功能
+title: Adobe Analytics的串流媒體新增功能
+description: 了解Adobe Analytics的串流媒體新功能
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '30'
-ht-degree: 43%
+source-wordcount: '28'
+ht-degree: 39%
 
 ---
-
 
 # 資源{#resources}
 
 ## 發行說明{#release-notes}
 
-* [發行說明](https://docs.adobe.com/content/help/zh-Hant/release-notes/experience-cloud/current.html)
+* [發行說明](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html)
 
 <!--
 ## Documentation Updates{#documentation-updates}
