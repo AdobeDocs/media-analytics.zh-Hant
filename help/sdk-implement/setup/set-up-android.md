@@ -2,14 +2,13 @@
 title: 設定 Android
 description: 適用於 Android 實作的 Media SDK 應用程式設定。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 98%
 
 ---
-
 
 # 設定 Android{#set-up-android}
 
@@ -23,7 +22,7 @@ ht-degree: 100%
 * **取得適用於 Media SDK 的有效設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
 * **在您的應用程式實作 Android 適用的 ADBMobile**
-如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 Android SDK 4.x](https://docs.adobe.com/content/help/zh-Hant/mobile-services/android/overview.html)。
+如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)。
 
 * **在您的媒體播放器中提供下列功能：**
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
@@ -49,6 +48,7 @@ ht-degree: 100%
 
       1. 選取您計劃使用行動程式庫所在的模組。
       1. 按一下&#x200B;**[!UICONTROL 「套用」]**，然後按&#x200B;**[!UICONTROL 「確定」]**，關閉「模組設定」視窗。
+
       **Eclipse：**
 
       1. 在 Eclipse IDE 中，用滑鼠右鍵按一下專案名稱。
