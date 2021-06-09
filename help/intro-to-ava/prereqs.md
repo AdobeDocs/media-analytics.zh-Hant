@@ -3,10 +3,10 @@ title: 先決條件
 description: 先決條件
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 96%
+source-wordcount: '388'
+ht-degree: 89%
 
 ---
 
@@ -42,11 +42,7 @@ ht-degree: 96%
 
    如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-   >[!IMPORTANT]
-   >
-   >如果媒體專屬呼叫中未出現任何使用者 ID 資訊，則會套用預設分析[備援 ID 方法](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html)。
-
-   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)和 [Adobe Experience Platform Identity 服務](https://docs.adobe.com/content/help/zh-Hant/id-service/using/home.html)。
+   如需Experience CloudID的其他資訊，請參閱[Experience CloudID概述、](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html)及[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
 
 1. **啟用 Adobe Analytics 報表。**
 
