@@ -3,9 +3,9 @@ title: 媒體同時檢閱者報表
 description: Analysis Workspace 中的「媒體同時檢閱者」面板可供 Media Analytics 客戶分析同時觀看媒體的人數，了解人數高峰或趨勢反轉的時間。
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '191'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 
 ## Analysis Workspace 中的「媒體同時檢閱者」面板
 
-在 Analysis Workspace 中，「媒體同時檢閱者」是指在特定時間檢視您媒體串流的訪客數量 (不重複計算)，不考量工作階段數量。「媒體同時檢閱者」面板可透過視覺化方式，呈現同時觀看媒體的人數、劃分統計資料，並加以比較。[深入了解...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+在 Analysis Workspace 中，「媒體同時檢閱者」是指在特定時間檢視您媒體串流的訪客數量 (不重複計算)，不考量工作階段數量。「媒體同時檢閱者」面板可透過視覺化方式，呈現同時觀看媒體的人數、劃分統計資料，並加以比較。[深入了解...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=zh-Hant)
 
 ## 透過 Analytics Reporting API 取得同時檢閱人數資料
 
