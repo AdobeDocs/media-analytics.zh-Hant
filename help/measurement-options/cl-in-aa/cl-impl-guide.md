@@ -6,7 +6,7 @@ exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
 workflow-type: tm+mt
 source-wordcount: '189'
-ht-degree: 92%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 自訂視訊追蹤採用 Analytics `appMeasurement` 中的使用自訂連結程式碼手動追蹤連結。自訂視訊連結視訊追蹤經常用於不太需要視訊測量的平台與裝置上。
 
 * 在 JavaScript 中：`s.tl()` 函數
-* 在行動應用程式中：[trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html)、[trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 在行動應用程式中：[trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=zh-Hant)、[trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * 在 Data Insertion API 中：[linktype 標記](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 需求
