@@ -1,13 +1,14 @@
 ---
-title: 工作階段要求
-description: 工作階段要求
+title: 串流媒體收集API工�作階段要求端點
+description: 「媒體收集API工作階段要求端點參數和回應為何？」
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '80'
-ht-degree: 100%
+source-wordcount: '97'
+ht-degree: 80%
 
 ---
 
