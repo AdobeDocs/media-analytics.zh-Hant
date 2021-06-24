@@ -1,12 +1,16 @@
 ---
-title: 在 Roku 上追蹤搜尋
-description: 本主題說明如何在 Roku 上使用 Media SDK 實作搜尋追蹤。
+title: 了解如何在Roku上追蹤搜尋
+description: 了解如何使用Roku上的Media SDK追蹤搜尋開始和搜尋完成事件。
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
-
 
 # 在 Roku 上追蹤搜尋{#track-seeking-on-roku}
 
