@@ -1,11 +1,13 @@
 ---
-title: 從獨立 Media SDK 移轉至 Adobe Launch - Web (JS)
-description: 協助從 Media SDK 移轉至 Launch 的指示和程式碼範例。
+title: '"從獨立Media SDK移轉至AdobeLaunch - Web(JS)"'
+description: 了解如何從Media SDK移轉至JS適用的Launch。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 95%
+ht-degree: 91%
 
 ---
 
@@ -122,5 +124,5 @@ Launch 提供兩種建立追蹤基礎架構的方法。兩種方法都使用 Med
 
 ### Launch
 
-* [Launch 概述](https://experienceleague.adobe.com/docs/launch/using/overview.html)
+* [Launch 概述](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=zh-Hant)
 * [Media Analytics 擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
