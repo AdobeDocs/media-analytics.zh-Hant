@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 上追蹤體驗品質
-description: 本主題說明如何在 Chromecast 上使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。
+title: 了解如何在Chromecast上追蹤體驗品質
+description: 「了解如何在Chromecast上使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '296'
+ht-degree: 91%
 
 ---
-
 
 # 在 Chromecast 上追蹤體驗品質{#track-quality-of-experience-on-chromecast}
 
@@ -14,7 +18,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >
 >下列指示提供所有 2.x SDK 之間實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
-## 概述 {#overview}
+## 概觀 {#overview}
 
 體驗品質追蹤包含服務品質 (QoS) 和錯誤追蹤，此兩項皆為選用元素，且&#x200B;**不是**&#x200B;核心媒體追蹤實施的必要元素。您可以使用媒體播放器 API 識別 QoS 相關的變數以及錯誤追蹤。
 
@@ -68,4 +72,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >追蹤媒體播放器錯誤將不會停止媒體追蹤工作階段。如果媒體播放器錯誤使得播放無法繼續，請透過在呼叫 `trackError()` 之後呼叫 `trackSessionEnd()`，以確定媒體追蹤工作階段已關閉。
-
