@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 上追蹤核心播放
-description: 本主題說明如何在 Chromecast 上使用 Media SDK 實作核心追蹤。
+title: 了解如何在Chromecast上追蹤核心播放
+description: 了解如何在Chromecast上使用Media SDK實作核心追蹤。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
-
 
 # 在 Chromecast 上追蹤核心播放{#track-core-playback-on-chromecast}
 
@@ -130,6 +134,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >這可能與在步驟 4 使用的事件來源相同。在視訊播放繼續時，使用後續的 `trackPause()` API 呼叫確保 `trackPlay()` API 呼叫成對。
 
-* 追蹤案例: [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤案例：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 Chromecast SDK 包含範例播放器。
-
