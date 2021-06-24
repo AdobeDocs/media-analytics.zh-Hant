@@ -1,12 +1,14 @@
 ---
-title: 要求參數
-description: 了解Adobe Analytics串流媒體請求參數。
+title: 串流媒體收集API要�求參數
+description: '"什麼是媒體收集API要求參數、要求金鑰和說明。"'
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 94%
+source-wordcount: '1307'
+ht-degree: 93%
 
 ---
 
