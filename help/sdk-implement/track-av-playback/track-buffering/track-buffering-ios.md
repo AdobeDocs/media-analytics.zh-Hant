@@ -1,12 +1,16 @@
 ---
-title: 在 iOS 上追蹤緩衝
-description: 說明如何在 iOS 上追蹤緩衝事件。
+title: 了解如何在iOS上追蹤緩衝
+description: 了解如何在iOS上追蹤緩衝事件。
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
-
 
 # 在 iOS 上追蹤緩衝{#track-buffering-on-ios}
 
