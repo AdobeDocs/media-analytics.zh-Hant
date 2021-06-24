@@ -1,20 +1,21 @@
 ---
-title: 使用JavaScript 3.x實作標準中繼資料
-description: 說明如何在瀏覽器應用程式 (JS) 中設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: 了解如何使用JavaScript 3.x實作標準中繼資料
+description: 了解如何在瀏覽器應用程式(JS 3.x)中設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
+exl-id: 228ba000-10e2-4906-8417-265a03367a9b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '43'
-ht-degree: 46%
+source-wordcount: '50'
+ht-degree: 10%
 
 ---
-
 
 # 使用JavaScript 3.x實作標準中繼資料{#implement-standard-metadata-on-javascript}
 
 ## 實作
 
-實例化上下文資料物件，填入所需的標準中繼資料變數。 例如：
+實例化內容資料物件，填入所需的標準中繼資料變數。 例如：
 
 ```js
 _onVideoLoad = function () {
