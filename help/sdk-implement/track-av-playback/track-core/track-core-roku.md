@@ -1,13 +1,14 @@
 ---
-title: 在 Roku 上追蹤核心播放
-description: 本主題說明如何在 Roku 上使用 Media SDK 實作核心追蹤。
+title: 了解如何在Roku上追蹤核心播放
+description: 了解如何在Roku上使用Media SDK實作核心追蹤。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: tm+mt
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: '684'
+ht-degree: 97%
 
 ---
 
@@ -100,7 +101,7 @@ ht-degree: 100%
 
    * **標準中繼資料**
 
-      [在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >將標準視訊中繼資料物件附加到媒體物件為選用。
