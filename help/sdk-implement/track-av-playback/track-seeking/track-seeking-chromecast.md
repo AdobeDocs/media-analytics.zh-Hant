@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 上追蹤搜尋
-description: 本主題說明如何在 Chromecast 上使用 Media SDK 實作搜尋追蹤。
+title: 了解如何在Chromecast上追蹤搜尋
+description: 了解如何使用Chromecast上的Media SDK追蹤搜尋開始和搜尋完成事件。
 uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '148'
+ht-degree: 84%
 
 ---
-
 
 # 在 Chromecast 上追蹤搜尋{#track-seeking-on-chromecast}
 
