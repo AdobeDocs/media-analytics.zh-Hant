@@ -1,12 +1,16 @@
 ---
 title: 測試呼叫詳細資料
-description: 本主題詳細說明驗證實施所必須進行的呼叫。
+description: 探索驗證實施所必須進行的呼叫。
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 98%
 
 ---
-
 
 # 測試呼叫詳細資料{#test-call-details}
 
@@ -37,7 +41,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | 集數標題 |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -64,7 +68,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 集數標題 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
@@ -83,17 +87,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `s:meta:a.media.show` | 節目 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | 集數標題 |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | production house |
-| `s:meta:a.media.network` | network |
+| `s:meta:a.media.originator` | 生產廠房 |
+| `s:meta:a.media.network` | 網路 |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | unlocked |
-| `s:meta:a.media.feed` | no feed |
+| `s:meta:a.media.authorized` | 解除鎖定 |
+| `s:meta:a.media.feed` | 無摘要 |
 | `s:meta:a.media.stream_format` | 0 |
 
 ### Media Analytics (心率) 開始呼叫中的自訂中繼資料 {#custom-metadata-ma}
@@ -110,7 +114,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 集數標題 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
@@ -121,7 +125,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 * 這個呼叫代表 Media SDK 已要求將 Adobe Analytics `pev2=ms_s` 呼叫傳送到 Adobe Analytics (AppMeasurement) 伺服器。
 * 該呼叫不含自訂中繼資料。
 
-## 檢視廣告播放{#view-ad-playback}
+## 檢視廣告播放 {#view-ad-playback}
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫 {#aa-ad-start-call}
 
@@ -150,19 +154,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 參數 |  值 (範例) |
 |---|---|
-| `a.media.show` | Show Title |
+| `a.media.show` | 顯示標題 |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | 集數標題 |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
-| `a.media.originator` | production house |
-| `a.media.network` | network |
+| `a.media.originator` | 生產廠房 |
+| `a.media.network` | 網路 |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
-| `a.media.authorized` | unlocked |
-| `a.media.feed` | no feed |
+| `a.media.authorized` | 解除鎖定 |
+| `a.media.feed` | 無摘要 |
 | `a.media.stream_format` | 0 |
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-aa-ad-start}
@@ -197,17 +201,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `s:meta:a.media.show` | 節目 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | 集數標題 |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | production house |
-| `s:meta:a.media.network` | network |
+| `s:meta:a.media.originator` | 生產廠房 |
+| `s:meta:a.media.network` | 網路 |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | unlocked |
-| `s:meta:a.media.feed` | no feed |
+| `s:meta:a.media.authorized` | 解除鎖定 |
+| `s:meta:a.media.feed` | 無摘要 |
 | `s:meta:a.media.stream_format` | 0 |
 
 ### Media Analytics (心率) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-ma-ad-start}
@@ -239,7 +243,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**廣告**_ |
 
 ### Media Analytics (心率) 廣告暫停呼叫 {#ma-ad-pause-call}
 
@@ -251,7 +255,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**廣告**_ |
 
 ### Media Analytics (心率) Adobe Analytics 廣告完成呼叫 {#ma-aa-ad-complete-call}
 
@@ -263,7 +267,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:asset:type`**_ | _**廣告**_ |
 
 ## 播放主要內容 {#play-main-content}
 
@@ -274,7 +278,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 集數標題 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
@@ -291,13 +295,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 參數 |  值 (範例) |
 |---|---|
-| _**`s:event:type`**_ | _**pause**_ |
+| _**`s:event:type`**_ | _**暫停**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | 集數標題 |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
-
-
