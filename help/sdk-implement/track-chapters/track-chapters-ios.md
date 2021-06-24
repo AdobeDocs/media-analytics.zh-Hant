@@ -1,12 +1,16 @@
 ---
-title: 在 iOS 上追蹤章節和區段
-description: 本主題說明如何在 iOS 上使用 Media SDK 實作章捷和區段追蹤。
+title: 了解如何在iOS上追蹤章節和區段
+description: 了解如何在iOS上使用Media SDK實作章節和區段追蹤。
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 88%
 
 ---
-
 
 # 在 iOS 上追蹤章節和區段{#track-chapters-and-segments-on-ios}
 
@@ -79,4 +83,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. 如果有任何其他章節，請重複步驟 1 到 5。
-
