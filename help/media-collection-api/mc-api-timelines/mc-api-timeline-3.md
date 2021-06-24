@@ -1,15 +1,16 @@
 ---
-title: 時間軸 3 - 章節
-description: null
+title: 了解媒體追蹤時間軸�章節
+description: 了解播放點時間軸，以及章節開始和結束的時間。
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 197041df4c985cdc572564652a976bd733448787
-workflow-type: ht
-source-wordcount: '1219'
-ht-degree: 100%
+exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1237'
+ht-degree: 98%
 
 ---
-
 
 # 時間軸 3 - 章節 {#timeline-3-chapters}
 
@@ -381,7 +382,7 @@ Ping 計時器開始。如果有前段廣告，第一個 Ping 事件則應在 1 
 
 **實作詳細資料**
 
-緩衝在 3 秒後結束，因此請讓播放器回復「正在播放」狀態。您必須傳送另一個追蹤播放事件來結束緩衝狀態。**`bufferStart`之後的`play`呼叫意味著傳送「bufferEnd」呼叫到後端**，因此不需要 `bufferEnd` 事件。
+緩衝在 3 秒後結束，因此請讓播放器回復「正在播放」狀態。您必須傳送另一個追蹤播放事件來結束緩衝狀態。**`bufferStart` 之後的 `play` 呼叫意味著傳送「bufferEnd」呼叫到後端**，因此不需要 `bufferEnd` 事件。
 
 **範例要求內文**
 
@@ -664,7 +665,7 @@ Ping 計時器開始。如果有前段廣告，第一個 Ping 事件則應在 1 
 
 **實作詳細資料**
 
-將播放狀態改變為「正在播放」。**`play`之後的`pauseStart`呼叫意味著傳送「resume」呼叫到後端**，因此不需要 `resume` 事件。
+將播放狀態改變為「正在播放」。**`play` 之後的 `pauseStart` 呼叫意味著傳送「resume」呼叫到後端**，因此不需要 `resume` 事件。
 
 **範例要求內文**
 
