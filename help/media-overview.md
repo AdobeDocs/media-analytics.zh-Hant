@@ -1,12 +1,14 @@
 ---
-title: 在 Adobe Analytics 中測量串流媒體
-description: Adobe Analytics for Media (亦稱為 Media Analytics) 可提供客戶強大的內容、音訊和廣告媒體測量。
+title: 'AdobeAdobe Analytics中的串流媒體 '
+description: 「深入了解針對內容、音訊和廣告的最新流媒體測量。 了解Adobe Analytics for Streaming Media。」
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 98%
+source-wordcount: '880'
+ht-degree: 95%
 
 ---
 
