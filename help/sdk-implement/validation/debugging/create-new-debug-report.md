@@ -1,12 +1,16 @@
 ---
 title: 建立新的 Debug 報表
-description: 本主題說明如何建立新的 Debug 報表。
+description: 了解如何建立新的Debug報表。
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 96%
 
 ---
-
 
 # 建立新的 Debug 報表{#create-a-new-debug-report}
 
@@ -25,14 +29,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
          您可以利用以下任一方式存取:
 
-         * [!UICONTROL 「Analytics &gt; 管理員 &gt; 公司設定 &gt; 網站服務」]
-         * [!UICONTROL 「Analytics &gt; 管理員 &gt; 使用者管理 &gt; 使用者 &gt; 個別使用者設定」]若要為新使用者建立網站服務 API 認證，請在[!UICONTROL 「使用者管理」]中將使用者新增到&#x200B;**「網站服務存取」**&#x200B;使用者群組。
+         * [!UICONTROL 「Analytics > 管理員 > 公司設定 > 網站服務」]
+         * [!UICONTROL 「Analytics > 管理員 > 使用者管理 > 使用者 > 個別使用者設定」]若要為新使用者建立網站服務 API 認證，請在[!UICONTROL 「使用者管理」]中將使用者新增到&#x200B;**「網站服務存取」**&#x200B;使用者群組。
       * [!UICONTROL 「預設端點」]- 此欄位中的資料由 Adobe 提供，因此無法變更。
       * [!UICONTROL 「額外端點」]- 您可新增 `CNAMES`（如果有使用的話），來追蹤 `metrics.companyname.com` 之類的伺服器
    * **視訊心率 (Media Analytics)**
 
       * [!UICONTROL 「預設端點」]- 此欄位中的資料由 Adobe 提供，因此無法變更。
       * [!UICONTROL 「額外端點」]- 您可新增 `CNAMES`，（如果有使用的話），來追蹤 `metrics.companyname.com` 之類的伺服器。
-
-
-
