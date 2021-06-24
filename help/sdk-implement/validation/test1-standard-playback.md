@@ -1,12 +1,16 @@
 ---
-title: '測試 1: 標準播放'
-description: 本主題說明用於驗證的標準播放測試。
+title: 測試1標準播放
+description: 了解用於驗證的標準播放測試。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 98%
 
 ---
-
 
 # 測試 1: 標準播放{#test-standard-playback}
 
@@ -32,6 +36,7 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
    * **Adobe Analytics (AppMeasurement) 伺服器 -** Experience Cloud 訪客 ID 服務須有 RDC 追蹤伺服器，或是解析為 RDC 追蹤伺服器的 CNAME。Adobe Analytics 追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
    * **Media Analytics (心率) 伺服器 -** 這部伺服器的格式一律為「`[namespace].hb.omtrdc.net`」，其中 `[namespace]` 會指定您的公司名稱。此名稱由 Adobe 提供。
+
    您需要驗證所有追蹤呼叫的某些重要通用變數:
 
    **Adobe 訪客 ID (`mid`):** `mid` 變數可以用來擷取 AMCV Cookie 中設定的值。`mid` 變數是網站與行動應用程式的主要識別值，也代表 Experience Cloud 訪客 ID 服務設定正確。您可以在 Adobe Analytics (AppMeasurement) 與 Media Analytics (心率) 呼叫中找到它。
@@ -81,6 +86,7 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
    1. Adobe Analytics 伺服器 - 開始呼叫
    1. Media Analytics 伺服器 - 開始呼叫
    1. Media Analytics 伺服器 -「已要求 Adobe Analytics 開始呼叫」
+
    以上前兩個呼叫含有額外的中繼資料和變數。如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)。
 
    以上第三個呼叫會通知 Media Analytics 伺服器，Media SDK 已要求將 Adobe Analytics 開始呼叫 (`pev2=ms_s`) 傳送到 Adobe Analytics 伺服器。
@@ -88,11 +94,13 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
 1. **檢視廣告插播 (可以的話)**
 
    * **廣告開始**
+
    當廣告開始時，重要呼叫的傳送順序如下:
 
    1. Adobe Analytics 伺服器 - 廣告開始呼叫
    1. Media Analytics 伺服器 - 廣告開始呼叫
    1. Media Analytics 伺服器 -「已要求 Adobe Analytics 廣告開始呼叫」
+
    前兩個呼叫含有額外的中繼資料和變數。如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)。
 
    第三個呼叫會通知 Media Analytics 伺服器，Media SDK 已要求將 Adobe Analytics 廣告開始呼叫 (`pev2=msa_s`) 傳送到 Adobe Analytics 伺服器。
