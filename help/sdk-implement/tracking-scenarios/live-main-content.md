@@ -1,22 +1,26 @@
 ---
 title: 即時主要內容
-description: 有關如何使用 Media SDK 追蹤即時內容的範例。
+description: 檢視如何使用Media SDK追蹤即時內容的範例。
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 96%
 
 ---
 
-
 # 即時主要內容{#live-main-content}
 
-## 情境 {#scenario}
+## 藍本 {#scenario}
 
 此情境中，一個沒有廣告的即時資產在加入即時資料流後，播放了 40 秒。
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 可能是使用者點按&#x200B;**[!UICONTROL 播放]**&#x200B;或自動播放事件。 |
+| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 可能是使用者點按&#x200B;**[!UICONTROL 播放]**&#x200B;或自動播放事件。 |
 | 媒體播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要繼續播放，便會每 10 秒傳送心率。 |
 | 內容播放。 |  | 內容心率 |  |
 | 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未持續使用到媒體完成，仍必須呼叫此 API。 |
@@ -185,4 +189,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
