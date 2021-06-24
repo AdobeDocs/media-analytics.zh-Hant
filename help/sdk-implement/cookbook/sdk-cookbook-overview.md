@@ -1,14 +1,15 @@
 ---
 title: SDK 逐步指南概述
-description: 'SDK 專用逐步指南主題 '
-translation-type: tm+mt
-source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
+description: '"探索SDK專屬逐步指南主題"'
+exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 100%
+source-wordcount: '69'
+ht-degree: 94%
 
 ---
-
 
 # SDK 逐步指南概述
 
