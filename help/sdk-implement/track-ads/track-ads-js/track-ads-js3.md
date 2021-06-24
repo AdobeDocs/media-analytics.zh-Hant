@@ -1,20 +1,21 @@
 ---
-title: 使用JavaScript 3.x追蹤廣告
+title: 了解如何使用JavaScript 3.x追蹤廣告
 description: 使用 Media SDK 在瀏覽器 (JS) 應用程式中實作廣告追蹤。
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '364'
 ht-degree: 80%
 
 ---
-
 
 # 使用JavaScript 3.x追蹤廣告{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->下列指示提供使用 3.x SDK 實作的指引。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下列指示提供使用 3.x SDK 實作的指引。若您正在實作任何舊版SDK，您可以在此處下載開發人員指南：[下載SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 廣告追蹤常數
 
@@ -34,7 +35,7 @@ ht-degree: 80%
 
    | 變數名稱 | 類型 | 說明 |
    | --- | --- | --- |
-   | `name` | string | 非空字串，表示adbreak名稱（前段、中間段和後段）。 |
+   | `name` | 字串 | 表示廣告插播名稱（前段、中段和後段）的非空白字串。 |
    | `position` | 數字 | 廣告插播的編號位置從 1 開始。 |
    | `startTime` | 數字 | 廣告插播開始時的播放點值。 |
 
@@ -59,9 +60,9 @@ ht-degree: 80%
 
    | 變數名稱 | 類型 | 說明 |
    | --- | --- | --- |
-   | `name` | string | 表示廣告名稱的非空字串。 |
-   | `adId` | string | 表示廣告識別碼的非空字串。 |
-   | `position` | 數字 | 廣告在adbreak中的數目位置，從1開始。 |
+   | `name` | 字串 | 表示廣告名稱的非空字串。 |
+   | `adId` | 字串 | 表示廣告識別碼的非空字串。 |
+   | `position` | 數字 | 廣告在廣告插播內的數量位置，從1開始。 |
    | `length` | 數字 | 表示廣告長度的正數。 |
 
    廣告物件建立:
