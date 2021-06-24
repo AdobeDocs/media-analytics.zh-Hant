@@ -1,11 +1,13 @@
 ---
-title: 支援的裝置和平台
-description: Adobe Analytics for Streaming Media 可確保收集所有裝置上的每個媒體資料流，並彙整成報表。
+title: 了解支援的裝置和平台
+description: 「了解Adobe Analytics for Streaming Media支援的主要裝置，例如iOS、Android、OTT裝置和JavaScript瀏覽器。」
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 92%
 
 ---
 
@@ -40,7 +42,7 @@ Media SDK 會因應裝置發佈新版本而定時更新，以便您能將 SDK �
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript) | ![](/help/assets/icon-blue-check.png)<br>(原生) |
 |  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Chromecast |  | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) |
+|  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | 遊戲主機 (例如 Xbox ONE、Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 機上盒 (例如 xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 智慧型電視 (例如 Samsung、LG、Sony、Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(Web 型) | ![](/help/assets/icon-blue-check.png) |
