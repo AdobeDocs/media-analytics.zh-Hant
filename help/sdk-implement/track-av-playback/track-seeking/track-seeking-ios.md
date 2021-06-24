@@ -1,12 +1,16 @@
 ---
-title: 在 iOS 上追蹤搜尋
-description: 本主題說明如何在 iOS 上使用 Media SDK 實作搜尋追蹤。
+title: 了解如何在iOS上追蹤搜尋
+description: 了解如何在iOS上使用Media SDK追蹤搜尋開始和搜尋完成事件。
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
-
 
 # 在 iOS 上追蹤搜尋{#track-seeking-on-ios}
 
