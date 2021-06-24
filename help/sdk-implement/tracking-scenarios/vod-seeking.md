@@ -1,16 +1,20 @@
 ---
-title: 主要內容中具有搜尋的 VOD 播放
-description: 如何使用 Media SDK 追蹤已發生搜尋之 VOD 內容的範例。
+title: 主要內容中具有搜尋的VOD播放
+description: 檢視如何使用Media SDK追蹤發生搜尋之VOD內容的範例。
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '277'
+ht-degree: 90%
 
 ---
 
-
 # 主要內容中具有搜尋的 VOD 播放{#vod-playback-with-seeking-in-the-main-content}
 
-## 情境 {#scenario}
+## 藍本 {#scenario}
 
 此情境包含在播放期間搜尋主要內容。
 
@@ -18,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 使用者點按[!UICONTROL 「播放」] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 播放內容的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
 | 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 使用者開始搜尋內容 | `trackSeekStart` |  | 在搜尋完成前 (例如 `trackSeekComplete`) 不會傳出任何心率。 |
@@ -209,4 +213,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
