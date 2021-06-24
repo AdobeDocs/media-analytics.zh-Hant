@@ -1,12 +1,16 @@
 ---
 title: '測試 2: 媒體中斷'
-description: 本主題說明用於驗證的媒體中斷測試。
+description: 了解用於驗證的媒體中斷測試。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 96%
 
 ---
-
 
 # 測試 2: 媒體中斷{#test-media-interruption}
 
@@ -23,6 +27,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
    1. Adobe Analytics (AppMeasurement) 開始
    1. Media Analytics (心率) 開始
    1. 已要求 Media Analytics (心率) Adobe Analytics 開始呼叫
+
    以上前兩個呼叫含有額外的中繼資料和變數。如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)。
 
    以上第三個呼叫會通知 Media Analytics 伺服器，Media SDK 已要求將 Adobe Analytics 開始呼叫 (`pev2=ms_s`) 傳送到 Adobe Analytics 伺服器。
