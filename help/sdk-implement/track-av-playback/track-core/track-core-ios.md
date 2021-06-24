@@ -1,12 +1,16 @@
 ---
-title: 在 iOS 上追蹤核心播放
-description: 本主題說明如何在 iOS 上使用 Media SDK 實作核心追蹤。
+title: 了解如何在iOS上追蹤核心播放
+description: 了解如何在iOS上使用Media SDK實作核心追蹤。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 95%
 
 ---
-
 
 # 在 iOS 上追蹤核心播放{#track-core-playback-on-ios}
 
@@ -64,6 +68,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * [在 iOS 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **視訊中繼資料索引鍵**
+
          [iOS 中繼資料索引鍵](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * 請在這裡參閱完整的視訊中繼資料清單: [音訊和視訊參數](/help/metrics-and-metadata/audio-video-parameters.md)
@@ -172,6 +177,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 如需有關追蹤核心播放的詳細資訊，請參閱下列內容:
 
-* 追蹤案例: [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤案例：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 iOS SDK 包含範例播放器。
-
