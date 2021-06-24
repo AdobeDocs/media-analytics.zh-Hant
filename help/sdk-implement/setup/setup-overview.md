@@ -1,15 +1,16 @@
 ---
-title: 設定概述
-description: 在行動裝置、OTT 和瀏覽器 (JS) 應用程式設定 Media SDK 進行媒體追蹤的相關概述。
+title: 實作Media SDK說明
+description: 「了解如何在行動裝置、OTT和瀏覽器(JS)應用程式中，為媒體追蹤設定Media SDK。」
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '734'
-ht-degree: 100%
+exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 96%
 
 ---
-
 
 # 設定概述{#setup-overview}
 
