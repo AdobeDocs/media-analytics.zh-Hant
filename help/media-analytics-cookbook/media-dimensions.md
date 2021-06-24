@@ -1,14 +1,15 @@
 ---
-title: 什麼是媒體串流歸因？
-description: 瞭解如何將應用程式動作連結至媒體追蹤資料，而不需要額外的處理規則和自訂變數。
-translation-type: tm+mt
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+title: 什麼是媒體資料流歸因？
+description: 了解如何將應用程式動作連結到媒體追蹤資料，而不需要其他處理規則和自訂變數。
+exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 89%
+source-wordcount: '233'
+ht-degree: 97%
 
 ---
-
 
 # 媒體資料流歸因
 
