@@ -1,13 +1,14 @@
 ---
 title: 傳送 Ping 事件
-description: 傳送 Ping 事件
+description: Ping事件是串流Media Analytics的心率。 了解如何針對主要內容或廣告追蹤傳送計時Ping。
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '88'
-ht-degree: 100%
+source-wordcount: '110'
+ht-degree: 79%
 
 ---
 
