@@ -1,12 +1,16 @@
 ---
-title: 在 iOS 上追蹤錯誤
-description: 本主題說明如何在 iOS 上使用 Media SDK 實作錯誤追蹤。
+title: 了解如何在iOS上追蹤錯誤
+description: 了解如何在iOS上使用Media SDK實作錯誤追蹤。
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: c4ce7092-a102-41da-80a6-a4359f925708
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '96'
+ht-degree: 81%
 
 ---
-
 
 # 在 iOS 上追蹤錯誤{#track-errors-on-ios}
 
@@ -27,4 +31,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >追蹤媒體播放器錯誤將不會停止媒體追蹤工作階段。如果媒體播放器錯誤使得播放無法繼續，請透過在呼叫 `trackError` 之後呼叫 `trackSessionEnd`，以確定媒體追蹤工作階段已關閉。
-
