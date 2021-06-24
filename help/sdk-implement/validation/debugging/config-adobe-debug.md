@@ -1,15 +1,16 @@
 ---
 title: 設定 Adobe Debug
-description: 本主題說明如何設定可用來針對 Media SDK 實施進行疑難排解的 Adobe Debug。
+description: 「了解如何設定Adobe除錯，以便用於疑難排解Media SDK實作。」
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: ht
-source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: ht
+exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
 source-wordcount: '653'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
-
 
 # 設定 Adobe Debug{#configure-adobe-debug}
 
@@ -120,4 +121,3 @@ ht-degree: 100%
 
 1. 在筆記型電腦上啟動 Adobe Debug 工作階段。
 1. 開始在 Android 裝置上進行測試。
-
