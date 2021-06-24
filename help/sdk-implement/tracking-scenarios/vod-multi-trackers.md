@@ -1,16 +1,20 @@
 ---
-title: 多個 VOD 追蹤器並行
-description: 如何使用多個追蹤器並行追蹤 VOD 的範例。
+title: 多個VOD追蹤器並行
+description: 檢視如何使用多個追蹤器並行追蹤VOD的範例。
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 92%
 
 ---
 
-
 # 多個 VOD 追蹤器並行{#vod-multiple-trackers-in-parallel}
 
-## 情境 {#scenario}
+## 藍本 {#scenario}
 
 此情境中，有兩個工作階段並行執行兩個不同的媒體，並使用兩個不同的 `MediaHeartbeat` 例項。
 
@@ -374,4 +378,3 @@ _player2.loadContent(URL_TO_MEDIA_2);
 ```
 
 `MediaAnalyticsProvider` 和 `MediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。您可以在 Charles 除錯工具中看到兩個工作階段。
-
