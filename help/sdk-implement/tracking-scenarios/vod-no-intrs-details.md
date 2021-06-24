@@ -1,12 +1,16 @@
 ---
-title: 沒有廣告的 VOD 播放
-description: 追蹤不含任何廣告之 VOD 播放的範例。
+title: 沒有廣告的VOD播放
+description: 檢視追蹤不含廣告之VOD播放的範例。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '367'
+ht-degree: 95%
 
 ---
-
 
 # 沒有廣告的 VOD 播放{#vod-playback-with-no-ads}
 
@@ -117,7 +121,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 應用程式
+### iOS
 
 ```
 when the user clicks Play 
@@ -198,4 +202,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........
 ```
-
