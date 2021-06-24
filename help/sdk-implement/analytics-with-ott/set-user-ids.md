@@ -2,11 +2,15 @@
 title: 設定使用者 ID
 description: 設定使用者 ID 的 API，做為唯一客戶識別碼。
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
+feature: '"Media Analytics, API"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 94%
 
 ---
-
 
 # 設定使用者 ID{#set-user-ids}
 
