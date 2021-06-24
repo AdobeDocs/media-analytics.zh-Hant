@@ -2,17 +2,21 @@
 title: 追蹤應用程式動作
 description: 應用程式動作為發生在您要測量之應用程式中的事件。
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 100%
 
 ---
-
 
 # 追蹤應用程式動作{#track-app-actions}
 
 動作為發生在您要測量之應用程式中的事件。
 
-每個動作有一或多個對應度量，會隨著每次事件發生而增量。例如，您可能會針對每個新訂閱、每次對內容進行分級或每次完成某個層級時，傳送 `trackAction` 呼叫。
+每個動作有一或多個對應量度，會隨著每次事件發生而增量。例如，您可能會針對每個新訂閱、每次對內容進行分級或每次完成某個層級時，傳送 `trackAction` 呼叫。
 
 應用程式不會自動追蹤動作，因此您必須在要追蹤的事件發生時呼叫 `trackAction`，然後將動作對應至自訂事件。
 
@@ -49,4 +53,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       ```
 
 您還可以隨著每次追蹤動作呼叫傳送其他內容資料。
-
