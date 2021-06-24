@@ -1,12 +1,16 @@
 ---
-title: 在 Android 上實作標準廣告中繼資料
+title: 了解如何在Android上實作標準廣告中繼資料
 description: 如何在 Android 上將標準廣告中繼資料用於廣告追蹤。
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 86%
 
 ---
-
 
 # 在 Android 上實作標準廣告中繼資料{#implement-standard-ad-metadata-on-android}
 
@@ -27,4 +31,3 @@ standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER, "Sample Adverti
 standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID, "Sample Campaign"); 
 adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata, standardAdMetadata); 
 ```
-
