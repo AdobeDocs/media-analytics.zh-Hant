@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 上追蹤錯誤
-description: 本主題說明如何在 Chromecast 上使用 Media SDK 實作錯誤追蹤。
+title: 了解如何在Chromecast上追蹤錯誤
+description: 了解如何在Chromecast上使用Media SDK實作錯誤追蹤。
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 513772c2-582d-4b4b-92ed-0c32b99d7fdc
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '104'
+ht-degree: 82%
 
 ---
-
 
 # 在 Chromecast 上追蹤錯誤{#track-errors-on-chromecast}
 
@@ -25,4 +29,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >追蹤媒體播放器錯誤將不會停止媒體追蹤工作階段。如果媒體播放器錯誤使得播放無法繼續，請透過在呼叫 `trackError` 之後呼叫 `trackSessionEnd`，以確定媒體追蹤工作階段已關閉。
-
