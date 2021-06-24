@@ -1,14 +1,15 @@
 ---
-title: 使用 JavaScript 3.x 版追蹤核心播放
-description: 本主題說明如何在使用 JavaScript 3.x 應用程式的瀏覽器中，使用 Media SDK 實作核心追蹤。
-translation-type: ht
-source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: ht
-source-wordcount: '643'
-ht-degree: 100%
+title: 了解如何使用JavaScript 3.x版追蹤核心播放
+description: 了解如何使用JavaScript 3.x應用程式，在瀏覽器中使用Media SDK實作核心追蹤。
+exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '647'
+ht-degree: 95%
 
 ---
-
 
 # 使用 JavaScript 3.x 追蹤核心播放{#track-core-playback-on-javascript}
 
