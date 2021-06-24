@@ -1,15 +1,16 @@
 ---
 title: SDK 除錯
-description: 本主題說明 Media SDK 中可供使用的追蹤/記錄功能。
+description: 了解Media SDK中可用的追蹤/記錄功能。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
-translation-type: ht
-source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+exl-id: c2de6454-8538-4d07-a099-e278b153d894
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 96%
 
 ---
-
 
 # SDK 除錯{#sdk-debugging}
 
@@ -114,4 +115,3 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 [16:11:29 GMT­0700 (PDT).764] [INFO] [plugin::player] #trackComplete() 
 [16:11:29 GMT­0700 (PDT).766] [INFO] [plugin::player] #trackVideoUnload()
 ```
-
