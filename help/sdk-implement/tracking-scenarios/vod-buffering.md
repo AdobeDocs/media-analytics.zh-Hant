@@ -1,16 +1,20 @@
 ---
-title: 具有緩衝的 VOD 播放
-description: 有關如何使用 Media SDK 追蹤 VOD 內容的範例。
+title: 具有緩衝的VOD播放
+description: 檢視如何使用Media SDK追蹤VOD內容的範例。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '231'
+ht-degree: 92%
 
 ---
 
-
 # 具有緩衝的 VOD 播放{#vod-playback-with-buffering}
 
-## 情境 {#scenario}
+## 藍本 {#scenario}
 
 此情境中，播放 VOD 內容時發生一些緩衝。
 
@@ -18,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 可能是使用者點按&#x200B;**[!UICONTROL 播放]**&#x200B;或自動播放事件。 |
+| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 可能是使用者點按&#x200B;**[!UICONTROL 播放]**&#x200B;或自動播放事件。 |
 | 播放視訊的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要繼續播放，便會每 10 秒傳送心率。 |
 | 內容播放。 |  | 內容心率 |  |
 | 緩衝開始。 | `trackEvent:BufferStart` | 心率緩衝 |  |
@@ -222,4 +226,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
