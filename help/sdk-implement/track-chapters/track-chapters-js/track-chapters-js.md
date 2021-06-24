@@ -1,15 +1,16 @@
 ---
-title: 使用JavaScript 2.x追蹤章節和區段
-description: 本主題說明如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作章節和區段追蹤。
+title: 了解如何使用JavaScript 2.x追蹤章節和區段
+description: 了解如何在瀏覽器應用程式(JS)中使用Media SDK實作章節和區段追蹤。
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 92%
+source-wordcount: '200'
+ht-degree: 84%
 
 ---
-
 
 # 使用JavaScript 2.x追蹤章節和區段{#track-chapters-and-segments-on-javascript}
 
