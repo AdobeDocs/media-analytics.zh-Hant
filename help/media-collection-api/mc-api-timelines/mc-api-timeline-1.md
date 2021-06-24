@@ -1,15 +1,16 @@
 ---
-title: 時間軸 1 - 檢視內容到結束為止
-description: null
+title: 了解從內容結束到結束�的媒體追蹤時間軸檢視
+description: 深入了解播放點時間軸和對應使用者�的動作。 了解每個動作的詳細資料及其隨附的要求。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
-translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 97%
 
 ---
-
 
 # 時間軸 1 - 檢視內容到結束為止{#timeline-view-to-end-of-content}
 
@@ -406,7 +407,7 @@ ht-degree: 100%
 
 **實作詳細資料**
 
-緩衝在 3 秒後結束，因此請讓播放器回復「正在播放」狀態。您必須傳送另一個追蹤播放事件來結束緩衝狀態。**`bufferStart`之後的`play`呼叫意味著傳送「bufferEnd」呼叫到後端**，因此不需要 `bufferEnd` 事件。
+緩衝在 3 秒後結束，因此請讓播放器回復「正在播放」狀態。您必須傳送另一個追蹤播放事件來結束緩衝狀態。**`bufferStart` 之後的 `play` 呼叫意味著傳送「bufferEnd」呼叫到後端**，因此不需要 `bufferEnd` 事件。
 
 **範例要求內文**
 
@@ -641,7 +642,7 @@ ht-degree: 100%
 
 **實作詳細資料**
 
-將播放狀態改變為「正在播放」。**`pauseStart`之後的`play`呼叫意味著傳送「resume」呼叫到後端**，因此不需要 `resume` 事件。
+將播放狀態改變為「正在播放」。**`pauseStart` 之後的 `play` 呼叫意味著傳送「resume」呼叫到後端**，因此不需要 `resume` 事件。
 
 **範例要求內文**
 
