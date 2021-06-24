@@ -1,20 +1,21 @@
 ---
-title: 使用JavaScript 3.x追蹤錯誤
-description: 本主題說明如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作錯誤追蹤。
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
+title: 了解如何使用JavaScript 3.x追蹤錯誤
+description: 了解如何在瀏覽器應用程式(JS)中使用Media SDK實作錯誤追蹤。
+exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 69%
+source-wordcount: '99'
+ht-degree: 54%
 
 ---
-
 
 # 使用JavaScript 3.x追蹤錯誤{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
->下列指示提供所有 3.x SDK 之間實作的指引。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下列指示提供所有 3.x SDK 之間實作的指引。若您正在實作任何舊版SDK，您可以在此處下載開發人員指南：[下載SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 實作錯誤追蹤
 
