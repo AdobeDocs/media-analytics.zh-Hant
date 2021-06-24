@@ -1,12 +1,14 @@
 ---
-title: 設定 iOS
-description: 適用於 iOS 實作的 Media SDK 應用程式設定。
+title: 如何在iOS上設定媒體SKD
+description: 請依照下列步驟，在iOS上設定Media SDK應用程式。
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '744'
-ht-degree: 97%
+source-wordcount: '755'
+ht-degree: 95%
 
 ---
 
@@ -14,7 +16,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。  如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/sdk-implement/end-of-support-faqs.md)。
+>我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/sdk-implement/end-of-support-faqs.md)。
 
 ## 必備條件
 
