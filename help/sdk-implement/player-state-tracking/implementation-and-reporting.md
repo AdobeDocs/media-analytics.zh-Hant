@@ -1,14 +1,15 @@
 ---
 title: 實作與報告
-description: 此主題說明如何實作播放器狀態追蹤功能，包括
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+description: 了解如何實作播放器狀態追蹤功能，包括。
+exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 96%
 
 ---
-
 
 # 實作與報告
 
