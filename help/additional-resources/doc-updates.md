@@ -1,15 +1,17 @@
 ---
 title: Adobe Analytics的串流媒體新增功能
-description: 了解Adobe Analytics的串流媒體新功能
+description: 了解Adobe Analytics for Streaming Media的新功能。
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '28'
-ht-degree: 39%
+source-wordcount: '30'
+ht-degree: 43%
 
 ---
 
