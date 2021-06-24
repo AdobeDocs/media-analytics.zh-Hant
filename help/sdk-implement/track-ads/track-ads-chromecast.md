@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 上追蹤廣告
+title: 了解如何在Chromecast上追蹤廣告
 description: 使用 Media SDK 在 Chromecast 應用程式中實作廣告追蹤。
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 97%
 
 ---
-
 
 # 在 Chromecast 上追蹤廣告{#track-ads-on-chromecast}
 
