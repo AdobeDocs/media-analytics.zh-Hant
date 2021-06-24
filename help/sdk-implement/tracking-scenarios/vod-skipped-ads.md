@@ -1,16 +1,20 @@
 ---
-title: 具有已略過廣告的 VOD 播放
-description: 有關如何使用 Media SDK 追蹤使用者已略過廣告之 VOD 內容的範例。
+title: 具有已略過廣告的VOD播放
+description: 檢視如何使用Media SDK追蹤使用者已略過廣告之VOD內容的範例。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 91%
 
 ---
 
-
 # 具有已略過廣告的 VOD 播放{#vod-playback-with-skipped-ads}
 
-## 情境 {#scenario}
+## 藍本 {#scenario}
 
 此情境包含的 VOD 內容播放具有已略過的廣告。
 
@@ -20,7 +24,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 播放] | `trackSessionStart()` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於    [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 使用者點按[!UICONTROL 「播放」] | `trackSessionStart()` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於    [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 |  |
 | 播放廣告的第一個時間格。 | `trackPlay()` | 心率廣告播放 | 當廣告內容在主要內容之前播放，心率會在廣告開始播放時啟動。 |
 | 廣告播放。 |  | 廣告心率 |  |
@@ -292,4 +296,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
