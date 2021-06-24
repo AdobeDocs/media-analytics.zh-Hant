@@ -1,15 +1,16 @@
 ---
-title: 使用 JavaScript 2.x 追蹤核心播放
-description: 本主題說明如何在使用 JavaScript 2.x 應用程式的瀏覽器中，使用 Media SDK 實作核心追蹤。
+title: 了解如何使用JavaScript 2.x追蹤核心播放
+description: 了解如何使用JavaScript 2.x應用程式，在瀏覽器中使用Media SDK實作核心追蹤。
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: ht
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 96%
 
 ---
-
 
 # 使用 JavaScript 2.x 追蹤核心播放{#track-core-playback-on-javascript}
 
