@@ -1,18 +1,20 @@
 ---
-title: 區段
+title: 媒體串流區段說明
 description: 「了解與媒體資料流類型相關聯的報表區段，包括媒體資料流類型的區段、說明和規則。」
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: '"Media Analytics，細分"'
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 2d9d4352b0fd71710a9952ba4a77f6796ea9f5cc
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 84%
+source-wordcount: '207'
+ht-degree: 66%
 
 ---
 
 # 區段{#segments}
+
+區段可讓您根據特性或網站互動來識別訪客的子集。串流媒體區段可讓您識別訪客資料流類型，例如音訊、即時或播客資料流。 如需Adobe Analytics區段的相關資訊，請參閱Adobe Analytics元件指南中的[關於區段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en)。
 
 >[!NOTE]
 >
