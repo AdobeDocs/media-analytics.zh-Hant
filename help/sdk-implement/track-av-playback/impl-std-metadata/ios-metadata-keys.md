@@ -1,12 +1,16 @@
 ---
-title: iOS 中繼資料索引鍵
-description: 本主題說明可用的 iOS 中繼資料索引鍵。
+title: iOS中繼資料索引鍵說明
+description: 了解可用的iOS中繼資料索引鍵。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 90%
 
 ---
-
 
 # iOS 中繼資料索引鍵{#ios-metadata-keys}
 
@@ -31,7 +35,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `ADBVideoMetadataKeySHOW_TYPE` | 節目類型 | 影片 |
 | `ADBVideoMetadataKeyAD_LOAD` | 廣告載入 | 影片 |
 | `ADBVideoMetadataKeyMVPD` | mvpd | 影片 |
-| `ADBVideoMetadataKeyAUTHORIZED` | 授權 | 影片 |
+| `ADBVideoMetadataKeyAUTHORIZED` | Authorization | 影片 |
 | `ADBVideoMetadataKeyDAY_PART` | 時段 | 影片 |
 | `ADBVideoMetadataKeyFEED` | 動態消息 | 影片 |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | 資料流格式 | 影片 |
@@ -57,4 +61,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `ADBAdMetadataKeyPLACEMENT_ID` | 版面 ID | 廣告 |
 | `ADBAdMetadataKeySITE_ID` | 網站 ID | 廣告 |
 | `ADBAdMetadataKeyCREATIVE_URL` | 創作 URL | 廣告 |
-
