@@ -1,14 +1,15 @@
 ---
 title: 標準和自訂狀態簡介
-description: 此主題說明播放器狀態追蹤功能，包括實作和報告標準與自訂播放器狀態的要求與準則。
-translation-type: ht
-source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+description: 了解播放器狀態追蹤功能，包括實作和報告標準和自訂播放器狀態的需求和准則。
+exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 92%
 
 ---
-
 
 # 標準和自訂狀態簡介
 
