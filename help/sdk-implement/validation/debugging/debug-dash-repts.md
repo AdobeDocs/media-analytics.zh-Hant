@@ -1,12 +1,16 @@
 ---
 title: Debug 控制面板和報表
-description: 本主題說明 Adobe Debug 控制面板。
+description: 了解AdobeDebug控制面板。
 uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
+feature: '"Media Analytics, Analytics控制面板"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 88%
 
 ---
-
 
 # Debug 控制面板和報表{#debug-dashboards-and-reports}
 
@@ -19,4 +23,3 @@ Adobe Debug 提供即時報表功能，因此您可以檢視點擊數和視訊�
 >一次只能有一個作用中的工作階段。您可以從控制面板開啟作用中的工作階段。
 
 ![](assets/debug-dashboard.png)
-
