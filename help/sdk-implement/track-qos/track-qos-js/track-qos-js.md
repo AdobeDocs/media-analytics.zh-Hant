@@ -1,15 +1,16 @@
 ---
-title: 使用JavaScript 2.x追蹤體驗品質
-description: 本主題說明在使用JavaScript 2.x的瀏覽器應用程式中使用媒體SDK實作體驗品質(QoE、QoS)追蹤。
+title: 了解如何使用JavaScript 2.x追蹤體驗品質
+description: 「了解如何使用JavaScript 2.x，在瀏覽器應用程式中使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
+exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '222'
 ht-degree: 84%
 
 ---
-
 
 # 使用JavaScript 2.x追蹤體驗品質{#track-quality-of-experience-on-javascript}
 
