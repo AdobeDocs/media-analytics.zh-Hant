@@ -1,13 +1,14 @@
 ---
 title: 啟用媒體報表
-description: 啟用媒體報表
+description: 了解收集媒體量度的媒體報表套裝。  在傳送媒體資料之前，請依照下列步驟設定媒體報表。
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '899'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 97%
 
 ---
 
