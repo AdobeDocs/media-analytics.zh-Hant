@@ -1,16 +1,20 @@
 ---
-title: 具有一個章節的 VOD 播放
-description: 追蹤含有一個章節之 VOD 播放的範例。
+title: 具有一個章節的VOD播放
+description: 檢視追蹤包含一個章節之VOD播放的範例。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '433'
+ht-degree: 96%
 
 ---
 
-
 # 具有一個章節的 VOD 播放{#vod-playback-with-one-chapter}
 
-## 情境 {#scenario}
+## 藍本 {#scenario}
 
 此情境中，部分 VOD 內容會標示為章節。
 
@@ -18,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 我們尚未通知 Measurement Library 有前段廣告，因此這些網路呼叫仍完全等同於單一 VoD。 |
+| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 我們尚未通知 Measurement Library 有前段廣告，因此這些網路呼叫仍完全等同於單一 VoD。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
 | 章節播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放，Heartbeats 會在章節開始時啟動。 |
 | 章節播放。 |  | 章節心率 |  |
@@ -465,4 +469,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
