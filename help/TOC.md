@@ -1,12 +1,11 @@
 ---
+product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
-product: adobe analytics
 sub-product: Media Analytics
-translation-type: tm+mt
-source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
+source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -19,9 +18,9 @@ ht-degree: 100%
 + [在 Adobe Analytics 中測量串流媒體](media-overview.md)
 + [支援的裝置和平台](measurement-options/supported-devices.md)
 + Streaming Media Analytics 簡介 {#intro-to-ava}
-   + [必備條件](intro-to-ava/prereqs.md)
+   + [先決條件](intro-to-ava/prereqs.md)
    + 實作路徑 {#implementation-paths}
-      + [概述](intro-to-ava/implementation-paths/implementation-paths.md)
+      + [概觀](intro-to-ava/implementation-paths/implementation-paths.md)
       + [用戶端](intro-to-ava/implementation-paths/client-side-path.md)
       + 其他實作方式 {#other-paths}
          + 媒體模組里程碑追蹤 {#mm-milestone-tracking}
@@ -37,7 +36,7 @@ ht-degree: 100%
    + [Media Analytics SDK 支援終止常見問題集](sdk-implement/end-of-support-faqs.md)
    + [下載 SDK](sdk-implement/download-sdks.md)
    + 設定和配置 {#setup}
-      + [概述](sdk-implement/setup/setup-overview.md)
+      + [概觀](sdk-implement/setup/setup-overview.md)
       + [設定 Android](sdk-implement/setup/set-up-android.md)
       + [設定 iOS](sdk-implement/setup/set-up-ios.md)
       + 設定 JavaScript {#setup-javascript}
@@ -46,7 +45,7 @@ ht-degree: 100%
       + [設定 Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [設定 Roku](sdk-implement/setup/set-up-roku.md)
    + 追蹤串流媒體播放 {#track-av-playback}
-      + [概述](sdk-implement/track-av-playback/track-core-overview.md)
+      + [概觀](sdk-implement/track-av-playback/track-core-overview.md)
       + 追蹤核心串流媒體播放 {#track-core}
          + [在 Android 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [在 iOS 上追蹤核心播放](sdk-implement/track-av-playback/track-core/track-core-ios.md)
@@ -83,7 +82,7 @@ ht-degree: 100%
          + [在 Roku 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
          + [標準中繼資料參數 - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 追蹤廣告 {#track-ads}
-      + [概述](sdk-implement/track-ads/track-ads-overview.md)
+      + [概觀](sdk-implement/track-ads/track-ads-overview.md)
       + [在 Android 上追蹤廣告](sdk-implement/track-ads/track-ads-android.md)
       + [在 iOS 上追蹤廣告](sdk-implement/track-ads/track-ads-ios.md)
       + 在 JavaScript 上追蹤廣告 {#track-ads-js}
@@ -99,7 +98,7 @@ ht-degree: 100%
             + [在 JavaScript 3.x 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [在 Roku 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + 追蹤章節和區段 {#track-chapters}
-      + [概述](sdk-implement/track-chapters/track-chapters-overview.md)
+      + [概觀](sdk-implement/track-chapters/track-chapters-overview.md)
       + [在 Android 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-android.md)
       + [在 iOS 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-ios.md)
       + 在 JavaScript 上追蹤章節和區段 {#track-chapters-js}
@@ -108,7 +107,7 @@ ht-degree: 100%
       + [在 Chromecast 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [在 Roku 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-roku.md)
    + 追蹤體驗品質 {#track-qos}
-      + [概述](sdk-implement/track-qos/track-qos-overview.md)
+      + [概觀](sdk-implement/track-qos/track-qos-overview.md)
       + [在 Android 上追蹤體驗品質](sdk-implement/track-qos/track-qos-android.md)
       + [在 iOS 上追蹤體驗品質](sdk-implement/track-qos/track-qos-ios.md)
       + 在 JavaScript 上追蹤體驗品質 {#track-qos-js}
@@ -117,7 +116,7 @@ ht-degree: 100%
       + [在 Chromecast 上追蹤體驗品質](sdk-implement/track-qos/track-qos-chromecast.md)
       + [在 Roku 上追蹤體驗品質](sdk-implement/track-qos/track-qos-roku.md)
    + 追蹤錯誤 {#track-errors}
-      + [概述](sdk-implement/track-errors/track-errors-overview.md)
+      + [概觀](sdk-implement/track-errors/track-errors-overview.md)
       + [在 Android 上追蹤錯誤](sdk-implement/track-errors/track-errors-android.md)
       + [在 iOS 上追蹤錯誤](sdk-implement/track-errors/track-errors-ios.md)
       + 在 JavaScript 上追蹤錯誤 {#track-errors-js}
@@ -172,7 +171,7 @@ ht-degree: 100%
          + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Media Collection API (RESTful) {#media-collection-api}
-   + [概述](media-collection-api/mc-api-overview.md)
+   + [概觀](media-collection-api/mc-api-overview.md)
    + API 參考 {#mc-api-ref}
       + [工作階段要求](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [事件要求](media-collection-api/mc-api-ref/mc-api-events-req.md)
@@ -220,7 +219,7 @@ ht-degree: 100%
    + [透過 API 取得同時檢閱者資料](media-reports/media-default-reports/get-concurrent-json20.md)
 + [追蹤下載內容](media-collection-api/track-downloaded-content.md)
 + 播放器狀態追蹤 {#player-state-tracking}
-   + [概述](sdk-implement/player-state-tracking/player-state-overview.md)
+   + [概觀](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準和自訂狀態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [實作與報告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [播放器狀態追蹤範例](sdk-implement/player-state-tracking/player-state-examples.md)
