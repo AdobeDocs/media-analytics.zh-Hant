@@ -1,14 +1,18 @@
 ---
-title: 概述
+title: 追蹤廣告說明
 description: 有關如何使用 Media SDK 實作廣告追蹤的概述。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '508'
+ht-degree: 99%
 
 ---
 
-
-# 概述{#overview}
+# 概觀{#overview}
 
 >[!IMPORTANT]
 >
@@ -139,4 +143,3 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
