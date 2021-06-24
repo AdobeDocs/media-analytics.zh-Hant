@@ -1,13 +1,14 @@
 ---
-title: 事件要求
-description: 事件要求
+title: 串流媒體收集API事�件要求端點
+description: '"什麼是Media Collection API事件要求端點參數和回應？"'
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
-translation-type: tm+mt
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 100%
+source-wordcount: '263'
+ht-degree: 92%
 
 ---
 
