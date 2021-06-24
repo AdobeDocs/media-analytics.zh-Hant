@@ -1,12 +1,16 @@
 ---
-title: 在 Android 上實作標準中繼資料
-description: 說明如何在 Android 上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
+title: 了解如何在Android上實作標準中繼資料
+description: 了解如何在Android上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 76%
 
 ---
-
 
 # 在 Android 上實作標準中繼資料{#implement-standard-metadata-on-android}
 
