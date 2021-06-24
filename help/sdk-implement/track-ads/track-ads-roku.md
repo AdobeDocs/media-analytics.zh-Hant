@@ -1,12 +1,16 @@
 ---
-title: 在 Roku 上追蹤廣告
+title: 了解如何在Roku上追蹤廣告
 description: 使用 Media SDK 在 Roku 應用程式中實作廣告追蹤。
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 97%
 
 ---
-
 
 # 在 Roku 上追蹤廣告{#track-ads-on-roku}
 
