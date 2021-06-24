@@ -1,15 +1,16 @@
 ---
 title: 播放器狀態參數
-description: 此主題說明播放器狀態追蹤參數。
+description: 「了解全螢幕、隱藏式字幕、靜音和子母畫面屬性的播放器狀態追蹤參數。」
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
-translation-type: tm+mt
-source-git-commit: 1cf631d7f3d5365a02be99af78655ac3b53fb3cb
+exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
+feature: '"Media Analytics，變數"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '2236'
-ht-degree: 99%
+source-wordcount: '2249'
+ht-degree: 98%
 
 ---
-
 
 # 播放器狀態參數{#player-state-parameters}
 
@@ -78,7 +79,7 @@ ht-degree: 99%
 
 |   實作 | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;隱藏式字幕的顯示次數。只有在播放工作階段期間發生至少一個隱藏式字幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則次數等於視訊處於隱藏式字幕狀態的次數。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe**<br/> Analyticsa.media.states.clousedcaptioning.count<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 隱藏式字幕次數 </li> <li> **內容資料**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **資料摘要**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
+| <ul> <li> **SDK 索引鍵**<br/> 自動設定  </li> <li> **API 索引鍵**<br/> 不適用 </li> <li> **必要**<br/> 否 </li> <li> **類型**<br/> 數字 </li> <li> **伴隨傳送**<br/> 媒體關閉 </li> <li> **最低SDK 版本**<br/> 3.0</li> <li> **範例值**<br/> TRUE </li><li> **說明**<br/>&#x200B;隱藏式字幕的顯示次數。只有在播放工作階段期間發生至少一個隱藏式字幕狀態時，此量度才會設為 1。<br/> **重要**<br/> 若此事件已設定，則次數等於視訊處於隱藏式字幕狀態的次數。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe**<br/> Analyticsa.media.states.closedcaptioning.count<br/></li> <li> **心率**<br/> 不適用 </li> </ul> | <ul> <li> **可用**<br/> 是 </li> <li> **預留變數**<br/> 事件 </li> <li> **報表名稱**<br/> 隱藏式字幕次數 </li> <li> **內容資料**<br/> a.media.states.closedcaptioning.count<br/> </li> <li> **資料摘要**<br/> videostateclosedcaptioningcount </li> <li> **Audience Manager**<br/> c_contextdata.media.states.closedcaptioning.count </li> </ul> |
 
 
 #### 隱藏式字幕總時間
