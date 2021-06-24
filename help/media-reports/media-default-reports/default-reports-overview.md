@@ -1,13 +1,14 @@
 ---
 title: 預設報表概述
-description: 預設報表概述
+description: 「了解用於追蹤網站媒體的報表類型和量度。 探索「媒體核心」模組可用的控制面板樣式報表。
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '328'
-ht-degree: 100%
+feature: 「Media Analytics、Reports & Analytics基本概念」
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
