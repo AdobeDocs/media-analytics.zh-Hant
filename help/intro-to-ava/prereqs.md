@@ -1,12 +1,14 @@
 ---
-title: 先決條件
-description: 先決條件
+title: 了解串流媒體的必要條件
+description: 開始使用Adobe Analytics串流媒體。 了解您需要哪些項目來實作Adobe Analytics for Streaming Media。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
+feature: '"Media Analytics，系統需求"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 93%
+source-wordcount: '414'
+ht-degree: 87%
 
 ---
 
