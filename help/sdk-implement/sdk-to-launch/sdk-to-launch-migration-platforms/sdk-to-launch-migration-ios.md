@@ -1,11 +1,15 @@
 ---
-title: 從獨立 Media SDK 移轉至 Adobe Launch - iOS
-description: 協助從 Media SDK 移轉至 iOS 適用的 Launch 的指示和程式碼範例。
-translation-type: ht
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+title: 「從獨立Media SDK移轉至AdobeLaunch - iOS」
+description: 了解如何從Media SDK移轉至iOS適用的Launch。
+exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 93%
 
 ---
-
 
 # 從獨立 Media SDK 移轉至 Adobe Launch - iOS
 
