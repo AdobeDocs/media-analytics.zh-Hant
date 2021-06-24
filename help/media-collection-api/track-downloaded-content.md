@@ -1,12 +1,14 @@
 ---
 title: 追蹤下載內容
-description: null
+description: 了解如何使用「下載內容」功能，在使用者離線時追蹤媒體使用量。
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 98%
+source-wordcount: '628'
+ht-degree: 96%
 
 ---
 
