@@ -1,12 +1,16 @@
 ---
-title: 在 Android 上追蹤核心播放
-description: 本主題說明如何在 Android 上使用 Media SDK 實作核心追蹤。
+title: 了解如何在Android上追蹤核心播放
+description: 了解如何在Android上使用Media SDK實作核心追蹤。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 97%
 
 ---
-
 
 # 在 Android 上追蹤核心播放{#track-core-playback-on-android}
 
@@ -170,6 +174,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 如需有關追蹤核心播放的詳細資訊，請參閱下列內容:
 
-* 追蹤案例: [沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤案例：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 Android SDK 包含範例播放器。
-
