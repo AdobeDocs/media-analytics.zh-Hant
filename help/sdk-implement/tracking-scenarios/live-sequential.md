@@ -1,16 +1,20 @@
 ---
 title: 具有循序追蹤的即時主要內容
-description: 有關如何使用 Media SDK 追蹤具有循序追蹤之即時內容的範例。
+description: 檢視如何使用Media SDK追蹤具有循序追蹤之即時內容的範例。
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 91%
 
 ---
 
-
 # 具有循序追蹤的即時主要內容{#live-main-content-with-sequential-tracking}
 
-## 情境 {#scenario}
+## 藍本 {#scenario}
 
 此情境中，一個沒有廣告的即時資產在加入即時資料流後播放了 40 秒。
 
@@ -44,7 +48,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## 心率內容播放 {#heartbeat-content-play}
 
-這看起來應該與「心率內容開始」呼叫幾乎完全相同，但主要的差異在於「s:event:type」參數。所有參數應該依然不受影響。
+這看起來應該與「心率內容開始」呼叫幾乎完全相同，但主要差異在於「s:event:type」參數。 所有參數應該依然不受影響。
 
 | 參數 | 值 | 附註 |
 |---|---|---|
@@ -55,7 +59,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 在媒體播放期間，對於主要內容，計時器將每隔 10 秒傳送一或多個心率；對於廣告，則為每隔一秒。這些心率將包含播放、廣告、緩衝和其他部分項目的相關資訊。每個心率的確切內容不在本文件的討論範圍，這裡要確認的重點在於，繼續播放能否會一致觸發心率。
 
-在內容心率中，尋找一些特定項目：
+在內容心率中，尋找幾個特定項目：
 
 | 參數 | 值 | 附註 |
 |---|---|---|
@@ -331,4 +335,3 @@ this._mediaHeartbeat.trackSessionEnd();
 
 // Continue tracking further sessions in live stream similarly if required 
 ```
-
