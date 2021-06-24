@@ -1,12 +1,16 @@
 ---
-title: 在 iOS 上追蹤體驗品質
-description: 本主題說明如何在 iOS 上使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。
+title: 了解如何在iOS上追蹤體驗品質
+description: 「了解如何在iOS上使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
-
 
 # 在 iOS 上追蹤體驗品質{#track-quality-of-experience-on-ios}
 
@@ -54,4 +58,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!IMPORTANT]
    >
    >更新 QoS 物件，並在每次位元速率變更時呼叫位元速率變更事件。如此可提供最精確的 QoS 資料。
-
