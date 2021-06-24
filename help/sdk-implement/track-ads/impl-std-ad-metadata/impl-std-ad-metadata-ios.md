@@ -1,12 +1,16 @@
 ---
-title: 在 iOS 上實作標準廣告中繼資料
+title: 了解如何在iOS上實作標準廣告中繼資料
 description: 如何在 iOS 上將標準廣告中繼資料用於廣告追蹤。
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '67'
+ht-degree: 86%
 
 ---
-
 
 # 在 iOS 上實作標準廣告中繼資料{#implement-standard-ad-metadata-on-ios}
 
