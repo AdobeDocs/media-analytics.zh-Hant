@@ -1,12 +1,16 @@
 ---
-title: 在 Chromecast 上實作標準中繼資料
-description: 說明如何在 Chromecast 上設定標準視訊和廣告中繼資料。
+title: 了解如何在Chromecast上實作標準中繼資料
+description: 了解如何在Chromecast上設定標準視訊和廣告中繼資料。
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 052ede4b-ea8a-4ca6-bf02-0aab22a8bcda
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '61'
+ht-degree: 68%
 
 ---
-
 
 # 在 Chromecast 上實作標準中繼資料{#implement-standard-metadata-on-chromecast}
 
