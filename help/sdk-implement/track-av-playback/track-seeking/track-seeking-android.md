@@ -1,12 +1,16 @@
 ---
-title: 在 Android 上追蹤搜尋
-description: 本主題說明如何在 Android 上使用 Media SDK 實作搜尋追蹤。
+title: 了解如何在Android上追蹤搜尋
+description: 了解如何在Android上使用Media SDK追蹤搜尋開始和搜尋完成事件。
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
-
 
 # 在 Android 上追蹤搜尋{#track-seeking-on-android}
 
