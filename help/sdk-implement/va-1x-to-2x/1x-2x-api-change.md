@@ -1,12 +1,16 @@
 ---
-title: 從 1.x 轉換為 2.x API
-description: 本主題包含 API 參考資料的連結，並列出 Media SDK 1.x 版和 2.x 版的必要和選用追蹤 API。
+title: 從1.x版轉換為2.x API
+description: 探索API參考，並列出1.x版和2.x版Media SDK的必要和選用追蹤API。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 87%
 
 ---
-
 
 # 從 API 1.x 轉換至 2.x {#one-x-to-two-x-conv}
 
@@ -50,4 +54,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
