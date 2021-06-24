@@ -1,20 +1,21 @@
 ---
-title: 使用JavaScript 3.x追蹤緩衝
-description: 說明如何在瀏覽器應用程式 (JS) 中追蹤緩衝事件。
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
+title: 了解如何使用JavaScript 3.x追蹤緩衝
+description: 了解如何在瀏覽器應用程式(JS)中追蹤緩衝事件。
+exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '115'
-ht-degree: 74%
+source-wordcount: '122'
+ht-degree: 65%
 
 ---
-
 
 # 使用JavaScript 3.x追蹤緩衝{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
->下列指示提供所有 3.x SDK 之間實作的指引。If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>下列指示提供所有 3.x SDK 之間實作的指引。若您正在實作任何舊版SDK，您可以在此處下載開發人員指南：[下載SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 緩衝追蹤常數
 
