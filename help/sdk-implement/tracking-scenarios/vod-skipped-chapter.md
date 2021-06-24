@@ -1,16 +1,20 @@
 ---
-title: 具有已略過章節的 VOD 播放
-description: 有關如何使用 Media SDK 追蹤使用者已略過章節之 VOD 內容的範例。
+title: 具有已略過章節的VOD播放
+description: 檢視如何使用Media SDK追蹤使用者已略過章節之VOD內容的範例。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 91%
 
 ---
 
-
 # 具有已略過章節的 VOD 播放{#vod-playback-with-a-skipped-chapter}
 
-## 情境 {#scenario}
+## 藍本 {#scenario}
 
 此情境中，使用者會在主要內容中略過某個章節。
 
@@ -18,7 +22,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註 |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 播放]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於    [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)情境。 |
+| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於    [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)情境。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
 | 播放章節的第一個時間格。 | `trackPlay` | 心率章節播放 | 當章節內容在主要內容之前播放，我們想在章節開始時啟動心率。 |
 | 章節播放。 |  | 章節心率 |  |
@@ -288,4 +292,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
