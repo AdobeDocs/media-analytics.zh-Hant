@@ -1,12 +1,16 @@
 ---
-title: 在 Android 上追蹤緩衝
-description: 說明如何在 Android 上追蹤緩衝事件。
+title: 了解如何在Android上追蹤緩衝
+description: 了解如何在Android上追蹤緩衝事件。
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
-
 
 # 在 Android 上追蹤緩衝{#track-buffering-on-android}
 
