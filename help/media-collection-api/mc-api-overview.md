@@ -1,18 +1,19 @@
 ---
-seo-title: 概述
-title: 概述
-description: null
+seo-title: 概觀
+title: 串流媒體收集API概述
+description: 了解媒體收集API，以及您的播放器如何使用RESTful HTTP呼叫追蹤音訊和視訊事件。
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 92%
 
 ---
 
-# 概述{#overview}
+# 概觀{#overview}
 
 媒體收集 API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過媒體收集 API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。
 
