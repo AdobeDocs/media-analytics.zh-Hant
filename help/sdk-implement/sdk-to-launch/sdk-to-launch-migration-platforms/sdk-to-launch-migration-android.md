@@ -1,11 +1,15 @@
 ---
-title: 從獨立 Media SDK 移轉至 Adobe Launch - Android
-description: 協助從 Media SDK 移轉至 Android 適用的 Launch 的指示和程式碼範例。
-translation-type: ht
-source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
+title: '"從獨立Media SDK移轉至AdobeLaunch - Android"'
+description: 了解如何從Media SDK移轉至Android適用的Launch。
+exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 93%
 
 ---
-
 
 # 從獨立 Media SDK 移轉至 Adobe Launch - Android
 
