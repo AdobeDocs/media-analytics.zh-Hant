@@ -2,14 +2,16 @@
 title: 有哪些串流媒體實作路徑可以使用？
 description: 了解 Adobe 串流媒體實作途徑，包括 Adobe Launch。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '499'
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '501'
 ht-degree: 100%
 
 ---
 
-# 實作路徑 {#implementation-paths}
+# 實施路徑 {#implementation-paths}
 
 不管採取哪個實作路徑，客戶都需連絡他們的銷售代表/客戶經理，以簽署新的銷售訂單，因為 Media Analytics 的 SKU 並不重複，而且會從伺服器呼叫型的定價模式變更為基於視訊資料流的模式。
 
