@@ -1,12 +1,16 @@
 ---
 title: 追蹤應用程式狀態
-description: '應用程式狀態是您應用程式中不同的畫面或檢視，顯示時應導致 trackState 呼叫。 '
+description: '應用程式狀態是您應用程式中不同的畫面或檢視。 了解如何使用trackState呼叫追蹤應用程式中的應用程式狀態。 '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 86%
 
 ---
-
 
 # 追蹤應用程式狀態{#track-app-states}
 
@@ -53,4 +57,3 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 >[!NOTE]
 >
 >內容資料值必須對應至 Adobe Mobile Services 中的自訂變數。
-
