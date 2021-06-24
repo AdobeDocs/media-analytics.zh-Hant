@@ -1,12 +1,16 @@
 ---
-title: 解決 main play 出現在廣告之間的問題
-description: 如何處理廣告之間的意外 main:play 呼叫。
+title: 解決Main Play出現在廣告之間的問題
+description: 「了解如何處理廣告之間意外的main:play呼叫。」
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 96%
 
 ---
-
 
 # 解決 main:play 出現在廣告之間的問題{#resolving-main-play-appearing-between-ads}
 
@@ -49,7 +53,7 @@ Media SDK 會將前述廣告間的間隙解讀為主要內容，因為它與任�
 
    >[!NOTE]
    >
-   >唯有在上一個廣告未完成時才進行呼叫。請考慮使用布林值來維持上一個廣告的 "`isinAd`" 狀態。
+   >唯有在上一個廣告未完成時才進行呼叫。請考慮使用布林值來維持上一個廣告的 &quot;`isinAd`&quot; 狀態。
 
 * 為廣告資產建立物件例項，如 `adObject`。
 * 填入廣告中繼資料 `adCustomMetadata`。
@@ -77,4 +81,3 @@ Media SDK 會將前述廣告間的間隙解讀為主要內容，因為它與任�
    >如果您已在前述最後一個 `trackEvent:AdComplete` 呼叫時執行本步驟，可以予以忽略。
 
 * 呼叫 `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
-
