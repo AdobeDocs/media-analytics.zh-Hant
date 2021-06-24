@@ -1,12 +1,16 @@
 ---
-title: 在 Android 上追蹤章節和區段
-description: 本主題說明如何在 Android 上使用 Media SDK 實作章捷和區段追蹤。
+title: 了解如何在Android上追蹤章節和區段
+description: 了解如何在Android上使用Media SDK實作章節和區段追蹤。
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 89%
 
 ---
-
 
 # 在 Android 上追蹤章節和區段{#track-chapters-and-segments-on-android}
 
@@ -78,4 +82,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. 如果有任何其他章節，請重複步驟 1 到 5。
-
