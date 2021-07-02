@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 96%
+source-wordcount: '742'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 96%
    |  方法名稱  |  說明 | 必填 |
    | --- | --- | :---: |
    | `getQoSObject()` | 傳回包含目前 QoS 資訊的 `MediaObject` 例項。將在播放工作階段期間呼叫此方法多次。播放器實施必須一律傳回最新可用的 QoS 資料。 | 是 |
-   | `getCurrentPlaybackTime()` | 傳回播放點的目前位置。對於 VOD 追蹤，該值是從媒體項目的開頭開始以秒為單位指定的。對於 LINEAR/LIVE 追蹤，該值是從節目的開頭開始以秒為單位指定的。 | 是 |
+   | `getCurrentPlaybackTime()` | 傳回播放點的目前位置。對於 VOD 追蹤，該值是從媒體項目的開頭開始以秒為單位指定的。對於「線性/即時」追蹤，值會指定為自當天午夜UTC以來的秒數。 | 是 |
 
    >[!TIP]
    >
