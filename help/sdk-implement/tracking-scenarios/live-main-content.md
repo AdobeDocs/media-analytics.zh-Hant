@@ -5,10 +5,10 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 75%
 
 ---
 
@@ -59,17 +59,17 @@ ht-degree: 96%
 
 ## 播放點值設定
 
-若為「即時」資料流，您必須將播放點設為節目開始的位移，這樣分析師就能在報表的 24 小時檢視內，判斷使用者在哪個時間點加入及離開「即時」資料流。
+若為「即時」資料流，您必須將播放點值設為當天午夜UTC以來的秒數，這樣分析師就能在報表中判斷使用者在24小時檢視內要加入和離開「即時」資料流的時間點。
 
 ### 開始時
 
-若為「即時」媒體，當使用者開始播放資料流時，您必須將 `l:event:playhead` 設為目前的位移 (以秒為單位)。與此相對的是，在 VOD 中，您會將播放點設為「0」。
+若為「即時」媒體，當使用者開始播放資料流時，您必須將`l:event:playhead`設定為自當天午夜UTC以來的秒數。 與此相對的是，在 VOD 中，您會將播放點設為「0」。
 
-例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。接著，假設使用者在中午 12:00 開始播放該「即時」資料流。此情境中，您應將 `l:event:playhead` 設為 43200 (12 小時進入資料流)。
+例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。接著，假設使用者在中午 12:00 開始播放該「即時」資料流。此情境中，您應將`l:event:playhead`設為43200（自當天午夜UTC以秒為單位的12小時）。
 
 ### 暫停時
 
-使用者暫停播放時，必須套用開始播放時所套用的同一個「即時播放點」邏輯。當使用者繼續播放「即時」資料流時，您必須將 `l:event:playhead` 值設為新的位移播放點位置，而&#x200B;_不是設為_&#x200B;使用者暫停「即時」資料流的時間點。
+使用者暫停播放時，必須套用開始播放時所套用的同一個「即時播放點」邏輯。當使用者返回播放「即時」資料流時，您必鬚根據自午夜UTC以來的新秒數&#x200B;_not_&#x200B;設定`l:event:playhead`值，使其達到使用者暫停「即時」資料流的點。
 
 ## 程式碼範例 {#sample-code}
 
