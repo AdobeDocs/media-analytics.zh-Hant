@@ -4,11 +4,11 @@ description: 開始使用Adobe Analytics串流媒體。 了解您需要哪些項
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: '"Media Analytics，系統需求"'
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 87%
 
    如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-   如需Experience CloudID的其他資訊，請參閱[Experience CloudID概述、](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)及[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
+   如需Experience CloudID的其他資訊，請參閱[Experience CloudID概述、](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)及[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 
 1. **啟用 Adobe Analytics 報表。**
 
