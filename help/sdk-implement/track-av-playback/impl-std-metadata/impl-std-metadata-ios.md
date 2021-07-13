@@ -4,8 +4,8 @@ description: 了解如何在iOS上設定要連同追蹤呼叫一起傳送的標�
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 75%
