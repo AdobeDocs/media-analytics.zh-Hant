@@ -3,8 +3,8 @@ title: 媒體同時檢閱者報表
 description: 「了解如何使用「媒體同時檢閱者」面板來分析同時觀看媒體的人數，並了解人數高峰和趨勢反轉。」
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: 「Media Analytics，工作區基本概念」
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 87%
