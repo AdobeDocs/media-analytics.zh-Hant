@@ -4,8 +4,8 @@ description: 探索驗證實施所必須進行的呼叫。
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 98%
@@ -94,7 +94,7 @@ ht-degree: 98%
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | 生產廠房 |
 | `s:meta:a.media.network` | 網路 |
-| `s:meta:a.media.ad_load` | 1 |
+| `s:meta:a.media.ad_load` | 3 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | 解除鎖定 |
 | `s:meta:a.media.feed` | 無摘要 |
@@ -139,7 +139,7 @@ ht-degree: 98%
 | _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
-| `a.media.ad.podPosition` | 1 |
+| `a.media.ad.podPosition` | 3 |
 | `a.media.ad.podSecond` | 0.0 |
 | _**`a.media.ad.view`**_ | _**True**_ |
 | _**`custom.[value]`**_ | _**中繼資料欄位**_ |
@@ -163,7 +163,7 @@ ht-degree: 98%
 | `a.media.rating` | TV-14 |
 | `a.media.originator` | 生產廠房 |
 | `a.media.network` | 網路 |
-| `a.media.ad_load` | 1 |
+| `a.media.ad_load` | 3 |
 | `a.media.mvpd` | mvpd |
 | `a.media.authorized` | 解除鎖定 |
 | `a.media.feed` | 無摘要 |
@@ -208,7 +208,7 @@ ht-degree: 98%
 | `s:meta:a.media.rating` | TV-14 |
 | `s:meta:a.media.originator` | 生產廠房 |
 | `s:meta:a.media.network` | 網路 |
-| `s:meta:a.media.ad_load` | 1 |
+| `s:meta:a.media.ad_load` | 3 |
 | `s:meta:a.media.mvpd` | mvpd |
 | `s:meta:a.media.authorized` | 解除鎖定 |
 | `s:meta:a.media.feed` | 無摘要 |
