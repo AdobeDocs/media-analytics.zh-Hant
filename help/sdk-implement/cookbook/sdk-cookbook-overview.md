@@ -3,8 +3,8 @@ title: SDK 逐步指南概述
 description: '"探索SDK專屬逐步指南主題"'
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 94%
