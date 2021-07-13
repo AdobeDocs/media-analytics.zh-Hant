@@ -3,8 +3,8 @@ title: 了解如何使用JavaScript 3.x追蹤體驗品質
 description: 「了解如何使用JavaScript 3x在瀏覽器應用程式中使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 50%
