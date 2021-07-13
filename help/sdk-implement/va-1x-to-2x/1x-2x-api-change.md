@@ -4,8 +4,8 @@ description: 探索API參考，並列出1.x版和2.x版Media SDK的必要和選�
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '202'
 ht-degree: 87%
