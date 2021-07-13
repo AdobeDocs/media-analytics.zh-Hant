@@ -4,8 +4,8 @@ description: 請依照下列步驟，在JavaScript 2.x上設定Media SDK應用�
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 94%
@@ -19,7 +19,7 @@ ht-degree: 94%
 * **取得有效的設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
 * **在您的媒體應用程式實作 JavaScript 適用的 `AppMeasurement`**
-如需有關 Adobe Mobile SDK 文件的詳細資訊，請參閱[利用 JavaScript 實作分析](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html)。
+如需有關 Adobe Mobile SDK 文件的詳細資訊，請參閱[利用 JavaScript 實作分析](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hant)。
 
 * **在您的媒體播放器中提供下列功能：**
 
