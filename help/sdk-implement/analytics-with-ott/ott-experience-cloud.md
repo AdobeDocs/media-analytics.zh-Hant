@@ -4,8 +4,8 @@ description: 深入了解如何整合OTT應用程式與Experience Cloud。
 uuid: 89264403-0fc8-4c76-b001-22e20e57bef2
 exl-id: dfeb0708-e744-4ff1-a644-3d77812f736a
 feature: '"Media Analytics,Experience Cloud整合"'
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 69%
