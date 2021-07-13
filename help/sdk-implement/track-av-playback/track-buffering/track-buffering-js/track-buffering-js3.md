@@ -3,8 +3,8 @@ title: 了解如何使用JavaScript 3.x追蹤緩衝
 description: 了解如何在瀏覽器應用程式(JS)中追蹤緩衝事件。
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 65%
