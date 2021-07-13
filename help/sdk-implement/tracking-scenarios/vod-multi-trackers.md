@@ -4,8 +4,8 @@ description: 檢視如何使用多個追蹤器並行追蹤VOD的範例。
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 92%
