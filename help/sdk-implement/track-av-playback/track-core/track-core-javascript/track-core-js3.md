@@ -3,8 +3,8 @@ title: 了解如何使用JavaScript 3.x版追蹤核心播放
 description: 了解如何使用JavaScript 3.x應用程式，在瀏覽器中使用Media SDK實作核心追蹤。
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
