@@ -3,8 +3,8 @@ title: 了解如何使用JavaScript 3.x實作標準中繼資料
 description: 了解如何在瀏覽器應用程式(JS 3.x)中設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
 exl-id: 228ba000-10e2-4906-8417-265a03367a9b
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '50'
 ht-degree: 10%
