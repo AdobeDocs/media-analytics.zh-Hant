@@ -4,8 +4,8 @@ description: 如何在使用JavaScript 2.x應用程式的瀏覽器中，將標�
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 55%
