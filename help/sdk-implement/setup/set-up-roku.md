@@ -4,11 +4,11 @@ description: 請依照下列步驟，在Roku上設定Media SDK應用程式。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 78%
+ht-degree: 79%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 78%
 
 Adobe Mobile Services 提供的新使用者介面，將 Adobe Marketing Cloud 適用於行動應用程式的各項行動行銷功能整合在一起。Mobile 服務起初是提供 Adobe Analytics 和 Adobe Target 解決方案的應用程式分析和定位功能流暢整合。
 
-如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)。
+如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=zh-Hant)。
 
 Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScript 中撰寫的 Roku 應用程式、透過對象管理利用和收集觀眾資料，以及透過視訊心率測量視訊參與。
 
