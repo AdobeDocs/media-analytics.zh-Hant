@@ -3,8 +3,8 @@ title: 播放器狀態追蹤範例
 description: 此主題舉例說明「播放器狀態追蹤」功能。
 exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: 8a421ee4ee5d2e61126fc6ac8f10f326427e78a7
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%
