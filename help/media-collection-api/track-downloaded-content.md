@@ -4,11 +4,11 @@ description: 了解如何使用「下載內容」功能，在使用者離線時�
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -57,7 +57,7 @@ iOS 和 Android 行動裝置均支援內容追蹤功能。
 
 ## 與 Adobe Analytics 整合 {#integration-with-adobe-analtyics}
 
-計算下載內容情況的 Analytics 開啟/關閉呼叫時，後端會設定一個稱為 `ts.` 的額外 Analytics 欄位。這些是第一個和最後一個收到事件的時間戳記 (開始和完成)。此機制可將完成的媒體工作階段放置在正確的時間點 (換句話說，即使使用者數天未重新上線，媒體工作階段也會依照實際檢視內容的時間，回報媒體工作階段)。您必須透過建立&#x200B;_可選時間戳記報表套裝，以在 Adobe Analytics 端啟用此機制。_&#x200B;若要啟用可選時間戳記報表套裝，請參閱[可選時間戳記](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)。
+計算下載內容情況的 Analytics 開啟/關閉呼叫時，後端會設定一個稱為 `ts.` 的額外 Analytics 欄位。這些是第一個和最後一個收到事件的時間戳記 (開始和完成)。此機制可將完成的媒體工作階段放置在正確的時間點 (換句話說，即使使用者數天未重新上線，媒體工作階段也會依照實際檢視內容的時間，回報媒體工作階段)。您必須透過建立&#x200B;_可選時間戳記報表套裝，以在 Adobe Analytics 端啟用此機制。_&#x200B;若要啟用可選時間戳記報表套裝，請參閱[可選時間戳記](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=zh-Hant)。
 
 ## 範例工作階段比較 {#sample-session-comparison}
 
