@@ -4,8 +4,8 @@ description: 「在媒體詳細資料控制面板上，檢視同時檢閱者或�
 uuid: 57d7f5b0-41dd-41d7-9a5a-474528839be5
 exl-id: 3c707539-95a4-4e16-97f0-f3fe0be4fe74
 feature: 「Media Analytics、Reports & Analytics基本概念」
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '55'
 ht-degree: 50%
