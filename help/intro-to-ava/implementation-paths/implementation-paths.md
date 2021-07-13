@@ -3,8 +3,8 @@ title: 有哪些串流媒體實作路徑可以使用？
 description: 了解 Adobe 串流媒體實作途徑，包括 Adobe Launch。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
