@@ -4,8 +4,8 @@ description: 了解如何從Media SDK 1.x版移轉至2.x版。
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 94%
