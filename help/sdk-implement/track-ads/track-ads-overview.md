@@ -4,8 +4,8 @@ description: 有關如何使用 Media SDK 實作廣告追蹤的概述。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 99%
