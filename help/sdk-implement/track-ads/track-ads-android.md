@@ -5,7 +5,7 @@ uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 98%
@@ -14,9 +14,11 @@ ht-degree: 98%
 
 # 在 Android 上追蹤廣告{#track-ads-on-android}
 
+下列指示提供使用 2.x SDK 實作的指引。
+
 >[!IMPORTANT]
 >
->下列指示提供使用 2.x SDK 實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/sdk-implement/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 廣告追蹤常數
 
@@ -55,7 +57,7 @@ ht-degree: 98%
    public void onAdBreakStart(Observable observable, Object data) {  
        _heartbeat.trackEvent(MediaHeartbeat.Event.AdBreakStart,  
                              adBreakInfo,  
-                             null); 
+                             null);
    }
    ```
 
@@ -74,7 +76,7 @@ ht-degree: 98%
 
    ```java
    MediaObject adInfo =  
-     MediaHeartbeat.createAdObject(<AD_NAME> 
+     MediaHeartbeat.createAdObject(<AD_NAME>
                                    <AD_ID>,  
                                    <POSITION>,  
                                    <LENGTH>);
@@ -86,9 +88,9 @@ ht-degree: 98%
    * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告的資料:
 
       ```java
-      // Setting Ad Metadata 
-      HashMap<String, String> adMetadata = new HashMap<String, String>(); 
-      adMetadata.put("affiliate", "Sample affiliate"); 
+      // Setting Ad Metadata
+      HashMap<String, String> adMetadata = new HashMap<String, String>();
+      adMetadata.put("affiliate", "Sample affiliate");
       adMetadata.put("campaign", "Sample ad campaign");
       ```
 
@@ -100,7 +102,7 @@ ht-degree: 98%
    public void onAdStart(Observable observable, Object data) {  
        _heartbeat.trackEvent(MediaHeartbeat.Event.AdStart,  
                              adInfo,  
-                             adMetadata); 
+                             adMetadata);
    }
    ```
 
@@ -108,7 +110,7 @@ ht-degree: 98%
 
    ```java
    public void onAdComplete(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.AdComplete, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.AdComplete, null, null);
    }
    ```
 
@@ -116,7 +118,7 @@ ht-degree: 98%
 
    ```java
    public void onAdSkip(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.AdSkip, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.AdSkip, null, null);
    }
    ```
 
@@ -125,7 +127,7 @@ ht-degree: 98%
 
    ```java
    public void onAdBreakComplete(Observable observable, Object data) {  
-       _heartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete, null, null); 
+       _heartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete, null, null);
    }
    ```
 
