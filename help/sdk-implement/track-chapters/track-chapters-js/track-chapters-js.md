@@ -5,7 +5,7 @@ uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 84%
@@ -14,9 +14,11 @@ ht-degree: 84%
 
 # 使用JavaScript 2.x追蹤章節和區段{#track-chapters-and-segments-on-javascript}
 
+下列指示提供使用 2.x SDK 實作的指引。
+
 >[!IMPORTANT]
 >
->下列指示提供使用 2.x SDK 實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
+> 若您正在實作 SDK 1.x 版，您可以在此處下載開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
 1. 識別章節開始事件何時發生，並使用章節資訊建立 `ChapterObject` 例項。
 
