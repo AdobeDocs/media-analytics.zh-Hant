@@ -5,7 +5,7 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 95%
@@ -14,8 +14,10 @@ ht-degree: 95%
 
 # 在 iOS 上追蹤核心播放{#track-core-playback-on-ios}
 
+本文件涵蓋 SDK 2.x 版中的追蹤。
+
 >[!IMPORTANT]
->本文件涵蓋 SDK 2.x 版中的追蹤。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)
 
 1. **初始追蹤設定**
 
@@ -53,10 +55,10 @@ ht-degree: 95%
 
    ```
    ADBMediaObject *mediaObject =  
-     [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME> 
-                                          mediaId:<MEDIA_ID> 
+     [ADBMediaHeartbeat createMediaObjectWithName:<MEDIA_NAME>
+                                          mediaId:<MEDIA_ID>
                                            length:<MEDIA_LENGTH>                       
-                                       streamType:<STREAM_TYPE> 
+                                       streamType:<STREAM_TYPE>
                                         mediaType: <MEDIA_TYPE>];
    ```
 
@@ -81,8 +83,8 @@ ht-degree: 95%
       為自訂變數建立變數物件，並為此視訊填入資料。例如:
 
       ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init]; 
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"]; 
+      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
       [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
       ```
 
@@ -96,9 +98,9 @@ ht-degree: 95%
    >秒數值是您在步驟 2 建立的自訂視訊中繼資料物件名稱。
 
    ```
-   - (void)onMainVideoLoaded:(NSNotification *)notification { 
-   //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil]; 
-       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata]; 
+   - (void)onMainVideoLoaded:(NSNotification *)notification {
+   //    [_mediaHeartbeat trackSessionStart:mediaObject data:nil];
+       [_mediaHeartbeat trackSessionStart:mediaObject data:videoMetadata];
    }
    ```
 
@@ -115,8 +117,8 @@ ht-degree: 95%
    識別來自視訊播放器的視訊播放開始 (在畫面上轉譯了視訊的第一個時間格) 事件，並呼叫 `trackPlay`:
 
    ```
-   - (void)onVideoPlay:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPlay]; 
+   - (void)onVideoPlay:(NSNotification *)notification {
+       [_mediaHeartbeat trackPlay];
    }
    ```
 
@@ -125,8 +127,8 @@ ht-degree: 95%
    識別來自視訊播放器的視訊播放完成 (使用者已觀看內容至結尾) 事件，並呼叫 `trackComplete`:
 
    ```
-   - (void)onVideoComplete:(NSNotification *)notification { 
-       [_mediaHeartbeat trackComplete]; 
+   - (void)onVideoComplete:(NSNotification *)notification {
+       [_mediaHeartbeat trackComplete];
    }
    ```
 
@@ -135,8 +137,8 @@ ht-degree: 95%
    識別來自視訊播放器的視訊播放卸載/關閉 (使用者關閉視訊和/或視訊完成及卸載) 事件，並呼叫 `trackSessionEnd`:
 
    ```
-   - void)onMainVideoUnloaded:(NSNotification *)notification { 
-       [_mediaHeartbeat trackSessionEnd]; 
+   - void)onMainVideoUnloaded:(NSNotification *)notification {
+       [_mediaHeartbeat trackSessionEnd];
    }
    ```
 
@@ -149,8 +151,8 @@ ht-degree: 95%
    識別來自視訊播放器視訊暫停的事件，並呼叫 `trackPause`:
 
    ```
-   - (void)onVideoPause:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPause]; 
+   - (void)onVideoPause:(NSNotification *)notification {
+       [_mediaHeartbeat trackPause];
    }
    ```
 
@@ -166,8 +168,8 @@ ht-degree: 95%
 1. 識別來自播放器的視訊播放和/或來自暫停的視訊恢復事件，並呼叫 `trackPlay`:
 
    ```
-   - (void)onVideoPlay:(NSNotification *)notification { 
-       [_mediaHeartbeat trackPlay]; 
+   - (void)onVideoPlay:(NSNotification *)notification {
+       [_mediaHeartbeat trackPlay];
    }
    ```
 
