@@ -5,7 +5,7 @@ uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 90%
@@ -14,9 +14,11 @@ ht-degree: 90%
 
 # 在 Chromecast 上追蹤章節和區段{#track-chapters-and-segments-on-chromecast}
 
+下列指示提供使用 2.x SDK 實作的指引。
+
 >[!IMPORTANT]
 >
->下列指示提供使用 2.x SDK 實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
+> 若您正在實作 SDK 1.x 版，您可以在此處下載開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
 1. 識別章節開始事件何時發生，並使用章節資訊建立 `ChapterObject` 例項。
 
@@ -42,15 +44,15 @@ ht-degree: 90%
 1. 如果您包含該章節的自訂中繼資料，請為中繼資料建立內容資料變數:
 
    ```js
-   var chapterContextData = { 
-       segmentType: "Sample segment type" 
+   var chapterContextData = {
+       segmentType: "Sample segment type"
    };
    ```
 
 1. 若要開始追蹤章節播放，請追蹤 `ChapterStart` 事件: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```js
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, ChapterInfo, chapterContextData);
    ```
 
 1. 當播放達到由您的自訂程式碼定義之章節結束界限時，請呼叫 `ChapterComplete` 例項中的 `MediaHeartbeat` 事件: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
@@ -62,7 +64,7 @@ ht-degree: 90%
 1. 如果因為使用者選擇略過章節而未完成章節播放 (例如，如果使用者搜尋超出章節界限)，請追蹤 `ChapterSkip` 事件: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```js
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
    ```
 
 1. 如果有任何其他章節，請重複步驟 1 到 5。
