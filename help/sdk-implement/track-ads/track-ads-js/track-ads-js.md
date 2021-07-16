@@ -5,7 +5,7 @@ uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 96%
@@ -14,9 +14,11 @@ ht-degree: 96%
 
 # 使用JavaScript 2.x追蹤廣告{#track-ads-on-javascript}
 
+下列指示提供使用 2.x SDK 實作的指引。
+
 >[!IMPORTANT]
 >
->下列指示提供使用 2.x SDK 實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/sdk-implement/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 廣告追蹤常數
 
