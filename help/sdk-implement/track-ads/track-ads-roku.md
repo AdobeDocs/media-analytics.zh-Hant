@@ -5,7 +5,7 @@ uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 97%
@@ -14,9 +14,11 @@ ht-degree: 97%
 
 # 在 Roku 上追蹤廣告{#track-ads-on-roku}
 
+下列指示提供使用 2.x SDK 實作的指引。
+
 >[!IMPORTANT]
 >
->下列指示提供使用 2.x SDK 實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/sdk-implement/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 廣告追蹤常數
 
@@ -41,17 +43,17 @@ ht-degree: 97%
    | `startTime` | 廣告插播開始時的播放點值。 | 是 |
 
    ```
-   ‘ Create an adbreak info object 
-   adBreakInfo = adb_media_init_adbreakinfo() 
-   adBreakInfo.name = <ADBREAK_NAME> 
-   adBreakInfo.startTime = <START_TIME> 
+   ‘ Create an adbreak info object
+   adBreakInfo = adb_media_init_adbreakinfo()
+   adBreakInfo.name = <ADBREAK_NAME>
+   adBreakInfo.startTime = <START_TIME>
    adBreakInfo.position = <POSITION>
    ```
 
 1. 在 `MediaHeartbeat` 例項中使用 `AdBreakStart` 呼叫 `trackEvent()` 以開始追蹤廣告插播。
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_START, adBreakInfo, contextData)
    ```
 
@@ -62,7 +64,7 @@ ht-degree: 97%
      adb_media_init_adinfo(ad.title,  
                            ad.id,  
                            ad.position,  
-                           ad.duration) 
+                           ad.duration)
    ```
 
 1. 可選擇透過內容資料變數，將標準和/或廣告中繼資料附加到媒體追蹤工作階段。
@@ -71,8 +73,8 @@ ht-degree: 97%
    * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告資產的資料:
 
       ```
-      contextData = {} 
-      contextData["adinfo1"] = "adinfo2" 
+      contextData = {}
+      contextData["adinfo1"] = "adinfo2"
       contextData["adinfo2"] = "adinfo2"
       ```
 
@@ -85,15 +87,15 @@ ht-degree: 97%
 1. 當廣告資產播放達到廣告結尾時，請使用 `AdComplete` 事件呼叫 `trackEvent()`。
 
    ```
-   standardAdMetadata = {} 
-   contextData = {} 
+   standardAdMetadata = {}
+   contextData = {}
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_COMPLETE, adInfo, contextData)
    ```
 
 1. 如果由於使用者選擇略過廣告而導致廣告播放未完成，請追蹤 `AdSkip` 事件:
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_AD_SKIP, adInfo, contextData
    ```
 
@@ -101,7 +103,7 @@ ht-degree: 97%
 1. 當廣告插播完成時，請使用 `AdBreakComplete` 事件進行追蹤:
 
    ```
-   contextData = {} 
+   contextData = {}
    ADBMobile().mediaTrackEvent(MEDIA_AD_BREAK_COMPLETE, adBreakInfo, contextData)
    ```
 
