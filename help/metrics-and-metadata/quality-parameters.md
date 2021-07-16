@@ -5,9 +5,9 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: '"Media Analytics，變數"'
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2997'
 ht-degree: 92%
 
 ---
@@ -50,11 +50,11 @@ ht-degree: 92%
 | <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/> media.qoe.timeToStart </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 30,000 </li><li> **說明:**<br/>&#x200B;如未透過 QoSObject 設定，則此值預設為零。您將此值設為毫秒。該值在Analysis Workspace和Reports &amp; Analytics中將以時間格式(HH:MM:SS)顯示。 在資料摘要、Data Warehouse 及報表 API 中，該值將以秒數顯示。    </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **心率：**<br/> (:stream:lstartup_time) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;開始時間 </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **資料饋送:**<br/> videoqoetimetostartevar </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe。<br/>timeToStart) </li> </ul> |
 
 
-### FPS
+### 每秒幀數
 
-|   實施   | 網路參數 | 報表 |
+|   實作   | 網路參數 | 報表 |
 | --- | --- | --- |
-| <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/> media.qoe.framesPerSecond </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 24 </li><li> **說明:**<br/>&#x200B;串流影格速率 (以每秒的影格數為單位) 的目前數值。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率：**<br/> (:stream:lfps) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;否 </li> <li> **預留變數:**<br/>&#x200B;不適用 </li> <li> **報表名稱:**<br/>&#x200B;不適用 </li> <li> **內容資料：**<br/> </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/> </li> <li> **API 索引鍵:**<br/> media.qoe.framesPerSecond </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:**&#x200B;任何版本 </li> <li> **範例值：**<br/> 24 </li><li> **說明:**<br/>&#x200B;串流影格速率 (以每秒的影格數為單位) 的目前數值。欄位會對應至關閉呼叫上的fps欄位，並可透過處理規則存取。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率：**<br/> (:stream:lfps) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;否 </li> <li> **預留變數:**<br/>&#x200B;不適用 </li> <li> **報表名稱:**<br/>&#x200B;不適用 </li> <li> **內容資料：**<br/> </li> <li> **資料饋送:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> </li> </ul> |
 
 
 
