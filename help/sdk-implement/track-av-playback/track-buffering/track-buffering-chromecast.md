@@ -5,7 +5,7 @@ uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 exl-id: 26fd1e2a-4103-486f-be12-36b088d28cb6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 88%
@@ -14,9 +14,11 @@ ht-degree: 88%
 
 # 在 Chromecast 上追蹤緩衝{#track-buffering-on-chromecast}
 
+下列指示提供所有 2.x SDK 之間實作的指引。
+
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 緩衝追蹤常數
 
