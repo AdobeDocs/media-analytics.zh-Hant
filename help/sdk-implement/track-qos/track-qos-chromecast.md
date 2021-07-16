@@ -5,7 +5,7 @@ uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 91%
@@ -14,9 +14,11 @@ ht-degree: 91%
 
 # 在 Chromecast 上追蹤體驗品質{#track-quality-of-experience-on-chromecast}
 
+下列指示提供所有 2.x SDK 之間實作的指引。
+
 >[!IMPORTANT]
 >
->下列指示提供所有 2.x SDK 之間實作的指引。若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/sdk-implement/download-sdks.md)。
 
 ## 概觀 {#overview}
 
@@ -53,13 +55,13 @@ ht-degree: 91%
    **QoS 物件建立:** [createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
 
    ```
-   qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10); 
+   qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10);
    ```
 
 1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
    ```
 
    >[!IMPORTANT]
