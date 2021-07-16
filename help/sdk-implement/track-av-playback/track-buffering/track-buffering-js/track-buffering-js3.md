@@ -4,7 +4,7 @@ description: 了解如何在瀏覽器應用程式(JS)中追蹤緩衝事件。
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 65%
@@ -13,9 +13,11 @@ ht-degree: 65%
 
 # 使用JavaScript 3.x追蹤緩衝{#track-buffering-on-javascript}
 
+下列指示提供所有 3.x SDK 之間實作的指引。
+
 >[!IMPORTANT]
 >
->下列指示提供所有 3.x SDK 之間實作的指引。若您正在實作任何舊版SDK，您可以在此處下載開發人員指南：[下載SDK。](/help/sdk-implement/download-sdks.md)
+>若您正在實作任何舊版SDK，您可以在此處下載開發人員指南：[下載SDK。](/help/sdk-implement/download-sdks.md)
 
 ## 緩衝追蹤常數
 
