@@ -4,7 +4,7 @@ description: 了解如何使用JavaScript 3.x應用程式，在瀏覽器中使�
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
@@ -13,8 +13,10 @@ ht-degree: 95%
 
 # 使用 JavaScript 3.x 追蹤核心播放{#track-core-playback-on-javascript}
 
+本文件涵蓋 SDK 3.x 版中的追蹤。
+
 >[!IMPORTANT]
->本文件涵蓋 SDK 3.x 版中的追蹤。若您正在實作任何舊版的 SDK，您可以在此處下載開發人員指南：[下載 SDK](/help/sdk-implement/download-sdks.md)。
+> 若您正在實作任何舊版的 SDK，您可以在此處下載開發人員指南：[下載 SDK](/help/sdk-implement/download-sdks.md)。
 
 1. **初始追蹤設定**
 
