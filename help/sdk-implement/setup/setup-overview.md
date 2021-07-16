@@ -5,7 +5,7 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 94%
@@ -14,11 +14,12 @@ ht-degree: 94%
 
 # 設定概述{#setup-overview}
 
+下列指示適用於 2.x Media SDK。若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md)如需 Primetime 整合器的相關資訊，請參閱以下的 _Primetime Media SDK 文件_。
+
 >[!IMPORTANT]
 >
 >我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/sdk-implement/end-of-support-faqs.md)。
 
-下列指示適用於 2.x Media SDK。若您正在實施 Media SDK 1.x 版，請參閱 [1.x Media SDK 文件。](/help/sdk-implement/download-sdks.md)如需 Primetime 整合器的相關資訊，請參閱以下的 _Primetime Media SDK 文件_。
 
 ## 最低平台版本支援 {#minimum-platform-version}
 
