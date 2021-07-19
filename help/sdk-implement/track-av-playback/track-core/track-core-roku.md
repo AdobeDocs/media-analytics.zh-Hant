@@ -103,7 +103,7 @@ ht-degree: 97%
 
    * **標準中繼資料**
 
-[在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >將標準視訊中繼資料物件附加到媒體物件為選用。
