@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 96%
 
 Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙集對象資料資產、簡化網站訪客之商業相關資訊的收集、建立可行銷區段，以及將目標廣告和內容提供給合適的對象。
 
-有了 AAM，您不必再侷限於資料賣方、交換或需求端平台。此外，AAM 也無從得知合作夥伴的資料資產。AAM 提供存取多種資料來源的功能，數位發行者將能使用多樣化的第三方資料和我們的私人資料協作。若要深入了解AAM，請參閱AAM檔案[Audience Manager產品檔案](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html)。
+有了 AAM，您不必再侷限於資料賣方、交換或需求端平台。此外，AAM 也無從得知合作夥伴的資料資產。AAM 提供存取多種資料來源的功能，數位發行者將能使用多樣化的第三方資料和我們的私人資料協作。若要深入了解 AAM，請參閱 AAM 文件 [Audience Manager 產品文件](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html)。
 
 **VA 到 AAM 資料傳輸**：針對視訊內容和視訊廣告，透過解決方案 (保留) 變數收集而來的量度和中繼資料能自動傳送給 AAM。資料傳輸可在所有平台上進行，包括桌上型電腦、行動裝置及 OTT。若要啟用伺服器端資料傳輸，您需要連絡 Adobe Client Care 申請啟用這項摘要。
 
