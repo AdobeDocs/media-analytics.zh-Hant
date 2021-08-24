@@ -6,10 +6,10 @@ description: 了解如何從Media SDK移轉至Launch。
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 89%
+ht-degree: 84%
 
 ---
 
@@ -27,7 +27,7 @@ Launch 可讓客戶透過簡單的方式部署及管理所有必要的分析、
 
 網頁和行動裝置皆可使用 Launch 擴充功能 Adobe Media Analytics for Audio and Video：
 
-* [網頁 Launch 文件](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=zh-Hant)
+* [網頁 Launch 文件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
 * [行動裝置 Launch 文件](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## 平台
