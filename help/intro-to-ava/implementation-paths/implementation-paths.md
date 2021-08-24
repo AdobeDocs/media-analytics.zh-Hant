@@ -4,33 +4,33 @@ description: 了解 Adobe 串流媒體實作途徑，包括 Adobe Launch。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '501'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# 實施路徑 {#implementation-paths}
+# 實作路徑 {#implementation-paths}
 
 不管採取哪個實作路徑，客戶都需連絡他們的銷售代表/客戶經理，以簽署新的銷售訂單，因為 Media Analytics 的 SKU 並不重複，而且會從伺服器呼叫型的定價模式變更為基於視訊資料流的模式。
 
 * **Adobe Launch 搭配 Adobe Media Analytics 擴充功能**
 
-   Adobe Launch 是新一代 Adobe 標籤管理解決方案。Launch 可讓客戶透過簡單的方式部署及管理所有必要的分析、行銷及廣告標籤功能，以便支援相關客戶體驗。若要建立及維持您與 Launch 的整合，請使用擴充功能。擴充功能是指能擴充 Launch 使用者介面和用戶端功能的 JavaScript、HTML 及 CSS 套件。如需詳細資訊，請參閱 [Experience Platform Launch 使用手冊](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=zh-Hant)
+   Adobe Launch 是新一代 Adobe 標籤管理解決方案。Launch 可讓客戶透過簡單的方式部署及管理所有必要的分析、行銷及廣告標籤功能，以便支援相關客戶體驗。若要建立及維持您與 Launch 的整合，請使用擴充功能。擴充功能是指能擴充 Launch 使用者介面和用戶端功能的 JavaScript、HTML 及 CSS 套件。如需詳細資訊，請參閱 [Experience Platform Launch 使用手冊](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
 
    Adobe Media Analytics (MA) 擴充功能新增了音訊和視訊的核心 JavaScript Media SDK (Media 2.x SDK)。此擴充功能提供將 `MediaHeartbeat` 追蹤器例項新增至 Launch 網站或專案的功能。
 
    Adobe Launch 搭配 Media Analytics 擴充功能使用前，請先符合以下條件：
    * 您必須是 Adobe Experience Cloud 客戶。
    * 您必須在網頁上部署 Launch 或 DTM 內嵌程式碼。
-   * [Analytics 擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html?lang=zh-Hant)
-   * [Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html?lang=zh-Hant)
+   * [Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant)
+   * [Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
 
 
-* **用戶端 -** 它們是僅限 Media Analytics 的整合。您可以選擇視訊心率 SDK 與/或媒體收集 API 整合。此路徑可用於任何視訊播放器，包括客戶及/或 OVP 播放器，例如 Brightcove、Ooyala、thePlatform 等。
+* **用戶端 -** 它們是僅限 Media Analytics 的整合。您可以選擇視訊心率 SDK 與/或 Media Collection API 整合。此路徑可用於任何視訊播放器，包括客戶及/或 OVP 播放器，例如 Brightcove、Ooyala、thePlatform 等。
 
-   如果 Media Analytics 是您打算使用的路徑，請參閱 [Media SDK 實施](/help/sdk-implement/setup/setup-overview.md)與[媒體收集 API](/help/media-collection-api/mc-api-overview.md)。
+   如果 Media Analytics 是您打算使用的路徑，請參閱 [Media SDK 實作](/help/sdk-implement/setup/setup-overview.md)與 [Media Collection API](/help/media-collection-api/mc-api-overview.md)。
 
    >[!IMPORTANT]
    >
