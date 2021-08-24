@@ -4,10 +4,10 @@ description: 了解如何從Media SDK移轉至JS適用的Launch。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 91%
+ht-degree: 89%
 
 ---
 
@@ -51,7 +51,7 @@ Video 擴充功能，然後按一下[!UICONTROL 「安裝」]。
 
    ![](assets/launch_config_js.png)
 
-[Launch 使用手冊 - 安裝和設定媒體擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Launch 使用手冊 - 安裝和設定媒體擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
 
 ## 追蹤器建立差異
 
@@ -124,5 +124,5 @@ Launch 提供兩種建立追蹤基礎架構的方法。兩種方法都使用 Med
 
 ### Launch
 
-* [Launch 概述](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=zh-Hant)
-* [Media Analytics 擴充功能](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Launch 概述](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
+* [Media Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
