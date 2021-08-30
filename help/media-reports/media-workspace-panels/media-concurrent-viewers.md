@@ -1,17 +1,17 @@
 ---
-title: 媒體同時檢閱者報表
-description: 「了解如何使用「媒體同時檢閱者」面板來分析同時觀看媒體的人數，並了解人數高峰和趨勢反轉。」
+title: 媒體同時檢閱者報告
+description: 「了解如何使用『媒體同時檢閱者』面板來分析同時檢閱者，並了解尖峰並行存取和下降情況。」
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-feature: 「Media Analytics，工作區基本概念」
+feature: 「Media Analytics、Workspace 基本知識」
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
-# 媒體同時檢閱者報表{#media-concurrent-viewers}
+# 媒體同時檢閱者報告{#media-concurrent-viewers}
 
 分析同時觀看媒體的人數有助於了解人數高峰或趨勢反轉的時間，以針對內容品質和檢閱者互動等面向提供重要的深入分析，且有利於疑難排解或完成數量和規模的相關規劃。
 
