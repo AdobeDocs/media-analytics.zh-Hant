@@ -1,14 +1,14 @@
 ---
 title: 媒體總覽
-description: 使用「媒體概述」控制面板來顯示匯總測量。 了解如何快速監視介質效能。
+description: 使用「媒體總覽」儀表板來顯示彙總的測量資料。 了解如何快速地監控媒體效能。
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: 「Media Analytics、Reports & Analytics基本概念」
+feature: 「Media Analytics、Reports & Analytics 基本知識」
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 81%
 
 ## 媒體效能 {#media-performance}
 
-按一下並拖曳以放大，然後暫留以檢視特定媒體的詳細量度。按一下 ![](assets/video-overview-report-revert.png) 
+按一下並拖曳以放大顯示，然後暫留以檢視特定媒體的精細量度。 按一下 ![](assets/video-overview-report-revert.png) 
 
 在縮放之後重設檢視。
 
