@@ -1,20 +1,20 @@
 ---
-title: 了解如何從里程碑移轉至自訂連結
-description: 了解如何將「里程碑」變數變更為「自訂連結」，並將「里程碑」模組方法變更為「自訂連結」語法。
+title: 了解從里程碑移轉至自訂連結
+description: 了解如何將里程碑變數變更為自訂連結以及如何將里程碑模組方法變更為自訂連結語法。
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '598'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # 從里程碑移轉至自訂連結{#migrating-from-milestone-to-custom-link}
 
-## 概觀 {#overview}
+## 總覽 {#overview}
 
 「里程碑」和「自訂連結」追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。「自訂連結」方法應視為同時減少及簡化實作和收集的資料。使用「自訂連結」解決方案，不會預先定義影片測量的變數或方法，須完全自訂。應可更新播放器事件程式碼，以顯示可能有基本播放器事件 (如開始和結束) 的自訂連結追蹤呼叫。如需詳細資訊，請參閱[自訂連結實作指南](/help/measurement-options/cl-in-aa/cl-impl-guide.md)。
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 
 ## 移轉指南 {#migration-guide}
 
-### 影片變數參考
+### 視訊變數參考資料
 
 | 里程碑量度 | 變數類型 | 自訂連結 |
 | --- | --- | --- |
