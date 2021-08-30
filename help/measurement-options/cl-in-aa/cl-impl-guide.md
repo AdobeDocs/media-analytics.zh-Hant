@@ -1,14 +1,14 @@
 ---
-title: 自訂連結實作說明
-description: 了解如何在串流Media Analytics中實作自訂連結追蹤。
+title: 說明自訂連結實作
+description: 了解如何在 Streaming Media Analytics 中實作自訂連結追蹤。
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 自訂視訊追蹤採用 Analytics `appMeasurement` 中的使用自訂連結程式碼手動追蹤連結。自訂視訊連結視訊追蹤經常用於不太需要視訊測量的平台與裝置上。
 
 * 在 JavaScript 中：`s.tl()` 函數
-* 在行動應用程式中：[trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=zh-Hant)、[trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* 在行動應用程式中：[trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=zh-Hant)、[trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html?lang=zh-Hant)、[trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * 在 Data Insertion API 中：[linktype 標記](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## 需求
