@@ -1,14 +1,14 @@
 ---
-title: 了解串流媒體的必要條件
-description: 開始使用Adobe Analytics串流媒體。 了解您需要哪些項目來實作Adobe Analytics for Streaming Media。
+title: 了解串流媒體的先決條件
+description: 開始使用 Adobe Analytics for Streaming Media。 了解實作 Adobe Analytics for Streaming Media 需要哪些條件。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: '"Media Analytics，系統需求"'
+feature: 「Media Analytics、系統需求」
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 93%
 
 在開始實作追蹤前，請先決定與您的情況最為相關的實作：
 
-* **Media Analytics -** 使用最新 Media SDK (標準建議實作) 及/或媒體收集 API (RESTful)
+* **Media Analytics -** 使用最新 Media SDK (標準建議實作) 及/或 Media Collection API (RESTful)
 * **里程碑 -** 舊版 Adobe 追蹤實作
 * **Data Insertion API -** 不使用 Media SDK 實作追蹤
 
@@ -44,7 +44,7 @@ ht-degree: 93%
 
    如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 服務概述](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
+   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 服務總覽](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 
 1. **啟用 Adobe Analytics 報表。**
 
