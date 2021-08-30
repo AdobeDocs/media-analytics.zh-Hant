@@ -1,14 +1,14 @@
 ---
-title: 'AdobeAdobe Analytics中的串流媒體 '
-description: 「深入了解針對內容、音訊和廣告的最新流媒體測量。 了解Adobe Analytics for Streaming Media。」
+title: 'Adobe Analytics 中的 Adobe 串流媒體 '
+description: 「深入探究適用於內容、音訊和廣告的最先進串流媒體測量。 了解 Adobe Analytics for Streaming Media。」
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '880'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Analytics for Streaming Media 可讓您在整個網站上追蹤客戶歷�
 ## 功能 {#features}
 
 Adobe Analytics for Streaming Media 擁有即時監控、詳細分析、可化為實際行動的深入分析和營利商機等多項優勢。
-* **即時分析** — 利用關鍵效能量度（例如媒體開始），跨多個管道做出即時且可操作的決策。
+* **即時分析**—利用媒體開始時間等關鍵效能量度，在多個管道做出即時決策，以利化為實際行動。
 * **促進參與**—透過減少緩衝事件及瞭解廣告在內容中應該播放的時間和位置，提供干擾較少的流暢體驗，促使使用者重複造訪，強化使用者互動。
 * **全方位掌握**—合併所有內容經銷商的多個資料點，以便完整掌控所有媒體活動。透過 Federated Analytics 功能測量所有可能管道的參與度和檢視/收聽次數。
 * **提升精細度**—從最精細的層級評估檢視行為，包括個別訪客的當日時間、每分鐘的同時檢閱者/聽眾人數，以及使用內容的平均持續時間。
