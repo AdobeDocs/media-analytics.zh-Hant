@@ -1,14 +1,14 @@
 ---
 title: 使用 Analytics 2.0 API 取得同時檢閱者 JSON 報表資料
-description: 了解如何使用Analytics 2.0 API取得同時檢閱者報表資料。 檢視範例要求和回應。
+description: 了解如何使用 Analytics 2.0 API 來取得同時檢閱者報表資料。 檢視範例要求與回應。
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: 「Media Analytics、Reports & Analytics基本概念」
+feature: 「Media Analytics、Reports & Analytics 基本知識」
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '190'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
