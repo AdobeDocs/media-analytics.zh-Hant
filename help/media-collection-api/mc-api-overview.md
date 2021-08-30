@@ -1,33 +1,33 @@
 ---
-seo-title: 概觀
-title: 串流媒體收集API概述
-description: 了解媒體收集API，以及您的播放器如何使用RESTful HTTP呼叫追蹤音訊和視訊事件。
+seo-title: 總覽
+title: 串流 Media Collection API 總覽
+description: 了解 Media Collection API 以及您的播放器如何使用 RESTful HTTP 呼叫來追蹤音訊和視訊事件。
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# 概觀{#overview}
+# 總覽{#overview}
 
-媒體收集 API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過媒體收集 API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。
+Media Collection API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過 Media Collection API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。
 
-媒體收集 API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示 Media SDK 文件某些方面也與媒體收集 API 有關。例如，這兩個解決方案都使用相同的[串流媒體參數](/help/metrics-and-metadata/audio-video-parameters.md)，而且收集的串流媒體追蹤資料會產生相同的[報表和分析](/help/media-reports/media-reports-enable.md)。
+Media Collection API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示 Media SDK 文件某些方面也與 Media Collection API 有關。例如，這兩個解決方案都使用相同的[串流媒體參數](/help/metrics-and-metadata/audio-video-parameters.md)，而且收集的串流媒體追蹤資料會產生相同的[報表和分析](/help/media-reports/media-reports-enable.md)。
 
 ## 媒體追蹤資料流程 {#media-tracking-data-flows}
 
-實作媒體收集 API 的媒體播放器會直接向媒體追蹤後端伺服器發出 RESTful API 追蹤呼叫，而實作 Media SDK 的播放器則會向播放器應用程式內的 SDK API 發出追蹤呼叫。透過網路發出呼叫的其中一個效應，就是實作媒體收集 API 的播放器需要處置一些 Media SDK 自動處置的處理工作(詳情請參閱[媒體收集實施](mc-api-impl/mc-api-quick-start.md))。
+實作 Media Collection API 的媒體播放器會直接向媒體追蹤後端伺服器發出 RESTful API 追蹤呼叫，而實作 Media SDK 的播放器則會向播放器應用程式內的 SDK API 發出追蹤呼叫。透過網路發出呼叫的其中一個效應，就是實作 Media Collection API 的播放器需要處置一些 Media SDK 自動處置的處理工作(詳情請參閱[媒體收集實施](mc-api-impl/mc-api-quick-start.md))。
 
-媒體收集 API 擷取的追蹤資料，其傳送和初期處理方式與 Media SDK 播放器擷取的追蹤資料有所不同，不過這兩種解決方案使用的後端處理引擎是一樣的。
+Media Collection API 擷取的追蹤資料，其傳送和初期處理方式與 Media SDK 播放器擷取的追蹤資料有所不同，不過這兩種解決方案使用的後端處理引擎是一樣的。
 
 ![](assets/col_api_overview_simple.png)
 
-## API 概述 {#api-overview}
+## API 總覽 {#api-overview}
 
 **URI：**&#x200B;請向 Adobe 代表索取。
 
