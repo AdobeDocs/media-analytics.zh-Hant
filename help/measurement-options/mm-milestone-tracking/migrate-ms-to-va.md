@@ -1,22 +1,22 @@
 ---
-title: 了解如何從里程碑移轉至Media Analytics
-description: 了解如何將「里程碑」變數變更為「Media Analytics量度」，並將「里程碑」模組方法變更為「Media Analytics」語法。
+title: 了解如何從里程碑移轉至 Media Analytics
+description: 了解如何將里程碑變數變更為 Media Analytics 量度以及如何將里程碑模組方法變更為 Media Analytics 語法。
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '692'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 從里程碑移轉至 Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## 概觀 {#overview}
+## 總覽 {#overview}
 
-「里程碑」和 Media Analytics 追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實作 Media Analytics 的詳細資訊，請參閱 [SDK 概述](/help/sdk-implement/setup/setup-overview.md)和[追蹤概述](/help/sdk-implement/track-av-playback/track-core-overview.md)。
+「里程碑」和 Media Analytics 追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實作 Media Analytics 的詳細資訊，請參閱 [SDK 總覽](/help/sdk-implement/setup/setup-overview.md)和[追蹤總覽](/help/sdk-implement/track-av-playback/track-core-overview.md)。
 
 下列表格為「里程碑」解決方案和 Media Analytics 解決方案的對照表。
 
@@ -76,7 +76,7 @@ ht-degree: 96%
 | mediaLength | `mediaLength`：(必填) 影片長度 (以秒為單位)。 | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
 | mediaPlayerName | `mediaPlayerName`：(必填) 觀看影片所使用的媒體播放器名稱，您希望影片報表中顯示的名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
-| 名稱 | `name`：(必填) 廣告名稱或 ID。 | 名稱 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| name | `name`：(必填) 廣告名稱或 ID。 | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length`：(必填) 廣告長度。 | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`：(必填) 觀看廣告所使用的媒體播放器名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | parentName | `parentName`：內嵌廣告所在主要內容的名稱或 ID。 | 不適用 | 自動繼承。 |
