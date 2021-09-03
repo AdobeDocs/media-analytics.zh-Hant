@@ -5,9 +5,9 @@ exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '499'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 98%
    * 您必須是 Adobe Experience Cloud 客戶。
    * 您必須在網頁上部署 Launch 或 DTM 內嵌程式碼。
    * [Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant)
-   * [Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)
+   * [Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh=Hant)
 
 
 * **用戶端 -** 它們是僅限 Media Analytics 的整合。您可以選擇視訊心率 SDK 與/或 Media Collection API 整合。此路徑可用於任何視訊播放器，包括客戶及/或 OVP 播放器，例如 Brightcove、Ooyala、thePlatform 等。
