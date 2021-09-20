@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 97%
+source-wordcount: '729'
+ht-degree: 90%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 97%
 
    * **標準中繼資料**
 
-      [在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >將標準視訊中繼資料物件附加到媒體物件為選用。
@@ -141,6 +141,14 @@ ht-degree: 97%
 
    ```
    ADBMobile().mediaTrackPlay()
+   ```
+
+1. **更新播放點值**
+
+   媒體播放點變更時，會呼叫`mediaUpdatePlayhead` API以通知SDK。 對於隨選視訊(VOD)，該值是從媒體項目的開頭開始以秒為單位指定的。 對於即時串流，值會指定為自當天午夜UTC以來的秒數。
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **追蹤播放完成**
