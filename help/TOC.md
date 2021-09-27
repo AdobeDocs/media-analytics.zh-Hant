@@ -4,11 +4,11 @@ audience: end-user
 user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
-sub-product: Media Analytics
-source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
-workflow-type: ht
-source-wordcount: '829'
-ht-degree: 100%
+sub-product: media analytics
+source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 99%
 
 ---
 
@@ -215,6 +215,7 @@ ht-degree: 100%
       + [媒體同時檢閱者報表](media-reports/media-default-reports/media-concurrent-viewers.md)
    + 媒體工作區面板 {#media-workspace-panels}
       + [媒體同時檢閱者面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+      + [媒體播放逗留時間面板](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
    + [透過 API 取得同時檢閱者資料](media-reports/media-default-reports/get-concurrent-json20.md)
 + [追蹤已下載的內容](media-collection-api/track-downloaded-content.md)
@@ -231,5 +232,5 @@ ht-degree: 100%
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md)
 -->
