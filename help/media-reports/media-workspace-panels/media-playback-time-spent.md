@@ -4,16 +4,16 @@ description: 「了解如何使用「媒體播放逗留時間」面板來分析�
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
 
 # 媒體播放逗留時間 {#media-playback-time-spent}
 
-分析所花費的播放時間可讓您了解人數高峰或趨勢反轉的時間。 媒體播放逗留時間可提供內容品質、檢視者參與度，以及內容如何影響超時觀看量的寶貴分析。 媒體播放逗留時間功能有助於疑難排解或針對數量或規模進行規劃。
+分析所花費的播放時間可讓您了解人數高峰或趨勢反轉的時間。 媒體播放逗留時間可提供內容品質、檢視者參與度，以及內容如何隨著時間影響收視率的寶貴分析。 媒體播放逗留時間功能有助於疑難排解或針對數量或規模進行規劃。
 
 ## Analysis Workspace中的媒體播放逗留時間面板
 
