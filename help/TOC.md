@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
-workflow-type: ht
-source-wordcount: '832'
-ht-degree: 100%
+source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 99%
 
 ---
 
@@ -218,6 +218,7 @@ ht-degree: 100%
       + [「媒體播放時間」面板](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
    + [透過 API 取得同時檢閱者資料](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [透過API取得媒體播放逗留時間資料](media-reports/media-default-reports/get-mediaplaybacktimespent-json20.md)
 + [追蹤已下載的內容](media-collection-api/track-downloaded-content.md)
 + 播放器狀態追蹤 {#player-state-tracking}
    + [總覽](sdk-implement/player-state-tracking/player-state-overview.md)

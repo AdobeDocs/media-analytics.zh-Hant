@@ -1,24 +1,24 @@
 ---
-title: 使用 Analytics 2.0 API 取得同時檢閱者 JSON 報表資料
-description: 了解如何使用 Analytics 2.0 API 來取得同時檢閱者報表資料。 檢視範例要求與回應。
-uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
+title: 使用Analytics 2.0 API取得媒體播放逗留時間JSON報表資料
+description: 了解如何使用Analytics 2.0 API取得媒體播放逗留時間報表資料。 檢視範例要求與回應。
+uuid: null
+exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 03b274fa0c5580ee2759560efbea45eb308d4278
+source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 100%
+source-wordcount: '205'
+ht-degree: 66%
 
 ---
 
 
-# 使用 Analytics 2.0 API 取得同時檢閱者 JSON 報表資料{#get-concurrent-viewers-json-report-data}
+# 使用Analytics 2.0 API取得媒體播放逗留時間JSON報表資料{#get-media-playback-time-spent-json-report-data}
 
-您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 取得同時檢閱者報表資料。
+您可以使用&#x200B;[_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)取得媒體播放逗留時間報表資料。
 
 1. 使用 UI 上建置的任何區段來篩選資料。若要依據特定內容 ID 進行篩選，請建立新的區段。
-1. 將要求內文中的 `elements` -> `id` 設為 `metrics/concurrent_viewers_visitors`。
+1. 視您要以秒或分鐘為單位輸出，將請求內文中的`elements` -> `id`設為`metrics/playback_time_spent_seconds`或`metrics/playback_time_spent_minutes`。
 1. 要求足夠的資料量。
 
    * 您在報表中指定的資料範圍會&#x200B;_在視訊工作階段結束時_收集所有同時檢閱者資料。
@@ -37,7 +37,7 @@ ht-degree: 100%
     "dimension": "variables/daterangeminute",
     "globalFilters": [
         {
-            "dateRange": "2020-09-02T00:00/2020-09-03T00:00",
+            "dateRange": "2021-09-02T00:00/2021-09-03T00:00",
             "type": "dateRange"
         }
     ],
@@ -45,7 +45,7 @@ ht-degree: 100%
         "metrics": [
             {
                 "columnId": "column1",
-                "id": "metrics/concurrent_viewers_visitors"
+                "id": "metrics/playback_time_spent_minutes"
             }
         ]
     },
@@ -79,21 +79,21 @@ ht-degree: 100%
    "rows":[
       {
          "itemId":"12008020000",
-         "value":"00:00 2020-09-02",
+         "value":"00:00 2021-09-02",
          "data":[
             123.0
          ]
       },
       {
          "itemId":"12008020001",
-         "value":"00:01 2020-09-02",
+         "value":"00:01 2021-09-02",
          "data":[
             143.0
          ]
       },
       {
          "itemId":"12008020002",
-         "value":"00:02 2020-09-02",
+         "value":"00:02 2021-09-02",
          "data":[
             167.0
          ]
@@ -102,7 +102,7 @@ ht-degree: 100%
       ...
       {
          "itemId":"12008022359",
-         "value":"23:59 2020-09-02",
+         "value":"23:59 2021-09-02",
          "data":[
             768.0
          ]
@@ -121,7 +121,7 @@ ht-degree: 100%
 
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows.
+You can extract the Media Playback Time Spent report data using the Experience Cloud API Explorer as follows.
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
@@ -179,7 +179,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
 1. In the form, change **Method** to "Get".
 1. Enter the value of the `reportID` you received in Step 3, and click **Get Response**.
 
-   The concurrent viewers report data, in JSON format, is presented in the Response field.
+   The Media Playback Time Spent report data, in JSON format, is presented in the Response field.
 
    For example:
 
