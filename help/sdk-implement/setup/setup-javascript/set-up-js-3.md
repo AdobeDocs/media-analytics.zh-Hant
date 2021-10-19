@@ -1,13 +1,13 @@
 ---
-title: 如何使用JavaScript 3.x設定Media SDK
-description: 請依照下列步驟，在JavaScript 3.x上設定Media SDK應用程式。
+title: 如何使用 JavaScript 3.x 設定 Media SDK
+description: 請依照這些步驟在 JavaScript 3.x 上設定 Media SDK 應用程式。
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,8 +17,8 @@ ht-degree: 87%
 
 * **取得有效的設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
-* **在您的 `AppMeasurement` 媒體 `Experience Cloud Identity Service` 應用程式中實作和JavaScript適用**
-如需詳細資訊，請參閱 [使用JavaScript實作](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hant) 分析和實 [作Experience Cloud身分服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html)。
+* **在您的媒體應用程式中實作 JavaScript 的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
+如需詳細資訊，請參閱[使用 JavaScript 實作分析](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hant)和[實作 Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hant)。
 
 * **在您的媒體播放器中提供下列功能：**
 
