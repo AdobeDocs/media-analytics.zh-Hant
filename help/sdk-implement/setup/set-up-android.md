@@ -1,20 +1,20 @@
 ---
-title: 如何在Android上設定Media SDK
-description: 請依照下列步驟，在Android上設定Media SDK應用程式。
+title: 如何設定 Android 上的 Media SDK
+description: 請依照這些步驟在 Android 上設定 Media SDK 應用程式。
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 # 設定 Android{#set-up-android}
 
-了解如何為Android裝置設定串流Media Analytics。
+了解如何設定 Android 裝置的 Streaming Media Analytics。
 
 >[!IMPORTANT]
 >
@@ -26,7 +26,7 @@ ht-degree: 93%
 * **取得適用於 Media SDK 的有效設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
 * **在您的應用程式實作 Android 適用的 ADBMobile**
-如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html)。
+如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 Android SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=zh-Hant)。
 
 * **在您的媒體播放器中提供下列功能：**
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
