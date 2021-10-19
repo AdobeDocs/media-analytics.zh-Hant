@@ -1,14 +1,14 @@
 ---
-title: 如何設定Roku適用的Media SDK
-description: 請依照下列步驟，在Roku上設定Media SDK應用程式。
+title: 如何設定 Roku 的 Media SDK
+description: 請依照這些步驟在 Roku 上設定 Media SDK 應用程式。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 79%
 
 Adobe Mobile Services 提供的新使用者介面，將 Adobe Marketing Cloud 適用於行動應用程式的各項行動行銷功能整合在一起。Mobile 服務起初是提供 Adobe Analytics 和 Adobe Target 解決方案的應用程式分析和定位功能流暢整合。
 
-如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)。
+如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=zh-Hant)。
 
 Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScript 中撰寫的 Roku 應用程式、透過對象管理利用和收集觀眾資料，以及透過視訊心率測量視訊參與。
 
@@ -134,7 +134,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    | `visitorMarketingCloudID` | 從訪客 ID 服務中擷取 Experience Cloud 訪客 ID。 <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
    | `visitorSyncIdentifiers` | 透過 Experience Cloud 訪客 ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 `setCustomerIDs`。例如：<br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | 用來在 SDK 上設定適用於廣告的 Roku ID (RIDA)例如︰<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用 Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API 取得適用於廣告的 Roku ID (RIDA)。 |
-   | `getAllIdentifiers` | 傳回SDK儲存的所有識別碼清單，包括Analytics、訪客、Audience Manager和自訂識別碼。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
+   | `getAllIdentifiers` | 傳回 SDK 儲存的所有識別碼清單，包括分析、訪客、Audience Manager 和客戶識別碼。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
    <!--
     Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
@@ -143,32 +143,38 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
 
    <br/><br/>
 
-   **其他公用API**
+   **其他公用 API**
 
    **DebugLogging**
- |方法   |說明 | | — | — | |  `setDebugLogging` |用於啟用或停用SDK的偵錯記錄。<br/><br/>`ADBMobile().setDebugLogging(true)` | |  `getDebugLogging` |若已啟用偵錯記錄，則傳回true。   <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+|  方法   | 說明 |
+| --- | --- |
+| `setDebugLogging` | 用於啟用或停用 SDK 的偵錯記錄。<br/><br/>`ADBMobile().setDebugLogging(true)` |
+| `getDebugLogging` | 如果啟用偵錯記錄，則傳回 True。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    <br/><br/>
 
    **PrivacyStatus**
- |常數   |說明 | | — | — | |  `PRIVACY_STATUS_OPT_IN` |呼叫setPrivacyStatus以選擇加入時要傳遞的常數。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`| |  `PRIVACY_STATUS_OPT_OUT` |呼叫setPrivacyStatus以選擇退出時要傳遞的常數。  <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
+|  常數   | 說明 |
+| --- | --- |
+| `PRIVACY_STATUS_OPT_IN` | 呼叫 setPrivacyStatus 以選擇加入時要傳遞的常數。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
+| `PRIVACY_STATUS_OPT_OUT` | 呼叫 setPrivacyStatus 以選擇退出時要傳遞的常數。 <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
    <br/>
 
    |  方法 | 說明 |
    | --- | --- |
-   | `setPrivacyStatus` | 在SDK上設定隱私權狀態。 <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
-   | `getPrivacyStatus` | 取得SDK上設定的目前隱私權狀態。 <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+   | `setPrivacyStatus` | 設定 SDK 上的隱私權狀態。  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `getPrivacyStatus` | 取得在 SDK 上設定的目前隱私權狀態。  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
    <br/><br/>
    >[!IMPORTANT]
    >
-   >請務必每隔250毫秒呼叫主事件回圈中的`processMessages`和`processMediaMessages`函式，以確保SDK正確傳送Ping。
+   >確保您每 250 ms 呼叫主事件迴圈中的 `processMessages` 和 `processMediaMessages` 函數，以確保 SDK 傳出 Ping。
 
    |  方法 | 說明 |
    | --- | --- |
-   | `processMessages` | 負責將Analytics事件傳遞至SDK以進行處理。 <br/><br/>`ADBMobile().processMessages()` |
-   | `processMediaMessages` | 負責將媒體事件傳遞至SDK以進行處理。<br/><br/>`ADBMobile().processMediaMessages()` |
+   | `processMessages` | 負責傳遞分析事件至要處理的 SDK。  <br/><br/>`ADBMobile().processMessages()` |
+   | `processMediaMessages` | 負責傳遞媒體事件至要處理的 SDK。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
 <!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
