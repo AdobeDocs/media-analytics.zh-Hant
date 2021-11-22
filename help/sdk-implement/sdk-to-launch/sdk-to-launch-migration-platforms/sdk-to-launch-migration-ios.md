@@ -1,13 +1,13 @@
 ---
-title: 「從獨立Media SDK移轉至AdobeLaunch - iOS」
-description: 了解如何從Media SDK移轉至Launch for iOS。
+title: '"從獨立 Media SDK 移轉至 Adobe Launch - iOS"'
+description: 了解如何從 Media SDK 移轉至 iOS 版的 Launch。
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 87%
 
 ### 獨立 Media SDK
 
-在獨立Media SDK中，您可在應用程式中設定追蹤，並在建立追蹤器時將其傳遞至SDK。
+在獨立 Media SDK 中，您可在應用程式中設定追蹤，
+並在建立追蹤器時將其傳遞至 SDK。
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
