@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 407f17a5b1134362c6be7c6bfae909e9e66077be
+source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '828'
 ht-degree: 100%
 
 ---
@@ -145,9 +145,6 @@ ht-degree: 100%
       + [心率參數說明](sdk-implement/validation/heartbeat-params.md)
       + 偵錯 {#debugging}
          + [SDK 偵錯](sdk-implement/validation/debugging/sdk-debugging.md)
-         + [設定 Adobe Debug](sdk-implement/validation/debugging/config-adobe-debug.md)
-         + [建立新的 Debug 報表](sdk-implement/validation/debugging/create-new-debug-report.md)
-         + [Debug 儀表板和報表](sdk-implement/validation/debugging/debug-dash-repts.md)
    + OTT 應用程式中的 Analytics {#analytics-with-ott}
       + [追蹤應用程式狀態](sdk-implement/analytics-with-ott/track-app-states.md)
       + [追蹤應用程式動作](sdk-implement/analytics-with-ott/track-app-actions.md)
