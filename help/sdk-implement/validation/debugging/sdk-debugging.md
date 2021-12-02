@@ -1,14 +1,14 @@
 ---
-title: SDK 偵錯
-description: 了解Media SDK中可用的追蹤/記錄功能。
+title: SDK 除錯
+description: 了解媒體 SDK 提供的追蹤/記錄。
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 819f4a7035e5d9704d17abce6a7cd4c607b7ce39
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
