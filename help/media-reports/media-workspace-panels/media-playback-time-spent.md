@@ -4,7 +4,7 @@ description: 「了解如何使用『媒體播放時間』面板來分析播放�
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
 ht-degree: 100%
 
