@@ -1,24 +1,22 @@
 ---
-title: 使用Analytics 2.0 API取得媒體播放逗留時間JSON報表資料
-description: 了解如何使用Analytics 2.0 API取得媒體播放逗留時間報表資料。 檢視範例要求與回應。
-uuid: null
-exl-id: null
+title: 使用 Analytics 2.0 API 取得媒體播放時間 JSON 報告資料
+description: 了解如何使用 Analytics 2.0 API 取得媒體播放時間報告資料。 檢視範例要求與回應。
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
 workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 
-# 使用Analytics 2.0 API取得媒體播放逗留時間JSON報表資料{#get-media-playback-time-spent-json-report-data}
+# 使用 Analytics 2.0 API 取得媒體播放時間 JSON 報告資料{#get-media-playback-time-spent-json-report-data}
 
-您可以使用&#x200B;[_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html)取得媒體播放逗留時間報表資料。
+您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 取得媒體播放時間報告資料。
 
 1. 使用 UI 上建置的任何區段來篩選資料。若要依據特定內容 ID 進行篩選，請建立新的區段。
-1. 視您要以秒或分鐘為單位輸出，將請求內文中的`elements` -> `id`設為`metrics/playback_time_spent_seconds`或`metrics/playback_time_spent_minutes`。
+1. 視您想要以秒或分輸出而定，請將請求內文中的 `elements` -> `id` 設為 `metrics/playback_time_spent_seconds` 或 `metrics/playback_time_spent_minutes`。
 1. 要求足夠的資料量。
 
    * 您在報表中指定的資料範圍會&#x200B;_在視訊工作階段結束時_收集所有同時檢閱者資料。
