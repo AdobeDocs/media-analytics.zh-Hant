@@ -4,16 +4,20 @@ description: 此主題包含有關 Media Analytics SDK 支援終止的常見問�
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 78%
+source-wordcount: '723'
+ht-degree: 80%
 
 ---
 
 # Media Analytics SDK 支援終止常見問題集
 
-我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。2021 年 8 月 31 日後，Adobe 將不為 Media Analytics SDK 提供修正、作業系統相關更新或支援。在移轉至這些新Experience PlatformSDK的過程中，請記得必須實作[Media Analytics擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)，才能啟用Adobe Analytics for Streaming Media。
+我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。2021 年 8 月 31 日後，Adobe 將不為 Media Analytics SDK 提供修正、作業系統相關更新或支援。在移轉至這些新Experience PlatformSDK的過程中，請記得 [Media Analytics擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) 必須實作，才能啟用Adobe Analytics for Streaming Media。
+
+>[!NOTE]
+>Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)。
+
 
 ## 5 大須知事項
 

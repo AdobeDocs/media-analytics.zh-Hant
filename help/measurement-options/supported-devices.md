@@ -4,10 +4,10 @@ description: 「了解 Adobe Analytics for Streaming Media 所支援的主要裝
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '341'
-ht-degree: 100%
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Media SDK 會因應裝置發佈新版本而定時更新，以便您能將 SDK �
 
 目前支援的裝置和平台如下表所示。若要下載最新版 SDK，請參閱[下載 SDK](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html?lang=zh-Hant)。若裝置不在清單中，請連絡您的客戶服務人員或解決方案顧問，以瞭解該裝置的狀態。
 
-| 串流平台和裝置 |  | Media Launch 擴充功能搭配 AEP Mobile SDK | Media SDK | Media Collection API |
+| 串流平台和裝置 |  | 使用AEP Mobile SDK收集資料 | Media SDK | Media Collection API |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | 網頁/行動網頁 |  |  |  |  |
 |  | JavaScript 瀏覽器 | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
@@ -42,7 +42,7 @@ Media SDK 會因應裝置發佈新版本而定時更新，以便您能將 SDK �
 |  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript) | ![](/help/assets/icon-blue-check.png)<br>(原生) |
 |  | Fire TV (Fire OS) | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
 |  | Android TV | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
-|  | Chromecast |  | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) |
+|  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 |  | 遊戲主機 (例如 Xbox ONE、Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 機上盒 (例如 xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
 |  | 智慧型電視 (例如 Samsung、LG、Sony、Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(Web 型) | ![](/help/assets/icon-blue-check.png) |

@@ -1,13 +1,13 @@
 ---
-title: 'Adobe Analytics 中的 Adobe 串流媒體 '
+title: Adobe Analytics 中的 Adobe 串流媒體
 description: 「深入探究適用於內容、音訊和廣告的最先進串流媒體測量。 了解 Adobe Analytics for Streaming Media。」
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '880'
+source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+workflow-type: tm+mt
+source-wordcount: '930'
 ht-degree: 100%
 
 ---
@@ -37,6 +37,10 @@ Adobe Analytics for Streaming Media 擁有即時監控、詳細分析、可化�
 ## 心率測量 {#heartbeat}
 
 Adobe Analytics 使用「心率」收集視訊量度。視訊播放期間，系統會將心率傳送至心率追蹤伺服器，以測量播放時間。心率呼叫每十秒傳送一次。心率可產生精細的視訊參與量度，以及更精確的視訊流失報表。Adobe Analytics for Streaming Media 使用 Adobe Launch 搭配 Media Analytics 擴充功能、Media SDK 和 Media Collection API 來測量心率。系統會使用 `AppMeasurement` 和 `VisitorID` 元件來接收視訊資料。
+
+>[!NOTE]
+>Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)。
+
 
 使用 Adobe Analytics for Streaming Media 的心率功能有以下優勢：
 
