@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: ht
+source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
+workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -141,32 +141,27 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
     * [GetRIDA()](https://sdkdocs.roku.com/display/sdkdoc/ifDeviceInfo#ifDeviceInfo-GetRIDA())
     -->
 
-   <br/><br/>
-
    **其他公用 API**
 
    **DebugLogging**
-|  方法   | 說明 |
-| --- | --- |
-| `setDebugLogging` | 用於啟用或停用 SDK 的偵錯記錄。<br/><br/>`ADBMobile().setDebugLogging(true)` |
-| `getDebugLogging` | 如果啟用偵錯記錄，則傳回 True。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
-   <br/><br/>
+   |  方法 | 說明 |
+   | --- | --- |
+   | `setDebugLogging` | 用於啟用或停用SDK的偵錯記錄。  <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | 若已啟用偵錯記錄，則傳回true。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
-|  常數   | 說明 |
-| --- | --- |
-| `PRIVACY_STATUS_OPT_IN` | 呼叫 setPrivacyStatus 以選擇加入時要傳遞的常數。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN`|
-| `PRIVACY_STATUS_OPT_OUT` | 呼叫 setPrivacyStatus 以選擇退出時要傳遞的常數。 <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT`|
 
-   <br/>
+   |  常數   | 說明 |
+   | --- | --- |
+   | `PRIVACY_STATUS_OPT_IN` | 呼叫setPrivacyStatus以選擇加入時要傳遞的常數。 <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | 呼叫setPrivacyStatus以選擇退出時要傳遞的常數。 <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  方法 | 說明 |
    | --- | --- |
    | `setPrivacyStatus` | 設定 SDK 上的隱私權狀態。  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | 取得在 SDK 上設定的目前隱私權狀態。  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
-   <br/><br/>
    >[!IMPORTANT]
    >
    >確保您每 250 ms 呼叫主事件迴圈中的 `processMessages` 和 `processMediaMessages` 函數，以確保 SDK 傳出 Ping。
