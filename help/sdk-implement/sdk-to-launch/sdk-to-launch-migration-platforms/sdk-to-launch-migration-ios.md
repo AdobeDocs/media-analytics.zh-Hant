@@ -5,7 +5,7 @@ exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 # 從獨立 Media SDK 移轉至 Adobe Launch - iOS
 
 >[!NOTE]
->Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)。
+>Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hant)。
 
 ## 設定
 
@@ -53,8 +53,7 @@ ADBMediaHeartbeat* tracker =
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK中，您可手動建立 `ADBMediaHeartbeatConfig` 物件
-並設定追蹤參數。實施委派介面公開
+在獨立 Media SDK中，您可手動建立 `ADBMediaHeartbeatConfig` 物件並設定追蹤參數。實施委派介面公開
 `getQoSObject()` 和 `getCurrentPlaybackTime()functions.`
 
 建立 MediaHeartbeat 例項以供追蹤：
@@ -129,9 +128,7 @@ ADBMediaHeartbeat* tracker =
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK 中，實施 `ADBMediaHeartbeartDelegate` 通訊協定的委派物件
-會在建立追蹤器時傳遞。
-當追蹤器呼叫 `getQoSObject()` 和 `getCurrentPlaybackTime()` 介面方法時，
+在獨立 Media SDK 中，實施 `ADBMediaHeartbeartDelegate` 通訊協定的委派物件會在建立追蹤器時傳遞。當追蹤器呼叫 `getQoSObject()` 和 `getCurrentPlaybackTime()` 介面方法時，
 實施應傳回最新的 QoE
 和播放點。
 
@@ -144,8 +141,7 @@ ADBMediaHeartbeat* tracker =
 [媒體 API 參考 - 更新目前的播放點](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
 實施應呼叫追蹤器公開的 `updateQoEObject` 方法，
-以更新 QoE 資訊。您應該在品質量度變更時
-呼叫此方法。
+以更新 QoE 資訊。您應該在品質量度變更時呼叫此方法。
 
 [媒體 API 參考 - 更新 QoE 物件](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
@@ -153,7 +149,7 @@ ADBMediaHeartbeat* tracker =
 
 ### 獨立 Media SDK
 
-* 標準媒體中繼資料:
+* 標準媒體中繼資料：
 
    ```objective-c
    ADBMediaObject *mediaObject =
@@ -207,7 +203,7 @@ ADBMediaHeartbeat* tracker =
 
 ### Launch 擴充功能
 
-* 標準媒體中繼資料:
+* 標準媒體中繼資料：
 
    ```objective-c
    NSDictionary *mediaObject =
