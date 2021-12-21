@@ -1,20 +1,20 @@
 ---
-title: '"從獨立Media SDK移轉至AdobeLaunch - Android"'
-description: 了解如何從Media SDK移轉至Android適用的Launch。
+title: '"從獨立 Media SDK 移轉至 Adobe Launch - Android"'
+description: 了解如何從 Media SDK 移轉至 Android 版的 Launch。
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # 從獨立 Media SDK 移轉至 Adobe Launch - Android
 
 >[!NOTE]
->Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)。
+>Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hant)。
 
 
 ## 設定
@@ -92,8 +92,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 [媒體 API 參考 - 建立媒體追蹤器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-建立追蹤器前，您應先透過行動核心註冊媒體擴充功能與
-相依擴充功能。
+建立追蹤器前，您應先透過行動核心註冊媒體擴充功能與相依擴充功能。
 
 ```java
 // Register the extension once during app launch
@@ -133,16 +132,12 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK 中，實施 `MediaHeartbeartDelegate` 介面的委派物件會在
-建立追蹤器時傳遞。  當追蹤器
-呼叫 `getQoSObject()` 和 `getCurrentPlaybackTime()` 介面方法時，實施應傳回
-最新的 QoE 和播放點。
+在獨立 Media SDK 中，實施 `MediaHeartbeartDelegate` 介面的委派物件會在建立追蹤器時傳遞。  當追蹤器呼叫 `getQoSObject()` 和 `getCurrentPlaybackTime()` 介面方法時，實施應傳回最新的 QoE 和播放點。
 
 ### Launch 擴充功能
 
 實施應呼叫追蹤器公開的 `updateCurrentPlayhead` 方法，
-以更新目前播放器播放點。您應每秒至少
-呼叫一次此方法以精確追蹤。
+以更新目前播放器播放點。您應每秒至少呼叫一次此方法以精確追蹤。
 
 [媒體 API 參考 - 更新目前的播放器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
@@ -185,7 +180,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
    tracker.trackSessionStart(mediaInfo, mediaMetadata);
    ```
 
-* 標準廣告中繼資料:
+* 標準廣告中繼資料：
 
    ```java
    MediaObject adInfo =
@@ -242,7 +237,7 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
    tracker.trackSessionStart(mediaInfo, mediaMetadata);
    ```
 
-* 標準廣告中繼資料:
+* 標準廣告中繼資料：
 
    ```java
    HashMap<String, Object> adObject =
