@@ -1,27 +1,27 @@
 ---
-title: 存取下載Media Analytics SDK的連結
+title: 存取下載 Media Analytics SDK 的連結
 description: 各平台適用的 SDK 下載內容連結，包括 Android、iOS、JavaScript、Chromecast 和 Roku。
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '602'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # 下載 SDK{#download-sdks}
 
-本頁的資訊包含下載最新3.x和2.x Media SDK的連結。 1.x舊版Media SDK和Media Analytics Launch擴充功能也隨附連結。
+本頁資訊包含下載最新 3.x 和 2.x Media SDK 的連結。此外也包含了 1.x 舊版 Media SDK 和 Media Analytics Launch 擴充功能的連結。
 
 >[!IMPORTANT]
 >
 >我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/sdk-implement/end-of-support-faqs.md)。
 
 >[!NOTE]
->Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=en)。
+>Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hant)。
 
 
 
@@ -45,7 +45,7 @@ ht-degree: 90%
 
 ## Media Analytics Launch 擴充功能 {#media-analytics-launch-extension}
 
-| MA 啟動元件   | 文件 | 範例 |
+| MA Launch 元件   | 文件 | 範例 |
 |---|---|---|
 | **網頁擴充功能** | [Adobe Media Analytics for Audio and Video 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html) | [Adobe Media Analytics for Audio and Video 擴充功能](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/2.x) |
 | **網頁擴充功能 (3.x SDK)** | [Adobe Media Analytics for Audio and Video 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html) | [Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
@@ -59,5 +59,5 @@ ht-degree: 90%
 | iOS | [iOS 適用的 SDK v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [快速入門 - iOS 適用的媒體 1.x](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [JavaScript 適用的 SDK v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [快速入門 - JS 適用的媒體 1.x](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [TVML 適用的 SDK v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [快速入門 - TVML 適用的 Media 1.x](setup/vhl_tvml.pdf) |
-| Apple TV | Apple TV 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)) | [快速入門 - Apple TV 適用的媒體 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | Chromecast 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/marketing-cloud/contact-support.html)) | [快速入門 - Chromecast 適用的媒體 1.x](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | Apple TV 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)) | [快速入門 - Apple TV 適用的媒體 1.x](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | Chromecast 適用的 SDK v1.0.0 (若要取得舊版 1.x SDK，請聯絡[客戶服務](https://helpx.adobe.com/tw/marketing-cloud/contact-support.html)) | [快速入門 - Chromecast 適用的媒體 1.x](setup/chromecast_1.x_sdk.pdf) |
