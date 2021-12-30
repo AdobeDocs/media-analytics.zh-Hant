@@ -6,9 +6,9 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -147,15 +147,15 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
 
    |  方法 | 說明 |
    | --- | --- |
-   | `setDebugLogging` | 用於啟用或停用SDK的偵錯記錄。  <br/><br/>`ADBMobile().setDebugLogging(true)` |
-   | `getDebugLogging` | 若已啟用偵錯記錄，則傳回true。  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+   | `setDebugLogging` | 用於啟用或停用 SDK 的偵錯記錄。<br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | 如果啟用偵錯記錄，則傳回 True。<br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
 
    |  常數   | 說明 |
    | --- | --- |
-   | `PRIVACY_STATUS_OPT_IN` | 呼叫setPrivacyStatus以選擇加入時要傳遞的常數。 <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
-   | `PRIVACY_STATUS_OPT_OUT` | 呼叫setPrivacyStatus以選擇退出時要傳遞的常數。 <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
+   | `PRIVACY_STATUS_OPT_IN` | 呼叫 setPrivacyStatus 以選擇加入時要傳遞的常數。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_OUT` | 呼叫 setPrivacyStatus 以選擇退出時要傳遞的常數。<br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  方法 | 說明 |
    | --- | --- |
