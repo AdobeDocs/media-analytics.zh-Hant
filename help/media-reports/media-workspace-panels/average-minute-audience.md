@@ -1,27 +1,27 @@
 ---
-title: 媒體平均分鐘受眾
-description: 瞭解如何使用「媒體平均分鐘受眾」面板_____。
+title: 媒體平均每分鐘觀眾數
+description: 了解如何使用「媒體平均每分鐘觀眾數」面板來進行______。
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: 741491f996910a7e441fcc6792fab4a7534cd123
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
-ht-degree: 7%
+ht-degree: 100%
 
 ---
 
-# 媒體平均分鐘受眾 {#media-average-minute-audience}
+# 媒體平均每分鐘觀眾數 {#media-average-minute-audience}
 
-媒體分析客戶可以使用平均分鐘受眾面板更好地瞭解其內容的平均消費量。 平均分鐘觀眾支援任何長度或類型的節目比較。 此外，客戶可以將這個數字平均分鐘觀眾與線性電視平均分鐘指標進行比較或追加。 此面板提供了更大的靈活性，可以測量自定義時段的平均受眾，以及在事實發生後更新持續時間分類的時間。 當前平均分鐘受眾度量僅在處理時間持續時間可用時才起作用。
+Media Analytics 客戶可以使用「平均每分鐘觀眾數」面板來更了解其內容的平均使用量。 「平均每分鐘觀眾數」可比較任何長度或類型的節目。 此外，觀眾也可以比較這個數位「平均每分鐘觀眾數」，或是將其附加到線性電視的平均每分鐘指標。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及事後更新了持續時間分類時的平均觀眾數。 目前的「平均每分鐘觀眾數」指標只有在處理時有提供持續時間時才有效。
 
-## Analysis Workspace媒體平均分鐘觀眾小組
+## Analysis Workspace 中的「媒體平均每分鐘觀眾數」面板
 
-在Analysis Workspace，平均分鐘受眾是查看媒體流所花費的時間除以內容持續時間或期間和選定粒度的總選擇。
+在 Analysis Workspace 中，「平均每分鐘觀眾數」是指觀看您的媒體串流所花的時間除以內容的持續時間或是時段總選擇和所選的粒度。
 
 
-「媒體平均分鐘受眾」面板按選定的特定內容提供平均分鐘受眾分析（如果使用「分類」提供持續時間）。
+如果使用「分類」提供持續時間，則「媒體平均每分鐘觀眾數」面板會依所選的特定內容提供平均每分鐘觀眾數分析。
 
-「平均分鐘受眾」面板還提供了選定時間段內的分析，這些分析可以按特定內容進行篩選 — 無論持續時間是否使用「分類」可用。 要訪問「媒體平均分鐘受眾面板」，請導航到啟用了「媒體分析」元件的報告套件。 然後，按一下最左側的面板圖示，並將面板拖放到您的 Analysis Workspace 專案中。[了解更多...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/c-panels/average-minute-audience-panel.html)
+「平均每分鐘觀眾數」面板也會提供在所選的時段內可依特定內容篩選的分析，無論是否使用「分類」提供持續時間。 若要存取「媒體平均每分鐘觀眾數」面板，可瀏覽至啟用 Media Analytics 元件的報告套裝。 然後，按一下最左側的面板圖示，並將面板拖放到您的 Analysis Workspace 專案中。[了解更多...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/c-panels/average-minute-audience-panel.html)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
