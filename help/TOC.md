@@ -6,14 +6,14 @@ breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 5465631bf29e746d7d5dc07603f57fd7033935c4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Analytics用於流媒體 {#using}
+# Adobe Analytics for Streaming Media {#using}
 
 + [在 Adobe Analytics 中測量串流媒體](media-overview.md)
 + [支援的裝置和平台](measurement-options/supported-devices.md)
@@ -211,8 +211,8 @@ ht-degree: 99%
       + [媒體播出時段報表](media-reports/media-default-reports/media-reports-daypart.md)
       + [媒體同時檢閱者報表](media-reports/media-default-reports/media-concurrent-viewers.md)
    + 媒體工作區面板 {#media-workspace-panels}
-   + [媒體平均分鐘受眾面板](media-reports/media-workspace-panels/average-minute-audience.md)
-   + [媒體同時檢閱者面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+   + [「媒體平均每分鐘觀眾數」面板](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [「媒體同時檢閱者」面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [「媒體播放時間」面板](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
    + [透過 API 取得同時檢閱者資料](media-reports/media-default-reports/get-concurrent-json20.md)
