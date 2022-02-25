@@ -7,7 +7,7 @@ exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ Media Analytics 客戶可以使用「平均每分鐘觀眾數」面板來更了�
 
 如果使用「分類」提供持續時間，則「媒體平均每分鐘觀眾數」面板會依所選的特定內容提供平均每分鐘觀眾數分析。
 
-「平均每分鐘觀眾數」面板也會提供在所選的時段內可依特定內容篩選的分析，無論是否使用「分類」提供持續時間。 若要存取「媒體平均每分鐘觀眾數」面板，可瀏覽至啟用 Media Analytics 元件的報告套裝。 然後，按一下最左側的面板圖示，並將面板拖放到您的 Analysis Workspace 專案中。[了解更多...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
+「平均每分鐘觀眾數」面板也會提供在所選的時段內可依特定內容篩選的分析，無論是否使用「分類」提供持續時間。 若要存取「媒體平均每分鐘觀眾數」面板，可瀏覽至啟用 Media Analytics 元件的報告套裝。 然後，按一下最左側的面板圖示，並將面板拖放到您的 Analysis Workspace 專案中。[了解更多...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=zh-Hant)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
