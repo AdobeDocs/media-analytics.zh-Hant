@@ -4,14 +4,19 @@ description: 瞭解如何使用「媒體平均分鐘受眾」面板分析特定�
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
-source-git-commit: 806d3e68eb32adef2af8629474fa5c69a280e433
+source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 89%
+source-wordcount: '271'
+ht-degree: 90%
 
 ---
 
 # 媒體平均每分鐘觀眾數 {#media-average-minute-audience}
+
+>[!NOTE]
+>
+>此功能目前在有限測試中。
+
 
 Media Analytics 客戶可以使用「平均每分鐘觀眾數」面板來更了解其內容的平均使用量。 「平均每分鐘觀眾數」可比較任何長度或類型的節目。 此外，觀眾也可以比較這個數位「平均每分鐘觀眾數」，或是將其附加到線性電視的平均每分鐘指標。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及事後更新了持續時間分類時的平均觀眾數。 目前的「平均每分鐘觀眾數」指標只有在處理時有提供持續時間時才有效。
 
