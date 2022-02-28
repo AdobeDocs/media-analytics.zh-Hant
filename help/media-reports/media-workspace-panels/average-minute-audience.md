@@ -1,13 +1,13 @@
 ---
 title: 媒體平均每分鐘觀眾數
-description: 瞭解如何使用「媒體平均分鐘受眾」面板分析特定內容或自定義時間段內的平均分鐘受眾。
+description: 了解如何使用「媒體平均每分鐘觀眾數」面板，依特定內容或自訂時段來分析平均每分鐘觀眾數。
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
