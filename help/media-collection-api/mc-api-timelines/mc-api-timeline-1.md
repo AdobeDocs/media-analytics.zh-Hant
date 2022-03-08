@@ -1,18 +1,18 @@
 ---
-title: 了解從內容結束到結束�的媒體追蹤時間軸檢視
-description: 深入了解播放點時間軸和對應使用者�的動作。 了解每個動作的詳細資料及其隨附的要求。
+title: 瞭解從內容結束�到媒體跟蹤時間線視圖
+description: 深入挖掘播放頭時間軸和相應用戶�的操作。 瞭解每個操作及其隨附請求的詳細資訊。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 97%
+source-wordcount: '1203'
+ht-degree: 96%
 
 ---
 
-# 時間軸 1 - 檢視內容到結束為止{#timeline-view-to-end-of-content}
+# 時間軸 1 - 檢視到內容結尾{#timeline-view-to-end-of-content}
 
 ## VOD、前段廣告、暫停、緩衝、檢視內容到結束為止
 
@@ -136,6 +136,8 @@ ht-degree: 97%
     }
 }
 ```
+
+**注：在AdBreakStart和AdStart事件之間不應有任何其他回放事件。**
 
 ### 動作 5 - 廣告 Ping {#Action-5}
 
