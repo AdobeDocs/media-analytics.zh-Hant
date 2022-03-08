@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Chromecast上追蹤核心播放
-description: 了解如何在Chromecast上使用Media SDK實作核心追蹤。
+title: 學習如何在Chromecast上跟蹤核心播放
+description: 瞭解如何使用Chromecast上的Media SDK實現核心跟蹤。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 96%
+source-wordcount: '750'
+ht-degree: 85%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 96%
 
    **`MediaType`常數:**
 
-   [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
+   [ADBMobile介質](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
 1. **附加視訊中繼資料**
 
@@ -87,6 +87,14 @@ ht-degree: 96%
 
    ```
    ADBMobile.media.trackPlay();
+   ```
+
+1. **更新播放頭值**
+
+   更新 `mediaUpdatePlayhead`「在播放頭更改時多次定位值。 <br /> 對於視頻點播(VOD)，從媒體項的開始以秒為單位指定該值。 <br /> 對於即時流，如果播放器未提供有關內容持續時間的資訊，則可以將該值指定為自該天的午夜UTC以來的秒數。 <br />  注：使用進度標籤時，需要內容持續時間，並且需要以從媒體項開始開始以秒數（從0開始）更新播放頭。
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **追蹤播放完成**

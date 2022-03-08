@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Roku上追蹤核心播放
-description: 了解如何在Roku上使用Media SDK實作核心追蹤。
+title: 瞭解如何跟蹤Roku上的核心播放
+description: 瞭解如何使用Roku上的Media SDK實現核心跟蹤。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
+source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 90%
+source-wordcount: '771'
+ht-degree: 85%
 
 ---
 
@@ -103,7 +103,7 @@ ht-degree: 90%
 
    * **標準中繼資料**
 
-   [在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[在 Roku 上實作標準中繼資料](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >將標準視訊中繼資料物件附加到媒體物件為選用。
@@ -143,9 +143,10 @@ ht-degree: 90%
    ADBMobile().mediaTrackPlay()
    ```
 
-1. **更新播放點值**
+1. **更新播放頭值**
 
-   媒體播放點變更時，會呼叫`mediaUpdatePlayhead` API以通知SDK。 對於隨選視訊(VOD)，該值是從媒體項目的開頭開始以秒為單位指定的。 對於即時串流，值會指定為自當天午夜UTC以來的秒數。
+   當媒體播放頭更改時通過調用通知SDK `mediaUpdatePlayhead` API。 <br /> 對於視頻點播(VOD)，從媒體項的開始以秒為單位指定該值。 <br /> 對於即時流，如果播放器未提供有關內容持續時間的資訊，則可以將該值指定為自該天的午夜UTC以來的秒數。 <br /> 注：使用進度標籤時，需要內容持續時間，並且需要以從媒體項開始開始以秒數（從0開始）更新播放頭。
+
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)

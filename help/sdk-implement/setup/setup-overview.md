@@ -1,14 +1,14 @@
 ---
-title: 實作Media SDK說明
-description: 「了解如何在行動裝置、OTT和瀏覽器(JS)應用程式中，為媒體追蹤設定Media SDK。」
+title: 實施媒體SDK說明
+description: 「瞭解如何在移動、OTT和瀏覽器(JS)應用程式中設定媒體跟蹤的媒體SDK。」
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 94%
+source-wordcount: '781'
+ht-degree: 89%
 
 ---
 
@@ -53,14 +53,14 @@ ht-degree: 94%
    | `appVersion` | 媒體播放器應用程式/SDK 的版本 | 無 | 空字串 |
    | `playerName` | 使用的媒體播放器名稱，例如「AVPlayer」、「HTML5 播放器」、「我的自訂播放器」 | 無 | 空字串 |
    | `ssl` | 指出是否應透過 HTTPS 進行呼叫 | 無 | false |
-   | `debugLogging` | 指出是否已啟用除錯記錄 | 無 | false |
+   | `debugLogging` | 指出是否已啟用除錯記錄 | 無 | 假 |
 
 1. 實作 `MediaHeartbeatDelegate`。
 
    |  方法名稱  |  說明 | 必填 |
    | --- | --- | :---: |
    | `getQoSObject()` | 傳回包含目前 QoS 資訊的 `MediaObject` 例項。將在播放工作階段期間呼叫此方法多次。播放器實施必須一律傳回最新可用的 QoS 資料。 | 是 |
-   | `getCurrentPlaybackTime()` | 傳回播放點的目前位置。對於 VOD 追蹤，該值是從媒體項目的開頭開始以秒為單位指定的。對於「線性/即時」追蹤，值會指定為自當天午夜UTC以來的秒數。 | 是 |
+   | `getCurrentPlaybackTime()` | 傳回播放點的目前位置。<br />對於 VOD 追蹤，該值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於即時流，如果播放器未提供有關內容持續時間的資訊，則可以將該值指定為自該天的午夜UTC以來的秒數。 <br /> 注：使用進度標籤時，需要內容持續時間，並且需要以從媒體項開始開始以秒數（從0開始）更新播放頭。 | 是 |
 
    >[!TIP]
    >
@@ -150,7 +150,7 @@ Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫：
 
 | Video Analytics 1.x SDK |  開發人員指南 (僅提供 PDF) |
 | --- | --- |
-| Android | [為 Android 進行配置 ](vhl-dev-guide-v15_android.pdf) |
+| 安卓 | [為 Android 進行配置 ](vhl-dev-guide-v15_android.pdf) |
 | AppleTV | [為 AppleTV 進行配置 ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [為 Chromecast 進行配置 ](chromecast_1.x_sdk.pdf) |
 | iOS 應用程式 | [為 iOS 進行配置 ](vhl-dev-guide-v15_ios.pdf) |

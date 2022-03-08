@@ -1,14 +1,14 @@
 ---
-title: 即時主要內容
-description: 檢視如何使用Media SDK追蹤即時內容的範例。
+title: 即時主內容
+description: 查看如何使用Media SDK跟蹤即時內容的示例。
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 75%
+source-wordcount: '577'
+ht-degree: 71%
 
 ---
 
@@ -59,17 +59,17 @@ ht-degree: 75%
 
 ## 播放點值設定
 
-若為「即時」資料流，您必須將播放點值設為當天午夜UTC以來的秒數，這樣分析師就能在報表中判斷使用者在24小時檢視內要加入和離開「即時」資料流的時間點。
+對於LIVE流，您需要將playhead值設定為自該天午夜UTC以來的秒數，以便在報告中，分析員可以確定用戶在24小時視圖內加入和離開LIVE流的時間點。
 
 ### 開始時
 
-若為「即時」媒體，當使用者開始播放資料流時，您必須將`l:event:playhead`設定為自當天午夜UTC以來的秒數。 與此相對的是，在 VOD 中，您會將播放點設為「0」。
+對於LIVE媒體，當用戶開始播放流時，需要設定 `l:event:playhead` 到該天午夜UTC後的秒數。 與此相對的是，在 VOD 中，您會將播放點設為「0」。注：使用進度標籤時，需要內容持續時間，並且需要以從媒體項開始開始以秒數（從0開始）更新播放頭。
 
-例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。接著，假設使用者在中午 12:00 開始播放該「即時」資料流。此情境中，您應將`l:event:playhead`設為43200（自當天午夜UTC以秒為單位的12小時）。
+例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。接著，假設使用者在中午 12:00 開始播放該「即時」資料流。在此方案中，應設定 `l:event:playhead` 到43200（自UTC當天午夜以秒計的12小時）。
 
 ### 暫停時
 
-使用者暫停播放時，必須套用開始播放時所套用的同一個「即時播放點」邏輯。當使用者返回播放「即時」資料流時，您必鬚根據自午夜UTC以來的新秒數&#x200B;_not_&#x200B;設定`l:event:playhead`值，使其達到使用者暫停「即時」資料流的點。
+使用者暫停播放時，必須套用開始播放時所套用的同一個「即時播放點」邏輯。當用戶返回播放LIVE流時，必須設定 `l:event:playhead` 值根據自午夜UTC以來的新秒數， _不_ 到用戶暫停LIVE流的點。
 
 ## 程式碼範例 {#sample-code}
 
