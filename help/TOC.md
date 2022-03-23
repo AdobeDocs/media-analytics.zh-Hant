@@ -6,14 +6,14 @@ breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
 ht-degree: 100%
 
 ---
 
 
-# Adobe Analytics用於流媒體 {#using}
+# Adobe Analytics for Streaming Media {#using}
 
 + [在 Adobe Analytics 中測量串流媒體](media-overview.md)
 + [支援的裝置和平台](measurement-options/supported-devices.md)
