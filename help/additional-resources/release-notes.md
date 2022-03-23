@@ -2,17 +2,17 @@
 title: Adobe Analytics的流媒體發行說明
 description: 查看Adobe Analytics發行說明。
 feature: Release Notes
-source-git-commit: c9a1007e0d2ae37014faeffebe89a14175c8506f
+exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
+source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 67%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-
 # 《Adobe Analytics流媒體發佈說明》（2022年3月）
 
-**上次更新**:2022年3月3日
+**上次更新**:2022年3月23日
 
 ## *最新發行說明*
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 
 | 功能 | 說明 | 目標日期 |
 | ----------- | ---------- | ------- |
-| **平均每分鐘觀眾數** | Media Analytics客戶可以使用「平均分鐘受眾」面板更好地瞭解平均內容消耗。 <br>「平均每分鐘觀眾數」可比較任何長度或類型的節目。 此外，您可以將數字平均分鐘觀眾數與線性電視平均分鐘指標進行比較或追加。 此面板提供了更大的靈活性，可以測量自定義時段的平均受眾以及更新持續時間分類的時間。  [了解更多](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | **有限發行** <br>2022年2月16日 |
+| **平均每分鐘觀眾數** | Media Analytics客戶可以使用「平均分鐘受眾」面板更好地瞭解平均內容消耗。 <br>「平均每分鐘觀眾數」可比較任何長度或類型的節目。 此外，您可以將數字平均分鐘觀眾數與線性電視平均分鐘指標進行比較或追加。 此面板提供了更大的靈活性，可以測量自定義時段的平均受眾以及更新持續時間分類的時間。  [了解更多](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022 年 16 月 3 日 |
 
 ## 流媒體幫助資源分析
 
