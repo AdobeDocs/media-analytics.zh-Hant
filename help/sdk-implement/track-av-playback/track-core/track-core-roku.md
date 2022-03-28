@@ -1,14 +1,14 @@
 ---
-title: 瞭解如何跟蹤Roku上的核心播放
-description: 瞭解如何使用Roku上的Media SDK實現核心跟蹤。
+title: 了解如何在 Roku 上追蹤核心播放
+description: 了解如何在 Roku 上使用 Media SDK 實施核心追蹤。
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -143,9 +143,9 @@ ht-degree: 85%
    ADBMobile().mediaTrackPlay()
    ```
 
-1. **更新播放頭值**
+1. **更新播放點值**
 
-   當媒體播放頭更改時通過調用通知SDK `mediaUpdatePlayhead` API。 <br /> 對於視頻點播(VOD)，從媒體項的開始以秒為單位指定該值。 <br /> 對於即時流，如果播放器未提供有關內容持續時間的資訊，則可以將該值指定為自該天的午夜UTC以來的秒數。 <br /> 注：使用進度標籤時，需要內容持續時間，並且需要以從媒體項開始開始以秒數（從0開始）更新播放頭。
+   當媒體播放點發生變更時，透過呼叫 `mediaUpdatePlayhead` API 來通知 SDK。<br /> 對於隨選影片 (VOD)，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。<br /> 注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。
 
 
    ```
@@ -197,5 +197,5 @@ ht-degree: 85%
    >[!TIP]
    >這可能與在步驟 4 使用的事件來源相同。在視訊播放繼續時，使用後續的 `trackPause()` API 呼叫確保 `trackPlay()` API 呼叫成對。
 
-* 追蹤案例：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤情境：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 Roku SDK 包含範例播放器。
