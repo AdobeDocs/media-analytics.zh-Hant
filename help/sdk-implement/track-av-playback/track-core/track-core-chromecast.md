@@ -1,14 +1,14 @@
 ---
-title: 學習如何在Chromecast上跟蹤核心播放
-description: 瞭解如何使用Chromecast上的Media SDK實現核心跟蹤。
+title: 了解如何在 Chromecast 上追蹤核心播放
+description: 了解如何在 Chromecast 上使用 Media SDK 實施核心追蹤。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 85%
 
    識別使用者何時觸發播放的意圖 (使用者點擊「播放」及/或開啟自動播放) 並建立 `MediaObject` 例項。
 
-   **`MediaObject`API 參考資料:**
+   **`MediaObject`API 參考資料：**
 
    [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
 
@@ -32,13 +32,13 @@ ht-degree: 85%
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>);
    ```
 
-   **`StreamType`常數:**
+   **`StreamType`常數：**
 
    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
-   **`MediaType`常數:**
+   **`MediaType`常數：**
 
-   [ADBMobile介質](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
+   [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
 1. **附加視訊中繼資料**
 
@@ -89,9 +89,9 @@ ht-degree: 85%
    ADBMobile.media.trackPlay();
    ```
 
-1. **更新播放頭值**
+1. **更新播放點值**
 
-   更新 `mediaUpdatePlayhead`「在播放頭更改時多次定位值。 <br /> 對於視頻點播(VOD)，從媒體項的開始以秒為單位指定該值。 <br /> 對於即時流，如果播放器未提供有關內容持續時間的資訊，則可以將該值指定為自該天的午夜UTC以來的秒數。 <br />  注：使用進度標籤時，需要內容持續時間，並且需要以從媒體項開始開始以秒數（從0開始）更新播放頭。
+   播放點變更時多次更新 `mediaUpdatePlayhead` 位置值。<br /> 對於隨選影片 (VOD)，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。<br />  注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -144,5 +144,5 @@ ht-degree: 85%
    >
    >這可能與在步驟 4 使用的事件來源相同。在視訊播放繼續時，使用後續的 `trackPause()` API 呼叫確保 `trackPlay()` API 呼叫成對。
 
-* 追蹤案例：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤情境：[沒有廣告的 VOD 播放](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 Chromecast SDK 包含範例播放器。
