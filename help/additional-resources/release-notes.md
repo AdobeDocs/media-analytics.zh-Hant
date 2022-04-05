@@ -3,10 +3,10 @@ title: Adobe Analytics的流媒體發行說明
 description: 查看Adobe Analytics發行說明。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '525'
+ht-degree: 68%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 | 功能 | 說明 | 目標日期 |
 | ----------- | ---------- | ------- |
-| **平均每分鐘觀眾數** | Media Analytics客戶可以使用「平均分鐘受眾」面板更好地瞭解平均內容消耗。 <br>「平均每分鐘觀眾數」可比較任何長度或類型的節目。 此外，您可以將數字平均分鐘觀眾數與線性電視平均分鐘指標進行比較或追加。 此面板提供了更大的靈活性，可以測量自定義時段的平均受眾以及更新持續時間分類的時間。  [了解更多](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022 年 16 月 3 日 |
+| **平均每分鐘觀眾數** | Media Analytics客戶可以使用「平均分鐘受眾」面板更好地瞭解平均內容消耗。 <br>「平均每分鐘觀眾數」可比較任何長度或類型的節目。 此外，您可以將數字平均分鐘觀眾數與線性電視平均分鐘指標進行比較或追加。 此面板提供了更大的靈活性，可以測量自定義時段的平均受眾以及更新持續時間分類的時間。  [了解更多](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 2022 年 3 月 16 日 |
 
 ## 流媒體幫助資源分析
 
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 | 功能 | 一般可用性 | 說明 |
 | ----------- | ---------- | -------------- |
-| **媒體播放時間** | 2021 年 9 月 28 日 | Adobe 串流媒體播放時間提供寶貴的觀眾參與度深入分析，並可讓媒體組織透過進階花費時間分析及時段功能，以每分鐘的使用者參與度取得更深入、更細微的分析。您可以觀察在特定時間點觀看您的媒體串流所花費的時間多寡。您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。[了解更多...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **媒體播放時間** | 2021 年 9 月 28 日 | Adobe 串流媒體播放時間提供寶貴的觀眾參與度深入分析，並可讓媒體組織透過進階花費時間分析及時段功能，以每分鐘的使用者參與度取得更深入、更細微的分析。您可以觀察在特定時間點觀看您的媒體串流所花費的時間多寡。您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。[了解更多...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## 2021 年 1 月
 
@@ -65,7 +65,7 @@ Media Analytics 新功能
 
 | 功能 | 一般可用性 | 說明 |
 | -------- | -------------------- | ----------- |
-| 工作區&#x200B;**的**「媒體同時檢閱者」面板 | 2020 年 9 月 17 日 | 「媒體並行檢視者」面板可供您了解並行檢視的尖峰或趨勢反轉的發生位置。這項功能提供內容品質和檢視者互動的重要分析，有助於疑難排解或依數量/規模完成規劃。[了解更多…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| 工作區&#x200B;**的**「媒體同時檢閱者」面板 | 2020 年 9 月 17 日 | 「媒體並行檢視者」面板可供您了解並行檢視的尖峰或趨勢反轉的發生位置。這項功能提供內容品質和檢視者互動的重要分析，有助於疑難排解或依數量/規模完成規劃。[了解更多…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## 2020 年 7 月
