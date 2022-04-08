@@ -5,9 +5,9 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d2a6f9648b682079ca858e9025d41dcb9dc6554f
+source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '952'
 ht-degree: 96%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 96%
 
 必須在傳送媒體資料之前設定收集媒體測量的每個報表套裝。
 
-高級客戶只有在啟用了「介質核心」並啟用了跟蹤功能後，才能使用Analysis Workspace的介質面板 [體驗質量](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en)。
+高級客戶只有在啟用了媒體核心並啟用了跟蹤功能後才能使用Analysis Workspace的媒體面板 [體驗質量](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en)。
 
 >[!TIP]
 >
