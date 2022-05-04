@@ -3,11 +3,11 @@ title: 媒體總覽
 description: 使用「媒體總覽」儀表板來顯示彙總的測量資料。 了解如何快速地監控媒體效能。
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: 「Media Analytics、Reports & Analytics 基本知識」
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: ht
-source-wordcount: '112'
+source-wordcount: '107'
 ht-degree: 100%
 
 ---
