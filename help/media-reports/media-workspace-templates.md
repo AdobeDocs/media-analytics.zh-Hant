@@ -3,11 +3,11 @@ title: 媒體工作區範本
 description: 使用媒體工作區範本可分析您的追蹤資料。 選擇用來擷取或串流媒體的標準範本，或建立您的自訂範本。
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-feature: 「Media Analytics、Workspace 基本知識」
+feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: ht
-source-wordcount: '214'
+source-wordcount: '210'
 ht-degree: 100%
 
 ---
