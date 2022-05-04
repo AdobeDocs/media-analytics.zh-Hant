@@ -3,13 +3,13 @@ title: 使用 Analytics 2.0 API 取得媒體播放時間 JSON 報告資料
 description: 了解如何使用 Analytics 2.0 API 取得媒體播放時間報告資料。 檢視範例要求與回應。
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
-workflow-type: tm+mt
+exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
+workflow-type: ht
 source-wordcount: '205'
 ht-degree: 100%
 
 ---
-
 
 # 使用 Analytics 2.0 API 取得媒體播放時間 JSON 報告資料{#get-media-playback-time-spent-json-report-data}
 
