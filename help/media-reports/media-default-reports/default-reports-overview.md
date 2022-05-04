@@ -3,11 +3,11 @@ title: 預設報表總覽
 description: 「了解報表類型以及用來在您的網站上追蹤媒體的量度。 探索適用於媒體核心模組的儀表板式報表。」
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-feature: 「Media Analytics、Reports & Analytics 基本知識」
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: ht
-source-wordcount: '355'
+source-wordcount: '350'
 ht-degree: 100%
 
 ---
