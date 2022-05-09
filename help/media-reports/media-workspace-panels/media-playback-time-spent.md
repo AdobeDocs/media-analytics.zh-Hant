@@ -1,9 +1,10 @@
 ---
 title: 媒體播放時間
-description: 「了解如何使用『媒體播放時間』面板來分析播放時間，並了解尖峰同時觀看人數和下降發生在何處。」
+description: 了解如何使用「媒體播放時間」面板來分析播放時間，並了解尖峰並行存取和下降發生在何處。
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
 workflow-type: ht
 source-wordcount: '219'
 ht-degree: 100%
