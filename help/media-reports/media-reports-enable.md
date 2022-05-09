@@ -6,17 +6,17 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 啟用媒體報表{#media-reports-enablement}
 
-必須在傳送媒體資料之前設定收集媒體測量的每個報表套裝。
+在傳送媒體資料之前，必須先設定好收集媒體量度的每個報表套裝。
 
-高級客戶只有在啟用了媒體核心並啟用了跟蹤功能後才能使用Analysis Workspace的媒體面板 [體驗質量](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en)。
+進階客戶在啟用「媒體核心」並啟用[體驗品質](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=zh-Hant)的追蹤以後，就可以在 Analysis Workspace 中使用媒體面板。
 
 >[!TIP]
 >
