@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: 6794ba332945047c821628b79e6e796de321fbeb
+workflow-type: tm+mt
+source-wordcount: '837'
+ht-degree: 99%
 
 ---
 
@@ -222,6 +222,7 @@ ht-degree: 100%
    + [總覽](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準和自訂狀態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [實作與報告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [多播放器狀態追蹤](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [播放器狀態追蹤範例](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
 + 其他資源 {#additional-resources}
