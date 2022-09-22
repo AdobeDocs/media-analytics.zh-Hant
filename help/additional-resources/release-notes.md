@@ -3,16 +3,16 @@ title: 適用於串流媒體的 Adobe Analytics 發行說明
 description: 檢視 Adobe Analytics 發行說明。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 24471de7f56212d29001ce23aea155fb56dbad8b
+source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
 workflow-type: tm+mt
-source-wordcount: '854'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# 適用於串流媒體的 Adobe Analytics 發行說明 (2022 年 3 月)
+# Adobe Analytics for Streaming Media發行說明（2022年9月）
 
-**上次更新日期**：2022 年 9 月 23 日
+**上次更新日期**：2022 年 9 月 22 日
 
 ## 相關資源
 
