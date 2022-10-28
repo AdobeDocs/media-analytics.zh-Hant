@@ -1,34 +1,34 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Adobe Analytics for Streaming Media
+user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
-user-guide-description: 實作 Adobe Analytics for Streaming Media。了解Media SDK和媒體收集API。
+user-guide-description: 實施適用於串流媒體的 Adobe Analytics。了解 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 212fad8592c9f935869e55d034b17519c8b9de36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 
-# Adobe Analytics for Streaming Media {#using}
+# 適用於串流媒體的 Adobe Analytics {#using}
 
 + [在 Adobe Analytics 中測量串流媒體](media-overview.md)
 + [支援的裝置和平台](measurement-options/supported-devices.md)
-+ Streaming Media Analytics 簡介 {#intro-to-ava}
++ 串流媒體 Analytics 簡介 {#intro-to-ava}
    + [先決條件](intro-to-ava/prereqs.md)
-   + 實作路徑 {#implementation-paths}
+   + 實施路徑 {#implementation-paths}
       + [總覽](intro-to-ava/implementation-paths/implementation-paths.md)
       + [用戶端](intro-to-ava/implementation-paths/client-side-path.md)
-      + 其他實作方式 {#other-paths}
+      + 其他實施方式 {#other-paths}
          + 媒體模組里程碑追蹤 {#mm-milestone-tracking}
             + [里程碑總覽](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [從里程碑移轉至 Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [從里程碑移轉至自訂連結](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Analytics 中的自訂連結 {#cl-in-aa}
-            + [自訂連結實作指南](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + [自訂連結實施指南](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [啟用 Audience Manager](intro-to-ava/am-enablement.md)
@@ -70,16 +70,16 @@ ht-degree: 98%
             + [在 JavaScript 3.x 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [在 Chromecast 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [在 Roku 上追蹤搜尋](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + 實作標準中繼資料 {#impl-std-metadata}
-         + [在 Android 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-         + [在 iOS 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      + 實施標準中繼資料 {#impl-std-metadata}
+         + [在 Android 上實施標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [在 iOS 上實施標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [iOS 中繼資料索引鍵](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + 在 JavaScript 上實作標準中繼資料 {#impl-std-md-js}
-            + [在 JavaScript 2.x 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-            + [在 JavaScript 3.x 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-         + [在 Chromecast 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+         + 在 JavaScript 上實施標準中繼資料 {#impl-std-md-js}
+            + [在 JavaScript 2.x 上實施標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [在 JavaScript 3.x 上實施標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + [在 Chromecast 上實施標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [標準中繼資料參數 - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [在 Roku 上實作標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+         + [在 Roku 上實施標準中繼資料](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
          + [標準中繼資料參數 - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + 追蹤廣告 {#track-ads}
       + [總覽](sdk-implement/track-ads/track-ads-overview.md)
@@ -90,13 +90,13 @@ ht-degree: 98%
          + [在 JavaScript 3.x 上追蹤廣告](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [在 Chromecast 上追蹤廣告](sdk-implement/track-ads/track-ads-chromecast.md)
       + [在 Roku 上追蹤廣告](sdk-implement/track-ads/track-ads-roku.md)
-      + 實作標準廣告中繼資料 {#impl-std-ad-metadata}
-         + [在 Android 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-         + [在 iOS 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + 在 JavaScript 上實作標準廣告中繼資料 {#impl-std-ad-md-js}
-            + [在 JavaScript 2.x 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-            + [在 JavaScript 3.x 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-         + [在 Roku 上實作標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+      + 實施標準廣告中繼資料 {#impl-std-ad-metadata}
+         + [在 Android 上實施標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+         + [在 iOS 上實施標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+         + 在 JavaScript 上實施標準廣告中繼資料 {#impl-std-ad-md-js}
+            + [在 JavaScript 2.x 上實施標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+            + [在 JavaScript 3.x 上實施標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + [在 Roku 上實施標準廣告中繼資料](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + 追蹤章節和區段 {#track-chapters}
       + [總覽](sdk-implement/track-chapters/track-chapters-overview.md)
       + [在 Android 上追蹤章節和區段](sdk-implement/track-chapters/track-chapters-android.md)
@@ -175,11 +175,11 @@ ht-degree: 98%
       + [要求參數](media-collection-api/mc-api-ref/mc-api-req-params.md)
       + [事件類型和說明](media-collection-api/mc-api-ref/mc-api-event-types.md)
       + [JSON 驗證結構描述](media-collection-api/mc-api-ref/mc-api-json-validation.md)
-   + 實作 API {#mc-api-impl}
+   + 實施 API {#mc-api-impl}
       + [快速啟動](media-collection-api/mc-api-impl/mc-api-quick-start.md)
       + [在播放器中設定 HTTP 要求類型](media-collection-api/mc-api-impl/mc-api-set-http-req.md)
       + [取得工作階段 ID](media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-      + [實作事件要求](media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+      + [實施事件要求](media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
       + [驗證事件要求](media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
       + [傳送 Ping 事件](media-collection-api/mc-api-impl/mc-api-sed-pings.md)
       + [傳送 QoE 資料](media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
@@ -211,7 +211,7 @@ ht-degree: 98%
       + [媒體播出時段報表](media-reports/media-default-reports/media-reports-daypart.md)
       + [媒體同時檢閱者報表](media-reports/media-default-reports/media-concurrent-viewers.md)
    + 媒體工作區面板 {#media-workspace-panels}
-   + [「媒體平均每分鐘觀眾數」面板](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [「媒體平均每分鐘對象數」面板](media-reports/media-workspace-panels/average-minute-audience.md)
    + [「媒體同時檢閱者」面板](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [「媒體播放時間」面板](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [媒體工作區範本](media-reports/media-workspace-templates.md)
@@ -221,7 +221,7 @@ ht-degree: 98%
 + 播放器狀態追蹤 {#player-state-tracking}
    + [總覽](sdk-implement/player-state-tracking/player-state-overview.md)
    + [標準和自訂狀態](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-   + [實作與報告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [實施與報告](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [多播放器狀態追蹤](sdk-implement/player-state-tracking/multiple-player-states.md)
    + [播放器狀態追蹤範例](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
