@@ -1,22 +1,22 @@
 ---
 title: 串流媒體計算量度
-description: 了解Adobe串流媒體的計算量度和量度公式。
+description: 了解 Adobe 串流媒體計算量度和量度公式。
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 59%
+workflow-type: ht
+source-wordcount: '256'
+ht-degree: 100%
 
 ---
 
 # 計算量度{#calculated-metrics}
 
-串流媒體的計算量度是自訂量度，可讓您取得目標式串流媒體資料，例如每個媒體資料流的平均廣告逗留時間或平均廣告。
+串流媒體的計算量度是自訂量度，可讓您獲取目標串流媒體資料，例如平均廣告逗留時間或每個媒體資料流的平均廣告數。
 
-如需Adobe Analytics計算量度的相關資訊，請參閱Adobe Analytics元件指南中的[計算與進階計算（衍生）量度](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en)。
+有關 Adobe Analytics 計算量度的資訊，請參閱《Adobe Analytics 元件指南》中的[計算和進階計算 (衍生) 量度](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=en)。
 
 >[!NOTE]
 >
@@ -26,10 +26,10 @@ ht-degree: 59%
 |---|---|---|
 | 每媒體資料流的平均廣告數 | 每次媒體開始的廣告開始數 | `Ad Starts / Media Starts` |
 | 每媒體資料流的平均章節數 | 每次媒體開始的章節開始數 | `Chapter Start / Media Starts` |
-| 平均媒體逗留時間 | 每次媒體開始的總逗留時間(HH:MM:SS) | `Media Time Spent / Media Starts` |
-| 平均內容逗留時間 | 每次內容開始的內容逗留時間(HH:MM:SS) | `Content Time Spent / Content Start` |
-| 平均廣告逗留時間 | 每次廣告開始的廣告逗留時間(HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| 平均章節逗留時間 | 每個章節開始的章節逗留時間(HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| 平均媒體逗留時間 | 每次資料流開始的總逗留時間 (HH:MM:SS) | `Media Time Spent / Media Starts` |
+| 平均內容逗留時間 | 每次內容開始的內容逗留時間 (HH:MM:SS) | `Content Time Spent / Content Start` |
+| 平均廣告逗留時間 | 每次廣告開始的廣告逗留時間 (HH:MM:SS) | `Ad Time Spent / Ad Start` |
+| 平均章節逗留時間 | 每次章節開始的章節逗留時間 (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
 | 媒體結束率 | 內容完成數與媒體起始數的比率 (%) | `Content Completes/ Media Starts` |
 | 內容結束率 | 內容結束與內容開始的比率 (%) | `Content Completes / Content Starts` |
 | 廣告結束率 | 廣告結束與廣告開始的比率 (%) | `Ad Completes / Ad Starts` |
