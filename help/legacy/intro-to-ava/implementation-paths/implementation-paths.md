@@ -4,7 +4,7 @@ description: 了解 Adobe 串流媒體實施路徑，包括 Adobe Experience Pla
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 98%
@@ -42,7 +42,7 @@ Adobe 資料收集與 Media Analytics 擴充功能搭配使用前，須符合以
 
 這些是僅限 Media Analytics 的整合。您可以選擇視訊心率 SDK 與/或 Media Collection API 整合。此路徑可用於任何視訊播放器，包括客戶及/或 OVP 播放器，例如 Brightcove、Ooyala、thePlatform 等。
 
-如果 Media Analytics 是您打算使用的路徑，請參閱 [Media SDK 實作](/help/implementation/media-sdk/setup/setup-overview.md)與 [Media Collection API](/help/media-collection-api/mc-api-overview.md)。
+如果 Media Analytics 是您打算使用的路徑，請參閱 [Media SDK 實作](/help/legacy/setup/legacy-setup-overview.md)與 [Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md)。
 
 >[!IMPORTANT]
 >若要使用 Media Analytics，客戶也必須使用 Adobe Analytics。
@@ -60,6 +60,6 @@ Primetime 藉由提供模組化平台以進行視訊發佈、廣告刊登、個�
 * Nielsen DTVR (線性) 與 ID3 中繼資料以及 DCR 與 CMS 中繼資料的整合支援。
 
 
-TVSDK 已與 Media Analtyics (心率) SDK 整合，使得在每個支援的平台上實施時更加簡單快速。若要妥善運用 Primetime，請遵循適用於[用戶端](/help/intro-to-ava/implementation-paths/client-side-path.md)的同一套準則和先決條件，並根據您所使用的平台參閱相對應的 [Primetime 使用手冊](https://helpx.adobe.com/tw/primetime/user-guide.html)。
+TVSDK 已與 Media Analtyics (心率) SDK 整合，使得在每個支援的平台上實施時更加簡單快速。若要妥善運用 Primetime，請遵循適用於[用戶端](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md)的同一套準則和先決條件，並根據您所使用的平台參閱相對應的 [Primetime 使用手冊](https://helpx.adobe.com/tw/primetime/user-guide.html)。
 
 您也應該聯絡銷售代表/客戶經理，討論購買 TVSDK 的所需作業。

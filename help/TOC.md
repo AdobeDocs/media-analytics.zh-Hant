@@ -5,10 +5,10 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 1d30415b0874c1e0f35045026cb341bab1833d98
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 80%
+source-wordcount: '869'
+ht-degree: 78%
 
 ---
 
@@ -179,6 +179,8 @@ ht-degree: 80%
    + [追蹤離線下載內容](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [在播放期間處理應用程式中斷狀況](use-cases/cookbook/app-interrupts.md)
+   + [舊版SDK逐步指南概述](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [舊版 — Media Analytics逐步指南](use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
    + [媒體串流歸因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [繼續非作用中工作階段](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph中的Roku追蹤](use-cases/cookbook/sdk-track-scenegraph.md)
@@ -214,7 +216,10 @@ ht-degree: 80%
    + [Adobe Primetime和串流媒體分析](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe對象管理啟用](legacy/intro-to-ava/am-enablement.md)
    + [自訂連結實作](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-   + [舊版里程碑追蹤](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+   + 舊版里程碑追蹤 {#legacy-milestone-tracking}
+      + [舊版里程碑追蹤](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+      + [從里程碑移轉至VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [遷移里程碑到CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + 驗證 {#validation}
       + [驗證總覽](legacy/validation/validation-overview.md)
       + [測試 1：標準播放](legacy/validation/test1-standard-playback.md)
@@ -227,4 +232,5 @@ ht-degree: 80%
    + [設定 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [程式碼比較v1.x和v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [追蹤API 1到2](legacy/va-1x-to-2x/1x-2x-api-change.md)
+   + [舊版 — AVA簡介](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [用戶端路徑](legacy/intro-to-ava/implementation-paths/client-side-path.md)
