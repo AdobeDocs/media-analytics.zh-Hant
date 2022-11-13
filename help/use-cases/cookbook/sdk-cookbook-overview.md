@@ -1,28 +1,37 @@
 ---
-title: SDK 逐步指南概述
-description: "探索SDK專屬逐步指南主題"
+title: Media SDK使用案例概述
+description: 了解串流媒體使用案例
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
 workflow-type: tm+mt
-source-wordcount: '56'
-ht-degree: 42%
+source-wordcount: '78'
+ht-degree: 47%
 
 ---
 
-# SDK 逐步指南概述
+# 串流媒體使用案例 {#media-sdk-use-cases}
 
-
-修訂或移除頁面 — 將主題移至使用案例區段
-
-Media SDK和媒體收集API使用案例： [Media Analytics逐步指南。](/help/use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
-
-## Media SDK使用案例
-
-
-
+* [播放器狀態追蹤](/help/use-cases/player-state-tracking/player-state-overview.md)
+* [追蹤離線下載內容](using/media-use-cases/track-downloaded-content.html)
 * [在播放期間處理應用程式中斷狀況](/help/use-cases/cookbook/app-interrupts.md)
-* [解決 main:play 出現在廣告之間的問題](/help/use-cases/cookbook/fix-ad-play-ad.md)
+* [處理出現在廣告之間的差距](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [繼續非作用中工作階段](/help/use-cases/cookbook/resuming-inactive.md)
 * [在 SceneGraph (Roku) 中進行追蹤](/help/use-cases/cookbook/sdk-track-scenegraph.md)
+* [媒體串流歸因](/help/use-cases/media-analytics-cookbook/media-dimensions.md)
+
+* Federated
+   * [Federated Analytics](/help/use-cases/federated-analytics.md)
+
+* 時間軸
+   * [章節開始和結束](/help/use-cases/timelines/chapter-start-end.md)
+   * [檢視到內容結尾](/help/use-cases/timelines/view-to-end-of-content.md)
+   * [放棄工作階段](/help/use-cases/timelines/user-abandons-session.md)
+
+* 在OTT應用程式中使用Analytics
+   * [追蹤應用程式狀態](/help/use-cases/analytics-with-ott/track-app-states.md)
+   * [追蹤應用程式動作](/help/use-cases/analytics-with-ott/track-app-actions.md)
+   * [設定使用者 ID](/help/use-cases/analytics-with-ott/set-user-ids.md)
+   * [OTT 與 Audience Manager](/help/use-cases/analytics-with-ott/ott-am.md)
+   * [OTT 與 Experience Cloud](/help/use-cases/analytics-with-ott/ott-experience-cloud.md)
