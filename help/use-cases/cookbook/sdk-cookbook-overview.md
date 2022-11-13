@@ -4,7 +4,7 @@ description: 了解串流媒體使用案例
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 47%
@@ -14,7 +14,7 @@ ht-degree: 47%
 # 串流媒體使用案例 {#media-sdk-use-cases}
 
 * [播放器狀態追蹤](/help/use-cases/player-state-tracking/player-state-overview.md)
-* [追蹤離線下載內容](using/media-use-cases/track-downloaded-content.html)
+* [追蹤離線下載內容](/help/use-cases/track-downloaded-content.md)
 * [在播放期間處理應用程式中斷狀況](/help/use-cases/cookbook/app-interrupts.md)
 * [處理出現在廣告之間的差距](/help/use-cases/cookbook/fix-ad-play-ad.md)
 * [繼續非作用中工作階段](/help/use-cases/cookbook/resuming-inactive.md)
