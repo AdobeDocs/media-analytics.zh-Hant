@@ -1,11 +1,11 @@
 ---
-title: 了解媒體追蹤時間軸使用者�放棄工作階段
+title: 了解媒體追蹤時間軸 — 使用者放棄工作階段
 description: 了解放棄視訊工作階段時的播放�點時間軸和對應使用者的動作。 了解每個動作和請求的詳細資訊。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 92%

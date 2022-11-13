@@ -5,9 +5,9 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作 Adobe Analytics for Streaming Media。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 5ea67e55448ccdcfc098c6bead78ba23d0fe8e96
+source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
 workflow-type: tm+mt
-source-wordcount: '880'
+source-wordcount: '865'
 ht-degree: 78%
 
 ---
@@ -54,10 +54,6 @@ ht-degree: 78%
          + [逾時條件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
          + [控制事件順序](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
          + [在工作階段回應緩慢時將事件加入佇列](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-      + 媒體追蹤時間軸 {#mc-api-timelines}
-         + [時間軸 1 - 檢視到內容結尾](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-1.md)
-         + [時間軸 2 - 使用者放棄工作階段](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-2.md)
-         + [時間軸 3 - 章節](implementation/media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + 變數 {#variables}
       + [串流媒體參數](implementation/variables/audio-video-parameters.md)
       + [廣告參數](implementation/variables/ad-parameters.md)
@@ -174,6 +170,7 @@ ht-degree: 78%
    + [透過 API 取得同時檢閱者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
    + [透過 API 取得媒體播放時間資料](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 使用個案 {#media-use-cases}
+   + [Media SDK使用案例](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器狀態追蹤 {#player-state-tracking}
       + [總覽](use-cases/player-state-tracking/player-state-overview.md)
       + [標準和自訂狀態](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -183,7 +180,6 @@ ht-degree: 78%
    + [追蹤離線下載內容](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [在播放期間處理應用程式中斷狀況](use-cases/cookbook/app-interrupts.md)
-   + [Media SDK使用案例](use-cases/cookbook/sdk-cookbook-overview.md)
    + [媒體串流歸因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [繼續非作用中工作階段](use-cases/cookbook/resuming-inactive.md)
    + [SceneGraph中的Roku追蹤](use-cases/cookbook/sdk-track-scenegraph.md)
