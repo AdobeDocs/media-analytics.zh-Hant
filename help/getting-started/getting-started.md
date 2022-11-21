@@ -4,13 +4,13 @@ description: 開始使用Adobe Analytics for Streaming Media。
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
+source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '439'
 ht-degree: 6%
 
 ---
-
 
 # 快速入門 {#getting-started}
 
@@ -47,10 +47,6 @@ Adobe Analytics串流媒體解決方案適用於下列媒體平台：
 如需使用媒體收集API的詳細資訊，請參閱 [Stemid Media API檔案](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## Adobe 擴充功能 {#adobe-extensions}
-
->[!NOTE]
->
->需要擴充功能的簡介
 
 * 此 [**Adobe MediumAnalytics for Audio and Video擴充功能**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) （Media Analytics擴充功能），是iOS和tvOS實作的必要功能。 它提供將追蹤器例項新增至標籤網站或專案的功能。 MA擴充功能也需要Analytics擴充功能和Experience CloudID擴充功能。
 
