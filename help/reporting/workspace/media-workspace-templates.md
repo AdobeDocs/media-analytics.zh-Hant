@@ -6,7 +6,7 @@ exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
 ht-degree: 100%
 
