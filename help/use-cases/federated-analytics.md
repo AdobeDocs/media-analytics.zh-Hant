@@ -1,14 +1,14 @@
 ---
 title: Federated Analytics
-description: Federated Analytics服務提供一個系統，可讓兩個合作夥伴共用Adobe Analytics以串流媒體資料。
+description: Federated Analytics 服務提供一套系統，可供在兩個合作夥伴間分享適用於串流媒體的 Adobe Analytics 資料。
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '552'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 92%
 
 Federated Analytics 服務提供一套系統，可供在兩個合作夥伴間分享 Adobe Media Analytics 資料 (音訊和視訊)。Media Analytics 建立的標準化視訊測量資料是 Federated Analytics 的一大特徵，可讓相同的資料從多個來源匯入單一報表。透過 Federated Analytics 管理的規則和邏輯，可輕鬆控管資料，並依照不同合作關係的需求個別調整資料。Federated Analytics 讓音訊與視訊測量更有效率、更簡化且更易於付諸執行。
 
-## 福利 {#benefits}
+## 優點 {#benefits}
 
 * **透明：**&#x200B;各公司使用同一套邏輯，避免資料建立涉及黑箱作業
 * **廣泛：**&#x200B;瞭解不同合作關係、平台和裝置間，音訊與視訊觀看量的完整觸及範圍和影響
@@ -38,13 +38,13 @@ Federated Analytics 服務提供一套系統，可供在兩個合作夥伴間分
 * **媒體資料流合約：**&#x200B;傳送者與接收者在取得 Adobe Analytics 內音訊與視訊資料的存取權前，必須先簽署適用於媒體資料流的 Adobe Analytics 合約。如需更多詳細資訊，請與您的帳戶團隊聯絡。
 * **同盟增補合約：**&#x200B;每一位傳送者與接收者在傳送或接收資料前，必須擁有一份與 Adobe 簽署的增補合約。每位客戶須各擁有一份增補合約，而非一段合作關係共用一份。如需更多詳細資訊，請與您的帳戶團隊聯絡。
 
-* **Media Analytics 實施：**&#x200B;傳送者必須在將作為同盟資料組一部分的所有播放器上實施 Media Analytics。僅 Media Analytics 資料可用於同盟作業。請參閱檔案： [在Adobe Analytics測量串流媒體](/help/media-overview.md)
+* **Media Analytics 實施：**&#x200B;傳送者必須在將作為同盟資料組一部分的所有播放器上實施 Media Analytics。僅 Media Analytics 資料可用於同盟作業。請參閱文件：[在 Adobe Analytics 中測量串流媒體](/help/media-overview.md)
 
 * **Adobe 諮詢合約:**&#x200B;若要進行接收者和傳送者之間同盟規則的初始設定，建議您與諮詢服務人員合作檢閱資料並建立資料共享協定。
 
 ## 下載 Federated Analytics 表單
 
-若要參與Federated Analytics，請下載並完成 [聯合規則協定](assets/federated_analytics_form.pdf) 表單。
+要參與 Federated Analytics，請下載並完成[同盟規則協定](assets/federated_analytics_form.pdf)表單。
 
 ## 程序 {#process}
 
