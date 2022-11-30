@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 97%
 >
 >若要利用新功能，現有 Media Analytics 客戶應該為他們的 RSID 重新啟用媒體追蹤。
 
-1. 在 [Adobe Analytics](https://experience.adobe.com) 按一下 **[!UICONTROL 管理員>報表套裝].**
-1. 選取您要收集媒體資料的報表套裝，然後按一下&#x200B;**[!UICONTROL 「編輯設定 > 媒體管理 > 媒體報表」]**。
+1. 在 [Adobe Analytics](https://experience.adobe.com) 中，按一下&#x200B;**[!UICONTROL 「管理員」>「報表套裝」]。**
+1. 選取您要收集媒體資料的報表套裝，然後按一下&#x200B;**[!UICONTROL 「編輯設定」>「媒體管理」>「媒體報表」]。**
 
    ![](assets/media-reporting.png){width="400px"}
 
@@ -35,7 +35,7 @@ ht-degree: 97%
 
    * **媒體廣告**
 
-      媒體廣告測量用於媒體內容內廣告的測量。這會使用解決方案eVar來測量廣告、廣告播放器名稱、廣告Pod和Pod位置中的廣告。 解決方案事件將用於廣告開始、廣告完成、廣告逗留時間和視訊逗留時間。
+      媒體廣告測量用於媒體內容內廣告的測量。這將使用解決方案 eVar 來測量廣告、廣告播放器名稱、廣告 Pod 和 Pod 位置中的廣告。解決方案事件將用於廣告開始、廣告完成、廣告逗留時間和視訊逗留時間。
 
    * **媒體章節**
 
