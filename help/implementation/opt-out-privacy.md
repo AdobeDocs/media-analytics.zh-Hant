@@ -1,20 +1,20 @@
 ---
-title: 退出與隱私權說明
+title: 說明選擇退出與隱私權
 description: 了解如何處理選擇加入、選擇退出和隱私權。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# 退出與隱私權{#opt-out-and-privacy}
+# 選擇退出與隱私權{#opt-out-and-privacy}
 
-## 退出/加入 {#opt-out-opt-in}
+## 選擇退出/選擇加入 {#opt-out-opt-in}
 
 您可以控制特定裝置上是否允許追蹤活動。
 
@@ -36,15 +36,15 @@ ht-degree: 88%
 
          * **Chromecast：**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
          * **Roku：**
 
-                &quot;
-                ADBMobile()。setPrivacyStatus(ADBMobile()。PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
+                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+                ```
             
             >[!IMPORTANT]
             >
@@ -53,28 +53,28 @@ ht-degree: 88%
 
          * **Chromecast：**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             
          * **Roku：**
 
-                &quot;
-                ADBMobile()。setPrivacyStatus(ADBMobile()。PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
+                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+                ```
             * **傳回目前設定：**
 
          * **Chromecast：**
 
-                &quot;
+                ```
                 ADBMobile.config.getPrivacyStatus()
-                &quot;
+                ```
             
          * **Roku：**
 
-                &quot;
-                ADBMobile()。getPrivacyStatus()
-                &quot;
+                ```
+                ADBMobile().getPrivacyStatus()
+                ```
             使用 `setPrivacyStatus` 變更隱私權設定後，變更為永久有效，直到使用此方法再次變更，或者應用程式解除安裝並重新安裝為止。
 
 ## 擷取儲存的識別碼 (OTT 應用程式) {#retrieving-stored-identifiers-ott-apps}
