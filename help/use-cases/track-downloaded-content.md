@@ -1,14 +1,14 @@
 ---
-title: 如何在Adobe串流媒體中追蹤離線下載內容
-description: 了解如何使用「下載內容」功能，在使用者離線時追蹤媒體使用量。
+title: 如何在 Adobe 串流媒體中追蹤離線下載的內容
+description: 了解如何使用「下載內容」功能在使用者離線時追蹤媒體用量。
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 86%
 * 線上情況有利於即時追蹤，但需在每個網路呼叫前檢查連線。
 * 離線情況 (「下載內容」功能) 僅需檢查一次網路連線，但會佔用裝置上更大的記憶體空間。
 
-## 實作 {#implementation}
+## 實施 {#implementation}
 
 ### 支援平台
 
@@ -42,17 +42,17 @@ iOS 和 Android 行動裝置均支援內容追蹤功能。
 
 「下載內容」功能是離線版本的 (標準) 線上 Media Collection API，因此播放器批次處理及傳送到後端的事件資料，必須使用與線上呼叫時相同的事件結構。如需這些結構的詳細資訊，請參閱：
 * [概觀;](/help/implementation/media-collection-api/mc-api-overview.md)
-* [驗證事件要求](/help/implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+* [驗證事件請求](/help/implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### 事件順序
 
 * 根據 Media Collection API 通常的情況，批次裝載中的第一個事件必須為 `sessionStart`。
 * 在 **事件上，`media.downloaded: true`**&#x200B;您必須將 `params` 包含在標準中繼資料參數 (`sessionStart` 索引鍵) 中，以表示您要將下載內容傳送到哪個後端。若此參數不存在或設為 false，在傳送下載資料時，API 會傳回 400 回應代碼 (Bad Request)。此參數會區分傳送到後端的下載內容與即時內容。若 `media.downloaded: true` 設在即時工作階段上，同樣會導致 API 傳回 400 回應代碼。
-* 實作時應負責依照其外觀的順序，正確地儲存播放器事件。
+* 實施時應負責依照其外觀的順序，正確地儲存播放器事件。
 
 ### 回應代碼
 
-* 201 - Created：成功的要求；資料有效，工作階段已建立且將進行處理。
+* 201 - Created：成功的請求；資料有效，工作階段已建立且將進行處理。
 * 400 - Bad Request；結構驗證失敗，已捨棄所有資料，不會處理任何工作階段資料。
 
 ## 與 Adobe Analytics 整合 {#integration-with-adobe-analtyics}
@@ -109,12 +109,12 @@ POST /api/v1/downloaded HTTP/1.1
 
 >[!IMPORTANT]
 >
->先前下載的內容也可傳送至 `/api/v1/sessions` API。 這種追蹤下載內容的方式是 **已棄用** 和 **已移除** 未來。
+>下載內容先前也可以傳送到`/api/v1/sessions`API。這種追蹤下載內容的方式&#x200B;**已過時**&#x200B;並且未來將&#x200B;**移除**。
 
 
-此 `/api/v1/sessions` API僅接受工作階段初始化事件。
-使用新API時，先前必要的 `media.downloaded` 標幟已不再必要。
-強烈建議使用 `/api/v1/downloaded` 適用於新下載內容實作的API，以及更新依賴舊API的現有實作。
+`/api/v1/sessions` API 將只接受工作階段初始化事件。
+使用新的 API 時，之前的強制性 `media.downloaded`標幟不再是必要的。
+我們強烈建議使用 `/api/v1/downloaded` API 進行新下載內容實施，以及更新依賴舊 API 的現有實施。
 
 
 ```
