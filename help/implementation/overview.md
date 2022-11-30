@@ -1,25 +1,25 @@
 ---
-title: 為Adobe Analytics實作串流媒體
-description: 了解串流媒體實作路徑。
+title: 實施適用於串流媒體的 Adobe Analytics
+description: 了解串流媒體實施路徑。
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '138'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
+# 實施適用於串流媒體的 Adobe Analytics
 
-# 為Adobe Analytics實作串流媒體
+您遵循的實施路徑取決於您是選擇使用媒體 SDK 的內建邏輯 (標準、建議的實施)，還是選擇自己動手並使用簡單但功能強大且可自訂的 Media Collection API (RESTful)。
 
-您所遵循的實作路徑取決於您選擇使用Media SDK的內建邏輯（標準、建議的實作），還是選擇自訂，並使用簡單但功能強大且可自訂的媒體收集API(RESTful)。
+根據支援的平台選擇實施路徑。Media SDK 或 Adobe Experience Platform Media SDK 不支援某些播放器，而 Media Collection API 提供了一種支援這些播放器的方法。如需關於受支援裝置的資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。
 
-根據支援的平台選擇實施路徑。 有些播放器不受Media SDK或Adobe Experience Platform Media SDK支援，而媒體收集API提供支援這些播放器的方式。 如需支援裝置的詳細資訊，請參閱 [支援的裝置和平台](/help/getting-started/supported-devices.md).
+![Media 流程](media-sdk/assets/choose-media-flow2.png)
 
-![媒體流量](media-sdk/assets/choose-media-flow2.png)
+如需關於下載和安裝 Media SDK 和擴充功能的資訊，請參閱[取得 Media SDK、使用標記的擴充功能和 OTT SDK](/help/getting-started/download-sdks.md)。
 
-如需下載和安裝Media SDK和擴充功能的詳細資訊，請參閱 [取得Media SDK、使用標籤的擴充功能，以及OTT SDK](/help/getting-started/download-sdks.md).
-
-如需使用媒體收集API的詳細資訊，請參閱 [媒體收集API](media-collection-api/mc-api-overview.md).
+如需關於使用 Media Collection API 的資訊，請參閱[Media Collection API](media-collection-api/mc-api-overview.md)。
