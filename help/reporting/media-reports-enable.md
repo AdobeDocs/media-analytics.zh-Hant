@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -71,4 +71,4 @@ ht-degree: 96%
 
 >[!IMPORTANT]
 >
->請勿變更量度和中繼資料表格中所列任何變數的分類名稱(例如 [音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md) 以「分類」形式說明。 為媒體追蹤啟用報表套裝時，系統會定義媒體分類。Adobe 有時會新增屬性，而發生這種情形時，客戶必須重新啟用其報表套裝才能存取新的媒體屬性。在更新程序期間，Adobe 會檢查變數名稱，藉此決定是否啟用分類。如果有任何變數名稱遺失，Adobe 會再次新增遺失的項目。
+>請勿變更量度和中繼資料表格所列之任何變數的分類名稱 (例如[音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md))，其說明以「分類」形式顯示於「報表/保留變數」下方。 為媒體追蹤啟用報表套裝時，系統會定義媒體分類。Adobe 有時會新增屬性，而發生這種情形時，客戶必須重新啟用其報表套裝才能存取新的媒體屬性。在更新程序期間，Adobe 會檢查變數名稱，藉此決定是否啟用分類。如果有任何變數名稱遺失，Adobe 會再次新增遺失的項目。
