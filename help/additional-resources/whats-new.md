@@ -2,7 +2,7 @@
 title: Media Analytics 最新資訊
 description: 最新資訊包括新功能和通知的相關資訊。
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
 ht-degree: 100%
 
@@ -34,7 +34,7 @@ Adobe Experience Cloud 發行說明描述 Adobe Experience Cloud 的新功能、
 
 ## 重要通知
 
-| 功能 | [全面發佈](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) - 目標日期 | 說明 |
+| 功能 | [全面發佈](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=zh-Hant) - 目標日期 | 說明 |
 | ----------- | ---------- | ---------- |
 | [支援的裝置和平台](../getting-started/supported-devices.md) | 2021 年 8 月 31 日 | 我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 Media Analytics SDK 支援終止常見問題集。 |
 | [Media Analytics SDK 支援終止常見問題集](sdk-implement/end-of-support-faqs.md) |   2019 年秋季 | 日後我們不會再開發 Media Analytics SDK iOS 版和 Android 版。從 2019 年秋季開始導入的新功能，會使用 Media Analytics 擴充功能和 Media Collection API 來啟用。 |
