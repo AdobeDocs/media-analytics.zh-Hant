@@ -1,22 +1,23 @@
 ---
-title: 如何為Analytics for Streaming Media設定Web實作
+title: 如何設定適用於串流媒體的 Analytics的Web實作
 description: 了解如何為網頁應用程式實作Adobe串流媒體。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 71%
+source-wordcount: '449'
+ht-degree: 73%
 
 ---
 
-
 # 安裝Web SDK {#install-web-sdks}
 
-設定JavaScript適用的Media SDK v3.x >> Calise要下載頁面/連結中的內容
+本節包含有關如何安裝Web獨立SDK和設定JavaScript的資訊。
 
-本節包含如何安裝Web SDK和設定JavaScript的相關資訊。
+* [獨立Web SDK](/help/implementation/media-sdk/setup/web-implementation.md)
 
+* [網頁擴充功能SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant){target=_blank}
 
 ## 先決條件 {#prerequesites}
 

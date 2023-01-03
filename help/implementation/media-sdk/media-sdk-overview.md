@@ -1,15 +1,15 @@
 ---
 title: 如何實作Adobe串流Media SDK
-description: 了解如何使用Media SDK實作Adobe Analytics for Streaming Media。
+description: 了解如何使用Media SDK實作適用於串流媒體的 Adobe Analytics。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # Media SDK概述 {#implementation-overview}
 
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 ## 支援的串流媒體平台
 
-### 網路實作
+### Web 實施
 
 | 平台 |  版本 |
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [JavaScript適用的Media SDK v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Adobe MediumJavascript 3.x版的Analytics擴充功能(含標籤（資料收集）)](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Adobe MediumJavascript v3.x的Analytics擴充功能及標籤（資料收集）](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
-### 行動實作
+### Mobile 實施
 
 | 平台 |  版本 |
 |:----:|:----|
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 * iOS Media Analytics for Audio and Video擴充功能支援iOS、iPadOS和tvOS。
 
-### 超前實作
+### 過頂實施
 
 | 平台 |  版本 |
 |:------:|:-----|

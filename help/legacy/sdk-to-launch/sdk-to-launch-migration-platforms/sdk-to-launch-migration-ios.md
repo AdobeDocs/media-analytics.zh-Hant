@@ -4,17 +4,17 @@ description: 了解如何從 Media SDK 移轉至 iOS 版的 Launch。
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
 # 從獨立 Media SDK 移轉至 Adobe Launch - iOS
 
 >[!NOTE]
->Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hant)。
+>Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-TW)。
 
 ## 設定
 
@@ -47,7 +47,7 @@ ADBMediaHeartbeat* tracker =
 
    ![](assets/launch_config_mobile.png)
 
-[設定 Media Analytics 擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[設定 Media Analytics 擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 建立追蹤器
 
@@ -93,7 +93,7 @@ ADBMediaHeartbeat* tracker =
 
 ### Launch 擴充功能
 
-[媒體 API 參考 - 建立媒體追蹤器](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[媒體 API 參考 - 建立媒體追蹤器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 建立追蹤器前，請先透過行動核心註冊媒體擴充功能和相依擴充功能。
 
@@ -138,12 +138,12 @@ ADBMediaHeartbeat* tracker =
 以更新目前播放器播放點。您應每秒至少
 呼叫一次此方法以精確追蹤。
 
-[媒體 API 參考 - 更新目前的播放點](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[媒體 API 參考 - 更新目前的播放點](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 實施應呼叫追蹤器公開的 `updateQoEObject` 方法，
 以更新 QoE 資訊。您應該在品質量度變更時呼叫此方法。
 
-[媒體 API 參考 - 更新 QoE 物件](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[媒體 API 參考 - 更新 QoE 物件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## 傳遞標準媒體 / 廣告中繼資料
 

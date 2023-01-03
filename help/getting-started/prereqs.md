@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '503'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -27,10 +27,10 @@ Adobe Analytics 適用的串流媒體還需要 Adobe Analytics 基本實施。�
 `collection-api-server` URL，適用於 Mobile SDK、JavaScript SDK 和 Roku 的非 Collection API 追蹤伺服器。API 實施的網域名稱是：`[your_namespace].hb-api.omtrdc.net`。
 
 1. **下載目前的 Media SDK 或實施必要的擴充功能**<br>
-根據實施路徑，針對 Web、行動或過頂平台[下載目前的 SDK](download-sdks.md)。必須實施必要的擴充功能才能啟用適用於串流媒體的 Adobe Analytics。 如需關於所需擴充功能的資訊，請參閱 [Adobe 擴充功能](download-sdks.md#media-extension)。(需要澄清是下載 Media SDK 還是取得擴充功能)
+根據實施路徑，針對 Web、行動或過頂平台[下載目前的 SDK](download-sdks.md)。必須實作必要的擴充功能，才能啟用適用於串流媒體的 Adobe Analytics擴充功能路徑。
 
 1. **啟用 Adobe Analytics 報表**<br>
-要在 Analytics 中啟用報表並檢視您正在收集的內容和廣告資料，您必須在 Analytics 中啟用報表。請參閱[啟用 Media 報表](/help/reporting/media-reports-enable.md)。
+要在 Analytics 中啟用報表並檢視您正在收集的內容和廣告資料，您必須在 Analytics 中啟用報表。請參閱 [啟用媒體報表](/help/reporting/media-reports-enable.md).
 
 1. **啟用 Experience Cloud**<br>
 

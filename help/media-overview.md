@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 ## 運作方式
 
-串流媒體追蹤資料是使用 Media SDK、Media Collection API 或 Media 擴充功能 (含標記) 從播放器收集的。所有精細資料 (最多 10 秒) 都會傳送到 Media Analytics 服務，該服務會收集和處理各個播放工作階段的資料。播放工作階段結束後，計算出的追蹤資料會傳送到 Adobe Analytics 進行儲存和報告。透過 Adobe Customer Journey Analytics (CJA) 實施，可以使用 Analytics Data Connector (ADC) 將資料傳送到 CJA，讓客戶能夠將 CJA 用作為報告工具。
+串流媒體追蹤資料是使用Media SDK或Adobe Experience Platform Media Extensions及Media Collection API從播放器收集而得。 所有精細資料 (最多 10 秒) 都會傳送到 Media Analytics 服務，該服務會收集和處理各個播放工作階段的資料。播放工作階段結束後，計算出的追蹤資料會傳送到 Adobe Analytics 進行儲存和報告。透過 Adobe Customer Journey Analytics (CJA) 實施，可以使用 Analytics Data Connector (ADC) 將資料傳送到 CJA，讓客戶能夠將 CJA 用作為報告工具。
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 

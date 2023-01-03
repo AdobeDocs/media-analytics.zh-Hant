@@ -5,10 +5,10 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '645'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,8 +39,8 @@ Adobe Experience Platform 中的標記是 Adobe 推出的新一代網站標記�
 
 | 支援的平台 |  版本 |  文件   |  範例  |
 |:---:|---|---|---|
-| ![Android 圖示](assets/android-icon.png) | Android - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![Apple iOS 圖示](assets/ios-icon.png)<br>新增 tvOS 圖示 | iOS / tvOS - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android 圖示](assets/android-icon.png) | Android - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
+| ![Apple iOS 圖示](assets/ios-icon.png)<br>新增 tvOS 圖示 | iOS / tvOS - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 
 ### 過頂實施 {#download-ott-libraries}
 
@@ -48,25 +48,3 @@ Adobe Experience Platform 中的標記是 Adobe 推出的新一代網站標記�
 |:---:|---|---|---|
 | ![Chromecast 圖示](assets/chromecast-icon.png) | [Chromecast 適用的 SDK v3.0.3](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Chromecast API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [設定 Chromecast 適用的 Mobile SDK v3.x](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
 | ![Roku 圖示](assets/roku-icon.png) | [Roku 適用的 SDK v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | [Roku API 參考](/help/implementation/media-sdk/setup/set-up-roku.md) | [設定 Roku 適用的 Mobile SDK v2.x](/help/implementation/media-sdk/setup/set-up-roku.md) |
-
-## Adobe 擴充功能 {#adobe-extensions}
-
-### 串流媒體擴充功能 {#streaming-media-extension}
-
-**Adobe Media Analytics for Audio and Video 擴充功能**&#x200B;需要 Adobe Analytics for Media 附加元件 SKU。 若要了解更多，請聯絡您的 Adobe 銷售代表、客戶經理或客戶成功經理。
-
-如需關於安裝、設定和實施 **Adobe Media Analytics for Audio and Video 擴充功能**&#x200B;的詳細資訊，請參閱 [Adobe Media Analytics for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant)和[設定 Media Analytics 擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics#configure-the-media-analytics-extension)。
-
-### Analytics 擴充功能 {#analytics-extension}
-
-[Analytics 擴充功能 v1.6 或更高版本](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant) — 此擴充功能允許您載入 Adobe Experience Platform Web SDK Javascript 程式庫，將資料傳送到 Adobe 解決方案。 需要&#x200B;**Analytics 擴充功能** v1.6 或更高版本。
-
-如需關於設定此擴充功能的資訊，請參閱[設定 Adobe Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant)。
-
-### Experience Cloud ID 擴充功能 {#cloud-id-extension}
-
-[Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hant) — 此擴充功能實施 Experience Cloud ID 服務，該服務可識別所有 Experience Cloud 解決方案中的訪客。 Experience Cloud ID 服務是 Adobe Experience Platform 中的個人化擴充功能。
-
-使用此擴充功能整合 Experience Cloud Identity 服務與您的屬性。使用 Experience Cloud Identity 服務，您可以為網站訪客建立並儲存唯一的永久性識別碼。
-
-如需關於設定此擴充功能的資訊，請參閱[設定 Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hant)。
