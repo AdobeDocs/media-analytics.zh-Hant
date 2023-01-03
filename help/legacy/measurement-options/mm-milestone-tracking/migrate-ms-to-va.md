@@ -6,7 +6,7 @@ exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '690'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ ht-degree: 100%
 | mediaLength | `mediaLength`：(必填) 影片長度 (以秒為單位)。 | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
 | mediaPlayerName | `mediaPlayerName`：(必填) 觀看影片所使用的媒體播放器名稱，您希望影片報表中顯示的名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
-| 名稱 | `name`：(必填) 廣告名稱或 ID。 | 名稱 | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| name | `name`：(必填) 廣告名稱或 ID。 | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length`：(必填) 廣告長度。 | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`：(必填) 觀看廣告所使用的媒體播放器名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | parentName | `parentName`：內嵌廣告所在主要內容的名稱或 ID。 | 不適用 | 自動繼承。 |
