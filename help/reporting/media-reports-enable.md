@@ -23,7 +23,7 @@ ht-degree: 100%
 >若要利用新功能，現有 Media Analytics 客戶應該為他們的 RSID 重新啟用媒體追蹤。
 
 1. 在 [Reports &amp; Analytics](https://my.omniture.com/login/) 中，按一下&#x200B;**[!UICONTROL 「管理員 > 報表套裝」]**。
-1. 選取您要收集媒體資料的報表套裝，然後按一下&#x200B;**[!UICONTROL 「編輯設定 > 媒體管理 > 媒體報表」]**。
+1. 選取您要收集媒體資料的報表套裝，然後按一下&#x200B;**[!UICONTROL 「編輯設定」>「媒體管理」>「媒體報表」]。**
 
    ![](assets/media-reporting.png)
 
