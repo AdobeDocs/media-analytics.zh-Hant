@@ -5,10 +5,10 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實施適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: f25a661c9ad4af1aa1cd97854c26fda44cc6816e
 workflow-type: tm+mt
-source-wordcount: '887'
-ht-degree: 98%
+source-wordcount: '894'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,13 @@ ht-degree: 98%
    + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
    + [支援裝置](getting-started/supported-devices.md)
    + [先決條件](getting-started/prereqs.md)
-   + [終止支援](additional-resources/end-of-support-faqs.md)
+   + 終止支援 {#end-of-support}
+      + [Media Analytics行動SDK支援終止](additional-resources/end-of-support-faqs.md)
+      + 舊版 - Media SDK 移轉至 Launch {#sdk-to-launch}
+      + [概觀](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+      + [Android - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
+      + [iOS - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
+      + [JavaScript - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [串流媒體文件](getting-started/implementation-documentation.md)
 + 實施{#implementation}
    + [實施概述](implementation/overview.md)
@@ -160,11 +166,6 @@ ht-degree: 98%
       + [設定 iOS](legacy/media-sdk/setup/set-up-ios.md)
       + 設定 JavaScript {#setup-javascript}
          + [設定 JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
-   + 舊版 - Media SDK 移轉至 Launch {#sdk-to-launch}
-      + [概觀](legacy/sdk-to-launch/sdk-to-launch-migration.md)
-      + [Android - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
-      + [iOS - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
-      + [JavaScript - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
    + [關於心率測量](legacy/heartbeat-measurement.md)
    + [Adobe Primetime 和串流媒體 Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management 啟用](legacy/intro-to-ava/am-enablement.md)
