@@ -3,14 +3,15 @@ title: 如何設定適用於串流媒體的 Analytics的Web實作
 description: 了解如何為網頁應用程式實作Adobe串流媒體。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a9366d5bf590f16b193c7e2905cadca0f7afd636
+exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
+source-git-commit: a6dba33839bba976b67a9b1e9669fce266d1cabd
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 9%
 
 ---
 
-# 使用Media Analytics擴充功能實作Analytics
+# 使用Media Analytics擴充功能安裝Analytics
 
 您可以使用Adobe MediumAnalytics擴充功能來實作Analytics。 Media Analytics擴充功能新增核心的JavaScript Media SDK(Media 3.x SDK)。 此擴充功能提供將媒體追蹤器例項新增至已啟用標籤的網站或專案的功能。
 
