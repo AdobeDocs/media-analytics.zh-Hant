@@ -4,20 +4,18 @@ description: 了解如何為網頁應用程式實作Adobe串流媒體。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
+source-git-commit: d0ea5f9d8ee61475aa40c606fb79659dfd6b3870
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 73%
+source-wordcount: '453'
+ht-degree: 70%
 
 ---
 
-# 安裝Web SDK {#install-web-sdks}
+# 使用 JavaScript 實作 Analytics {#install-web-sdks}
 
-本節包含有關如何安裝Web獨立SDK和設定JavaScript的資訊。
+本頁的資訊說明如何安裝Web獨立SDK和設定JavaScript。
 
-* [獨立Web SDK](/help/implementation/media-sdk/setup/web-implementation.md)
-
-* [網頁擴充功能SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant){target=_blank}
+或者，您也可以使用Analytics擴充功能來實作Analytics，如 [使用Media Analytics擴充功能實作Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## 先決條件 {#prerequesites}
 
