@@ -5,7 +5,7 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實施適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 97d5d1df35bb282cac803500e1ddd72d654aef6e
+source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 97%
@@ -20,9 +20,10 @@ ht-degree: 97%
    + [串流媒體發行說明](additional-resources/release-notes.md)
 + 快速入門 {#getting-started}
    + [概觀](getting-started/getting-started.md)
-   + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
-   + [支援裝置](getting-started/supported-devices.md)
    + [先決條件](getting-started/prereqs.md)
+   + [支援裝置](getting-started/supported-devices.md)
+   + [串流媒體文件](getting-started/implementation-documentation.md)
+   + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
    + 終止支援 {#end-of-support}
       + [Media Analytics行動SDK支援終止](additional-resources/end-of-support-faqs.md)
       + 舊版 - Media SDK 移轉至 Launch {#sdk-to-launch}
@@ -30,7 +31,6 @@ ht-degree: 97%
          + [Android - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-   + [串流媒體文件](getting-started/implementation-documentation.md)
 + 實施{#implementation}
    + [實施概述](implementation/overview.md)
    + Media SDK - 實施{#media-sdk}
