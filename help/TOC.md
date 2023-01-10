@@ -3,11 +3,11 @@ product: adobe analytics
 audience: end-user
 user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
-user-guide-description: 實施適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
+user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '895'
 ht-degree: 97%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 # 適用於串流媒體的 Adobe Analytics {#using}
 
-+ [串流媒體 Analytics 指南](media-overview.md)
++ [適用於串流媒體的 Analytics 指南](media-overview.md)
 + 發行說明 {#release-notes}
    + [串流媒體發行說明](additional-resources/release-notes.md)
 + 快速入門 {#getting-started}
@@ -26,14 +26,14 @@ ht-degree: 97%
    + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
    + 終止支援 {#end-of-support}
       + [Media Analytics行動SDK支援終止](additional-resources/end-of-support-faqs.md)
-      + 舊版 - Media SDK 移轉至 Launch {#sdk-to-launch}
+      + 舊版 — 從獨立Media SDK移轉至Launch {#sdk-to-launch}
          + [概觀](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-+ 實施{#implementation}
-   + [實施概述](implementation/overview.md)
-   + Media SDK - 實施{#media-sdk}
++ 實作{#implementation}
+   + [實作概觀](implementation/overview.md)
+   + Media SDK - 實作{#media-sdk}
       + [Media SDK 概觀](implementation/media-sdk/media-sdk-overview.md)
       + 安裝與設定 {#setup}
          + 安裝 Web SDK {#install-web-sdk}
@@ -43,19 +43,19 @@ ht-degree: 97%
          + 安裝 OTT SDK {#ott-setup}
             + [安裝 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [安裝 Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
-   + Media Collection API- 實施{#streaming-media-apis}
+   + Media Collection API- 實作{#streaming-media-apis}
       + [媒體收集](implementation/media-collection-api/mc-api-overview.md)
       + [API 快速入門](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
-      + [工作階段請求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
-      + [事件請求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [請求參數](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
+      + [工作階段要求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+      + [事件要求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
+      + [要求參數](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
       + [事件類型和說明](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
-      + 實施 API {#mc-api-impl}
-         + [在播放器中設定 HTTP 請求類型](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
+      + 實作 API {#mc-api-impl}
+         + [在播放器中設定 HTTP 要求類型](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
          + [取得工作階段 ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-         + [實施事件請求](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
-         + [JSON 驗證結構描述](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
-         + [驗證事件請求](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+         + [實作事件要求](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+         + [JSON 驗證結構](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
+         + [驗證事件要求](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
          + [傳送 Ping 事件](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
          + [傳送 QoE 資料](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
          + [自訂中繼資料支援](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
@@ -90,7 +90,7 @@ ht-degree: 97%
    + 播放器狀態追蹤 {#player-state-tracking}
       + [概觀](use-cases/player-state-tracking/player-state-overview.md)
       + [標準和自訂狀態](use-cases/player-state-tracking/standard-and-custom-states.md)
-      + [實施與報告](use-cases/player-state-tracking/implementation-and-reporting.md)
+      + [實作與報告](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [多播放器狀態追蹤](use-cases/player-state-tracking/multiple-player-states.md)
       + [播放器狀態追蹤範例](use-cases/player-state-tracking/player-state-examples.md)
    + [追蹤離線下載的內容](use-cases/track-downloaded-content.md)
@@ -98,9 +98,9 @@ ht-degree: 97%
    + [在播放期間處理應用程式中斷狀況](use-cases/cookbook/app-interrupts.md)
    + [媒體串流歸因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [繼續非作用中工作階段](use-cases/cookbook/resuming-inactive.md)
-   + [SceneGraph 中的 Roku 追蹤](use-cases/cookbook/sdk-track-scenegraph.md)
+   + [使用 SceneGraph 在 Roku 進行追蹤](use-cases/cookbook/sdk-track-scenegraph.md)
    + [處理廣告之間的差距](use-cases/cookbook/fix-ad-play-ad.md)
-   + 時間表 {#timelines}
+   + 時間軸 {#timelines}
       + [章節開始和結束](use-cases/timelines/chapter-start-end.md)
       + [檢視到內容結束](use-cases/timelines/view-to-end-of-content.md)
       + [捨棄工作階段](use-cases/timelines/user-abandons-session.md)
@@ -125,20 +125,20 @@ ht-degree: 97%
          + [在 JavaScript 3.x 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [在 Chromecast 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [在 Roku 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-      + 實施標準中繼資料 {#impl-std-metadata}
-         + [在 JavaScript 3.x 上實施標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-         + [在 Chromecast 上實施標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      + 實作標準中繼資料 {#impl-std-metadata}
+         + [在 JavaScript 3.x 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + [在 Chromecast 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [標準中繼資料參數 - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [在 Roku 上實施標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+         + [在 Roku 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
          + [標準中繼資料參數 - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
       + 追蹤廣告 {#track-ads}
          + [概觀](use-cases/track-ads/track-ads-overview.md)
          + [在 JavaScript 3.x 上追蹤廣告](use-cases/track-ads/track-ads-js/track-ads-js3.md)
          + [在 Chromecast 上追蹤廣告](use-cases/track-ads/track-ads-chromecast.md)
          + [在 Roku 上追蹤廣告](use-cases/track-ads/track-ads-roku.md)
-         + 實施標準廣告中繼資料 {#impl-std-ad-metadata}
-            + [在 JavaScript 3.x 上實施標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-            + [在 Roku 上實施標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+         + 實作標準廣告中繼資料 {#impl-std-ad-metadata}
+            + [在 JavaScript 3.x 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+            + [在 Roku 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
       + 追蹤章節和區段 {#track-chapters}
          + [概觀](use-cases/track-chapters/track-chapters-overview.md)
          + [在 JavaScript 3.x 上追蹤章節和區段](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
@@ -157,7 +157,7 @@ ht-degree: 97%
 + 隱私權與安全性 {#streaming-media-privacy}
    + [選擇退出與隱私權設定](privacy/opt-out-privacy.md)
    + [安全性](privacy/security.md)
-+ 舊版實施 {#legacy-implementations}
++ 舊版實作 {#legacy-implementations}
    + [舊版 - 概觀](legacy/setup/legacy-setup-overview.md)
    + [舊版 — 下載 SDK](legacy/legacy-download-sdks.md)
    + 舊版 - Media SDK{#legacy-media-sdks}
@@ -167,9 +167,9 @@ ht-degree: 97%
       + 設定 JavaScript {#setup-javascript}
          + [設定 JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
    + [關於心率測量](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime 和串流媒體 Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime 和適用於串流媒體的 Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management 啟用](legacy/intro-to-ava/am-enablement.md)
-   + [自訂連結實施](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
+   + [自訂連結實作](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + 舊版里程碑追蹤 {#legacy-milestone-tracking}
       + [舊版里程碑追蹤](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [將里程碑移轉到 VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
@@ -201,20 +201,20 @@ ht-degree: 97%
       + [在 iOS 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
       + 在 JavaScript 上追蹤搜尋 {#track-seeking-js}
          + [在 JavaScript 2.x 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [在 Android 上實施標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [在 iOS 上實施標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      + [在 Android 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+      + [在 iOS 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       + [iOS 中繼資料索引鍵](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + 在 JavaScript 上實施標準中繼資料 {#impl-std-md-js}
-         + [在 JavaScript 2.x 上實施標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+      + 在 JavaScript 上實作標準中繼資料 {#impl-std-md-js}
+         + [在 JavaScript 2.x 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + 追蹤廣告 {#track-ads}
          + [在 Android 上追蹤廣告](use-cases/track-ads/track-ads-android.md)
          + [在 iOS 上追蹤廣告](use-cases/track-ads/track-ads-ios.md)
          + 在 JavaScript 上追蹤廣告 {#track-ads-js}
             + [在 JavaScript 2.x 上追蹤廣告](use-cases/track-ads/track-ads-js/track-ads-js.md)
-            + [在 Android 上實施標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-            + [在 iOS 上實施標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-            + 在 JavaScript 上實施標準廣告中繼資料 {#impl-std-ad-md-js}
-               + [在 JavaScript 2.x 上實施標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+            + [在 Android 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+            + [在 iOS 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+            + 在 JavaScript 上實作標準廣告中繼資料 {#impl-std-ad-md-js}
+               + [在 JavaScript 2.x 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + 追蹤章節和區段 {#track-chapters}
          + [在 Android 上追蹤章節和區段](use-cases/track-chapters/track-chapters-android.md)
          + [在 iOS 上追蹤章節和區段](use-cases/track-chapters/track-chapters-ios.md)
@@ -229,7 +229,7 @@ ht-degree: 97%
          + [在 iOS 上追蹤錯誤](use-cases/track-errors/track-errors-ios.md)
          + 在 JavaScript 上追蹤錯誤 {#track-errors-js}
             + [在 JavaScript 2.x 上追蹤錯誤](use-cases/track-errors/track-errors-js/track-errors-js.md)
-      + 追蹤情境 {#tracking-scenarios}
+      + 追蹤案例 {#tracking-scenarios}
          + [沒有廣告的 VOD 播放](use-cases/tracking-scenarios/vod-no-intrs-details.md)
          + [有前段廣告的 VOD 播放](use-cases/tracking-scenarios/vod-preroll-ads.md)
          + [已略過廣告的 VOD 播放](use-cases/tracking-scenarios/vod-skipped-ads.md)

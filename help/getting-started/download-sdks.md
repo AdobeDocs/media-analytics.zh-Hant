@@ -5,44 +5,42 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
+source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 98%
+source-wordcount: '366'
+ht-degree: 90%
 
 ---
 
 # 取得 Media SDK、使用標記的擴充功能和 OTT SDK {#download-sdks}
 
-本頁資訊包含下載最新 Media SDK 以及取得 Media 擴充功能的連結。
+本頁的資訊包含下載最新媒體SDK及取得使用標籤之媒體擴充功能的連結。
 
-本頁資訊包含下載最新 Media SDK 以及取得使用標記的 Media 擴充功能的連結。
-
-Adobe Experience Platform 中的標記是 Adobe 推出的新一代網站標記與 Mobile SDK 管理功能。標記提供一種簡單的方式來部署及管理所有必要的分析、行銷及廣告解決方案，以便支援相關客戶體驗。如需關於標記的其他資訊，請參閱[標記概覽](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=zh-Hant)
+Adobe Experience Platform 中的標記是 Adobe 推出的新一代網站標記與 Mobile SDK 管理功能。標記提供一種簡單的方式來部署及管理所有必要的分析、行銷及廣告解決方案，以便支援相關客戶體驗。如需標籤的其他資訊，請參閱 [標籤概述](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=zh-Hant).
 
 
 >[!NOTE]
 >
->如需關於下載舊版 SDK 的資訊，請參閱[舊版 — 下載 SDK](/help/legacy/legacy-download-sdks.md)。<br>
+>如需有關下載舊版 SDK 的資訊，請參閱[舊版 — 下載 SDK](/help/legacy/legacy-download-sdks.md)。<br>
 >如需關於終止支援的重要資訊，請參閱[終止支援常見問題集](/help/additional-resources/end-of-support-faqs.md)。
 
 ## Media SDK 和 Mobile 程式庫 {#media-sdks-libraries}
 
-### Web 實施 {#download-web-sdk}
+### Web 實作 {#download-web-sdk}
 
 | 支援的平台 |  版本 |  API   |  文件 |  範例  |
 |:---:|---|---|---|---|
 | ![JavaScript 圖示](assets/javascript-icon.png) | Web - [JS 適用的 Media SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用JavaScript安裝Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [JS 適用的 Media SDK v3.0.2 範例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript 圖示](assets/javascript-icon.png) | Web - Media 擴充功能 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能 — 使用標記 (資料收集)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant) | [Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能範例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 
-### Mobile 實施 {#get-mobile-extension}
+### Mobile 實作 {#get-mobile-extension}
 
 | 支援的平台 |  版本 |  文件   |  範例  |
 |:---:|---|---|---|
 | ![Android 圖示](assets/android-icon.png) | Android - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
 | ![Apple iOS 圖示](assets/ios-icon.png)<br>新增 tvOS 圖示 | iOS / tvOS - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 
-### 過頂實施 {#download-ott-libraries}
+### 過頂實作 {#download-ott-libraries}
 
 | 支援的平台 |  版本 |  API   |  文件 |
 |:---:|---|---|---|
