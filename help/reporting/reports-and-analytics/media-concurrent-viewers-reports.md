@@ -1,14 +1,14 @@
 ---
 title: 媒體同時檢閱者
-description: 「了解用來顯示一整天的同時檢閱者的『媒體同時檢閱者』儀表板。 您可依內容、裝置類型或國家/地區來篩選資料。」
+description: 「了解用來顯示一整天的同時檢閱者的『媒體同時檢閱者』控制面板。 您可依內容、裝置類型或國家/地區來篩選資料。」
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 feature: "Media Analytics, Reports & Analytics Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
