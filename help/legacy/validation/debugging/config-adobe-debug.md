@@ -1,14 +1,14 @@
 ---
 title: 設定 Adobe Debug
-description: 「了解如何設定Adobe除錯，以便用於疑難排解Media SDK實作。」
+description: 「了解如何設定可用來針對 Media SDK 實作進行疑難排解的 Adobe Debug。」
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '651'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## 存取 Adobe Debug {#accessing-adobe-debug}
 
-若要存取 Adobe Debug:
+若要存取 Adobe Debug：
 
 1. 前往 [Experience Cloud](https://www.marketing.adobe.com/) 並建立新的 Adobe Experience Cloud 使用者。
 
@@ -39,7 +39,7 @@ ht-degree: 97%
 
 ## 除錯代理 {#debug-proxy}
 
-下載及設定除錯代理:
+下載及設定除錯代理：
 
 1. 前往 [App Downloads](https://debug.adobe.com/#/downloads) 下載除錯代理。
 
@@ -57,7 +57,7 @@ ht-degree: 97%
 
 首次執行 Adobe Debug 時，系統會產生唯一的 SSL 憑證。如果您的桌上型電腦和/或應用程式支援 HTTPS 流量，便需要下載及安裝我們的 SSL 憑證。
 
-下載及安裝 SSL 憑證:
+下載及安裝 SSL 憑證：
 
 1. 在安裝及啟動 Adobe Debug 之後，前往 [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) 下載憑證。
 1. 匯入憑證
@@ -90,9 +90,9 @@ ht-degree: 97%
 
 如果您的 Adobe Debug 遺失 HTTPS 呼叫，就必須在行動裝置上安裝 Adobe Debug 的 SSL 憑證。
 
-### iOS 應用程式
+### iOS
 
-若要在 iOS 裝置上安裝 SSL 憑證:
+若要在 iOS 裝置上安裝 SSL 憑證：
 
 1. 在筆記型電腦上開啟除錯代理，然後前往 [Adobe Debug](https://debug.adobe.com)。
 1. 在 iOS 裝置上完成以下步驟：
@@ -108,7 +108,7 @@ ht-degree: 97%
 
 ### Android
 
-若要在 Android 裝置上安裝 SSL 憑證:
+若要在 Android 裝置上安裝 SSL 憑證：
 
 1. 在筆記型電腦上開啟除錯代理，然後前往 [Adobe Debug](https://debug.adobe.com)。
 1. 在 Android 裝置上完成以下步驟：
