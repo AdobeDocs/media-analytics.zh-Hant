@@ -6,22 +6,22 @@ exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # 設定 Android{#set-up-android}
 
-了解如何設定 Android 裝置的 Streaming Media Analytics。
+了解如何為 Android 裝置設定適用於串流媒體的 Analytics。
 
 >[!IMPORTANT]
 >
 >我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/additional-resources/end-of-support-faqs.md)。
 
 
-## 必備條件
+## 先決條件
 
 * **取得適用於 Media SDK 的有效設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
@@ -143,4 +143,4 @@ ht-degree: 97%
 
 在 2.x 版中，所有公用方法皆已整合至 `com.adobe.primetime.va.simple.MediaHeartbeat` 類別，讓開發人員更容易操作。此外，所有的設定現已整合至 `com.adobe.primetime.va.simple.MediaHeartbeatConfig` 類別。
 
-如需有關從1.x移轉至2.x的資訊，請參閱舊版實作檔案。
+如需有關從 1.x 移轉至 2.x 的資訊，請參閱舊版實作文件。
