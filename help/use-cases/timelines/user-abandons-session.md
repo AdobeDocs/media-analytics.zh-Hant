@@ -1,14 +1,14 @@
 ---
-title: 了解媒體追蹤時間軸 — 使用者放棄工作階段
-description: 了解放棄視訊工作階段時的播放�點時間軸和對應使用者的動作。 了解每個動作和請求的詳細資訊。
+title: 了解媒體追蹤時間軸 - 使用者放棄工作階段
+description: 了解播放點時間軸和視訊工作階段放棄時對應的使用者動作。了解每個動作和要求的詳細資料。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 92%
 
 下列圖表說明播放點時間軸和使用者動作的對應時間軸。以下呈現每個動作的詳細資料及其隨附要求。
 
-![API內容](assets/va_api_content_2.png)
+![API 內容](assets/va_api_content_2.png)
 
-![API動作](assets/va_api_actions_2.png)
+![API 動作](assets/va_api_actions_2.png)
 
 ## 動作詳細資料
 
@@ -30,7 +30,7 @@ ht-degree: 92%
 | --- | :---: | :---: | --- |
 | 按下「自動播放」或「播放」按鈕 | 0 | 0 | `/api/v1/sessions` |
 
-這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。播放器狀態尚未進入「正在播放」，而是「正在開始」。要求內容的  對映必須包含強制工作階段參數`params`。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。如需工作階段的相關資訊，請參閱媒體收集API檔案。
+這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。播放器狀態尚未進入「正在播放」，而是「正在開始」。要求內容的 `params` 對應必須包含強制工作階段參數。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。如需有關工作階段的資訊，請參閱 Media Collection API 文件。
 
 ```json
 {
