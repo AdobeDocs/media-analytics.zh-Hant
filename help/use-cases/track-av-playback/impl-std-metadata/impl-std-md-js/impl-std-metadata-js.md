@@ -1,18 +1,18 @@
 ---
-title: 了解如何使用JavaScript 2.x實作標準中繼資料
-description: 了解如何在瀏覽器應用程式(JS 2.x)中設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
+title: 了解如何使用 JavaScript 2.x 實作標準中繼資料
+description: 了解如何在瀏覽器應用程式 (JS 2.x) 中設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '67'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript 2.x實作標準中繼資料{#implement-standard-metadata-on-javascript}
+# 使用 JavaScript 2.x 實作標準中繼資料{#implement-standard-metadata-on-javascript}
 
 ## 中繼資料常數
 
@@ -20,9 +20,9 @@ ht-degree: 49%
 | --- | --- |
 | `StandardMediaMetadata` | 用於在 `MediaObject` 上附加標準中繼資料的常數 |
 
-## 實施
+## 實作
 
-在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。例如:
+在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。例如：
 
 ```js
 _onVideoLoad = function () {
