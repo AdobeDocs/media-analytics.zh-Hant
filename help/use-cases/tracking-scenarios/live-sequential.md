@@ -1,14 +1,14 @@
 ---
-title: 具有循序追蹤的即時主要內容
-description: 檢視如何使用Media SDK追蹤具有循序追蹤之即時內容的範例。
+title: 有循序追蹤的即時主要內容
+description: 檢視如何使用 Media SDK 追蹤具有循序追蹤之即時內容的範例。
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '520'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 91%
 
 ## 心率內容播放 {#heartbeat-content-play}
 
-這看起來應該幾乎與心率內容開始呼叫完全相同，但主要差異在於:event:類型」參數。 所有參數應該依然不受影響。
+這應該看起來大多與心率內容開始呼叫完全相同，但主要的差異在於「s:event:type」參數。所有參數應該依然不受影響。
 
 | 參數 | 值 | 附註 |
 |---|---|---|
@@ -166,7 +166,7 @@ _mediaHeartbeat.trackSessionEnd();
 // Continue similarly tracking further sessions in the live stream if required 
 ```
 
-### iOS 應用程式
+### iOS
 
 以下是預期的 API 呼叫順序：
 
