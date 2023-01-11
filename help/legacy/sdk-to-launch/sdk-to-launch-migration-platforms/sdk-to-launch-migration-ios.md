@@ -5,9 +5,9 @@ exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '412'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ ADBMediaHeartbeat* tracker =
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK中，您可手動建立 `ADBMediaHeartbeatConfig` 物件並設定追蹤參數。實施委派介面公開
+在獨立 Media SDK中，您可手動建立 `ADBMediaHeartbeatConfig` 物件並設定追蹤參數。實作委派介面公開
 `getQoSObject()` 和 `getCurrentPlaybackTime()functions.`
 
 建立 MediaHeartbeat 例項以供追蹤：
@@ -128,19 +128,19 @@ ADBMediaHeartbeat* tracker =
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK 中，實施 `ADBMediaHeartbeartDelegate` 通訊協定的委派物件會在建立追蹤器時傳遞。當追蹤器呼叫 `getQoSObject()` 和 `getCurrentPlaybackTime()` 介面方法時，
-實施應傳回最新的 QoE
+在獨立 Media SDK 中，實作 `ADBMediaHeartbeartDelegate` 通訊協定的委派物件會在建立追蹤器時傳遞。當追蹤器呼叫 `getQoSObject()` 和 `getCurrentPlaybackTime()` 介面方法時，
+實作應傳回最新的 QoE
 和播放點。
 
 ### Launch 擴充功能
 
-實施應呼叫追蹤器公開的 `updateCurrentPlayhead` 方法，
+實作應呼叫追蹤器公開的 `updateCurrentPlayhead` 方法，
 以更新目前播放器播放點。您應每秒至少
 呼叫一次此方法以精確追蹤。
 
 [媒體 API 參考 - 更新目前的播放點](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
-實施應呼叫追蹤器公開的 `updateQoEObject` 方法，
+實作應呼叫追蹤器公開的 `updateQoEObject` 方法，
 以更新 QoE 資訊。您應該在品質量度變更時呼叫此方法。
 
 [媒體 API 參考 - 更新 QoE 物件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
