@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Android上追蹤核心播放
-description: 了解如何在Android上使用Media SDK實作核心追蹤。
+title: 了解如何在 Android 上追蹤核心播放
+description: 了解如何在 Android 上使用 Media SDK 實作核心追蹤。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '708'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 本文件涵蓋 SDK 2.x 版中的追蹤。
 >[!IMPORTANT]
->若您正在實作 SDK 1.x 版，您可以在此處下載適用於 Android 的 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載適用於 Android 的 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)
 
 1. **初始追蹤設定**
 
@@ -32,7 +32,7 @@ ht-degree: 97%
    | `streamType` | 資料流類型 (請參閱下列 _StreamType 常數_) | 是 |
    | `mediaType` | 媒體類型 (請參閱下列 _MediaType 常數_) | 是 |
 
-   **`StreamType`常數:**
+   **`StreamType`常數：**
 
    | 常數名稱 | 說明 |
    |---|---|
@@ -43,7 +43,7 @@ ht-degree: 97%
    | `AUDIOBOOK` | 有聲書的資料流類型 |
    | `PODCAST` | 播客的資料流類型 |
 
-   **`MediaType`常數:**
+   **`MediaType`常數：**
 
    | 常數名稱 | 說明 |
    |---|---|
@@ -68,10 +68,10 @@ ht-degree: 97%
       >將標準中繼資料物件附加到媒體物件為選用。
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * 請在此處參閱完整的可用視訊中繼資料組: [音效和視訊參數](/help/implementation/variables/audio-video-parameters.md)
+      * 請在此處參閱完整的可用視訊中繼資料組：[音效和視訊參數](/help/implementation/variables/audio-video-parameters.md)
    * **自訂中繼資料**
 
-      為自訂變數建立字典，並為此媒體填入資料。例如:
+      為自訂變數建立字典，並為此媒體填入資料。例如：
 
       ```java
       HashMap<String, String> mediaMetadata =  
@@ -84,7 +84,7 @@ ht-degree: 97%
 
 1. **追蹤開始播放的意圖**
 
-   若要開始追蹤媒體工作階段，請呼叫媒體心率例項上的 `trackSessionStart`。例如:
+   若要開始追蹤媒體工作階段，請呼叫媒體心率例項上的 `trackSessionStart`。例如：
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -106,7 +106,7 @@ ht-degree: 97%
 
 1. **追蹤實際的播放開始**
 
-   識別來自媒體播放器的媒體播放開始 (在畫面上轉譯了媒體的第一個時間格) 事件，並呼叫 `trackPlay`:
+   識別來自媒體播放器的媒體播放開始 (在畫面上轉譯了媒體的第一個時間格) 事件，並呼叫 `trackPlay`：
 
    ```java
    // Video is rendered on the screen) and call trackPlay.  
@@ -117,7 +117,7 @@ ht-degree: 97%
 
 1. **追蹤播放完成**
 
-   識別來自媒體播放器的媒體播放完成 (使用者已觀看內容至結尾) 事件，並呼叫 `trackComplete`:
+   識別來自媒體播放器的媒體播放完成 (使用者已觀看內容至結尾) 事件，並呼叫 `trackComplete`：
 
    ```java
    public void onVideoComplete(Observable observable, Object data) {
@@ -127,7 +127,7 @@ ht-degree: 97%
 
 1. **追蹤工作階段結尾**
 
-   識別來自媒體播放器的媒體播放卸載/關閉 (使用者關閉媒體和/或媒體完成及卸載) 事件，並呼叫 `trackSessionEnd`:
+   識別來自媒體播放器的媒體播放卸載/關閉 (使用者關閉媒體和/或媒體完成及卸載) 事件，並呼叫 `trackSessionEnd`：
 
    ```java
    // Closes the media and/or the media completed and unloaded,  
@@ -143,7 +143,7 @@ ht-degree: 97%
 
 1. **追蹤所有可能的暫停情況**
 
-   識別來自媒體播放器媒體暫停的事件，並呼叫 `trackPause`:
+   識別來自媒體播放器媒體暫停的事件，並呼叫 `trackPause`：
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
@@ -153,7 +153,7 @@ ht-degree: 97%
 
    **暫停情況**
 
-   識別視訊播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`:
+   識別視訊播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`：
 
    * 使用者明確在應用程式中點擊暫停。
    * 播放器自行進入「暫停」狀態。
@@ -173,7 +173,7 @@ ht-degree: 97%
    >
    >這可能與在步驟 4 使用的事件來源相同。確保媒體播放恢復時，每個 `trackPause()` API 呼叫都與下列 `trackPlay()` API 呼叫成對。
 
-如需有關追蹤核心播放的詳細資訊，請參閱下列內容:
+如需有關追蹤核心播放的詳細資訊，請參閱下列內容：
 
-* 追蹤情境：[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
+* 追蹤案例：[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的 Android SDK 包含範例播放器。
