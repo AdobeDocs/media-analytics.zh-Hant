@@ -1,14 +1,14 @@
 ---
-title: 追蹤廣告說明
-description: 有關如何使用 Media SDK 實作廣告追蹤的概述。
+title: 說明追蹤廣告
+description: 有關如何使用 Media SDK 實作廣告追蹤的概觀。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 99%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/getting-started/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK。](/help/getting-started/download-sdks.md)
 
-廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。請使用媒體播放器的 API 來識別重要的播放器事件，並填入必要和選用的廣告變數。請在此處參閱完整的中繼資料清單: [廣告參數](../../implementation/variables/ad-parameters.md)。
+廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。請使用媒體播放器的 API 來識別重要的播放器事件，並填入必要和選用的廣告變數。請在此處參閱完整的中繼資料清單：[廣告參數](../../implementation/variables/ad-parameters.md)。
 
 ## 播放器事件 {#player-events}
 
@@ -64,11 +64,11 @@ ht-degree: 99%
 | `AdComplete` | 用於追蹤廣告完成事件的常數 |
 | `AdSkip` | 用於追蹤廣告略過事件的常數 |
 
-### 實施步驟
+### 實作步驟
 
 1. 識別廣告插播界限何時開始 (包括前段)，並使用廣告插播資訊建立 `AdBreakObject`。
 
-   `AdBreakObject` 參考資料:
+   `AdBreakObject` 參考資料：
 
    | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
@@ -80,7 +80,7 @@ ht-degree: 99%
 
 1. 識別廣告何時開始，並使用廣告資訊建立 `AdObject` 例項。
 
-   `AdObject` 參考資料:
+   `AdObject` 參考資料：
 
    | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
