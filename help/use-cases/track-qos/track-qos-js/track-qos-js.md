@@ -1,30 +1,30 @@
 ---
-title: 了解如何使用JavaScript 2.x追蹤體驗品質
-description: 「了解如何使用JavaScript 2.x，在瀏覽器應用程式中使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
+title: 了解如何使用 JavaScript 2.x 追蹤體驗品質
+description: 「了解如何在使用 JavaScript 2.x 的瀏覽器應用程式中使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。」
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript 2.x追蹤體驗品質{#track-quality-of-experience-on-javascript}
+# 使用 JavaScript 2.x 追蹤體驗品質{#track-quality-of-experience-on-javascript}
 
 下列指示提供所有 2.x SDK 之間實作的指引。
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 實作 QoS
 
 1. 識別媒體播放期間位元速率是否變更，並且利用 QoS 資訊建立 `MediaObject` 例項。
 
-   QoSObject 變數:
+   QoSObject 變數：
 
    >[!TIP]
    >
@@ -37,7 +37,7 @@ ht-degree: 84%
    | `fps` | FPS 值 | 是 |
    | `droppedFrames` | 掉格的數量 | 是 |
 
-   QoS 物件建立:
+   QoS 物件建立：
 
    ```js
    // Replace <bitrate>, <startuptime>, <fps> and  
@@ -48,7 +48,7 @@ ht-degree: 84%
                                                   <droppedFrames>);
    ```
 
-1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件:
+1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件：
 
    ```js
    _onBitrateChange = function() {
@@ -61,7 +61,7 @@ ht-degree: 84%
    >更新 QoS 物件，並在每次位元速率變更時呼叫位元速率變更事件。如此可提供最精確的 QoS 資料。
 
 1. 請確定 `getQoSObject()` 方法會傳回最新的 QoS 資訊。
-1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊(請參閱[概述](/help/use-cases/track-errors/track-errors-overview.md))。
+1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊(請參閱[概觀](/help/use-cases/track-errors/track-errors-overview.md))。
 
    >[!TIP]
    >
