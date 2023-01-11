@@ -1,14 +1,14 @@
 ---
-title: 具有已略過章節的VOD播放
-description: 檢視如何使用Media SDK追蹤使用者已略過章節之VOD內容的範例。
+title: 已略過章節的 VOD 播放
+description: 檢視如何使用 Media SDK 追蹤使用者已略過章節之 VOD 內容的範例。
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 91%
 
 ## 參數 {#parameters}
 
-除了沒有章節完成網路呼叫以外，章節播放期間使用的參數完全等同於 [具有一個章節的 VOD 播放](/help/use-cases/tracking-scenarios/vod-one-chapter.md)情境中的參數。
+除了沒有章節完成網路呼叫以外，章節播放期間使用的參數完全等同於 [具有一個章節的 VOD 播放](/help/use-cases/tracking-scenarios/vod-one-chapter.md) 情境中的參數。
 
 ## 程式碼範例 {#sample-code}
 
@@ -127,7 +127,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 應用程式
+### iOS
 
 如要在 iOS 中查看此情境，請設定下列程式碼：
 
