@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Chromecast上追蹤體驗品質
-description: 「了解如何在Chromecast上使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
+title: 了解如何在 Chromecast 上追蹤體驗品質
+description: 「了解如何在 Chromecast 上使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。」
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '294'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 91%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 概觀 {#overview}
 
-體驗品質追蹤包含服務品質 (QoS) 和錯誤追蹤，此兩項皆為選用元素，且&#x200B;**不是**&#x200B;核心媒體追蹤實施的必要元素。您可以使用媒體播放器 API 識別 QoS 相關的變數以及錯誤追蹤。
+體驗品質追蹤包含服務品質 (QoS) 和錯誤追蹤，此兩項皆為選用元素，且&#x200B;**不是**&#x200B;核心媒體追蹤實作的必要元素。您可以使用媒體播放器 API 識別 QoS 相關的變數以及錯誤追蹤。
 
 ## 播放器事件 {#player-events}
 
@@ -39,7 +39,7 @@ ht-degree: 91%
 
 1. 識別媒體播放期間位元速率是否變更，並且利用 QoS 資訊建立 `MediaObject` 例項。
 
-   **QoSObject 變數:**
+   **QoSObject 變數：**
 
    >[!TIP]
    >
@@ -52,13 +52,13 @@ ht-degree: 91%
    | `fps` | FPS 值 | 是 |
    | `droppedFrames` | 掉格的數量 | 是 |
 
-   **QoS 物件建立:** [createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
+   **QoS 物件建立：** [createQoSObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createQoSObject)
 
    ```
    qosInfo = ADBMobile.media.createQoSObject(50000, 0, 24, 10);
    ```
 
-1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件: [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件：[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
    ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
@@ -69,7 +69,7 @@ ht-degree: 91%
    >更新 QoS 物件，並在每次位元速率變更時呼叫位元速率變更事件。如此可提供最精確的 QoS 資料。
 
 1. 請確定 `getQoSObject()` 方法會傳回最新的 QoS 資訊。
-1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊(請參閱[概述](/help/use-cases/track-errors/track-errors-overview.md))。
+1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊(請參閱[概觀](/help/use-cases/track-errors/track-errors-overview.md))。
 
    >[!TIP]
    >
