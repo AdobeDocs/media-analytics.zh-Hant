@@ -1,14 +1,14 @@
 ---
-title: 沒有廣告的VOD播放
-description: 檢視追蹤不含廣告之VOD播放的範例。
+title: 沒有廣告的 VOD 播放
+description: 檢視追蹤不含任何廣告之 VOD 播放的範例。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '365'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 95%
 
 ## 參數 {#parameters}
 
-您在心率內容開始呼叫上看到的許多相同值，也會在 Adobe Analytics `Content Start` 呼叫上看到。Adobe 使用許多參數來填入各種媒體報表，但下表僅列出最重要的參數:
+您在心率內容開始呼叫上看到的許多相同值，也會在 Adobe Analytics `Content Start` 呼叫上看到。Adobe 使用許多參數來填入各種媒體報表，但下表僅列出最重要的參數：
 
 ### 心率內容開始
 
