@@ -1,13 +1,13 @@
 ---
 title: 播放器狀態追蹤簡介
-description: 了解播放器狀態追蹤功能，包括實作和報告播放器狀態的需求和准則。
+description: 了解播放器狀態追蹤功能，包括實作和報告播放器狀態的要求與準則。
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 為了讓您的產品提供最佳體驗，並提升企業價值，了解客戶的視訊觀看行為至關重要。這包括客戶在不同播放器狀態所花的時間。因應需求靈活地建立、測量新的播放器狀態和事件也很重要。
 
-「播放器狀態追蹤」功能可讓您使用標準解決方案變數集，針對全螢幕、隱藏式字幕、靜音、子母畫面和觀看中等播放工作階段，擷取觀看者互動行為。「播放器狀態追蹤」也能讓您選擇建立自訂播放器狀態。  在 Analysis Workspace 中製作報表時，您可以使用「播放器狀態追蹤」變數。
+「播放器狀態追蹤」功能可讓您使用標準解決方案變數集，針對全螢幕、隱藏式字幕、靜音、子母畫面和觀看中等播放工作階段，擷取觀看者互動行為。「播放器狀態追蹤」也能讓您選擇建立自訂播放器狀態。在 Analysis Workspace 中製作報表時，您可以使用「播放器狀態追蹤」變數。
 
 為了擷取播放器狀態變更，「播放器狀態追蹤」會更新視訊測量中繼資料。舉例來說，為了判斷觀看者是否「確實」觀看視訊，「播放器狀態追蹤」會測量視訊播放期間的聲音開啟時間和聲音關閉時間 (代表觀看者可能沒有在認真觀看視訊)，以及視訊處於一般模式和全螢幕模式的時間。
 
@@ -32,7 +32,7 @@ ht-degree: 94%
 
 「播放器狀態追蹤」需要下列其中一項，才能進行資料收集：
 * Media JS SDK 3.0 以上版本
-* 適用於Adobe Marketing Cloud解決方案的Chromecast 3.0 SDK
+* Adobe Marketing Cloud 解決方案適用的 Chromecast 3.0 SDK
 * Media Analytics 擴充功能 (以便與 Adobe Experience Platform (AEP) SDK 搭配使用)
    * 網頁版：Adobe Media Analytics (3.x SDK) for Audio and Video v1.0 以上版本
    * 行動版：Adobe Media Analytics for Audio and Video v2.0 以上版本
