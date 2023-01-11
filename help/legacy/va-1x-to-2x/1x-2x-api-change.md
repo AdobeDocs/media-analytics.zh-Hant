@@ -1,18 +1,18 @@
 ---
-title: 從1.x版轉換為2.x API
-description: 探索API參考，並列出1.x版和2.x版Media SDK的必要和選用追蹤API。
+title: API 版本 1.x 轉換至 2.x
+description: 探索 API 參考資料並列出 Media SDK 1.x 版和 2.x 版的必要和選用追蹤 API。
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# 舊版API — 從1.x轉換為2.x {#one-x-to-two-x-conv}
+# 舊版 API — 1.x 轉換至 2.x {#one-x-to-two-x-conv}
 
 ## Media SDK 2.x API 參考資料
 
@@ -21,7 +21,7 @@ ht-degree: 84%
 * [JS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [Chromecast API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
-## 必要追蹤* API:
+## 必要追蹤* API：
 
 |  VHL 1.x  | VHL 2.x |
 |---|---|
@@ -34,9 +34,9 @@ ht-degree: 84%
 | `videoPlayerPlugin.trackApplicationError()` | 不適用 |
 | `videoPlayerPlugin.trackVideoPlayerError()` | [mediaHeartbeat.trackError()](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackError) |
 
-所有選用的追蹤 API (例如「廣告」、「章節」、「位元速率變更」、「搜尋」和「緩衝」) 現已成為單一 `trackEvent` API 的一部分。[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackEvent) API 接收代表您有意追蹤的事件類型的常數參數:
+所有選用的追蹤 API (例如「廣告」、「章節」、「位元速率變更」、「搜尋」和「緩衝」) 現已成為單一 `trackEvent` API 的一部分。[trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackEvent) API 接收代表您有意追蹤的事件類型的常數參數：
 
-## 選用的 trackEvent API:
+## 選用的 trackEvent API：
 
 | VHL 1.x | VHL 2.x |
 |---|---|
