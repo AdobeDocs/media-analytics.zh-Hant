@@ -1,14 +1,14 @@
 ---
-title: 具有一個章節的VOD播放
-description: 檢視追蹤包含一個章節之VOD播放的範例。
+title: 有一個章節的 VOD 播放
+description: 檢視追蹤含有一個章節之 VOD 播放的範例。
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 應用程式
+### iOS
 
 如要在 iOS 中查看此情境，請設定下列程式碼：
 
@@ -331,7 +331,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 應用程式
+### iOS
 
 如要在 iOS 中查看此情境，請設定下列程式碼：
 
