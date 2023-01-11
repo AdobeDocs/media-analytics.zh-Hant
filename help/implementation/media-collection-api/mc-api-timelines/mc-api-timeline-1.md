@@ -1,14 +1,14 @@
 ---
 title: 了解媒體追蹤時間軸
-description: 深入了解播放點時間軸和對應使用者的動作。 了解每個動作的詳細資料及其隨附的要求。
+description: 深入了解播放點時間軸和對應使用者的動作。了解每個動作的詳細資料及其隨附的要求。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1064'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 98%
 
 下列圖表說明播放點時間軸和使用者動作的對應時間軸。以下呈現每個動作的詳細資料及其隨附要求。
 
-![API內容](assets/va_api_content.png)
+![API 內容](assets/va_api_content.png)
 
-![API動作](assets/va_api_actions.png)
+![API 動作](assets/va_api_actions.png)
 
 ## 動作詳細資料
 
@@ -34,7 +34,7 @@ ht-degree: 98%
 
 它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。播放器狀態尚未進入「正在播放」，而是「正在開始」。
 
-要求內容的 [ 對映必須包含](../mc-api-ref/mc-api-sessions-req.md)強制工作階段參數`params`。
+要求內容的 `params` 對應必須包含[強制工作階段參數](../mc-api-ref/mc-api-sessions-req.md)。
 
 在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。
 
