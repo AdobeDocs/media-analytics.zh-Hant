@@ -6,15 +6,15 @@ exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '150'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 用戶端{#client-side}
 
-**刪除此頁面??**
+**移除此頁面？**
 
 Media Analytics (心率) 是 Adobe 的標準化媒體追蹤解決方案，
 
