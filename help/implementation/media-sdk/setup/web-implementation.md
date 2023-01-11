@@ -1,13 +1,13 @@
 ---
-title: 如何設定適用於串流媒體的 Analytics的Web實作
-description: 了解如何為網頁應用程式實作Adobe串流媒體。
+title: 如何設定適用於串流媒體的 Analytics 的 Web 實作
+description: 了解如何為 Web 應用程式實作 Adobe Streaming Media。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 69%
+ht-degree: 90%
 
 ---
 
@@ -19,18 +19,18 @@ ht-degree: 69%
 
 ## 先決條件 {#prerequesites}
 
-* **獲取有效的配置參數**
+* **取得有效設定參數**
 
-   在您設定分析帳戶後，即可從Adobe代表取得這些參數。
+   設定 Analytics 帳戶之後，可以向 Adobe 代表取得這些參數。
 
-* **實作 `AppMeasurement` 和 `Experience Cloud Identity Service` 的JavaScript適用**
+* **在您的媒體應用程式中實作 JavaScript 適用的 `AppMeasurement` 和 `Experience Cloud Identity Service`**
 
-   如需詳細資訊，請參閱 [使用JavaScript實作Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hant) 和 [實作Experience CloudIdentity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hant).
+   如需詳細資訊，請參閱[使用 JavaScript 實作 Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hant) 和[實作 Experience Cloud 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=zh-Hant)。
 
-* **在您的媒體播放器中加入下列API**
+* **在您的媒體播放器中包含以下 API**
 
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
-   * *提供播放器資訊的API*  — 這包括目前播放的媒體、廣告和章節的相關資訊。
+   * *提供播放器資訊的 API* - 這包含目前播放的媒體、廣告和章節之相關資訊。
 
 ## 設定 JavaScript 3.x {#set-up-javascript}
 
@@ -106,4 +106,4 @@ ht-degree: 69%
 
 如需有關從 2.x 移轉至 3.x 的詳細資訊，請參閱[從 2.x 移轉至 3.x](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)。
 
-如需舊版內容，請參閱 [舊版實作](/help/legacy/media-sdk/setup/setup-overview.md)
+如需舊版內容，請參閱[舊版實作](/help/legacy/media-sdk/setup/setup-overview.md)
