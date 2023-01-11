@@ -1,18 +1,18 @@
 ---
-title: 了解如何在Android上實作標準中繼資料
-description: 了解如何在Android上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
+title: 了解如何在 Android 上實作標準中繼資料
+description: 了解如何在 Android 上設定要連同追蹤呼叫一起傳送的標準影片和廣告中繼資料。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '106'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
-# 在 Android 上實施標準中繼資料{#implement-standard-metadata-on-android}
+# 在 Android 上實作標準中繼資料{#implement-standard-metadata-on-android}
 
 ## 標準中繼資料常數
 
@@ -28,7 +28,7 @@ ht-degree: 76%
 * 對中繼資料使用標準中繼資料常數，在 `HashMap` 上設定標準視訊中繼資料 `MediaInfo`。
 * 叫用 `MediaInfo` API 時，提供此 `trackSessionStart()` 物件。
 
-## 實施範例
+## 實作範例
 
 ### 影片
 
