@@ -1,14 +1,14 @@
 ---
-title: 具有緩衝的VOD播放
-description: 檢視如何使用Media SDK追蹤VOD內容的範例。
+title: 有緩衝的 VOD 播放
+description: 檢視如何使用 Media SDK 追蹤 VOD 內容的範例。
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '229'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 應用程式
+### iOS
 
 如要在 iOS 中查看此情境，請設定下列程式碼：
 
