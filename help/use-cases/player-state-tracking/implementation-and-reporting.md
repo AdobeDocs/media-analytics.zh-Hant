@@ -1,13 +1,13 @@
 ---
 title: 實作與報告
-description: 了解如何實作播放器狀態追蹤功能，包括。
+description: 了解如何實作播放器狀態追蹤功能，包括
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
