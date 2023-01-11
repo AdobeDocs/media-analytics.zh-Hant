@@ -1,14 +1,14 @@
 ---
-title: 串流媒體收集API事�件要求端點
-description: "什麼是Media Collection API事件要求端點參數和回應？"
+title: 串流媒體收集 API - 事件要求端點
+description: 「什麼是 Media Collection API 事件要求端點參數和回應？」
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 89%
 
 ## URI 參數
 
-`sid`:從 [工作階段要求](mc-api-sessions-req.md).
+`sid`：從[工作階段要求](mc-api-sessions-req.md) 傳回的工作階段 ID。
 
 ## 要求內文
 
-要求內文必須是 JSON，而且結構必須與以下範例要求內文相同:
+要求內文必須是 JSON，而且結構必須與以下範例要求內文相同：
 
 ```json
 { 
