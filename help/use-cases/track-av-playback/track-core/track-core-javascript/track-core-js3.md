@@ -1,13 +1,13 @@
 ---
-title: 了解如何使用JavaScript 3.x版追蹤核心播放
-description: 了解如何使用JavaScript 3.x應用程式，在瀏覽器中使用Media SDK實作核心追蹤。
+title: 了解如何使用 JavaScript v3.x 追蹤核心播放
+description: 了解如何在瀏覽器中使用 JavaScript 3.x 應用程式，以 Media SDK 實作核心追蹤。
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -32,14 +32,14 @@ ht-degree: 95%
    | `streamType` | 字串 |  |
    | `mediaType` |  | 媒體類型 (音訊或視訊)。 |
 
-   **`StreamType`常數:**
+   **`StreamType`常數：**
 
    | 常數名稱 | 說明 |
    |---|---|
    | `VOD` | 隨選視訊的資料流類型。 |
    | `AOD` | 隨選音訊的資料流類型。 |
 
-   **`MediaType`常數:**
+   **`MediaType`常數：**
 
    | 常數名稱 | 說明 |
    |---|---|
@@ -66,7 +66,7 @@ ht-degree: 95%
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         請在此處參閱完整的可用中繼資料組: [音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md)
+         請在此處參閱完整的可用中繼資料組：[音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md)
    * **自訂中繼資料**
 
       為自訂變數建立變數物件，並為此媒體填入資料。例如：
@@ -87,7 +87,7 @@ ht-degree: 95%
 
 1. **追蹤開始播放的意圖**
 
-   若要開始追蹤媒體工作階段，請呼叫媒體心率例項上的 `trackSessionStart`:
+   若要開始追蹤媒體工作階段，請呼叫媒體心率例項上的 `trackSessionStart`：
 
    ```js
    var mediaObject = ADB.Media.createMediaObject("video-name",
@@ -119,7 +119,7 @@ ht-degree: 95%
 
 1. **追蹤實際的播放開始**
 
-   識別來自媒體播放器的播放開始 (在畫面上轉譯了媒體的第一個時間格) 事件，並呼叫 `trackPlay`:
+   識別來自媒體播放器的播放開始 (在畫面上轉譯了媒體的第一個時間格) 事件，並呼叫 `trackPlay`：
 
    ```js
    tracker.trackPlay();
@@ -127,7 +127,7 @@ ht-degree: 95%
 
 1. **追蹤播放完成**
 
-   識別來自媒體播放器的播放完成 (使用者已觀看內容至結尾) 事件，並呼叫 `trackComplete`:
+   識別來自媒體播放器的播放完成 (使用者已觀看內容至結尾) 事件，並呼叫 `trackComplete`：
 
    ```js
    tracker.trackComplete();
@@ -135,7 +135,7 @@ ht-degree: 95%
 
 1. **追蹤工作階段結尾**
 
-   識別來自媒體播放器的播放卸載/關閉 (使用者關閉媒體和/或媒體完成及卸載) 事件，並呼叫 `trackSessionEnd`:
+   識別來自媒體播放器的播放卸載/關閉 (使用者關閉媒體和/或媒體完成及卸載) 事件，並呼叫 `trackSessionEnd`：
 
    ```js
    tracker.trackSessionEnd();
@@ -147,7 +147,7 @@ ht-degree: 95%
 
 1. **追蹤所有可能的暫停情況**
 
-   識別來自媒體播放器暫停的事件，並呼叫 `trackPause`:
+   識別來自媒體播放器暫停的事件，並呼叫 `trackPause`：
 
    ```js
    tracker.trackPause();
@@ -155,14 +155,14 @@ ht-degree: 95%
 
    **暫停情況**
 
-   識別媒體播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`:
+   識別媒體播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`：
 
    * 使用者明確在應用程式中點擊暫停。
    * 播放器自行進入「暫停」狀態。
    * (*行動應用程式*) - 使用者讓應用程式進入背景，但您希望應用程式保持工作階段開啟。
    * (*行動應用程式*) - 發生任何類型的系統中斷，導致應用程式進入背景。例如，使用者接聽電話、或發生來自另一個應用程式的彈出視窗，但您希望應用程式維持工作階段進行中，讓使用者能夠從中斷點復原媒體。
 
-1. 識別來自播放器的播放和/或來自暫停的恢復事件，並呼叫 `trackPlay`:
+1. 識別來自播放器的播放和/或來自暫停的恢復事件，並呼叫 `trackPlay`：
 
    ```js
    tracker.trackPlay();
