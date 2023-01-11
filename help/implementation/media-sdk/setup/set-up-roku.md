@@ -6,27 +6,27 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '668'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
-# 設定Roku適用的Mobile SDK v2.x {#set-up-roku}
+# 為 Roku 設定 Mobile SDK v2.x {#set-up-roku}
 
 ## 先決條件 {#roku-prerequisites}
 
-* **取得Media Analytics的有效設定參數**
+* **取得 Media Analytics 的有效設定參數**
 
-   在您設定媒體分析帳戶後，即可從Adobe代表取得這些參數。
-* **在您的媒體播放器中加入下列API**
+   設定 Media Analytics 帳戶之後，可以向 Adobe 代表取得這些參數。
+* **在您的媒體播放器中包含以下 API**
 
    * _訂閱播放器事件專用的 API_ - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * _提供播放器資訊的 API_ - 此資訊包含媒體名稱和播放點位置等詳細內容。
 
-適用於Experience Cloud解決方案的Roku SDK 2.x可讓您測量在BrightScript中撰寫的Roku應用程式、透過對象管理運用與收集對象資料，以及透過視訊事件測量視訊參與。
+Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScript 中撰寫的 Roku 應用程式、透過對象管理利用和收集觀眾資料，以及透過視訊事件測量視訊參與。
 
-## 行動程式庫/ SDK實作
+## Mobile Library/SDK 實作
 
 1. 將[下載的](/help/getting-started/download-sdks.md) Roku 程式庫新增至專案。
 
@@ -37,7 +37,7 @@ ht-degree: 82%
       * `ADBMobileConfig.json`：此元件為根據您應用程式自訂的 SDK 設定檔案。
    1. 新增程式庫檔案和 JSON 設定檔案至您的專案來源。
 
-      用來設定Adobe行動的JSON有一個媒體分析專用的索引鍵，稱為 `mediaHeartbeat`. 這是media analytics設定參數的所屬位置。
+      用來設定 Adobe Mobile 的 JSON 有一個媒體分析專用的索引鍵，稱為 `mediaHeartbeat`。其集結了多種媒體分析的設定參數。
 
       >[!TIP]
       >
@@ -103,7 +103,7 @@ ht-degree: 82%
 
 1. 設定 Experience Cloud 訪客 ID。
 
-   Experience Cloud 訪客 ID 服務提供跨 Experience Cloud 解決方案的通用訪客 ID。視訊事件和其他Marketing Cloud整合需要訪客ID服務。
+   Experience Cloud 訪客 ID 服務提供跨 Experience Cloud 解決方案的通用訪客 ID。視訊事件和其他 Marketing Cloud 整合需要訪客 ID 服務。
 
    確認您的 `ADBMobileConfig` 設定包含 `marketingCloud` 組織 ID。
 
@@ -157,8 +157,8 @@ ht-degree: 82%
 
    |  方法 | 說明 |
    | --- | --- |
-   | `setPrivacyStatus` | 設定 SDK 上的隱私權狀態。  <br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
-   | `getPrivacyStatus` | 取得在 SDK 上設定的目前隱私權狀態。  <br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
+   | `setPrivacyStatus` | 設定 SDK 上的隱私權狀態。<br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
+   | `getPrivacyStatus` | 取得在 SDK 上設定的目前隱私權狀態。<br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
 
    >[!IMPORTANT]
    >
@@ -166,7 +166,7 @@ ht-degree: 82%
 
    |  方法 | 說明 |
    | --- | --- |
-   | `processMessages` | 負責傳遞分析事件至要處理的 SDK。  <br/><br/>`ADBMobile().processMessages()` |
+   | `processMessages` | 負責傳遞分析事件至要處理的 SDK。<br/><br/>`ADBMobile().processMessages()` |
    | `processMediaMessages` | 負責傳遞媒體事件至要處理的 SDK。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
