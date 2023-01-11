@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Roku上追蹤錯誤
-description: 了解如何在Roku上使用Media SDK實作錯誤追蹤。
+title: 了解如何在 Roku 上追蹤錯誤
+description: 了解如何在 Roku 上使用 Media SDK 實作錯誤追蹤。
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '94'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 80%
 
 >[!IMPORTANT]
 >
-> 若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+> 若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 實作錯誤追蹤
 
-1. 追蹤媒體播放器錯誤:
+1. 追蹤媒體播放器錯誤：
 
    ```
    ADBMobile().mediaTrackError(msg.GetMessage(),
