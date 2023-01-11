@@ -1,14 +1,14 @@
 ---
-title: 了解如何在iOS上追蹤搜尋
-description: 了解如何使用iOS上的Media SDK追蹤搜尋開始和搜尋完成事件。
+title: 了解如何在 iOS 上追蹤搜尋
+description: 了解如何在 iOS 上使用 Media SDK 來追蹤搜尋開始和搜尋完成事件。
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 82%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 搜尋追蹤常數
 
@@ -29,7 +29,7 @@ ht-degree: 82%
 
 ## 實作搜尋
 
-1. 從媒體播放器上聽取播放搜尋事件，並在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋:
+1. 從媒體播放器上聽取播放搜尋事件，並在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋：
 
    ```
    - (void)onSeekStart:(NSNotification *)notification {
@@ -39,7 +39,7 @@ ht-degree: 82%
    }
    ```
 
-1. 在來自媒體播放器的搜尋完成通知上，使用 `SeekComplete` 事件來追蹤搜尋的結尾:
+1. 在來自媒體播放器的搜尋完成通知上，使用 `SeekComplete` 事件來追蹤搜尋的結尾：
 
    ```
    - (void)onSeekComplete:(NSNotification *)notification {
