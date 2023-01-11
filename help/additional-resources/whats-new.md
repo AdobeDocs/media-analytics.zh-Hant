@@ -38,7 +38,7 @@ Adobe Experience Cloud 發行說明描述 Adobe Experience Cloud 的新功能、
 | ----------- | ---------- | ---------- |
 | [支援的裝置和平台](../getting-started/supported-devices.md) | 2021 年 8 月 31 日 | 我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 Media Analytics SDK 支援終止常見問題集。 |
 | [Media Analytics SDK 支援終止常見問題集](sdk-implement/end-of-support-faqs.md) |   2019 年秋季 | 日後我們不會再開發 Media Analytics SDK iOS 版和 Android 版。從 2019 年秋季開始導入的新功能，會使用 Media Analytics 擴充功能和 Media Collection API 來啟用。 |
-| [媒體概述](media-overview.md) | 2019 年 2 月 20 日 | Adobe 僅支援 TLS 1.1 或更新版本。經過這項變更後，Adobe 將不再從使用較舊裝置或部署 TLS 1.0 之網頁瀏覽器的使用者收集資料。 |
+| [媒體概觀](media-overview.md) | 2019 年 2 月 20 日 | Adobe 僅支援 TLS 1.1 或更新版本。經過這項變更後，Adobe 將不再從使用較舊裝置或部署 TLS 1.0 之網頁瀏覽器的使用者收集資料。 |
 | [支援的裝置和平台](../getting-started/supported-devices.md) | 2019 年 2 月 19 日 | 以下列出各 SDK 的最低平台版本支援。<br>- iOS：iOS 6+ <br>- Android：Android 5.0+ - Lollipop <br>-  Chrome：v22+<br>- Mozilla：v27+<br>- Safari：v7+<br>- IE：v1+ |
 | [音訊和視訊參數](metrics-and-metadata/audio-video-parameters.md) | 2019 年 2 月 7 日 | Adobe Analytics for Video and Audio 發佈了量度名稱變更。<i>媒體起始</i>將更名為<i>媒體開始次數</i>。做出這項變更是為了反映量度和報告的業界標準，並讓量度在報告中易於識別。 |
 | [音訊和視訊參數](metrics-and-metadata/audio-video-parameters.md) | 2018 年 9 月 13 日 | 我們變更了某些維度、量度與報表的標籤，以便交叉追蹤 Video Analytics 與 Audio Analytics 的內容。變更的標籤包括：*影片起始*&#x200B;變更為&#x200B;*媒體起始*、*影片長度*&#x200B;變更為&#x200B;*內容長度*、*影片名稱*&#x200B;變更為&#x200B;*內容名稱*。Reports and Analytics 中的影片報表已全數更新，捨棄「影片」一名而改用「媒體」。標籤變更並未改變資料收集或歷史資料。如果您要在 Report Builder 或其他任何受到前述變更影響的外部自動化資料提取中使用這些標籤，請多加留意。 |
