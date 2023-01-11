@@ -1,34 +1,34 @@
 ---
-title: 說明實施媒體 SDK
+title: 說明實作媒體 SDK
 description: 「了解如何在行動裝置、OTT 和瀏覽器 (JS) 應用程式中設定 Media SDK 進行媒體追蹤。」
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# 舊版 — Media SDK設定概述 {#setup-overview}
+# 舊版 - Media SDK 設定概觀 {#setup-overview}
 
-下載視訊應用程式或播放器適用的Media SDK後，請依照本節中的資訊來設定和實作Media SDK。
+當您為視訊應用程式或播放器下載 Media SDK 後，請依照本章節中的資訊設定和實作 Media SDK。
 
 
-## 一般實施指引 {#general-implementation-guidelines}
+## 一般實作指引 {#general-implementation-guidelines}
 
-Adobe串流媒體追蹤使用的SDK元件有三種：
-* 媒體心率設定 —  `MediaHeartbeatConfig` 包含報表的基本設定。
-* 媒體心率委派 —  `MediaHeartbeatDelegate` 控制播放時間和QoS物件。
-* 媒體心率 —  `MediaHeartbeat` 是包含成員和方法的主要程式庫。
+有三個主要的 SDK 元件用於 Adobe Streaming Media 追蹤：
+* 媒體心率設定 - `MediaHeartbeatConfig` 包含報表的基本設定。
+* 媒體心率代理人 - `MediaHeartbeatDelegate` 可控制播放時間和 QoS 物件。
+* 媒體心率 - `MediaHeartbeat` 是包含成員與方法的主要程式庫。
 
-## 實作串流媒體SDK
+## 實作 Streaming Media SDK
 
-若要設定及使用串流媒體SDK，請完成下列實作步驟：
+若要設定和使用 Streaming Media SDK，請完成以下實作步驟：
 
-1. 建立 `MediaHeartbeatConfig` 例項，並設定您的設定參數值。
+1. 建立 `MediaHeartbeatConfig` 例項並設定您的設定參數值。
 
    |  變數名稱 | 說明 | 必填 |  預設值  |
    |---|---|:---:|---|
@@ -44,7 +44,7 @@ Adobe串流媒體追蹤使用的SDK元件有三種：
 
    |  方法名稱  |  說明 | 必填 |
    | --- | --- | :---: |
-   | `getQoSObject()` | 傳回包含目前 QoS 資訊的 `MediaObject` 例項。將在播放工作階段期間呼叫此方法多次。播放器實施必須一律傳回最新可用的 QoS 資料。 | 是 |
+   | `getQoSObject()` | 傳回包含目前 QoS 資訊的 `MediaObject` 例項。將在播放工作階段期間呼叫此方法多次。播放器實作必須一律傳回最新可用的 QoS 資料。 | 是 |
    | `getCurrentPlaybackTime()` | 傳回播放點的目前位置。<br /> 對於 VOD 追蹤，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。<br /> 注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。 | 是 |
 
    >[!TIP]
@@ -112,7 +112,7 @@ Adobe串流媒體追蹤使用的SDK元件有三種：
 
 ## 驗證 {#validate}
 
-Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫：
+Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
 * 媒體和廣告開始呼叫會直接傳送到 Adobe Analytics (AppMeasurement) 伺服器。
 * 心率呼叫會傳送到 Media Analytics (心率) 追蹤伺服器並於該位置處理，然後再傳遞到 Adobe Analytics 伺服器。
