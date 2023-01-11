@@ -1,14 +1,14 @@
 ---
-title: iOS中繼資料索引鍵說明
-description: 了解可用的iOS中繼資料索引鍵。
+title: 說明 iOS 中繼資料索引鍵
+description: 了解可用的 iOS 中繼資料索引鍵。
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 90%
 
 [iOS API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
-從 `ADBStandardMetadataKeys.h`:
+從 `ADBStandardMetadataKeys.h`：
 
 ## 視訊中繼資料索引鍵
 
