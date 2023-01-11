@@ -1,14 +1,14 @@
 ---
-title: 了解如何在iOS上追蹤緩衝
-description: 了解如何在iOS上追蹤緩衝事件。
+title: 了解如何在 iOS 上追蹤緩衝
+description: 了解如何在 iOS 上追蹤緩衝事件。
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 87%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 緩衝追蹤常數
 
@@ -30,7 +30,7 @@ ht-degree: 87%
 
 ## 實作緩衝
 
-1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝:
+1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝：
 
    ```
    - (void)onBufferStart:(NSNotification *)notification {
@@ -40,7 +40,7 @@ ht-degree: 87%
    }
    ```
 
-1. 在來自媒體播放器的緩衝完成通知上，使用 `BufferComplete` 事件來追蹤緩衝的結尾:
+1. 在來自媒體播放器的緩衝完成通知上，使用 `BufferComplete` 事件來追蹤緩衝的結尾：
 
    ```
    - (void)onBufferComplete:(NSNotification *)notification {
