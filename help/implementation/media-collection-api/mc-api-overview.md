@@ -1,19 +1,19 @@
 ---
 seo-title: Overview
-title: 串流 Media Collection API 總覽
+title: 串流媒體收集 API 概觀
 description: 了解 Media Collection API 以及您的播放器如何使用 RESTful HTTP 呼叫來追蹤音訊和視訊事件。
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
 ht-degree: 100%
 
 ---
 
-# 媒體收集 API 概述{#overview}
+# Media Collection API 概觀{#overview}
 
 Media Collection API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過 Media Collection API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。
 
@@ -21,13 +21,13 @@ Media Collection API 本質上是轉接程式，可做為伺服器端的 Media S
 
 ## 媒體追蹤資料流程 {#media-tracking-data-flows}
 
-實作 Media Collection API 的媒體播放器會直接向媒體追蹤後端伺服器發出 RESTful API 追蹤呼叫，而實作 Media SDK 的播放器則會向播放器應用程式內的 SDK API 發出追蹤呼叫。透過網路發出呼叫的其中一個效應，就是實作 Media Collection API 的播放器需要處置一些 Media SDK 自動處置的處理工作(詳情請參閱[媒體收集實施](mc-api-impl/mc-api-quick-start.md))。
+實作 Media Collection API 的媒體播放器會直接向媒體追蹤後端伺服器發出 RESTful API 追蹤呼叫，而實作 Media SDK 的播放器則會向播放器應用程式內的 SDK API 發出追蹤呼叫。透過網路發出呼叫的其中一個效應，就是實作 Media Collection API 的播放器需要處置一些 Media SDK 自動處置的處理工作(詳情請參閱[媒體收集實作](mc-api-impl/mc-api-quick-start.md))。
 
 Media Collection API 擷取的追蹤資料，其傳送和初期處理方式與 Media SDK 播放器擷取的追蹤資料有所不同，不過這兩種解決方案使用的後端處理引擎是一樣的。
 
 ![](assets/col_api_overview_simple.png)
 
-## API 總覽 {#api-overview}
+## API 概觀 {#api-overview}
 
 **URI：**&#x200B;請向 Adobe 代表索取。
 
