@@ -1,14 +1,14 @@
 ---
-title: 實施事件要求
-description: 了解在您取得工作階段ID後，如何將事件要求端點用於所有後續的追蹤呼叫
+title: 實作事件要求
+description: 了解如何在取得工作階段 ID 後使用事件要求端點進行所有後續的追蹤呼叫
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '99'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
