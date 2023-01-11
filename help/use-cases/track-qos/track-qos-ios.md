@@ -1,14 +1,14 @@
 ---
-title: 了解如何在iOS上追蹤體驗品質
-description: 「了解如何在iOS上使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
+title: 了解如何在 iOS 上追蹤體驗品質
+description: 「了解如何在 iOS 上使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。」
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 84%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 實作 QoS
 
 1. 識別媒體播放期間位元速率是否變更，並且利用 QoS 資訊建立 `MediaObject` 例項。
 
-   QoSObject 變數:
+   QoSObject 變數：
 
    | 變數 | 說明 | 必填 |
    | --- | --- | :---: |
@@ -37,7 +37,7 @@ ht-degree: 84%
    >
    >唯有在您計劃追蹤 QoS 時，才須使用這些變數。
 
-   QoS 物件建立:
+   QoS 物件建立：
 
    ```
    id qosObject = [ADBMediaHeartbeat createQoSObjectWithBitrate:[BITRATE]
@@ -47,7 +47,7 @@ ht-degree: 84%
    ```
 
 1. 請確定 `getQoSObject` 方法會傳回最新的 QoS 資訊。
-1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件:
+1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件：
 
    ```
    - (void)onBitrateChange:(NSNotification *)notification {
