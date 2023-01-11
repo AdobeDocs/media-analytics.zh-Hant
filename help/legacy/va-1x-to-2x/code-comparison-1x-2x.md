@@ -1,41 +1,41 @@
 ---
-title: 程式碼比較v1.x和v2.x
-description: 了解Media SDK 1.x版和2.x版中的程式碼差異。
+title: 程式碼比較：v1.x 與 v2.x
+description: 了解 Media SDK 1.x 和 2.x 版本的程式碼差異。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '571'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# 舊版程式碼比較 — 1.x和2.x {#code-comparison-x-to-x}
+# 舊版程式碼比較 — 1.x 和 2.x {#code-comparison-x-to-x}
 
 所有設定參數與追蹤 API 現已整合至 `MediaHeartbeats` 和 `MediaHeartbeatConfig` 類別。
 
-**設定 API 變更:**
+**設定 API 變更：**
 
 * `AdobeHeartbeatPluginConfig.sdk` - 已重新命名為 `MediaConfig.appVersion`
 * `MediaHeartbeatConfig.playerName` - 現可透過 `MediaHeartbeatConfig` (而非 `VideoPlayerPluginDelegate`) 設定
-* (僅適用於JavaScript): `AppMeasurement` 例項 - 現可透過 `MediaHeartbeat` 建構函式傳送。
+* (僅適用於JavaScript)：`AppMeasurement` 例項 - 現可透過 `MediaHeartbeat` 建構函式傳送。
 
-**設定屬性變更:**
+**設定屬性變更：**
 
 * `sdk` - 已重新命名為 `appVersion`
 * `publisher` - 已移除；使用 Experience Cloud 組織 ID 取代發佈者
 * `quiteMode` - 已移除
 
-**1.x 和 2.x 範例播放器的連結:**
+**1.x 和 2.x 範例播放器的連結：**
 
 * [1.x 範例播放器 ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
 * [2.x 範例播放器 ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 下列章節提供 1.x 與 2.x 的程式碼比較，包括「初始化」、「核心播放」、「廣告播放」、「章節播放」以及其他事件。
 
-## VHL 程式碼比較: 初始化
+## VHL 程式碼比較：初始化
 
 ### 物件初始化
 
@@ -176,7 +176,7 @@ SampleMediaHeartbeatDelegate.prototype.getQoSObject = function() {
 this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this._player), mediaConfig, appMeasurement);
 ```
 
-## VHL 程式碼比較: 核心播放
+## VHL 程式碼比較：核心播放
 
 ### 工作階段開始
 
@@ -266,7 +266,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 ```
 
 >[!NOTE]
->注意: 在 VHL 2.0 中，設定「標準視訊中繼資料」不再透過 `AdobeAnalyticsPlugin.setVideoMetadata()` API，而是透過 MediaObject key `MediaObject.MediaObjectKey.StandardVideoMetadata()`。
+>注意：在 VHL 2.0 中，設定「標準視訊中繼資料」不再透過 `AdobeAnalyticsPlugin.setVideoMetadata()` API，而是透過 MediaObject key `MediaObject.MediaObjectKey.StandardVideoMetadata()`。
 
 ### 自訂視訊中繼資料
 
@@ -455,7 +455,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-## VHL 程式碼比較: 廣告播放
+## VHL 程式碼比較：廣告播放
 
 ### 廣告開始
 
@@ -658,7 +658,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-## VHL 程式碼比較: 章節播放
+## VHL 程式碼比較：章節播放
 
 ### 章節開始
 
@@ -780,7 +780,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-## VHL 程式碼比較: 其他事件
+## VHL 程式碼比較：其他事件
 
 ### 位元速率變更
 
