@@ -1,14 +1,14 @@
 ---
-title: 測試2：媒體中斷
-description: 了解用於驗證的媒體中斷測試。
+title: 測試 2 媒體中斷
+description: 了解驗證作業使用的媒體中斷測試。
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 89%
 
 ## 測試程序
 
-您必須依照以下順序完成這些工作並加以錄製:
+您必須依照以下順序完成這些工作並加以錄製：
 
 1. **啟動媒體播放器**
 
-   當媒體播放器開始時，以下呼叫的傳送順序如下:
+   當媒體播放器開始時，以下呼叫的傳送順序如下：
 
    1. Adobe Analytics (AppMeasurement) 開始
    1. Media Analytics (心率) 開始
@@ -40,7 +40,7 @@ ht-degree: 89%
 
    如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#play-main-content)。
 
-   另請參閱平台的 [追蹤廣告](/help/use-cases/track-ads/track-ads-overview.md) 這些廣告呼叫的其他資訊指示。
+   如需關於這些廣告呼叫的其他資訊，另請參閱平台的[追蹤廣告](/help/use-cases/track-ads/track-ads-overview.md) 指示。
 
 1. **將應用程式或瀏覽器移動到背景**
 
