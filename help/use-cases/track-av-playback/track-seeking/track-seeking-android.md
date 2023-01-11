@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Android上追蹤搜尋
-description: 了解如何在Android上使用Media SDK追蹤搜尋開始和搜尋完成事件。
+title: 了解如何在 Android 上追蹤搜尋
+description: 了解如何在 Android 上使用 Media SDK 來追蹤搜尋開始和搜尋完成事件。
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 82%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 搜尋追蹤常數
 
@@ -29,7 +29,7 @@ ht-degree: 82%
 
 ## 實作搜尋
 
-1. 從媒體播放器上聽取播放搜尋事件，並在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋:
+1. 從媒體播放器上聽取播放搜尋事件，並在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋：
 
    ```java
    public void onSeekStart(Observable observable, Object data) {  
@@ -37,7 +37,7 @@ ht-degree: 82%
    }
    ```
 
-1. 在來自媒體播放器的搜尋完成通知上，使用 `SeekComplete` 事件來追蹤搜尋的結尾:
+1. 在來自媒體播放器的搜尋完成通知上，使用 `SeekComplete` 事件來追蹤搜尋的結尾：
 
    ```java
    public void onSeekComplete(Observable observable, Object data) {  
