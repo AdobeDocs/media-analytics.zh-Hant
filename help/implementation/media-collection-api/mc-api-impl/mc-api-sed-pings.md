@@ -1,14 +1,14 @@
 ---
 title: 傳送 Ping 事件
-description: Ping事件是串流Media Analytics的心率。 了解如何針對主要內容或廣告追蹤傳送計時Ping。
+description: Ping 事件是適用於串流媒體的 Analytics 的心率。了解如何針對主要內容或廣告追蹤傳送計時 Ping。
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 78%
 
 就字面上來說，Ping 事件是 Media Analytics 的「心率」。Ping 呼叫唯一需要的參數是 `eventType: ping`，另外需要搭配 `playerTime` 物件 (播放點位置和時間戳記)。
 
-以下程式碼片段示範如何針對主要內容實作計時 Ping 機制 (10 秒間隔):
+以下程式碼片段示範如何針對主要內容實作計時 Ping 機制 (10 秒間隔)：
 
 ```js
 ... 
