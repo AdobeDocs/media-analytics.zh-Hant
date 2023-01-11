@@ -1,13 +1,13 @@
 ---
 title: 標準和自訂狀態簡介
-description: 了解播放器狀態追蹤功能，包括實作和報告標準和自訂播放器狀態的需求和准則。
+description: 了解播放器狀態追蹤功能，包括實作和報告標準與自訂播放器狀態的要求與準則。
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '279'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -42,4 +42,4 @@ ht-degree: 92%
 
 您可以建立自訂狀態，在播放工作階段期間擷取自訂動作並更新自訂中繼資料。
 
-如需建立自訂狀態的相關資訊，請參閱[媒體 API 參考指南：`createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+如需有關建立自訂狀態的資訊，請參閱[媒體 API 參考指南：`createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
