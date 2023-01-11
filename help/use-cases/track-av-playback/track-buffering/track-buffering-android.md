@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Android上追蹤緩衝
-description: 了解如何在Android上追蹤緩衝事件。
+title: 了解如何在 Android 上追蹤緩衝
+description: 了解如何在 Android 上追蹤緩衝事件。
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 87%
 下列指示提供所有 2.x SDK 之間實作的指引。
 
 >[!IMPORTANT]
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 緩衝追蹤常數
 
@@ -28,7 +28,7 @@ ht-degree: 87%
 
 ## 實作緩衝
 
-1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝:
+1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝：
 
    ```java
    public void onBufferStart(Observable observable, Object data) {  
@@ -36,7 +36,7 @@ ht-degree: 87%
    }
    ```
 
-1. 在來自媒體播放器的緩衝完成通知上，使用 `BufferComplete` 事件來追蹤緩衝的結尾:
+1. 在來自媒體播放器的緩衝完成通知上，使用 `BufferComplete` 事件來追蹤緩衝的結尾：
 
    ```java
    public void onBufferComplete(Observable observable, Object data) {  
