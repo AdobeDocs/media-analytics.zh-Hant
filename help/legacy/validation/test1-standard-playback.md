@@ -1,22 +1,22 @@
 ---
-title: 測試1標準播放
-description: 了解用於驗證的標準播放測試。
+title: 測試 1 標準播放
+description: 了解驗證作業使用的標準播放測試。
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# 測試 1: 標準播放{#test-standard-playback}
+# 測試 1：標準播放{#test-standard-playback}
 
 本測試案例可用來驗證一般播放和序列是否正常。
 
-Media Analytics 實施包含兩種類型的追蹤呼叫:
+Media Analytics 實作包含兩種類型的追蹤呼叫：
 * 直接對 Adobe Analytics (AppMeasurement) 伺服器進行的呼叫 - 這些呼叫會在「媒體開始」和「廣告開始」事件中發生。
 * 對 Media Analytics (心率) 伺服器進行呼叫 - 這些包含頻內和頻外呼叫。
    * 頻內 - SDK 會在內容播放期間以 10 秒的間隔並在廣告期間以 1 秒的間隔傳送播放時間呼叫或「Ping」。
@@ -27,19 +27,19 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
 
 ## 測試程序
 
-完成並記錄下列動作 (依序):
+完成並記錄下列動作 (依序)：
 
 1. **載入頁面或應用程式**
 
-   **追蹤伺服器** (適用於所有網站與應用程式):
+   **追蹤伺服器** (適用於所有網站與應用程式)：
 
    * **Adobe Analytics (AppMeasurement) 伺服器 -** Experience Cloud 訪客 ID 服務須有 RDC 追蹤伺服器，或是解析為 RDC 追蹤伺服器的 CNAME。Adobe Analytics 追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
    * **Media Analytics (心率) 伺服器 -** 這部伺服器的格式一律為「`[namespace].hb.omtrdc.net`」，其中 `[namespace]` 會指定您的公司名稱。此名稱由 Adobe 提供。
 
-   您需要驗證所有追蹤呼叫的某些重要通用變數:
+   您需要驗證所有追蹤呼叫的某些重要通用變數：
 
-   **Adobe 訪客 ID (`mid`):** `mid` 變數可以用來擷取 AMCV Cookie 中設定的值。`mid` 變數是網站與行動應用程式的主要識別值，也代表 Experience Cloud 訪客 ID 服務設定正確。您可以在 Adobe Analytics (AppMeasurement) 與 Media Analytics (心率) 呼叫中找到它。
+   **Adobe 訪客 ID (`mid`)：** `mid` 變數可以用來擷取 AMCV Cookie 中設定的值。`mid` 變數是網站與行動應用程式的主要識別值，也代表 Experience Cloud 訪客 ID 服務設定正確。您可以在 Adobe Analytics (AppMeasurement) 與 Media Analytics (心率) 呼叫中找到它。
 
    * **Adobe Analytics 開始呼叫**
 
@@ -58,7 +58,7 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
 
       | 參數 | 值 (範例) |
       |---|---|
-      | `pev2` | ADBINTERNAL:Lifecycle |
+      | `pev2` | ADBINTERNAL：Lifecycle |
       | `mid` | 30250035503789876473484580554595324209 |
 
    * **Media Analytics 開始呼叫**
@@ -81,7 +81,7 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
 
 1. **啟動媒體播放器**
 
-   當媒體播放器啟動時，Media SDK 會依照下列順序將重要的呼叫傳送給兩個伺服器:
+   當媒體播放器啟動時，Media SDK 會依照下列順序將重要的呼叫傳送給兩個伺服器：
 
    1. Adobe Analytics 伺服器 - 開始呼叫
    1. Media Analytics 伺服器 - 開始呼叫
@@ -95,7 +95,7 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
 
    * **廣告開始**
 
-   當廣告開始時，重要呼叫的傳送順序如下:
+   當廣告開始時，重要呼叫的傳送順序如下：
 
    1. Adobe Analytics 伺服器 - 廣告開始呼叫
    1. Media Analytics 伺服器 - 廣告開始呼叫
@@ -125,11 +125,11 @@ Media Analytics 實施包含兩種類型的追蹤呼叫:
 
    如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#ma-ad-pause-call)。
 
-1. **播放主要內容10秒並避免中斷。**  **內容播放**
+1. **播放主要內容 10 秒鐘並避免中斷。**  **內容播放**
 
    在主要內容播放期間，Media SDK 會每隔 10 秒將心率 (播放呼叫) 傳送到 Media Analytics 伺服器。
 
-   附註:
+   附註：
 
    * 每個「播放」呼叫的播放點位置應該要以 10 為單位遞增。
    * `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
