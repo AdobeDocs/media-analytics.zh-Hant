@@ -1,14 +1,14 @@
 ---
 title: 測試呼叫詳細資料
-description: 探索驗證實施所必須進行的呼叫。
+description: 探索驗證實作所必須進行的呼叫。
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 98%
 | _**`custom.[value]`**_ | _**自訂中繼資料欄位**_ |
 | _**`a.media.[value]`**_ | _**標準中繼資料欄位**_ |
 
-**附註:**
+**附註：**
 
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 線性資料流的長度應設定為目前節目的最佳預估值。
@@ -41,7 +41,7 @@ ht-degree: 98%
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | 集數標題 |
+| `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -68,7 +68,7 @@ ht-degree: 98%
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | 集數標題 |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
@@ -76,7 +76,7 @@ ht-degree: 98%
 | _**`s:meta:custom.[value]`**_ | _**自訂中繼資料欄位**_ |
 | _**`s:meta:a.media.[value]`**_ | _**標準中繼資料欄位**_ |
 
-**附註:**
+**附註：**
 
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 視訊開始時的線性資料流播放點位置，應設定為目前節目開始後經過的秒數，而不是 0。
@@ -87,17 +87,17 @@ ht-degree: 98%
 |---|---|
 | `s:meta:a.media.show` | 節目 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | 集數標題 |
+| `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | 生產廠房 |
-| `s:meta:a.media.network` | 網路 |
+| `s:meta:a.media.originator` | production house |
+| `s:meta:a.media.network` | network |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | 解除鎖定 |
-| `s:meta:a.media.feed` | 無摘要 |
+| `s:meta:a.media.authorized` | unlocked |
+| `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
 ### Media Analytics (心率) 開始呼叫中的自訂中繼資料 {#custom-metadata-ma}
@@ -114,13 +114,13 @@ ht-degree: 98%
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | 集數標題 |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
-**附註:**
+**附註：**
 
 * 這個呼叫代表 Media SDK 已要求將 Adobe Analytics `pev2=ms_s` 呼叫傳送到 Adobe Analytics (AppMeasurement) 伺服器。
 * 該呼叫不含自訂中繼資料。
@@ -145,7 +145,7 @@ ht-degree: 98%
 | _**`custom.[value]`**_ | _**中繼資料欄位**_ |
 | _**`a.media.[value]`**_ | _**標準中繼資料欄位**_ |
 
-**附註:**
+**附註：**
 
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
@@ -154,19 +154,19 @@ ht-degree: 98%
 
 | 參數 |  值 (範例) |
 |---|---|
-| `a.media.show` | 顯示標題 |
+| `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | 集數標題 |
+| `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
 | `a.media.rating` | TV-14 |
-| `a.media.originator` | 生產廠房 |
-| `a.media.network` | 網路 |
+| `a.media.originator` | production house |
+| `a.media.network` | network |
 | `a.media.ad_load` | 1 |
 | `a.media.mvpd` | mvpd |
-| `a.media.authorized` | 解除鎖定 |
-| `a.media.feed` | 無摘要 |
+| `a.media.authorized` | unlocked |
+| `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-aa-ad-start}
@@ -190,7 +190,7 @@ ht-degree: 98%
 | _**`s:meta:custom.[value]`**_ | _**自訂中繼資料欄位**_ |
 | _**`s:meta:a.media.[value]`**_ | _**標準中繼資料欄位**_ |
 
-**附註:**
+**附註：**
 
 * 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
 * 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
@@ -201,17 +201,17 @@ ht-degree: 98%
 |---|---|
 | `s:meta:a.media.show` | 節目 |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | 集數標題 |
+| `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
 | `s:meta:a.media.rating` | TV-14 |
-| `s:meta:a.media.originator` | 生產廠房 |
-| `s:meta:a.media.network` | 網路 |
+| `s:meta:a.media.originator` | production house |
+| `s:meta:a.media.network` | network |
 | `s:meta:a.media.ad_load` | 1 |
 | `s:meta:a.media.mvpd` | mvpd |
-| `s:meta:a.media.authorized` | 解除鎖定 |
-| `s:meta:a.media.feed` | 無摘要 |
+| `s:meta:a.media.authorized` | unlocked |
+| `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
 ### Media Analytics (心率) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-ma-ad-start}
@@ -231,7 +231,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| `s:asset:type` | ad |
+| `s:asset:type` | 廣告 |
 
 ### Media Analytics (心率) 廣告播放呼叫 {#ma-ad-play-call}
 
@@ -243,7 +243,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**廣告**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Media Analytics (心率) 廣告暫停呼叫 {#ma-ad-pause-call}
 
@@ -255,7 +255,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**廣告**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ### Media Analytics (心率) Adobe Analytics 廣告完成呼叫 {#ma-aa-ad-complete-call}
 
@@ -267,7 +267,7 @@ ht-degree: 98%
 | `s:asset:ad_id` | 9378 |
 | `l:asset:ad_length` | 15 |
 | `s:stream:type` | VOD |
-| _**`s:asset:type`**_ | _**廣告**_ |
+| _**`s:asset:type`**_ | _**ad**_ |
 
 ## 播放主要內容 {#play-main-content}
 
@@ -278,13 +278,13 @@ ht-degree: 98%
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | 集數標題 |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
 | `s:asset:type` | main |
 
-**附註:**
+**附註：**
 
 * 每個播放呼叫的播放點位置應該要以 10 秒為單位遞增。
 * `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
@@ -295,10 +295,10 @@ ht-degree: 98%
 
 | 參數 |  值 (範例) |
 |---|---|
-| _**`s:event:type`**_ | _**暫停**_ |
+| _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | 集數標題 |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | VOD |
