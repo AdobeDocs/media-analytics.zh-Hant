@@ -6,21 +6,21 @@ exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # 設定 iOS{#set-up-ios}
 
-了解如何設定 iOS 裝置的 Streaming Media Analytics。
+了解如何為 iOS 裝置設定適用於串流媒體的 Analytics。
 
 >[!IMPORTANT]
 >
 >我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/additional-resources/end-of-support-faqs.md)。
 
-## 必備條件
+## 先決條件
 
 * **取得適用於 Media SDK 的有效設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
@@ -161,7 +161,7 @@ ht-degree: 98%
 
 在 2.x 版中，所有公用方法皆已整合至 `ADBMediaHeartbeat` 類別，讓開發人員更容易操作。所有設定皆已整合至 `ADBMediaHeartbeatConfig` 類別。
 
-如需有關從1.x移轉至2.x的資訊，請參閱舊版實作檔案。
+如需有關從 1.x 移轉至 2.x 的資訊，請參閱舊版實作文件。
 
 ## 設定 tvOS 的原生應用程式
 
