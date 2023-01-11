@@ -1,24 +1,24 @@
 ---
-title: 追蹤內容播放說明
-description: 「了解如何追蹤核心播放，包括追蹤媒體載入、媒體開始、媒體暫停和媒體完成。 「
+title: 說明追蹤內容播放
+description: 「了解追蹤核心播放，包含追蹤媒體載入、媒體開始、媒體暫停和媒體完成。」
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 追蹤概述{#tracking-overview}
+# 追蹤概觀{#tracking-overview}
 
 本文件涵蓋 SDK 2.x 版中的追蹤。
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/getting-started/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK。](/help/getting-started/download-sdks.md)
 
 ## 播放器事件
 
@@ -28,7 +28,7 @@ ht-degree: 96%
 
 * 建立媒體物件
 * 填入中繼資料
-* 呼叫 `trackSessionStart`；例如: `trackSessionStart(mediaObject, contextData)`
+* 呼叫 `trackSessionStart`；例如：`trackSessionStart(mediaObject, contextData)`
 
 ### 媒體開始時
 
@@ -54,7 +54,7 @@ ht-degree: 96%
 ### 拖曳結束時
 
 * 呼叫 `trackEvent(SeekComplete)`
-取消更改
+取消變更
 
 ### 緩衝開始時
 
@@ -66,14 +66,14 @@ ht-degree: 96%
 
 >[!TIP]
 >
->播放點位置已設為設定和配置程式碼的一部分。如需 `getCurrentPlayheadTime` 的詳細資訊，請參閱[概述: 一般實施指引](/help/implementation/media-sdk/media-sdk-overview.md)。
+>播放點位置已設為設定和配置程式碼的一部分。如需 `getCurrentPlayheadTime` 的詳細資訊，請參閱[概觀：一般實作指引](/help/implementation/media-sdk/media-sdk-overview.md)。
 
 
 ## 實作 {#implement}
 
 1. **初始追蹤設定 -** 識別使用者何時觸發播放意圖 (使用者點按播放和/或自動播放已開啟)，然後使用媒體資訊建立 `MediaObject` 例項，以設定內容名稱、內容 ID、內容長度和資料流類型。
 
-   **`MediaObject`參考資料:**
+   **`MediaObject`參考資料：**
 
    | 變數名稱 | 說明 | 必填 |
    |---|---|---|
@@ -83,7 +83,7 @@ ht-degree: 96%
    | `streamType` | 資料流類型 | 是 |
    | `mediaType` | 媒體類型 (音效或視訊內容) | 是 |
 
-   **`StreamType`常數:**
+   **`StreamType`常數：**
 
    | 常數名稱 | 說明 |
    |---|---|
@@ -94,7 +94,7 @@ ht-degree: 96%
    | `AUDIOBOOK` | 有聲書的資料流類型 |
    | `PODCAST` | 播客的資料流類型 |
 
-   **`MediaType`常數:**
+   **`MediaType`常數：**
 
    | 常數名稱 | 說明 |
    |---|---|
@@ -113,7 +113,7 @@ ht-degree: 96%
 
       在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。
 
-      請在此處參閱完整的中繼資料清單: [音效和視訊參數.](../../implementation/variables/audio-video-parameters.md)
+      請在此處參閱完整的中繼資料清單：[音效和視訊參數.](../../implementation/variables/audio-video-parameters.md)
 
    * **自訂中繼資料 -** 為自訂變數建立變數物件，並為此內容填入資料。
 
@@ -139,7 +139,7 @@ ht-degree: 96%
 
 1. **追蹤所有可能的暫停情況 -** 識別來自媒體播放器的暫停事件，並呼叫 `trackPause`。
 
-   **暫停情況 -** 識別「播放器」會暫停的情況，並請務必正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`:
+   **暫停情況 -** 識別「播放器」會暫停的情況，並請務必正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`：
 
    * 使用者明確在應用程式中點擊暫停。
    * 播放器自行進入「暫停」狀態。
@@ -242,4 +242,4 @@ if (e.type == "buffered") {
 
 ## 驗證 {#validate}
 
-有關驗證 *舊版* 實作，請參閱 [舊版驗證。](/help/legacy/validation/validation-overview.md)
+如需有關驗證&#x200B;*舊版*&#x200B;實作的資訊，請參閱[舊版驗證](/help/legacy/validation/validation-overview.md)。
