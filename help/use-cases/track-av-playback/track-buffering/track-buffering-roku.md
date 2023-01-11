@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Roku上追蹤緩衝
-description: 了解如何在Roku上追蹤緩衝事件。
+title: 了解如何在 Roku 上追蹤緩衝
+description: 了解如何在 Roku 上追蹤緩衝事件。
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 87%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 緩衝追蹤常數
 
