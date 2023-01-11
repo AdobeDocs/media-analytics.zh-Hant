@@ -1,14 +1,14 @@
 ---
-title: 了解如何在Android上追蹤體驗品質
-description: 「了解如何在Android上使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
+title: 了解如何在 Android 上追蹤體驗品質
+description: 「了解如何在 Android 上使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。」
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -18,13 +18,13 @@ ht-degree: 84%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 ## 實作 QoS
 
 1. 識別媒體播放期間位元速率是否變更，並且利用 QoS 資訊建立 `MediaObject` 例項。
 
-   QoSObject 變數:
+   QoSObject 變數：
 
    >[!TIP]
    >
@@ -37,7 +37,7 @@ ht-degree: 84%
    | `fps` | FPS 值 | 是 |
    | `droppedFrames` | 掉格的數量 | 是 |
 
-   QoS 物件建立:
+   QoS 物件建立：
 
    ```java
    MediaObject qosObject =  
@@ -48,7 +48,7 @@ ht-degree: 84%
    ```
 
 1. 請確定 `getQoSObject()` 方法會傳回最新的 QoS 資訊。
-1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件:
+1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件：
 
    ```java
    public void onBitrateChange(Observable observable, Object data) {  
