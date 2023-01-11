@@ -1,14 +1,14 @@
 ---
-title: Chromecast中繼資料索引鍵說明
-description: 了解如何在Chromecast上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
+title: 說明 Chromecast 中繼資料索引鍵
+description: 了解如何在 Chromecast 上設定要連同追蹤呼叫一起傳送的標準視訊和廣告中繼資料。
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '139'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 84%
 | 網站 ID | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | 創作 URL | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Chromecast 實施範例 {#sample-implementations-for-chromecast}
+## Chromecast 實作範例 {#sample-implementations-for-chromecast}
 
 ### 影片
 
