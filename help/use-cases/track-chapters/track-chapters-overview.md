@@ -1,14 +1,14 @@
 ---
-title: 了解如何追蹤章節和區段說明
+title: 了解如何追蹤已說明的章節和區段
 description: 如何使用 Media SDK 實作章節和區段追蹤。
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '325'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 > 
-> 若您正在實作 SDK 1.x 版，您可以在此處下載開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)。
+> 若您正在實作 SDK 1.x 版，您可以在此處下載開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
-章節和區段追蹤適用於自訂的媒體章節或區段。章節追蹤的一些常見用途是根據媒體內容 (例如棒球局次) 定義自訂區段，或定義廣告插播之間的內容區段。核心媒體追蹤實施&#x200B;**不**&#x200B;需要章節追蹤。
+章節和區段追蹤適用於自訂的媒體章節或區段。章節追蹤的一些常見用途是根據媒體內容 (例如棒球局次) 定義自訂區段，或定義廣告插播之間的內容區段。核心媒體追蹤實作&#x200B;**不**&#x200B;需要章節追蹤。
 
 章節追蹤包括章節開始、章節完成，以及章節略過。您可以使用具有自訂區段邏輯的媒體播放器 API 來識別章節事件，並填入必要和選用的章節變數。
 
@@ -44,7 +44,7 @@ ht-degree: 97%
 
 1. 識別章節開始事件何時發生，並使用章節資訊建立 `ChapterObject` 例項。
 
-   以下是 `ChapterObject` 章節追蹤參考:
+   以下是 `ChapterObject` 章節追蹤參考：
 
    >[!NOTE]
    >
