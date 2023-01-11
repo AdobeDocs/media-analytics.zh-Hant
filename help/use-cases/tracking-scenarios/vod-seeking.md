@@ -1,14 +1,14 @@
 ---
-title: 主要內容中具有搜尋的VOD播放
-description: 檢視如何使用Media SDK追蹤發生搜尋之VOD內容的範例。
+title: 主要內容中具有搜尋功能的 VOD 播放
+description: 檢視如何使用 Media SDK 追蹤已發生搜尋之 VOD 內容的範例。
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '275'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 應用程式
+### iOS
 
 如要在 iOS 中查看此情境，請設定下列程式碼：
 
