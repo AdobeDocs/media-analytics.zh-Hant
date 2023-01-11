@@ -1,29 +1,29 @@
 ---
-title: 了解如何使用JavaScript 3.x追蹤體驗品質
-description: 「了解如何使用JavaScript 3x在瀏覽器應用程式中使用Media SDK實作體驗品質(QoE、QoS)追蹤。」
+title: 了解如何使用 JavaScript 3.x 追蹤體驗品質
+description: 「了解如何在使用 JavaScript 3x 的瀏覽器應用程式中使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。」
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '224'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
-# 使用JavaScript 3.x追蹤體驗品質{#track-quality-of-experience-on-javascript}
+# 使用 JavaScript 3.x 追蹤體驗品質{#track-quality-of-experience-on-javascript}
 
 下列指示提供所有 2.x SDK 之間實作的指引。
 
 >[!IMPORTANT]
 >
->若您正在實作任何舊版SDK，您可以在此處下載開發人員指南： [下載SDK。](/help/getting-started/download-sdks.md)
+>若您正在實作任何舊版的 SDK，您可以在此處下載開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
-## 實作QOE
+## 實作 QOE
 
-1. 識別媒體播放期間位元速率是否變更，並建立 `qoeObject` 例項。
+1. 識別媒體播放期間位元速率是否變更，並且利用 QoE 資訊建立 `qoeObject` 例項。
 
-   QoEObject變數：
+   QoEObject 變數：
 
    >[!TIP]
    >
@@ -36,7 +36,7 @@ ht-degree: 49%
    | `fps` | 數字 | FPS 值 |
    | `droppedFrames` | 數字 | 掉格的數量 |
 
-   QoE物件建立：
+   QoE 物件建立：
 
    ```js
    // Replace <bitrate>, <startuptime>, <fps> and
@@ -48,7 +48,7 @@ ht-degree: 49%
    tracker.updateQoEObject(qoeObject);
    ```
 
-1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件:
+1. 當播放轉換位元速率時，呼叫媒體心率例項中的 `BitrateChange` 事件：
 
    ```js
    _onBitrateChange = function() {
@@ -62,10 +62,10 @@ ht-degree: 49%
 
    >[!IMPORTANT]
    >
-   >更新QoE物件，並在每次位元速率變更時呼叫位元速率變更事件。 這可提供最精確的QoE資料。
+   >更新 QoE 物件，並在每次位元速率變更時呼叫位元速率變更事件。如此可提供最精確的 QoE 資料。
 
-1. 請務必呼叫 `updateQoEObject()` 方法，為SDK提供最新的QoE資訊。
-1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊(請參閱[概述](/help/use-cases/track-errors/track-errors-overview.md))。
+1. 請務必呼叫 `updateQoEObject()` 方法以向 SDK 提供最新的 QoE 資訊。
+1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊(請參閱[概觀](/help/use-cases/track-errors/track-errors-overview.md))。
 
    >[!TIP]
    >
