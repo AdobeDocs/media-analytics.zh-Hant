@@ -1,14 +1,14 @@
 ---
-title: 串流媒體收集API — 工作階段要求端點
-description: 「媒體收集API工作階段要求端點參數和回應為何？」
+title: 串流媒體收集 API — 工作階段要求端點
+description: 「什麼是 Media Collection API 工作階段要求端點參數和回應？」
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ https://{uri}/api/v1/sessions
 
 ## 要求內文
 
-要求內文必須是 JSON，而且結構必須與以下範例要求內文相同:
+要求內文必須是 JSON，而且結構必須與以下範例要求內文相同：
 
 ```
 { 
@@ -62,11 +62,11 @@ https://{uri}/api/v1/sessions
 ```
 
 * `playerTime` (必要)
-   * `playhead`  — 如果內容為即時，播放點必須是當天的第二秒，0 &lt;=播放點&lt; 86400。 如果已記錄內容，播放點必須是內容的目前秒數，0 &lt;=播放點&lt;內容長度。 值可以是浮點數。
-   * `ts`  — 時間戳記；必須以毫秒為單位；協調的世界時間(UTC)。
+   * `playhead`- 如果是即時內容，播放點必須是當天的目前秒數，0 &lt;= 播放點 &lt; 86400。如果是記錄的內容，播放點必須是內容的目前秒數，0 &lt;= 播放點 &lt; 內容長度。該值可以是浮點數。
+   * `ts`- 時間戳記；必須以毫秒為單位；世界協調時間 (UTC)。
 * `eventType` (必要)
 
-   **有效值:** `sessionStart`
+   **有效值：** `sessionStart`
 * `params` (必要)
 * `customMetadata` (可選)
 * `qoeData` (可選)
@@ -88,7 +88,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` 標頭 - `/api/v1/` 部分提供 API 版本。`[…]sessions/` 後的部分則為工作階段 ID。
+`Location:` 標題 - `/api/v1/` 部分提供 API 版本。`[…]sessions/` 後的部分則為工作階段 ID。
 
 ## 回應代碼
 
