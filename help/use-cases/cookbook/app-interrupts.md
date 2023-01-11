@@ -1,20 +1,20 @@
 ---
-title: 在播放期間處理應用程式中斷
+title: 在播放期間處理應用程式中斷狀況
 description: 了解如何處理媒體播放期間追蹤中斷的問題。
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # 在播放期間處理應用程式中斷狀況{#handling-application-interrupts-during-playback}
 
-媒體應用程式中的播放可能會以多種方式中斷。 例如，使用者可明確按下暫停，或讓使用者將應用程式置於背景。 不論導致媒體播放中斷的原因為何，追蹤指示保持不變.
+媒體應用程式中的播放作業可以透過多種方式中斷。例如，使用者可以明確地按下暫停，或者使用者可以將應用程式置於背景。不論導致媒體播放中斷的原因為何，追蹤指示保持不變。
 
 1. 當應用程式中斷 (進入背景、媒體暫停等) 時，呼叫 **`trackPause`**。
 1. 當應用程式返回前景及/或媒體恢復播放時，呼叫 **`trackPlay`**。
@@ -23,7 +23,7 @@ ht-degree: 79%
 >
 >Media Analytics 團隊曾遇過客戶在應用程式從背景返回時呼叫 `trackSessionStart` 的情況。這樣做會導致截至當時為止的播放進度無法計入播放時間總計，而且也會失去先前的進度標記、區段等。反之，當應用程式返回及/或媒體恢復播放時，請呼叫 `trackPlay`。
 
-## 有關如何處理應用程式中斷的常見問題集: {#faq-about-handling-application-interrupts}
+## 有關如何處理應用程式中斷的常見問題集： {#faq-about-handling-application-interrupts}
 
 * _應用程式要在背景停留多長的時間後，才應關閉工作階段?_
 
@@ -35,4 +35,4 @@ ht-degree: 79%
 
 * _要如何重新啟動同一個工作階段?_
 
-   如需繼續追蹤工作階段的相關資訊，請參閱 [繼續非作用中工作階段](resuming-inactive.md).SDK會傳送恢復Ping來通知後端，告知其使用者正在手動恢復工作階段。
+   如需有關恢復追蹤工作階段的資訊，請參閱[恢復非作用中工作階段](resuming-inactive.md)。SDK 會傳送恢復 Ping 以通知後端使用者正手動恢復工作階段。
