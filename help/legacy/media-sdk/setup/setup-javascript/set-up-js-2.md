@@ -6,15 +6,15 @@ exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # 設定 JavaScript 2.x{#set-up-javascript}
 
-## 必備條件
+## 先決條件
 
 * **取得有效的設定參數**
 在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
@@ -121,4 +121,4 @@ ht-degree: 96%
 
 在 2.x 版中，所有公用方法皆已整合至 `ADB.va.MediaHeartbeat` 類別，讓開發人員更容易操作。此外，所有的設定現已整合至 `ADB.va.MediaHeartbeatConfig` 類別。
 
-如需有關從1.x移轉至2.x的資訊，請參閱舊版實作檔案。
+如需有關從 1.x 移轉至 2.x 的資訊，請參閱舊版實作文件。
