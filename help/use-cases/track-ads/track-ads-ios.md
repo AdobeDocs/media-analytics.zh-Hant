@@ -1,14 +1,14 @@
 ---
-title: 了解如何在iOS上追蹤廣告
+title: 了解如何在 iOS 上追蹤廣告
 description: 使用 Media SDK 在 iOS 應用程式中實作廣告追蹤。
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK。](/help/getting-started/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK。](/help/getting-started/download-sdks.md)
 
 ## 廣告追蹤常數
 
@@ -30,11 +30,11 @@ ht-degree: 98%
 | `ADBMediaHeartbeatEventAdComplete` | 用於追蹤廣告完成事件的常數 |
 | `ADBMediaHeartbeatEventAdSkip` | 用於追蹤廣告略過事件的常數 |
 
-## 實施步驟
+## 實作步驟
 
 1. 識別廣告插播界限何時開始 (包括前段)，並使用廣告插播資訊建立 `AdBreakObject`。
 
-   `AdBreakObject` 參考資料:
+   `AdBreakObject` 參考資料：
 
    | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
@@ -42,7 +42,7 @@ ht-degree: 98%
    | `position` | 內容中廣告插播的編號位置從 1 開始。 | 是 |
    | `startTime` | 廣告插播開始時的播放點值。 | 是 |
 
-   廣告插播物件建立:
+   廣告插播物件建立：
 
    ```
    id adBreakObject = [ADBMediaHeartbeat createAdBreakObjectWithName:[ADBREAK_NAME]
@@ -62,7 +62,7 @@ ht-degree: 98%
 
 1. 識別廣告何時開始，並使用廣告資訊建立 `AdObject` 例項。
 
-   `AdObject` 參考資料:
+   `AdObject` 參考資料：
 
    | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
@@ -71,7 +71,7 @@ ht-degree: 98%
    | `position` | 廣告插播中的廣告編號位置從 1 開始。 | 是 |
    | `length` | 廣告長度 | 是 |
 
-   廣告物件建立:
+   廣告物件建立：
 
    ```
    id adObject = [ADBMediaHeartbeat createAdObjectWithName:[AD_NAME]
@@ -82,8 +82,8 @@ ht-degree: 98%
 
 1. 可選擇透過內容資料變數，將標準和/或廣告中繼資料附加到媒體追蹤工作階段。
 
-   * [在 iOS 上實施標準廣告中繼資料](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-   * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告的資料:
+   * [在 iOS 上實作標準廣告中繼資料](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告的資料：
 
       ```
       NSMutableDictionary *adDictionary = [[NSMutableDictionary alloc] init];
@@ -94,7 +94,7 @@ ht-degree: 98%
 
 1. 在 `MediaHeartbeat` 例項中使用 `AdStart` 事件呼叫 `trackEvent()` 以開始追蹤廣告播放。
 
-   將參考加入您的自訂中繼資料變數 (或空白物件)，作為事件呼叫中的第三個參數:
+   將參考加入您的自訂中繼資料變數 (或空白物件)，作為事件呼叫中的第三個參數：
 
    ```
    - (void)onAdStart:(NSNotification *)notification {
@@ -125,7 +125,7 @@ ht-degree: 98%
    ```
 
 1. 如果在相同 `AdBreak` 內有任何其他廣告，請再次重複步驟 3 到 7。
-1. 當廣告插播完成時，請使用 `AdBreakComplete` 事件進行追蹤:
+1. 當廣告插播完成時，請使用 `AdBreakComplete` 事件進行追蹤：
 
    ```
    - (void)onAdBreakComplete:(NSNotification *)notification {
