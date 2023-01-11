@@ -1,14 +1,14 @@
 ---
-title: "具有前段廣告的VOD播放"
-description: "檢視如何使用Media SDK追蹤包含前段廣告之VOD內容的範例。"
+title: 「有前段廣告的 VOD 播放」
+description: 「檢視如何使用 Media SDK 追蹤含有前段廣告之 VOD 內容的範例。」
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '527'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 95%
 
 ## 參數 {#parameters}
 
-當廣告播放開始時，會傳送 `Heartbeat Ad Start` 呼叫。如果廣告的開頭不符合 10 秒的計時器，`Heartbeat Ad Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。發生此情況時，`Content Heartbeat` 會以相同的間隔傳出，而您可以透過查看事件類型和資產類型來區分這兩個呼叫:
+當廣告播放開始時，會傳送 `Heartbeat Ad Start` 呼叫。如果廣告的開頭不符合 10 秒的計時器，`Heartbeat Ad Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。發生此情況時，`Content Heartbeat` 會以相同的間隔傳出，而您可以透過查看事件類型和資產類型來區分這兩個呼叫：
 
 ### 心率廣告開始
 
@@ -50,7 +50,7 @@ ht-degree: 95%
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
 
-這些參數類似於 `Content Heartbeats` 呼叫，但 `Ad Heartbeats` 呼叫包含一些額外的參數:
+這些參數類似於 `Content Heartbeats` 呼叫，但 `Ad Heartbeats` 呼叫包含一些額外的參數：
 
 ### 廣告心率
 
@@ -61,7 +61,7 @@ ht-degree: 95%
 | `s:asset:ad_id` | &lt;ad ID> |  |
 | `s:asset:pod_id` | &lt;ad pod ID> |  |
 
-類似於 `Heartbeat Content Complete` 呼叫，當完成時，以及到達播放點結尾時，會傳送 `Heartbeat Ad Complete` 呼叫。此呼叫看起來類似其他 `Heartbeat Ad` 呼叫，但包含某些特定項目:
+類似於 `Heartbeat Content Complete` 呼叫，當完成時，以及到達播放點結尾時，會傳送 `Heartbeat Ad Complete` 呼叫。此呼叫看起來類似其他 `Heartbeat Ad` 呼叫，但包含某些特定項目：
 
 ### 心率廣告完成呼叫
 
@@ -76,7 +76,7 @@ ht-degree: 95%
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** 若要在 Android 中查看此案例，請設定下列程式碼:
+* **Android** 若要在 Android 中查看此案例，請設定下列程式碼：
 
    ```java
    // Set up  mediaObject 
@@ -180,7 +180,7 @@ ht-degree: 95%
    ........ 
    ```
 
-* **iOS -** 若要在 iOS 中查看此案例，請設定下列程式碼:
+* **iOS -** 若要在 iOS 中查看此案例，請設定下列程式碼：
 
    ```
    //  Set up mediaObject 
@@ -284,7 +284,7 @@ ht-degree: 95%
    ....... 
    ```
 
-* **JavaScript** 若要在 JavaScript 中檢視此案例，請輸入下列文字:
+* **JavaScript** 若要在 JavaScript 中檢視此案例，請輸入下列文字：
 
    ```js
    // Set up mediaObject 
@@ -386,7 +386,7 @@ ht-degree: 95%
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** 若要在 Android 中查看此案例，請設定下列程式碼:
+* **Android** 若要在 Android 中查看此案例，請設定下列程式碼：
 
    ```java
    // Set up mediaObject 
@@ -563,7 +563,7 @@ ht-degree: 95%
    ........ 
    ```
 
-* **iOS** 若要在 iOS 中查看此案例，請設定下列程式碼:
+* **iOS** 若要在 iOS 中查看此案例，請設定下列程式碼：
 
    ```
    //  Set up mediaObject 
@@ -750,7 +750,7 @@ ht-degree: 95%
    ....... 
    ```
 
-* **JavaScript** 若要在 JavaScript 中檢視此案例，請輸入下列文字:
+* **JavaScript** 若要在 JavaScript 中檢視此案例，請輸入下列文字：
 
    ```js
    // Set up mediaObject 
