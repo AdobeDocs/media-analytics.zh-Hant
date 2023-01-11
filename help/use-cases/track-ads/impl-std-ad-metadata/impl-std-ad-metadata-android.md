@@ -1,18 +1,18 @@
 ---
-title: 了解如何在Android上實作標準廣告中繼資料
+title: 了解如何在 Android 上實作標準廣告中繼資料
 description: 如何在 Android 上將標準廣告中繼資料用於廣告追蹤。
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 exl-id: f1aa017f-b2ae-40ca-b4d9-b508cf45cb0c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '63'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# 在 Android 上實施標準廣告中繼資料{#implement-standard-ad-metadata-on-android}
+# 在 Android 上實作標準廣告中繼資料{#implement-standard-ad-metadata-on-android}
 
 ## 廣告常數
 
@@ -22,7 +22,7 @@ ht-degree: 85%
 
 ## 實作標準廣告中繼資料
 
-針對標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對字典:
+針對標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對字典：
 
 ```java
 // Setting standard Ad Metadata 
