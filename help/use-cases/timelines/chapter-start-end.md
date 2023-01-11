@@ -1,26 +1,26 @@
 ---
 title: 什麼是串流媒體章節開始和結束時間軸
-description: 了解播放點時間軸，以及章節開始和結束的時間。
+description: 了解播放點時間軸以及章節開始和結束的時間。
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1106'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# 時間表：章節 {#timeline-3-chapters}
+# 時間軸：章節 {#timeline-3-chapters}
 
 ## VOD、前段廣告、暫停、緩衝、檢視內容到結束為止
 
 下列圖表說明播放點時間軸和使用者動作的對應時間軸。以下呈現每個動作的詳細資料及其隨附要求。
 
-![API內容](assets/va_api_content_3.png)
+![API 內容](assets/va_api_content_3.png)
 
-![API動作](assets/va_api_actions_3.png)
+![API 動作](assets/va_api_actions_3.png)
 
 ## 動作詳細資料
 
@@ -30,7 +30,7 @@ ht-degree: 96%
 | --- | :---: | :---: | --- |
 | 按下「自動播放」或「播放」按鈕後，影片開始載入。 | 0 | 0 | `/api/v1/sessions` |
 
-這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。播放器狀態尚未進入「正在播放」，而是「正在開始」。要求內容的  對映必須包含強制工作階段參數`params`。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。如需工作階段的相關資訊，請參閱媒體收集API檔案。
+這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。播放器狀態尚未進入「正在播放」，而是「正在開始」。要求內容的 `params` 對應必須包含強制工作階段參數。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。如需有關工作階段的資訊，請參閱 Media Collection API 文件。
 
 ```json
 {
