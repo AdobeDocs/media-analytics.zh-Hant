@@ -1,22 +1,23 @@
 ---
-title: 實作舊版Media SDK說明
-description: 「了解如何在行動裝置、OTT和瀏覽器(JS)應用程式中，將**舊版** 2.x Media SDK設定為媒體追蹤。」
+title: 說明實作舊版 Media SDK
+description: 了解如何在行動裝置、OTT 和瀏覽器 (JS) 應用程式中設定 **舊版** 2.x Media SDK 進行媒體追蹤。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
+source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
+workflow-type: ht
 source-wordcount: '789'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# 舊版2.x串流媒體SDK設定概述{#setup-overview}
+# 舊版 2.x Streaming Media SDK 設定概觀{#setup-overview}
 
-本節中的指示適用於 **舊版** 2.x Media SDK。
+本章節中的指示適用於&#x200B;**舊版** 2.x Media SDK。
 
-* 如需實作Media SDK 1.x版的相關資訊，請參閱 [1.x Media SDK檔案。](/help/getting-started/download-sdks.md)
+* 如需有關實作 Media SDK 1.x 版的資訊，請參閱 [1.x Media SDK 文件](/help/getting-started/download-sdks.md)。
 
-* 如需Primetime整合器的相關資訊，請參閱 _Primetime Media SDK檔案_.
+* 如需 Primetime 整合器的相關資訊，請參閱 _Primetime Media SDK 文件_。
 
 >[!IMPORTANT]
 >
@@ -29,21 +30,21 @@ ht-degree: 89%
 
 | 作業系統/瀏覽器 | 需要的最低版本 |
 | --- | --- |
-| iOS 應用程式 | iOS 6+ |
+| iOS | iOS 6+ |
 | Android | Android 5.0+ - Lollipop |
 | Chrome | v22+ |
 | Mozilla | v27+ |
 | Safari | v7+ |
 | IE | v11+ |
 
-## 一般實施指引 {#general-implementation-guidelines}
+## 一般實作指引 {#general-implementation-guidelines}
 
 有三個主要的 SDK 元件與媒體追蹤有關：
 * 媒體心率設定 - 此設定包含報表的基本設定。
 * 媒體心率代理人 - 代理人可控制播放時間和 QoS 物件。
 * 媒體心率 - 包含成員與方法的主要程式庫。
 
-完成下列實施步驟：
+完成下列實作步驟：
 
 1. 建立 `MediaHeartbeatConfig` 例項並設定您的設定參數值。
 
@@ -61,7 +62,7 @@ ht-degree: 89%
 
    |  方法名稱  |  說明 | 必填 |
    | --- | --- | :---: |
-   | `getQoSObject()` | 傳回包含目前 QoS 資訊的 `MediaObject` 例項。將在播放工作階段期間呼叫此方法多次。播放器實施必須一律傳回最新可用的 QoS 資料。 | 是 |
+   | `getQoSObject()` | 傳回包含目前 QoS 資訊的 `MediaObject` 例項。將在播放工作階段期間呼叫此方法多次。播放器實作必須一律傳回最新可用的 QoS 資料。 | 是 |
    | `getCurrentPlaybackTime()` | 傳回播放點的目前位置。<br /> 對於 VOD 追蹤，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。<br /> 注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。 | 是 |
 
    >[!TIP]
@@ -129,7 +130,7 @@ ht-degree: 89%
 
 ## 驗證 {#validate}
 
-Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫：
+Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
 * 媒體和廣告開始呼叫會直接傳送到 Adobe Analytics (AppMeasurement) 伺服器。
 * 心率呼叫會傳送到 Media Analytics (心率) 追蹤伺服器並於該位置處理，然後再傳遞到 Adobe Analytics 伺服器。
@@ -153,11 +154,11 @@ Media Analytics 追蹤實施會產生兩種類型的追蹤呼叫：
 | Video Analytics 1.x SDK |  開發人員指南 (僅提供 PDF) |
 | --- | --- |
 | Android | [為 Android 進行配置 ](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | [為Apple TV進行配置 ](vhl-dev-guide-v1x_appletv.pdf) |
+| Apple TV | [為 Apple TV 進行設定 ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [為 Chromecast 進行配置 ](chromecast_1.x_sdk.pdf) |
-| iOS 應用程式 | [為 iOS 進行配置 ](vhl-dev-guide-v15_ios.pdf) |
+| iOS | [為 iOS 進行配置 ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [為 JavaScript 進行配置 ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android：[設定 Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [為 TVML 進行配置 ](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 文件 {#primetime-docs}
