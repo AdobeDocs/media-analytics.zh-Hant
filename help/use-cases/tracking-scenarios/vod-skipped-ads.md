@@ -1,14 +1,14 @@
 ---
-title: 具有已略過廣告的VOD播放
-description: 檢視如何使用Media SDK追蹤使用者已略過廣告之VOD內容的範例。
+title: 已略過廣告的 VOD 播放
+description: 檢視如何使用 Media SDK 追蹤使用者已略過廣告之 VOD 內容的範例。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '280'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 91%
 
 ## 參數 {#parameters}
 
-除了沒有廣告完成和廣告插播完成呼叫之外，這些參數完全等同於[具有前段廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md)情境中的參數。
+除了沒有廣告完成和廣告插播完成呼叫之外，這些參數完全等同於[具有前段廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) 情境中的參數。
 
 ## 程式碼範例 {#sample-code}
 
@@ -127,7 +127,7 @@ _mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-### iOS 應用程式
+### iOS
 
 若要檢視此情境，請輸入下列文字：
 
