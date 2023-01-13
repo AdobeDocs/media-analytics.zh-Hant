@@ -6,9 +6,9 @@ breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ ht-degree: 97%
    + [串流媒體文件](getting-started/implementation-documentation.md)
    + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
    + 終止支援 {#end-of-support}
-      + [Media Analytics行動SDK支援終止](additional-resources/end-of-support-faqs.md)
-      + 舊版 — 從獨立Media SDK移轉至Launch {#sdk-to-launch}
+      + [Media Analytics Mobile SDK 終止支援](additional-resources/end-of-support-faqs.md)
+      + 舊版 - 獨立 Media SDK 移轉至 Launch {#sdk-to-launch}
          + [概觀](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
@@ -37,8 +37,8 @@ ht-degree: 97%
       + [Media SDK 概觀](implementation/media-sdk/media-sdk-overview.md)
       + 安裝與設定 {#setup}
          + 安裝 Web SDK {#install-web-sdk}
-            + [使用JavaScript安裝Analytics](implementation/media-sdk/setup/web-implementation.md)
-            + [使用Media Analytics擴充功能安裝Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
+            + [使用 JavaScript 安裝 Analytics](implementation/media-sdk/setup/web-implementation.md)
+            + [使用 Media Analytics 擴充功能安裝 Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [安裝 Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
          + 安裝 OTT SDK {#ott-setup}
             + [安裝 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
