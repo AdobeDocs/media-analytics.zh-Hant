@@ -6,7 +6,7 @@ breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '895'
 ht-degree: 100%
 
