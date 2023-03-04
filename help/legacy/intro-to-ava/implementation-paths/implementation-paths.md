@@ -4,10 +4,10 @@ description: 了解 Adobe 串流媒體實作路徑，包括 Adobe Experience Pla
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 **此內容已移至目前實作路徑檔案**
 
-不管採取哪個實作路徑，客戶都需連絡他們的銷售代表/客戶經理，以簽署新的銷售訂單，因為適用於串流媒體的 Analytics 有唯一的 SKU，而且其定價模式從伺服器呼叫型變更為基於視訊資料流。
+對於每個實作路徑，客戶都需要聯絡其銷售代表/Adobe客戶團隊以簽署新的銷售訂單，因為Streaming Media Analytics具有獨特的SKU，並且從基於伺服器呼叫的定價模式變更為基於視訊資料流的模式。
 
 ## 具有 Adobe Media Analytics 擴充功能的 Adobe Experience Platform 資料收集
 

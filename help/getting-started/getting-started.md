@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
+source-wordcount: '299'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Adobe Analytics 串流媒體解決方案適用於以下媒體平台：
 
 >[!IMPORTANT]
 >
->要實施 Adobe Analytics 串流媒體，請聯絡您的 Adobe 銷售代表或客戶經理，以確保串流媒體是您產品組合的一部分。
+>若要實作Adobe Analytics串流媒體，請連絡您的Adobe銷售代表或Adobe客戶團隊，確認串流媒體是您產品組合的一部分。
 
 ## 適用於串流媒體的 Media SDK {#media-sdks}
 

@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '486'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 要實作適用於串流媒體的 Adobe Analytics，請完成以下任務：
 
 1. **確認您的串流媒體定價模式**<br>
-目前的定價模型是以視訊串流為基礎。如有必要，請聯絡您的銷售代表或客戶經理以簽署新的銷售訂單，因為適用於串流媒體的 Analytics 與 Adobe Analytics 是分開銷售。
+目前的定價模型是以視訊串流為基礎。如有必要，請連絡您的銷售代表或Adobe客戶團隊以簽署新的銷售訂單，因為Streaming Media Analytics與Adobe Analytics分開銷售。
 
 1. **確認您正在實作 Adobe Analytics**<br>
 Adobe Analytics 適用的串流媒體還需要 Adobe Analytics 基本實作。請參閱[實作 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)以取得詳細資訊。
