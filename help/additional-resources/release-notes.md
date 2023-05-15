@@ -3,10 +3,10 @@ title: 適用於串流媒體的 Adobe Analytics 發行說明
 description: 檢視 Adobe Analytics 發行說明。
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '854'
-ht-degree: 100%
+source-git-commit: 0c02fec77d6484774ea81e997529accddb19d175
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 92%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 100%
 
 | 功能 | 說明 | 目標日期 |
 | ----------- | ---------- | ------- |
+| 媒體收集：與Experience Edge（API和Mobile SDK）整合 | 您現在可以使用Experience Edge API和Mobile SDK來實作串流媒體，讓您建立更個人化的行銷活動並提供更個人化的內容，進而產生更多可報告的追蹤資料。<p>此增強功能提供跨所有解決方案的統一收集方法，例如CJA報告、RT-CDP、AJO和事件轉送。  [了解更多](/help/implementation/media-sdk/implementation-edge.md) | 2023年5月底 |
 | 「媒體同時檢閱者」面板 | 了解高峰期同時觀看或使用者數下降的位置。 取得內容品質和檢閱者參與的寶貴見解，並取得疑難排解或規劃數量和規模的協助。 [了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hant) | 2022 年 8 月 9 日 |
 | 「媒體播放時間」面板 | 「媒體播放時間」提供寶貴的對象參與度深入分析，並可讓媒體組織透過進階花費時間分析及日時段分割功能，取得更深入、更細微的分析並包含每分鐘的使用者參與度。 您可以觀察使用者在特定時間點觀看您的媒體串流所花的時間多寡。 您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。[了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 2022 年 8 月 9 日 |
 | 在行動計分卡上分享註解 | 您可以在行動計分卡上顯示建立於工作區的註解。如此，您就可以直接在行動計分卡專案上分享組織和活動相關的資料細微差別和深入解析，此類專案可在 Analytics 儀表板行動應用程式中檢視。[了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=en) | 2022 年 6 月 15 日 |

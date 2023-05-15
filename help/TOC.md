@@ -5,10 +5,10 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
+source-git-commit: 9b448c75604abe2683ab4d522a7197dfe1af55be
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 100%
             + [使用 JavaScript 安裝 Analytics](implementation/media-sdk/setup/web-implementation.md)
             + [使用 Media Analytics 擴充功能安裝 Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [安裝 Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
+         + [使用Adobe Experience Platform Edge安裝Analytics](implementation/media-sdk/implementation-edge.md)
          + 安裝 OTT SDK {#ott-setup}
             + [安裝 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [安裝 Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
@@ -193,19 +194,19 @@ ht-degree: 100%
       + [在 iOS 上追蹤核心播放](use-cases/track-av-playback/track-core/track-core-ios.md)
       + 在 JavaScript 上追蹤核心播放 {#track-core-javascript}
          + [在 JavaScript 2.x 上追蹤核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [在 Android 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [在 iOS 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + 在 JavaScript 上追蹤緩衝 {#track-buffering-js}
-         + [在 JavaScript 2.x 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [在 Android 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [在 iOS 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + 在 JavaScript 上追蹤搜尋 {#track-seeking-js}
-         + [在 JavaScript 2.x 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [在 Android 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [在 iOS 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [iOS 中繼資料索引鍵](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + 在 JavaScript 上實作標準中繼資料 {#impl-std-md-js}
-         + [在 JavaScript 2.x 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+         + [在 Android 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [在 iOS 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + 在 JavaScript 上追蹤緩衝 {#track-buffering-js}
+            + [在 JavaScript 2.x 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+         + [在 Android 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [在 iOS 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + 在 JavaScript 上追蹤搜尋 {#track-seeking-js}
+            + [在 JavaScript 2.x 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+         + [在 Android 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [在 iOS 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [iOS 中繼資料索引鍵](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + 在 JavaScript 上實作標準中繼資料 {#impl-std-md-js}
+            + [在 JavaScript 2.x 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + 追蹤廣告 {#track-ads}
          + [在 Android 上追蹤廣告](use-cases/track-ads/track-ads-android.md)
          + [在 iOS 上追蹤廣告](use-cases/track-ads/track-ads-ios.md)

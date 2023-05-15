@@ -4,14 +4,14 @@ description: 了解如何為 Web 應用程式實作 Adobe Streaming Media。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: a6dba33839bba976b67a9b1e9669fce266d1cabd
-workflow-type: ht
-source-wordcount: '121'
-ht-degree: 100%
+source-git-commit: 9d7886a67e426089977cbe322d310c36604646d0
+workflow-type: tm+mt
+source-wordcount: '122'
+ht-degree: 93%
 
 ---
 
-# 使用 Media Analytics 擴充功能安裝 Analytics
+# 使用Media Analytics擴充功能安裝Media Analytics
 
 您可以使用 Adobe Media Analytics 擴充功能來實施 Analytics。Media Analytics 擴充功能新增核心 JavaScript Media SDK (Media 3.x SDK)。此擴充功能可將 Media 追蹤器執行個體新增至已啟用標記的網站或專案。
 
