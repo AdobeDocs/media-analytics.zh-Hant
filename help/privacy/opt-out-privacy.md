@@ -45,6 +45,7 @@ ht-degree: 100%
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
             ```
+
          >[!IMPORTANT]
          >
          >當使用者選擇退出追蹤時，應用程式將清除所有保存的裝置資料和 ID，直到使用者重新加入為止。
@@ -62,6 +63,7 @@ ht-degree: 100%
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
+
       * **傳回目前設定：**
 
          * **Chromecast：**
@@ -75,6 +77,7 @@ ht-degree: 100%
             ```
             ADBMobile().getPrivacyStatus()
             ```
+
    使用 `setPrivacyStatus` 變更隱私權設定後，變更為永久有效，直到使用此方法再次變更，或者應用程式解除安裝並重新安裝為止。
 
 ## 擷取儲存的識別碼 (OTT 應用程式) {#retrieving-stored-identifiers-ott-apps}
