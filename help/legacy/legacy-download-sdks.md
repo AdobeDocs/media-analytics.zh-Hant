@@ -4,10 +4,10 @@ description: 各平台適用的舊版 SDK 下載內容連結，包括 Android、
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '334'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Data Collection 搭配 Media Analytics 擴充功能使用，須符合以�
 * 您必須是 Adobe Experience Cloud 客戶。
 * 您必須在網頁上部署資料收集或 DTM 內嵌程式碼。
 * 您必須設定 [Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant)。
-* 您必須設定 [Adobe Media Analytics for Audio and Video launch 擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)。
+* 您必須設定 [Adobe Media Analytics for Audio and Video 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)。
 * 您必須設定 [Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh=Hant)。
 
 ## 下載 2.x Media SDK {#download-2x-sdks}

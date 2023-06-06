@@ -4,9 +4,9 @@ description: 了解播放器狀態追蹤功能，包括實作和報告標準與�
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '279'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
@@ -42,4 +42,4 @@ ht-degree: 100%
 
 您可以建立自訂狀態，在播放工作階段期間擷取自訂動作並更新自訂中繼資料。
 
-如需有關建立自訂狀態的資訊，請參閱[媒體 API 參考指南：`createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+如需有關建立自訂狀態的資訊，請參閱[媒體 API 參考指南：`createStateObject`](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)

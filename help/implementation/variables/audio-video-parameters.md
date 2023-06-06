@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '7004'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '7002'
 ht-degree: 100%
 
 ---
@@ -130,7 +130,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 索引鍵:**<br/> `config.downloadedcontent` </li> <li> **API 索引鍵:**<br/>&#x200B;取自後端 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/> 布林值 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** <br/>Launch Android 和 iOS 擴充功能 1.1.0 版 </li> <li> **樣本值:**<br/> true </li> <li> **說明:**<br/> 在因播放下載的內容媒體工作階段而產生點擊時，則設為 true。未播放下載的內容時，則不存在。<br/><br/>[Launch](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker-with-optional-configuration)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **心率:**<br/>(s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;使用自訂處理規則 </li> <li> **預留變數:**<br/>&#x200B;不適用 </li> <li> **報表名稱:**<br/>&#x200B;自訂 </li> <li> **內容資料:**<br/> (a.media.downloaded) </li> <li> **資料摘要:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **XDM 欄位路徑:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/> `config.downloadedcontent` </li> <li> **API 索引鍵:**<br/>&#x200B;取自後端 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/> 布林值 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** <br/>Launch Android 和 iOS 擴充功能 1.1.0 版 </li> <li> **樣本值:**<br/> true </li> <li> **說明:**<br/> 在因播放下載的內容媒體工作階段而產生點擊時，則設為 true。未播放下載的內容時，則不存在。<br/><br/>[Launch](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)  </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.downloaded) </li> <li> **心率:**<br/>(s:meta:a.media.downloaded) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;使用自訂處理規則 </li> <li> **預留變數:**<br/>&#x200B;不適用 </li> <li> **報表名稱:**<br/>&#x200B;自訂 </li> <li> **內容資料:**<br/> (a.media.downloaded) </li> <li> **資料摘要:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.downloaded) </li> <li> **XDM 欄位路徑:**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>downloadedPlayback </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.sessionDetails.isDownloaded </li> </ul> |
 
 ### 內容播放器名稱
 
