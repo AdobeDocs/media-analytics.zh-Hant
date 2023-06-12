@@ -4,9 +4,9 @@ description: 瞭解如何實作Adobe串流媒體。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
+source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1883'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ Regardless of which Experience Edge implementation method you use for configurin
 
 ## 使用AEP Mobile SDK傳送資料給Experience Platform Edge
 
-您可以使用Adobe Experience Platform mobile SDK將行動資料傳送至Experience Platform Edge。 (或者，您也可以使用邊緣API的自訂實作。<!-- I guess we don't need/want to document this? -->)
+您可以使用Adobe Experience Platform mobile SDK將行動資料傳送至Experience Platform Edge。 (或者，您也可以使用邊緣API的自訂實作。<!-- Waiting for link from John -->)
 
 使用下列檔案資源完成iOS和Android的實作：
 
@@ -352,5 +352,5 @@ Regardless of which Experience Edge implementation method you use for configurin
 
 * [API 參考資料](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [移轉至Adobe Streaming Media for Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) （適用於從Media擴充功能移轉至Edge的使用者）
+* [移轉至Adobe Streaming Media for Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
