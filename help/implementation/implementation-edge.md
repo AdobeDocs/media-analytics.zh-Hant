@@ -4,10 +4,10 @@ description: 瞭解如何實作Adobe串流媒體。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
+source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 10%
+source-wordcount: '1837'
+ht-degree: 11%
 
 ---
 
@@ -15,45 +15,17 @@ ht-degree: 10%
 
 Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料傳送到一個集中位置。 Experience Edge 會將適當的資訊轉送給所需的產品。 此概念可讓您整合實作工作，特別是橫跨多個資料解決方案時。
 
-下圖說明使用Experience Platform邊緣的Media Analytics實作：
+下圖說明Media Analytics實作如何使用Experience Platform Edge，讓資料在Analysis Workspace中使用(不論是Adobe Analytics還是Customer Journey Analytics)：
 
-![Edge實施](assets/media-analytics-implementation-overview.png)
+![CJA 工作流程](assets/cja-implementation.png)
+
+如需所有實作選項的概觀，包括不使用Experience Platform邊緣的實作方法，請參閱 [實作適用於串流媒體的Adobe Analytics或Customer Journey Analytics](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
->目前，您只能使用Adobe Experience Platform Mobile SDK傳送資料給Experience Edge。
+>串流媒體尚未與AEP Web SDK整合。
 
-
-<!-- Replace the above sentence with this after it web releases: You can send data to Experience Edge using any of the following implementation methods:
-
-* Adobe Experience Platform Web SDK (Coming soon)
-* Adobe Experience Platform Mobile SDK
-* Edge Network Server API
-
-Regardless of which Experience Edge implementation method you use for configuring media tracking, you must first complete the following sections:
-
--->
-
-完成下列章節，以使用Experience Platform Edge實作Media Analytics：
-
-* [定義報表套裝](#define-a-report-suite)
-* [在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform)
-* [在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform)
-* [在Adobe Experience Platform中設定資料串流](#configure-a-datastream-in-adobe-experience-platform)
-* [在 Customer Journey Analytics 中建立連線](#create-a-connection-in-customer-journey-analytics)
-* [以Customer Journey Analytics建立資料檢視](#create-a-data-view-in-customer-journey-analytics)
-* [在Customer Journey Analytics中建立及設定專案](#create-and-configure-a-project-in-customer-journey-analytics)
-* [使用Edge擴充功能傳送資料給Experience Platform Edge](#send-data-to-experience-platform-edge-with-the-edge-extension)
-
-## 定義報表套裝
-
->[!NOTE]
->
->只有當您使用Adobe Analytics時，才需要報表套裝。 如果您打算使用Customer Journey Analytics來製作報表，則不需要報表套裝。
-
-如果您打算使用Adobe Analytics製作報表，則需要有可搭配串流媒體實作使用的報表套裝。 如需定義報表套裝的相關資訊，請參閱 [報表套裝管理員](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=en).
-
-定義報表套裝後，繼續使用 [在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform).
+無論您是使用行動SDK或API來透過Experience Edge實作串流媒體，您都必須先完成下列章節：
 
 ## 在Adobe Experience Platform中設定結構描述
 
@@ -353,7 +325,6 @@ Regardless of which Experience Edge implementation method you use for configurin
 * [API 參考資料](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
 * [移轉至Adobe Streaming Media for Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
-
 
 或者，您也可以使用下列資源來使用Edge API的自訂實作：
 

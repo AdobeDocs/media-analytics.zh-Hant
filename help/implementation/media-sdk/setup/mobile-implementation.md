@@ -4,10 +4,10 @@ description: 了解如何為行動應用程式實作 Adobe Streaming Media。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '187'
-ht-degree: 100%
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+workflow-type: tm+mt
+source-wordcount: '195'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,9 @@ ht-degree: 100%
 
 * **Adobe Experience Platform Mobile SDK**
 
-   若要收集資料，請使用 Adobe Experience Platform 中的標記。Adobe Experience Platform 中的標記是標記管理解決方案，可讓您部署 Analytics 程式碼以及其他標記需求。
+  若要收集資料，請使用下列任一項作業：
+   * Adobe Experience Platform 中的標記. Adobe Experience Platform 中的標記是標記管理解決方案，可讓您部署 Analytics 程式碼以及其他標記需求。
+   * Adobe Experience Platform Edge
 
 * **Android 適用的 Media SDK** 或 **iOS 適用的 Media SDK**
 
@@ -27,7 +29,7 @@ ht-degree: 100%
 
 * **取得有效設定參數**
 
-   設定 Analytics 帳戶之後，可以向 Adobe 代表取得這些參數。
+  設定 Analytics 帳戶之後，可以向 Adobe 代表取得這些參數。
 
 * **在您的媒體播放器中包含以下 API**
 
