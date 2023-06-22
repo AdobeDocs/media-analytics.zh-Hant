@@ -4,9 +4,9 @@ description: 瞭解如何實作Adobe串流媒體。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: b57db92ae4ce01e259424e3d71e36311af88ccac
+source-git-commit: 008f5a694ffa6416c0ff64f4f0ba06bf807ff5a6
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1778'
 ht-degree: 11%
 
 ---
@@ -46,60 +46,61 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
    ![已新增欄位群組](assets/schema-field-groups-added.png)
 
-
-本節中的下列步驟為選用步驟，即使未隱藏AEP結構描述UI中的指定欄位，對Media Edge API的請求仍可運作。
-不過，隱藏欄位會讓結構描述更易於閱讀和理解，因為Media Edge API未使用隱藏欄位。
-以下步驟僅參考 `MediaAnalytics Interaction Details` 欄位群組。
-
-1. 在 [!UICONTROL **結構**] 區域，選取 `Media Collection Details` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
-
-   ![manage-related-fields](assets/manage-related-fields.png)
-
-   * 在 `Media Collection Details` 欄位，隱藏 `List Of States` 欄位。
-
-     ![隱藏媒體收集狀態](assets/schema-hide-media-collection-states.png)
-
-   * 在 `Media Collection Details` > `Advertising Details` 欄位，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
-
-   * 在 `Media Collection Details` > `Advertising Pod Details` 欄位，隱藏下列報表欄位： `Ad Break ID`
-
-   * 在 `Media Collection Details` > `Chapter Details` 欄位，隱藏下列報表欄位： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
-
-   * 在 `Media Collection Details` > `Qoe Data Details` 欄位，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
-
-   * 在 `Media Collection Details` > `Session Details` 欄位，隱藏下列報表欄位： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
-
-   * 在 `Media Collection Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 欄位，隱藏下列報表欄位： `Player State Count`， `Player State Set`、和 `Player State Time`.
-
-     ![要隱藏的欄位](assets/schema-hide-listofstates.png)
-
 1. 選取 [!UICONTROL **確認**] 以儲存變更。
 
-1. 在 [!UICONTROL **結構**] 區域，選取 `List Of Media Collection Downloaded Content Events` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+1. （選用）您可以隱藏Media Edge API未使用的特定欄位。 隱藏這些欄位可讓結構描述更易於閱讀和理解，但並非必要。 這些欄位僅指下列欄位： `MediaAnalytics Interaction Details` 欄位群組。
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` 欄位，隱藏 `List Of States` 欄位。
++++ 展開此處以檢視可隱藏欄位的指示。
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 欄位，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
+   1. 在 [!UICONTROL **結構**] 區域，選取 `Media Collection Details` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 欄位，隱藏下列報表欄位： `Ad Break ID`
+      ![manage-related-fields](assets/manage-related-fields.png)
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 欄位，隱藏下列報表欄位： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
+      * 在 `Media Collection Details` 欄位，隱藏 `List Of States` 欄位。
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 欄位，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
+        ![隱藏媒體收集狀態](assets/schema-hide-media-collection-states.png)
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 欄位，隱藏下列報表欄位： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
+      * 在 `Media Collection Details` > `Advertising Details` 欄位，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 欄位，隱藏下列報表欄位： `Player State Count`， `Player State Set`、和 `Player State Time`.
+      * 在 `Media Collection Details` > `Advertising Pod Details` 欄位，隱藏下列報表欄位： `Ad Break ID`
 
-   * 在 `List Of Media Collection Downloaded Content Events` > `Media Details`  欄位，隱藏 `Media Session ID` 欄位。
+      * 在 `Media Collection Details` > `Chapter Details` 欄位，隱藏下列報表欄位： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
 
-1. 選取 [!UICONTROL **確認**] 以儲存變更。
+      * 在 `Media Collection Details` > `Qoe Data Details` 欄位，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
 
-1. 在 [!UICONTROL **結構**] 區域，選取 `Media Reporting Details` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+      * 在 `Media Collection Details` > `Session Details` 欄位，隱藏下列報表欄位： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
 
-   * 在 `Media Reporting Details` 欄位，隱藏下列欄位： `Error Details`， `List Of States End`， `List of States Start`、和 `Media Session ID`.
+      * 在 `Media Collection Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 欄位，隱藏下列報表欄位： `Player State Count`， `Player State Set`、和 `Player State Time`.
 
-1. 選取 [!UICONTROL **確認**] > [!UICONTROL **儲存**]  以儲存變更。
+        ![要隱藏的欄位](assets/schema-hide-listofstates.png)
+
+   1. 選取 [!UICONTROL **確認**] 以儲存變更。
+
+   1. 在 [!UICONTROL **結構**] 區域，選取 `List Of Media Collection Downloaded Content Events` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` 欄位，隱藏 `List Of States` 欄位。
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 欄位，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 欄位，隱藏下列報表欄位： `Ad Break ID`
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 欄位，隱藏下列報表欄位： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 欄位，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 欄位，隱藏下列報表欄位： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 欄位，隱藏下列報表欄位： `Player State Count`， `Player State Set`、和 `Player State Time`.
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details`  欄位，隱藏 `Media Session ID` 欄位。
+
+   1. 選取 [!UICONTROL **確認**] 以儲存變更。
+
+   1. 在 [!UICONTROL **結構**] 區域，選取 `Media Reporting Details` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+
+      * 在 `Media Reporting Details` 欄位，隱藏下列欄位： `Error Details`， `List Of States End`， `List of States Start`、和 `Media Session ID`.
+
+   1. 選取 [!UICONTROL **確認**] > [!UICONTROL **儲存**]  以儲存變更。
 
 1. 繼續使用 [在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform).
 
