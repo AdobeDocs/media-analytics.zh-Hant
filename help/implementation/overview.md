@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: ade20d7ae3cbb525b3a8390a27e1d93201d83003
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '403'
 ht-degree: 13%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 13%
 
 ## 邊緣實作方法
 
-在大多數情況下，我們建議為所有新Adobe Analytics或Customer Journey Analytics (CJA)客戶實作Media Analytics時使用Edge。
+在大多數情況下，我們建議為所有新Adobe Analytics或Customer Journey Analytics客戶實作Media Analytics時使用Edge。
 
-* **Edge Network SDK /擴充功能的媒體：** 從iOS和Android裝置收集資料，並傳送至Edge。 然後，資料可以傳送到CJA或Adobe Analytics。
+* **Edge Network SDK /擴充功能的媒體：** 從iOS和Android裝置收集資料，並傳送至Edge。 然後，資料可以傳送至Customer Journey Analytics或Adobe Analytics。
 
   如需Edge Network SDK/擴充功能所用媒體的詳細資訊，請參閱 [安裝Media Analytics與Experience Platform Edge](/help/implementation/implementation-edge.md).
 
@@ -28,7 +28,7 @@ ht-degree: 13%
   >
   >此實作方法目前不支援Web SDK或Roku。 不過，使用Media Edge API實作時，兩者皆支援。
 
-* **Media Edge API：** 可自訂以從任何裝置或格式（包括行動裝置、網頁和過頂裝置）收集資料，並傳送資料給Edge。 然後，資料可以傳送到CJA或Adobe Analytics。
+* **Media Edge API：** 可自訂以從任何裝置或格式（包括行動裝置、網頁和過頂裝置）收集資料，並傳送資料給Edge。 然後，資料可以傳送至Customer Journey Analytics或Adobe Analytics。
 
   <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
 
@@ -36,9 +36,9 @@ ht-degree: 13%
 
 ## 其他實作方法
 
-在大多數情況下，建議將上述邊緣實作方法用於CJA和Adobe Analytics，尤其是新的實作。
+在大多數情況下，建議將上述邊緣實作方法用於Customer Journey Analytics和Adobe Analytics，尤其是新的實作。
 
-除了Edge實作方法之外，您也可以使用其他實作方法。 這些實作方法最初是專為與Adobe Analytics搭配使用而設計。 但是，具有以下任何實施方法的客戶仍然可以透過建立 [Analytics來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant).
+除了Edge實作方法之外，您也可以使用其他實作方法。 這些實作方法最初是專為與Adobe Analytics搭配使用而設計。 Customer Journey Analytics不過，具有下列任何實作方法的客戶仍可透過建立 [Analytics來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant).
 
 * **具有標籤的媒體擴充功能：** Adobe Medium Analytics for Audio and Video擴充功能提供將Media追蹤器例項新增至已啟用標籤的網站或專案的功能。 資料會傳送至Adobe Analytics。
 

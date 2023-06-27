@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 72%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ![橫幅](./assets/media_analytics_banner.png)
 
-適用於串流媒體的 Adobe Analytics 是 Adobe Analytics 的附加元件，針對音訊、視訊和廣告提供強大的測量工具。 借助適用於串流媒體的 Analytics，您可以對持續時間、停止和開始獲得近乎即時、精細的詳細資料，讓您能夠評估和組合視訊和音訊量度。 這些見解使您能夠了解客戶的觀看和收聽習慣，並透過高度個人化的推薦提高參與度。
+適用於串流媒體的 Adobe Analytics 是 Adobe Analytics 的附加元件，針對音訊、視訊和廣告提供強大的測量工具。 有了適用於流媒體的 Analytics，您可以取得持續時間、停止和開始的近乎即時、精細的詳細資訊，讓您評估並結合視訊和音訊量度。 這些見解使您能夠了解客戶的觀看和收聽習慣，並透過高度個人化的推薦提高參與度。
 
 適用於串流媒體的 Adobe Analytics 可讓您橫跨網站和串流應用程式追蹤完整的客戶歷程。 您可以將串流媒體量度與其他 Adobe Analytics 功能結合使用，例如 Audience Analytics、Mobile 或 Cross-Device Analytics。 這些量度可輕鬆整合至 Adobe Analytics 報表和其他 Adobe Experience Platform 產品。媒體測量可讓您將資料分為多個維度和區段，以擷取完整詳細分析所需的所有中繼資料。如此便能分析資料，並將成功條件歸因於完整使用的媒體、平均逗留時間以及完成的廣告。
 
@@ -24,13 +24,18 @@ ht-degree: 100%
 
 ## 運作方式
 
-串流媒體追蹤資料是使用 Media SDK 或 Adobe Experience Platform Media 擴充功能和 Media Collection API 從播放器收集的。所有精細資料 (最多 10 秒) 都會傳送到 Media Analytics 服務，該服務會收集和處理各個播放工作階段的資料。播放工作階段結束後，計算出的追蹤資料會傳送到 Adobe Analytics 進行儲存和報告。透過 Adobe Customer Journey Analytics (CJA) 實作，可以使用 Analytics Data Connector (ADC) 將資料傳送到 CJA，讓客戶能夠將 CJA 用作為報告工具。
+串流媒體追蹤資料是使用Media for Edge Network SDK/擴充功能、具有標籤的媒體擴充功能、Media SDK、Media Edge API或Media Collection API從播放器收集的。
 
-<!-- ![streaming media process](./assets/streaming-process1.png) -->
+所有精細資料（最長10秒）都會傳送至Media Analytics服務或Experience Edge (視 [實作方法](/help/implementation/overview.md) 您選擇)，收集並處理每個個別播放工作階段的資料。
 
-<div style="text-align: center;">
-<img src="./assets/streaming-process1.png" alt="串流媒體程序" width="75%">
-</div>
+播放工作階段結束後，計算出的追蹤資料會傳送至Adobe Analytics或Customer Journey Analytics進行儲存和報告。
+
+>[!NOTE]
+>
+>透過Customer Journey Analytics實作，可以使用Experience Edge或Analytics Data Connector (ADC)將資料傳送到Customer Journey Analytics。
+
+
+另請參閱 [實作適用於串流媒體的Adobe Analytics或Customer Journey Analytics](/help/implementation/overview.md) 以取得詳細資訊。
 
 ## 功能
 
