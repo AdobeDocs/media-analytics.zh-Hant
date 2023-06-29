@@ -4,7 +4,7 @@ description: 「了解適用於串流媒體的 Adobe Analytics 所支援的主�
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 69%
@@ -25,7 +25,7 @@ ht-degree: 69%
 
 目前支援的裝置如下表所示。若裝置不在清單中，請聯絡您的客戶服務人員或解決方案顧問，以瞭解該裝置的狀態。
 
-如需在Edge上實作媒體的詳細資訊，請參閱 [安裝Media Analytics與Experience Platform Edge](/help/implementation/implementation-edge.md).
+如需在Edge上實作媒體的詳細資訊，請參閱 [安裝Media Analytics與Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | 串流平台和裝置 | | Edge Network SDK /擴充功能適用的媒體 | Media Edge API | 具有標籤或AEP Mobile SDK的媒體擴充功能 | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

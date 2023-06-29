@@ -5,8 +5,8 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ ht-degree: 100%
 
 >[!TIP]
 >
->播放點位置已設為設定和配置程式碼的一部分。如需 `getCurrentPlayheadTime` 的詳細資訊，請參閱[概觀：一般實作指引](/help/implementation/media-sdk/media-sdk-overview.md)。
+>播放點位置已設為設定和配置程式碼的一部分。如需 `getCurrentPlayheadTime` 的詳細資訊，請參閱[概觀：一般實作指引](/help/implementation/media-sdk-overview.md)。
 
 
 ## 實作 {#implement}
@@ -107,13 +107,13 @@ ht-degree: 100%
 
    * **標準中繼資料 -**
 
-      >[!NOTE]
-      >
-      >將標準中繼資料物件附加到媒體物件為選用。
+     >[!NOTE]
+     >
+     >將標準中繼資料物件附加到媒體物件為選用。
 
-      在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。
+     在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。
 
-      請在此處參閱完整的中繼資料清單：[音效和視訊參數.](../../implementation/variables/audio-video-parameters.md)
+     請在此處參閱完整的中繼資料清單：[音效和視訊參數.](../../implementation/variables/audio-video-parameters.md)
 
    * **自訂中繼資料 -** 為自訂變數建立變數物件，並為此內容填入資料。
 

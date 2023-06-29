@@ -5,10 +5,10 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 129818d73bdcc63fcf922d295e3f360ab1375dbe
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 99%
+source-wordcount: '904'
+ht-degree: 96%
 
 ---
 
@@ -33,36 +33,39 @@ ht-degree: 99%
          + [JavaScript - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 實作{#implementation}
    + [實作概觀](implementation/overview.md)
-   + Media SDK - 實作{#media-sdk}
-      + [Media SDK 概觀](implementation/media-sdk/media-sdk-overview.md)
-      + 安裝與設定 {#setup}
-         + 安裝 Web SDK {#install-web-sdk}
-            + [使用 JavaScript 安裝 Analytics](implementation/media-sdk/setup/web-implementation.md)
-            + [使用 Media Analytics 擴充功能安裝 Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [安裝 Mobile SDK](implementation/media-sdk/setup/mobile-implementation.md)
-         + 安裝 OTT SDK {#ott-setup}
+   + [Media SDK 概觀](/help/implementation/media-sdk-overview.md)
+   + Edge實作（建議使用） {#edge-recommended}
+      + Media Edge SDK /擴充功能 {#media-edge-sdk}
+         + [Media Edge SDK/擴充功能設定](/help/implementation/edge/implementation-edge.md)
+         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
+      + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
+   + 僅限Adobe Analytics的實作 {#analytics-only}
+      + Media SDK/擴充功能 {#media-sdk}
+         + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
+         + [Media Analytics擴充功能](implementation/media-sdk/setup/web-implementation-tags.md)
+         + [行動 SDK](implementation/media-sdk/setup/mobile-implementation.md)
+         + OTT SDK {#ott-setup}
             + [安裝 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [安裝 Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
-   + [使用Adobe Experience Platform邊緣安裝分析](implementation/implementation-edge.md)
-   + Media Collection API- 實作{#streaming-media-apis}
-      + [媒體收集](implementation/media-collection-api/mc-api-overview.md)
-      + [API 快速入門](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
-      + [工作階段要求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
-      + [事件要求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [要求參數](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-      + [事件類型和說明](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
-      + 實作 API {#mc-api-impl}
-         + [在播放器中設定 HTTP 要求類型](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
-         + [取得工作階段 ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-         + [實作事件要求](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
-         + [JSON 驗證結構](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
-         + [驗證事件要求](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
-         + [傳送 Ping 事件](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
-         + [傳送 QoE 資料](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
-         + [自訂中繼資料支援](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
-         + [逾時條件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
-         + [控制事件順序](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
-         + [在工作階段回應緩慢時將事件加入佇列](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+      + Media Collection API- 實作{#streaming-media-apis}
+         + [媒體收集](implementation/media-collection-api/mc-api-overview.md)
+         + [API 快速入門](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
+         + [工作階段要求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+         + [事件要求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
+         + [要求參數](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
+         + [事件類型和說明](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
+         + 實作 API {#mc-api-impl}
+            + [在播放器中設定 HTTP 要求類型](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
+            + [取得工作階段 ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
+            + [實作事件要求](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+            + [JSON 驗證結構](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
+            + [驗證事件要求](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+            + [傳送 Ping 事件](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
+            + [傳送 QoE 資料](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
+            + [自訂中繼資料支援](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+            + [逾時條件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
+            + [控制事件順序](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
+            + [在工作階段回應緩慢時將事件加入佇列](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + 變數 {#variables}
       + [串流媒體參數](implementation/variables/audio-video-parameters.md)
       + [廣告參數](implementation/variables/ad-parameters.md)

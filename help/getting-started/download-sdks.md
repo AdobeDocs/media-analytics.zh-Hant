@@ -5,7 +5,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 0046f182f0288f164d6918cab3fa7db6c14e7b53
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 86%
@@ -24,7 +24,7 @@ Adobe Experience Platform 中的標記是 Adobe 推出的新一代網站標記�
 >如需有關下載舊版 SDK 的資訊，請參閱[舊版 — 下載 SDK](/help/legacy/legacy-download-sdks.md)。<br>
 >如需關於終止支援的重要資訊，請參閱[終止支援常見問題集](/help/additional-resources/end-of-support-faqs.md)。
 
-## 媒體SDK和移動庫 {#media-sdks-libraries}
+## Media SDK和行動程式庫 {#media-sdks-libraries}
 
 ### Web 實作 {#download-web-sdk}
 
@@ -32,16 +32,16 @@ Adobe Experience Platform 中的標記是 Adobe 推出的新一代網站標記�
 |:---:|---|---|---|---|
 | ![JavaScript 圖示](assets/javascript-icon.png) | Web - [JS 適用的 Media SDK v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [JavaScript API 參考](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [使用 JavaScript 安裝 Analytics](/help/implementation/media-sdk/setup/web-implementation.md) | [JS 適用的 Media SDK v3.0.2 範例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![JavaScript 圖示](assets/javascript-icon.png) | Web - Media 擴充功能 |  | [Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能 — 使用標記 (資料收集)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant) | [Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能範例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| ![JavaScript 圖示](assets/javascript-icon.png) | Web -Experience Platform邊緣（即將推出） |  | [使用Experience Platform邊緣安裝分析](/help/implementation/implementation-edge.md) |  |
+| ![JavaScript 圖示](assets/javascript-icon.png) | Web - EdgeExperience Platform（即將推出） |  | [使用Experience Platform Edge安裝Analytics](/help/implementation/edge/implementation-edge.md) | |
 
-### 移動實現 {#get-mobile-extension}
+### 行動實施 {#get-mobile-extension}
 
 | 支援的平台 |  版本 |  文件   |  範例  |
 |:---:|---|---|---|
 | ![Android 圖示](assets/android-icon.png) | Android - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/mobile/android) |
-| ![AppleiOS表徵圖&#x200B;](assets/ios-icon.png)<br>**電視作業系統** | iOS / tvOS - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
-| ![Android 圖示](assets/android-icon.png) | Android -Experience Platform邊緣 | [使用Experience Platform邊緣安裝分析](/help/implementation/implementation-edge.md) |  |
-| ![AppleiOS表徵圖&#x200B;](assets/ios-icon.png)<br>**電視作業系統** | iOS/電視OS -Experience Platform邊緣 | [使用Experience Platform邊緣安裝分析](/help/implementation/implementation-edge.md) |  |
+| ![Apple iOS圖示&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS - Media 擴充功能 | [Mobile SDK 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Adobe Analytics - Media Analytics for Audio and Video 範例](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
+| ![Android 圖示](assets/android-icon.png) | Android -Experience Platform邊緣 | [使用Experience Platform Edge安裝Analytics](/help/implementation/edge/implementation-edge.md) | |
+| ![Apple iOS圖示&#x200B;](assets/ios-icon.png)<br>**tvOS** | iOS / tvOS -Experience Platform邊緣 | [使用Experience Platform Edge安裝Analytics](/help/implementation/edge/implementation-edge.md) |  |
 
 ### 過頂實作 {#download-ott-libraries}
 

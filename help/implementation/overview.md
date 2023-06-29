@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '398'
 ht-degree: 13%
 
 ---
@@ -18,11 +18,11 @@ ht-degree: 13%
 
 ## 邊緣實作方法
 
-在大多數情況下，我們建議為所有新Adobe Analytics或Customer Journey Analytics客戶實作Media Analytics時使用Edge。
+我們建議為所有新Adobe Analytics或Customer Journey Analytics客戶實作Media Analytics時使用Edge。
 
 * **Edge Network SDK /擴充功能的媒體：** 從iOS和Android裝置收集資料，並傳送至Edge。 然後，資料可以傳送至Customer Journey Analytics或Adobe Analytics。
 
-  如需Edge Network SDK/擴充功能所用媒體的詳細資訊，請參閱 [安裝Media Analytics與Experience Platform Edge](/help/implementation/implementation-edge.md).
+  如需Edge Network SDK/擴充功能所用媒體的詳細資訊，請參閱 [安裝Media Analytics與Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
   >[!NOTE]
   >
@@ -34,11 +34,11 @@ ht-degree: 13%
 
 ![CJA 工作流程](assets/cja-implementation.png)
 
-## 其他實作方法
+## 僅限Adobe Analytics的實作方法
 
-在大多數情況下，建議將上述邊緣實作方法用於Customer Journey Analytics和Adobe Analytics，尤其是新的實作。
+上述邊緣實作方法建議用於Customer Journey Analytics和Adobe Analytics，尤其是新實作。
 
-除了Edge實作方法之外，您也可以使用其他實作方法。 這些實作方法最初是專為與Adobe Analytics搭配使用而設計。 Customer Journey Analytics不過，具有下列任何實作方法的客戶仍可透過建立 [Analytics來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant).
+除了Edge實作方法之外，您也可以使用其他實作方法。 這些實作方法的設計目的是為了與Adobe Analytics搭配使用。 Customer Journey Analytics不過，擁有下列任何實作方法的現有客戶仍可透過建立 [Analytics來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant).
 
 * **具有標籤的媒體擴充功能：** Adobe Medium Analytics for Audio and Video擴充功能提供將Media追蹤器例項新增至已啟用標籤的網站或專案的功能。 資料會傳送至Adobe Analytics。
 
