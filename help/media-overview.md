@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 72%
+source-wordcount: '563'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 72%
 
 ![橫幅](./assets/media_analytics_banner.png)
 
-適用於串流媒體的 Adobe Analytics 是 Adobe Analytics 的附加元件，針對音訊、視訊和廣告提供強大的測量工具。 有了適用於流媒體的 Analytics，您可以取得持續時間、停止和開始的近乎即時、精細的詳細資訊，讓您評估並結合視訊和音訊量度。 這些見解使您能夠了解客戶的觀看和收聽習慣，並透過高度個人化的推薦提高參與度。
+適用於流媒體的 Adobe Analytics是Adobe Analytics和Customer Journey Analytics的附加元件，針對音訊、視訊和廣告提供強大的測量工具。 有了適用於流媒體的 Analytics，您可以取得持續時間、停止和開始的近乎即時、精細的詳細資訊，讓您評估並結合視訊和音訊量度。 這些見解使您能夠了解客戶的觀看和收聽習慣，並透過高度個人化的推薦提高參與度。
 
 適用於串流媒體的 Adobe Analytics 可讓您橫跨網站和串流應用程式追蹤完整的客戶歷程。 您可以將串流媒體量度與其他 Adobe Analytics 功能結合使用，例如 Audience Analytics、Mobile 或 Cross-Device Analytics。 這些量度可輕鬆整合至 Adobe Analytics 報表和其他 Adobe Experience Platform 產品。媒體測量可讓您將資料分為多個維度和區段，以擷取完整詳細分析所需的所有中繼資料。如此便能分析資料，並將成功條件歸因於完整使用的媒體、平均逗留時間以及完成的廣告。
 
