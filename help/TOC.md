@@ -5,9 +5,9 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: cb45048d77edc188b5fdbd60ae89c165ff9befa0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '900'
 ht-degree: 96%
 
 ---
@@ -169,7 +169,7 @@ ht-degree: 96%
       + [設定 Android](legacy/media-sdk/setup/set-up-android.md)
       + [設定 iOS](legacy/media-sdk/setup/set-up-ios.md)
       + 設定 JavaScript {#setup-javascript}
-         + [設定 JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
+         + [設定 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [關於心率測量](legacy/heartbeat-measurement.md)
    + [Adobe Primetime 和適用於串流媒體的 Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management 啟用](legacy/intro-to-ava/am-enablement.md)
@@ -187,7 +187,6 @@ ht-degree: 96%
       + 偵錯 {#debugging}
          + [SDK 偵錯](legacy/validation/debugging/sdk-debugging.md)
    + [舊版移轉： VHL 1.x 至 VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-   + [設定 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [程式碼比較： v1.x 與 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [追蹤 API 1x 至 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [舊版 - AVA 介紹](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
