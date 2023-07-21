@@ -5,10 +5,10 @@ uuid: ba0496e2-585a-4176-b583-c705726fecc6
 exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: 0a8ce64891b7174b0d6d7b6b5a83d7379a63a72f
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 90%
+source-wordcount: '104'
+ht-degree: 71%
 
 ---
 
@@ -18,4 +18,4 @@ Media Analytics （心率）是Adobe的標準化媒體追蹤解決方案。
 
 用戶端整合僅限採用 Media Analytics 實作。您可以選擇實作 Media SDK 或 Media Collection API (或兩者)。此用戶端路徑可用於任何播放器，包括客戶及/或 OVP 播放器，例如 Brightcove、Ooyala、thePlatform 等。
 
-如果 Media Analytics 是您打算使用的路徑，請參閱 [Media SDK 實作](/help/implementation/media-sdk-overview.md)與 [Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md)。
+如果Media Analytics是您打算使用的路徑，請參閱 [取得Media SDK、使用標籤的擴充功能和OTT SDK](/help/getting-started/download-sdks.md) 和 [Media Collection API。](/help/implementation/media-collection-api/mc-api-overview.md)
