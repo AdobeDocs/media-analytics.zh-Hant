@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -32,17 +32,17 @@ ht-degree: 96%
          + [JavaScript - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 實作{#implementation}
    + [實作概觀](implementation/overview.md)
-   + Edge實作（建議使用） {#edge-recommended}
-      + Media Edge SDK /擴充功能 {#media-edge-sdk}
-         + [Media Edge SDK/擴充功能設定](/help/implementation/edge/implementation-edge.md)
+   + Edge 實施 (建議){#edge-recommended}
+      + Media Edge SDK/擴充功能 {#media-edge-sdk}
+         + [Media Edge SDK/ 擴充功能設定](/help/implementation/edge/implementation-edge.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-   + 僅限Adobe Analytics的實作 {#analytics-only}
+   + 僅限 Adobe Analytics 實施{#analytics-only}
       + Media SDK/擴充功能 {#media-sdk}
          + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
-         + [Media Analytics擴充功能](implementation/media-sdk/setup/web-implementation-tags.md)
+         + [Media Analytics 擴充功能](implementation/media-sdk/setup/web-implementation-tags.md)
          + [行動 SDK](implementation/media-sdk/setup/mobile-implementation.md)
-         + OTT SDK {#ott-setup}
+         + OTT SDK{#ott-setup}
             + [安裝 Chromecast SDK](implementation/media-sdk/setup/set-up-chromecast.md)
             + [安裝 Roku SDK](implementation/media-sdk/setup/set-up-roku.md)
       + Media Collection API- 實作{#streaming-media-apis}

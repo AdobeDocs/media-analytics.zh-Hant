@@ -1,5 +1,5 @@
 ---
-title: 實作適用於串流媒體的Adobe Analytics或Customer Journey Analytics
+title: 實作適用於串流媒體的 Adobe Analytics 或 Customer Journey Analytics
 description: 了解串流媒體實作路徑。
 uuid: null
 feature: Media Analytics
@@ -8,54 +8,54 @@ exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 11%
+ht-degree: 81%
 
 ---
 
-# 實作適用於串流媒體的 Adobe Analytics 或Customer Journey Analytics
+# 實作適用於串流媒體的 Adobe Analytics 或 Customer Journey Analytics
 
-實作串流媒體有多種方式。 如需此頁面上說明之實作方法的支援裝置和平台的詳細比較，請參閱 [支援的裝置和平台](/help/getting-started/supported-devices.md).
+實作串流媒體的方法有很多種。 有關本頁描述的實施方法所支援的裝置和平台的詳細比較，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。
 
-## 邊緣實作方法
+## Edge 實施方法
 
-我們建議為所有新Adobe Analytics或Customer Journey Analytics客戶實作Media Analytics時使用Edge。
+我們建議在為所有 Adobe Analytics 或 Customer Journey Analytics 新客戶實作媒體分析時使用 Edge。
 
-* **Edge Network SDK /擴充功能的媒體：** 從iOS和Android裝置收集資料，並傳送至Edge。 然後，資料可以傳送至Customer Journey Analytics或Adobe Analytics。
+* **Media for Edge Network SDK/擴充功能：**&#x200B;從 iOS 和 Android 裝置收集資料並傳送至 Edge。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
-  如需Edge Network SDK/擴充功能所用媒體的詳細資訊，請參閱 [安裝Media Analytics與Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+  如需 Media for Edge Network SDK/擴充功能的詳細資訊，請參閱[使用 Experience Platform Edge 安裝 Media Analytics](/help/implementation/edge/implementation-edge.md)。
 
   >[!NOTE]
   >
-  >此實作方法目前不支援Web SDK或Roku。 不過，使用Media Edge API實作時，兩者皆支援。
+  >此實施方式目前不支援 Web SDK 或 Roku。 但是，當使用 Media Edge API 實作時，兩者均受支援。
 
-* **Media Edge API：** 可自訂以從任何裝置或格式（包括行動裝置、網頁和過頂裝置）收集資料，並傳送資料給Edge。 然後，資料可以傳送至Customer Journey Analytics或Adobe Analytics。
+* **Media Edge API：**&#x200B;可以進行自訂，收集任何裝置或格式 (包括行動、網路和 OTT 裝置) 的資料並將資料傳送至 Edge。之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
   <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
 
 ![CJA 工作流程](assets/cja-implementation.png)
 
-## 僅限Adobe Analytics的實作方法
+## 僅限 Adobe Analytics 的實施方法
 
-上述邊緣實作方法建議用於Customer Journey Analytics和Adobe Analytics，尤其是新實作。
+建議將上述 Edge 實施方法用於 Customer Journey Analytics 和 Adobe Analytics，特別是對於新實施。
 
-除了Edge實作方法之外，您也可以使用其他實作方法。 這些實作方法的設計目的是為了與Adobe Analytics搭配使用。 Customer Journey Analytics不過，擁有下列任何實作方法的現有客戶仍可透過建立 [Analytics來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant).
+除了 Edge 實施方法之外，還有其他實施方法。 這些實施方法專為與 Adobe Analytics 搭配使用而設計。 但是，採用以下任何實施方法的現有客戶仍然可以透過建立 [Analytics 來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant)的方式，使資料可用於 Customer Journey Analytics。
 
-* **具有標籤的媒體擴充功能：** Adobe Medium Analytics for Audio and Video擴充功能提供將Media追蹤器例項新增至已啟用標籤的網站或專案的功能。 資料會傳送至Adobe Analytics。
+* **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。資料會傳送至 Adobe Analytics。
 
-  如需使用標籤安裝、設定和實作Media擴充功能的詳細資訊，請參閱 [Adobe Medium Analytics (3.x SDK) for Audio and Video擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html).
+  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)。
 
 * **Media SDK：**  Media SDK可讓您測量多種媒體平台，包括網站、手機、連線電視、平板電腦、OTT裝置、機上盒和遊戲主機。 (如需詳細資訊，請參閱 [支援的裝置和平台](/help/getting-started/supported-devices.md).)
 
-  Media SDK使用Media Collection API進行追蹤。 資料會傳送至Adobe Analytics。
+  Media SDK使用Media Collection API進行追蹤。 資料會傳送至 Adobe Analytics。
 
   如需有關下載和安裝 Media SDK 和擴充功能的資訊，請參閱[取得 Media SDK、使用標記的擴充功能和 OTT SDK](/help/getting-started/download-sdks.md)。
 
-* **Media Collection API：** 由於Media Collection API可自訂，因此可用於需要自訂追蹤功能的應用程式及Media SDK不支援的裝置。 Media Collection API使用RESTful HTTP呼叫來追蹤音訊和視訊事件。 資料會傳送至Adobe Analytics。
+* **Media Collection API：** 由於Media Collection API可自訂，因此可用於需要自訂追蹤功能的應用程式及Media SDK不支援的裝置。 Media Collection API使用RESTful HTTP呼叫來追蹤音訊和視訊事件。 資料會傳送至 Adobe Analytics。
 
-  如需關於使用 Media Collection API 的資訊，請參閱[Media Collection API](media-collection-api/mc-api-overview.md)。
+  如需關於使用 Media Collection API 的資訊，請參閱 [Media Collection API](media-collection-api/mc-api-overview.md)。
 
 
-![Analytics工作流程](assets/analytics-implementation.png)
+![Analytics 工作流程](assets/analytics-implementation.png)
 
 <!--
 (Not sure if we need the following paragraph and graphic. Paragraph is somewhat redundant with the intro paragraph of this article)
