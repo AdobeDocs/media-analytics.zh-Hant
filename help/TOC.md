@@ -5,9 +5,9 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
+source-git-commit: b33a6205d5c6921c4ee0fcfc968593c62461c2a0
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 100%
 
 ---
@@ -113,49 +113,48 @@ ht-degree: 100%
       + [OTT 與 Audience Manager](use-cases/analytics-with-ott/ott-am.md)
       + [OTT 與 Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + 追蹤 {#tracking}
-   + 追蹤 {#track-av-playback}
-      + [概觀](use-cases/track-av-playback/track-core-overview.md)
-      + 追蹤核心串流媒體播放 {#track-core}
-         + [在 JavaScript 3.x 上追蹤核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-         + [在 Chromecast 上追蹤核心播放](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-         + [在 Roku 上追蹤核心播放](use-cases/track-av-playback/track-core/track-core-roku.md)
-      + 追蹤緩衝 {#track-buffering}
-         + [在 JavaScript 3.x 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-         + [在 Chromecast 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [在 Roku 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-      + 追蹤搜尋 {#track-seeking}
-         + [在 JavaScript 3.x 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-         + [在 Chromecast 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [在 Roku 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-      + 實作標準中繼資料 {#impl-std-metadata}
-         + [在 JavaScript 3.x 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-         + [在 Chromecast 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [標準中繼資料參數 - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [在 Roku 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [標準中繼資料參數 - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-      + 追蹤廣告 {#track-ads}
-         + [概觀](use-cases/track-ads/track-ads-overview.md)
-         + [在 JavaScript 3.x 上追蹤廣告](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-         + [在 Chromecast 上追蹤廣告](use-cases/track-ads/track-ads-chromecast.md)
-         + [在 Roku 上追蹤廣告](use-cases/track-ads/track-ads-roku.md)
-         + 實作標準廣告中繼資料 {#impl-std-ad-metadata}
-            + [在 JavaScript 3.x 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-            + [在 Roku 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-      + 追蹤章節和區段 {#track-chapters}
-         + [概觀](use-cases/track-chapters/track-chapters-overview.md)
-         + [在 JavaScript 3.x 上追蹤章節和區段](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-         + [在 Chromecast 上追蹤章節和區段](use-cases/track-chapters/track-chapters-chromecast.md)
-         + [在 Roku 上追蹤章節和區段](use-cases/track-chapters/track-chapters-roku.md)
-      + 追蹤體驗品質 {#track-qos}
-         + [概觀](use-cases/track-qos/track-qos-overview.md)
-         + [在 JavaScript 3.x 上追蹤體驗品質](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-         + [在 Chromecast 上追蹤體驗品質](use-cases/track-qos/track-qos-chromecast.md)
-         + [在 Roku 上追蹤體驗品質](use-cases/track-qos/track-qos-roku.md)
-      + 追蹤錯誤 {#track-errors}
-         + [概觀](use-cases/track-errors/track-errors-overview.md)
-         + [在 JavaScript 3.x 上追蹤錯誤](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-         + [在 Chromecast 上追蹤錯誤](use-cases/track-errors/track-errors-chromecast.md)
-         + [在 Roku 上追蹤錯誤](use-cases/track-errors/track-errors-roku.md)
+   + [概觀](use-cases/track-av-playback/track-core-overview.md)
+   + 追蹤核心串流媒體播放 {#track-core}
+      + [在 JavaScript 3.x 上追蹤核心播放](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+      + [在 Chromecast 上追蹤核心播放](use-cases/track-av-playback/track-core/track-core-chromecast.md)
+      + [在 Roku 上追蹤核心播放](use-cases/track-av-playback/track-core/track-core-roku.md)
+   + 追蹤緩衝 {#track-buffering}
+      + [在 JavaScript 3.x 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+      + [在 Chromecast 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
+      + [在 Roku 上追蹤緩衝](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
+   + 追蹤搜尋 {#track-seeking}
+      + [在 JavaScript 3.x 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+      + [在 Chromecast 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
+      + [在 Roku 上追蹤搜尋](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
+   + 實作標準中繼資料 {#impl-std-metadata}
+      + [在 JavaScript 3.x 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+      + [在 Chromecast 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      + [標準中繼資料參數 - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+      + [在 Roku 上實作標準中繼資料](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      + [標準中繼資料參數 - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+   + 追蹤廣告 {#track-ads}
+      + [概觀](use-cases/track-ads/track-ads-overview.md)
+      + [在 JavaScript 3.x 上追蹤廣告](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+      + [在 Chromecast 上追蹤廣告](use-cases/track-ads/track-ads-chromecast.md)
+      + [在 Roku 上追蹤廣告](use-cases/track-ads/track-ads-roku.md)
+      + 實作標準廣告中繼資料 {#impl-std-ad-metadata}
+         + [在 JavaScript 3.x 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + [在 Roku 上實作標準廣告中繼資料](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   + 追蹤章節和區段 {#track-chapters}
+      + [概觀](use-cases/track-chapters/track-chapters-overview.md)
+      + [在 JavaScript 3.x 上追蹤章節和區段](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+      + [在 Chromecast 上追蹤章節和區段](use-cases/track-chapters/track-chapters-chromecast.md)
+      + [在 Roku 上追蹤章節和區段](use-cases/track-chapters/track-chapters-roku.md)
+   + 追蹤體驗品質 {#track-qos}
+      + [概觀](use-cases/track-qos/track-qos-overview.md)
+      + [在 JavaScript 3.x 上追蹤體驗品質](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+      + [在 Chromecast 上追蹤體驗品質](use-cases/track-qos/track-qos-chromecast.md)
+      + [在 Roku 上追蹤體驗品質](use-cases/track-qos/track-qos-roku.md)
+   + 追蹤錯誤 {#track-errors}
+      + [概觀](use-cases/track-errors/track-errors-overview.md)
+      + [在 JavaScript 3.x 上追蹤錯誤](use-cases/track-errors/track-errors-js/track-errors-js3.md)
+      + [在 Chromecast 上追蹤錯誤](use-cases/track-errors/track-errors-chromecast.md)
+      + [在 Roku 上追蹤錯誤](use-cases/track-errors/track-errors-roku.md)
 + 隱私權與安全性 {#streaming-media-privacy}
    + [選擇退出與隱私權設定](privacy/opt-out-privacy.md)
    + [安全性](privacy/security.md)
