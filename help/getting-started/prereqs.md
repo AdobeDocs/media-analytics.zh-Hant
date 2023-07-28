@@ -5,46 +5,44 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 94%
+source-wordcount: '433'
+ht-degree: 75%
 
 ---
 
-# 先決條件{#prerequisites}
+# 先決條件 {#prerequisites}
 
-要實作適用於串流媒體的 Adobe Analytics，請完成以下任務：
+開始實作串流媒體之前，請先完成下列工作：
+
+1. **檢閱串流媒體概觀**<br>
+在開始實作串流媒體之前，請先檢閱 [串流媒體概觀](/help/media-overview.md) 以確保Streaming Media符合您的需求。
 
 1. **確認您的串流媒體定價模式**<br>
-目前的定價模型是以視訊串流為基礎。如有必要，請連絡您的銷售代表或Adobe客戶團隊以簽署新的銷售訂單，因為Streaming Media Analytics與Adobe Analytics分開銷售。
-
-1. **確認您正在實作 Adobe Analytics**<br>
-Adobe Analytics 適用的串流媒體還需要 Adobe Analytics 基本實作。請參閱[實作 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)以取得詳細資訊。
-
-1. **取得媒體追蹤伺服器 URL**<br>
-請向您的 Adobe Analytics 代表詢問媒體追蹤伺服器 URL。這是 
-`collection-api-server` URL，適用於 Mobile SDK、JavaScript SDK 和 Roku 的非 Collection API 追蹤伺服器。API 實作的網域名稱是：`[your_namespace].hb-api.omtrdc.net`。
-
-1. **下載目前的 Media SDK 或實作必要的擴充功能**<br>
-根據實作路徑，針對 Web、行動或過頂平台[下載目前的 SDK](download-sdks.md)。必須實作必要的擴充功能才能啟用適用於串流媒體的 Adobe Analytics 擴充功能路徑。
+目前的定價模型是以視訊串流為基礎。如有必要，請聯絡您的銷售代表或Adobe客戶團隊以簽署新的銷售訂單，因為適用於串流媒體的Analytics與Adobe Analytics是分開銷售。
 
 1. **啟用 Adobe Analytics 報表**<br>
 要在 Analytics 中啟用報表並檢視您正在收集的內容和廣告資料，您必須在 Analytics 中啟用報表。請參閱[啟用 Media 報表](/help/reporting/media-reports-enable.md)。
 
-1. **啟用 Experience Cloud**<br>
+1. **在Experience Cloud中實作Adobe Experience Platform Identity Service**
 
+   **Identity 服務**&#x200B;可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和對象啟用共同的識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
 
-## 實作 Adobe Experience Platform Identity Service. {#implement-id}
+   ![ID 服務圖形](assets/mc_id_service_graphic.png)
 
-**Identity 服務**&#x200B;可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和對象啟用共同的識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
+   ID 服務也可以取代不同的解決方案特定 ID (例如 Analytics AID)。透過[客戶 ID 和驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant)功能，ID 服務可讓您將您的客戶 ID 傳遞至 Experience Cloud。請記住，ID 服務僅適用於您已訂閱的解決方案。如果您未註冊存取其他產品，則 ID 服務不提供存取權。
 
-![ID 服務圖形](assets/mc_id_service_graphic.png)
+   ID 服務是許多 Experience Cloud 特色、增強功能與服務的必要元件。目前 ID 服務支援 [Analytics](https://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/tw/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。
 
-ID 服務也可以取代不同的解決方案特定 ID (例如 Analytics AID)。透過[客戶 ID 和驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant)功能，ID 服務可讓您將您的客戶 ID 傳遞至 Experience Cloud。請記住，ID 服務僅適用於您已訂閱的解決方案。如果您未註冊存取其他產品，則 ID 服務不提供存取權。
+   如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-ID 服務是許多 Experience Cloud 特色、增強功能與服務的必要元件。目前 ID 服務支援 [Analytics](https://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/tw/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。
+   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 服務概觀](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 
-如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
+1. **檢視實作方法的其他必要條件**
 
-如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 服務概觀](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+   根據您計畫實作串流媒體的方式，檢視下列任一實作方法的先決條件：
+
+   * [僅限Adobe Analytics實作的先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+
+   * Edge實作的先決條件
