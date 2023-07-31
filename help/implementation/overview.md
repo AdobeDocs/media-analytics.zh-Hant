@@ -6,9 +6,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '471'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -44,13 +44,13 @@ ht-degree: 81%
 
   如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)。
 
-* **Media SDK：**  Media SDK可讓您測量多種媒體平台，包括網站、手機、連線電視、平板電腦、OTT裝置、機上盒和遊戲主機。 (如需詳細資訊，請參閱 [支援的裝置和平台](/help/getting-started/supported-devices.md).)
+* **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。(如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
 
-  Media SDK使用Media Collection API進行追蹤。 資料會傳送至 Adobe Analytics。
+  Media SDK 使用 Media Collection API 進行追蹤。資料會傳送至 Adobe Analytics。
 
   如需有關下載和安裝 Media SDK 和擴充功能的資訊，請參閱[取得 Media SDK、使用標記的擴充功能和 OTT SDK](/help/getting-started/download-sdks.md)。
 
-* **Media Collection API：** 由於Media Collection API可自訂，因此可用於需要自訂追蹤功能的應用程式及Media SDK不支援的裝置。 Media Collection API使用RESTful HTTP呼叫來追蹤音訊和視訊事件。 資料會傳送至 Adobe Analytics。
+* **Media Collection API：**&#x200B;由於 Media Collection API 是可自訂的，因此它們可用於需要自訂追蹤功能的應用程式以及 Media SDK 不支援的裝置。Media Collection API 使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。資料會傳送至 Adobe Analytics。
 
   如需關於使用 Media Collection API 的資訊，請參閱 [Media Collection API](media-collection-api/mc-api-overview.md)。
 
