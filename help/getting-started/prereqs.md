@@ -8,16 +8,16 @@ role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 92%
 
 ---
 
 # 先決條件 {#prerequisites}
 
-開始實作串流媒體之前，請先完成下列工作：
+在開始實作串流媒體之前，請完成以下任務：
 
 1. **檢閱串流媒體概觀**<br>
-在開始實作串流媒體之前，請先檢閱 [串流媒體概觀](/help/media-overview.md) 以確保Streaming Media符合您的需求。
+在開始實作串流媒體之前，請檢閱[串流媒體概觀](/help/media-overview.md)，以確保串流媒體滿足您的需求。
 
 1. **確認您的串流媒體定價模式**<br>
 目前的定價模型是以視訊串流為基礎。如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為串流媒體是作為Adobe Analytics的附加元件另外銷售。<!--update when media SKUs are added to other AEP apps -->
@@ -25,7 +25,7 @@ ht-degree: 74%
 1. **啟用 Adobe Analytics 報表**<br>
 要在 Analytics 中啟用報表並檢視您正在收集的內容和廣告資料，您必須在 Analytics 中啟用報表。請參閱[啟用 Media 報表](/help/reporting/media-reports-enable.md)。
 
-1. **在Experience Cloud中實作Adobe Experience Platform Identity Service**
+1. **在 Experience Cloud 中實作 Adobe Experience Platform 身分識別服務**
 
    **Identity 服務**&#x200B;可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和對象啟用共同的識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
 
@@ -39,12 +39,12 @@ ht-degree: 74%
 
    如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 服務概觀](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 
-1. **檢視實作方法的其他必要條件**
+1. **檢視您的實作的其他先決條件**
 
-   根據您計畫實作串流媒體的方式，檢視下列任一實作方法的先決條件：
+   依據您計劃如何實作串流媒體，檢視以下任一實作方法的先決條件：
 
-   * [僅限Adobe Analytics實作的先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [僅實作 Adob&#x200B;&#x200B;e Analytics 的先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
-   * [Edge實作的先決條件](/help/implementation/edge/prerequisites-edge.md)
+   * [Edge 實作的先決條件](/help/implementation/edge/prerequisites-edge.md)
 
    使用 [實施概述](/help/implementation/overview.md) 以判斷適合您的實作方法。
