@@ -6,9 +6,9 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 92%
 在開始實作串流媒體之前，請檢閱[串流媒體概觀](/help/media-overview.md)，以確保串流媒體滿足您的需求。
 
 1. **確認您的串流媒體定價模式**<br>
-目前的定價模型是以視訊串流為基礎。如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為串流媒體是作為Adobe Analytics的附加元件另外銷售。<!--update when media SKUs are added to other AEP apps -->
+目前的定價模型是以視訊串流為基礎。如有必要，請聯絡您的銷售代表或 Adobe 帳戶團隊，因為適用於串流媒體是以 Adobe Analytics 附加元件分開銷售。<!--update when media SKUs are added to other AEP apps -->
 
 1. **啟用 Adobe Analytics 報表**<br>
 要在 Analytics 中啟用報表並檢視您正在收集的內容和廣告資料，您必須在 Analytics 中啟用報表。請參閱[啟用 Media 報表](/help/reporting/media-reports-enable.md)。
@@ -47,4 +47,4 @@ ht-degree: 92%
 
    * [Edge 實作的先決條件](/help/implementation/edge/prerequisites-edge.md)
 
-   使用 [實施概述](/help/implementation/overview.md) 以判斷適合您的實作方法。
+   使用[實施概觀](/help/implementation/overview.md)以確定哪種實施方法適合您。
