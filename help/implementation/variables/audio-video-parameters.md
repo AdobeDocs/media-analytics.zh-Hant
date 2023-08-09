@@ -5,9 +5,9 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
-workflow-type: ht
-source-wordcount: '7002'
+source-git-commit: 28fcf03600585e3d6a067eca99560218bfef0e05
+workflow-type: tm+mt
+source-wordcount: '7001'
 ht-degree: 100%
 
 ---
@@ -374,7 +374,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 ### 50% 進度標記
 
-|   實施   | 網路參數 | 報表 |
+|   實施 | 網路參數 | 報表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <ul> <li> **SDK 索引鍵:**<br/> 自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值:**<br/> TRUE </li> <li> **說明:**<br/> 根據內容長度，播放點超過內容的 50% 標記。標記只會計算 1 次，即使回頭搜尋也不會重覆計入。如果往前搜尋，則略過的標記並不會計入。        <br/> **重要:** 如果已設定，則此值只能是 true。如果尚未設定，則不會傳回任何值。  </li></ul> | <ul> <li> **Adobe Analytics:**<br/>&#x200B;不適用 </li> <li> **心率:**<br/> 不適用 </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/> 50% 進度標記 </li> <li> **內容資料:**<br/> (a.media.progress50) </li> <li> **資料摘要:**<br/> videoprogress50 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.progress50) </li> <li> **XDM 欄位路徑:**<br/> media.mediaTimed.progress50.value </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.sessionDetails.hasProgress50 </li> </ul> |
 
