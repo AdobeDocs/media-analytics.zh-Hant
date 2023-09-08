@@ -5,10 +5,10 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
-workflow-type: ht
+source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
+workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -75,20 +75,21 @@ ht-degree: 100%
       + [計算量度](implementation/variables/calculated-metrics.md)
 + 報表 {#media-reports}
    + [啟用媒體報表](reporting/media-reports-enable.md)
-   + [關於區段](reporting/segments.md)
-   + 媒體預設報表 {#media-default-reports}
-      + [預設報表概觀](reporting/reports-and-analytics/default-reports-overview.md)
-      + [媒體概觀](reporting/reports-and-analytics/media-reports-overview.md)
-      + [媒體詳細資料](reporting/reports-and-analytics/media-reports-detail.md)
-      + [媒體播出時段報表](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [媒體同時檢閱者報表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + 媒體工作區面板 {#media-workspace-panels}
+   + 工作區中的媒體面板 {#media-workspace-panels}
       + [「媒體平均每分鐘對象數」面板](reporting/workspace/average-minute-audience.md)
       + [「媒體同時檢閱者」面板](reporting/workspace/media-concurrent-viewers-overview.md)
       + [「媒體播放時間」面板](reporting/workspace/media-playback-time-spent.md)
-   + [媒體工作區範本](reporting/workspace/media-workspace-templates.md)
-   + [透過 API 取得同時檢閱者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
-   + [透過 API 取得媒體播放時間資料](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+   + [工作區中的媒體報表](reporting/workspace/media-workspace-templates.md)
+   + [媒體區段](reporting/segments.md)
+   + 預設媒體報表 {#media-default-reports}
+      + [預設報表總覽](reporting/reports-and-analytics/default-reports-overview.md)
+      + [媒體總覽](reporting/reports-and-analytics/media-reports-overview.md)
+      + [媒體詳細資料](reporting/reports-and-analytics/media-reports-detail.md)
+      + [媒體播出時段報表](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [媒體同時檢閱者報表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + 媒體API {#media-api}
+      + [取得同時檢閱者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [取得媒體播放時間資料](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 使用案例 {#media-use-cases}
    + [Media SDK 使用案例 ](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器狀態追蹤 {#player-state-tracking}

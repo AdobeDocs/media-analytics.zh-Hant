@@ -5,14 +5,14 @@ uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: "Media Analytics, Segmentation"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '204'
-ht-degree: 100%
+source-git-commit: b15a81dc8f08e94c9b80d66019f3d0fe95ef5a74
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 99%
 
 ---
 
-# 區段{#segments}
+# 媒體區段{#segments}
 
 區段可讓您根據特性或網站互動來識別訪客的子集。串流媒體區段可讓您識別訪客資料流類型，例如音訊、直播或播客資料流。 有關 Adobe Analytics 區段的資訊，請參閱《Adobe Analytics 元件指南》中的[關於區段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=zh-Hant)。
 
