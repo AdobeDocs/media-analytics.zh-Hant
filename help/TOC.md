@@ -6,9 +6,9 @@ breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -75,27 +75,27 @@ ht-degree: 96%
       + [計算量度](implementation/variables/calculated-metrics.md)
 + 報表 {#media-reports}
    + [啟用媒體報表](reporting/media-reports-enable.md)
-   + 工作區中的媒體面板 {#media-workspace-panels}
+   + Workspace 中的媒體面板 {#media-workspace-panels}
       + [「媒體平均每分鐘對象數」面板](reporting/workspace/average-minute-audience.md)
       + [「媒體同時檢閱者」面板](reporting/workspace/media-concurrent-viewers-overview.md)
       + [「媒體播放時間」面板](reporting/workspace/media-playback-time-spent.md)
-   + [工作區中的媒體報表](reporting/workspace/media-workspace-templates.md)
-   + [媒體區段](reporting/segments.md)
+   + [Workspace 中的媒體報表](reporting/workspace/media-workspace-templates.md)
+   + [媒體區塊](reporting/segments.md)
    + 預設媒體報表 {#media-default-reports}
-      + [預設報表總覽](reporting/reports-and-analytics/default-reports-overview.md)
-      + [媒體總覽](reporting/reports-and-analytics/media-reports-overview.md)
+      + [預設報表概觀](reporting/reports-and-analytics/default-reports-overview.md)
+      + [媒體概觀](reporting/reports-and-analytics/media-reports-overview.md)
       + [媒體詳細資料](reporting/reports-and-analytics/media-reports-detail.md)
       + [媒體播出時段報表](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [媒體同時檢閱者報表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + 媒體API {#media-api}
-      + [取得同時檢閱者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [媒體同時檢視者報表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + Media API{#media-api}
+      + [取得同時檢視者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [取得媒體播放時間資料](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 使用案例 {#media-use-cases}
    + [Media SDK 使用案例 ](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器狀態追蹤 {#player-state-tracking}
       + [概觀](use-cases/player-state-tracking/player-state-overview.md)
       + [標準和自訂狀態](use-cases/player-state-tracking/standard-and-custom-states.md)
-      + [實作與報告](use-cases/player-state-tracking/implementation-and-reporting.md)
+      + [實作與報表](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [多播放器狀態追蹤](use-cases/player-state-tracking/multiple-player-states.md)
       + [播放器狀態追蹤範例](use-cases/player-state-tracking/player-state-examples.md)
    + [追蹤離線下載的內容](use-cases/track-downloaded-content.md)
