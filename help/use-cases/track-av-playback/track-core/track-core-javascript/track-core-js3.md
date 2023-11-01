@@ -4,8 +4,8 @@ description: 了解如何在瀏覽器中使用 JavaScript 3.x 應用程式，以
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 本文件涵蓋 SDK 3.x 版中的追蹤。
 
 >[!IMPORTANT]
-> 若您正在實作任何舊版的 SDK，您可以在此處下載開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
+>
+>若您正在實作任何舊版的 SDK，您可以在此處下載開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
 1. **初始追蹤設定**
 
@@ -29,8 +30,8 @@ ht-degree: 100%
    | `name` | 字串 | 表示媒體名稱的非空白字串。 |
    | `id` | 字串 | 表示唯一媒體識別碼的非空白字串。 |
    | `length` | 數字 | 表示媒體秒數長度的正數。如果長度未知，請使用 0。 |
-   | `streamType` | 字串 |  |
-   | `mediaType` |  | 媒體類型 (音訊或視訊)。 |
+   | `streamType` | 字串 |   |
+   | `mediaType` | | 媒體類型 (音訊或視訊)。 |
 
    **`StreamType`常數：**
 
@@ -60,30 +61,30 @@ ht-degree: 100%
 
    * **標準中繼資料**
 
-      >[!NOTE]
-      >
-      >附加標準中繼資料為選用。
+     >[!NOTE]
+     >
+     >附加標準中繼資料為選用。
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         請在此處參閱完整的可用中繼資料組：[音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md)
+        請在此處參閱完整的可用中繼資料組：[音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md)
+
    * **自訂中繼資料**
 
-      為自訂變數建立變數物件，並為此媒體填入資料。例如：
+     為自訂變數建立變數物件，並為此媒體填入資料。例如：
 
-      ```js
-      /* Set context data */
-       var contextData = {};
-      
-       //Standard metadata
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
-      
-       //Custom metadata
-       contextData["isUserLoggedIn"] = "false";
-       contextData["tvStation"] = "Sample TV Station";
-      ```
-
+     ```js
+     /* Set context data */
+      var contextData = {};
+     
+      //Standard metadata
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
+     
+      //Custom metadata
+      contextData["isUserLoggedIn"] = "false";
+      contextData["tvStation"] = "Sample TV Station";
+     ```
 
 1. **追蹤開始播放的意圖**
 
