@@ -5,8 +5,8 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 100%
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 本文件涵蓋 SDK 2.x 版中的追蹤。
 
 >[!IMPORTANT]
+>
 >若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)
 
 1. **初始追蹤設定**
@@ -70,24 +71,23 @@ ht-degree: 100%
 
       * [在 iOS 上實作標準中繼資料](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **視訊中繼資料索引鍵**
-
-         [iOS 中繼資料索引鍵](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+        [iOS 中繼資料索引鍵](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * 請在這裡參閱完整的視訊中繼資料清單：[音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md)
-      >[!NOTE]
-      >
-      >將標準視訊中繼資料物件附加到媒體物件為選用。
+
+     >[!NOTE]
+     >
+     >將標準視訊中繼資料物件附加到媒體物件為選用。
 
    * **自訂中繼資料**
 
-      為自訂變數建立變數物件，並為此視訊填入資料。例如：
+     為自訂變數建立變數物件，並為此視訊填入資料。例如：
 
-      ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-      [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-      ```
-
+     ```
+     NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+     [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+     [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+     ```
 
 1. **追蹤開始播放的意圖**
 

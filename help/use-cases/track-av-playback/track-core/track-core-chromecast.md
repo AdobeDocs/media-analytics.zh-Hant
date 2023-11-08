@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '750'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 >[!IMPORTANT]
 >
->若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南: [下載 SDK](/help/getting-started/download-sdks.md)
+>若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)
 
 1. **初始追蹤設定**
 
@@ -46,24 +46,24 @@ ht-degree: 100%
 
    * **標準視訊中繼資料**
 
-      [在 Chromecast 上實作標準中繼資料](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+     [在 Chromecast 上實作標準中繼資料](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
-      >[!NOTE]
-      >
-      >將標準視訊中繼資料物件附加到媒體物件為選用。
+     >[!NOTE]
+     >
+     >將標準視訊中繼資料物件附加到媒體物件為選用。
 
    * **自訂中繼資料**
 
-      為自訂變數建立變數物件，並為此視訊填入資料。例如:
+     為自訂變數建立變數物件，並為此視訊填入資料。例如：
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **追蹤開始播放的意圖**
 
@@ -91,11 +91,17 @@ ht-degree: 100%
 
 1. **更新播放點值**
 
-   播放點變更時多次更新 `mediaUpdatePlayhead` 位置值。<br /> 對於隨選影片 (VOD)，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。<br />  注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。
+   播放點變更時多次更新 `mediaUpdatePlayhead` 位置值。<br /> 對於隨選影片 (VOD)，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。
 
    ```
-   ADBMobile().mediaUpdatePlayhead(position)
+   ADBMobile().media.updatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >呼叫 `media.updatePlayhead` API：
+   >* 使用進度標籤時，需要內容持續時間，並且播放點需要更新為從媒體專案開始的秒數，從0開始。
+   >* 使用Media SDK時，您必須呼叫 `media.updatePlayhead` API至少每秒執行一次。
 
 1. **追蹤播放完成**
 
@@ -127,7 +133,7 @@ ht-degree: 100%
 
    **暫停情況**
 
-   識別視訊播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`:
+   識別視訊播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`：
 
    * 使用者明確在應用程式中點擊暫停。
    * 播放器自行進入「暫停」狀態。

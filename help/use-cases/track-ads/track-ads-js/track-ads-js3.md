@@ -4,7 +4,7 @@ description: 使用 Media SDK 在瀏覽器 (JS) 應用程式中實作廣告追�
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: fd9f0a7f4592c01082bcad015351d9128df2f8c9
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 88%
@@ -133,13 +133,14 @@ ht-degree: 88%
 
 ## 精細的廣告追蹤
 
+預設廣告Ping間隔為 `10 seconds`.
+
 您可以設定精細的廣告追蹤，以啟用 `1 second` 廣告追蹤。
 
-啟動追蹤工作階段時，必須提供此資訊。
-
->[!NOTE]
+>[!IMPORTANT]
 >
->   預設廣告Ping間隔為 `10 seconds`.
+>啟動追蹤工作階段時，必須提供此資訊。
+
 
 
 **語法**

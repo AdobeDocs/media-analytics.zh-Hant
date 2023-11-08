@@ -5,8 +5,8 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 100%
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 
 本文件涵蓋 SDK 2.x 版中的追蹤。
 >[!IMPORTANT]
+>
 >若您正在實作 SDK 1.x 版，您可以在此處下載適用於 Android 的 1.x 開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)
 
 1. **初始追蹤設定**
@@ -61,26 +62,26 @@ ht-degree: 100%
 
    * **標準中繼資料**
 
-      [在 Android 上實作標準中繼資料](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+     [在 Android 上實作標準中繼資料](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
-      >[!NOTE]
-      >
-      >將標準中繼資料物件附加到媒體物件為選用。
+     >[!NOTE]
+     >
+     >將標準中繼資料物件附加到媒體物件為選用。
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * 請在此處參閱完整的可用視訊中繼資料組：[音效和視訊參數](/help/implementation/variables/audio-video-parameters.md)
+
    * **自訂中繼資料**
 
-      為自訂變數建立字典，並為此媒體填入資料。例如：
+     為自訂變數建立字典，並為此媒體填入資料。例如：
 
-      ```java
-      HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>();
-      mediaMetadata.put("isUserLoggedIn", "false");
-      mediaMetadata.put("tvStation", "Sample TV Station");
-      mediaMetadata.put("programmer", "Sample programmer");
-      ```
-
+     ```java
+     HashMap<String, String> mediaMetadata =  
+       new HashMap<String, String>();
+     mediaMetadata.put("isUserLoggedIn", "false");
+     mediaMetadata.put("tvStation", "Sample TV Station");
+     mediaMetadata.put("programmer", "Sample programmer");
+     ```
 
 1. **追蹤開始播放的意圖**
 

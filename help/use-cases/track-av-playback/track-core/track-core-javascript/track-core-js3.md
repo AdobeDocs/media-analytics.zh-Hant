@@ -4,10 +4,10 @@ description: 了解如何在瀏覽器中使用 JavaScript 3.x 應用程式，以
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 91%
 
 ---
 
@@ -125,6 +125,20 @@ ht-degree: 100%
    ```js
    tracker.trackPlay();
    ```
+
+1. **更新播放點值**
+
+   當媒體播放點發生變更時，請呼叫 `mediaUpdatePlayhead` API。 <br /> 對於隨選影片 (VOD)，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。
+
+   ```
+   tracker.updatePlayhead(position)
+   ```
+
+   >[!NOTE]
+   >
+   >呼叫 `tracker.updatePlayhead` API：
+   >* 使用進度標籤時，需要內容持續時間，並且播放點需要更新為從媒體專案開始的秒數，從0開始。
+   >* 使用Media SDK時，您必須呼叫 `tracker.updatePlayhead` API至少每秒執行一次。
 
 1. **追蹤播放完成**
 
