@@ -4,23 +4,23 @@ description: 此主題包含有關 Media Analytics SDK 終止支援的常見問�
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b955b20495a504020a214c3a9e32b676701ee4cc
+source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '602'
 ht-degree: 79%
 
 ---
 
 # Media Analytics Mobile SDK 終止支援常見問題集
 
-我們於2021年8月31日停止支援第4版Mobile SDK，屆時Adobe也將停止支援iOS和Android適用的Media Analytics Mobile SDK。 (其中不包括仍支援的適用於網頁(JS)和OTT平台（例如Chromecast和Roku）的Media Analytics SDK。)
+我們於2021年8月31日停止支援第4版Mobile SDK後，Adobe也停止支援Media Analytics Mobile SDK iOS版和Android版。 (這不包括仍受支援的適用於Web (JS)及Chromecast和Roku等OTT平台的Media Analytics SDK。)
 
-這表示Adobe不再提供Media Analytics Mobile SDK的修正、作業系統相關更新或支援。 移轉至新Experience PlatformSDK時，請注意 [Media Analytics擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) 必須實作才能啟用適用於串流媒體的 Adobe Analytics。
+這表示Adobe不再針對Media Analytics Mobile SDK提供修正、作業系統相關更新或支援。 遷移到新Experience Platform SDK時，請注意 [Media Analytics擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) 必須實作才能啟用適用於串流媒體的Adobe Analytics。
 
 
 ## 5 大須知事項
 
-1. 自2021年8月31日起，不再支援Mobile v4 SDK。 請移轉至 iOS 和 Android 專用的 Adobe Experience Platform (AEP) Mobile SDK。如需詳細資訊，請參閱[第 4 版 Mobile SDK 支援終止常見問答](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/)。
+1. 自2021年8月31日起，我們將不再支援Mobile v4 SDK。 請移轉至 iOS 和 Android 專用的 Adobe Experience Platform (AEP) Mobile SDK。
 
 1. 適用於串流媒體的 Analytics 實作需要 AEP Mobile SDK，而且必須使用 Analytics 和 Media Analytics 擴充功能。自2021年9月1日起，您應使用新的AEP Mobile SDK和擴充功能。  請使用 Adobe 標記來設定 Media Analytics 擴充功能 (資料收集)。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 
@@ -28,7 +28,7 @@ ht-degree: 79%
 
 1. 適用於串流媒體的 Analytics 客戶仍可使用 Roku 和 Chromecast SDK。我們仍會將 Roku 和 Chromecast SDK 視為獨立式 SDK，並繼續提供增強和支援服務。如果您使用 Media Analytics JS SDK，則可繼續使用該獨立式 SDK，或是使用 Adobe Data Collection (舊稱 Adobe Launch) 啟用 Media Analytics 擴充功能。
 
-如有任何問題，請洽詢您的Adobe帳戶團隊。
+如有任何問題，請洽詢您的Adobe客戶團隊。
 
 ## 常見問題解答
 
