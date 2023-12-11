@@ -3,10 +3,10 @@ title: 媒體同時檢閱者報告
 description: 「了解如何使用『媒體同時檢閱者』面板來分析同時檢閱者，並了解尖峰並行存取和下降情況。」
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
-role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '183'
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+workflow-type: tm+mt
+source-wordcount: '178'
 ht-degree: 100%
 
 ---

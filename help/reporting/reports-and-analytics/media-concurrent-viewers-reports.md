@@ -4,10 +4,10 @@ description: 「了解用來顯示一整天的同時檢閱者的『媒體同時�
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
 feature: "Media Analytics, Reports & Analytics Basics"
-role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '291'
+role: User, Admin
+source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+workflow-type: tm+mt
+source-wordcount: '285'
 ht-degree: 100%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 100%
 >[!TIP]
 >
 > 此報表主要是以同時作用的媒體工作階段為基礎編撰而成。若要依不重複訪客檢視同時檢閱的情形，並使用套用區段、劃分及比較數據等其他功能，請使用 [Analysis Workspace 的「媒體同時檢閱者」面板](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=zh-Hant)。
+>
 
 ![](assets/video-concurrent-viewers.png)
 
