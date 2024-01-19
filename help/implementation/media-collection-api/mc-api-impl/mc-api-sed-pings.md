@@ -5,16 +5,16 @@ uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '108'
-ht-degree: 100%
+source-git-commit: e84864164adf056f47f24d65f0400c89d53d1630
+workflow-type: tm+mt
+source-wordcount: '107'
+ht-degree: 70%
 
 ---
 
 # 傳送 Ping 事件{#sending-ping-events}
 
-**針對主要內容，您必須從播放開始 10 秒後，每隔 10 秒引發一次 Ping 事件，不論其他已傳送的 API 事件為何。針對廣告追蹤，您必須每隔 1 秒引發一次 Ping 事件。**
+**您必須從播放開始10秒，每隔10秒引發一次Ping事件，不論其他已傳送的API事件為何。 這適用於主要內容和廣告追蹤。**
 
 就字面上來說，Ping 事件是 Media Analytics 的「心率」。Ping 呼叫唯一需要的參數是 `eventType: ping`，另外需要搭配 `playerTime` 物件 (播放點位置和時間戳記)。
 
