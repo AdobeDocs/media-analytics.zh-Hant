@@ -5,10 +5,10 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '353'
-ht-degree: 100%
+source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -81,7 +81,7 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 當使用者放棄檢視內容，而且不太可能返回工作階段時，用來通知 Media Analytics 後端立即關閉工作階段.
 
-如果您未傳送 `sessionEnd`，放棄的工作階段通常會逾時 (在 10 分鐘內未接收到任何事件，或播放點在 30 分鐘內未移動) 而遭到後端刪除。
+如果 `sessionEnd` 未傳送，放棄的工作階段將會 [一般逾時](../mc-api-impl/mc-api-timeout.md) （在10分鐘內未收到任何事件，或播放點在30分鐘內未移動）。 此外，使用該工作階段ID進行的所有後續媒體呼叫都將被捨棄。
 
 ## sessionComplete
 
