@@ -1,13 +1,13 @@
 ---
 title: 安裝Media Analytics與Experience Platform Edge
-description: 瞭解如何使用Experience Platform Edge實作Adobe串流媒體。
+description: 瞭解如何使用Experience Platform Edge實施Adobe串流媒體。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
+source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
 workflow-type: tm+mt
-source-wordcount: '1777'
-ht-degree: 11%
+source-wordcount: '1738'
+ht-degree: 9%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 11%
 
 Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料傳送到一個集中位置。 Experience Edge 會將適當的資訊轉送給所需的產品。 此概念可讓您整合實作工作，特別是橫跨多個資料解決方案時。
 
-下圖說明Media Analytics實作如何使用Experience Platform Edge，讓資料在Analysis Workspace中使用(不論是Adobe Analytics還是Customer Journey Analytics)：
+下圖說明Media Analytics實作如何使用Experience Platform Edge，讓資料可在Analysis Workspace中使用，無論是在Adobe Analytics還是Customer Journey Analytics中：
 
 ![CJA 工作流程](assets/cja-implementation.png)
 
-如需所有實作選項的概觀，包括不使用Experience Platform邊緣的實作方法，請參閱 [實作適用於串流媒體的Adobe Analytics或Customer Journey Analytics](/help/implementation/overview.md).
+如需所有實作選項的概觀，包括未使用Experience Platform Edge的實作方法，請參閱 [實作Adobe Analytics或Customer Journey Analytics適用的串流媒體](/help/implementation/overview.md).
 
 >[!IMPORTANT]
 >
@@ -27,76 +27,83 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 無論您是使用行動SDK或API來透過Experience Edge實作串流媒體，您都必須先完成下列章節：
 
-## 在Adobe Experience Platform中設定結構描述
+## 在Adobe Experience Platform中設定結構
 
 為了標準化資料彙集以跨利用 Adobe Experience Platform 的應用程式使用，Adobe 建立了開放且公開記錄標準，即體驗資料模型 (XDM)。
 
 若要建立及設定綱要：
 
-1. 在Adobe Experience Platform中，依照中的說明開始建立結構描述 [在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+1. 在Adobe Experience Platform中，開始建立結構描述，如所述 [在UI中建立和編輯方案](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
    建立結構描述時，請選擇 [!UICONTROL **XDM ExperienceEvent**] 從 [!UICONTROL **建立結構描述**] 下拉式功能表。
 
-1. 在 [!UICONTROL **組合**] 區域，在 [!UICONTROL **欄位群組**] 區段，選取 [!UICONTROL **新增**]，然後搜尋下列新欄位群組並將其新增至結構描述：
+1. 在 [!UICONTROL **組合**] 區域，在 [!UICONTROL **欄位群組**] 區段，選取 [!UICONTROL **新增**]，然後搜尋並將以下新欄位群組新增到結構描述中：
    * `Adobe Analytics ExperienceEvent Template`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
 
-   新增欄位群組後，這些群組應會顯示在 [!UICONTROL **欄位群組**] 區段，如下所示：
+   新增欄位群組後，它們應該顯示在 [!UICONTROL **欄位群組**] 區段，如下所示：
 
    ![已新增欄位群組](assets/schema-field-groups-added.png)
 
 1. 選取 [!UICONTROL **確認**] 以儲存變更。
 
-1. （選用）您可以隱藏Media Edge API未使用的特定欄位。 隱藏這些欄位可讓結構描述更易於閱讀和理解，但並非必要。 這些欄位僅指下列欄位： `MediaAnalytics Interaction Details` 欄位群組。
+1. （選用）您可以隱藏Media Edge API未使用的特定欄位。 隱藏這些欄位可讓結構描述更容易閱讀和理解，但並非必要。 這些欄位僅指 `MediaAnalytics Interaction Details` 欄位群組。
 
 +++ 展開此處以檢視可隱藏欄位的指示。
 
-   1. 在 [!UICONTROL **結構**] 區域，選取 `Media Collection Details` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+   1. 在 [!UICONTROL **結構**] 區域，選取 `Media Collection Details` 欄位，然後選取 [!UICONTROL **管理相關欄位**].
 
       ![manage-related-fields](assets/manage-related-fields.png)
+
+   1. 啟用選項以 [!UICONTROL **顯示欄位顯示名稱**]，然後更新結構，如下所示：
+
+      * 在 `Media Collection Details` > `Advertising Details` 欄位，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
+
+      * 在 `Media Collection Details` > `Advertising Pod Details` 欄位，隱藏下列報告欄位： `Ad Break ID`
+
+      * 在 `Media Collection Details` > `Chapter Details` 欄位，隱藏下列報表欄位： `Chapter Completed`， `Chapter ID`， `Chapter Started`、和 `Chapter Time Played`.
 
       * 在 `Media Collection Details` 欄位，隱藏 `List Of States` 欄位。
 
         ![隱藏媒體收集狀態](assets/schema-hide-media-collection-states.png)
 
-      * 在 `Media Collection Details` > `Advertising Details` 欄位，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
-
-      * 在 `Media Collection Details` > `Advertising Pod Details` 欄位，隱藏下列報表欄位： `Ad Break ID`
-
-      * 在 `Media Collection Details` > `Chapter Details` 欄位，隱藏下列報表欄位： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
-
-      * 在 `Media Collection Details` > `Qoe Data Details` 欄位，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
-
-      * 在 `Media Collection Details` > `Session Details` 欄位，隱藏下列報表欄位： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
-
       * 在 `Media Collection Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 欄位，隱藏下列報表欄位： `Player State Count`， `Player State Set`、和 `Player State Time`.
 
         ![要隱藏的欄位](assets/schema-hide-listofstates.png)
 
+      * 在 `Media Collection Details` > `Qoe Data Details` 欄位，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Change Impacted Streams`， `Bitrate Changes`， `Buffer Impacted Streams`， `Buffer Events`， `Dropped Frame Impacted Streams`， `Drops Before Starts`， `Errors`， `External Error IDs`， `Error Impacted Streams`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Impacted Streams`， `Stalling Events`， `Total Buffer Duration`、和 `Total Stalling Duration`.
+
+      * 在 `Media Collection Details` > `Session Details` 欄位，隱藏下列報表欄位： `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Ad Count`， `Average Minute Audience`， `Content Completes`， `Chapter Count`， `Content Starts`， `Content Time Spent`， `Estimated Streams`， `Federated Data`， `Media Segment Views`， `Media Downloaded Flag`， `Media Starts`， `Media Session ID`， `Media Session Server Timeout`， `Media Time Spent`， `Pause Events`， `Pause Impacted Streams`， `Pev3`， `Pccr`， `Total Pause Duration`， `Unique Time Played`、和 `Video Segment`.
+
    1. 選取 [!UICONTROL **確認**] 以儲存變更。
 
-   1. 在 [!UICONTROL **結構**] 區域，選取 `List Of Media Collection Downloaded Content Events` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+   1. 在 [!UICONTROL **結構**] 區域，啟用選項 [!UICONTROL **顯示欄位顯示名稱**]，然後選取 `List Of Media Collection Downloaded Content Events` 欄位。
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` 欄位，隱藏 `List Of States` 欄位。
+   1. 選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+
 
       * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` 欄位，隱藏下列報表欄位： `Ad Completed`， `Ad Started`、和 `Ad Time Played`.
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 欄位，隱藏下列報表欄位： `Ad Break ID`
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` 欄位，隱藏下列報告欄位： `Ad Break ID`
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 欄位，隱藏下列報表欄位： `Chapter ID`， `Chapter Completed`， `Chapter Started`、和 `Chapter Time Played`.
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` 欄位，隱藏下列報表欄位： `Chapter Completed`， `Chapter ID`， `Chapter Started`、和 `Chapter Time Played`.
 
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 欄位，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Changes`， `Buffer Events`， `Total Buffer Duration`， `Errors`， `External Error IDs`， `Bitrate Change Impacted Streams`， `Buffer Impacted Streams`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Stalling Impacted Streams`， `Drops Before Starts`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`、和 `Total Stalling Duration`.
-
-      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 欄位，隱藏下列報表欄位： `Media Session ID`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Estimated Streams`， `Pause Impacted Streams`， `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Media Segment Views`， `Content Completes`， `Media Downloaded Flag`， `Federated Data`， `Content Starts`， `Media Starts`， `Pause Events`， `Total Pause Duration`， `Media Session Server Timeout`， `Video Segment`， `Content Time Spent`， `Media Time Spent`， `Unique Time Played`， `Pev3`、和 `Pccr`.
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` 欄位，隱藏 `List Of States` 欄位。
 
       * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` 和 `Media Collection Details` > `List Of States Start` 欄位，隱藏下列報表欄位： `Player State Count`， `Player State Set`、和 `Player State Time`.
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` 欄位，隱藏下列報表欄位： `Average Bitrate`， `Average Bitrate Bucket`， `Bitrate Change Impacted Streams`， `Bitrate Changes`， `Buffer Events`， `Buffer Impacted Streams`， `Drops Before Starts`， `Dropped Frame Impacted Streams`， `Error Impacted Streams`， `Errors`， `External Error IDs`， `Media SDK Error IDs`， `Player SDK Error IDs`， `Stalling Events`， `Stalling Impacted Streams`， `Total Buffer Duration`、和 `Total Stalling Duration`.
+
+      * 在 `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` 欄位，隱藏下列報表欄位： `10% Progress Marker`， `25% Progress Marker`， `50% Progress Marker`， `75% Progress Marker`， `95% Progress Marker`， `Ad Count`， `Average Minute Audience`， `Chapter Count`， `Content Completes`， `Content Starts`， `Content Time Spent`， `Estimated Streams`， `Federated Data`， `Media Downloaded Flag`， `Media Segment Views`， `Media Session ID`， `Media Session Server Timeout`， `Media Starts`， `Media Time Spent`， `Pause Events`， `Pause Impacted Streams`， `Pccr`， `Pev3`， `Total Pause Duration`， `Unique Time Played`、和 `Video Segment`.
 
       * 在 `List Of Media Collection Downloaded Content Events` > `Media Details`  欄位，隱藏 `Media Session ID` 欄位。
 
    1. 選取 [!UICONTROL **確認**] 以儲存變更。
 
-   1. 在 [!UICONTROL **結構**] 區域，選取 `Media Reporting Details` 欄位，選取 [!UICONTROL **管理相關欄位**]，然後更新結構，如下所示：
+   1. 在 [!UICONTROL **結構**] 區域，選取 `Media Reporting Details` 欄位，選取 [!UICONTROL **管理相關欄位**].
+
+   1. 啟用選項以 [!UICONTROL **顯示欄位顯示名稱**]，然後更新結構，如下所示：
 
       * 在 `Media Reporting Details` 欄位，隱藏下列欄位： `Error Details`， `List Of States End`， `List of States Start`、和 `Media Session ID`.
 
@@ -120,13 +127,13 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 1. 建立新的資料串流，如所述 [設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant).
 
-   建立資料串流時，請務必進行下列設定選擇：
+   建立資料串流時，請務必選取下列設定：
 
-   * 在 [!UICONTROL **事件結構描述**] 欄位建立資料流時，請確定您選取之前在中建立的結構描述 [在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform). 選取&#x200B;[!UICONTROL **「儲存」**]。
+   * 在 [!UICONTROL **事件結構描述**] 欄位建立資料流時，請務必選取您在中建立的結構 [在Adobe Experience Platform中設定結構](#set-up-the-schema-in-adobe-experience-platform). 選取&#x200B;[!UICONTROL **「儲存」**]。
 
      >[!IMPORTANT]
      >
-         >不要選取 [!UICONTROL **儲存並新增對應**] 因為這樣做會導致「時間戳記」欄位的對應錯誤。
+         >不要選取 [!UICONTROL **儲存並新增對應**] 因為這麼做會導致「時間戳記」欄位發生對應錯誤。
      
      ![建立資料流並選取結構描述](assets/datastream-create-schema.png)
 
@@ -138,15 +145,17 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
       * [!UICONTROL **Adobe Experience Platform**] (若使用Customer Journey Analytics)
 
-     如需如何將服務新增至資料流的詳細資訊，請參閱以下主題中的「將服務新增至資料流」一節： [設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     如需如何將服務新增至資料流的詳細資訊，請參閱以下的「將服務新增至資料流」一節： [設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
      ![新增Adobe Analytics服務](assets/datastream-add-service.png)
 
    * 展開 [!UICONTROL **進階選項**]，然後啟用 [!UICONTROL **媒體分析**] 選項。
 
-     ![媒體分析選項](assets/datastream-media-check.png)
+     ![Media Analytics選項](assets/datastream-media-check.png)
 
-1. 繼續使用 [在Customer Journey Analytics中建立連線](#create-a-connection-in-customer-journey-analytics).
+1. 您現在已準備好實施 [Media Edge API](/help/implementation/edge/implementation-edge-api.md) 或 [Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md) 開始收集media analytics資料。
+
+   收集一些資料後，您可以 [在Customer Journey Analytics中建立連線](#create-a-connection-in-customer-journey-analytics).
 
 ## 在 Customer Journey Analytics 中建立連線
 
@@ -165,9 +174,9 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
    1. 確保 [!UICONTROL **匯入所有新資料**] 設定已啟用。
 
-1. 繼續使用 [以Customer Journey Analytics建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
+1. 繼續使用 [在Customer Journey Analytics中建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
 
-## 以Customer Journey Analytics建立資料檢視
+## 在Customer Journey Analytics中建立資料檢視
 
 >[!NOTE]
 >
@@ -177,17 +186,17 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 1. 在Customer Journey Analytics中，建立資料檢視，如所述 [建立或編輯資料檢視](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hant).
 
-   建立資料檢視時，實作串流媒體需要以下設定選項：
+   建立資料檢視時，實作串流媒體需要以下設定選擇：
 
    1. 在 [!UICONTROL **連線**] 欄位中，選取您先前建立的連線，如所述 [在Customer Journey Analytics中建立連線](#create-a-connection-in-customer-journey-analytics).
 
-      您建立的連線最多可能需要15分鐘才能選取。
+      您建立的連線最長可能需要15分鐘才能選取。
 
-   1. 於 [!UICONTROL **元件**] 標籤，在 [!UICONTROL **結構描述欄位**] 區段，搜尋下表中列出的每個元件，並將其拖曳至 [!UICONTROL **量度**] 面板。 如果存在多個相同名稱的欄位，請使用XDM路徑來確保它是正確的欄位。
+   1. 在 [!UICONTROL **元件**] 標籤，在 [!UICONTROL **結構描述欄位**] 區段，搜尋下表中列出的每個元件，並將其拖曳至 [!UICONTROL **量度**] 面板。 如果存在多個相同名稱的欄位，請使用XDM路徑來確保它是正確欄位。
 
       **主要內容 — 內容量度**
 
-      | 元件名稱 | XDM路徑 |
+      | 元件名稱 | XDM 路徑 |
       |----------|---------|
       | 媒體開始次數 | mediaReporting.sessionDetails.isViewed |
       | 媒體區段檢視次數 | mediaReporting.sessionDetails.hasSegmentView |
@@ -202,19 +211,19 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
       **章節與廣告 — 章節與廣告量度**
 
-      | 元件名稱 | XDM路徑 |
+      | 元件名稱 | XDM 路徑 |
       |----------|---------|
       | 章節已開始 | mediaReporting.chapterDetails.isStarted |
       | 章節已完成 | mediaReporting.chapterDetails.isCompleted |
       | 章節時間已播放 | mediaReporting.chapterDetails.timePlayed |
-      | 廣告已開始 | mediaReporting.advertisingDetails.isStarted |
+      | 廣告開始 | mediaReporting.advertisingDetails.isStarted |
       | 廣告完成 | mediaReporting.advertisingDetails.isCompleted |
       | 廣告播放時間 | mediaReporting.advertisingDetails.timePlayed |
 
 
       **QoE - QoE量度**
 
-      | 元件名稱 | XDM路徑 |
+      | 元件名稱 | XDM 路徑 |
       |----------|---------|
       | 開始時間 | mediaReporting.qoeDataDetails.timeToStart |
       | 開始前掉格 | mediaReporting.qoeDataDetails.isDroppedBeforeStart |
@@ -230,9 +239,9 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
       **播放器狀態 — 播放器狀態量度**
 
-      | 元件名稱 | XDM路徑 |
+      | 元件名稱 | XDM 路徑 |
       |----------|---------|
-      | 播放器狀態設定 | mediaReporting.states.isSet |
+      | 播放器狀態集 | mediaReporting.states.isSet |
       | 播放器狀態計數 | mediaReporting.states.count |
       | 播放器狀態時間 | mediaReporting.states.time |
 
@@ -247,14 +256,14 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
       | 開始時間 | 媒體：開始時間 |
       | 總暫停期間 | 媒體：總暫停期間 |
 
-   1. 若要在Customer Journey Analytics專案中新增劃分，請將下列維度新增至 [!UICONTROL **Dimension**] 面板：
+   1. 若要在Customer Journey Analytics專案中加入劃分，請將下列維度新增至 [!UICONTROL **Dimension**] 面板：
 
-      | XDM路徑 | 元件名稱 |
+      | XDM 路徑 | 元件名稱 |
       |---------|----------|
       | mediaReporting.states.name | 播放器狀態名稱 |
       | mediaReporting.sessionDetails.ID | 媒體工作階段 ID |
 
-      除了此表格中的維度外，您也可以新增任何其他維度，以便在Customer Journey Analytics專案中篩選資料。
+      除了此表格中的維度外，您也可以新增任何其他維度，以便用於在Customer Journey Analytics專案中篩選資料。
 
 1. 選取 [!UICONTROL **儲存並繼續**] > [!UICONTROL **儲存並完成**] 以儲存變更。
 
@@ -262,17 +271,17 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 ## 在Customer Journey Analytics中建立及設定專案
 
-1. 請確定您已依照「 」中的說明以Customer Journey Analytics建立資料檢視 [以Customer Journey Analytics建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
+1. 請確定您已按照Customer Journey Analytics中的說明建立資料檢視 [在Customer Journey Analytics中建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
 
-1. 在Customer Journey Analytics中、在 [!UICONTROL **Workspace**] 標籤，在 [!UICONTROL **專案**] 區域，選取 [!UICONTROL **建立專案**].
+1. 在Customer Journey Analytics中，在 [!UICONTROL **工作區**] 標籤，在 [!UICONTROL **專案**] 區域，選取 [!UICONTROL **建立專案**].
 
 1. 選取 [!UICONTROL **空白專案**] > [!UICONTROL **建立**].
 
 1. 在新專案中，選取您先前建立的資料檢視。
 
-   在專案中建立面板時，您可以使用新增至資料檢視的任何元件，如中所述 [以Customer Journey Analytics建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
+   在專案中建立面板時，您可以使用新增至資料檢視的任何元件，如中所述 [在Customer Journey Analytics中建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
 
-   以下4個面板是您可以建立的面板範例：
+   下列4個面板是您可以建立的面板範例：
 
    ![主要內容面板](assets/main-content-panel.png)
 
@@ -282,9 +291,9 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
    ![平板狀態面板](assets/player-state-panel.png)
 
-1. 選取 **面板** 圖示拖曳至「 」，接著將「 」 [!UICONTROL **媒體同時檢閱者**] 面板和 [!UICONTROL **媒體播放時間**] 面板。
+1. 選取 **面板** 圖示並拖曳至「 」 [!UICONTROL **媒體同時檢閱者**] 面板和 [!UICONTROL **媒體播放時間**] 面板。
 
-   這兩個面板看起來應該像這樣：
+   這2個面板看起來應該像這樣：
 
    ![媒體同時檢閱者面板](assets/media-concurrent-viewers-panels.png)
 
@@ -294,7 +303,7 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
    >[!NOTE]
    >
-   >   如果您要共用的使用者無法使用，請確認該使用者是否擁有Adobe Admin ConsoleCustomer Journey Analytics的使用者和管理員存取權。
+   >   如果您想要共用的使用者無法使用，請確定使用者擁有在Adobe Admin Console中Customer Journey Analytics的使用者和管理員存取權。
 
 1. 繼續使用 [傳送資料給Experience Platform Edge](#send-data-to-experience-platform-edge).
 
@@ -302,13 +311,13 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 您可以使用Adobe Experience Platform mobile SDK傳送行動資料給Experience Platform Edge。
 
-使用下列檔案資源完成iOS和Android的實作：
+使用下列檔案資源來完成iOS和Android的實作：
 
 * [快速入門](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [API 參考資料](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [移轉至Adobe Streaming Media for Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [移轉至Edge Network適用的Adobe串流媒體擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 或者，您也可以使用下列資源來使用Edge API的自訂實作：
 
