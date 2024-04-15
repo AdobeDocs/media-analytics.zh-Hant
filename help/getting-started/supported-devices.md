@@ -4,9 +4,9 @@ description: 「了解適用於串流媒體的 Adobe Analytics 所支援的主�
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
-workflow-type: ht
-source-wordcount: '307'
+source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+workflow-type: tm+mt
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ SDK 會因應裝置發佈新版本而定時更新，讓您能將 SDK 與各個�
 | | Windows 裝置 | | ![支援](/help/assets/icon-blue-check.png) | | | ![支援](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |
 | | Apple TV (tvOS) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |
-| | Roku | (規劃中) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![支援](/help/assets/icon-blue-check.png)<br>(原生) |
+| | Roku | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![支援](/help/assets/icon-blue-check.png)<br>(原生) |
 | | Fire TV (Fire OS) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |
 | | Android TV | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) |

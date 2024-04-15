@@ -4,16 +4,16 @@ description: 瞭解如何使用Experience Platform Edge實施Adobe串流媒體�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 68710e8d68266c62ded94a14892ddc78a0807a49
+source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
 workflow-type: tm+mt
-source-wordcount: '1738'
+source-wordcount: '1807'
 ht-degree: 9%
 
 ---
 
 # 安裝Media Analytics與Experience Platform Edge
 
-Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料傳送到一個集中位置。 Experience Edge 會將適當的資訊轉送給所需的產品。 此概念可讓您整合實作工作，特別是橫跨多個資料解決方案時。
+Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料傳送到一個集中位置。 Experience Edge 會將適當的資訊轉送給所需的產品。 此概念可讓您整合實施工作，特別是橫跨多個資料解決方案時。
 
 下圖說明Media Analytics實作如何使用Experience Platform Edge，讓資料可在Analysis Workspace中使用，無論是在Adobe Analytics還是Customer Journey Analytics中：
 
@@ -129,7 +129,7 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
    建立資料串流時，請務必選取下列設定：
 
-   * 在 [!UICONTROL **事件結構描述**] 欄位建立資料流時，請務必選取您在中建立的結構 [在Adobe Experience Platform中設定結構](#set-up-the-schema-in-adobe-experience-platform). 選取&#x200B;[!UICONTROL **「儲存」**]。
+   * 在 [!UICONTROL **事件結構描述**] 欄位建立資料流時，請務必選取您在中建立的結構 [在Adobe Experience Platform中設定結構](#set-up-the-schema-in-adobe-experience-platform). 選取「[!UICONTROL **儲存**]」。
 
      >[!IMPORTANT]
      >
@@ -307,9 +307,11 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 1. 繼續使用 [傳送資料給Experience Platform Edge](#send-data-to-experience-platform-edge).
 
-## 使用AEP Mobile SDK傳送資料給Experience Platform Edge
+## 傳送資料給Experience Platform Edge
 
-您可以使用Adobe Experience Platform mobile SDK傳送行動資料給Experience Platform Edge。
+根據您要傳送至Experience Platform Edge的資料型別，您可以使用下列任一方法：
+
+### 行動：使用Adobe Experience Platform mobile SDK
 
 使用下列檔案資源來完成iOS和Android的實作：
 
@@ -317,9 +319,23 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 * [API 參考資料](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [移轉至Edge Network適用的Adobe串流媒體擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [移轉至Adobe串流媒體Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-或者，您也可以使用下列資源來使用Edge API的自訂實作：
+### Roku：Adobe Experience Platform Roku SDK
+
+* [快速入門](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+
+* [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
+
+* [移轉至Adobe串流媒體Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+
+### API：網頁及其他
+
+此API是目前唯一支援將網頁資料傳送至Experience Platform Edge的方式。
+
+如果您想使用Edge API的自訂實作，也可使用此API。
+
+如需Media Edge API的詳細資訊，請參閱下列資源：
 
 * [Media Edge API總覽](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
