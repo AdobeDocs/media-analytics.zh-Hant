@@ -4,9 +4,9 @@ description: 瞭解如何使用Experience Platform Edge實施Adobe串流媒體�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1862'
 ht-degree: 9%
 
 ---
@@ -315,7 +315,11 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 ### Web：使用Adobe Experience Platform Web SDK
 
+* [快速入門](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
+* [使用Adobe Experience Platform Web SDK傳送網頁資料給Edge](/help/implementation/edge/edge-web-sdk.md)
+
+* [移轉至Adobe串流媒體Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### 行動：使用Adobe Experience Platform Mobile SDK
 

@@ -3,7 +3,7 @@ title: 使用Adobe Experience Platform Web SDK傳送網頁資料給Edge
 description: 瞭解如何使用Adobe Experience Platform Web SDK將Adobe串流媒體資料傳送到Experience Platform Edge。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4e6ae687175b45680d8de071dbc3011f18921a44
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -75,7 +75,7 @@ alloy("configure", {
 
 [!DNL Web SDK] 包含擷取Media Analytics追蹤器的命令。 您可以使用此命令來建立物件例項，然後使用與提供的相同API [Media JS程式庫](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)，追蹤媒體事件。
 
-請參閱 [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getMediaAnalyticsTracker) 檔案，以取得支援方法的完整詳細資料。
+請參閱 [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) 檔案，以取得支援方法的完整詳細資料。
 
 以下程式碼片段顯示如何在Media JS中擷取媒體追蹤器例項。
 
