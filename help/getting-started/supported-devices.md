@@ -4,9 +4,9 @@ description: 「了解適用於串流媒體的 Adobe Analytics 所支援的主�
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ SDK 會因應裝置發佈新版本而定時更新，讓您能將 SDK 與各個�
 | 串流平台和裝置 | |  Media for Edge Network SDK/擴充功能 | Media Edge API | 含標記的 Media 擴充功能或 AEP Mobile SDK | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | 網頁/行動網頁 | | | | | |
-| | JavaScript 瀏覽器 | (即將推出) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) |
+| | JavaScript 瀏覽器 | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) |
 | 行動應用程式 | | | | | |
 | | iOS 裝置 | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) | |
 | | Android 裝置 | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |

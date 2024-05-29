@@ -4,9 +4,9 @@ description: 瞭解如何使用Experience Platform Edge實施Adobe串流媒體�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
 workflow-type: tm+mt
-source-wordcount: '1807'
+source-wordcount: '1837'
 ht-degree: 9%
 
 ---
@@ -17,15 +17,11 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 下圖說明Media Analytics實作如何使用Experience Platform Edge，讓資料可在Analysis Workspace中使用，無論是在Adobe Analytics還是Customer Journey Analytics中：
 
-![CJA 工作流程](assets/cja-implementation.png)
+![CJA 工作流程](assets/streaming-media-edge.png)
 
 如需所有實作選項的概觀，包括未使用Experience Platform Edge的實作方法，請參閱 [實作Adobe Analytics或Customer Journey Analytics適用的串流媒體](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->串流媒體尚未與AEP Web SDK整合。
-
-無論您是使用行動SDK或API來透過Experience Edge實作串流媒體，您都必須先完成下列章節：
+無論您使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK或API來實作具有Experience Edge的串流媒體，您都必須先完成下列章節：
 
 ## 在Adobe Experience Platform中設定結構
 
@@ -35,7 +31,13 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 1. 在Adobe Experience Platform中，開始建立結構描述，如所述 [在UI中建立和編輯方案](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   建立結構描述時，請選擇 [!UICONTROL **XDM ExperienceEvent**] 從 [!UICONTROL **建立結構描述**] 下拉式功能表。
+1. 在建立綱要時，請在「綱要詳細資訊」頁面中選擇 [!UICONTROL **體驗事件**] 為結構描述選擇基底類別時。
+
+   ![已新增欄位群組](assets/schema-experience-event.png)
+
+1. 選取&#x200B;[!UICONTROL **「下一步」**]。
+
+1. 指定結構描述顯示名稱和說明，然後選取 [!UICONTROL **完成**].
 
 1. 在 [!UICONTROL **組合**] 區域，在 [!UICONTROL **欄位群組**] 區段，選取 [!UICONTROL **新增**]，然後搜尋並將以下新欄位群組新增到結構描述中：
    * `Adobe Analytics ExperienceEvent Template`
@@ -46,7 +48,7 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
    ![已新增欄位群組](assets/schema-field-groups-added.png)
 
-1. 選取 [!UICONTROL **確認**] 以儲存變更。
+1. 選取 [!UICONTROL **儲存**] 以儲存變更。
 
 1. （選用）您可以隱藏Media Edge API未使用的特定欄位。 隱藏這些欄位可讓結構描述更容易閱讀和理解，但並非必要。 這些欄位僅指 `MediaAnalytics Interaction Details` 欄位群組。
 
@@ -141,7 +143,7 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
       * [!UICONTROL **Adobe Analytics**] (若使用Adobe Analytics)
 
-        如果您使用Adobe Analytics，請務必定義報表套裝，如區段所述 [定義報表套裝](#define-a-report-suite) 本文章內容。
+        如果您使用Adobe Analytics，請務必定義報表套裝，如所述 [建立報表套裝](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (若使用Customer Journey Analytics)
 
@@ -311,7 +313,11 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 根據您要傳送至Experience Platform Edge的資料型別，您可以使用下列任一方法：
 
-### 行動：使用Adobe Experience Platform mobile SDK
+### Web：使用Adobe Experience Platform Web SDK
+
+
+
+### 行動：使用Adobe Experience Platform Mobile SDK
 
 使用下列檔案資源來完成iOS和Android的實作：
 

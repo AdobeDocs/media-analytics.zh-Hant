@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: ht
-source-wordcount: '471'
-ht-degree: 100%
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 81%
 
 ---
 
@@ -20,19 +20,15 @@ ht-degree: 100%
 
 我們建議在為所有 Adobe Analytics 或 Customer Journey Analytics 新客戶實作媒體分析時使用 Edge。
 
-* **Media for Edge Network SDK/擴充功能：**&#x200B;從 iOS 和 Android 裝置收集資料並傳送至 Edge。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
+* **Edge Network SDK /擴充功能的媒體：** 從網頁、iOS和Android裝置或Roku裝置收集資料，並傳送給Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
-  如需 Media for Edge Network SDK/擴充功能的詳細資訊，請參閱[使用 Experience Platform Edge 安裝 Media Analytics](/help/implementation/edge/implementation-edge.md)。
+  如需Edge Network SDK /擴充功能所用媒體的詳細資訊，請參閱 [安裝Media Analytics與Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-  >[!NOTE]
-  >
-  >此實施方式目前不支援 Web SDK 或 Roku。 但是，當使用 Media Edge API 實作時，兩者均受支援。
+* **Media Edge API：** 可自訂以從任何裝置或格式（包括行動裝置、網頁和過頂裝置）收集資料，並將資料傳送至Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
-* **Media Edge API：**&#x200B;可以進行自訂，收集任何裝置或格式 (包括行動、網路和 OTT 裝置) 的資料並將資料傳送至 Edge。之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
+  如需Media Edge API的詳細資訊，請參閱 [Media Edge API總覽](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
-  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
-
-![CJA 工作流程](assets/cja-implementation.png)
+![CJA 工作流程](assets/streaming-media-edge.png)
 
 ## 僅限 Adobe Analytics 的實施方法
 

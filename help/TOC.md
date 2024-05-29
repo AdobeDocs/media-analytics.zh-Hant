@@ -5,10 +5,10 @@ user-guide-title: 適用於串流媒體的 Adobe Analytics
 breadcrumb-title: Media Analytics 指南
 user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
+source-git-commit: 6c377d7622a65e7bd41be0a4a105a0b1c7da477c
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 100%
+source-wordcount: '900'
+ht-degree: 99%
 
 ---
 
@@ -36,6 +36,7 @@ ht-degree: 100%
       + [先決條件](/help/implementation/edge/prerequisites-edge.md)
       + Media Edge SDK/擴充功能 {#media-edge-sdk}
          + [Media Edge SDK/ 擴充功能設定](/help/implementation/edge/implementation-edge.md)
+         + [Media Edge Web](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
    + 僅限 Adobe Analytics 實施{#analytics-only}
