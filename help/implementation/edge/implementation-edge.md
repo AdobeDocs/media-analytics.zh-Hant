@@ -1,27 +1,27 @@
 ---
-title: 安裝Media Analytics與Experience Platform Edge
-description: 瞭解如何使用Experience Platform Edge實施Adobe串流媒體。
+title: 使用Edge Network實作串流媒體收集附加元件
+description: 瞭解如何使用Experience PlatformEdge實作串流媒體收集附加元件。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1883'
 ht-degree: 9%
 
 ---
 
-# 安裝Media Analytics與Experience Platform Edge
+# 使用Edge Network實作串流媒體收集附加元件
 
-Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料傳送到一個集中位置。 Experience Edge 會將適當的資訊轉送給所需的產品。 此概念可讓您整合實施工作，特別是橫跨多個資料解決方案時。
+Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品的資料傳送到一個集中位置。Experience Edge 會將適當的資訊轉送給所需的產品。 此概念可讓您整合實施工作，特別是橫跨多個資料解決方案時。
 
-下圖說明Media Analytics實作如何使用Experience Platform Edge，讓資料可在Analysis Workspace中使用，無論是在Adobe Analytics還是Customer Journey Analytics中：
+下圖說明如何實作Adobe串流媒體收集附加元件，以使用Experience Platform Edge在Adobe Analytics或Customer Journey Analytics中讓資料可在Analysis Workspace中使用：
 
 ![CJA 工作流程](assets/streaming-media-edge.png)
 
-如需所有實作選項的概觀，包括未使用Experience Platform Edge的實作方法，請參閱 [實作Adobe Analytics或Customer Journey Analytics適用的串流媒體](/help/implementation/overview.md).
+如需所有實作選項的概觀，包括不使用Experience PlatformEdge的實作方法，請參閱 [實作串流媒體收集附加元件](/help/implementation/overview.md).
 
-無論您使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK或API來實作具有Experience Edge的串流媒體，您都必須先完成下列章節：
+無論您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK或API來透過Experience Edge實作串流媒體收集附加元件，您都必須先完成下列章節：
 
 ## 在Adobe Experience Platform中設定結構
 
@@ -170,7 +170,7 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 1. 在Customer Journey Analytics中建立連線，如所述 [建立連線](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hant).
 
-   建立連線時，實作串流媒體需要下列設定選項：
+   建立連線時，實作串流媒體收集附加元件需要下列設定選擇：
 
    1. 選取您先前建立的資料集，如所述 [在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform).
 
@@ -188,7 +188,7 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 1. 在Customer Journey Analytics中，建立資料檢視，如所述 [建立或編輯資料檢視](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hant).
 
-   建立資料檢視時，實作串流媒體需要以下設定選擇：
+   建立資料檢視時，實作串流媒體收集附加元件需要以下設定選擇：
 
    1. 在 [!UICONTROL **連線**] 欄位中，選取您先前建立的連線，如所述 [在Customer Journey Analytics中建立連線](#create-a-connection-in-customer-journey-analytics).
 
@@ -275,7 +275,7 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 1. 請確定您已按照Customer Journey Analytics中的說明建立資料檢視 [在Customer Journey Analytics中建立資料檢視](#create-a-new-data-view-in-customer-journey-analytics).
 
-1. 在Customer Journey Analytics中，在 [!UICONTROL **工作區**] 標籤，在 [!UICONTROL **專案**] 區域，選取 [!UICONTROL **建立專案**].
+1. 在Customer Journey Analytics中，在 [!UICONTROL **Workspace**] 標籤，在 [!UICONTROL **專案**] 區域，選取 [!UICONTROL **建立專案**].
 
 1. 選取 [!UICONTROL **空白專案**] > [!UICONTROL **建立**].
 
@@ -307,17 +307,17 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
    >
    >   如果您想要共用的使用者無法使用，請確定使用者擁有在Adobe Admin Console中Customer Journey Analytics的使用者和管理員存取權。
 
-1. 繼續使用 [傳送資料給Experience Platform Edge](#send-data-to-experience-platform-edge).
+1. 繼續使用 [傳送資料至Experience PlatformEdge](#send-data-to-experience-platform-edge).
 
-## 傳送資料給Experience Platform Edge
+## 傳送資料至Experience PlatformEdge
 
-根據您要傳送至Experience Platform Edge的資料型別，您可以使用下列任一方法：
+根據您要傳送至Experience PlatformEdge的資料型別，您可以使用下列任一方法：
 
 ### Web：使用Adobe Experience Platform Web SDK
 
 * [快速入門](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-* [使用Adobe Experience Platform Web SDK傳送網頁資料給Edge](/help/implementation/edge/edge-web-sdk.md)
+* [使用Adobe Experience Platform Web SDK傳送Web資料至Edge](/help/implementation/edge/edge-web-sdk.md)
 
 * [移轉至Adobe串流媒體Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
@@ -341,13 +341,13 @@ Adobe Experience Platform Edge 可讓您將預計要送給多個產品的資料�
 
 ### API：網頁及其他
 
-此API是目前唯一支援將網頁資料傳送至Experience Platform Edge的方式。
+此API是目前唯一支援將網路資料傳送至Experience Platform Edge的方式。
 
-如果您想使用Edge API的自訂實作，也可使用此API。
+如果您想要使用Edge API的自訂實作，也可使用此API。
 
 如需Media Edge API的詳細資訊，請參閱下列資源：
 
-* [Media Edge API總覽](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+* [Media Edge API概觀](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
 * [Media Edge API快速入門](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 

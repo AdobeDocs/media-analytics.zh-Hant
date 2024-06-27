@@ -4,14 +4,14 @@ description: 了解串流媒體使用案例
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c569ea265f6e467b19d58a870ac7b24b8bf355b1
-workflow-type: ht
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
 source-wordcount: '78'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
-# 串流媒體使用案例 {#media-sdk-use-cases}
+# Media SDK使用案例 {#media-sdk-use-cases}
 
 * [播放器狀態追蹤](/help/use-cases/player-state-tracking/player-state-overview.md)
 * [追蹤離線下載的內容](/help/use-cases/track-downloaded-content.md)

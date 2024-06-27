@@ -5,16 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '445'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '443'
+ht-degree: 97%
 
 ---
 
 # 設定 Android{#set-up-android}
 
-了解如何為 Android 裝置設定適用於串流媒體的 Analytics。
+瞭解如何為Android裝置設定串流媒體收集附加元件。
 
 >[!IMPORTANT]
 >
@@ -63,7 +63,6 @@ ht-degree: 100%
       1. 依序按一下&#x200B;**[!UICONTROL 「順序」]**&#x200B;和&#x200B;**[!UICONTROL 「匯出」]**&#x200B;標籤。
 
       1. 確認已選取 `MediaSDK.jar` 檔案。
-
 
 1. 匯入資料庫。
 

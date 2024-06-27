@@ -4,18 +4,18 @@ description: 了解如何使用心率收集視訊量度。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '311'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 86%
 
 ---
 
 # 關於心率測量
 
-Adobe Analytics 使用「心率」收集視訊量度。視訊播放期間，系統會將心率傳送至心率追蹤伺服器，以測量播放時間。心率呼叫每十秒傳送一次。心率可產生精細的視訊參與量度，以及更精確的視訊流失報表。適用於串流媒體的 Adobe Analytics 使用 Adobe Launch 搭配 Media Analytics 擴充功能、Media SDK 和 Media Collection API 來測量心率。系統會使用 `AppMeasurement` 和 `VisitorID` 元件來接收視訊資料。
+Adobe串流媒體收集附加元件使用「心率」收集視訊量度。 視訊播放期間，系統會將心率傳送至心率追蹤伺服器，以測量播放時間。心率呼叫每十秒傳送一次。心率可產生精細的視訊參與量度，以及更精確的視訊流失報表。串流媒體會使用Adobe Launch搭配Media Analytics擴充功能、Media SDK和Media Collection API來測量心率。 系統會使用 `AppMeasurement` 和 `VisitorID` 元件來接收視訊資料。
 
-使用適用於串流媒體的 Adobe Analytics 的心率功能有以下優勢：
+在串流媒體收集附加元件中使用心率可提供下列優點：
 
 | 功能 | 說明 |
 |---|---|

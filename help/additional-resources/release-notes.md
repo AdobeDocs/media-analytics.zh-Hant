@@ -1,19 +1,19 @@
 ---
-title: 適用於串流媒體的 Adobe Analytics 發行說明
-description: 檢視 Adobe Analytics 發行說明。
+title: 串流媒體收集附加元件發行說明
+description: 檢視串流媒體收集附加元件發行說明的發行說明。
 feature: Release Notes
 role: User, Admin, Data Engineer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 9c138248ed8494aa5edb398370ac0100f8cdaa49
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 84%
+source-wordcount: '982'
+ht-degree: 75%
 
 ---
 
-# 適用於串流媒體的Adobe Analytics發行說明（2023年5月）
+# 串流媒體收集附加元件發行說明（2023年5月）
 
-**上次更新**：2023年5月12日
+**上次更新**：2024年5月29日
 
 ## 相關資源
 
@@ -27,13 +27,13 @@ ht-degree: 84%
 
 ## *最新發行說明*
 
-## 適用於串流媒體的 Adobe Customer Journey Analytics 中的新功能和更新功能 {#cja-features}
+## Adobe串流媒體收集附加元件中的新功能和更新功能 {#cja-features}
 
 | 功能 | 說明 | 目標日期 |
 | ----------- | ---------- | ------- |
-| 使用Web SDK傳送網頁資料至Adobe Experience PlatformEdge Network | 您現在可以 [使用Adobe Experience Platform Web SDK傳送串流媒體網頁資料給Adobe Experience PlatformEdge Network](/help/implementation/edge/edge-web-sdk.md)，可讓您建立更個人化的行銷活動並提供更個人化的內容，產生更多可報告的追蹤資料。<p>此增強功能可為所有平台解決方案 (例如 Customer Journey Analytics、RT-CDP、AJO 和事件轉送) 的 Web 實施提供統一的資料收集方法。以前，將串流媒體 Web 資料傳送到 Edge Network 時，唯一的方法就是使用 Media Edge API。 | 2024年5月29日 |
-| 將Roku資料傳送至Adobe Experience Platform Edge | 現在，[透過 Experience Platform Edge 安裝 Media Analytics](/help/implementation/edge/implementation-edge.md) 時，您可以使用 Adobe Experience Platform Roku SDK 將串流媒體資料傳送至 Adobe Experience Platform。 | 2024 年 4 月 12 日 |
-| Media Collection：與Experience Edge （API和Mobile SDK）整合 | 您現在可以使用Experience Edge API和Mobile SDK實作串流媒體，讓您建立更個人化的行銷活動並提供更個人化的內容，進而產生更多可報告的追蹤資料。<p>此增強功能提供跨所有解決方案的統一收集方法，例如Customer Journey Analytics報告、RT-CDP、AJO和事件轉送。  [了解更多](/help/implementation/edge/implementation-edge.md) | 2023年5月12日 |
+| 使用Web SDK傳送網頁資料至Adobe Experience PlatformEdge Network | 您現在可以 [使用Adobe Experience Platform Web SDK傳送串流媒體Web資料給Adobe Experience Platform Edge Network](/help/implementation/edge/edge-web-sdk.md)，可讓您建立更個人化的行銷活動並提供更個人化的內容，產生更多可報告的追蹤資料。<p>此增強功能可為所有平台解決方案 (例如 Customer Journey Analytics、RT-CDP、AJO 和事件轉送) 的 Web 實施提供統一的資料收集方法。過去，將串流媒體網頁資料傳送至Edge Network的唯一方式是使用Media Edge API。 | 2024 年 5 月 29 日 |
+| 將Roku資料傳送至Adobe Experience Platform Edge | 現在，當 [使用Experience Platform Edge安裝串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md)，您可使用Adobe Experience Platform Roku SDK傳送串流媒體資料至Adobe Experience Platform。 | 2024 年 4 月 12 日 |
+| 媒體收集：與Experience Edge （API和Mobile SDK）整合 | 您現在可以使用Experience Edge API和Mobile SDK實作Adobe串流媒體收集附加元件，讓您建立更個人化的行銷活動並提供更個人化的內容，產生更多可報告的追蹤資料。<p>此增強功能提供跨所有解決方案的統一收集方法，例如Customer Journey Analytics報告、RT-CDP、AJO和事件轉送。  [了解更多](/help/implementation/edge/implementation-edge.md) | 2023年5月12日 |
 | 「媒體同時檢閱者」面板 | 了解高峰期同時觀看或使用者數下降的位置。 取得內容品質和檢閱者參與的寶貴見解，並取得疑難排解或規劃數量和規模的協助。 [了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hant) | 2022 年 8 月 9 日 |
 | 「媒體播放時間」面板 | 「媒體播放時間」提供寶貴的對象參與度深入分析，並可讓媒體組織透過進階花費時間分析及日時段分割功能，取得更深入、更細微的分析並包含每分鐘的使用者參與度。 您可以觀察使用者在特定時間點觀看您的媒體串流所花的時間多寡。 您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。[了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 2022 年 8 月 9 日 |
 | 在行動計分卡上分享註解 | 您可以在行動計分卡上顯示建立於工作區的註解。如此，您就可以直接在行動計分卡專案上分享組織和活動相關的資料細微差別和深入解析，此類專案可在 Analytics 儀表板行動應用程式中檢視。[了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=en) | 2022 年 6 月 15 日 |
@@ -42,7 +42,7 @@ ht-degree: 84%
 | 行動計分卡專案預覽模式 | 直接從計分卡產生器中的 Analytics 儀表板應用程式啟動行動計分卡的外觀預覽。預覽模式可讓使用者透過與應用程式相同的方式來與篩選器和圖表互動，在儲存和共用計分卡之前先預覽體驗。使用者還可以在預覽模式下使用裝置選擇器來查看不同裝置上的計分卡外觀。[了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dashboards/create-scorecard.html#preview) | 2022 年 2 月 16 日 |
 
 
-## 適用於串流媒體的 Adobe Analytics 中的新功能和更新功能 {#sm-features}
+## Adobe串流媒體收集附加元件中的新功能和更新功能 {#sm-features}
 
 | 功能 | 說明 | 目標日期 |
 | ----------- | ---------- | ------- |

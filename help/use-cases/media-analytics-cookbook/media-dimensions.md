@@ -4,10 +4,10 @@ description: 了解如何將應用程式動作連結到媒體追蹤資料，而�
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '231'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '233'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->除了媒體追蹤之外，媒體量度&#x200B;_無法_&#x200B;供使用，因為其中大多數是由適用於串流媒體的 Analytics 根據心率事件計算。此外，請務必確保媒體量度不會因不同的實作而膨脹。
+>媒體量度包括 _非_ 除了媒體追蹤之外，因為其中大多數是由串流媒體收集附加元件根據心率事件計算，所以也可供使用。 此外，請務必確保媒體量度不會因不同的實作而膨脹。
 
 ## 使用媒體串流歸因
 

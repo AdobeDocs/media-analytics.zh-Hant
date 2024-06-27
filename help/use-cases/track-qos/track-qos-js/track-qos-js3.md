@@ -4,10 +4,10 @@ description: 「了解如何在使用 JavaScript 3x 的瀏覽器應用程式中�
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >
 >若您正在實作任何舊版的 SDK，您可以在此處下載開發人員指南：[下載 SDK](/help/getting-started/download-sdks.md)。
 
-## 實作 QOE
+## 實作QOE
 
 1. 識別媒體播放期間位元速率是否變更，並且利用 QoE 資訊建立 `qoeObject` 例項。
 

@@ -1,23 +1,24 @@
 ---
-title: 使用Adobe Experience Platform Mobile SDK傳送行動資料給Edge
-description: 瞭解如何傳送Adobe串流媒體資料Experience Platform邊緣。
+title: 透過Adobe Experience Platform mobile SDK將行動資料傳送至Edge
+description: 瞭解如何將行動串流媒體資料傳送至Experience Platform Edge。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: f9dcf1662317aac12b25c99f4d16b07eb7cf124f
+exl-id: 63b62784-dce9-4f91-8c16-8e14155734d5
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '118'
+source-wordcount: '111'
 ht-degree: 3%
 
 ---
 
-# 使用Adobe Experience Platform Mobile SDK傳送行動資料給Edge
+# 透過Adobe Experience Platform mobile SDK將行動資料傳送至Edge
 
-您可以使用Adobe Experience Platform mobile SDK傳送行動資料給Experience Platform Edge。
+您可以使用Adobe Experience Platform mobile SDK傳送行動串流媒體資料給Experience Platform Edge。
 
-將Media Analytics資料傳送至Edge之前，請先完成中的步驟 [安裝Media Analytics與Experience Platform Edge](/help/implementation/edge/implementation-edge.md)，然後使用下列檔案資源來完成iOS和Android的實作：
+在將行動串流媒體資料傳送到Edge之前，請先完成中的步驟 [使用Experience PlatformEdge安裝串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md)，然後使用下列檔案資源來完成iOS和Android的實作：
 
 * [快速入門](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [API 參考資料](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [移轉至Adobe Streaming Media for Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [移轉至Adobe串流媒體Edge Network擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)

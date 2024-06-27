@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 ## 一般實作指引 {#general-implementation-guidelines}
 
-有三個主要的 SDK 元件用於 Adobe Streaming Media 追蹤：
+使用串流媒體收集附加元件進行追蹤時，會使用三個主要的SDK元件：
 * 媒體心率設定 - `MediaHeartbeatConfig` 包含報表的基本設定。
 * 媒體心率代理人 - `MediaHeartbeatDelegate` 可控制播放時間和 QoS 物件。
 * 媒體心率 - `MediaHeartbeat` 是包含成員與方法的主要程式庫。
@@ -120,11 +120,11 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 * **Adobe Analytics (AppMeasurement) 伺服器**
 如需有關追蹤伺服器選項的詳細資訊，請參閱[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html)。
 
-   >[!IMPORTANT]
-   >
-   >Experience Cloud 訪客 ID 服務需要 RDC 追蹤伺服器，或 CNAME 解析至 RDC 伺服器。
+  >[!IMPORTANT]
+  >
+  >Experience Cloud 訪客 ID 服務需要 RDC 追蹤伺服器，或 CNAME 解析至 RDC 伺服器。
 
-   分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
+  分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
 * ** Media Analytics (心率) 伺服器**
 此格式一律為「`[your_namespace].hb.omtrdc.net`」。「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。

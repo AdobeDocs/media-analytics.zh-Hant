@@ -1,14 +1,14 @@
 ---
 title: 逾時條件
-description: 了解串流媒體收集 API 逾時條件。
+description: 瞭解Media Collection API逾時條件。
 uuid: 2a4ea13e-a561-4adf-b567-f980301b32c8
 exl-id: 0b494b27-a4a6-4af7-84c1-c44b33b6da8f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '162'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 95%
 
 ---
 
@@ -20,10 +20,10 @@ ht-degree: 100%
 
 * **10 分鐘：沒有 API 事件**
 
-   如果後端未接收到任何 API 事件，將會關閉工作階段。
+  如果後端未接收到任何 API 事件，將會關閉工作階段。
 * **30 分鐘：播放點未變更**
 
-   如果播放點在 30 分鐘內未移動 (例如，使用者點擊「暫停」並離開座位)，後端將會關閉工作階段。
+  如果播放點在 30 分鐘內未移動 (例如，使用者點擊「暫停」並離開座位)，後端將會關閉工作階段。
 
 >[!NOTE]
 >

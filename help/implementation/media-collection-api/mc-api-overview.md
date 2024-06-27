@@ -6,18 +6,18 @@ uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
-# Media Collection API 概觀{#overview}
+# Media Collection API 概觀 {#overview}
 
 Media Collection API 是 Adobe 用戶端 Media SDK 的 RESTful 替代方案。透過 Media Collection API，您的播放器可以使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。
 
-Media Collection API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示 Media SDK 文件某些方面也與 Media Collection API 有關。例如，這兩個解決方案都使用相同的[串流媒體參數](../variables/audio-video-parameters.md)，而且收集的串流媒體追蹤資料會產生相同的[報表和分析](/help/reporting/media-reports-enable.md)。
+Media Collection API 本質上是轉接程式，可做為伺服器端的 Media SDK。這表示 Media SDK 文件某些方面也與 Media Collection API 有關。例如，兩個解決方案使用相同的 [串流媒體引數](../variables/audio-video-parameters.md)，而收集的串流媒體追蹤資料會產生相同的 [報告與分析。](/help/reporting/media-reports-enable.md)
 
 ## 媒體追蹤資料流程 {#media-tracking-data-flows}
 
@@ -37,11 +37,11 @@ Media Collection API 擷取的追蹤資料，其傳送和初期處理方式與 M
 
 * **`sessions`-** 與伺服器建立工作階段，並傳回後續 `events` 呼叫使用的工作階段 ID。應用程式會在追蹤工作階段開始時呼叫一次。
 
-   `{uri}/api/v1/sessions`
+  `{uri}/api/v1/sessions`
 
 * **`events`-** 傳送媒體追蹤資料。
 
-   `{uri}/api/v1/sessions/{session-id}/events`
+  `{uri}/api/v1/sessions/{session-id}/events`
 
 ### 要求內文 {#mc-api-request-body}
 

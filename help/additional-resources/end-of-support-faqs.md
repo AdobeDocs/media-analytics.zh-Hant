@@ -4,23 +4,23 @@ description: 此主題包含有關 Media Analytics SDK 終止支援的常見問�
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 79%
+source-wordcount: '601'
+ht-degree: 76%
 
 ---
 
 # Media Analytics Mobile SDK 終止支援常見問題集
 
-我們於2021年8月31日停止支援第4版Mobile SDK後，Adobe也停止支援Media Analytics Mobile SDK iOS版和Android版。 (這不包括仍受支援的適用於Web (JS)及Chromecast和Roku等OTT平台的Media Analytics SDK。)
+我們於2021年8月31日停止支援第4版Mobile SDK後，Adobe也停止支援Media Analytics Mobile SDK for iOS和Android。 (這不包括仍受支援的適用於Web (JS)及Chromecast和Roku等OTT平台的Media Analytics SDK。)
 
-這表示Adobe不再針對Media Analytics Mobile SDK提供修正、作業系統相關更新或支援。 遷移到新Experience Platform SDK時，請注意 [Media Analytics擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) 必須實作才能啟用適用於串流媒體的Adobe Analytics。
+這表示Adobe不再針對Media Analytics Mobile SDK提供修正、作業系統相關更新或支援。 遷移到新Experience Platform SDK時，請注意 [Media Analytics擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) 必須實作才能啟用Adobe串流媒體收集附加元件。
 
 
 ## 5 大須知事項
 
-1. 自2021年8月31日起，我們將不再支援Mobile v4 SDK。 請移轉至 iOS 和 Android 專用的 Adobe Experience Platform (AEP) Mobile SDK。
+1. 自2021年8月31日起，我們將不再支援Mobile v4 SDK。 請改用iOS和Android專用的Adobe Experience Platform (AEP) Mobile SDK。
 
 1. 適用於串流媒體的 Analytics 實作需要 AEP Mobile SDK，而且必須使用 Analytics 和 Media Analytics 擴充功能。自2021年9月1日起，您應使用新的AEP Mobile SDK和擴充功能。  請使用 Adobe 標記來設定 Media Analytics 擴充功能 (資料收集)。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 

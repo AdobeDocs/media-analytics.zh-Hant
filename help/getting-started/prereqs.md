@@ -1,29 +1,29 @@
 ---
-title: 了解串流媒體的先決條件
-description: 開始使用適用於串流媒體的 Adobe Analytics。 了解實作適用於串流媒體的 Adobe Analytics 需要哪些條件。
+title: 瞭解Adobe串流媒體收集附加元件的先決條件
+description: 開始使用串流媒體收集附加元件。 瞭解實作所需的專案。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: ht
-source-wordcount: '442'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '435'
+ht-degree: 62%
 
 ---
 
 # 先決條件 {#prerequisites}
 
-在開始實作串流媒體之前，請完成以下任務：
+開始實作Adobe串流媒體收集附加元件之前，請完成以下工作：
 
-1. **檢閱串流媒體概觀**<br>
-在開始實作串流媒體之前，請檢閱[串流媒體概觀](/help/media-overview.md)，以確保串流媒體滿足您的需求。
+1. **檢閱串流媒體收集附加元件總覽**<br>
+在開始實作串流媒體收集附加元件之前，請先檢閱 [串流媒體收集附加元件概觀](/help/media-overview.md) 以確保符合您的需求。
 
-1. **確認您的串流媒體定價模式**<br>
-目前的定價模型是以視訊串流為基礎。如有必要，請聯絡您的銷售代表或 Adobe 帳戶團隊，因為適用於串流媒體是以 Adobe Analytics 附加元件分開銷售。<!--update when media SKUs are added to other AEP apps -->
+1. **確認您的定價模式**<br>
+Adobe串流媒體收集附加元件目前的定價模型是以視訊串流為基礎。 如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為此附加元件是針對Adobe Analytics和Adobe Experience Platform分開銷售。
 
-1. **啟用 Adobe Analytics 報表**<br>
-要在 Analytics 中啟用報表並檢視您正在收集的內容和廣告資料，您必須在 Analytics 中啟用報表。請參閱[啟用 Media 報表](/help/reporting/media-reports-enable.md)。
+1. **啟用Adobe Analytics報表**<br>
+若要在Analytics或Customer Journey Analytics中啟用報表，以及檢視您正在收集的內容和廣告資料，您必須啟用報表。 請參閱[啟用 Media 報表](/help/reporting/media-reports-enable.md)。
 
 1. **在 Experience Cloud 中實作 Adobe Experience Platform 身分識別服務**
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 
 1. **檢視您的實作的其他先決條件**
 
-   依據您計劃如何實作串流媒體，檢視以下任一實作方法的先決條件：
+   根據您計畫實作串流媒體收集附加元件的方式，檢視下列任一實作方法的先決條件：
 
    * [僅實作 Adob&#x200B;&#x200B;e Analytics 的先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

@@ -5,16 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '763'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 94%
 
 ---
 
 # 設定 iOS{#set-up-ios}
 
-了解如何為 iOS 裝置設定適用於串流媒體的 Analytics。
+瞭解如何為iOS裝置設定串流媒體收集附加元件。
 
 >[!IMPORTANT]
 >
@@ -27,9 +27,9 @@ ht-degree: 100%
 * **在您的應用程式實作 iOS 適用的 ADBMobile**
 如需 Adobe Mobile SDK 文件的詳細資訊，請參閱 [Experience Cloud 解決方案適用的 iOS SDK 4.x](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=zh-Hant)。
 
-   >[!IMPORTANT]
-   >
-   >Apple 自 iOS 9 起推出 App Transport Security (ATS) 功能。此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此功能預設為已啟用，但您可透過設定選項自行選擇是否使用 ATS。如需 ATS 的詳細資訊，請參閱 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=zh-Hant)。
+  >[!IMPORTANT]
+  >
+  >Apple 自 iOS 9 起推出 App Transport Security (ATS) 功能。此功能可確保您的應用程式僅使用符合產業標準的通訊協定和密碼，進而提升網路安全。此功能預設為已啟用，但您可透過設定選項自行選擇是否使用 ATS。如需 ATS 的詳細資訊，請參閱 [App Transport Security](https://experienceleague.adobe.com/docs/mobile-services/ios/config-ios/app-transport-security.html?lang=zh-Hant)。
 
 * **在您的媒體播放器中提供下列功能：**
 
@@ -57,11 +57,12 @@ ht-degree: 100%
       * `ADBMediaHeartbeatConfig.h`：SDK 設定的 Objective-C 標題檔案。
       * `MediaSDK.a`：已啟用 bitcode 的大型程式庫，其中包含 iOS 裝置 (armv7、armv7s、arm64) 和模擬器 (i386 和 x86_64) 適用的程式庫組建。
 
-         當預期目標為 iOS 應用程式時，應連結此二進位檔。
+        當預期目標為 iOS 應用程式時，應連結此二進位檔。
 
       * `MediaSDK_TV.a`：已啟用 bitcode 的大型程式庫，其中包含新 Apple TV 裝置 (arm64) 和模擬器 (x86_64) 適用的程式庫組建。
 
-         當預期目標為 Apple TV (tvOS) 應用程式時，應該連結此程式庫。
+        當預期目標為 Apple TV (tvOS) 應用程式時，應該連結此程式庫。
+
    1. 將程式庫新增至專案：
 
       1. 啟動 Xcode IDE 並開啟您的應用程式。
@@ -87,11 +88,8 @@ ht-degree: 100%
          * **MediaSDK_TV.a**
          * **libsqlite3.0.tbd**
          * **SystemConfiguration.framework**
+
       1. 驗證應用程式可建置而不會發生錯誤。
-
-
-
-
 
 1. 匯入資料庫。
 
@@ -169,9 +167,9 @@ ht-degree: 100%
 
 在您的 Xcode 專案中執行以下步驟。本指南的編寫內容，是假設您的專案具有的一個目標為以 tvOS 為目標的 Apple TV 應用程式：
 
-1. 將 `VideoHeartbeat_TV.a``lib` 程式庫檔案拖曳至您的專案的 資料夾。
+1. 拖曳 `VideoHeartbeat_TV.a` 將程式庫檔案放入您專案的 `lib` 資料夾。
 
-1. 在 tvOS 應用程式目標的&#x200B;**[!UICONTROL 「建置階段」]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 「連結二進位檔與程式庫」]**&#x200B;區段，並新增下列程式庫：
+1. 在 **[!UICONTROL 建置階段]** 標籤中，展開 **[!UICONTROL 連結二進位檔與資料庫]** 區段並新增下列程式庫：
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 適用於串流媒體的 Adobe Analytics
-breadcrumb-title: Media Analytics 指南
-user-guide-description: 實作適用於串流媒體的 Adobe Analytics。包含 Media SDK 和 Media Collection API。
+user-guide-title: 串流媒體收集附加元件
+breadcrumb-title: 串流媒體收集指南
+user-guide-description: 實作串流媒體。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 98%
+source-wordcount: '895'
+ht-degree: 94%
 
 ---
 
 
-# 適用於串流媒體的 Adobe Analytics {#using}
+# 串流媒體收集附加元件 {#using}
 
-+ [適用於串流媒體的 Analytics 指南](media-overview.md)
++ [串流媒體收集指南](media-overview.md)
 + 發行說明 {#release-notes}
-   + [串流媒體發行說明](additional-resources/release-notes.md)
+   + [串流媒體收集發行說明](additional-resources/release-notes.md)
 + 快速入門 {#getting-started}
    + [先決條件](getting-started/prereqs.md)
    + [支援裝置](getting-started/supported-devices.md)
-   + [串流媒體文件](getting-started/implementation-documentation.md)
+   + [串流媒體收集實施檔案](getting-started/implementation-documentation.md)
    + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
    + 終止支援 {#end-of-support}
       + [Media Analytics Mobile SDK 終止支援](additional-resources/end-of-support-faqs.md)
@@ -172,7 +172,7 @@ ht-degree: 98%
       + 設定 JavaScript {#setup-javascript}
          + [設定 JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [關於心率測量](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime 和適用於串流媒體的 Analytics](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Adobe Audience Management 啟用](legacy/intro-to-ava/am-enablement.md)
    + [自訂連結實作](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + 舊版里程碑追蹤 {#legacy-milestone-tracking}

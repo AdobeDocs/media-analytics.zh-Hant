@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 93%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 ## 先決條件 {#roku-prerequisites}
 
-* **取得 Media Analytics 的有效設定參數**
+* **取得適用於串流媒體收集附加元件的有效設定引數**
 
-   設定 Media Analytics 帳戶之後，可以向 Adobe 代表取得這些參數。
+  設定Adobe串流媒體收集附加帳戶後，即可從Adobe代表取得這些引數。
 * **在您的媒體播放器中包含以下 API**
 
    * _訂閱播放器事件專用的 API_ - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
@@ -35,9 +35,10 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
       * `adbmobile.brs`：此程式庫檔案將會包含在您的 Roku 應用程式來源檔案夾中。
 
       * `ADBMobileConfig.json`：此元件為根據您應用程式自訂的 SDK 設定檔案。
+
    1. 新增程式庫檔案和 JSON 設定檔案至您的專案來源。
 
-      用來設定 Adobe Mobile 的 JSON 有一個媒體分析專用的索引鍵，稱為 `mediaHeartbeat`。其集結了多種媒體分析的設定參數。
+      用來設定 Adobe Mobile 的 JSON 有一個媒體分析專用的索引鍵，稱為 `mediaHeartbeat`。這是媒體分析的設定引數所屬的位置。
 
       >[!TIP]
       >
@@ -99,7 +100,6 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
       >[!IMPORTANT]
       >
       >如果 `mediaHeartbeat` 的設定不正確，媒體模組 (VHL) 會進入錯誤狀態並停止傳送追蹤呼叫。
-
 
 1. 設定 Experience Cloud 訪客 ID。
 

@@ -1,16 +1,17 @@
 ---
-title: 使用Adobe Experience Platform Web SDK傳送網頁資料給Edge
-description: 瞭解如何使用Adobe Experience Platform Web SDK將Adobe串流媒體資料傳送到Experience Platform Edge。
+title: 使用Adobe Experience Platform Web SDK傳送Web資料至Edge
+description: 瞭解如何使用Adobe Experience Platform Web SDK傳送Adobe串流媒體資料至Experience Platform Edge。
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# 使用Adobe Experience Platform Web SDK傳送網頁資料給Edge
+# 使用Adobe Experience Platform Web SDK傳送Web資料至Edge
 
 從2.20.0版開始， `streamingMedia` Adobe Experience Platform的元件 [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) 可讓您收集網站上與媒體工作階段相關的資料。 收集的資料可包括關於媒體播放、暫停、完成和其他相關事件的資訊。
 
@@ -22,14 +23,14 @@ ht-degree: 0%
 
 若要使用 `streamingMedia` 元件，您必須符合下列必要條件：
 
-* 在您可以將Media Analytics資料傳送至Edge之前，請先完成中的步驟 [安裝Media Analytics與Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+* 在將串流媒體資料傳送到Edge之前，請先完成中的步驟 [使用Experience PlatformEdge安裝串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md).
 * 確保您有權存取Adobe Experience Platform和/或Adobe Analytics。
 * 您必須使用Web SDK 2.20.0版或更新版本。 請參閱 [Web SDK安裝概述](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview) 以瞭解如何安裝最新版本。
 * 啟用 **[[!UICONTROL 媒體分析]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)** 您正在使用的資料流選項。
 * 確定您的資料流使用的結構描述包含媒體收集結構描述欄位。
 * 在Web SDK設定中設定串流媒體功能，如本頁所示，可透過 [標籤延伸模組](#tag-extension) 或透過 [JavaScript資料庫](#library).
 
-請依照本頁所述的步驟，將您的Analytics for Streaming Media實作從Media JS移轉至Web SDK。
+請依照本頁所述的步驟，將您的串流媒體收集附加元件實作從Media JS移轉至Web SDK。
 
 ### 步驟1：安裝Experience Platform Web SDK
 

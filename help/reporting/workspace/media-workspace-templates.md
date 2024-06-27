@@ -5,7 +5,7 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 9%
@@ -16,11 +16,11 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->*報表* 在工作區中先前稱為 *範本*.
+>*報表* 在Workspace中先前稱為 *範本*.
 
-Analysis Workspace提供一組預設可用的預先建立報表，供您分析資料。 如需所有可用預設報表的詳細資訊，請參閱 [檢視報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) 在 [Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
+Analysis Workspace提供一組預設可用的預先建立報表，供您分析資料。 如需所有可用預設報表的詳細資訊，請參閱 [檢視報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) 在 [Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hant).
 
-其中有些報表在分析串流媒體資料時特別有用，如以下部分所述。
+其中有些報表在分析串流媒體資料時特別有用，如以下章節所述。
 
 ## 瞭解預設媒體報表
 
@@ -42,4 +42,4 @@ Analysis Workspace提供一組預設可用的預先建立報表，供您分析�
 
 * **建立新專案時：** 如需如何從預設報表建立新專案的詳細資訊，請參閱 [從空白專案或報告建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) 在 [在Analysis Workspace中建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
 
-* **建立自訂公司報表時：** 如需如何建立自訂公司報表的詳細資訊，請參閱 [建立自訂公司報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) 在 [Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html).
+* **建立自訂公司報表時：** 如需如何建立自訂公司報表的詳細資訊，請參閱 [建立自訂公司報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) 在 [Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hant).

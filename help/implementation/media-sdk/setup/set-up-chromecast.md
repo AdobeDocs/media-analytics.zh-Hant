@@ -5,22 +5,22 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '575'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '571'
+ht-degree: 97%
 
 ---
 
 # 設定 Chromecast 適用的 Mobile SDK v3.x {#set-up-chromecast}
 
-本章節說明設定 Chromecast 安裝以使用串流媒體的先決條件。
+本節說明為串流媒體收集附加元件設定Chromecast安裝的先決條件。
 
 ## 先決條件
 
 * **取得有效設定參數**
 
-   設定 Media Analytics 帳戶之後，可以向 Adobe 代表取得這些參數。
+  設定 Media Analytics 帳戶之後，可以向 Adobe 代表取得這些參數。
 * **在您的媒體播放器中包含以下 API**
 
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
@@ -38,11 +38,12 @@ Experience Cloud 解決方案適用的 Chromecast v3.x Adobe Mobile Library 可�
 
       * `adbmobile-chromecast.min.js`：
 
-         此程式庫檔案將會包含在您的 Chromecast 應用程式來源檔案夾中。
+        此程式庫檔案將會包含在您的 Chromecast 應用程式來源檔案夾中。
 
       * `ADBMobileConfig` 設定
 
-         此元件為根據您應用程式自訂的 SDK 設定檔案。範例 `ADBMobileConfig` 實作會連同 SDK 一併提供 (位於 `samples/` 下方)。請向 Adobe 代表索取適當設定。
+        此元件為根據您應用程式自訂的 SDK 設定檔案。範例 `ADBMobileConfig` 實作會連同 SDK 一併提供 (位於 `samples/` 下方)。請向 Adobe 代表索取適當設定。
+
    1. 將程式庫檔案新增至您的 `index.html` 檔案，接著建立 `ADBMobileConfig` 全域變數，方法如下 (用來設定 Adobe Mobile for Media Analytics 的全域變數有一個專用的索引鍵，稱為 `mediaHeartbeat`)：
 
       ```js
@@ -91,6 +92,7 @@ Experience Cloud 解決方案適用的 Chromecast v3.x Adobe Mobile Library 可�
       >如果 `mediaHeartbeat` 的設定不正確，媒體模組會進入錯誤狀態並停止傳送追蹤呼叫。
 
       適用於 mediaHeartbeat 索引鍵的 ADBMobile 設定參數：
+
    | 設定參數 | 說明 |
    | --- | --- |
    | `server` | 代表後端追蹤端點之 URL 的字串。 |

@@ -5,16 +5,16 @@ uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '63'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
 # 在 Roku 上實作標準中繼資料{#implement-standard-metadata-on-roku}
 
-在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。
+例項化標準中繼資料物件、填入所需的變數，並在媒體心率物件上設定中繼資料物件。
 
 **影片：**
 
