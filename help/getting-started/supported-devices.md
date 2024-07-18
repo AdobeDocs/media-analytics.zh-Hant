@@ -25,7 +25,7 @@ SDK 會因應裝置發佈新版本而定時更新，讓您能將 SDK 與各個�
 
 目前支援的裝置如下表所示。若裝置不在清單中，請聯絡您的客戶服務人員或解決方案顧問，以瞭解該裝置的狀態。
 
-如需在Edge上實作媒體的詳細資訊，請參閱 [使用Experience PlatformEdge安裝串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md).
+如需在Edge上實作媒體的詳細資訊，請參閱[使用Experience PlatformEdge安裝串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md)。
 
 | 串流平台和裝置 | |  Media for Edge Network SDK/擴充功能 | Media Edge API | 含標記的 Media 擴充功能或 AEP Mobile SDK | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

@@ -6,8 +6,8 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '838'
+workflow-type: tm+mt
+source-wordcount: '847'
 ht-degree: 100%
 
 ---
@@ -43,41 +43,40 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
 
    * **Adobe Analytics 開始呼叫**
 
-      | 參數 | 值 (範例) |
-      |---|---|
-      | `pev2` | ms_s |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 參數 | 值 (範例) |
+     |---|---|
+     | `pev2` | ms_s |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **網站頁面呼叫**
 
-      | 參數 | 值 (範例) |
-      |---|---|
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 參數 | 值 (範例) |
+     |---|---|
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **生命週期呼叫**
 
-      | 參數 | 值 (範例) |
-      |---|---|
-      | `pev2` | ADBINTERNAL：Lifecycle |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | 參數 | 值 (範例) |
+     |---|---|
+     | `pev2` | ADBINTERNAL：Lifecycle |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Media Analytics 開始呼叫**
 
-      | 參數 | 值 (範例) |
-      |---|---|
-      | `s:event:type` | start |
+     | 參數 | 值 (範例) |
+     |---|---|
+     | `s:event:type` | start |
 
-      >[!NOTE]
-      >
-      >`mid` 值不一定會存在 Media Analytics 開始呼叫 (`s:event:type=start`) 中。這沒有關係。在 Media Analytics 播放呼叫 (`s:event:type=play`) 之前，它們不一定會出現。
+     >[!NOTE]
+     >
+     >`mid` 值不一定會存在 Media Analytics 開始呼叫 (`s:event:type=start`) 中。這沒有關係。在 Media Analytics 播放呼叫 (`s:event:type=play`) 之前，它們不一定會出現。
 
    * **Media Analytics 播放呼叫**
 
-      | 參數 | 值 (範例) |
-      |---|---|
-      | `s:event:type` | play |
-      | `s:user:mid` | 30250035503789876473484580554595324209 |
-
+     | 參數 | 值 (範例) |
+     |---|---|
+     | `s:event:type` | play |
+     | `s:user:mid` | 30250035503789876473484580554595324209 |
 
 1. **啟動媒體播放器**
 
@@ -107,13 +106,11 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
 
    * **廣告播放**
 
-      在廣告播放期間，Media Analytics SDK 每秒都會將「廣告」類型的的播放事件傳送到 Media Analytics 伺服器。
+     在廣告播放期間，Media Analytics SDK 每秒都會將「廣告」類型的的播放事件傳送到 Media Analytics 伺服器。
 
    * **廣告完成**
 
-      在廣告的 100% 點上，應傳送 Media Analytics 完成呼叫。
-
-
+     在廣告的 100% 點上，應傳送 Media Analytics 完成呼叫。
 
 1. **暫停廣告播放 30 秒 (可以的話)。**  **廣告暫停**
 
@@ -134,7 +131,7 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
    * 每個「播放」呼叫的播放點位置應該要以 10 為單位遞增。
    * `l:event:duration` 值代表上一個追蹤呼叫距離現在的毫秒數，應該要每個 10 秒鐘呼叫大致相同。
 
-      如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#play-main-content)。
+     如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#play-main-content)。
 
 1. **在播放期間暫停至少 30 秒。** 暫停媒體播放器時，SDK 會每隔 10 秒將暫停事件呼叫傳送到 Media Analytics 伺服器。暫停結束後，視訊將繼續播放。
 

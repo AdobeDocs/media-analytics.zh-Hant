@@ -6,8 +6,8 @@ exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '295'
+workflow-type: tm+mt
+source-wordcount: '298'
 ht-degree: 100%
 
 ---
@@ -72,11 +72,11 @@ ht-degree: 100%
    * [在 Roku 上實作標準廣告中繼資料](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告資產的資料：
 
-      ```
-      contextData = {}
-      contextData["adinfo1"] = "adinfo2"
-      contextData["adinfo2"] = "adinfo2"
-      ```
+     ```
+     contextData = {}
+     contextData["adinfo1"] = "adinfo2"
+     contextData["adinfo2"] = "adinfo2"
+     ```
 
 1. 在 `MediaHeartbeat` 例項中使用 `AdStart` 事件呼叫 `trackEvent()` 以開始追蹤廣告播放：
 

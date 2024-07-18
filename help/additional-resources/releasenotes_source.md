@@ -1,7 +1,7 @@
 ---
 source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
-workflow-type: ht
-source-wordcount: '677'
+workflow-type: tm+mt
+source-wordcount: '612'
 ht-degree: 100%
 
 ---
@@ -21,7 +21,7 @@ Media Analytics 新功能
 
 | 功能 | 全面發佈 | 說明 |
 | -------- | -------------------- | ----------- |
-| 工作區中的「媒體平均每分鐘觀眾數」面板 | 2022 年 3 月<br> (有限測試) | 「平均每分鐘觀眾數」面板能讓 Media Analytics 客戶更加了解內容的平均使用量。「平均每分鐘觀眾數」可比較任何長度或類型的節目。 此外，觀眾也可以比較這個數位「平均每分鐘觀眾數」，或是將其附加到線性電視的平均每分鐘指標。此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及事後更新了持續時間分類時的平均觀眾數。 [了解更多...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=zh-Hant) |
+| 工作區中的「媒體平均每分鐘觀眾數」面板 | 2022 年 3 月<br> (有限測試) | 「平均每分鐘觀眾數」面板能讓 Media Analytics 客戶更加了解內容的平均使用量。「平均每分鐘對象數」可比較任何長度或類型的節目。 此外，觀眾也可以比較這個數位「平均每分鐘觀眾數」，或是將其附加到線性電視的平均每分鐘指標。此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及事後更新了持續時間分類時的平均觀眾數。 [了解更多...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=zh-Hant) |
 
 
 
@@ -33,7 +33,7 @@ Media Analytics 新功能
 
 最新 Analytics 教學課程與其他課程
 
-| 已發佈 | 名稱 | type | 說明 |
+| 發佈日期 | 名稱 | type | 說明 |
 | ----------- | ---------- | ---------- | --------- |
 | 1 月 | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">媒體播放時間面板</a> | 影片 | 了解「媒體播放時間」面板如何透過所選的詳細程度在一天中的觀看時間，使媒體使用者了解他們的觀看量。 |
 
@@ -58,7 +58,7 @@ Media Analytics 新功能
 
 最新 Analytics 教學課程與其他課程
 
-| 已發佈 | 名稱 | type | 說明 |
+| 發佈日期 | 名稱 | type | 說明 |
 | ----------- | ---------- | ---------- | --------- |
 | 2021 年 1 月 6 日 | [Analysis Workspace 中的「媒體同時檢閱者」面板](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=zh-Hant#analysis-workspace) | 影片 | 了解高峰期同時觀看或使用者數下降的位置。 取得內容品質和檢閱者參與的寶貴見解，並取得疑難排解或規劃數量和規模的協助。  |
 

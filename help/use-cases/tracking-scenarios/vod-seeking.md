@@ -6,7 +6,7 @@ exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -24,11 +24,11 @@ ht-degree: 100%
 | --- | --- | --- | --- |
 | 使用者點按[!UICONTROL 「播放」] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 播放內容的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
-| 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
-| 使用者開始搜尋內容 | `trackSeekStart` |  | 在搜尋完成前 (例如 `trackSeekComplete`) 不會傳出任何心率。 |
-| 搜尋作業完成 | `trackSeekComplete` |  | 因為搜尋已完成，即會開始傳出心率。提示：搜尋之後，播放點值應該呈現正確的新播放點。 |
+| 內容播放 | | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 使用者開始搜尋內容 | `trackSeekStart` | | 在搜尋完成前 (例如 `trackSeekComplete`) 不會傳出任何心率。 |
+| 搜尋作業完成 | `trackSeekComplete` | | 因為搜尋已完成，即會開始傳出心率。提示：搜尋之後，播放點值應該呈現正確的新播放點。 |
 | 內容已完成 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
-| 工作階段結束 | `trackSessionEnd` |  | `SessionEnd` |
+| 工作階段結束 | `trackSessionEnd` | | `SessionEnd` |
 
 ## 程式碼範例 {#sample-code}
 

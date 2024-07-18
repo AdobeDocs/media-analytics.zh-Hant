@@ -16,9 +16,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->*報表* 在Workspace中先前稱為 *範本*.
+>Workspace中的&#x200B;*報表*&#x200B;先前稱為&#x200B;*範本*。
 
-Analysis Workspace提供一組預設可用的預先建立報表，供您分析資料。 如需所有可用預設報表的詳細資訊，請參閱 [檢視報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) 在 [Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hant).
+Analysis Workspace提供一組預設可用的預先建立報表，供您分析資料。 如需所有可用預設報表的詳細資訊，請參閱[Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hant)中的[檢視報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus)。
 
 其中有些報表在分析串流媒體資料時特別有用，如以下章節所述。
 
@@ -26,20 +26,21 @@ Analysis Workspace提供一組預設可用的預先建立報表，供您分析�
 
 以下是分析串流媒體資料時有用的預設報表清單：
 
-* [!UICONTROL **媒體內容使用**]：建立報表，顯示最常使用且吸引使用者的哪些內容。
+* [!UICONTROL **媒體內容使用量**]：建立顯示最常使用且吸引使用者的內容的報告。
 
-* [!UICONTROL **串流媒體使用**]：建立具有控制面板的報表，如下列範例所示。
+* [!UICONTROL **串流媒體使用**]：建立含有控制面板的報告，如下列範例所示。
 
-* [!UICONTROL **媒體造訪間隔、頻率、忠誠度**]：建立顯示造訪間隔（自上次造訪後間隔天數）、頻率（每位訪客的造訪次數）和忠誠度（使用者同類群組回訪網站的頻率）的報表
+* [!UICONTROL **媒體造訪間隔、頻率、忠誠度**]：建立會顯示造訪間隔（自上次造訪以來經過的天數）、頻率（每位訪客的造訪次數）和忠誠度（使用者同類群組回訪網站的頻率）的報告
 
-例如，如果您選擇  [!UICONTROL **串流媒體使用**] 報表，則會呈現具有下列儀表板的專案：
+例如，如果您選擇&#x200B;[!UICONTROL **串流媒體使用**]&#x200B;報告，畫面會顯示以下儀表板的專案：
 
 ![](/help/reporting/assets/aa-workspace.png)
 
 ## 使用預設媒體報表
 
-您可以透過以下方式使用預設媒體報表：建立新專案時。 修改現有專案時，您也可以使用或。
+您可以透過下列方式使用預設媒體報表：
+建立新專案時。 修改現有專案時，您也可以使用或。
 
-* **建立新專案時：** 如需如何從預設報表建立新專案的詳細資訊，請參閱 [從空白專案或報告建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) 在 [在Analysis Workspace中建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+* **建立新專案時：**&#x200B;如需有關如何從預設報表建立新專案的資訊，請參閱[在Analysis Workspace中建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report)中的[從空白專案或報表建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report)。
 
-* **建立自訂公司報表時：** 如需如何建立自訂公司報表的詳細資訊，請參閱 [建立自訂公司報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) 在 [Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hant).
+* **建立自訂公司報告時：**&#x200B;如需有關如何建立自訂公司報告的資訊，請參閱[在[Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hant)中建立自訂公司報告](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report)。

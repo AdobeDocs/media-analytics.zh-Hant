@@ -6,8 +6,8 @@ exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '448'
+workflow-type: tm+mt
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
@@ -52,9 +52,9 @@ Media SDK 會將前述廣告間的間隙解讀為主要內容，因為它與任�
 
 * **呼叫`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >唯有在上一個廣告未完成時才進行呼叫。請考慮使用布林值來維持上一個廣告的 &quot;`isinAd`&quot; 狀態。
+  >[!NOTE]
+  >
+  >唯有在上一個廣告未完成時才進行呼叫。請考慮使用布林值來維持上一個廣告的 &quot;`isinAd`&quot; 狀態。
 
 * 為廣告資產建立物件例項，如 `adObject`。
 * 填入廣告中繼資料 `adCustomMetadata`。
@@ -65,9 +65,9 @@ Media SDK 會將前述廣告間的間隙解讀為主要內容，因為它與任�
 
 * **請勿進行呼叫**
 
-   >[!NOTE]
-   >
-   >如果應用程式知道這是廣告插播中的最後一個廣告，請在這裡呼叫 `trackEvent:AdComplete`，並略過 `trackEvent:AdBreakComplete` 中 `trackEvent:AdComplete` 的設定。
+  >[!NOTE]
+  >
+  >如果應用程式知道這是廣告插播中的最後一個廣告，請在這裡呼叫 `trackEvent:AdComplete`，並略過 `trackEvent:AdBreakComplete` 中 `trackEvent:AdComplete` 的設定。
 
 **略過廣告時：**
 
@@ -77,8 +77,8 @@ Media SDK 會將前述廣告間的間隙解讀為主要內容，因為它與任�
 
 * **呼叫`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >如果您已在前述最後一個 `trackEvent:AdComplete` 呼叫時執行本步驟，可以予以忽略。
+  >[!NOTE]
+  >
+  >如果您已在前述最後一個 `trackEvent:AdComplete` 呼叫時執行本步驟，可以予以忽略。
 
 * 呼叫 `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.

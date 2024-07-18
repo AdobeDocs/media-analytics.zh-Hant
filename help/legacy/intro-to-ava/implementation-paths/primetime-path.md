@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '254'
 ht-degree: 82%
 
 ---
@@ -31,4 +31,4 @@ TVSDK 已與 Media SDK 整合，使得在每個支援的平台上實作時更加
 
 >[!NOTE]
 >
->若採取此實作方式，客戶必須聯絡其銷售代表/Adobe客戶團隊以簽署新銷售訂單，因為Media Analytics具有獨特的SKU，並且從基於伺服器呼叫的定價模式變更為基於媒體資料流的模式。 您也應該連絡銷售代表/客戶經理，討論購買 TVSDK 事宜。
+>若採取此實施方法，客戶必須聯絡他們的銷售代表/Adobe客戶團隊以簽署新的銷售訂單，因為Media Analytics具有獨特的SKU，並且從基於伺服器呼叫的定價模式變更為基於媒體資料流的模式。 您也應該連絡銷售代表/客戶經理，討論購買 TVSDK 事宜。

@@ -6,8 +6,8 @@ exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1074'
+workflow-type: tm+mt
+source-wordcount: '1130'
 ht-degree: 100%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 應用程式啟動 Ping 事件計時器 | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| 應用程式啟動 Ping 事件計時器 | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
 
 啟動應用程式的 Ping 計時器。如果有前段廣告，第一個 Ping 事件則應在 1 秒引發；如果沒有，則為 10 秒。
 

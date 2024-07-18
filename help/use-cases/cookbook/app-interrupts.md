@@ -21,7 +21,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->通話 `trackSessionStart` 當應用程式從背景返回時，可能會導致截至當時為止的播放進度未計入播放時間總計，而且也會遺失先前的進度標籤、區段等。 反之，當應用程式返回及/或媒體恢復播放時，請呼叫 `trackPlay`。
+>當應用程式從背景返回時呼叫`trackSessionStart`，可能會導致截至該時間點為止的播放未計入播放時間總計，而且也會遺失先前的進度標籤、區段等。 反之，當應用程式返回及/或媒體恢復播放時，請呼叫 `trackPlay`。
 
 ## 有關如何處理應用程式中斷的常見問題集： {#faq-about-handling-application-interrupts}
 

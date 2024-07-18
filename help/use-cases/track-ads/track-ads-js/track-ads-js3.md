@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 88%
 
 ---
@@ -133,9 +133,9 @@ ht-degree: 88%
 
 ## 精細的廣告追蹤
 
-預設廣告Ping間隔為 `10 seconds`.
+預設廣告Ping間隔為`10 seconds`。
 
-您可以設定精細的廣告追蹤，以啟用 `1 second` 廣告追蹤。
+您可以設定精細的廣告追蹤，以啟用`1 second`廣告追蹤。
 
 >[!IMPORTANT]
 >

@@ -6,9 +6,9 @@ exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -24,14 +24,14 @@ ht-degree: 100%
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 | --- | --- | --- | --- |
-| 使用者點按[!UICONTROL 「播放」] | `trackSessionStart()` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於    [沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
-| 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 |  |
+| 使用者點按[!UICONTROL 「播放」] | `trackSessionStart()` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於沒有廣告的[VOD播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)案例。 |
+| 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 | |
 | 播放廣告的第一個時間格。 | `trackPlay()` | 心率廣告播放 | 當廣告內容在主要內容之前播放，心率會在廣告開始播放時啟動。 |
-| 廣告播放。 |  | 廣告心率 |  |
-| 廣告已略過。 | `trackEvent:trackAdSkip` |  | 沒有廣告完成網路呼叫。 |
-| 內容播放。 |  | 內容心率 | 這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 廣告播放。 | | 廣告心率 | |
+| 廣告已略過。 | `trackEvent:trackAdSkip` | | 沒有廣告完成網路呼叫。 |
+| 內容播放。 | | 內容心率 | 這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 內容已完成播放。 | `trackComplete()` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
-| 工作階段已結束。 | `trackSessionEnd()` |  | `SessionEnd` |
+| 工作階段已結束。 | `trackSessionEnd()` | | `SessionEnd` |
 
 ## 參數 {#parameters}
 

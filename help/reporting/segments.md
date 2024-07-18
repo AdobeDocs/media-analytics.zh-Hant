@@ -7,12 +7,12 @@ feature: "Media Analytics, Segmentation"
 role: User, Admin, Data Engineer
 source-git-commit: b15a81dc8f08e94c9b80d66019f3d0fe95ef5a74
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 99%
+source-wordcount: '198'
+ht-degree: 100%
 
 ---
 
-# 媒體區段{#segments}
+# 媒體區塊{#segments}
 
 區段可讓您根據特性或網站互動來識別訪客的子集。串流媒體區段可讓您識別訪客資料流類型，例如音訊、直播或播客資料流。 有關 Adobe Analytics 區段的資訊，請參閱《Adobe Analytics 元件指南》中的[關於區段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=zh-Hant)。
 

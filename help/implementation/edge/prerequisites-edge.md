@@ -16,7 +16,7 @@ ht-degree: 10%
 本節中說明的先決條件專用於透過Edge實施來實施Adobe串流媒體收集附加元件。
 
 1. **完成一般必要條件**<br>
-無論您是實作僅限Adobe Analytics的實施或適用於Edge實施的串流媒體收集附加元件，請確保您符合 [一般必要條件](/help/getting-started/prereqs.md).
+無論您是實作僅限Adobe Analytics的實施或適用於Edge實施的串流媒體收集附加元件，請確定您符合[一般必要條件](/help/getting-started/prereqs.md)。
 
 1. **確認您正在實作與Edge Network和串流媒體收集附加元件相容的Adobe解決方案**<br>
 透過Edge實作串流媒體收集附加元件時，您也必須具備有效的Customer Journey Analytics、Adobe Analytics、Adobe Journey Optimizer或Real-time Customer Data Platform實作。 如需詳細資訊，請參閱下列檔案資源：
@@ -26,7 +26,7 @@ ht-degree: 10%
    * [Real-time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
 
 1. **取得媒體追蹤伺服器URL**<br>
-請向您的Customer Journey Analytics代表詢問媒體追蹤伺服器URL。 <!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->
+請向您的Customer Journey Analytics代表詢問媒體追蹤伺服器URL。<!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->
 
 1. **使用Edge Network實作串流媒體收集附加元件**<br>
-請依照中的步驟操作 [使用Edge Network實作串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md).
+請依照[使用Edge Network](/help/implementation/edge/implementation-edge.md)實作串流媒體收集附加元件中的步驟操作。

@@ -5,8 +5,8 @@ exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '402'
+workflow-type: tm+mt
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
@@ -33,84 +33,84 @@ Adobe Audience Manager (AAM) 是一款資料管理平台 (DMP)，能協助您彙
 
 * `getVisitorProfile() -`
 
-   傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
+  傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
 
-   ```js
-   ADBMobile.audienceManager.getVisitorProfile();
-   ```
+  ```js
+  ADBMobile.audienceManager.getVisitorProfile();
+  ```
 
 * `getDpid() -`
 
-   傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
+  傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
 
-   ```js
-   ADBMobile.audienceManager.getDpid();
-   ```
+  ```js
+  ADBMobile.audienceManager.getDpid();
+  ```
 
 * `getDpuuid() -`
 
-   傳回目前的 DPUUID。
+  傳回目前的 DPUUID。
 
-   ```js
-   ADBMobile.audienceManager.getDpuuid();
-   ```
+  ```js
+  ADBMobile.audienceManager.getDpuuid();
+  ```
 
 * `setDpidAndDpuuid() -`
 
-   設定 DPID 和 DPUUID。若已設定 DPID 和 DPUUID，則會與各訊號一併傳送。
+  設定 DPID 和 DPUUID。若已設定 DPID 和 DPUUID，則會與各訊號一併傳送。
 
-   ```js
-   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
-   ```
+  ```js
+  ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
+  ```
 
 * `submitSignal() -`
 
-   傳送具特徵的訊號至對象管理。
+  傳送具特徵的訊號至對象管理。
 
-   ```js
-   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
-   ```
+  ```js
+  ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
+  ```
 
 ### Roku {#am-roku}
 
 * `audienceVisitorProfile -`
 
-   傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
+  傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
 
-   ```js
-   ADBMobile().audienceVisitorProfile()
-   ```
+  ```js
+  ADBMobile().audienceVisitorProfile()
+  ```
 
 * `audienceDpid -`
 
-   傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
+  傳回最近取得的訪客描述檔。若尚未提交任何訊號，則傳回空白物件。
 
-   ```js
-   ADBMobile().audienceDpid()
-   ```
+  ```js
+  ADBMobile().audienceDpid()
+  ```
 
 * `audienceDpuuid -`
 
-   傳回目前的 DPUUID。
+  傳回目前的 DPUUID。
 
-   ```js
-   ADBMobile().audienceDpuuid()
-   ```
+  ```js
+  ADBMobile().audienceDpuuid()
+  ```
 
 * `audienceSetDpidAndDpuuid -`
 
-   設定 DPID 和 DPUUID。若已設定 DPID 和 DPUUID，則會與各訊號一併傳送。
+  設定 DPID 和 DPUUID。若已設定 DPID 和 DPUUID，則會與各訊號一併傳送。
 
-   ```js
-   ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
-   ```
+  ```js
+  ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
+  ```
 
 * `audienceSubmitSignal -`
 
-   傳送具特徵的訊號至對象管理。
+  傳送具特徵的訊號至對象管理。
 
-   ```js
-   traitData = {}
-   traitData["sampleTrait"] = "sampleValue"
-   ADBMobile().audienceSubmitSignal(traitData)
-   ```
+  ```js
+  traitData = {}
+  traitData["sampleTrait"] = "sampleValue"
+  ADBMobile().audienceSubmitSignal(traitData)
+  ```

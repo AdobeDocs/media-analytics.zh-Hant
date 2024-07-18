@@ -6,8 +6,8 @@ exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '651'
+workflow-type: tm+mt
+source-wordcount: '618'
 ht-degree: 100%
 
 ---
@@ -73,18 +73,17 @@ ht-degree: 100%
    1. 完成下列其中一項程序：
 
       * [將憑證新增到本機電腦的「受信任的根憑證授權單位」存放區](https://technet.microsoft.com/zh-tw/library/cc754841.aspx#BKMK_addlocal)
+
    1. Firefox 使用者，請完成[在 Mozilla Firefox 中安裝根憑證](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)中的程序。
 
       您可能需要結束並重新開啟 Firefox，變更才會生效。
+
    **iOS 裝置**
    1. 按一下&#x200B;**[!UICONTROL 「設定應用程式]** **>** **[!UICONTROL Wifi 設定」]**，將 iOS 裝置設定為將 Adobe Debug 當作 HTTP 代理。
 
    1. 在 Safari 中，前往[「Debug」](https://proxy.debug.adobe.com/ssl)。
 
       Safari 會提示您安裝 SSL 憑證。
-
-
-
 
 ## 為行動裝置安裝 SSL 憑證 {#install-sSL-for-mobile-device}
 

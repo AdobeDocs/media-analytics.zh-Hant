@@ -5,8 +5,8 @@ exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
-workflow-type: ht
-source-wordcount: '411'
+workflow-type: tm+mt
+source-wordcount: '382'
 ht-degree: 100%
 
 ---
@@ -153,111 +153,111 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 * 標準媒體中繼資料：
 
-   ```java
-   MediaObject mediaInfo =
-     MediaHeartbeat.createMediaObject("media-name",
-                                      "media-id",
-                                      60D,
-                                      MediaHeartbeat.StreamType.VOD,
-                                      MediaHeartbeat.MediaType.Video);
-   
-   // Standard metadata keys provided by adobe.
-   Map <String, String> standardVideoMetadata =
-     new HashMap<String, String>();
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.EPISODE,
-                             "Sample Episode");
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SHOW,
-                             "Sample Show");
-   standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SEASON,
-                             "Sample Season");
-   mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardMediaMetadata,
-                      standardVideoMetadata);
-   
-   // Custom metadata keys
-   HashMap<String, String> mediaMetadata = new HashMap<String, String>();
-   mediaMetadata.put("isUserLoggedIn", "false");
-   mediaMetadata.put("tvStation", "Sample TV Station");
-   tracker.trackSessionStart(mediaInfo, mediaMetadata);
-   ```
+  ```java
+  MediaObject mediaInfo =
+    MediaHeartbeat.createMediaObject("media-name",
+                                     "media-id",
+                                     60D,
+                                     MediaHeartbeat.StreamType.VOD,
+                                     MediaHeartbeat.MediaType.Video);
+  
+  // Standard metadata keys provided by adobe.
+  Map <String, String> standardVideoMetadata =
+    new HashMap<String, String>();
+  standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.EPISODE,
+                            "Sample Episode");
+  standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SHOW,
+                            "Sample Show");
+  standardVideoMetadata.put(MediaHeartbeat.VideoMetadataKeys.SEASON,
+                            "Sample Season");
+  mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardMediaMetadata,
+                     standardVideoMetadata);
+  
+  // Custom metadata keys
+  HashMap<String, String> mediaMetadata = new HashMap<String, String>();
+  mediaMetadata.put("isUserLoggedIn", "false");
+  mediaMetadata.put("tvStation", "Sample TV Station");
+  tracker.trackSessionStart(mediaInfo, mediaMetadata);
+  ```
 
 * 標準廣告中繼資料：
 
-   ```java
-   MediaObject adInfo =
-     MediaHeartbeat.createAdObject("ad-name",
-                                   "ad-id",
-                                   1L,
-                                   15D);
-   
-   // Standard metadata keys provided by adobe.
-   Map <String, String> standardAdMetadata =
-     new HashMap<String, String>();
-   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER,
-                          "Sample Advertiser");
-   standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID,
-                          "Sample Campaign");
-   adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata,
-                   standardAdMetadata);
-   
-   HashMap<String, String> adMetadata =
-     new HashMap<String, String>();
-   adMetadata.put("affiliate",
-                  "Sample affiliate");
-   
-   tracker.trackEvent(MediaHeartbeat.Event.AdStart,
-                      adObject,
-                      adMetadata);
-   ```
+  ```java
+  MediaObject adInfo =
+    MediaHeartbeat.createAdObject("ad-name",
+                                  "ad-id",
+                                  1L,
+                                  15D);
+  
+  // Standard metadata keys provided by adobe.
+  Map <String, String> standardAdMetadata =
+    new HashMap<String, String>();
+  standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.ADVERTISER,
+                         "Sample Advertiser");
+  standardAdMetadata.put(MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID,
+                         "Sample Campaign");
+  adInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardAdMetadata,
+                  standardAdMetadata);
+  
+  HashMap<String, String> adMetadata =
+    new HashMap<String, String>();
+  adMetadata.put("affiliate",
+                 "Sample affiliate");
+  
+  tracker.trackEvent(MediaHeartbeat.Event.AdStart,
+                     adObject,
+                     adMetadata);
+  ```
 
 ### Launch 擴充功能
 
 * 標準媒體中繼資料：
 
-   ```java
-   HashMap<String, Object> mediaObject =
-     Media.createMediaObject("media-name",
-                             "media-id",
-                             60D,
-                             MediaConstants.StreamType.VOD,
-                             Media.MediaType.Video);
-   
-   HashMap<String, String> mediaMetadata =
-     new HashMap<String, String>();
-   
-   // Standard metadata keys provided by adobe.
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE,
-                     "Sample Episode");
-   mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW,
-                     "Sample Show");
-   
-   // Custom metadata keys
-   mediaMetadata.put("isUserLoggedIn", "false");
-   mediaMetadata.put("tvStation", "Sample TV Station");
-   
-   tracker.trackSessionStart(mediaInfo, mediaMetadata);
-   ```
+  ```java
+  HashMap<String, Object> mediaObject =
+    Media.createMediaObject("media-name",
+                            "media-id",
+                            60D,
+                            MediaConstants.StreamType.VOD,
+                            Media.MediaType.Video);
+  
+  HashMap<String, String> mediaMetadata =
+    new HashMap<String, String>();
+  
+  // Standard metadata keys provided by adobe.
+  mediaMetadata.put(MediaConstants.VideoMetadataKeys.EPISODE,
+                    "Sample Episode");
+  mediaMetadata.put(MediaConstants.VideoMetadataKeys.SHOW,
+                    "Sample Show");
+  
+  // Custom metadata keys
+  mediaMetadata.put("isUserLoggedIn", "false");
+  mediaMetadata.put("tvStation", "Sample TV Station");
+  
+  tracker.trackSessionStart(mediaInfo, mediaMetadata);
+  ```
 
 * 標準廣告中繼資料：
 
-   ```java
-   HashMap<String, Object> adObject =
-     Media.createAdObject("ad-name",
-                          "ad-id",
-                          1L,
-                          15D);
-   HashMap<String, String> adMetadata =
-     new HashMap<String, String>();
-   
-   // Standard metadata keys provided by adobe.
-   adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER,
-                  "Sample Advertiser");
-   adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID,
-                  "Sample Campaign");
-   
-   // Custom metadata keys
-   adMetadata.put("affiliate",
-                  "Sample affiliate");
-   _tracker.trackEvent(Media.Event.AdStart,
-                       adObject,
-                       adMetadata);
-   ```
+  ```java
+  HashMap<String, Object> adObject =
+    Media.createAdObject("ad-name",
+                         "ad-id",
+                         1L,
+                         15D);
+  HashMap<String, String> adMetadata =
+    new HashMap<String, String>();
+  
+  // Standard metadata keys provided by adobe.
+  adMetadata.put(MediaConstants.AdMetadataKeys.ADVERTISER,
+                 "Sample Advertiser");
+  adMetadata.put(MediaConstants.AdMetadataKeys.CAMPAIGN_ID,
+                 "Sample Campaign");
+  
+  // Custom metadata keys
+  adMetadata.put("affiliate",
+                 "Sample affiliate");
+  _tracker.trackEvent(Media.Event.AdStart,
+                      adObject,
+                      adMetadata);
+  ```

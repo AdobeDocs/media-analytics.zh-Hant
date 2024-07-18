@@ -167,9 +167,9 @@ ht-degree: 94%
 
 在您的 Xcode 專案中執行以下步驟。本指南的編寫內容，是假設您的專案具有的一個目標為以 tvOS 為目標的 Apple TV 應用程式：
 
-1. 拖曳 `VideoHeartbeat_TV.a` 將程式庫檔案放入您專案的 `lib` 資料夾。
+1. 將`VideoHeartbeat_TV.a`程式庫檔案拖曳至專案的`lib`資料夾。
 
-1. 在 **[!UICONTROL 建置階段]** 標籤中，展開 **[!UICONTROL 連結二進位檔與資料庫]** 區段並新增下列程式庫：
+1. 在tvOS應用程式目標的&#x200B;**[!UICONTROL 建置階段]**&#x200B;標籤中，展開&#x200B;**[!UICONTROL 連結二進位檔與資料庫]**&#x200B;區段，然後新增下列資料庫：
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

@@ -6,8 +6,8 @@ exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '360'
+workflow-type: tm+mt
+source-wordcount: '364'
 ht-degree: 100%
 
 ---
@@ -90,13 +90,12 @@ ht-degree: 100%
 
    * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告的資料：
 
-      ```java
-      // Setting Ad Metadata
-      HashMap<String, String> adMetadata = new HashMap<String, String>();
-      adMetadata.put("affiliate", "Sample affiliate");
-      adMetadata.put("campaign", "Sample ad campaign");
-      ```
-
+     ```java
+     // Setting Ad Metadata
+     HashMap<String, String> adMetadata = new HashMap<String, String>();
+     adMetadata.put("affiliate", "Sample affiliate");
+     adMetadata.put("campaign", "Sample ad campaign");
+     ```
 
 1. 在 `MediaHeartbeat` 例項中使用 `AdStart` 事件呼叫 `trackEvent()` 以開始追蹤廣告播放。
 

@@ -6,9 +6,9 @@ exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 | 觸發 | 心率方法 | 網路呼叫 | 附註 |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於    [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)情境。 |
+| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於iOS](vod-no-intrs-details.md)案例中沒有岔斷的[播放。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
 | 播放章節的第一個時間格。 | `trackPlay` | 心率章節播放 | 當章節內容在主要內容之前播放，我們想在章節開始時啟動心率。 |
 | 章節播放。 |  | 章節心率 |  |

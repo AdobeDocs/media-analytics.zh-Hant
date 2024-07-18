@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 92%
+source-wordcount: '795'
+ht-degree: 88%
 
 ---
 
@@ -150,7 +150,7 @@ ht-degree: 92%
 
 1. **更新播放點值**
 
-   當媒體播放點發生變更時，請呼叫 `mediaUpdatePlayhead` API。 <br /> 對於隨選影片 (VOD)，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。
+   當媒體播放點變更時，呼叫`mediaUpdatePlayhead` API以通知SDK。 <br /> 對於隨選影片 (VOD)，此值是從媒體項目的開頭開始以秒為單位指定的。<br />對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天UTC午夜開始的秒數。
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -158,9 +158,9 @@ ht-degree: 92%
 
    >[!NOTE]
    >
-   >呼叫 `mediaUpdatePlayhead` API：
+   >呼叫`mediaUpdatePlayhead` API時，請考量下列事項：
    >* 使用進度標籤時，需要內容持續時間，並且播放點需要更新為從媒體專案開始的秒數，從0開始。
-   >* 使用Media SDK時，您必須呼叫 `mediaUpdatePlayhead` API至少每秒執行一次。
+   >* 使用Media SDK時，您必須至少每秒呼叫`mediaUpdatePlayhead` API一次。
 
 
 1. **追蹤播放完成**

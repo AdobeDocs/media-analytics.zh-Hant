@@ -6,8 +6,8 @@ exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '689'
+workflow-type: tm+mt
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
@@ -66,28 +66,28 @@ ht-degree: 100%
 
    * **標準中繼資料**
 
-      [在 JavaScript 上實作標準中繼資料](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+     [在 JavaScript 上實作標準中繼資料](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
-      >[!NOTE]
-      >
-      >將標準中繼資料物件附加到媒體物件為選用。
+     >[!NOTE]
+     >
+     >將標準中繼資料物件附加到媒體物件為選用。
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         請在此處參閱完整的可用中繼資料組：[音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md)
+        請在此處參閱完整的可用中繼資料組：[音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md)
+
    * **自訂中繼資料**
 
-      為自訂變數建立變數物件，並為此媒體填入資料。例如：
+     為自訂變數建立變數物件，並為此媒體填入資料。例如：
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **追蹤開始播放的意圖**
 

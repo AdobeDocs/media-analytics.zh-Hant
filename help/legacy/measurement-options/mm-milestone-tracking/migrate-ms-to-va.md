@@ -6,9 +6,9 @@ exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 96%
 
 ---
 
@@ -52,8 +52,8 @@ ht-degree: 100%
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | 不適用 | 「內容完成」僅支援 100% 進度標記。 |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | SDK 金鑰：playerName；<br>API 金鑰：media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | 不適用 | Media Analytics 針對內容設為 10 秒，廣告則設為 1 秒。無其他可用選項。 |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 不適用 | Media Analytics 一律追蹤 10%、25%、50%、75%、95% 進度標記。。 |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 不適用 | Media Analytics 一律追蹤 10%、25%、50%、75%、95% 進度標記。。 |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | 不適用 | Media Analytics一律追蹤10%、25%、50%、75%、95%進度標籤。 |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | 不適用 | Media Analytics一律追蹤10%、25%、50%、75%、95%進度標籤。 |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | 不適用 | 不再提供自動追蹤功能。 |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | 不適用 | 不再提供自動追蹤功能。 |
 

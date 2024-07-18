@@ -15,7 +15,7 @@ ht-degree: 92%
 
 本頁資訊說明如何安裝獨立 Web SDK 和設定 JavaScript。
 
-或者，您可以使用Adobe Medium Analytics擴充功能來實施Adobe串流媒體收集附加元件，如中所述 [使用Media Analytics擴充功能實作Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+或者，您可以使用Adobe Medium Analytics擴充功能來實施Adobe串流媒體收集附加元件，如[使用Media Analytics擴充功能實施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md)中所述。
 
 ## 先決條件 {#prerequesites}
 

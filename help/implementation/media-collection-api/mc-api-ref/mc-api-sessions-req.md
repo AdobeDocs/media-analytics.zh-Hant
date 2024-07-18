@@ -6,8 +6,8 @@ exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '130'
+workflow-type: tm+mt
+source-wordcount: '133'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ https://{uri}/api/v1/sessions
    * `ts`- 時間戳記；必須以毫秒為單位；世界協調時間 (UTC)。
 * `eventType` (必要)
 
-   **有效值：** `sessionStart`
+  **有效值：** `sessionStart`
 * `params` (必要)
 * `customMetadata` (可選)
 * `qoeData` (可選)

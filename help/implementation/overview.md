@@ -20,13 +20,13 @@ ht-degree: 69%
 
 我們建議為所有新Adobe Analytics或Customer Journey Analytics客戶實作串流媒體收集附加元件時使用Edge。
 
-* **Edge Network SDK /擴充功能的媒體：** 從網路、iOS和Android裝置或Roku裝置收集資料，並傳送給Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
+* **Edge Network SDK /擴充功能的媒體：**&#x200B;從網頁、iOS和Android裝置或Roku裝置收集資料，並傳送給Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
-  如需Edge Network SDK /擴充功能所用媒體的詳細資訊，請參閱 [使用Edge Network實作串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md).
+  如需Edge Network SDK /擴充功能之Media的詳細資訊，請參閱[使用Edge Network實作串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md)。
 
-* **Media Edge API：** 可自訂以從任何裝置或格式（包括行動裝置、網頁和過頂裝置）收集資料，並將資料傳送至Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
+* **Media Edge API：**&#x200B;可自訂為從任何裝置或格式（包括行動裝置、網頁和過頂裝置）收集資料，並將資料傳送至Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
-  如需Media Edge API的詳細資訊，請參閱 [Media Edge API概觀](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
+  如需Media Edge API的詳細資訊，請參閱[Media Edge API總覽](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)。
 
 ![CJA 工作流程](assets/streaming-media-edge.png)
 

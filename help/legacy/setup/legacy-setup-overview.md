@@ -5,9 +5,9 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
 source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '789'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '755'
+ht-degree: 99%
 
 ---
 
@@ -138,11 +138,11 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 * **Adobe Analytics (AppMeasurement) 伺服器**
 如需有關追蹤伺服器選項的詳細資訊，請參閱[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html)。
 
-   >[!IMPORTANT]
-   >
-   >Experience Cloud 訪客 ID 服務需要 RDC 追蹤伺服器，或 CNAME 解析至 RDC 伺服器。
+  >[!IMPORTANT]
+  >
+  >Experience Cloud 訪客 ID 服務需要 RDC 追蹤伺服器，或 CNAME 解析至 RDC 伺服器。
 
-   分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
+  分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
 * ** Media Analytics (心率) 伺服器**
 此格式一律為「`[your_namespace].hb.omtrdc.net`」。「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
@@ -153,13 +153,13 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
 | Video Analytics 1.x SDK |  開發人員指南 (僅提供 PDF) |
 | --- | --- |
-| Android | [為 Android 進行配置 ](vhl-dev-guide-v15_android.pdf) |
-| Apple TV | [為 Apple TV 進行設定 ](vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | [為 Chromecast 進行配置 ](chromecast_1.x_sdk.pdf) |
-| iOS | [為 iOS 進行配置 ](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [為 JavaScript 進行配置 ](vhl-dev-guide-v15_js.pdf) |
+| Android | [為 Android 進行配置](vhl-dev-guide-v15_android.pdf) |
+| Apple TV | [設定Apple TV](vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | [為 Chromecast 進行配置](chromecast_1.x_sdk.pdf) |
+| iOS | [為 iOS 進行配置](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [為 JavaScript 進行配置](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
-| TVML | [為 TVML 進行配置 ](vhl_tvml.pdf) |
+| TVML | [為 TVML 進行配置](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 文件 {#primetime-docs}
 

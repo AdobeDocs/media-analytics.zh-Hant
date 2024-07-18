@@ -68,4 +68,4 @@ Adobe串流媒體收集附加元件為串流媒體內容（例如音訊、視訊
 >透過 Customer Journey Analytics 實施，可使用 Experience Edge 或使用 Analytics Data Connector (ADC) 將資料傳送至 Customer Journey Analytics。
 
 
-如需各種實作方法的詳細資訊，請參閱 [實作適用於Adobe Analytics或Customer Journey Analytics的串流媒體收集附加元件](/help/implementation/overview.md).
+如需各種實作方法的詳細資訊，請參閱[實作Adobe Analytics或Customer Journey Analytics的串流媒體收集附加元件](/help/implementation/overview.md)。

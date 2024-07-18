@@ -6,8 +6,8 @@ exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '520'
+workflow-type: tm+mt
+source-wordcount: '526'
 ht-degree: 100%
 
 ---
@@ -24,11 +24,11 @@ ht-degree: 100%
 | --- | --- | --- | --- |
 | 使用者點按[!UICONTROL 播放] | trackSessionStart | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 播放內容的第一個時間格。 | trackPlay | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
-| 內容播放 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
+| 內容播放 | | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 工作階段 1 結束 (第 1 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成是指內容已播放到第 1 集的工作階段 1，並已完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
 | 第 2 集開始 (工作階段 2 開始) | trackSessionStart | Analytics 內容開始、心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
 | 媒體的第一個時間格 | trackPlay | 心率內容播放 | 此方法會觸發計時器，從此時間點開始，只要繼續播放，便會每 10 秒傳送心率。 |
-| 內容播放 |  | 內容心率 |  |
+| 內容播放 | | 內容心率 | |
 | 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成是指內容已播放到第 2 集的工作階段 2，並已完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
 
 ## 參數 {#parameters}

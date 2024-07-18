@@ -6,8 +6,8 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '385'
+workflow-type: tm+mt
+source-wordcount: '374'
 ht-degree: 100%
 
 ---
@@ -22,11 +22,11 @@ ht-degree: 100%
 * **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。若要退出追蹤，您需要從訪客 API 服務退出。如需有關選擇退出和隱私權的進一步資訊，請參閱 [Adobe Experience Platform Identity 服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
 * **OTT 應用程式 (Chromecast、Roku) -** OTT SDK 提供符合一般資料保護規範 (GDPR) 的 API，讓您將資料收集和傳輸的狀態標幟設為 `opt`，並擷取儲存於本機的身分識別資料。
 
-   >[!NOTE]
-   >
-   >如果隱私權狀態設為退出，也會停用媒體心率追蹤呼叫。
+  >[!NOTE]
+  >
+  >如果隱私權狀態設為退出，也會停用媒體心率追蹤呼叫。
 
-   您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料：
+  您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料：
 
    * `privacyDefault` 設定檔案中的 `ADBMobile.json` 設定。這會控制持續使用的初始設定，直到在程式碼中變更為止。
 
@@ -36,46 +36,49 @@ ht-degree: 100%
 
          * **Chromecast：**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+               ```
+           
          * **Roku：**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                ```
-            
-            >[!IMPORTANT]
-            >
-            >當使用者選擇退出追蹤時，應用程式將清除所有保存的裝置資料和 ID，直到使用者重新加入為止。
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+               ```
+           
+           >[!IMPORTANT]
+           >
+           >當使用者選擇退出追蹤時，應用程式將清除所有保存的裝置資料和 ID，直到使用者重新加入為止。
+
       * **再次加入：**
 
          * **Chromecast：**
 
-                ```
-                ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                ```
-            
+               ```
+               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+               ```
+           
          * **Roku：**
 
-                ```
-                ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                ```
-            * **傳回目前設定：**
+               ```
+               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+               ```
+           
+      * **傳回目前設定：**
 
          * **Chromecast：**
 
-                ```
-                ADBMobile.config.getPrivacyStatus()
-                ```
-            
+               ```
+               ADBMobile.config.getPrivacyStatus()
+               ```
+           
          * **Roku：**
 
-                ```
-                ADBMobile().getPrivacyStatus()
-                ```
-            使用 `setPrivacyStatus` 變更隱私權設定後，變更為永久有效，直到使用此方法再次變更，或者應用程式解除安裝並重新安裝為止。
+               ```
+               ADBMobile().getPrivacyStatus()
+               ```
+           
+  使用 `setPrivacyStatus` 變更隱私權設定後，變更為永久有效，直到使用此方法再次變更，或者應用程式解除安裝並重新安裝為止。
 
 ## 擷取儲存的識別碼 (OTT 應用程式) {#retrieving-stored-identifiers-ott-apps}
 
@@ -98,12 +101,12 @@ ht-degree: 100%
 
 * **Chromecast：**
 
-   ```
-   ADBMobile.config.getAllIdentifiersAsync(callback)
-   ```
+  ```
+  ADBMobile.config.getAllIdentifiersAsync(callback)
+  ```
 
 * **Roku：**
 
-   ```
-   vids = ADBMobile().getAllIdentifiers()
-   ```
+  ```
+  vids = ADBMobile().getAllIdentifiers()
+  ```

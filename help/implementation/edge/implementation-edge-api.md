@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 使用Edge Network API實作串流媒體收集附加元件
 
-如果您無法使用 [Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)，您可以透過API直接傳送資料給Adobe Experience PlatformEdge Network。
+如果您無法使用[Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)，可以直接透過API傳送資料給Adobe Experience PlatformEdge Network。
 
 如需如何自訂實施Edge API的相關資訊，請使用下列資源：
 
-* [Media Edge API概觀](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
+* [Media Edge API總覽](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/)
 
 * [Media Edge API快速入門](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
