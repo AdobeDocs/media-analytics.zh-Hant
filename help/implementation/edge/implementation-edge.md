@@ -4,10 +4,10 @@ description: 瞭解如何使用Experience PlatformEdge實作串流媒體收集�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 9%
+source-wordcount: '2154'
+ht-degree: 8%
 
 ---
 
@@ -111,6 +111,30 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
    1. 選取&#x200B;[!UICONTROL **確認**] > [!UICONTROL **儲存**]&#x200B;以儲存變更。
 
++++
+
+1. （選用）您可以將自訂中繼資料新增到結構描述。 這可讓您包含其他使用者定義的中繼資料，這些中繼資料可以根據特定需求或內容進行自訂。 若現有結構描述未涵蓋所需的資料點，此彈性就相當實用。 (您也可以搭配Media Edge API使用自訂中繼資料。 如需詳細資訊，請參閱[使用Media Edge API建立自訂中繼資料](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/)。
+
++++ 展開此處以檢視如何新增自訂中繼資料至結構描述的指示。
+
+   1. 選取&#x200B;[!UICONTROL **帳戶資訊**] > [!UICONTROL **指派的組織**] > [!UICONTROL _**組織名稱**_] > [!UICONTROL **租使用者**]，以找出組織的租使用者名稱稱。
+
+      將透過此路徑接收這些自訂欄位。 (例如，租使用者名稱稱： _dcbl → myCustomField路徑： _dcbl.myCustomField。)
+
+   1. 新增自訂欄位群組至您定義的媒體結構描述。
+
+      ![add-custom-metadata](assets/add-custom-metadata-fieldgroup.png)
+
+   1. 將您想要追蹤的任何自訂欄位新增至欄位群組。
+
+      ![add-custom-metadata](assets/add-custom-fields.png)
+
+   1. [使用產生的路徑](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
+
+      ![add-custom-metadata](assets/custom-fields-path.png)
+
++++
+
 1. 繼續[在Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)中建立資料集。
 
 ## 在Adobe Experience Platform中建立資料集
@@ -135,8 +159,8 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
      >[!IMPORTANT]
      >
-         >     不要選取[!UICONTROL **儲存並新增對應**]，因為這樣做會導致Timestamp欄位的對應錯誤。
-     
+     >請勿選取&#x200B;[!UICONTROL **儲存並新增對應**]，因為這樣做會導致Timestamp欄位的對應錯誤。
+
      ![建立資料流並選取結構描述](assets/datastream-create-schema.png)
 
    * 根據您使用的是Adobe Analytics還是Customer Journey Analytics，將以下任一服務新增至資料流：
@@ -151,7 +175,7 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
      ![新增Adobe Analytics服務](assets/datastream-add-service.png)
 
-   * 展開&#x200B;[!UICONTROL **進階選項**]，然後啟用&#x200B;[!UICONTROL **Media Analytics**]&#x200B;選項。
+      * 展開&#x200B;[!UICONTROL **進階選項**]，然後啟用&#x200B;[!UICONTROL **Media Analytics**]&#x200B;選項。
 
      ![Media Analytics選項](assets/datastream-media-check.png)
 
@@ -164,7 +188,6 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 >[!NOTE]
 >
 >只有在使用Customer Journey Analytics時，才需要執行下列程式。
-
 
 1. 請確定您已建立資料串流，如[在Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform)中設定資料串流中所述。
 
@@ -301,11 +324,22 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
    ![媒體播放時間面板](assets/media-playback-time-spent-panels.png)
 
+1. （視條件而定）如果您將自訂中繼資料新增至結構描述，如[在Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)中設定結構描述中的步驟8所述，則您需要為自訂欄位設定持續性，如Customer Journey Analytics指南中的[持續性元件設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)所述。
+
+   當資料到達Customer Journey Analytics時，將可使用自訂使用者ID維度。
+
+   ![設定 — 自訂中繼資料](assets/custom-metadata-dimension.png)
+
+   >[!NOTE]
+   >
+   >如果您將Adobe Analytics設定為您的資料串流的上游，自訂中繼資料也會出現在ContextData中，其名稱為您在結構描述中設定（沒有租使用者首碼，例如myCustomField）。 這可讓您使用所有可用於ContextData的Adobe Analytics功能，例如[建立處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)。
+
 1. 依照[共用專案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的說明共用專案。
 
    >[!NOTE]
    >
    >   如果您想要共用的使用者無法使用，請確定使用者擁有在Adobe Admin Console中Customer Journey Analytics的使用者和管理員存取權。
+
 
 1. 繼續[傳送資料至Experience PlatformEdge](#send-data-to-experience-platform-edge)。
 
