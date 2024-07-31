@@ -5,7 +5,7 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: 1375fb3260d5c4ca703827b3d73174f4e475f76d
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 93%
@@ -133,6 +133,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    | `visitorSyncIdentifiers` | 透過 Experience Cloud 訪客 ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 `setCustomerIDs`。例如：<br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
    | `setAdvertisingIdentifier` | 用來在 SDK 上設定適用於廣告的 Roku ID (RIDA)例如︰<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用 Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API 取得適用於廣告的 Roku ID (RIDA)。 |
    | `getAllIdentifiers` | 傳回 SDK 儲存的所有識別碼清單，包括分析、訪客、Audience Manager 和客戶識別碼。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
+
    <!--
     Roku Api Reference:
     * [Integrating the Roku Advertising Framework](https://sdkdocs.roku.com/display/sdkdoc/Integrating+the+Roku+Advertising+Framework)  
