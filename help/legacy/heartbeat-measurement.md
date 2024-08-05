@@ -4,10 +4,10 @@ description: 了解如何使用心率收集視訊量度。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 86%
+ht-degree: 75%
 
 ---
 
@@ -24,5 +24,5 @@ Adobe串流媒體收集附加元件使用「心率」收集視訊量度。 視�
 | 整合 | Experience Cloud ID 與 Adobe Experience Cloud 相互連結，使交叉分析更為輕鬆。透過 Adobe Experience Cloud 自動整合，您可以劃分及鎖定媒體對象，並根據使用者偏好提出媒體建議。 |
 | 定價 | 依據媒體資料流 (單次) 進行透明化追蹤 |
 | 實作與支援 | 透過持續更新和改進來簡化設定。透過簡化的實作程序，您可以透過播放器 API 快速對應變數，並使用 Adobe Debug Tool 驗證實作，以確保所有必要變數皆受到精確追蹤。 |
-| 合作夥伴共用 | Federated Analytics 和認證量度。透過 Federated Analytics 的共用資訊，您可以利用我們領先業界的媒體共用功能，跨越所有媒體經銷商合作夥伴 (業者、程式設計人員和經銷商) 全面評估資料。 |
+| 合作夥伴共用 | 同盟媒體和認證量度。 透過Federated Media的共用資料，您可以利用我們領先業界的媒體共用功能，跨越所有媒體經銷商合作夥伴（業者、程式設計人員和經銷商）全面評估資料。 |
 | 進階追蹤 | 下載內容追蹤、錯誤修復追蹤和同時觀看者。您可追蹤下載到裝置上播放的串流媒體內容 (不論是否連上網路)。 |

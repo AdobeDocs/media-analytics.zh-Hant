@@ -5,7 +5,7 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 100%
@@ -143,7 +143,7 @@ ht-degree: 100%
 
 ### visitor.marketingCloudOrgId
 
-除了是在未提供 MCID 時用來產生 MCID 的必要項目之外，這個參數還能當做發行者 ID 的值 (Media Analytics 會根據該 ID 執行[同盟規則比對](/help/use-cases/federated-analytics.md))。
+除了是在未提供 MCID 時用來產生 MCID 的必要項目之外，這個參數還能當做發行者 ID 的值 (Media Analytics 會根據該 ID 執行[同盟規則比對](/help/use-cases/federated-media.md))。
 
 ### Analytics 舊版使用者 ID (aid) 和宣告使用者 ID (customerID)
 

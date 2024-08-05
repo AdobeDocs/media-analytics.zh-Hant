@@ -5,10 +5,10 @@ user-guide-title: 串流媒體收集附加元件
 breadcrumb-title: 串流媒體收集指南
 user-guide-description: 實作串流媒體。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 97%
 
 + [串流媒體收集指南](media-overview.md)
 + 發行說明 {#release-notes}
-   + [串流媒體收集發行說明](additional-resources/release-notes.md)
+   + [流媒體收集發行說明](additional-resources/release-notes.md)
 + 快速入門 {#getting-started}
    + [先決條件](getting-started/prereqs.md)
    + [支援裝置](getting-started/supported-devices.md)
-   + [串流媒體收集實施檔案](getting-started/implementation-documentation.md)
+   + [流媒體收集實施文檔](getting-started/implementation-documentation.md)
    + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
    + 終止支援 {#end-of-support}
       + [Media Analytics Mobile SDK 終止支援](additional-resources/end-of-support-faqs.md)
@@ -100,12 +100,12 @@ ht-degree: 97%
       + [多播放器狀態追蹤](use-cases/player-state-tracking/multiple-player-states.md)
       + [播放器狀態追蹤範例](use-cases/player-state-tracking/player-state-examples.md)
    + [追蹤下載內容](use-cases/track-downloaded-content.md)
-   + [Federated Analytics](use-cases/federated-analytics.md)
+   + [同盟媒體](use-cases/federated-media.md)
    + [在播放期間處理應用程式中斷狀況](use-cases/cookbook/app-interrupts.md)
    + [媒體串流歸因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [繼續非作用中工作階段](use-cases/cookbook/resuming-inactive.md)
-   + [SceneGraph中的Roku追蹤](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [處理廣告之間的間隙](use-cases/cookbook/fix-ad-play-ad.md)
+   + [SceneGraph 中的 Roku 追蹤](use-cases/cookbook/sdk-track-scenegraph.md)
+   + [處理廣告之間的差距](use-cases/cookbook/fix-ad-play-ad.md)
    + 時間軸 {#timelines}
       + [章節開始和結束](use-cases/timelines/chapter-start-end.md)
       + [檢視到內容結束](use-cases/timelines/view-to-end-of-content.md)
