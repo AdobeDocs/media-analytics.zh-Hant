@@ -4,7 +4,7 @@ description: 有關使用Experience PlatformEdge API安裝Media Analytics的資�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -23,4 +23,4 @@ ht-degree: 0%
 
 * [Media Edge API疑難排解指南](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [使用Media Edge API的Open API規格檔案](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)
+* [使用Media Edge API的Open API規格檔案](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
