@@ -5,9 +5,9 @@ uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 019d2381eebb0eff92f1cd2a4e6246c6df2f0c28
 workflow-type: tm+mt
-source-wordcount: '1142'
+source-wordcount: '1140'
 ht-degree: 96%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 96%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 索引鍵:**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API 索引鍵:**<br/> media.chapter.friendlyName </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 章節開始、章節關閉 </li> <li> **最小SDK 版本:** 1.3 </li> <li> **樣本值:**<br/>「The Big Bang Chapter 2 - Dating」 </li><li> **說明:**<br/>&#x200B;章節和/或區段名稱。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>friendlyName) </li> <li> **心率：**<br/> (<code>s:stream:chapter_name</code>) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;預設建立...  </li> <li> **預留變數:**<br/>&#x200B;分類 </li> <li> **報表名稱:**<br/>&#x200B;章節名稱 </li> <li> **內容資料:**<br/> (a.media.chapter.<br/>friendlyName) </li> <li> **資料摘要:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>friendlyName) </li> <li> **XDM 欄位路徑:**<br/> media.mediaTimed.mediaChapter.<br/>chapterAssetReference.dc:title </li> <li> **集合 XDM 欄位路徑:**<br/> mediaCollection.chapterDetails.friendlyName </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.chapterDetails.friendlyName </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>  [name](./chapter-parameters.md#related_apis_section) </li> <li> **API 索引鍵:**<br/> media.chapter.friendlyName </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 章節關閉 </li> <li> **最小SDK 版本:** 1.3 </li> <li> **樣本值:**<br/>「The Big Bang Chapter 2 - Dating」 </li><li> **說明:**<br/>&#x200B;章節和/或區段名稱。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>friendlyName) </li> <li> **心率：**<br/> (<code>s:stream:chapter_name</code>) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;預設建立...  </li> <li> **預留變數:**<br/>&#x200B;分類 </li> <li> **報表名稱:**<br/>&#x200B;章節名稱 </li> <li> **內容資料:**<br/> (a.media.chapter.<br/>friendlyName) </li> <li> **資料摘要:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>friendlyName) </li> <li> **XDM 欄位路徑:**<br/> media.mediaTimed.mediaChapter.<br/>chapterAssetReference.dc:title </li> <li> **集合 XDM 欄位路徑:**<br/> mediaCollection.chapterDetails.friendlyName </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.chapterDetails.friendlyName </li> </ul> |
 
 ### 章節位置
 
@@ -77,7 +77,7 @@ ht-degree: 96%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 索引鍵:**<br/> 自動設定  </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;章節開始 </li> <li> **最小SDK 版本:** 1.3 </li> <li> **樣本值:**<br/> TRUE </li><li> **說明:**<br/>&#x200B;章節開始的數量。**重要:** 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>檢視) </li> <li> **心率：**<br/> (<code>s:event:</code><br/>type=chapter_start) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;章節開始</li> <li> **內容資料:**<br/> (a.media.chapter.<br/>檢視) </li> <li> **資料摘要:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>檢視) </li> <li> **XDM 欄位路徑:**<br/> media.mediaTimed.chapterCount.<br/>value > 0 => &quot;TRUE&quot; </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.chapterDetails.isStarted </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/> 自動設定  </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 章節關閉 </li> <li> **最小SDK 版本:** 1.3 </li> <li> **樣本值:**<br/> TRUE </li><li> **說明:**<br/>&#x200B;章節開始的數量。**重要:** 若此事件已設定，則唯一可能的值為 TRUE。若此事件未設定，則不會傳送值。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.chapter.<br/>檢視) </li> <li> **心率：**<br/> (<code>s:event:</code><br/>type=chapter_start) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;章節開始</li> <li> **內容資料:**<br/> (a.media.chapter.<br/>檢視) </li> <li> **資料摘要:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapter.<br/>檢視) </li> <li> **XDM 欄位路徑:**<br/> media.mediaTimed.chapterCount.<br/>value > 0 => &quot;TRUE&quot; </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.chapterDetails.isStarted </li> </ul> |
 
 ### 章節完成
 
