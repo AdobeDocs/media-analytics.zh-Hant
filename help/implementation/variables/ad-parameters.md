@@ -5,10 +5,10 @@ uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 4b120beb888923027ba4ec71daea0ecc53fe21c7
 workflow-type: tm+mt
 source-wordcount: '2023'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 
@@ -59,7 +59,7 @@ ht-degree: 96%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 索引鍵:**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 索引鍵:**<br/> media.ad.podPosition </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始、廣告關閉 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值：**<br/> 1 </li><li> **說明:**<br/>&#x200B;上層廣告插播內的廣告位置 (索引)。第一個廣告索引為 0，第二個廣告索引為 1，以此類推。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>podPosition) </li> <li> **心率：**<br/> (<code>s:asset:pod_position</code>) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/> Pod 位置中的廣告 </li> <li> **內容資料:**<br/> (a.media.ad.<br/>podPosition) </li> <li> **資料摘要:**<br/> videoadinpod </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.podPosition) </li> <li> **XDM 欄位路徑:**<br/> advertising.adAssetViewDetails.index </li> <li> **集合 XDM 欄位路徑:**<br/> mediaCollection.advertisingDetails.index </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.advertisingDetails.index </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 索引鍵:**<br/> media.ad.podPosition </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始、廣告關閉 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值：**<br/> 1 </li><li> **說明:**<br/>&#x200B;上層廣告插播內的廣告位置 (索引)。第一個廣告索引為 0，第二個廣告索引為 1，以此類推。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>podPosition) </li> <li> **心率：**<br/> (<code>s:asset:pod_position</code>) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/> Pod 位置中的廣告 </li> <li> **內容資料:**<br/> (a.media.ad.<br/>podPosition) </li> <li> **資料摘要:**<br/> videoadinpod </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.podPosition) </li> <li> **XDM 欄位路徑:**<br/> advertising.adAssetViewDetails.index </li> <li> **集合XDM欄位路徑：**<br/> mediaCollection.advertisingDetails.podPosition </li> <li> **報告XDM欄位路徑：**<br/> mediaReporting.advertisingDetails.podPosition </li> </ul> |
 
 
 
@@ -91,7 +91,7 @@ ht-degree: 96%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 索引鍵:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API 索引鍵:**<br/> media.ad.podPosition </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值：**<br/> 1 </li><li> **說明:**<br/>&#x200B;內容內從 1 開始的廣告插播索引。此屬性&#x200B;**僅**&#x200B;由 Media SDK 用於產生 Pod ID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率:**<br/> </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;否 </li> <li> **預留變數:**<br/>&#x200B;不適用 </li> <li> **報表名稱:**<br/>&#x200B;不適用 </li> <li> **內容資料：**<br/> </li> <li> **資料摘要:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> </li> <li> **XDM 欄位路徑:**<br/> advertising.adAssetViewDetails.index </li> <li> **集合 XDM 欄位路徑:**<br/> mediaCollection.advertisingPodDetails.index </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **API索引鍵：**<br/> media.ad.podIndex </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;數字 </li> <li> **伴隨傳送:**<br/> </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值：**<br/> 1 </li><li> **說明:**<br/>&#x200B;內容內從 1 開始的廣告插播索引。此屬性&#x200B;**僅**&#x200B;由 Media SDK 用於產生 Pod ID。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> </li> <li> **心率:**<br/> </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;否 </li> <li> **預留變數:**<br/>&#x200B;不適用 </li> <li> **報表名稱:**<br/>&#x200B;不適用 </li> <li> **內容資料：**<br/> </li> <li> **資料摘要:**<br/>&#x200B;不適用 </li> <li> **Audience Manager:**<br/> </li> <li> **XDM 欄位路徑:**<br/> advertising.adAssetViewDetails.index </li> <li> **集合 XDM 欄位路徑:**<br/> mediaCollection.advertisingPodDetails.index </li> </ul> |
 
 
 
