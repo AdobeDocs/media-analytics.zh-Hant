@@ -1,6 +1,6 @@
 ---
 title: 媒體串流區段解釋
-description: 了解與媒體資料流類型相關的報告區段，包括媒體資料流類型的區段、說明和規則。
+description: 瞭解與媒體資料流型別相關的報告區段，包括媒體資料流型別的區段、說明和規則。
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: "Media Analytics, Segmentation"
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b15a81dc8f08e94c9b80d66019f3d0fe95ef5a74
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 

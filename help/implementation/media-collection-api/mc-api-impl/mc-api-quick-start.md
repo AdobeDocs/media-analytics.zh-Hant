@@ -1,5 +1,5 @@
 ---
-title: 「串流媒體收集 API - 快速入門」
+title: 串流媒體收集API — 快速入門
 description: 開始使用 Streaming Media API。了解如何快速確認您的要求資料。
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

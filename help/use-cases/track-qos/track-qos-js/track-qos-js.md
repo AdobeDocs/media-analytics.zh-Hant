@@ -1,6 +1,6 @@
 ---
 title: 了解如何使用 JavaScript 2.x 追蹤體驗品質
-description: 「了解如何在使用 JavaScript 2.x 的瀏覽器應用程式中使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。」
+description: 瞭解如何在使用JavaScript 2.x的瀏覽器應用程式中使用Media SDK實作體驗品質(QoE、QoS)追蹤。
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
 exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '220'
-ht-degree: 99%
+ht-degree: 90%
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 自訂中繼資料支援
-description: 「了解如何在 sessionStart、chapterStart 和 adStart 事件中提供自訂索引鍵：值配對。」
+description: 瞭解如何在sessionStart、chapterStart和adStart事件中提供自訂索引鍵：值配對。
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '127'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 

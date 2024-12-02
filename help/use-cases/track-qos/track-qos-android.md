@@ -1,6 +1,6 @@
 ---
 title: 了解如何在 Android 上追蹤體驗品質
-description: 「了解如何在 Android 上使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。」
+description: 瞭解如何在Android上使用Media SDK實作體驗品質(QoE、QoS)追蹤。
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 

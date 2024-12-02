@@ -1,6 +1,6 @@
 ---
 title: 設定 Adobe Debug
-description: 「了解如何設定可用來針對 Media SDK 實作進行疑難排解的 Adobe Debug。」
+description: 瞭解如何設定可用來針對Media SDK實作進行疑難排解的Adobe偵錯。
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
 exl-id: 48ad3f23-f36d-44f3-b8d9-b0b3a2ee06bc
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: 串流媒體事件類型和說明
-description: 「什麼是媒體收集事件類型和說明？」
+description: '什麼是媒體收集事件型別和說明？ '
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 

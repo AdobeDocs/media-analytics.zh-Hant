@@ -1,6 +1,6 @@
 ---
 title: 播放器狀態參數
-description: 了解全螢幕、隱藏式字幕、靜音和圖片屬性中的圖片的播放器狀態追蹤參數。
+description: 瞭解全熒幕、隱藏式字幕、靜音和圖片屬性中的圖片的播放器狀態追蹤引數。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
 feature: "Media Analytics, Variables"

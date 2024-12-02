@@ -1,6 +1,6 @@
 ---
 title: 了解如何在 Chromecast 上追蹤體驗品質
-description: 「了解如何在 Chromecast 上使用 Media SDK 實作體驗品質 (QoE、QoS) 追蹤。」
+description: 瞭解如何在Chromecast上使用Media SDK實作體驗品質(QoE、QoS)追蹤。
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 

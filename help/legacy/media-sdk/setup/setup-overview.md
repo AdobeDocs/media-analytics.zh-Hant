@@ -1,6 +1,6 @@
 ---
 title: 說明實作媒體 SDK
-description: 「了解如何在行動裝置、OTT 和瀏覽器 (JS) 應用程式中設定 Media SDK 進行媒體追蹤。」
+description: 瞭解如何在行動裝置、OTT和瀏覽器(JS)應用程式中設定Media SDK進行媒體追蹤。
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 97%
+ht-degree: 94%
 
 ---
 

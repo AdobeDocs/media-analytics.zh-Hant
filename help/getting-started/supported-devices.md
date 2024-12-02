@@ -1,6 +1,6 @@
 ---
 title: 了解支援的裝置和平台
-description: 「瞭解串流媒體收集附加元件支援的主要裝置，例如iOS、Android、OTT裝置和JavaScript瀏覽器。」
+description: 瞭解串流媒體收集附加元件支援的主要裝置，例如iOS、Android、OTT裝置和JavaScript瀏覽器。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin

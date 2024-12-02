@@ -1,6 +1,6 @@
 ---
 title: 廣告參數
-description: 「了解包括廣告影片資料的實施、網路和報表變數的廣告參數。」
+description: 瞭解包括廣告影片資料的實作、網路和報表變數的廣告引數。
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 feature: Media Analytics

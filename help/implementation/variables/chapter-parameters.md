@@ -1,6 +1,6 @@
 ---
 title: 章節參數
-description: 了解有關實施、網路和報表的章節參數。
+description: 瞭解實施、網路和報表的章節引數。
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 019d2381eebb0eff92f1cd2a4e6246c6df2f0c28
 workflow-type: tm+mt
 source-wordcount: '1140'
-ht-degree: 96%
+ht-degree: 95%
 
 ---
 

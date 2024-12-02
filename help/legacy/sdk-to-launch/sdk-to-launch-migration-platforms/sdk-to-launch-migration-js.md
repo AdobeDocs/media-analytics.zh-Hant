@@ -1,5 +1,5 @@
 ---
-title: "從獨立 Media SDK 移轉至 Adobe Launch - Web (JS)"
+title: 從獨立Media SDK移轉至Adobe Launch - Web (JS)
 description: 了解如何從 Media SDK 移轉至 JS 版的 Launch。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 73ef5e55c9ab57a5a2ba22aa1e4b646c530cc53f
 workflow-type: tm+mt
 source-wordcount: '415'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
