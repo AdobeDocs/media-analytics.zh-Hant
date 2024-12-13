@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '617'
 ht-degree: 94%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 ## 一般實作指引 {#general-implementation-guidelines}
 
-使用串流媒體收集附加元件進行追蹤時，會使用三個主要的SDK元件：
+使用串流媒體收集進行追蹤時，會使用三個主要的SDK元件：
 * 媒體心率設定 - `MediaHeartbeatConfig` 包含報表的基本設定。
 * 媒體心率代理人 - `MediaHeartbeatDelegate` 可控制播放時間和 QoS 物件。
 * 媒體心率 - `MediaHeartbeat` 是包含成員與方法的主要程式庫。

@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 1375fb3260d5c4ca703827b3d73174f4e475f76d
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 93%
+source-wordcount: '664'
+ht-degree: 94%
 
 ---
 
@@ -16,15 +16,15 @@ ht-degree: 93%
 
 ## 先決條件 {#roku-prerequisites}
 
-* **取得適用於串流媒體集合附加元件的有效設定引數**
+* **取得適用於串流媒體集合的有效設定引數**
 
-  設定Adobe串流媒體收集附加帳戶後，即可從Adobe代表取得這些引數。
+  設定Adobe串流媒體收集帳戶後，即可從Adobe代表取得這些引數。
 * **在您的媒體播放器中包含以下 API**
 
    * _訂閱播放器事件專用的 API_ - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * _提供播放器資訊的 API_ - 此資訊包含媒體名稱和播放點位置等詳細內容。
 
-Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScript 中撰寫的 Roku 應用程式、透過對象管理利用和收集觀眾資料，以及透過視訊事件測量視訊參與。
+Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScript 中撰寫的 Roku 應用程式、透過客群管理利用和收集觀眾資料，以及透過視訊事件測量視訊參與。
 
 ## Mobile Library/SDK 實作
 

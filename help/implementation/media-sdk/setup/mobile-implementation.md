@@ -4,16 +4,16 @@ description: 了解如何為行動應用程式實作 Adobe Streaming Media。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 81%
+source-wordcount: '197'
+ht-degree: 82%
 
 ---
 
 # 安裝 Mobile SDK {#install-mobile-sdks}
 
-若要在Android或iOS上實作適用於行動應用程式的串流媒體收集附加元件，請安裝和設定下列專案：
+若要在Android或iOS上實作適用於行動應用程式的串流媒體收集，請安裝和設定下列專案：
 
 * **Adobe Experience Platform Mobile SDK**
 

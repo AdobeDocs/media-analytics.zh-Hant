@@ -1,27 +1,27 @@
 ---
-title: 使用Edge Network實作串流媒體收集附加元件
-description: 瞭解如何使用Experience PlatformEdge實作串流媒體收集附加元件。
+title: 使用Edge Network實作串流媒體收集
+description: 瞭解如何使用Experience PlatformEdge實作串流媒體收集。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2146'
 ht-degree: 8%
 
 ---
 
-# 使用Edge Network實作串流媒體收集附加元件
+# 使用Edge Network實作串流媒體收集
 
 Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品的資料傳送到一個集中位置。Experience Edge 會將適當的資訊轉送給所需的產品。 此概念可讓您整合實施工作，特別是橫跨多個資料解決方案時。
 
-下圖說明如何實作Adobe串流媒體收集附加元件，以使用Experience Platform Edge在Adobe Analytics或Customer Journey Analytics中讓資料可在Analysis Workspace中使用：
+下圖說明如何實作Adobe串流媒體收集，以使用Experience PlatformEdge在Analysis Workspace中提供資料(在Adobe Analytics或Customer Journey Analytics中)：
 
 ![CJA 工作流程](assets/streaming-media-edge.png)
 
-如需所有實作選項的概觀，包括不使用Experience PlatformEdge的實作方法，請參閱[實作串流媒體收集附加元件](/help/implementation/overview.md)。
+如需所有實作選項的概觀，包括不使用Experience PlatformEdge的實作方法，請參閱[實作串流媒體收集](/help/implementation/overview.md)。
 
-無論您是使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK或API來透過Experience Edge實作串流媒體收集附加元件，您都必須先完成下列章節：
+無論您使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK或API來使用Experience Edge實作串流媒體收集，您都必須先完成下列章節：
 
 ## 在Adobe Experience Platform中設定結構
 
@@ -179,7 +179,7 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
      ![Media Analytics選項](assets/datastream-media-check.png)
 
-1. 您現在已準備好實作[Media Edge API](/help/implementation/edge/implementation-edge-api.md)或[Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)，以開始收集媒體分析資料。
+1. 您現在已準備好實作[Media Edge API](/help/implementation/edge/implementation-edge-api.md)或[Media Edge SDK](/help/implementation/edge/edge-mobile-sdk.md)以開始收集媒體分析資料。
 
    收集一些資料之後，您可以[在Customer Journey Analytics](#create-a-connection-in-customer-journey-analytics)中建立連線。
 
@@ -193,7 +193,7 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
 1. 在Customer Journey Analytics中建立連線，如[建立連線](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hant)中所述。
 
-   建立連線時，實作串流媒體收集附加元件需要下列設定選擇：
+   建立連線時，實作串流媒體收集需要下列設定選項：
 
    1. 選取您先前建立的資料集，如[在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform)中所述。
 
@@ -211,7 +211,7 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
 1. 在Customer Journey Analytics中，依照[建立或編輯資料檢視](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hant)中的說明建立資料檢視。
 
-   建立資料檢視時，實作串流媒體收集附加元件需要以下設定選擇：
+   建立資料檢視時，實施串流媒體收集需要以下設定選擇：
 
    1. 在&#x200B;[!UICONTROL **連線**]&#x200B;欄位中，選取您先前建立的連線，如[在Customer Journey Analytics中建立連線](#create-a-connection-in-customer-journey-analytics)中所述。
 
@@ -347,11 +347,11 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
 根據您要傳送至Experience PlatformEdge的資料型別，您可以使用下列任一方法：
 
-### Web：使用Adobe Experience Platform Web SDK
+### 網路：使用Adobe Experience Platform網路SDK
 
 * [快速入門](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
-* [使用Adobe Experience Platform Web SDK傳送Web資料至Edge](/help/implementation/edge/edge-web-sdk.md)
+* [使用Adobe Experience Platform Web SDK將網頁資料傳送至Edge](/help/implementation/edge/edge-web-sdk.md)
 
 * [移轉至Adobe串流媒體，以使用Edge Network延伸模組](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
@@ -365,7 +365,7 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
 * [移轉至Adobe串流媒體，以使用Edge Network延伸模組](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
-### Roku：Adobe Experience Platform Roku SDK
+### Roku： Adobe Experience Platform Roku SDK
 
 * [快速入門](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 

@@ -5,16 +5,16 @@ uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 97%
 
 ---
 
 # 設定 Chromecast 適用的 Mobile SDK v3.x {#set-up-chromecast}
 
-本節說明為串流媒體收集附加元件設定Chromecast安裝的先決條件。
+本節說明為串流媒體收集設定Chromecast安裝的先決條件。
 
 ## 先決條件
 
@@ -28,7 +28,7 @@ ht-degree: 97%
 
 Adobe Mobile Services 提供的新使用者介面，將 Adobe Marketing Cloud 適用於行動應用程式的各項行動行銷功能整合在一起。Mobile 服務起初是提供 Adobe Analytics 和 Adobe Target 解決方案的應用程式分析和定位功能流暢整合。如需詳細資訊，請參閱 [Adobe Mobile Services 文件](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=zh-Hant)。
 
-Experience Cloud 解決方案適用的 Chromecast v3.x Adobe Mobile Library 可讓您測量在 JavaScript 中撰寫的 Chromecast 應用程式、透過對象管理利用和收集對象資料，以及測量視訊參與。
+Experience Cloud 解決方案適用的 Chromecast v3.x Adobe Mobile Library 可讓您測量在 JavaScript 中撰寫的 Chromecast 應用程式、透過客群管理利用和收集客群資料，以及測量視訊參與。
 
 ## Mobile Library/SDK 實作
 

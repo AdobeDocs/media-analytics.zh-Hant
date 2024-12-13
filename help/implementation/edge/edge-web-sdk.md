@@ -1,17 +1,17 @@
 ---
-title: 使用Adobe Experience Platform Web SDK傳送Web資料至Edge
-description: 瞭解如何使用Adobe Experience Platform Web SDK傳送Adobe串流媒體資料至Experience Platform Edge。
+title: 使用Adobe Experience Platform Web SDK將網頁資料傳送至Edge
+description: 瞭解如何透過Adobe Experience Platform Web SDK將Adobe串流媒體資料傳送至Experience Platform Edge。
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
 
-# 使用Adobe Experience Platform Web SDK傳送Web資料至Edge
+# 使用Adobe Experience Platform Web SDK將網頁資料傳送至Edge
 
 從2.20.0版開始，Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的`streamingMedia`元件可讓您收集與網站上的媒體工作階段相關的資料。 收集的資料可包括關於媒體播放、暫停、完成和其他相關事件的資訊。
 
@@ -23,20 +23,20 @@ ht-degree: 0%
 
 若要使用Web SDK的`streamingMedia`元件，您必須符合下列必要條件：
 
-* 在將串流媒體資料傳送到Edge之前，請先完成[使用Experience PlatformEdge安裝串流媒體收集附加元件](/help/implementation/edge/implementation-edge.md)中的步驟。
+* 在將串流媒體資料傳送到Edge之前，請先完成[使用Experience PlatformEdge安裝串流媒體集合](/help/implementation/edge/implementation-edge.md)中的步驟。
 * 確保您有權存取Adobe Experience Platform和/或Adobe Analytics。
-* 您必須使用Web SDK 2.20.0版或更新版本。 請參閱[Web SDK安裝概述](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)，瞭解如何安裝最新版本。
+* 您必須使用Web SDK 2.20.0版或更新版本。 請參閱[網頁SDK安裝概觀](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)，瞭解如何安裝最新版本。
 * 為您使用的資料流啟用&#x200B;**[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)**&#x200B;選項。
 * 確定您的資料流使用的結構描述包含媒體收集結構描述欄位。
-* 透過[標籤擴充功能](#tag-extension)或透過[JavaScript資料庫](#library)設定Web SDK組態的串流媒體功能（如本頁所示）。
+* 在網頁SDK設定中設定串流媒體功能，如本頁所示，透過[標籤擴充功能](#tag-extension)或透過[JavaScript資料庫](#library)進行。
 
-請依照本頁所述的步驟，將您的串流媒體收集附加元件實作從Media JS移轉至Web SDK。
+請依照本頁所述的步驟，將您的串流媒體收集實作從Media JS移轉至Web SDK。
 
 ### 步驟1：安裝Experience Platform Web SDK
 
 請參閱[專屬檔案](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/install/overview)，瞭解如何在您的Web屬性上安裝Web SDK。
 
-### 步驟2：設定Web SDK `streamingMedia`元件。
+### 步驟2：設定網頁SDK `streamingMedia`元件。
 
 **範例**
 
@@ -54,7 +54,7 @@ mediaConfig.ssl = true;
 ADB.Media.configure(mediaConfig, appMeasurement);
 ```
 
-而是必須在Web SDK中設定`streamingMedia`元件，如下例所示。
+您而是必須在Web SDK中設定`streamingMedia`元件，如下例所示。
 
 ```js
 alloy("configure", {
@@ -68,9 +68,9 @@ alloy("configure", {
 });
 ```
 
-如需如何設定的完整詳細資訊，請參閱Web SDK `streamingMedia`元件[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
+如需如何設定的完整詳細資訊，請參閱網頁SDK `streamingMedia`元件[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
 
-### 步驟3：從Media JS SDK移轉時取得媒體追蹤器例項
+### 步驟3：從Media JS SDK移轉時取得Media追蹤器例項
 
 對於使用Media JS SDK的客戶，Web SDK提供從Media JS SDK移轉至Web SDK的移轉路徑，同時支援現有的Media JS功能，例如處理媒體事件。
 

@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 串流媒體收集附加元件
+user-guide-title: 串流媒體收集
 breadcrumb-title: 串流媒體收集指南
 user-guide-description: 實作串流媒體。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '893'
 ht-degree: 96%
 
 ---
 
 
-# 串流媒體收集附加元件 {#using}
+# 串流媒體收集 {#using}
 
 + [串流媒體收集指南](media-overview.md)
 + 發行說明 {#release-notes}
-   + [流媒體收集發行說明](additional-resources/release-notes.md)
+   + [串流媒體收集發行說明](additional-resources/release-notes.md)
 + 快速入門 {#getting-started}
    + [先決條件](getting-started/prereqs.md)
    + [支援裝置](getting-started/supported-devices.md)
-   + [流媒體收集實施文檔](getting-started/implementation-documentation.md)
+   + [串流媒體收集實施檔案](getting-started/implementation-documentation.md)
    + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
    + 終止支援 {#end-of-support}
       + [Media Analytics Mobile SDK 終止支援](additional-resources/end-of-support-faqs.md)
@@ -77,7 +77,7 @@ ht-degree: 96%
 + 報表 {#media-reports}
    + [啟用媒體報表](reporting/media-reports-enable.md)
    + Workspace 中的媒體面板 {#media-workspace-panels}
-      + [「媒體平均每分鐘對象數」面板](reporting/workspace/average-minute-audience.md)
+      + [「平均分鐘觀眾數」面板](reporting/workspace/average-minute-audience.md)
       + [「媒體同時檢閱者」面板](reporting/workspace/media-concurrent-viewers-overview.md)
       + [「媒體播放時間」面板](reporting/workspace/media-playback-time-spent.md)
    + [Workspace 中的媒體報表](reporting/workspace/media-workspace-templates.md)
@@ -104,8 +104,8 @@ ht-degree: 96%
    + [在播放期間處理應用程式中斷狀況](use-cases/cookbook/app-interrupts.md)
    + [媒體串流歸因](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [繼續非作用中工作階段](use-cases/cookbook/resuming-inactive.md)
-   + [SceneGraph 中的 Roku 追蹤](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [處理廣告之間的差距](use-cases/cookbook/fix-ad-play-ad.md)
+   + [SceneGraph中的Roku追蹤](use-cases/cookbook/sdk-track-scenegraph.md)
+   + [處理廣告之間的間隙](use-cases/cookbook/fix-ad-play-ad.md)
    + 時間軸 {#timelines}
       + [章節開始和結束](use-cases/timelines/chapter-start-end.md)
       + [檢視到內容結束](use-cases/timelines/view-to-end-of-content.md)

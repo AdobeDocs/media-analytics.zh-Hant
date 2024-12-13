@@ -1,23 +1,23 @@
 ---
-title: 瞭解Adobe串流媒體收集附加元件的先決條件
-description: 開始使用串流媒體收集附加元件。 瞭解實作所需的專案。
+title: 瞭解Adobe串流媒體收集的先決條件
+description: 開始使用串流媒體收集。 瞭解實作所需的專案。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 62%
+source-wordcount: '428'
+ht-degree: 64%
 
 ---
 
 # 先決條件 {#prerequisites}
 
-開始實作Adobe串流媒體收集附加元件之前，請完成以下工作：
+開始實作Adobe串流媒體收集之前，請完成以下工作：
 
-1. **檢閱串流媒體收集附加元件概觀**<br>
-在開始實作串流媒體收集附加元件之前，請先檢閱[串流媒體收集附加元件概觀](/help/media-overview.md)，確定它符合您的需求。
+1. **檢閱串流媒體集合概觀**<br>
+開始實作串流媒體收集之前，請先檢閱[串流媒體收集概觀](/help/media-overview.md)，確認它符合您的需求。
 
 1. **確認您的定價模式**<br>
 Adobe串流媒體收集附加元件目前的定價模型是以視訊串流為基礎。 如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為此附加元件是針對Adobe Analytics和Adobe Experience Platform分開銷售。
@@ -27,7 +27,7 @@ Adobe串流媒體收集附加元件目前的定價模型是以視訊串流為基
 
 1. **在 Experience Cloud 中實作 Adobe Experience Platform 身分識別服務**
 
-   **Identity 服務**&#x200B;可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和對象啟用共同的識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
+   **身分服務**&#x200B;可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和客群啟用共同的身分識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
 
    ![ID 服務圖形](assets/mc_id_service_graphic.png)
 
@@ -41,7 +41,7 @@ Adobe串流媒體收集附加元件目前的定價模型是以視訊串流為基
 
 1. **檢視您的實作的其他先決條件**
 
-   根據您計畫實作串流媒體收集附加元件的方式，檢視下列任一實作方法的先決條件：
+   根據您計畫實作串流媒體收集的方式，檢視下列任一實作方法的先決條件：
 
    * [僅實作 Adob&#x200B;&#x200B;e Analytics 的先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

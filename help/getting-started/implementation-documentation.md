@@ -5,16 +5,16 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 45%
+source-wordcount: '256'
+ht-degree: 46%
 
 ---
 
-# 串流媒體收集附加元件實施檔案 {#streaming-media-documentation}
+# 串流媒體收集實施檔案 {#streaming-media-documentation}
 
-串流媒體收集附加元件的檔案位於多個產品網站。 根據您實作串流媒體收藏集的方式，您可能需要參考一個或多個檔案集。
+串流媒體集合的檔案位於多個產品網站。 根據您實作串流媒體收藏集的方式，您可能需要參考一個或多個檔案集。
 
 使用下表中的資訊找出所選實作方法的文件。
 
@@ -23,13 +23,13 @@ ht-degree: 45%
 | 實作 | 文件 |
 |:-----------------------:|----------------|
 | **Web** | * [使用Adobe Experience Platform Web SDK將Web資料傳送至Edge](/help/implementation/edge/edge-web-sdk.md) <br> * [串流媒體Web實作](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [使用Adobe Medium Analytics for Audio and Video擴充功能的Web實作](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant) |
-| **Mobile** | * [透過Adobe Experience Platform Mobile SDK將行動資料傳送至Edge](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform Mobile SDK指南](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Medium Analytics for Audio and Video擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[目前Mobile SDK版本](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[串流媒體的Mobile實作](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
-| **OTT** | *[Adobe Marketing Cloud解決方案適用的Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[設定Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[設定Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| **Mobile** | * [使用Edge行動版SDK將行動資料傳送至Adobe Experience Platform](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform行動版SDK指南](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Medium Analytics for Audio and Video擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[目前行動版SDK](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[串流媒體行動實施](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **OTT** | *[適用於Adobe Marketing Cloud解決方案的Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[設定Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[設定Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API** | *[Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## 其他檔案 {#additional-documentation}
 
-下表列出與串流媒體收集附加元件搭配使用的Adobe產品的相關檔案。
+下表列出與串流媒體收集搭配使用的Adobe產品的相關檔案。
 
 | 產品 | 文件 |
 |:-----------------------:|----------------|
