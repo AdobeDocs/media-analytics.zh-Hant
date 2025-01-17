@@ -4,25 +4,25 @@ description: 了解如何實作播放器狀態追蹤功能，包括
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 78%
 
 ---
 
 # 實作與報告
 
-在播放工作階段期間，每個狀態發生 (從開始到結束) 都必須個別追蹤。Media SDK 和 Media Collection API 為此功能提供新的追蹤方法。
+在播放工作階段期間，每個狀態發生 (從開始到結束) 都必須個別追蹤。Media SDK和Media Collection API提供此功能的追蹤方法。
 
-Media SDK 提供兩種新的自訂狀態追蹤方法：
+Media SDK包含兩種自訂狀態追蹤方法：
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-媒體收集 API 提供兩種含必要參數 `media.stateName` 的新事件：
+Media Collection API包含兩個以`media.stateName`作為必要引數的事件：
 
 `stateStart` 與 `stateEnd`
 
@@ -91,11 +91,11 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## 報表
 
-在播放器狀態追蹤啟用報表套裝後，所有的播放器狀態量度，均可用來產生任何可在 Analysis Workspace 中使用的視覺化報表或元件 (區段、計算量度)。您可以使用「媒體報表設定」(「編輯設定 > 媒體管理 > 媒體報表」)，在 Admin Console 中針對每個個別報表啟用新量度。
+在播放器狀態追蹤啟用報表套裝後，所有的播放器狀態量度，均可用來產生任何可在 Analysis Workspace 中使用的視覺化報表或元件 (區段、計算量度)。您可以使用「媒體報表設定」（「編輯設定>媒體管理>媒體報表」），從Admin Console為每個個別報表啟用這些量度。
 
 ![](assets/report-setup.png)
 
-在 Analytics Workspac 中，所有新屬性都位於量度面板中。例如，您可以依 `full screen` 搜尋，在量度面板中檢視全螢幕資料。
+在Analysis Workspace中，所有新屬性都位於「量度」面板中。 例如，您可以依 `full screen` 搜尋，在量度面板中檢視全螢幕資料。
 
 ![](assets/full-screen-report.png)
 

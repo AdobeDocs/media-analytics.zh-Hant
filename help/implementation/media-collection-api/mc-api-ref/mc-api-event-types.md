@@ -5,10 +5,10 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+source-git-commit: 98722998606af3761652e282c31338bb966eb654
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 85%
+source-wordcount: '394'
+ht-degree: 79%
 
 ---
 
@@ -90,3 +90,15 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 >[!IMPORTANT]
 >
 >若要驗證事件參數類型和需求是否正確，請參考 [JSON 驗證結構](mc-api-json-validation.md)以瞭解每種事件類型。
+
+## stateStart
+
+代表播放器狀態追蹤已開始。
+
+如需詳細資訊，請參閱[實作與報告](/help/use-cases/player-state-tracking/implementation-and-reporting.md)。
+
+## stateEnd
+
+代表播放器狀態追蹤的結尾。
+
+如需詳細資訊，請參閱[實作與報告](/help/use-cases/player-state-tracking/implementation-and-reporting.md)。
