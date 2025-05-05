@@ -23,7 +23,7 @@ ht-degree: 10%
    * [Customer Journey Analytics 指南](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant)
    * [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)
    * [Adobe Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)
-   * [Real-time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [Real-time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hant)
 
 1. **取得媒體追蹤伺服器URL**<br>
 請向您的Customer Journey Analytics代表詢問媒體追蹤伺服器URL。<!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->
