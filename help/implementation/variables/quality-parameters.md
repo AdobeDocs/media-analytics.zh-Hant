@@ -5,7 +5,7 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: ebabbe52fe673e3fb6f13da40bbc3c87aef1c7bd
+source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
 workflow-type: tm+mt
 source-wordcount: '3314'
 ht-degree: 90%
@@ -185,7 +185,7 @@ ht-degree: 90%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 索引鍵:**<br/> 自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值:**<br/> TRUE </li><li> **說明:**<br/>&#x200B;使用者在開始前結束影片的次數。只有在未轉譯任何內容 (不論是否為廣告) 時，此度量才會設為 1。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **心率：**<br/> (<code>s:event:</code><br/>type=aa_start) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;開始前掉格 </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **資料摘要：**<br/> videoqoedropbeforestart </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM欄位路徑：** （已棄用）<br/>media.mediaTimed.primaryAssetViewDetails。<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot;</li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/> 自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;否 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/> 媒體關閉 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值:**<br/> TRUE </li><li> **說明:**<br/>&#x200B;使用者在開始前結束影片的次數。只有在未轉譯任何內容 (不論是否為廣告) 時，此度量才會設為 1。  </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **心率：**<br/> (<code>s:event:</code><br/>type=aa_start) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;開始前掉格 </li> <li> **內容資料:**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **資料摘要：**<br/> videoqoedropbeforestart </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **XDM欄位路徑：** （已棄用）<br/>media.mediaTimed.dropBeforeStarts。<br/>value >= 1 => &quot;TRUE&quot;</li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.qoeDataDetails.<br/>isDroppedBeforeStart </li> </ul> |
 
 
 
