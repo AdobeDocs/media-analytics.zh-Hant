@@ -3,9 +3,9 @@ title: 了解從里程碑移轉至自訂連結
 description: 了解如何將里程碑變數變更為自訂連結以及如何將里程碑模組方法變更為自訂連結語法。
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 100%
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # 從里程碑移轉至自訂連結{#migrating-from-milestone-to-custom-link}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
 「里程碑」和「自訂連結」追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。「自訂連結」方法應視為同時減少及簡化實作和收集的資料。使用「自訂連結」解決方案，不會預先定義影片測量的變數或方法，須完全自訂。應可更新播放器事件程式碼，以顯示可能有基本播放器事件 (如開始和結束) 的自訂連結追蹤呼叫。如需詳細資訊，請參閱[自訂連結實作指南](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md)。
 
@@ -78,7 +78,7 @@ ht-degree: 100%
 | name | `name`：(必填) 廣告名稱或 ID。 | 不適用 | 無法使用。 |
 | length | `length`：(必填) 廣告長度。 | 不適用 | 無法使用。 |
 | playerName | `playerName`：(必填) 觀看廣告所使用的媒體播放器名稱。 | 不適用 | 無法使用。 |
-| parentName | `parentName`：內嵌廣告所在主要內容的名稱或 ID。 | 不適用 | 無法使用。 |
+| parentName | `parentName`：嵌入廣告所在主要內容的名稱或 ID。 | 不適用 | 無法使用。 |
 | parentPod | `parentPod`：主要內容中播放廣告的位置。 | 不適用 | 無法使用。 |
 | parentPodPosition | `parentPodPosition`：Pod 內播放廣告的位置。 | 不適用 | 無法使用。 |
 | CPM | `CPM`：此播放作業所採用的 CPM 或加密 CPM (首碼為「~」)。 | 不適用 | 無法使用。 |

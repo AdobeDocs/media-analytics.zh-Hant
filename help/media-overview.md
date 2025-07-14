@@ -1,11 +1,11 @@
 ---
 title: Adobe串流媒體收集概觀
-description: 使用串流媒體集合獲取對內容、音訊和廣告的強大見解。
+description: 使用串流媒體集合獲取針對內容、音訊和廣告的強大insight。
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 65%
@@ -16,7 +16,7 @@ ht-degree: 65%
 
 ![橫幅](./assets/media_analytics_banner.png)
 
-Adobe串流媒體收集為串流媒體內容（例如音訊、視訊和串流媒體提供者的廣告）提供強大的收集、測量和個人化工具。 您可以將串流媒體量度與Audience Analytics、行動或跨裝置分析等功能結合。
+Adobe串流媒體收集為串流媒體內容（例如適用於串流媒體提供者的音訊、視訊和廣告）提供強大的收集、測量和個人化工具。 您可以將串流媒體量度與Audience Analytics、Mobile或Cross-Device Analytics等功能結合。
 
 串流媒體資料可輕鬆整合至下列Adobe Experience Platform產品：
 
@@ -68,4 +68,4 @@ Adobe串流媒體收集為串流媒體內容（例如音訊、視訊和串流媒
 >透過 Customer Journey Analytics 實施，可使用 Experience Edge 或使用 Analytics Data Connector (ADC) 將資料傳送至 Customer Journey Analytics。
 
 
-如需各種實作方法的詳細資訊，請參閱[實作Adobe Analytics或Customer Journey Analytics的串流媒體集合](/help/implementation/overview.md)。
+如需各種實作方法的詳細資訊，請參閱[實作Adobe Analytics或Customer Journey Analytics的串流媒體收集](/help/implementation/overview.md)。

@@ -3,9 +3,9 @@ title: 了解媒體追蹤時間軸 - 使用者放棄工作階段
 description: 了解播放點時間軸和視訊工作階段放棄時對應的使用者動作。了解每個動作和要求的詳細資料。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 100%

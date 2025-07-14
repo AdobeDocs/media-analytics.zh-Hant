@@ -2,9 +2,9 @@
 title: 有哪些串流媒體實作路徑可以使用？
 description: 了解 Adobe 串流媒體實作路徑，包括 Adobe Experience Platform 資料收集。
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **此內容已移至目前實作路徑檔案**
 
-不管採取哪個實作路徑，客戶都需連絡他們的銷售代表/Adobe客戶團隊以簽署新的銷售訂單，因為Streaming Media Analytics有獨特的SKU，而且其定價模式從伺服器呼叫型變更為基於視訊資料流。
+不管採取哪個實作路徑，客戶都需連絡他們的銷售代表/Adobe客戶團隊以簽署新的銷售訂單，因為適用於串流媒體的Analytics有唯一的SKU，而且其定價模式從伺服器呼叫型變更為基於視訊資料流。
 
 ## 具有 Adobe Media Analytics 擴充功能的 Adobe Experience Platform 資料收集
 
@@ -33,7 +33,7 @@ Adobe Media Analytics (MA) 擴充功能新增了音訊和視訊的核心 JavaScr
 
 Adobe Data Collection 搭配 Media Analytics 擴充功能使用，須符合以下條件：
 * 您必須是 Adobe Experience Cloud 客戶。
-* 您必須在網頁上部署資料收集或 DTM 內嵌程式碼。
+* 您必須在網頁上部署資料收集或 DTM 嵌入程式碼。
 * [Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant)
 * [Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh=Hant)
 
@@ -51,7 +51,7 @@ Adobe Data Collection 搭配 Media Analytics 擴充功能使用，須符合以�
 
 Adobe Primetime 是 Adobe Experience Cloud 解決方案，可幫助內容程式設計師和經銷商在每個連通螢幕上透過媒體獲利。
 
-Primetime 藉由提供模組化平台以進行視訊發佈、廣告刊登、個人化和分析，消除了各裝置之間的可及範圍、創造營收和啟動全域對象的複雜性。此外，Primetime 也提供了以下解決方案和值：
+Primetime 藉由提供模組化平台以進行視訊發佈、廣告刊登、個人化和分析，消除了各裝置之間的可及範圍、創造營收和啟動全域客群的複雜性。此外，Primetime 也提供了以下解決方案和值：
 
 * 支援準確測量線性和 VOD 內容類型。
 * 支援測量包含 (或不包含) 動態廣告插入的廣告插播。

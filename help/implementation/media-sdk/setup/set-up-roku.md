@@ -3,9 +3,9 @@ title: 如何設定 Roku 的 Media SDK
 description: 請依照這些步驟在 Roku 上設定 Media SDK 應用程式。
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 94%
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 * **取得適用於串流媒體集合的有效設定引數**
 
-  設定Adobe串流媒體收集帳戶後，即可從Adobe代表取得這些引數。
+  設定Adobe串流媒體收集帳戶後，可以向Adobe代表取得這些引數。
 * **在您的媒體播放器中包含以下 API**
 
    * _訂閱播放器事件專用的 API_ - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
@@ -171,4 +171,4 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    | `processMediaMessages` | 負責傳遞媒體事件至要處理的 SDK。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=zh-Hant) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

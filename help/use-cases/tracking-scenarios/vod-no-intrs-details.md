@@ -3,9 +3,9 @@ title: 沒有廣告的 VOD 播放
 description: 檢視追蹤不含任何廣告之 VOD 播放的範例。
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 57b4120518a6fecf6a9751f944d5bd20f04b15fe
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 100%

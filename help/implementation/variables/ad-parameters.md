@@ -3,9 +3,9 @@ title: 廣告參數
 description: 瞭解包括廣告影片資料的實作、網路和報表變數的廣告引數。
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 89%
@@ -37,13 +37,13 @@ ht-degree: 89%
 >[!IMPORTANT]
 >
 >請勿變更下列任何變數的分類名稱，
->其說明以「分類」形式顯示於「報表/保留變數」下方。
->為媒體追蹤啟用報表套裝時，系統會定義
->媒體分類。Adobe 有時會新增屬性，而發生這種情形時，
->客戶必須重新啟用其報表套裝才能存取新的媒體
->屬性。在更新程序期間，Adobe 會檢查
->變數名稱，藉此決定是否啟用分類。如果有任何
->變數名稱遺失，Adobe 會再次新增遺失的項目。
+>>其說明以「分類」形式顯示於「報表/保留變數」下方。
+>>為媒體追蹤啟用報表套裝時，系統會定義
+>>媒體分類。Adobe 有時會新增屬性，而發生這種情形時，
+>>客戶必須重新啟用其報表套裝才能存取新的媒體
+>>屬性。在更新程序期間，Adobe 會檢查
+>>變數名稱，藉此決定是否啟用分類。如果有任何
+>>變數名稱遺失，Adobe 會再次新增遺失的項目。
 
 ## 廣告影片資料 {#ad-video-data}
 
@@ -176,7 +176,7 @@ ht-degree: 89%
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 索引鍵:**<br/> 自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值:**<br/> TRUE </li><li> **說明:**<br/>&#x200B;影片廣告開始數量。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>檢視) </li> <li> **心率：**<br/> (<code>s:event:type=start</code>(<code>s:asset:type=ad<code>)<br/> </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;廣告開始 </li> <li> **資料摘要：**<br/> videoadstart </li> <li> **內容資料:**<br/> (a.media.ad.<br/>檢視) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.view) </li> <li> **XDM欄位路徑：** （已棄用）<br/> advertising.impressions.value > 0 => &quot;TRUE&quot; </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/> 自動設定 </li> <li> **API 索引鍵:**<br/>&#x200B;不適用 </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;字串 </li> <li> **伴隨傳送:**<br/>&#x200B;廣告開始 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值:**<br/> TRUE </li><li> **說明:**<br/>&#x200B;影片廣告開始數量。   </li> </ul> | <ul> <li> **Adobe Analytics:**<br/> (a.media.ad.<br/>檢視) </li> <li> **心率：**<br/> (<code>s:event:type=start</code>(<br/>s<code>type=ad:asset:)<code> </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/>&#x200B;事件 </li> <li> **報表名稱:**<br/>&#x200B;廣告開始 </li> <li> **資料摘要：**<br/> videoadstart </li> <li> **內容資料:**<br/> (a.media.ad.<br/>檢視) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.view) </li> <li> **XDM欄位路徑：** （已棄用）<br/> advertising.impressions.value > 0 => &quot;TRUE&quot; </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.advertisingDetails.isStarted </li> </ul> |
 
 
 

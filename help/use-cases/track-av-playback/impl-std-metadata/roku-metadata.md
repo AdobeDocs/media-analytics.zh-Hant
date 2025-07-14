@@ -3,12 +3,12 @@ title: 說明 Roku 中繼資料索引鍵
 description: 了解可用的 Roku 中繼資料索引鍵，並查看標準中繼資料常數的完整清單。
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 98%
+ht-degree: 91%
 
 ---
 
@@ -76,7 +76,7 @@ ht-degree: 98%
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | 可在 `MediaInfo` `trackLoad` 上設定中繼資料的常數 |
 | `MEDIA_STANDARD_AD_METADATA` | 可在 `EventData` `trackEvent` 上設定廣告中繼資料的常數 |
-| `MEDIA_RESUMED` | 傳送影片繼續心率的常數。如要延續先前暫停內容繼續影片追蹤，您必須在您呼叫 `MEDIA_RESUMED` 時設定在 `mediaInfo` 物件上的 `mediaTrackLoad` 屬性。(`MEDIA_RESUMED` 不是可以使用 `mediaTrackEvent` API 追蹤的事件。)當應用程式想要繼續，以追蹤使用者暫停觀看但現在打算繼續觀看的內容時，應將 `MEDIA_RESUMED` 設定為 true。<br/><br/> 例如，假設使用者觀看了 30% 的內容，然後關閉該應用程式。這會導致作業結束。稍後，如果同一位使用者返回觀看同一個內容，而應用程式允許使用者從中斷的地方繼續，則應用程式應將 `MEDIA_RESUMED` 設定為「true」，同時呼叫 `mediaTrackLoad` API。結果是針對相同影片內容的這兩個不同媒體工作階段可以連結在一起。以下為實作範例： <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>這將會為該影片建立一個新的工作階段，但也會導致 SDK 傳送含有「繼續」事件類型的心率要求，其可用於報表，以將兩個不同的媒體工作階段繫結在一起。 |
+| `MEDIA_RESUMED` | 傳送影片繼續心率的常數。如要延續先前暫停內容繼續影片追蹤，您必須在您呼叫 `MEDIA_RESUMED` 時設定在 `mediaInfo` 物件上的 `mediaTrackLoad` 屬性。（`MEDIA_RESUMED`不是您可以使用`mediaTrackEvent` API追蹤的事件。）當應用程式想要繼續追蹤使用者停止觀看但現在打算繼續觀看的內容時，`MEDIA_RESUMED`應設為true。 <br/><br/> 例如，假設使用者觀看了 30% 的內容，然後關閉該應用程式。這會導致作業結束。稍後，如果同一位使用者返回觀看同一個內容，而應用程式允許使用者從中斷的地方繼續，則應用程式應將 `MEDIA_RESUMED` 設定為「true」，同時呼叫 `mediaTrackLoad` API。結果是針對相同影片內容的這兩個不同媒體工作階段可以連結在一起。以下為實作範例： <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>這將會為該影片建立一個新的工作階段，但也會導致 SDK 傳送含有「繼續」事件類型的心率要求，其可用於報表，以將兩個不同的媒體工作階段繫結在一起。 |
 
 ### 內容類型常數
 

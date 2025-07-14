@@ -2,10 +2,10 @@
 title: 串流媒體實作文件
 description: 了解在何處可以找到有關串流媒體實作的資訊。
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 46%
@@ -22,8 +22,8 @@ ht-degree: 46%
 
 | 實作 | 文件 |
 |:-----------------------:|----------------|
-| **Web** | * [使用Adobe Experience Platform Web SDK將Web資料傳送至Edge](/help/implementation/edge/edge-web-sdk.md) <br> * [串流媒體Web實作](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [使用Adobe Medium Analytics for Audio and Video擴充功能的Web實作](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant) |
-| **Mobile** | * [使用Edge行動版SDK將行動資料傳送至Adobe Experience Platform](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform行動版SDK指南](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Medium Analytics for Audio and Video擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[目前行動版SDK](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[串流媒體行動實施](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **Web** | * [使用Adobe Experience Platform Web SDK將Web資料傳送至Edge](/help/implementation/edge/edge-web-sdk.md) <br> * [串流媒體Web實作](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [使用Adobe Media Analytics for Audio and Video擴充功能進行Web實作](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant) |
+| **Mobile** | * [透過Adobe Experience Platform行動SDK將行動資料傳送至Edge](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Adobe Experience Platform行動SDK指南](https://developer.adobe.com/client-sdks/documentation/) <br> *[Adobe Media Analytics for Audio and Video擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[目前行動SDK版本](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[串流媒體行動實施](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
 | **OTT** | *[適用於Adobe Marketing Cloud解決方案的Chromecast 3.0 SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[設定Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [Adobe Experience Platform Roku SDK](/help/implementation/edge/implementation-edge.md) <br> *[設定Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **Adobe Experience Platform API** | *[Media Collection API](/help/implementation/media-collection-api/mc-api-overview.md) |
 
@@ -34,7 +34,7 @@ ht-degree: 46%
 | 產品 | 文件 |
 |:-----------------------:|----------------|
 | **Adobe Analytics** | *[Adobe Analytics 實作指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)<br>  *[Adobe Analytics 元件指南](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=zh-Hant)<br> *[Adobe Analytics 工具指南](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=zh-Hant)<br> *[Adobe Analytics 教學課程](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hant#tutorials) <br> *[Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Analytics 的 Mobile 實作](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
-| **標記** | [Adobe Experience Platform 標記文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) |
+| **標記** | [Adobe Experience Platform 標記文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) |
 
 ## Adobe 企業教學課程 {#adobe-tutorials}
 

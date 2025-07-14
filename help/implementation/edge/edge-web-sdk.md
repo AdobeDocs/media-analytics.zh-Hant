@@ -1,19 +1,19 @@
 ---
 title: 使用Adobe Experience Platform Web SDK將網頁資料傳送至Edge
-description: 瞭解如何透過Adobe Experience Platform Web SDK將Adobe串流媒體資料傳送至Experience Platform Edge。
-feature: Media Analytics
+description: 瞭解如何使用Adobe Web SDK將Adobe Experience Platform串流媒體資料傳送到Experience Platform Edge。
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '527'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 使用Adobe Experience Platform Web SDK將網頁資料傳送至Edge
 
-從2.20.0版開始，Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)的`streamingMedia`元件可讓您收集與網站上的媒體工作階段相關的資料。 收集的資料可包括關於媒體播放、暫停、完成和其他相關事件的資訊。
+從2.20.0版開始，Adobe Experience Platform `streamingMedia`Web SDK[的](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)元件可讓您收集與網站上的媒體工作階段相關的資料。 收集的資料可包括關於媒體播放、暫停、完成和其他相關事件的資訊。
 
 收集資料後，您可以將其傳送至Adobe Experience Platform及/或Adobe Analytics以產生報表。 此功能提供全方位的解決方案，可追蹤及瞭解您網站上的媒體使用行為。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 若要使用Web SDK的`streamingMedia`元件，您必須符合下列必要條件：
 
-* 在將串流媒體資料傳送到Edge之前，請先完成[使用Experience PlatformEdge安裝串流媒體集合](/help/implementation/edge/implementation-edge.md)中的步驟。
+* 在將串流媒體資料傳送到Edge之前，請先完成[使用Experience Platform Edge安裝串流媒體集合](/help/implementation/edge/implementation-edge.md)中的步驟。
 * 確保您有權存取Adobe Experience Platform和/或Adobe Analytics。
 * 您必須使用Web SDK 2.20.0版或更新版本。 請參閱[網頁SDK安裝概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/install/overview)，瞭解如何安裝最新版本。
 * 為您使用的資料流啟用&#x200B;**[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)**&#x200B;選項。
@@ -68,7 +68,7 @@ alloy("configure", {
 });
 ```
 
-如需如何設定的完整詳細資訊，請參閱網頁SDK `streamingMedia`元件[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
+如需如何設定的完整詳細資訊，請參閱網頁SDK `streamingMedia`元件[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
 
 ### 步驟3：從Media JS SDK移轉時取得Media追蹤器例項
 
@@ -76,7 +76,7 @@ alloy("configure", {
 
 [!DNL Web SDK]包含擷取Media Analytics追蹤器的命令。 您可以使用此命令來建立物件執行個體，然後使用與[Media JS程式庫](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)提供的相同API來追蹤媒體事件。
 
-請參閱[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)檔案，以取得支援方法的完整詳細資料。
+請參閱[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)檔案，以取得支援方法的完整詳細資料。
 
 以下程式碼片段顯示如何在Media JS中擷取媒體追蹤器例項。
 

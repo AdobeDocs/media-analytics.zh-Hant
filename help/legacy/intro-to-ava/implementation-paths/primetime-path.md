@@ -2,9 +2,9 @@
 title: Adobe Primetime 是什麼？
 description: 了解 Adobe Primetime 解決方案，以及此解決方案能如何協助串流媒體營利。
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 82%
@@ -17,7 +17,7 @@ Media Analytics (心率) 是 Adobe 的標準化媒體追蹤解決方案，取代
 
 Adobe Primetime 是 Adobe Experience Cloud 解決方案，可幫助內容程式設計師和經銷商在每個連線的裝置上透過媒體獲利。
 
-Primetime 藉由提供模組化平台以進行媒體發佈、廣告刊登、個人化和分析，消除了各裝置之間的觸及範圍、創造營收和啟動全域對象的複雜性。此外，Primetime 也提供了以下解決方案和值：
+Primetime 藉由提供模組化平台以進行媒體發佈、廣告刊登、個人化和分析，消除了各裝置之間的觸及範圍、創造營收和啟動全域客群的複雜性。此外，Primetime 也提供了以下解決方案和值：
 
 * 支援準確測量線性和 VOD 內容類型。
 * 支援測量包含 (或不包含) 動態廣告插入的廣告插播。

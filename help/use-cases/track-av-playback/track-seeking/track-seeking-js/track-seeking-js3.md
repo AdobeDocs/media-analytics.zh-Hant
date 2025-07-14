@@ -2,9 +2,9 @@
 title: 了解如何使用 JavaScript 3.x 追蹤搜尋
 description: 了解如何在瀏覽器應用程式 (JS 3.x) 中使用 Media SDK 來追蹤搜尋開始和搜尋完成事件。
 exl-id: b7152436-520e-4f38-a8ad-1027ca3f1f6c
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 100%

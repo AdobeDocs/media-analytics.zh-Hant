@@ -3,9 +3,9 @@ title: 在工作階段回應緩慢時將事件加入佇列
 description: 了解當工作階段 ID 在您的播放器觸發事件後傳回時該怎麼做。
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%

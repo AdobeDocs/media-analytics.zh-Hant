@@ -3,9 +3,9 @@ title: 了解如何使用 JavaScript 2.x 追蹤錯誤
 description: 了解如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作錯誤追蹤。
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 100%

@@ -3,9 +3,9 @@ title: 追蹤應用程式狀態
 description: 應用程式狀態是您的應用程式中不同的畫面或檢視。了解如何使用 trackState 呼叫追蹤應用程式中的應用程式狀態。
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 100%

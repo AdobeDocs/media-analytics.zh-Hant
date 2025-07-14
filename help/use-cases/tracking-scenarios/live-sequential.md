@@ -3,9 +3,9 @@ title: 有循序追蹤的即時主要內容
 description: 檢視如何使用 Media SDK 追蹤具有循序追蹤之即時內容的範例。
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%

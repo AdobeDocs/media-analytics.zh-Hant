@@ -3,9 +3,9 @@ title: 了解如何使用 JavaScript 2.x 追蹤緩衝
 description: 了解如何在瀏覽器應用程式 (JS) 中追蹤緩衝事件。
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 100%

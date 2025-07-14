@@ -3,9 +3,9 @@ title: 串流媒體收集 API - 事件要求端點
 description: 什麼是Media Collection API事件要求端點引數和回應？
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '262'
 ht-degree: 95%
@@ -49,7 +49,7 @@ ht-degree: 95%
 
 >[!IMPORTANT]
 >
->***廣告追蹤 -**&#x200B;您只能追蹤`adBreak`* 內的廣告。
+>***廣告追蹤 -**您只能追蹤`adBreak`* 內的廣告。
 >
 >如果廣告周圍缺少 `adBreakStart` 和 `adBreakComplete`「書擋」，系統將會忽略 `adStart` 和 `adComplete` 事件，並將對應的廣告持續時間視為主要內容持續時間來追蹤。這可能會對 Adobe Analytics 提供的彙總資料產生重大影響。
 

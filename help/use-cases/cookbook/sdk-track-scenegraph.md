@@ -3,9 +3,9 @@ title: 使用 SceneGraph (Roku) 進行追蹤
 description: 了解如何使用 Roku SceneGraph XML 程式設計架構追蹤媒體。
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%
@@ -87,11 +87,11 @@ Adobe Mobile SDK for Roku 是以 BrightScript 編寫。此 SDK 有許多元件�
 |  | 如需更多資訊，請參閱舊版 SDK 的「Experience Cloud」一節。 | |
 |  | | |
 | **Audience Manager** | | |
-|  | `audienceSubmitSignal` | SceneGraph API 使用特徵傳送對象管理訊號。 |
-|  | `audienceVisitorProfile` | SceneGraph API 可從 ADBMobile SDK 取得 Audience Manager 訪客設定檔。 |
-|  | `audienceDpid` | SceneGraph API 可從 ADBMobile SDK 取得對象 Dpid。 |
-|  | `audienceDpuuid` | SceneGraph API 可從 ADBMobile SDK 取得對象 Dpuuid。 |
-|  | `audienceSetDpidAndDpuuid` | SceneGraph API 可在 ADBMobile SDK 上設定對象 Dpid 和 Dpuuid。 |
+|  | `audienceSubmitSignal` | SceneGraph API 使用特徵傳送客群管理訊號。 |
+|  | `audienceVisitorProfile` | SceneGraph API 可從 ADBMobile SDK 取得 Audience Manager 訪客輪廓。 |
+|  | `audienceDpid` | SceneGraph API 可從 ADBMobile SDK 取得客群 Dpid。 |
+|  | `audienceDpuuid` | SceneGraph API 可從 ADBMobile SDK 取得客群 Dpuuid。 |
+|  | `audienceSetDpidAndDpuuid` | SceneGraph API 可在 ADBMobile SDK 上設定客群 Dpid 和 Dpuuid。 |
 |  | 如需更多資訊，請參閱舊版 SDK 的「Audience Manager」一節。 | |
 |  | | |
 | **MediaHeartbeat** | | |

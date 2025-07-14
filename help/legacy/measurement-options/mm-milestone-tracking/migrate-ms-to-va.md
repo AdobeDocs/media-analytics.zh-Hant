@@ -3,9 +3,9 @@ title: 了解如何從里程碑移轉至 Media Analytics
 description: 了解如何將里程碑變數變更為 Media Analytics 量度以及如何將里程碑模組方法變更為 Media Analytics 語法。
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 96%
@@ -14,9 +14,9 @@ ht-degree: 96%
 
 # 從里程碑移轉至 Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## 總覽 {#overview}
+## 概觀 {#overview}
 
-「里程碑」和 Media Analytics 追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實作 Media Analytics 的詳細資訊，請參閱 [SDK 總覽](/help/legacy/setup/legacy-setup-overview.md)和[追蹤總覽](/help/use-cases/track-av-playback/track-core-overview.md)。
+「里程碑」和 Media Analytics 追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。Media Analytics 解決方案源自「里程碑」，因此許多方法和量度相同，但設定方式和程式碼則大有不同。應可更新播放器事件程式碼，顯示可能有新 Media Analytics 方法。如需實作 Media Analytics 的詳細資訊，請參閱 [SDK 概觀](/help/legacy/setup/legacy-setup-overview.md)和[追蹤概觀](/help/use-cases/track-av-playback/track-core-overview.md)。
 
 下列表格為「里程碑」解決方案和 Media Analytics 解決方案的對照表。
 
@@ -79,7 +79,7 @@ ht-degree: 96%
 | name | `name`：(必填) 廣告名稱或 ID。 | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length`：(必填) 廣告長度。 | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName`：(必填) 觀看廣告所使用的媒體播放器名稱。 | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName | `parentName`：內嵌廣告所在主要內容的名稱或 ID。 | 不適用 | 自動繼承。 |
+| parentName | `parentName`：嵌入廣告所在主要內容的名稱或 ID。 | 不適用 | 自動繼承。 |
 | parentPod | `parentPod`：主要內容中播放廣告的位置。 | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
 | parentPodPosition | `parentPodPosition`：Pod 內播放廣告的位置。 | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | CPM | `CPM`：此播放作業所採用的 CPM 或加密 CPM (首碼為「~」)。 | 不適用 | 預設為不提供 Media Analytics。 |

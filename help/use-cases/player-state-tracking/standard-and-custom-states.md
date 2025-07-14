@@ -2,9 +2,9 @@
 title: 標準和自訂狀態簡介
 description: 了解播放器狀態追蹤功能，包括實作和報告標準與自訂播放器狀態的要求與準則。
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 99%

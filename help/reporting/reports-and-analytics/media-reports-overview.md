@@ -1,20 +1,20 @@
 ---
-title: 媒體總覽
-description: 使用「媒體總覽」儀表板來顯示彙總的測量資料。 了解如何快速地監控媒體效能。
+title: 媒體概觀
+description: 使用「媒體概觀」儀表板來顯示彙總的測量資料。 了解如何快速地監控媒體效能。
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: "Media Analytics, Reports & Analytics Basics"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 100%
 
 ---
 
-# 媒體總覽{#media-overview}
+# 媒體概觀{#media-overview}
 
-「媒體總覽」控制面板的設計可讓您監視網站上的各個媒體。「媒體總覽」畫面會顯示數個彙總測量，供您快速監測媒體是否如預期般執行。圖形會在廣告開始旁顯示內容開始，讓您快速檢視每個媒體項目的這些量度。
+「媒體概觀」控制面板的設計可讓您監視網站上的各個媒體。「媒體概觀」畫面會顯示數個彙總測量，供您快速監測媒體是否如預期般執行。圖形會在廣告開始旁顯示內容開始，讓您快速檢視每個媒體項目的這些量度。
 
 ![](assets/media_overview.png)
 

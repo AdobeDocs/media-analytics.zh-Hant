@@ -3,9 +3,9 @@ title: 了解里程碑報告 (已過時)
 description: 已過時 - 了解如何為里程碑的實作設定視訊報告
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '3369'
 ht-degree: 98%
@@ -100,7 +100,7 @@ ht-degree: 98%
 
 ## 廣告追蹤變數 {#ad-tracking-variables}
 
-這些變數用來結合 openAd 方法傳送廣告資訊。請參閱 [VAST 視訊廣告追蹤](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant)。
+這些變數用來結合 openAd 方法傳送廣告資訊。請參閱 [VAST 視訊廣告追蹤](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)。
 
 | 變數 | 說明 |
 | --- | --- |
@@ -119,7 +119,7 @@ ht-degree: 98%
 | 方法 | 說明 |
 | --- | --- |
 | `Media.open` | **語法：** <br/><br/> `s.Media.open(mediaName, mediaLength, mediaPlayerName)`<br/><br/>準備用來收集視訊追蹤資料的媒體模組。此方法會採用下列參數： <ul><li> **mediaName：**(必要) 您要其顯示在視訊報表中的名稱。 </li><li>  **mediaLength：**(必要) 視訊的長度 (以秒為單位)。  </li><li> **mediaPlayerName：**(必要) 用來檢視視訊的媒體播放器名稱，您要其顯示在視訊報表中的名稱。 </li></ul> |
-| `Media.openAd` | **語法：** <br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/>   `parentPod, parentPodPosition, CPM)` <br/><br/>準備用來收集廣告追蹤資料的媒體模組。此方法會採用下列參數： <ul> <li> **name：**(必要) 廣告的名稱或 ID。  </li> <li> **length：**(必要) 廣告的長度。  </li> <li> **playerName：**(必要) 用來檢視廣告的媒體播放器的名稱。  </li> <li> **parentName：**&#x200B;內嵌廣告所在主要內容的名稱或 ID。  </li> <li> **parentPod：**&#x200B;主要內容中播放廣告的位置。  </li> <li> **parentPodPosition：** Pod 內播放廣告的位置。  </li> <li> **CPM：**&#x200B;套至用此播放的 CPM 或加密的 CPM (首碼為 &quot;~&quot;)。  </li> </ul> |
+| `Media.openAd` | **語法：** <br/><br/> `s.Media.openAd(name, length, playerName, parentName,`<br/>   `parentPod, parentPodPosition, CPM)` <br/><br/>準備用來收集廣告追蹤資料的媒體模組。此方法會採用下列參數： <ul> <li> **name：**(必要) 廣告的名稱或 ID。  </li> <li> **length：**(必要) 廣告的長度。  </li> <li> **playerName：**(必要) 用來檢視廣告的媒體播放器的名稱。  </li> <li> **parentName：**&#x200B;嵌入廣告所在主要內容的名稱或 ID。  </li> <li> **parentPod：**&#x200B;主要內容中播放廣告的位置。  </li> <li> **parentPodPosition：** Pod 內播放廣告的位置。  </li> <li> **CPM：**&#x200B;套至用此播放的 CPM 或加密的 CPM (首碼為 &quot;~&quot;)。  </li> </ul> |
 | `Media.click` | **語法：** <br/><br/> `s.Media.click(name, offset)`<br/><br/>追蹤何時在視訊中點按了廣告。此方法會採用下列參數： <ul> <li> **name：**&#x200B;廣告的名稱。這必須符合 Media.openAd 中使用的名稱。  </li> <li> **offset：**&#x200B;發生按一下時進入廣告的位移。  </li> </ul> |
 | `Media.close` | **語法：** <br/><br/> `s.Media.close(mediaName)`<br/><br/>結束視訊資料收集並傳送資訊至 Adobe 資料收集伺服器。在視訊結束時呼叫此方法。此方法會採用下列引數： <br/><br/> **mediaName：**&#x200B;視訊的名稱。這必須符合 `Media.open` 中使用的名稱。 |
 | `Media.complete` | **語法：** <br/><br/> `s.Media.complete(name, offset)`<br/><br/>此方法會手動追蹤完成的事件。當您需要觸發無法使用`Media.completeByCloseOffset` 處理的特殊邏輯事件時，會使用此方法。<br/><br/>例如，如果您要測量未定義結尾的即時資料流，則可以在使用者檢視即時資料流 X 秒後觸發完成。您可能會根據內容的長度和類型，使用百分比計算來測量完成情形。此方法會採用下列參數： <ul> <li> **mediaName：**&#x200B;視訊的名稱。這必須符合 Media.open 中使用的名稱。  </li> <li> **mediaOffset：**&#x200B;視訊中應該傳送完成事件的秒數。根據從零秒開始的視訊指定位移。<br/><br/>如果您的媒體播放器使用毫秒追蹤，在呼叫 Media.complete 之前，請確定值轉換為秒。  </li> </ul> 如果您計劃手動呼叫完成，請設定 <br/><br/> `s.Media.completeByCloseOffset = false`。 |
@@ -127,7 +127,7 @@ ht-degree: 98%
 | `Media.stop` | **語法：** <br/><br/> `s.Media.stop(mediaName, mediaOffset)`<br/><br/>追蹤指定的視訊的停止事件 (停止、暫停等等)。此方法會採用下列參數： <ul> <li> **mediaName：**&#x200B;視訊的名稱。這必須符合 `Media.open` 中使用的名稱。  </li> <li> **mediaOffset：**&#x200B;視訊中發生停止或暫停事件的秒數。根據從零秒開始的視訊指定位移。  </li> </ul> |
 | `Media.monitor` | **語法：** <br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight 語法：** <br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Silverlight 應用程式媒體監視會實作 Objective-C 委派設計模式。`myMediaMonitor` 類別方法採用 `s` 和 `media` 參數。<br/><br/>使用此方法來傳送其他視訊測量。您可以設定其他變數 (Prop、eVar、事件)，並在播放視訊時根據視訊的目前狀態，使用 `Media.track` 傳送它們。<br/><br/>請參閱[使用 Media.monitor 測量其他度量。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant) <br/><br/>此方法會採用下列參數：<br/><br/>  **s：**`AppMeasurement` 例項 (或 JavaScript `s` 物件)。<br/><br/> **media：**&#x200B;物件，其成員提供視訊的狀態。這些成員包括：  <ul><li> `media.name:` 視訊的名稱。這必須符合 `Media.open` 中使用的名稱； </li><li> `media.length:` 在對 `Media.open` 的呼叫中提供的視訊的長度 (以秒為單位)； </li><li> `media.playerName:` 在對 `Media.open` 的呼叫中指定的媒體播放器名稱； </li><li> `media.openTime:` 包含呼叫 `Media.open` 時資料的 NSDate 物件； </li><li> `media.offset:` 進入視訊的目前位移 (以秒為單位) (視訊中的實際點)。位移從零開始 (視訊的第一個秒數為 0 秒)； </li><li> `media.percent:` 目前已播放視訊的百分比，根據視訊長度和目前的位移；  </li><li> `media.timePlayed:` 目前播放的總秒數；  </li><li> `media.eventFirstTime:` 指出這是否為第一次為此視訊呼叫此媒體事件； </li><li> `media.mediaEvent:` 包含造成監控呼叫的事件名稱的字串。 </li></ul> |
 | | `media.mediaEvent` events： <ul><li> `OPEN:` 透過 `Media.autoTrack` 或對 `Media.play` 呼叫第一次觀察到播放時； </li><li> `CLOSE:` 當播放透過 `Media.autoTrack` 或對 `Media.close` 的呼叫在完成視訊結束時；</li><li> `PLAY:` 當播放在暫停或擦除之後，透過 `Media.autoTrack` 或對 `Media.play` 的第二個呼叫繼續；</li><li> `STOP:` 當播放由於透過 `Media.autoTrack` 或對 `Media.stop` 呼叫的擦除開始的暫停而停止時；</li><li> `MONITOR:` 我們的自動監視在播放視訊時檢查視訊的狀態時 (每秒)；</li><li> `SECONDS:` 以 `Media.trackSeconds` 變數定義的秒數間隔；</li><li> `MILESTONE:` 在 `Media.trackMilestones` 變數定義的里程碑； </li></ul> |
-| `Media.track` | **語法：** <br/><br/> `s.Media.track(mediaName)`<br/><br/>立即傳送目前的視訊狀態，以及您定義的任何 `Media.trackVars` 和 Media.trackEvents。此方法是在 `Media.monitor` 內使用。<br/><br/>請參閱[使用 Media.monitor 測量其他度量。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant) <br/><br/>在呼叫此方法之前，在視訊上呼叫 `Media.open` 和 `Media.play`。此方法會採用下列參數： <ul> <li> **mediaName**：視訊的名稱。這必須符合 `Media.open` 中使用的名稱。</li> </ul> 此方法是在播放視訊時傳送其他變數的唯一方式。此方法會將秒數間隔和百分比里程碑計數器重設為零，以避免多個追蹤點擊。 |
+| `Media.track` | **語法：** <br/><br/> `s.Media.track(mediaName)`<br/><br/>立即傳送目前的視訊狀態，以及您定義的任何 `Media.trackVars` 和 Media.trackEvents。此方法是在 `Media.monitor` 內使用。<br/><br/>請參閱[使用 Media.monitor 測量其他度量。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) <br/><br/>在呼叫此方法之前，在視訊上呼叫 `Media.open` 和 `Media.play`。此方法會採用下列參數： <ul> <li> **mediaName**：視訊的名稱。這必須符合 `Media.open` 中使用的名稱。</li> </ul> 此方法是在播放視訊時傳送其他變數的唯一方式。此方法會將秒數間隔和百分比里程碑計數器重設為零，以避免多個追蹤點擊。 |
 
 
 ## 追蹤視訊播放器事件 {#track-video-player-events}

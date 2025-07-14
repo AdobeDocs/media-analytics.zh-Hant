@@ -3,9 +3,9 @@ title: 了解如何在 Chromecast 上追蹤核心播放
 description: 了解如何在 Chromecast 上使用 Media SDK 實施核心追蹤。
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 88%

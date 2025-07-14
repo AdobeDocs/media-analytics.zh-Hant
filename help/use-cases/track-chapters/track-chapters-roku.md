@@ -3,9 +3,9 @@ title: 了解如何在 Roku 上追蹤章節和區段
 description: 了解如何在 Roku 上使用 Media SDK 實作章節和區段追蹤。
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '201'
 ht-degree: 100%

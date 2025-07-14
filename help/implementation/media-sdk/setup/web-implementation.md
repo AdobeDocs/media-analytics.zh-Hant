@@ -1,10 +1,10 @@
 ---
 title: 如何設定適用於串流媒體的 Analytics 的 Web 實作
 description: 了解如何為 Web 應用程式實作 Adobe Streaming Media。
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 本頁資訊說明如何安裝獨立 Web SDK 和設定 JavaScript。
 
-或者，您可以使用Adobe Medium Analytics擴充功能來實施Adobe串流媒體收集，如[使用Media Analytics擴充功能實施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md)中所述。
+或者，您可以使用Adobe Media Analytics擴充功能來實施Adobe串流媒體收集，如[使用Media Analytics擴充功能實施Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md)中所述。
 
 ## 先決條件 {#prerequesites}
 

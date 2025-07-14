@@ -3,9 +3,9 @@ title: 了解如何在 Android 上實作標準中繼資料
 description: 了解如何在 Android 上設定要連同追蹤呼叫一起傳送的標準影片和廣告中繼資料。
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 100%

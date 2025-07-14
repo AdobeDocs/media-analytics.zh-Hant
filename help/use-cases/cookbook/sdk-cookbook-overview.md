@@ -2,16 +2,16 @@
 title: Media SDK 使用案例概觀
 description: 了解串流媒體使用案例
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 92%
 
 ---
 
-# Media SDK 使用案例 {#media-sdk-use-cases}
+# Media SDK使用案例 {#media-sdk-use-cases}
 
 * [播放器狀態追蹤](/help/use-cases/player-state-tracking/player-state-overview.md)
 * [追蹤離線下載的內容](/help/use-cases/track-downloaded-content.md)

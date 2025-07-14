@@ -2,9 +2,9 @@
 title: 了解如何使用 JavaScript 3.x 追蹤章節和區段
 description: 了解如何在瀏覽器應用程式 (JS) 中使用 Media SDK 實作章節和區段追蹤。
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '221'
 ht-degree: 100%

@@ -3,9 +3,9 @@ title: 串流媒體事件類型和說明
 description: '什麼是媒體收集事件型別和說明？ '
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 98722998606af3761652e282c31338bb966eb654
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 79%
@@ -81,7 +81,7 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 當使用者放棄檢視內容，而且不太可能返回工作階段時，用來通知 Media Analytics 後端立即關閉工作階段.
 
-如果未傳送`sessionEnd`，放棄的工作階段通常會逾時[2&rbrace; （在10分鐘內未接收到任何事件，或播放點在30分鐘內未移動）。 ](../mc-api-impl/mc-api-timeout.md)此外，使用該工作階段ID進行的所有後續媒體呼叫都將被捨棄。
+如果未傳送`sessionEnd`，放棄的工作階段通常會逾時[2} （在10分鐘內未接收到任何事件，或播放點在30分鐘內未移動）。 ](../mc-api-impl/mc-api-timeout.md)此外，使用該工作階段ID進行的所有後續媒體呼叫都將被捨棄。
 
 ## sessionComplete
 

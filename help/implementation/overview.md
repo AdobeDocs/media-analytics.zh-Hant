@@ -2,10 +2,10 @@
 title: 實作串流媒體收集
 description: 瞭解串流媒體收集的實作路徑。
 uuid: null
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '453'
 ht-degree: 69%
@@ -18,11 +18,11 @@ ht-degree: 69%
 
 ## Edge 實施方法
 
-我們建議為所有新Adobe Analytics或Customer Journey Analytics客戶實作串流媒體收集時使用Edge。
+我們建議為所有新的Adobe Analytics或Edge客戶實作串流媒體收集時使用Customer Journey Analytics。
 
-* **用於Edge NetworkSDK /擴充功能的媒體：**&#x200B;從網頁、iOS和Android裝置或Roku裝置收集資料，並傳送給Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
+* **Edge Network SDK媒體/擴充功能：**&#x200B;從網頁、iOS和Android裝置或Roku裝置收集資料，並傳送至Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
-  如需Edge NetworkSDK /擴充功能所用媒體的詳細資訊，請參閱[使用Edge Network實作串流媒體收集](/help/implementation/edge/implementation-edge.md)。
+  如需Edge Network SDK /擴充功能適用之媒體的詳細資訊，請參閱[使用Edge Network實作串流媒體收集](/help/implementation/edge/implementation-edge.md)。
 
 * **Media Edge API：**&#x200B;可自訂為從任何裝置或格式（包括行動裝置、網頁和過頂裝置）收集資料，並將資料傳送至Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
@@ -38,7 +38,7 @@ ht-degree: 69%
 
 * **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。資料會傳送至 Adobe Analytics。
 
-  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=zh-Hant)。
+  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)。
 
 * **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。(如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
 

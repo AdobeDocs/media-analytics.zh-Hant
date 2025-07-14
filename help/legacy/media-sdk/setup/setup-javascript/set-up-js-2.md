@@ -3,9 +3,9 @@ title: 如何使用 JavaScript 2.x 設定 Media SDK
 description: 請依照這些步驟在 JavaScript 2.x 上設定 Media SDK 應用程式。
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '395'
 ht-degree: 100%

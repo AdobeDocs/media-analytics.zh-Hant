@@ -3,9 +3,9 @@ title: 已略過廣告的 VOD 播放
 description: 檢視如何使用 Media SDK 追蹤使用者已略過廣告之 VOD 內容的範例。
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '280'
 ht-degree: 94%

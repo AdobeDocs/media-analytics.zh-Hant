@@ -3,9 +3,9 @@ title: 了解如何使用 JavaScript 2.x 追蹤搜尋
 description: 了解如何在瀏覽器應用程式 (JS 2.x) 中使用 Media SDK 來追蹤搜尋開始和搜尋完成事件。
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 100%
