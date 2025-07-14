@@ -34,7 +34,7 @@ ht-degree: 46%
 | 產品 | 文件 |
 |:-----------------------:|----------------|
 | **Adobe Analytics** | *[Adobe Analytics 實作指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)<br>  *[Adobe Analytics 元件指南](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=zh-Hant)<br> *[Adobe Analytics 工具指南](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=zh-Hant)<br> *[Adobe Analytics 教學課程](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hant#tutorials) <br> *[Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Analytics 的 Mobile 實作](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
-| **標記** | [Adobe Experience Platform 標記文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) |
+| **標記** | [Adobe Experience Platform 標記文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) |
 
 ## Adobe 企業教學課程 {#adobe-tutorials}
 

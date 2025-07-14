@@ -19,7 +19,7 @@ ht-degree: 44%
 無論您是實作僅限Adobe Analytics的實施或適用於Edge實施的串流媒體收集，請確保您符合[一般必要條件](/help/getting-started/prereqs.md)。
 
 1. **確認您有Adobe Analytics實作**<br>
-若使用僅限Analytics的實作來實作串流媒體收集，則還需要Adobe Analytics基本實作。 請參閱[實作 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)以取得詳細資訊。
+若使用僅限Analytics的實作來實作串流媒體收集，則還需要Adobe Analytics基本實作。 請參閱[實作 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)以取得詳細資訊。
 
 1. **取得媒體追蹤伺服器 URL**<br>
 請向您的 Adobe Analytics 代表詢問媒體追蹤伺服器 URL。這是行動SDK、JavaScript SDK和Roku非集合API追蹤伺服器的`collection-api-server` URL。 API 實作的網域名稱是：`[your_namespace].hb-api.omtrdc.net`。
