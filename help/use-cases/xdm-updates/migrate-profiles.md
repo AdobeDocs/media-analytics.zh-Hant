@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # 將設定檔移轉至新的串流媒體欄位
 
-本檔案說明移轉設定檔篩選服務的程式，該服務位於為Adobe Analytics for Streaming Media資料啟用的Adobe資料收集流程之上。 移轉會使用名為「Media」的Adobe串流媒體收集資料型別，將設定檔篩選服務轉換為使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
+本檔案說明移轉設定檔篩選服務的程式，該服務位於為Adobe Analytics for Streaming Media資料啟用的Adobe資料收集流程之上。 移轉會使用名為「Media」的Adobe串流媒體收集資料型別，將設定檔篩選服務轉換為使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
 
 ## 移轉設定檔
 
-若要將設定檔篩選從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯現有的設定檔篩選規則：
+若要將設定檔篩選從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯現有的設定檔篩選規則：
 
 1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **來源**]&#x200B;區段底下，前往&#x200B;[!UICONTROL **資料流**]&#x200B;標籤。
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 1. 驗證設定檔是否仍如預期般運作。
 
-檢視[音訊和視訊引數](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)頁面上的[內容識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters)引數，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。
+檢視[音訊和視訊引數](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)頁面上的[內容識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters)引數，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。
 
 ## 範例
 
@@ -55,7 +55,7 @@ ht-degree: 0%
    ![AEP資料流篩選規則](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   針對使用meda.mediaTimed物件的每個篩選器，使用`mediaReporting`音訊和視訊引數[頁面在](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters)物件中尋找其對應項，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。 例如，對於[Media Starts](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)，`media.mediaTimed.impressions.value`的通訊者是`mediaReporting.sessionDetails.isViewed`。
+   針對使用meda.mediaTimed物件的每個篩選器，使用`mediaReporting`音訊和視訊引數[頁面在](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters)物件中尋找其對應項，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。 例如，對於[Media Starts](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts)，`media.mediaTimed.impressions.value`的通訊者是`mediaReporting.sessionDetails.isViewed`。
 
    ![新舊的XDM欄位](assets/xdm-fields-new-and-old.jpeg)
 
