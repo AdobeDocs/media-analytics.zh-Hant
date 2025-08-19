@@ -3,7 +3,8 @@ title: 將受眾移轉至適用於串流媒體的新的Adobe Analytics資料型�
 description: 瞭解如何將受眾移轉至適用於串流媒體的新的Adobe Analytics資料型別
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 19e729c7d87b4e81b6952c7ebcb8b122043d516d
+exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 1%
@@ -12,11 +13,11 @@ ht-degree: 1%
 
 # 移轉Customer Journey Analytics以使用新的串流媒體欄位
 
-本檔案說明應如何更新使用名為「Media」的Adobe串流媒體收集資料型別的Customer Journey Analytics設定，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
+本檔案說明應如何更新使用名為「Media」的Adobe串流媒體服務資料型別的Customer Journey Analytics設定，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
 
 ## 移轉Customer Journey Analytics
 
-若要將Customer Journey Analytics安裝程式從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須更新下列使用舊資料型別的安裝程式：
+若要將Customer Journey Analytics安裝程式從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須更新下列使用舊資料型別的安裝程式：
 
 * 資料檢視
 
@@ -42,7 +43,7 @@ ht-degree: 1%
 
 1. 以「媒體報告詳細資訊」的新對應欄位取代衍生欄位中的所有舊欄位。
 
-檢視[音訊和視訊引數](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)頁面上的[內容識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters)引數，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。
+檢視[音訊和視訊引數](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)頁面上的[內容識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters)引數，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。
 
 ![舊和新XDM欄位路徑](assets/field-paths-updated.jpeg)
 
@@ -60,7 +61,7 @@ ht-degree: 1%
 
    資料檢視中的![舊欄位路徑](assets/old-field-data-view.jpeg)
 
-1. 檢查[章節引數](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset)文章中[章節位移](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters)區段中對應的新欄位。
+1. 檢查[章節引數](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset)文章中[章節位移](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters)區段中對應的新欄位。
 
 1. 在資料檢視中找出新的對應欄位。
 
@@ -80,7 +81,7 @@ ht-degree: 1%
 
    ![自訂新欄位以建立資料檢視](assets/create-derived-field2.jpeg)
 
-1. 使用&#x200B;[!UICONTROL **報告XDM欄位路徑**]&#x200B;的值填入&#x200B;**If**&#x200B;子句，如[章節引數](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name)頁面上的[章節名稱](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters)引數所示。
+1. 使用&#x200B;[!UICONTROL **報告XDM欄位路徑**]&#x200B;的值填入&#x200B;**If**&#x200B;子句，如[章節引數](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name)頁面上的[章節名稱](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters)引數所示。
 
    ![章節名稱](assets/chapter-name.jpeg)
 
@@ -110,7 +111,7 @@ ht-degree: 1%
 
    ![尋找具有舊資料型別的欄位](assets/locate-fields-with-old-datatype.jpeg)
 
-1. 檢查[串流媒體引數](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable)文章中[內容名稱（變數）](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable)區段中對應的新欄位。
+1. 檢查[串流媒體引數](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable)文章中[內容名稱（變數）](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable)區段中對應的新欄位。
 
 1. 以新欄位取代舊欄位。
 
@@ -119,4 +120,3 @@ ht-degree: 1%
 1. 使用舊版已棄用的「媒體」資料型別的欄位，對所有衍生欄位重複此程式。
 
    CJA設定的移轉已完成。
-

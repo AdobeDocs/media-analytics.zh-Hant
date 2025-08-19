@@ -1,10 +1,10 @@
 ---
 title: 安全性
-description: 瞭解與串流媒體收集相關的安全性
+description: 瞭解與串流媒體服務相關的安全性
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: a301612f-5019-40c3-af40-d608cd320e16
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 95%

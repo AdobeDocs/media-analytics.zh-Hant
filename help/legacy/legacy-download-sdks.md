@@ -4,10 +4,10 @@ description: 各平台適用的舊版 SDK 下載內容連結，包括 Android、
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 73%
 
 如需關於終止支援的重要資訊，請參閱[終止支援常見問題集](/help/additional-resources/end-of-support-faqs.md)。
 
-## Streaming Media 和 Adobe Media Analytics 擴充功能
+## 串流媒體和Adobe Media Analytics擴充功能
 
 Adobe Media Analytics 擴充功能新增了音訊和視訊的核心 JavaScript Media SDK (Media 2.x SDK)。此擴充功能可將 `MediaHeartbeat` 追蹤器例項新增至資料收集網站或專案。
 
@@ -27,7 +27,7 @@ Adobe Data Collection 搭配 Media Analytics 擴充功能使用，須符合以�
 * 您必須是 Adobe Experience Cloud 客戶。
 * 您必須在網頁上部署資料收集或 DTM 嵌入程式碼。
 * 您必須設定 [Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant)。
-* 您必須設定[Adobe Media Analytics for Audio and Video擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=zh-Hant)。
+* 您必須設定[Adobe Media Analytics for Audio and Video擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)。
 * 您必須設定 [Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh=Hant)。
 
 ## 下載 2.x Media SDK {#download-2x-sdks}

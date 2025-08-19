@@ -4,10 +4,10 @@ description: 此主題包含有關 Media Analytics SDK 終止支援的常見問�
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 76%
+source-wordcount: '614'
+ht-degree: 69%
 
 ---
 
@@ -15,18 +15,18 @@ ht-degree: 76%
 
 我們於2021年8月31日停止支援第4版Mobile SDK後，Adobe也停止支援Media Analytics Mobile SDK for iOS和Android。 SDK (這不包括仍受支援的適用於Web (JS)和OTT平台，例如Chromecast和Roku。)
 
-這表示Adobe不再針對Media Analytics Mobile SDK提供修正、作業系統相關更新或支援。 移轉至新的Experience Platform SDK時，請注意，必須實作[Media Analytics擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)，才能啟用Adobe串流媒體收集。
+這表示Adobe不再針對Media Analytics Mobile SDK提供修正、作業系統相關更新或支援。 移轉至新的Experience Platform SDK時，請注意，必須實作[Media Analytics擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)，才能啟用Adobe串流媒體服務。
 
 
 ## 5 大須知事項
 
 1. 自2021年8月31日起，我們將不再支援Mobile v4 SDK。 請改用iOS和Android專用的Adobe Experience Platform (AEP) Mobile SDK。
 
-1. 適用於串流媒體的 Analytics 實作需要 AEP Mobile SDK，而且必須使用 Analytics 和 Media Analytics 擴充功能。自2021年9月1日起，您應使用新的AEP Mobile SDK和擴充功能。  請使用 Adobe 標記來設定 Media Analytics 擴充功能 (資料收集)。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
+1. Adobe串流媒體服務實作需要AEP Mobile SDK，而且必須使用Analytics和Media Analytics擴充功能。 自2021年9月1日起，您應使用新的AEP Mobile SDK和擴充功能。  請使用 Adobe 標記來設定 Media Analytics 擴充功能 (資料收集)。如需詳細資訊，請參閱[從獨立式 Media SDK 移轉至 Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md)
 
 1. 日後我們不會再開發 Media Analytics SDK iOS 版和 Android 版。從 2019 年秋季開始導入的新功能，會使用 Media Analytics 擴充功能和 Media Collection API 來啟用。
 
-1. 適用於串流媒體的 Analytics 客戶仍可使用 Roku 和 Chromecast SDK。我們仍會將 Roku 和 Chromecast SDK 視為獨立式 SDK，並繼續提供增強和支援服務。如果您使用 Media Analytics JS SDK，則可繼續使用該獨立式 SDK，或是使用 Adobe Data Collection (舊稱 Adobe Launch) 啟用 Media Analytics 擴充功能。
+1. 客戶仍可透過Adobe Analytics for Streaming Media附加元件和Customer Journey Analytics Streaming Media Collection附加元件，使用Roku和Chromecast SDK。 我們仍會將 Roku 和 Chromecast SDK 視為獨立式 SDK，並繼續提供增強和支援服務。如果您使用 Media Analytics JS SDK，則可繼續使用該獨立式 SDK，或是使用 Adobe Data Collection (舊稱 Adobe Launch) 啟用 Media Analytics 擴充功能。
 
 如有任何問題，請洽詢您的Adobe客戶團隊。
 

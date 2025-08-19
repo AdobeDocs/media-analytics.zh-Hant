@@ -1,13 +1,13 @@
 ---
-source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 98%
 
 ---
 # 串流媒體發行說明 - 來源文字
 
-以下內容複製自 Experience Cloud 發行說明。這將移至新的串流媒體發行說明。
+以下內容複製自 Experience Cloud 發行說明。此資訊將會移至新的串流媒體服務發行說明。
 
 
 了解關於 [Adobe Experience Cloud 產品](https://business.adobe.com/products/adobe-experience-cloud-products.html)的最新版更新。取得 Experience League 上的最新自助文件、教學課程和課程。
@@ -21,7 +21,7 @@ Media Analytics 新功能
 
 | 功能 | 全面發佈 | 說明 |
 | -------- | -------------------- | ----------- |
-| 工作區中的「媒體平均每分鐘觀眾數」面板 | 2022 年 3 月<br> (有限測試) | 「平均每分鐘觀眾數」面板能讓 Media Analytics 客戶更加了解內容的平均使用量。「平均每分鐘對象數」可比較任何長度或類型的節目。 此外，觀眾也可以比較這個數位「平均每分鐘觀眾數」，或是將其附加到線性電視的平均每分鐘指標。此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及事後更新了持續時間分類時的平均觀眾數。 [了解更多...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=zh-Hant) |
+| 工作區中的「媒體平均分鐘觀眾數」面板 | 2022 年 3 月<br> (有限測試) | 「平均分鐘觀眾數」面板能讓 Media Analytics 客戶更加了解內容的平均使用量。「平均每分鐘觀眾數」可比較任何長度或類型的節目。此外，觀眾也可以比較這個數位「平均分鐘觀眾數」，或是將其附加到線性電視的平均每分鐘指標。此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及事後更新了持續時間分類時的平均觀眾數。 [了解更多...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=zh-Hant) |
 
 
 

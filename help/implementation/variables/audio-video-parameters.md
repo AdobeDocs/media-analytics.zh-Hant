@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '7067'
 ht-degree: 91%
@@ -110,7 +110,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   實施   | 網路參數 | 報表 |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **SDK 索引鍵:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 索引鍵:**<br/> media.contentType </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;限制字串 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值:**<br/> &quot;vod&quot; </li> <li> **說明:**<br/> 各種&#x200B;**資料流類型**&#x200B;的可用值: <br/> _音訊:_ &quot;song&quot;、&quot;podcast&quot;、&quot;audiobook&quot;、&quot;radio&quot; <br/> _影片:_「VoD」、「即時」、「線性」、「UGC」、「DVoD」<br/>客戶能提供該參數的自訂值。這等於 `s:stream:type.` 如果未設定，就等於 `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.contentType) </li> <li> **心率：**<br/> (<code>s:stream:型別</code>) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;內容類型 </li> <li> **內容資料:**<br/> (a.contentType) </li> <li> **資料摘要:**<br/> videocontenttype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.contentType) </li> <li> **XDM欄位路徑：** （已棄用）<br/>media.mediaTimed.primaryAssetViewDetails。<br/>broadcastContentType</li> <li> **集合 XDM 欄位路徑:**<br/> mediaCollection.sessionDetails.contentType </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
+| <ul> <li> **SDK 索引鍵:**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **API 索引鍵:**<br/> media.contentType </li> <li> **必要:**<br/>&#x200B;是 </li> <li> **類型:**<br/>&#x200B;限制字串 </li> <li> **伴隨傳送:**<br/> 媒體開始、媒體關閉 </li> <li> **最小SDK 版本:** 任何版本 </li> <li> **樣本值:**<br/> &quot;vod&quot; </li> <li> **說明：**<br/>&#x200B;每個&#x200B;**資料流型別**&#x200B;的可用值： <br/> _Audio :_&quot;song&quot;、&quot;podcast&quot;、&quot;audiobook&quot;、&quot;radio&quot; <br/> _Video:_ &quot;VoD&quot;、&quot;Live&quot;、&quot;Linear&quot;、&quot;UGC&quot;、&quot;DVoD&quot; <br/>客戶能提供此引數的自訂值。 這等於 `s:stream:type.` 如果未設定，就等於 `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics:**<br/> (a.contentType) </li> <li> **心率：**<br/> (<code>s:stream:型別</code>) </li> </ul> | <ul> <li> **可用:**<br/>&#x200B;是 </li> <li> **預留變數:**<br/> eVar </li> <li> **過期時間:**<br/>&#x200B;點擊時 </li> <li> **報表名稱:**<br/>&#x200B;內容類型 </li> <li> **內容資料:**<br/> (a.contentType) </li> <li> **資料摘要:**<br/> videocontenttype </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.contentType) </li> <li> **XDM欄位路徑：** （已棄用）<br/>media.mediaTimed.primaryAssetViewDetails。<br/>broadcastContentType</li> <li> **集合 XDM 欄位路徑:**<br/> mediaCollection.sessionDetails.contentType </li> <li> **報告 XDM 欄位路徑:**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,
@@ -477,7 +477,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 ### createMediaObject API {#create-media-object}
 
 * Android - [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createMediaObject-java.lang.String-java.lang.String-java.lang.Double-java.lang.String-com.adobe.primetime.va.simple.MediaHeartbeat.MediaType-)
-* iOS - [createMediaObjectWithName](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:長度:streamType:mediaType:)
+* iOS - [createMediaObjectWithName](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createMediaObjectWithName:mediaId:長度:streamType:mediaType: )
 * JavaScript - [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createMediaObject)
 * Chromecast - [createMediaObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createMediaObject)
 

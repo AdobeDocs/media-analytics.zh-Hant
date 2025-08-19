@@ -1,12 +1,12 @@
 ---
-title: 使用Edge Network實作串流媒體收集
-description: 瞭解如何使用Experience Platform Edge實作串流媒體收集。
+title: 使用Edge Network實作Adobe串流媒體服務
+description: 瞭解如何使用Experience Platform Edge實作Adobe串流媒體服務。
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '2146'
+source-wordcount: '2152'
 ht-degree: 9%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 9%
 
 Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品的資料傳送到一個集中位置。Experience Edge 會將適當的資訊轉送給所需的產品。 此概念可讓您整合實施工作，特別是橫跨多個資料解決方案時。
 
-下圖說明如何實作Adobe串流媒體收集，以使用Experience Platform Edge在Adobe Analytics或Customer Journey Analytics中讓資料可在Analysis Workspace中使用：
+下圖說明如何實作串流媒體收集附加元件，以使用Experience Platform Edge在Adobe Analytics或Customer Journey Analytics中讓資料可在Analysis Workspace中使用：
 
 ![CJA 工作流程](assets/streaming-media-edge.png)
 
-如需所有實作選項的概觀，包括未使用Experience Platform Edge的實作方法，請參閱[實作串流媒體收集](/help/implementation/overview.md)。
+如需所有實作選項的概觀，包括未使用Experience Platform Edge的實作方法，請參閱[實作Adobe Analytics或Customer Journey Analytics的串流媒體服務](/help/implementation/overview.md)。
 
 無論您使用Adobe Experience Platform Web SDK、Adobe Experience Platform Mobile SDK、Adobe Experience Platform Roku SDK或API來使用Experience Edge實作串流媒體收集，您都必須先完成下列章節：
 
@@ -29,7 +29,7 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
 若要建立及設定綱要：
 
-1. 在Adobe Experience Platform中，開始建立結構描述，如[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hant)中所述。
+1. 在Adobe Experience Platform中，開始建立結構描述，如[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)中所述。
 
 1. 在建立結構描述時，請在[結構描述詳細資訊]頁面上，為結構描述選擇基底類別時，選擇&#x200B;[!UICONTROL **體驗事件**]。
 
@@ -52,7 +52,7 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
 1. （選用）您可以隱藏Media Edge API未使用的特定欄位。 隱藏這些欄位可讓結構描述更容易閱讀和理解，但並非必要。 這些欄位僅參考`MediaAnalytics Interaction Details`欄位群組中的欄位。
 
-+++ 展開此處以檢視可隱藏欄位的指示。
+   +++ 展開此處以檢視可隱藏欄位的指示。
 
    1. 在&#x200B;[!UICONTROL **結構**]&#x200B;區域中，選取`Media Collection Details`欄位，然後選取&#x200B;[!UICONTROL **管理相關欄位**]。
 
@@ -111,11 +111,11 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
    1. 選取&#x200B;[!UICONTROL **確認**] > [!UICONTROL **儲存**]&#x200B;以儲存變更。
 
-+++
+   +++
 
 1. （選用）您可以將自訂中繼資料新增到結構描述。 這可讓您包含其他使用者定義的中繼資料，這些中繼資料可以根據特定需求或內容進行自訂。 若現有結構描述未涵蓋所需的資料點，此彈性就相當實用。 (您也可以搭配Media Edge API使用自訂中繼資料。 如需詳細資訊，請參閱[使用Media Edge API建立自訂中繼資料](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/)。
 
-+++ 展開此處以檢視如何新增自訂中繼資料至結構描述的指示。
+   +++ 展開此處以檢視如何新增自訂中繼資料至結構描述的指示。
 
    1. 選取&#x200B;[!UICONTROL **帳戶資訊**] > [!UICONTROL **指派的組織**] > [!UICONTROL _**組織名稱**_] > [!UICONTROL **租使用者**]，以找出組織的租使用者名稱稱。
 
@@ -129,11 +129,11 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [使用產生的路徑](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
+   1. [使用產生的路徑](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
-+++
+   +++
 
 1. 繼續[在Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)中建立資料集。
 
@@ -167,11 +167,11 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
       * [!UICONTROL **Adobe Analytics**] (若使用Adobe Analytics)
 
-        如果您使用Adobe Analytics，請務必定義報表套裝，如[建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
+        如果您使用Adobe Analytics，請務必定義報表套裝，如[建立報表套裝](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述。
 
       * [!UICONTROL **Adobe Experience Platform**] (若使用Customer Journey Analytics)
 
-     如需有關如何將服務新增至資料串流的資訊，請參閱[設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#view-details)中的「將服務新增至資料串流」區段。
+     如需有關如何將服務新增至資料串流的資訊，請參閱[設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的「將服務新增至資料串流」區段。
 
      ![新增Adobe Analytics服務](assets/datastream-add-service.png)
 
@@ -332,9 +332,9 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
    >[!NOTE]
    >
-   >如果您將Adobe Analytics設定為您的資料串流的上游，自訂中繼資料也會出現在ContextData中，其名稱為您在結構描述中設定（沒有租使用者首碼，例如myCustomField）。 這可讓您使用所有可用於ContextData的Adobe Analytics功能，例如[建立處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)。
+   >如果您將Adobe Analytics設定為您的資料串流的上游，自訂中繼資料也會出現在ContextData中，其名稱為您在結構描述中設定（沒有租使用者首碼，例如myCustomField）。 這可讓您使用所有可用於ContextData的Adobe Analytics功能，例如[建立處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules)。
 
-1. 依照[共用專案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hant)中的說明共用專案。
+1. 依照[共用專案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的說明共用專案。
 
    >[!NOTE]
    >
@@ -381,10 +381,10 @@ Adobe Experience Platform Edge Network 可讓您將預計要送給多個產品�
 
 如需Media Edge API的詳細資訊，請參閱下列資源：
 
-* [Media Edge API總覽](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html?lang=zh-Hant)
+* [Media Edge API總覽](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
-* [Media Edge API快速入門](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html?lang=zh-Hant)
+* [Media Edge API快速入門](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Media Edge API疑難排解指南](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html?lang=zh-Hant)
+* [Media Edge API疑難排解指南](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
 * [使用Media Edge API的Open API規格檔案](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

@@ -1,17 +1,17 @@
 ---
-title: 使用Edge Network API實作串流媒體收集
+title: 使用Adobe API實作Edge Network串流媒體服務
 description: 有關使用Experience Platform Edge API安裝Media Analytics的資源。
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
 
 ---
 
-# 使用Edge Network API實作串流媒體收集
+# 使用Adobe API實作Edge Network串流媒體服務
 
 如果您無法使用[Adobe Experience Platform Mobile SDK](/help/implementation/edge/implementation-edge.md)，可以直接透過API傳送資料至Adobe Experience Platform Edge Network。
 

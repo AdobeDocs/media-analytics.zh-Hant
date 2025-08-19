@@ -1,33 +1,33 @@
 ---
-title: 瞭解Adobe串流媒體收集的先決條件
-description: 開始使用串流媒體收集。 瞭解實作所需的專案。
+title: 瞭解Adobe串流媒體服務的先決條件
+description: 開始使用串流媒體服務。 瞭解實作所需的專案。
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 64%
+source-wordcount: '436'
+ht-degree: 62%
 
 ---
 
 # 先決條件 {#prerequisites}
 
-開始實作Adobe串流媒體收集之前，請完成以下工作：
+開始實作Adobe串流媒體服務前，請先完成下列工作：
 
-1. **檢閱串流媒體集合概觀**<br>
-開始實作串流媒體收集之前，請先檢閱[串流媒體收集概觀](/help/media-overview.md)，確認它符合您的需求。
+1. **檢閱Adobe串流媒體服務總覽**<br>
+開始實作串流媒體服務之前，請先檢閱[Adobe串流媒體服務總覽](/help/media-overview.md)，確定它符合您的需求。
 
 1. **確認您的定價模式**<br>
-Adobe串流媒體收集附加元件目前的定價模型是以視訊串流為基礎。 如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為此附加元件是針對Adobe Analytics和Adobe Experience Platform分開銷售。
+Customer Journey Analytics串流媒體收集附加元件和Adobe Analytics for Streaming Media附加元件目前的定價模型是以視訊串流為基礎。 如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為此附加元件是針對Adobe Analytics和Adobe Experience Platform分開銷售。
 
 1. **啟用Adobe Analytics報表**<br>
 若要在Analytics或Customer Journey Analytics中啟用報表，以及檢視您正在收集的內容和廣告資料，您必須啟用報表。 請參閱[啟用 Media 報表](/help/reporting/media-reports-enable.md)。
 
 1. **在 Experience Cloud 中實作 Adobe Experience Platform 身分識別服務**
 
-   **身分服務**&#x200B;可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和客群啟用共同的身分識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
+   **身分識別服務**&#x200B;可為 Experience Cloud 核心服務、解決方案以及 People 核心服務的客戶屬性和客群啟用共同的身分識別架構。其運用方式為指派一個唯一的永久性 ID 給網站訪客。當您的組織實作 ID 服務時，此 ID 可讓您在不同的 Experience Cloud 解決方案中識別相同的網站訪客及其資料。
 
    ![ID 服務圖形](assets/mc_id_service_graphic.png)
 
@@ -35,13 +35,13 @@ Adobe串流媒體收集附加元件目前的定價模型是以視訊串流為基
 
    ID 服務是許多 Experience Cloud 特色、增強功能與服務的必要元件。目前 ID 服務支援 [Analytics](https://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/tw/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。
 
-   如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮 Identity 服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
+   如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮身分識別服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
 
-   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 服務概觀](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)和 [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 服務概觀](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 
 1. **檢視您的實作的其他先決條件**
 
-   根據您計畫實作串流媒體收集的方式，檢視下列任一實作方法的先決條件：
+   根據您計畫實作串流媒體服務的方式，檢視下列任一實作方法的先決條件：
 
    * [僅實作 Adob&#x200B;&#x200B;e Analytics 的先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

@@ -5,7 +5,7 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '755'
 ht-degree: 94%
@@ -14,7 +14,7 @@ ht-degree: 94%
 
 # 設定 iOS{#set-up-ios}
 
-瞭解如何設定iOS裝置的串流媒體收集。
+瞭解如何為iOS裝置設定串流媒體服務。
 
 >[!IMPORTANT]
 >

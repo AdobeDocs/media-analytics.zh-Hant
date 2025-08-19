@@ -5,18 +5,26 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 61%
+source-wordcount: '593'
+ht-degree: 58%
 
 ---
 
 # 同盟媒體{#federated-media}
 
-Federated Media服務提供一套系統，可供在兩個合作夥伴之間共用串流媒體資料（音訊和視訊）。
-串流媒體收集建立的標準化測量資料是同盟媒體的標誌，可讓相同的資料從多個來源匯入單一報表。
+>[!AVAILABILITY]
+>
+>Federated Analytics服務僅在搭配Adobe Analytics使用串流媒體功能時可用。 Customer Journey Analytics中不提供Federated Analytics。
+
+
+Federated Analytics服務提供一套系統，可供在兩個合作夥伴之間共用串流媒體資料（音訊和視訊）。
+
+串流媒體服務建立的標準化測量資料是同盟媒體的標誌，可讓相同的資料從多個來源匯入單一報表。
+
 透過同盟媒體管理的規則和邏輯，可輕鬆控管資料，並依照不同合作關係的需求個別調整資料。
+
 同盟媒體讓音訊與視訊測量更有效率、更簡化且更易於付諸執行。
 
 
@@ -44,7 +52,7 @@ Federated Media服務提供一套系統，可供在兩個合作夥伴之間共�
 * **媒體資料流合約：**&#x200B;傳送者與接收者在取得 Adobe Analytics 內音訊與視訊資料的存取權前，必須先簽署適用於媒體資料流的 Adobe Analytics 合約。如需更多詳細資訊，請與您的帳戶團隊聯絡。
 * **同盟增補合約：**&#x200B;每一位傳送者與接收者在傳送或接收資料前，必須擁有一份與 Adobe 簽署的增補合約。每位客戶須各擁有一份增補合約，而非一段合作關係共用一份。如需更多詳細資訊，請與您的帳戶團隊聯絡。
 
-* **串流媒體收集實作：**&#x200B;傳送者必須在將作為同盟資料集一部分的所有播放器上實作串流媒體收集。 只有串流媒體資料可用於同盟。 如需詳細資訊，請參閱[Adobe串流媒體集合概觀](/help/media-overview.md)。
+* **串流媒體集合實作：**&#x200B;傳送者必須在將作為同盟資料集一部分的所有播放器上實作串流媒體服務。 只有串流媒體資料可用於同盟。 如需詳細資訊，請參閱[Adobe串流媒體服務總覽](/help/media-overview.md)。
 
 * **Adobe 諮詢合約:**&#x200B;若要進行接收者和傳送者之間同盟規則的初始設定，建議您與諮詢服務人員合作檢閱資料並建立資料共享協定。
 

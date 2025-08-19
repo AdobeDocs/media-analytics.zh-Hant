@@ -1,19 +1,19 @@
 ---
-title: 了解支援的裝置和平台
-description: 瞭解串流媒體收集支援的主要裝置，例如iOS、Android、OTT裝置和JavaScript瀏覽器。
+title: 瞭解支援的裝置和平台
+description: 瞭解Adobe串流媒體服務支援的主要裝置，例如iOS、Android、OTT裝置和JavaScript瀏覽器。
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 77%
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
 # 支援的裝置和平台 {#devices-supported}
 
-Adobe串流媒體收集支援所有主要裝置，包括：
+Adobe串流媒體服務支援所有主要裝置，包括：
 
 * iOS 和 Android 智慧型手機和平板電腦
 * 適用於 Roku、Fire TV 以及 Android TV 的 OTT 裝置
@@ -21,7 +21,7 @@ Adobe串流媒體收集支援所有主要裝置，包括：
 
 SDK 會因應裝置發佈新版本而定時更新，讓您能將 SDK 與各個平台的原生播放器或任何其他可用的媒體播放器整合。
 
-若是裝置目前尚未支援 SDK，或您可能需要自訂實施的情況下，您可以使用 Media Collection API 或 Media Edge API。這些API可讓您直接從裝置對串流媒體收集後端進行RESTful API呼叫。
+若是裝置目前尚未支援 SDK，或您可能需要自訂實施的情況下，您可以使用 Media Collection API 或 Media Edge API。這些API可讓您直接從裝置對Adobe串流媒體服務的後端進行RESTful API呼叫。
 
 目前支援的裝置如下表所示。若裝置不在清單中，請聯絡您的客戶服務人員或解決方案顧問，以瞭解該裝置的狀態。
 

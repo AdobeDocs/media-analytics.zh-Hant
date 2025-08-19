@@ -4,7 +4,7 @@ description: 了解如何將應用程式動作連結到媒體追蹤資料，而�
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%
@@ -23,7 +23,7 @@ ht-degree: 88%
 
 >[!NOTE]
 >
->媒體量度&#x200B;_不_&#x200B;可用於媒體追蹤以外，因為其中大多數是由串流媒體收集根據心率事件計算。 此外，請務必確保媒體量度不會因不同的實作而膨脹。
+>媒體量度&#x200B;_不_&#x200B;可用於媒體追蹤以外，因為其中大多數是由串流媒體服務根據心率事件計算。 此外，請務必確保媒體量度不會因不同的實作而膨脹。
 
 ## 使用媒體串流歸因
 

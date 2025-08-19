@@ -1,20 +1,21 @@
 ---
-title: 將Analytics來源聯結器實施移轉至更新的XDM串流媒體欄位
+title: 將Analytics來源聯結器實作更新為串流媒體服務的新XDM欄位
 description: 瞭解如何將Analytics來源聯結器實作移轉至更新的XDM串流媒體欄位
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# 將Analytics來源聯結器實施更新至串流媒體的新的XDM欄位
+# 將Analytics來源聯結器實作更新為串流媒體服務的新XDM欄位
 
 >[!NOTE]
 >
->此資訊適用於使用[Analytics來源聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)將串流媒體資料從Adobe Analytics帶入Adobe Experience Platform，以搭配Customer Journey Analytics報表或任何其他Platform服務的組織。
+>此資訊適用於使用[Analytics來源聯結器](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)將串流媒體資料從Adobe Analytics帶入Adobe Experience Platform，以搭配Customer Journey Analytics報表或任何其他Platform服務使用的組織。
 >
 >這些變更不會影響Adobe Analytics作為獨立應用程式的效能，包括資料收集、處理和報告。 資料摘要和處理規則等工具不受影響，因此不需要更新Analytics實施。
 
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 ## 與新XDM欄位路徑的其他差異
 
-隨著適用於串流媒體的Adobe來源聯結器新實施，來自Adobe Analytics的持續呼叫現在會擷取到Adobe Experience Platform。
+隨著串流媒體適用的新Adobe來源聯結器實作，來自Adobe Analytics的持續呼叫現在會擷取到Adobe Experience Platform中。
 
 之前，這些呼叫不會反映在Customer Journey Analytics等平台應用程式中。 因此，您的組織可能會在報表中觀察到以下差異：
 
@@ -87,4 +88,3 @@ CJA報表的移轉方式有兩種：
 所有使用適用於串流媒體的Adobe Data Collection的客戶都必須在指定的轉換期間內完成移轉。
 
 如有任何問題或需要支援，請隨時聯絡Adobe支援團隊。
-

@@ -1,13 +1,13 @@
 ---
 title: 說明自訂連結實作
-description: 瞭解如何在串流媒體收集中實施自訂連結追蹤。
+description: 瞭解如何在串流媒體服務中實作自訂連結追蹤。
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '176'
 ht-degree: 93%
 
 ---

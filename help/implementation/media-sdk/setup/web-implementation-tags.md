@@ -4,16 +4,16 @@ description: 了解如何為 Web 應用程式實作 Adobe Streaming Media。
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 78%
+source-wordcount: '115'
+ht-degree: 80%
 
 ---
 
-# 使用Media Analytics擴充功能安裝串流媒體收集
+# 使用Media Analytics擴充功能安裝串流媒體服務
 
-您可以使用Adobe Media Analytics擴充功能來實施Adobe串流媒體收集。 Media Analytics 擴充功能新增核心 JavaScript Media SDK (Media 3.x SDK)。此擴充功能可將 Media 追蹤器執行個體新增至已啟用標記的網站或專案。
+您可以使用Adobe Media Analytics擴充功能來實作Adobe串流媒體服務。 Media Analytics 擴充功能新增核心 JavaScript Media SDK (Media 3.x SDK)。此擴充功能可將 Media 追蹤器執行個體新增至已啟用標記的網站或專案。
 
 有關如何安裝和使用擴充功能的資訊，請參閱 [Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能 - 使用標記 (資料集合)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant)。
 

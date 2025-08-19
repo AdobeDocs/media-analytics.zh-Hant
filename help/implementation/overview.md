@@ -1,24 +1,26 @@
 ---
-title: 實作串流媒體收集
-description: 瞭解串流媒體收集的實作路徑。
+title: 實作Adobe Analytics或Customer Journey Analytics的串流媒體服務
+description: 瞭解Adobe串流媒體服務的實作路徑。
 uuid: null
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 69%
+source-wordcount: '484'
+ht-degree: 65%
 
 ---
 
-# 實作串流媒體收集
+# 實作Adobe Analytics或Customer Journey Analytics的串流媒體服務
 
-有多種方式可實施Adobe串流媒體收集。 有關本頁描述的實施方法所支援的裝置和平台的詳細比較，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。
+有多種方式可實施Adobe串流媒體服務。 有關本頁描述的實施方法所支援的裝置和平台的詳細比較，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。
 
 ## Edge 實施方法
 
-我們建議為所有新的Adobe Analytics或Edge客戶實作串流媒體收集時使用Customer Journey Analytics。
+我們建議在對所有新Adobe Analytics或Edge客戶實作串流媒體服務時使用Customer Journey Analytics。
+
+Edge實作方法使用串流媒體收集附加元件。
 
 * **Edge Network SDK媒體/擴充功能：**&#x200B;從網頁、iOS和Android裝置或Roku裝置收集資料，並傳送至Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
@@ -36,9 +38,11 @@ ht-degree: 69%
 
 除了 Edge 實施方法之外，還有其他實施方法。 這些實施方法專為與 Adobe Analytics 搭配使用而設計。 但是，採用以下任何實施方法的現有客戶仍然可以透過建立 [Analytics 來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant)的方式，使資料可用於 Customer Journey Analytics。
 
+僅限Adobe Analytics的實作方法使用Adobe Analytics for Streaming Media附加元件。
+
 * **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。資料會傳送至 Adobe Analytics。
 
-  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=zh-Hant)。
+  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)。
 
 * **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。(如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
 

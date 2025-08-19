@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 94%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 94%
 
 ## 一般實作指引 {#general-implementation-guidelines}
 
-使用串流媒體收集進行追蹤時，會使用三個主要的SDK元件：
+使用串流媒體服務進行追蹤時，主要使用三個SDK元件：
 * 媒體心率設定 - `MediaHeartbeatConfig` 包含報表的基本設定。
 * 媒體心率代理人 - `MediaHeartbeatDelegate` 可控制播放時間和 QoS 物件。
 * 媒體心率 - `MediaHeartbeat` 是包含成員與方法的主要程式庫。
@@ -126,7 +126,7 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
   分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
-* **&#x200B; Media Analytics (心率) 伺服器**
+* ** Media Analytics (心率) 伺服器**
 此格式一律為「`[your_namespace].hb.omtrdc.net`」。「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
 
 媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。目前音訊追蹤可在行動平台運作。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數：

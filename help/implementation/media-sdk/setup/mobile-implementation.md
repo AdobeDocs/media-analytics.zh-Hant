@@ -1,19 +1,19 @@
 ---
-title: 如何使用標記為串流媒體設定 Mobile SDK
-description: 了解如何為行動應用程式實作 Adobe Streaming Media。
+title: 如何使用適用於串流媒體服務的標籤來設定行動SDK
+description: 瞭解如何為行動應用程式實作Adobe串流媒體服務。
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 82%
+source-wordcount: '199'
+ht-degree: 70%
 
 ---
 
 # 安裝 Mobile SDK {#install-mobile-sdks}
 
-若要在Android或iOS上實作適用於行動應用程式的串流媒體收集，請安裝和設定下列專案：
+若要在Android或iOS上實作適用於行動應用程式的Adobe串流媒體服務，請安裝和設定下列專案：
 
 * **Adobe Experience Platform Mobile SDK**
 

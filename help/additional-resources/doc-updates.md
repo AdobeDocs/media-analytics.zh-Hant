@@ -1,6 +1,6 @@
 ---
-title: 串流媒體有哪些新增功能？
-description: 瞭解串流媒體的新增功能。
+title: 串流媒體服務有哪些新增功能？
+description: 瞭解串流媒體服務的新增功能。
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
@@ -8,10 +8,10 @@ snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '17'
-ht-degree: 35%
+source-wordcount: '19'
+ht-degree: 31%
 
 ---
 

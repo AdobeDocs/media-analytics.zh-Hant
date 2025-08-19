@@ -1,20 +1,20 @@
 ---
 title: 計算量度
-description: 瞭解串流媒體收集中的計算量度和量度公式。
+description: 瞭解串流媒體服務中的計算量度和量度公式。
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '242'
 ht-degree: 72%
 
 ---
 
 # 計算量度{#calculated-metrics}
 
-Adobe串流媒體收集的計算量度是自訂量度，可讓您取得目標串流媒體資料，例如平均廣告逗留時間或每個媒體資料流的平均廣告數。
+Adobe串流媒體服務的計算量度是自訂量度，可讓您取得目標串流媒體資料，例如平均廣告逗留時間或每個媒體資料流的平均廣告數。
 
 有關 Adobe Analytics 計算量度的資訊，請參閱《Adobe Analytics 元件指南》中的[計算和進階計算 (衍生) 量度](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=zh-Hant)。
 

@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: 串流媒體收集
-breadcrumb-title: 串流媒體收集指南
-user-guide-description: 實作串流媒體。包含 Media SDK 和 Media Collection API。
+user-guide-title: 串流媒體服務指南
+breadcrumb-title: 串流媒體服務指南
+user-guide-description: 實作串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 81%
+source-wordcount: '926'
+ht-degree: 79%
 
 ---
 
 
-# 串流媒體收集 {#using}
+# 串流媒體服務指南 {#using}
 
-+ [串流媒體收集指南](media-overview.md)
++ [Adobe串流媒體服務指南](media-overview.md)
 + 發行說明 {#release-notes}
-   + [串流媒體收集發行說明](additional-resources/release-notes.md)
+   + [串流媒體服務發行說明](additional-resources/release-notes.md)
 + 開始使用 {#getting-started}
    + [先決條件](getting-started/prereqs.md)
    + [支援裝置](getting-started/supported-devices.md)
-   + [串流媒體收集實施檔案](getting-started/implementation-documentation.md)
+   + [串流媒體服務實作檔案](getting-started/implementation-documentation.md)
    + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
    + 終止支援 {#end-of-support}
       + [Media Analytics Mobile SDK 終止支援](additional-resources/end-of-support-faqs.md)
