@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
-user-guide-description: 實作串流媒體服務。 包含 Media SDK 和 Media Collection API。
+user-guide-description: 實施串流媒體服務。包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
 source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 79%
+ht-degree: 80%
 
 ---
 
