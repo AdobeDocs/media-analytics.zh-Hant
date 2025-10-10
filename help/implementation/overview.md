@@ -42,7 +42,7 @@ Edge實作方法使用串流媒體收集附加元件。
 
 * **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。資料會傳送至 Adobe Analytics。
 
-  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)。
+  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=zh-Hant)。
 
 * **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。(如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
 

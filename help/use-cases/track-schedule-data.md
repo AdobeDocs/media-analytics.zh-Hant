@@ -141,7 +141,7 @@ ht-degree: 2%
 
    1. 推送包含使用批次ID之程式排程資料記錄的.json檔案。
 
-      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)所述。
+      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/batch/overview)所述。
 
       請考慮以下使用cURL來推送包含排程記錄的檔案的範例：
 
@@ -301,9 +301,9 @@ ht-degree: 2%
 
    考量下列您可以在Customer Journey Analytics中建立並報告的維度範例：
 
-   * **[「_集名稱_」](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此維度可協助您瞭解特定系列中的哪些集數表現最好。
+   * **[「_集名稱_」](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此維度可協助您瞭解特定系列中的哪些集數表現最好。
 
-   * **[資產識別碼](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[資產識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. 繼續[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析資料。
 

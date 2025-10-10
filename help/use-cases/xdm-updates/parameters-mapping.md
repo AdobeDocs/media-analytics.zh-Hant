@@ -13,7 +13,7 @@ ht-degree: 44%
 
 # 適用於Adobe Experience Platform和Customer Journey Analytics的Media Analytics引數對應
 
-本檔案提供Adobe Experience Platform和Customer Journey Analytics中所有Media Analytics使用引數的完整清單。 其目的是支援將透過[Analytics Source Connector](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)從Adobe Analytics匯入的資料整合到Platform，並將每個引數對應到其對應的XDM欄位路徑。
+本檔案提供Adobe Experience Platform和Customer Journey Analytics中所有Media Analytics使用引數的完整清單。 其目的是支援將透過[Analytics Source Connector](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/classifications)從Adobe Analytics匯入的資料整合到Platform，並將每個引數對應到其對應的XDM欄位路徑。
 
 ## Media Analytics保留變數
 
