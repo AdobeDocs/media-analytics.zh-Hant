@@ -172,4 +172,4 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    | `processMediaMessages` | 負責傳遞媒體事件至要處理的 SDK。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=zh-Hant) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

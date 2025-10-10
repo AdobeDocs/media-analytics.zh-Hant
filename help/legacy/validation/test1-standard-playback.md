@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 100%
+source-wordcount: '846'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
 
      | 參數 | 值 (範例) |
      |---|---|
-     | `pev2` | ADBINTERNAL：Lifecycle |
+     | `pev2` | ADBINTERNAL:Lifecycle |
      | `mid` | 30250035503789876473484580554595324209 |
 
    * **Media Analytics 開始呼叫**

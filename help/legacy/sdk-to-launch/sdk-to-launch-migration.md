@@ -30,7 +30,7 @@ Launch 可讓客戶透過簡單的方式部署及管理所有必要的分析、
 
 網頁和行動裝置皆可使用 Launch 擴充功能 Adobe Media Analytics for Audio and Video：
 
-* [網頁 Launch 文件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant)
+* [網頁 Launch 文件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
 * [行動裝置 Launch 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 平台

@@ -3,7 +3,8 @@ title: 將受眾移轉至適用於串流媒體的新的Adobe Analytics資料型�
 description: 瞭解如何將受眾移轉至適用於串流媒體的新的Adobe Analytics資料型別
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 3056a384535b3f5f2a9bc2d950bd5ee3410ec0a5
+exl-id: 79203a2f-8158-44f2-83b2-146179be9180
+source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 44%
@@ -12,7 +13,7 @@ ht-degree: 44%
 
 # 適用於Adobe Experience Platform和Customer Journey Analytics的Media Analytics引數對應
 
-本檔案提供Adobe Experience Platform和Customer Journey Analytics中所有Media Analytics使用引數的完整清單。 其目的是支援將透過[Analytics Source Connector](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/classifications)從Adobe Analytics匯入的資料整合到Platform，並將每個引數對應到其對應的XDM欄位路徑。
+本檔案提供Adobe Experience Platform和Customer Journey Analytics中所有Media Analytics使用引數的完整清單。 其目的是支援將透過[Analytics Source Connector](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)從Adobe Analytics匯入的資料整合到Platform，並將每個引數對應到其對應的XDM欄位路徑。
 
 ## Media Analytics保留變數
 
@@ -237,9 +238,3 @@ Media Analytics分類會透過稱為ACDC的個別流程內嵌至AEP中。 下表
 | 總停頓期間 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 
 {style="table-layout:auto"}
-
-
-
-
-
-

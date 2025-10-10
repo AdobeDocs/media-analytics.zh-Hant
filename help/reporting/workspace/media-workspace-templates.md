@@ -18,7 +18,7 @@ ht-degree: 9%
 >
 >Workspace中的&#x200B;*報表*&#x200B;先前稱為&#x200B;*範本*。
 
-Analysis Workspace提供一組預設可用的預先建立報表，供您分析資料。 如需所有可用預設報表的詳細資訊，請參閱[Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hant#menus)中的[檢視報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-hant)。
+Analysis Workspace提供一組預設可用的預先建立報表，供您分析資料。 如需所有可用預設報表的詳細資訊，請參閱[Adobe Analytics登陸頁面](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus)中的[檢視報表](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-hant)。
 
 其中有些報表在分析串流媒體資料時特別有用，如以下章節所述。
 
@@ -41,6 +41,6 @@ Analysis Workspace提供一組預設可用的預先建立報表，供您分析�
 您可以透過下列方式使用預設媒體報表：
 建立新專案時。 修改現有專案時，您也可以使用或。
 
-* **建立新專案時：**&#x200B;如需有關如何從預設報表建立新專案的資訊，請參閱[在Analysis Workspace中建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=zh-Hant#create-a-project-from-a-blank-project-or-a-report)中的[從空白專案或報表建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=zh-Hant#create-a-project-from-a-blank-project-or-a-report)。
+* **建立新專案時：**&#x200B;如需有關如何從預設報表建立新專案的資訊，請參閱[在Analysis Workspace中建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report)中的[從空白專案或報表建立專案](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report)。
 
-* **建立自訂公司報告時：**&#x200B;如需有關如何建立自訂公司報告的資訊，請參閱[在](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-Hant#company-report)Adobe Analytics登陸頁面[中建立自訂公司報告](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-hant)。
+* **建立自訂公司報告時：**&#x200B;如需有關如何建立自訂公司報告的資訊，請參閱[在](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report)Adobe Analytics登陸頁面[中建立自訂公司報告](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=zh-hant)。

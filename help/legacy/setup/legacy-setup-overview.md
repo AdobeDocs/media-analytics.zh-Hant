@@ -144,7 +144,7 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
   分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
-* **&#x200B; Media Analytics (心率) 伺服器**
+* ** Media Analytics (心率) 伺服器**
 此格式一律為「`[your_namespace].hb.omtrdc.net`」。「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
 
 媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。目前音訊追蹤可在行動平台運作。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數：

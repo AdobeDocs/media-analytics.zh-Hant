@@ -81,7 +81,7 @@ Ping 事件的要求內文&#x200B;*不*&#x200B;應該包含 `params` 對應。
 
 當使用者放棄檢視內容，而且不太可能返回工作階段時，用來通知 Media Analytics 後端立即關閉工作階段.
 
-如果未傳送`sessionEnd`，放棄的工作階段通常會逾時[2&rbrace; （在10分鐘內未接收到任何事件，或播放點在30分鐘內未移動）。 ](../mc-api-impl/mc-api-timeout.md)此外，使用該工作階段ID進行的所有後續媒體呼叫都將被捨棄。
+如果未傳送`sessionEnd`，放棄的工作階段通常會逾時[2} （在10分鐘內未接收到任何事件，或播放點在30分鐘內未移動）。 ](../mc-api-impl/mc-api-timeout.md)此外，使用該工作階段ID進行的所有後續媒體呼叫都將被捨棄。
 
 ## sessionComplete
 

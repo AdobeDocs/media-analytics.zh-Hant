@@ -5,7 +5,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 hide: true
 hidefromtoc: true
-source-git-commit: e38a83853e85418611e17015b661d8592a7c95a1
+exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
+source-git-commit: b947a1d64c7fa58e784712397b0167d4186d00c3
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 2%
@@ -140,7 +141,7 @@ ht-degree: 2%
 
    1. 推送包含使用批次ID之程式排程資料記錄的.json檔案。
 
-      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/batch/overview)所述。
+      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)所述。
 
       請考慮以下使用cURL來推送包含排程記錄的檔案的範例：
 
@@ -300,9 +301,9 @@ ht-degree: 2%
 
    考量下列您可以在Customer Journey Analytics中建立並報告的維度範例：
 
-   * **[「_集名稱_」](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此維度可協助您瞭解特定系列中的哪些集數表現最好。
+   * **[「_集名稱_」](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此維度可協助您瞭解特定系列中的哪些集數表現最好。
 
-   * **[資產識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[資產識別碼](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. 繼續[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析資料。
 

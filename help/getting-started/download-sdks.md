@@ -22,7 +22,7 @@ Adobe Experience Platform 中的標記是 Adobe 推出的新一代網站標記�
 >[!NOTE]
 >
 >如需有關下載舊版 SDK 的資訊，請參閱[舊版 — 下載 SDK](/help/legacy/legacy-download-sdks.md)。<br>
->&#x200B;>如需關於終止支援的重要資訊，請參閱[終止支援常見問題集](/help/additional-resources/end-of-support-faqs.md)。
+>>如需關於終止支援的重要資訊，請參閱[終止支援常見問題集](/help/additional-resources/end-of-support-faqs.md)。
 
 ## Media SDK 和行動程式庫 {#media-sdks-libraries}
 

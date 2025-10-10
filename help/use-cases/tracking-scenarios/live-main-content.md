@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ ht-degree: 100%
 
 對於直播媒體，當用戶開始播放串流時，您需要將 `l:event:playhead` 設定為自當天 UTC 午夜開始的秒數。與此相對的是，在 VOD 中，您會將播放點設為「0」。注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。
 
-例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。接著，假設使用者在中午 12:00 開始播放該「即時」資料流。在這種情況下，您應將 `l:event:playhead` 設定為 43200 (自當天 UTC 午夜起 12 小時，以秒為單位）。
+例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。接著，假設使用者於12:00pm開始播放該「即時」資料流。 在這種情況下，您應將 `l:event:playhead` 設定為 43200 (自當天 UTC 午夜起 12 小時，以秒為單位）。
 
 ### 暫停時
 

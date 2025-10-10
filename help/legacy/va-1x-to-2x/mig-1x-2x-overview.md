@@ -27,6 +27,6 @@ ht-degree: 100%
 * 所有設定現已整合至 `MediaHeartbeatConfig` 類別。
 * 不再需要為 Analytics、VideoPlayer 和 Heartbeat 外掛程式實例化設定。您只需要使用 `MediaHeartbeatDelegate` 和 `MediaHeartbeatConfig` 例項實例化 `MediaHeartbeat` 類別。這是唯一需要初始化 Media Analytics 的實作。
 
-  透過初始化 `MediaHeartbeat`，您可以安全地刪除 Analytics 外掛程式、VideoPlayer 外掛程式和 Heartbeat 外掛程式的所有實作。同時，請移除取得大量外掛程式作為輸入的 初始化的所有現有實作。您可以在下文中看到 1.x 和 2.x 實作的逐步比較：[程式碼比較：1.x 和 2.x.](./code-comparison-1x-2x.md)
+  透過初始化 `MediaHeartbeat`，您可以安全地刪除 Analytics 外掛程式、VideoPlayer 外掛程式和 Heartbeat 外掛程式的所有實作。此外，請移除所有現有的初始化實作，這些實作會將插件陣列作為輸入參數。您可以在下文中看到 1.x 和 2.x 實作的逐步比較：[程式碼比較：1.x 和 2.x.](./code-comparison-1x-2x.md)
 
 2.x 版的新 API 詳細說明：[API 1.x 版轉換至 2.x 版](./1x-2x-api-change.md)。

@@ -7,22 +7,22 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 88%
+source-wordcount: '124'
+ht-degree: 62%
 
 ---
 
 # 自訂中繼資料支援{#custom-metadata-support}
 
-您可以在 `sessionStart`、`chapterStart` 和 `adStart` 事件中提供自訂索引鍵：值配對。這些資訊必須以 JSON 索引鍵 `customMetadata` 提供，並放置在 `params` 索引鍵旁。
+您可以在:value、`sessionStart`和`chapterStart`事件中提供自訂索引鍵`adStart`配對。 這些資訊必須以 JSON 索引鍵 `customMetadata` 提供，並放置在 `params` 索引鍵旁。
 
-`customMetadata` JSON 索引鍵應包含索引鍵：值配對的物件。索引鍵只能包含英數字元、底線及點/句號。
+`customMetadata` JSON索引鍵應包含索引鍵:value配對的物件。 索引鍵只能包含英數字元、底線及點/句號。
 
 [MA Collection API 事件](../mc-api-ref/mc-api-events-req.md)
 
 ## 範例
 
-目前，您可以使用以下索引鍵：值配對來傳送 `sessionStart` 事件：
+目前您可以使用下列索引鍵`sessionStart`配對來傳送:value事件：
 
 ```
 params: { "media.channel": "channel-1" },
