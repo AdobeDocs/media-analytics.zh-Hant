@@ -92,7 +92,7 @@ ht-degree: 80%
       + [取得同時檢視者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [取得媒體播放時間資料](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 使用個案 {#media-use-cases}
-   + [Media SDK 使用案例 ](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Media SDK 使用案例 &#x200B;](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器狀態追蹤 {#player-state-tracking}
       + [概觀](use-cases/player-state-tracking/player-state-overview.md)
       + [標準和自訂狀態](use-cases/player-state-tracking/standard-and-custom-states.md)

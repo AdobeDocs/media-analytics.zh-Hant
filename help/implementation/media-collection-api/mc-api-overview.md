@@ -74,7 +74,7 @@ Media Collection API 擷取的追蹤資料，其傳送和初期處理方式與 M
 * `qoeData` - 所有要求均可選用。
 * `customMetadata` - 所有要求均可選用，不過只能連同 `sessionStart`、`adStart` 和 `chapterStart` 事件類型一起傳送。
 
-您可以利用開放使用的 `eventType`JSON 驗證結構[來驗證每種 ](mc-api-ref/mc-api-json-validation.md) 的參數類型，以及特定事件的參數屬於選用或必要性質。
+您可以利用開放使用的 `eventType`JSON 驗證結構[來驗證每種 &#x200B;](mc-api-ref/mc-api-json-validation.md) 的參數類型，以及特定事件的參數屬於選用或必要性質。
 
 ### 事件類型 {#mc-api-event-types}
 
