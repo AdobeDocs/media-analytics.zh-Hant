@@ -10,7 +10,7 @@ ht-degree: 98%
 以下內容複製自 Experience Cloud 發行說明。此資訊將會移至新的串流媒體服務發行說明。
 
 
-了解關於 [Adobe Experience Cloud 產品](https://business.adobe.com/products/adobe-experience-cloud-products.html)的最新版更新。取得 Experience League 上的最新自助文件、教學課程和課程。
+了解關於 [Adobe Experience Cloud 產品](https://business.adobe.com/tw/products/adobe-experience-cloud-products.html)的最新版更新。取得 Experience League 上的最新自助文件、教學課程和課程。
 
 了解關於 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-Hant) 的最新版更新。取得 Experience League 上的最新自助文件、教學課程和課程。
 
