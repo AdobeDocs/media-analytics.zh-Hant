@@ -3,17 +3,19 @@ title: 上傳排程資料以追蹤即時內容
 description: 瞭解如何上傳排程資料以追蹤即時內容。
 feature: Streaming Media
 role: User, Admin, Data Engineer
-hide: true
-hidefromtoc: true
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-source-git-commit: b947a1d64c7fa58e784712397b0167d4186d00c3
+source-git-commit: 65cd7987acb677b4f4c863b42dc809b5a23c2ed1
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 2%
+source-wordcount: '1381'
+ht-degree: 5%
 
 ---
 
 # 上傳排程資料以追蹤即時內容
+
+>[!AVAILABILITY]
+>
+>本文中描述的功能處於發佈的有限測試階段，可能尚未開放使用於您的環境中。此功能開放使用時，便會刪除此備註。如需發行程式的相關資訊，請參閱[Customer Journey Analytics功能發行](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)。
 
 您可以上傳過去直播串流媒體內容的排程資料，以更輕鬆且更準確地追蹤直播內容的收視率。 您可以追蹤個別方案的收視率，甚至追蹤特定主題或方案區段。
 
@@ -31,7 +33,7 @@ ht-degree: 2%
 
 使用過去直播串流媒體內容的排程資料上傳時，可以使用各種功能。 本節說明有助於分析程式效能的一些主要功能。
 
-無論您以何種方式實施串流媒體收集，都可以使用這些功能。
+無論您以何種方式實施串流媒體收集，均可使用這些功能。
 
 * **準確地追蹤方案排程**：識別您想要分析的時段內，即時資料流中每個個別方案的開始和結束時間。 有了精確的開始和結束時間，精確的執行時間就會得到精確反映，並且可以針對每個檢視器工作階段進行分析。
 
@@ -141,7 +143,7 @@ ht-degree: 2%
 
    1. 推送包含使用批次ID之程式排程資料記錄的.json檔案。
 
-      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/batch/overview)所述。
+      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)所述。
 
       請考慮以下使用cURL來推送包含排程記錄的檔案的範例：
 
@@ -301,9 +303,9 @@ ht-degree: 2%
 
    考量下列您可以在Customer Journey Analytics中建立並報告的維度範例：
 
-   * **[「_集名稱_」](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此維度可協助您瞭解特定系列中的哪些集數表現最好。
+   * **[「_集名稱_」](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此維度可協助您瞭解特定系列中的哪些集數表現最好。
 
-   * **[資產識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[資產識別碼](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. 繼續[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析資料。
 
