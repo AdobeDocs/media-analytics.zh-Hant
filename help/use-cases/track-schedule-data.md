@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->本文中描述的功能處於發佈的有限測試階段，可能尚未開放使用於您的環境中。此功能開放使用時，便會刪除此備註。如需發行程式的相關資訊，請參閱[Customer Journey Analytics功能發行](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)。
+>本文中描述的功能處於發佈的有限測試階段，可能尚未開放使用於您的環境中。此功能開放使用時，便會刪除此備註。如需發行程式的相關資訊，請參閱[Customer Journey Analytics功能發行](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/releases/releases)。
 
 您可以上傳過去直播串流媒體內容的排程資料，以更輕鬆且更準確地追蹤直播內容的收視率。 您可以追蹤個別方案的收視率，甚至追蹤特定主題或方案區段。
 
@@ -143,7 +143,7 @@ ht-degree: 5%
 
    1. 推送包含使用批次ID之程式排程資料記錄的.json檔案。
 
-      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)所述。
+      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/batch/overview)所述。
 
       請考慮以下使用cURL來推送包含排程記錄的檔案的範例：
 
@@ -303,9 +303,9 @@ ht-degree: 5%
 
    考量下列您可以在Customer Journey Analytics中建立並報告的維度範例：
 
-   * **[「_集名稱_」](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此維度可協助您瞭解特定系列中的哪些集數表現最好。
+   * **[「_集名稱_」](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)**：此維度可協助您瞭解特定系列中的哪些集數表現最好。
 
-   * **[資產識別碼](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[資產識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. 繼續[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析資料。
 
