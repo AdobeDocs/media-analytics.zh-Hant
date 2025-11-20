@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
 workflow-type: tm+mt
 source-wordcount: '929'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 80%
          + [事件要求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
          + [要求參數](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
          + [事件類型和說明](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
-         + 實作 API {#mc-api-impl}
+         + 實作API {#mc-api-impl}
             + [在播放器中設定 HTTP 要求類型](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [取得工作階段 ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
             + [實作事件要求](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
@@ -92,7 +92,7 @@ ht-degree: 80%
       + [取得同時檢視者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [取得媒體播放時間資料](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 使用個案 {#media-use-cases}
-   + [Media SDK 使用案例 &#x200B;](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Media SDK 使用案例 ](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器狀態追蹤 {#player-state-tracking}
       + [概觀](use-cases/player-state-tracking/player-state-overview.md)
       + [標準和自訂狀態](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -193,7 +193,7 @@ ht-degree: 80%
       + [測試 2：媒體中斷](legacy/validation/test2-media-interrupt.md)
       + [測試呼叫詳細資料](legacy/validation/test-call-details.md)
       + [心率參數說明](legacy/validation/heartbeat-params.md)
-      + 除錯 {#debugging}
+      + 偵錯 {#debugging}
          + [SDK 除錯](legacy/validation/debugging/sdk-debugging.md)
    + [舊版移轉： VHL 1.x 至 VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
    + [程式碼比較： v1.x 與 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
