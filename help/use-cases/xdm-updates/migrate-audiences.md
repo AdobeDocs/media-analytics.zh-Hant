@@ -13,15 +13,15 @@ ht-degree: 2%
 
 # 將受眾移轉至新的串流媒體欄位
 
-本檔案說明應如何移轉使用Adobe串流媒體服務資料型別「媒體」欄位的對象，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
+本檔案說明應如何移轉使用Adobe串流媒體服務資料型別「媒體」欄位的對象，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
 
 ## 移轉對象
 
-若要將對象從名為「媒體」的舊資料型別移轉到名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯對象，並在每個規則中將已棄用資料型別的舊欄位取代為新資料型別的新對應欄位：
+若要將對象從名為「媒體」的舊資料型別移轉到名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯對象，並在每個規則中將已棄用資料型別的舊欄位取代為新資料型別的新對應欄位：
 
 1. 找出包含已棄用「媒體」資料型別欄位的規則。 這是以路徑`media.mediaTimed`開頭的所有欄位。
 
-1. 使用新「[媒體報告詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」資料型別的欄位，複製這些規則。
+1. 使用新「[媒體報告詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」資料型別的欄位，複製這些規則。
 
 1. 將這兩個規則維持在適當位置，直到您驗證對象是否如預期般運作為止。
 

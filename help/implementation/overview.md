@@ -36,13 +36,13 @@ Edge實作方法使用串流媒體收集附加元件。
 
 建議將上述 Edge 實施方法用於 Customer Journey Analytics 和 Adobe Analytics，特別是對於新實施。
 
-除了 Edge 實施方法之外，還有其他實施方法。 這些實施方法專為與 Adobe Analytics 搭配使用而設計。 但是，採用以下任何實施方法的現有客戶仍然可以透過建立 [Analytics 來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)的方式，使資料可用於 Customer Journey Analytics。
+除了 Edge 實施方法之外，還有其他實施方法。 這些實施方法專為與 Adobe Analytics 搭配使用而設計。 但是，採用以下任何實施方法的現有客戶仍然可以透過建立 [Analytics 來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant)的方式，使資料可用於 Customer Journey Analytics。
 
 僅限Adobe Analytics的實作方法使用Adobe Analytics for Streaming Media附加元件。
 
 * **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。資料會傳送至 Adobe Analytics。
 
-  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)。
+  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=zh-Hant)。
 
 * **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。(如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
 

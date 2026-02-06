@@ -21,9 +21,9 @@ ht-degree: 10%
 1. **確認您正在實作與Edge Network和串流媒體集合相容的Adobe解決方案**<br>
 透過Edge實作串流媒體收集時，您還必須具備有效的Customer Journey Analytics、Adobe Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform實作。 如需詳細資訊，請參閱下列檔案資源：
    * [Customer Journey Analytics 指南](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant)
-   * [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
+   * [實施 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)
    * [Adobe Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)
-   * [Real-Time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [Real-Time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hant)
 
 1. **取得媒體追蹤伺服器URL**<br>
 請向您的Customer Journey Analytics代表詢問媒體追蹤伺服器URL。<!-- This is the `collection-api-server` URL for the Mobile SDK, the JavaScript SDK, and the non-collection-api tracking server for Roku. Domain names for API implementation is: `[your_namespace].hb-api.omtrdc.net`. -->

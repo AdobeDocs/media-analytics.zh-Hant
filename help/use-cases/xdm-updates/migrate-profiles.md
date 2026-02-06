@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 將設定檔移轉至新的串流媒體欄位
 
-本檔案說明移轉設定檔篩選服務的程式，該服務是位於為Adobe Analytics啟用串流媒體資料的Adobe資料收集流程之上。 移轉會將設定檔篩選服務從使用名為「媒體」的Adobe串流媒體服務資料型別轉換為使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
+本檔案說明移轉設定檔篩選服務的程式，該服務是位於為Adobe Analytics啟用串流媒體資料的Adobe資料收集流程之上。 移轉會將設定檔篩選服務從使用名為「媒體」的Adobe串流媒體服務資料型別轉換為使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
 
 ## 移轉設定檔
 
-若要將設定檔篩選從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯現有的設定檔篩選規則：
+若要將設定檔篩選從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯現有的設定檔篩選規則：
 
 1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **來源**]&#x200B;區段底下，前往&#x200B;[!UICONTROL **資料流**]&#x200B;標籤。
 
