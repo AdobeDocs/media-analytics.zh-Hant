@@ -35,7 +35,7 @@ ht-degree: 95%
    | `length` | 章節長度 | 是 |
    | `startTime` | 章節開始時間 | 是 |
 
-   章節物件：[ createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
+   章節物件：[&#x200B; createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)
 
    ```js
    chapterInfo = ADBMobile.media.createChapterObject("First Chapter", 1, CHAPTER1_LENGTH, CHAPTER1_START_POS);
