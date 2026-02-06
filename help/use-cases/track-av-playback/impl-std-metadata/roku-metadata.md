@@ -5,16 +5,16 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
 source-wordcount: '471'
-ht-degree: 91%
+ht-degree: 79%
 
 ---
 
 # Roku 中繼資料索引鍵{#roku-metadata-keys}
 
-標準視訊、音訊和廣告中繼資料可分別在媒體和廣告資訊物件上設定。在呼叫追蹤 API 之前，使用視訊/廣告中繼資料的常數索引鍵，設定包含資訊物件之標準中繼資料的字典。請參閱下列表格以獲取標準中繼資料常數的完整清單，然後是範例。
+標準視訊、音訊和廣告中繼資料可分別在媒體和廣告資訊物件上設定。使用視訊/廣告中繼資料的常數索引鍵，在呼叫追蹤API之前設定包含資訊物件上標準中繼資料的字典。 如需標準中繼資料常數的完整清單，請參閱下表，後面是範例。
 
 ## 視訊中繼資料常數 {#video-metadata-constants}
 
