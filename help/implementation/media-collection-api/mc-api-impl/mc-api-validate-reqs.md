@@ -4,17 +4,17 @@ description: 了解如何使用 JSON 驗證結構來驗證事件要求。
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
 # 驗證事件要求{#validating-event-requests}
 
-每種事件類型的 JSON 要求內文，都會在後端以 JSON 結構加以驗證。當 API 呼叫驗證失敗時，系統會在 HTTP 回應內文中填入錯誤訊息。
+每個事件型別的JSON要求內文，都會在後端透過JSON結構描述進行驗證。 當API呼叫的驗證失敗時，HTTP回應內文會填入錯誤訊息。
 
 每種事件類型的 JSON 驗證結構均可公開存取，請前往：`{uri}/api/v1/schemas/{eventType}` (例如 `{uri}/api/v1/schemas/sessionEnd`)。JSON 驗證結構是判斷每種事件類型之正確要求內容參數的絕對可信來源。
 

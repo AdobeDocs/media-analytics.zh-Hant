@@ -5,8 +5,8 @@ description: 了解 Media Collection API 以及您的播放器如何使用 RESTf
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 93%
@@ -74,7 +74,7 @@ Media Collection API 擷取的追蹤資料，其傳送和初期處理方式與 M
 * `qoeData` - 所有要求均可選用。
 * `customMetadata` - 所有要求均可選用，不過只能連同 `sessionStart`、`adStart` 和 `chapterStart` 事件類型一起傳送。
 
-您可以利用開放使用的 `eventType`JSON 驗證結構[來驗證每種 &#x200B;](mc-api-ref/mc-api-json-validation.md) 的參數類型，以及特定事件的參數屬於選用或必要性質。
+您可以利用開放使用的 `eventType`JSON 驗證結構[來驗證每種 ](mc-api-ref/mc-api-json-validation.md) 的參數類型，以及特定事件的參數屬於選用或必要性質。
 
 ### 事件類型 {#mc-api-event-types}
 

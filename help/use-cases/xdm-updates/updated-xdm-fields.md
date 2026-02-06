@@ -2,9 +2,9 @@
 title: 將Analytics來源聯結器實作更新為串流媒體服務的新XDM欄位
 description: 瞭解如何將Analytics來源聯結器實作移轉至更新的XDM串流媒體欄位
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d239b203-71ce-4307-884f-9d11cc623d04
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%

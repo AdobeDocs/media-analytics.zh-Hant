@@ -4,11 +4,11 @@ description: 使用 Media SDK 在 Android 應用程式中實作廣告追蹤。
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -38,8 +38,8 @@ ht-degree: 100%
 
    | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
-   | `name` | 廣告插播名稱，例如前段、中段和後段。 | 是 |
-   | `position` | 內容中廣告插播的編號位置從 1 開始。 | 是 |
+   | `name` | 廣告插播名稱，例如，前段、中段和後段。 | 是 |
+   | `position` | 內容中廣告插播的編號位置從1開始。 | 是 |
    | `startTime` | 廣告插播開始時的播放點值。 | 是 |
 
    廣告插播物件建立：
@@ -69,7 +69,7 @@ ht-degree: 100%
    | --- | --- | :---: |
    | `name` | 廣告的易記名稱。 | 是 |
    | `adId` | 廣告的唯一識別碼。 | 是 |
-   | `position` | 廣告插播中的廣告編號位置從 1 開始。 | 是 |
+   | `position` | 廣告插播中的廣告編號位置從1開始。 | 是 |
    | `length` | 廣告長度 | 是 |
 
    廣告物件建立：

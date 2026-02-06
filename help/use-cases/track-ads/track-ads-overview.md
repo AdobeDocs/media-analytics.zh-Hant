@@ -4,11 +4,11 @@ description: 有關如何使用 Media SDK 實作廣告追蹤的概觀。
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -30,13 +30,13 @@ ht-degree: 100%
 >[!NOTE]
 >包括前段廣告
 
-* 為廣告插播建立 `adBreak` 物件例項，例如, `adBreakObject`.
+* 為廣告插播建立 `adBreak` 物件例項，例如，`adBreakObject`。
 
 * 使用 `trackEvent` 呼叫廣告插播開始的 `adBreakObject`。
 
 ### 在每個廣告資產開始時
 
-* 為廣告資產建立廣告物件例項，例如, `adObject`.
+* 為廣告資產建立廣告物件例項，例如，`adObject`。
 * 填入廣告中繼資料 `adCustomMetadata`。
 * 呼叫廣告開始的 `trackEvent`。
 
@@ -72,8 +72,8 @@ ht-degree: 100%
 
    | 變數名稱 | 說明 | 必填 |
    | --- | --- | :---: |
-   | `name` | 廣告插播名稱，例如前段、中段和後段。 | 是 |
-   | `position` | 內容中廣告插播的編號位置從 1 開始。 | 是 |
+   | `name` | 廣告插播名稱，例如，前段、中段和後段。 | 是 |
+   | `position` | 內容中廣告插播的編號位置從1開始。 | 是 |
    | `startTime` | 廣告插播開始時的播放點值。 | 是 |
 
 1. 在 `MediaHeartbeat` 例項中使用 `AdBreakStart` 呼叫 `trackEvent()` 以開始追蹤廣告插播。
@@ -86,13 +86,13 @@ ht-degree: 100%
    | --- | --- | :---: |
    | `name` | 廣告的易記名稱。 | 是 |
    | `adId` | 廣告的唯一識別碼。 | 是 |
-   | `position` | 廣告插播中的廣告編號位置從 1 開始。 | 是 |
+   | `position` | 廣告插播中的廣告編號位置從1開始。 | 是 |
    | `length` | 廣告長度 | 是 |
 
 1. 可選擇透過內容資料變數，將標準和/或廣告中繼資料附加到追蹤工作階段。
 
-   * **標準廣告中繼資料 -** 對於標準廣告中繼資料，請使用平台的索引鍵，建立標準廣告中繼資料索引鍵值配對的字典。
-   * **自訂廣告中繼資料 -** 對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告的資料。
+   * **標準廣告中繼資料 —**&#x200B;針對標準廣告中繼資料，請使用平台的索引鍵建立標準廣告中繼資料索引鍵值配對字典。
+   * **自訂廣告中繼資料 —**&#x200B;對於自訂中繼資料，請建立自訂資料變數的變數物件，並填入目前廣告的資料。
 
 1. 在 `MediaHeartbeat` 例項中使用 `AdStart` 事件呼叫 `trackEvent()` 以開始追蹤廣告播放。
 

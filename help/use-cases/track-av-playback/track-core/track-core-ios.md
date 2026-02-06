@@ -4,11 +4,11 @@ description: 了解如何在 iOS 上使用 Media SDK 實作核心追蹤。
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '704'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -163,7 +163,7 @@ ht-degree: 100%
    * 使用者明確在應用程式中點擊暫停。
    * 播放器自行進入「暫停」狀態。
    * (*行動應用程式*) - 使用者讓應用程式進入背景，但您希望應用程式保持工作階段開啟。
-   * (*行動應用程式*) - 發生任何類型的系統中斷，導致應用程式進入背景。例如，使用者接聽電話、或發生來自另一個應用程式的彈出視窗，但您希望應用程式維持工作階段進行中，讓使用者能夠從中斷點復原影片。
+   * (*行動應用程式*) - 發生任何類型的系統中斷，導致應用程式進入背景。例如，使用者接聽電話、或發生來自另一個應用程式的彈出視窗，但您希望應用程式維持工作階段進行中，讓使用者能夠從中斷點復原視訊。
 
 1. 識別來自播放器的視訊播放和/或來自暫停的視訊恢復事件，並呼叫 `trackPlay`：
 
@@ -180,4 +180,4 @@ ht-degree: 100%
 如需有關追蹤核心播放的詳細資訊，請參閱下列內容：
 
 * 追蹤案例：[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* 完整追蹤範例的 iOS SDK 包含範例播放器。
+* iOS SDK隨附的範例播放器提供完整的追蹤範例。

@@ -3,8 +3,8 @@ title: Media SDK 使用案例概觀
 description: 了解串流媒體使用案例
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 92%

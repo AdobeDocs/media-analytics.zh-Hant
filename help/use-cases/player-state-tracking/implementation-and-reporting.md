@@ -3,8 +3,8 @@ title: 實作與報告
 description: 了解如何實作播放器狀態追蹤功能，包括
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 78%
@@ -89,7 +89,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 * `a.media.states.[state.name].count = 4` — 識別每個個別資料流播放期間的狀態發生次數
 * `a.media.states.[state.name].time = 240` — 識別每個個別資料流播放的總狀態持續時間 (秒)
 
-## 報表
+## 報告
 
 在播放器狀態追蹤啟用報表套裝後，所有的播放器狀態量度，均可用來產生任何可在 Analysis Workspace 中使用的視覺化報表或元件 (區段、計算量度)。您可以使用「媒體報表設定」（「編輯設定>媒體管理>媒體報表」），從Admin Console為每個個別報表啟用這些量度。
 

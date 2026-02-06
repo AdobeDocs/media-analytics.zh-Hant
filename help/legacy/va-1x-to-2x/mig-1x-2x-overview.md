@@ -4,11 +4,11 @@ description: 了解如何將 Media SDK 1.x 版本移轉至 2.x 版本。
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 100%
 
 以下為 1.x 和 2.x 的主要差異：
 
-* **外掛程式、委派 -** 您不再需要為 Analytics、VideoPlayer 和 Heartbeat 執行外掛程式和委派。
-* **設定 -** 您不再需要為 1.x 外掛程式實例化設定。
+* **外掛程式、代理人 —**&#x200B;您不再需要實作Analytics、VideoPlayer和Heartbeat的外掛程式和代理人。
+* **設定 —**&#x200B;您不再需要將1.x外掛程式的設定具現化。
 
 ## 2.x 版的優點 {#benefits-of-two-x}
 

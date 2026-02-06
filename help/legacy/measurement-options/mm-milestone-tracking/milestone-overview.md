@@ -4,8 +4,8 @@ description: 已過時 - 了解如何為里程碑的實作設定視訊報告
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '3369'
 ht-degree: 98%
@@ -24,7 +24,7 @@ ht-degree: 98%
 
 ### 里程碑視訊設定
 
-若要追蹤視訊，請指定一組要用來追蹤及報告的「自訂轉換變數」**(eVar) 與「自訂事件」**。路徑功能還會使用一個「自訂分析」**&#x200B;變數 (`s.prop`
+若要追蹤視訊，請指定一組要用來追蹤及報告的「自訂轉換變數」**(eVar) 與「自訂事件」**。路徑功能還會使用一個「自訂洞察」**&#x200B;變數 (`s.prop`
 
 您對每個量度選取的變數會新增至視訊設定頁面。這會讓系統自動產生和格式化標準視訊報表。*視訊名稱* eVar 和&#x200B;*視訊檢視*&#x200B;計數器均為必要。其他變數為選用變數，但如需完整測量則建議使用。啟用視訊追蹤之後，您可以檢視從您使用視訊追蹤報表的視訊資料所產生的報表。
 
@@ -79,7 +79,7 @@ ht-degree: 98%
 | 變數 | 說明 |
 | --- | --- |
 | `Media.trackUsingContextData` | **語法：** <br/><br/> `s.Media.trackUsingContextData = true;`<br/>此選項可啟用整合式視訊追蹤。設為 true 時，媒體模組會為媒體追蹤產生內容資料，而不是舊版 `pev3`。<br/>使用 `Media.contextDataMapping` 來對應內容資料至選取的 eVar 和事件。<br/>預設值：`false` |
-| `Media.contextDataMapping` | **語法：** <br/><br/> `s.Media.contextDataMapping = {`<br/>      `"a.media.name":"eVar2, prop2",` <br/>     `"a.media.segment":"eVar3",` <br/>     `"a.contentType":"eVar1",` <br/>     `"a.media.timePlayed":"event3",` <br/>     `"a.media.view":"event1",` <br/>     `"a.media.segmentView":"event2",` <br/>     `"a.media.complete":"event7",` <br/>     `"a.media.milestones":{` <br/>         `25:"event4",` <br/>         `50:"event5",` <br/>         `75:"event6"` <br/>     ` }` <br/> `};`<br/><br/>一個物件，定義您要用於視訊測量的變數對應至 eVar 和事件。物件必須對應下列欄位：<br/><br/> **a.media.name：**(必要) 以視訊名稱填入變數。提供您選取要儲存視訊名稱的 eVar，以及要用於視訊路徑的「自訂分析視訊」變數 (`s.prop`)。以逗號分隔的清單提供值。<br/><br/> **a.media.segment：**(選用) 您要儲存媒體區段名稱的 eVar。a.contentType：(選用) 您要儲存視訊值的 eVar，其包含已啟用的造訪和訪客追蹤，用以產生視訊造訪和訪客報表。您選取的變數似乎已用來儲存文章投影片放映或產品頁面之類的資料 <br/><br/> **a.media.view：**(必要) 您要計算媒體檢視次數的事件。<br/><br/> **a.media.segmentView：**(選用) 您要計算區段檢視次數的事件。<br/><br/> **a.media.complete：**(選用) 您要計算完整檢視次數的事件。<br/><br/> **a.media.timePlayed：**(選用，強烈建議使用) 您要儲存播放的視訊秒數的數值事件。<br/><br/> **a.media.milestones：**(選用) 將 s.Media.trackMilestones 里程碑與計數器事件對應的物件。如果您定義里程碑，Media.segmentByMilestones 應該設為 true。<br/><br/> **廣告追蹤** 若要追蹤廣告，可使用下列內容資料變數：<br/> **a.media.ad.name：**(必要) 以廣告名稱填入變數。提供您選取要儲存廣告名稱的 eVar，以及要用於路徑的「自訂分析視訊」變數 (`s.prop`)。以逗號分隔的清單提供值。<br/><br/> **a.media.ad.pod：**&#x200B;主要內容中播放廣告的位置。<br/><br/> **a.media.ad.podPosition：** Pod 內播放廣告的位置。<br/><br/> **a.media.ad.CPM：**&#x200B;套用至此播放的 CPM 或加密的 CPM (首碼為「~」)。<br/><br/> **A.media.ad.view：**&#x200B;與 `a.media.view` 的作用相同。<br/><br/> **a.media.ad.clicked：**&#x200B;計算廣告點擊次數 (`Media.click` 呼叫次數)<br/><br/> **a.media.ad.timePlayed：**&#x200B;與 `a.media.timePlayed` 的作用相同。<br/><br/> **a.media.ad.complete：** 與 `a.media.complete` a.media.ad.segment 的作用相同：與 `a.media.segment` 的作用相同<br/><br/> **a.media.ad.segmentView：**&#x200B;與 `a.media.segmentView` 的作用相同。<br/><br/> **a.media.ad.milestones：** 與 `a.media.milestones` 的作用相同。<br/><br/> **a.media.ad.offsetMilestones：** 與 `a.media.offsetMilestones` 的作用相同。 |
+| `Media.contextDataMapping` | **語法：** <br/><br/> `s.Media.contextDataMapping = {`<br/>      `"a.media.name":"eVar2, prop2",` <br/>     `"a.media.segment":"eVar3",` <br/>     `"a.contentType":"eVar1",` <br/>     `"a.media.timePlayed":"event3",` <br/>     `"a.media.view":"event1",` <br/>     `"a.media.segmentView":"event2",` <br/>     `"a.media.complete":"event7",` <br/>     `"a.media.milestones":{` <br/>         `25:"event4",` <br/>         `50:"event5",` <br/>         `75:"event6"` <br/>     ` }` <br/> `};`<br/><br/>一個物件，定義您要用於視訊測量的變數對應至 eVar 和事件。物件必須對應下列欄位：<br/><br/> **a.media.name：**(必要) 以視訊名稱填入變數。提供您選取要儲存視訊名稱的 eVar，以及要用於視訊路徑的「自訂洞察視訊」變數 (`s.prop`)。以逗號分隔的清單提供值。<br/><br/> **a.media.segment：**(選用) 您要儲存媒體區段名稱的 eVar。a.contentType：(選用) 您要儲存視訊值的 eVar，其包含已啟用的造訪和訪客追蹤，用以產生視訊造訪和訪客報表。您選取的變數似乎已用來儲存文章投影片放映或產品頁面之類的資料 <br/><br/> **a.media.view：**(必要) 您要計算媒體檢視次數的事件。<br/><br/> **a.media.segmentView：**(選用) 您要計算區段檢視次數的事件。<br/><br/> **a.media.complete：**(選用) 您要計算完整檢視次數的事件。<br/><br/> **a.media.timePlayed：**(選用，強烈建議使用) 您要儲存播放的視訊秒數的數值事件。<br/><br/> **a.media.milestones：**(選用) 將 s.Media.trackMilestones 里程碑與計數器事件對應的物件。如果您定義里程碑，Media.segmentByMilestones 應該設為 true。<br/><br/> **廣告追蹤** 若要追蹤廣告，可使用下列內容資料變數：<br/> **a.media.ad.name：**(必要) 以廣告名稱填入變數。提供您選取要儲存廣告名稱的 eVar，以及要用於路徑的「自訂洞察視訊」變數 (`s.prop`)。以逗號分隔的清單提供值。<br/><br/> **a.media.ad.pod：**&#x200B;主要內容中播放廣告的位置。<br/><br/> **a.media.ad.podPosition：** Pod 內播放廣告的位置。<br/><br/> **a.media.ad.CPM：**&#x200B;套用至此播放的 CPM 或加密的 CPM (首碼為「~」)。<br/><br/> **A.media.ad.view：**&#x200B;與 `a.media.view` 的作用相同。<br/><br/> **a.media.ad.clicked：**&#x200B;計算廣告點擊次數 (`Media.click` 呼叫次數)<br/><br/> **a.media.ad.timePlayed：**&#x200B;與 `a.media.timePlayed` 的作用相同。<br/><br/> **a.media.ad.complete：** 與 `a.media.complete` a.media.ad.segment 的作用相同：與 `a.media.segment` 的作用相同<br/><br/> **a.media.ad.segmentView：**&#x200B;與 `a.media.segmentView` 的作用相同。<br/><br/> **a.media.ad.milestones：** 與 `a.media.milestones` 的作用相同。<br/><br/> **a.media.ad.offsetMilestones：** 與 `a.media.offsetMilestones` 的作用相同。 |
 | `Media.trackVars` | **語法：** <br/><br/> `s.Media.trackVars =` <br/>    `"events,` `prop2,` `eVar1,` `eVar2,` `eVar3";` <br/><br/>在您的視訊追蹤程式碼中設定的所有變數以逗號分隔的清單。  |
 | `Media.trackEvents` | **語法：** <br/><br/> `s.Media.trackEvents =` <br/>    `"event1,` `event2,` `event3,` `event4,` `event5,` `event6,` `event7"` <br/><br/>在您的視訊追蹤程式碼中設定的所有事件以逗號分隔的清單。 |
 
@@ -100,7 +100,7 @@ ht-degree: 98%
 
 ## 廣告追蹤變數 {#ad-tracking-variables}
 
-這些變數用來結合 openAd 方法傳送廣告資訊。請參閱 [VAST 視訊廣告追蹤](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant)。
+這些變數用來結合 openAd 方法傳送廣告資訊。請參閱 [VAST 視訊廣告追蹤](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)。
 
 | 變數 | 說明 |
 | --- | --- |
@@ -127,7 +127,7 @@ ht-degree: 98%
 | `Media.stop` | **語法：** <br/><br/> `s.Media.stop(mediaName, mediaOffset)`<br/><br/>追蹤指定的視訊的停止事件 (停止、暫停等等)。此方法會採用下列參數： <ul> <li> **mediaName：**&#x200B;視訊的名稱。這必須符合 `Media.open` 中使用的名稱。  </li> <li> **mediaOffset：**&#x200B;視訊中發生停止或暫停事件的秒數。根據從零秒開始的視訊指定位移。  </li> </ul> |
 | `Media.monitor` | **語法：** <br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Silverlight 語法：** <br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Silverlight 應用程式媒體監視會實作 Objective-C 委派設計模式。`myMediaMonitor` 類別方法採用 `s` 和 `media` 參數。<br/><br/>使用此方法來傳送其他視訊測量。您可以設定其他變數 (Prop、eVar、事件)，並在播放視訊時根據視訊的目前狀態，使用 `Media.track` 傳送它們。<br/><br/>請參閱[使用 Media.monitor 測量其他度量。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant) <br/><br/>此方法會採用下列參數：<br/><br/>  **s：**`AppMeasurement` 例項 (或 JavaScript `s` 物件)。<br/><br/> **media：**&#x200B;物件，其成員提供視訊的狀態。這些成員包括：  <ul><li> `media.name:` 視訊的名稱。這必須符合 `Media.open` 中使用的名稱； </li><li> `media.length:` 在對 `Media.open` 的呼叫中提供的視訊的長度 (以秒為單位)； </li><li> `media.playerName:` 在對 `Media.open` 的呼叫中指定的媒體播放器名稱； </li><li> `media.openTime:` 包含呼叫 `Media.open` 時資料的 NSDate 物件； </li><li> `media.offset:` 進入視訊的目前位移 (以秒為單位) (視訊中的實際點)。位移從零開始 (視訊的第一個秒數為 0 秒)； </li><li> `media.percent:` 目前已播放視訊的百分比，根據視訊長度和目前的位移；  </li><li> `media.timePlayed:` 目前播放的總秒數；  </li><li> `media.eventFirstTime:` 指出這是否為第一次為此視訊呼叫此媒體事件； </li><li> `media.mediaEvent:` 包含造成監控呼叫的事件名稱的字串。 </li></ul> |
 | | `media.mediaEvent` events： <ul><li> `OPEN:` 透過 `Media.autoTrack` 或對 `Media.play` 呼叫第一次觀察到播放時； </li><li> `CLOSE:` 當播放透過 `Media.autoTrack` 或對 `Media.close` 的呼叫在完成視訊結束時；</li><li> `PLAY:` 當播放在暫停或擦除之後，透過 `Media.autoTrack` 或對 `Media.play` 的第二個呼叫繼續；</li><li> `STOP:` 當播放由於透過 `Media.autoTrack` 或對 `Media.stop` 呼叫的擦除開始的暫停而停止時；</li><li> `MONITOR:` 我們的自動監視在播放視訊時檢查視訊的狀態時 (每秒)；</li><li> `SECONDS:` 以 `Media.trackSeconds` 變數定義的秒數間隔；</li><li> `MILESTONE:` 在 `Media.trackMilestones` 變數定義的里程碑； </li></ul> |
-| `Media.track` | **語法：** <br/><br/> `s.Media.track(mediaName)`<br/><br/>立即傳送目前的視訊狀態，以及您定義的任何 `Media.trackVars` 和 Media.trackEvents。此方法是在 `Media.monitor` 內使用。<br/><br/>請參閱[使用 Media.monitor 測量其他度量。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hant) <br/><br/>在呼叫此方法之前，在視訊上呼叫 `Media.open` 和 `Media.play`。此方法會採用下列參數： <ul> <li> **mediaName**：視訊的名稱。這必須符合 `Media.open` 中使用的名稱。</li> </ul> 此方法是在播放視訊時傳送其他變數的唯一方式。此方法會將秒數間隔和百分比里程碑計數器重設為零，以避免多個追蹤點擊。 |
+| `Media.track` | **語法：** <br/><br/> `s.Media.track(mediaName)`<br/><br/>立即傳送目前的視訊狀態，以及您定義的任何 `Media.trackVars` 和 Media.trackEvents。此方法是在 `Media.monitor` 內使用。<br/><br/>請參閱[使用 Media.monitor 測量其他度量。](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html) <br/><br/>在呼叫此方法之前，在視訊上呼叫 `Media.open` 和 `Media.play`。此方法會採用下列參數： <ul> <li> **mediaName**：視訊的名稱。這必須符合 `Media.open` 中使用的名稱。</li> </ul> 此方法是在播放視訊時傳送其他變數的唯一方式。此方法會將秒數間隔和百分比里程碑計數器重設為零，以避免多個追蹤點擊。 |
 
 
 ## 追蹤視訊播放器事件 {#track-video-player-events}

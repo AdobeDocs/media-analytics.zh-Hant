@@ -4,17 +4,17 @@ description: 設定使用者 ID 的 API，做為唯一客戶識別碼。
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
 feature: "Streaming Media, API"
-role: User, Admin, Data Engineer
-source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '53'
+ht-degree: 69%
 
 ---
 
 # 設定使用者 ID{#set-user-ids}
 
-使用者 ID 是應用程式為設定者定義的唯一自訂訪客識別碼。
+使用者ID是應用程式為使用者定義的唯一自訂訪客識別碼。
 
 依照下列步驟，在 ADBMobile SDK 上設定並取得唯一使用者 ID：
 

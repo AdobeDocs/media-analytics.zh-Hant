@@ -2,9 +2,9 @@
 title: 如何設定適用於串流媒體的 Analytics 的 Web 實作
 description: 了解如何為 Web 應用程式實作 Adobe Streaming Media。
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 80%

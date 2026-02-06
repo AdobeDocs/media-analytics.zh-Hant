@@ -3,8 +3,8 @@ title: 播放器狀態追蹤簡介
 description: 了解播放器狀態追蹤功能，包括實作和報告播放器狀態的要求與準則。
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 100%
@@ -28,7 +28,7 @@ ht-degree: 100%
 
 ![播放器狀態追蹤](assets/player_state_tracking.png)
 
-## 要求
+## 需求
 
 「播放器狀態追蹤」需要下列其中一項，才能進行資料收集：
 * Media JS SDK 3.0 以上版本

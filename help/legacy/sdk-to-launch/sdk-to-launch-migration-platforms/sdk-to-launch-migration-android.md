@@ -3,8 +3,8 @@ title: 從獨立Media SDK移轉至Adobe Launch - Android
 description: 了解如何從 Media SDK 移轉至 Android 版的 Launch。
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 97%

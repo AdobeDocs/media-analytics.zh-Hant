@@ -4,11 +4,11 @@ description: 了解 Media SDK 1.x 和 2.x 版本的程式碼差異。
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 74%
+ht-degree: 57%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 74%
 
 **1.x 和 2.x 範例播放器的連結：**
 
-* [1.x 範例播放器](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [2.x 範例播放器](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [1.x範例播放器](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
+* [2.x範例播放器](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 下列章節提供 1.x 與 2.x 的程式碼比較，包括「初始化」、「核心播放」、「廣告播放」、「章節播放」以及其他事件。
 

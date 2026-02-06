@@ -4,11 +4,11 @@ description: 探索驗證實作所必須進行的呼叫。
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -32,8 +32,8 @@ ht-degree: 100%
 
 **附註：**
 
-* 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
-* 線性資料流的長度應設定為目前節目的最佳預估值。
+* 其他內容資料變數應存在且包含中繼資料。 請參閱下方的中繼資料詳細資料。
+* 線性資料流的長度應該設定為目前節目的最佳預估值。
 
 ### Adobe Analytics (AppMeasurement) 開始呼叫中的標準中繼資料 {#std-metadata-aa}
 
@@ -78,8 +78,8 @@ ht-degree: 100%
 
 **附註：**
 
-* 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
-* 視訊開始時的線性資料流播放點位置，應設定為目前節目開始後經過的秒數，而不是 0。
+* 其他內容資料變數應存在且包含中繼資料。 請參閱下方的中繼資料詳細資料。
+* 在視訊開始時，線性資料流的播放點位置應該設定為目前節目開始後經過的秒數，而不是0。
 
 ### Media Analytics (心率) 開始呼叫中的標準中繼資料 {#std-metadata-ma}
 
@@ -123,7 +123,7 @@ ht-degree: 100%
 **附註：**
 
 * 這個呼叫代表 Media SDK 已要求將 Adobe Analytics `pev2=ms_s` 呼叫傳送到 Adobe Analytics (AppMeasurement) 伺服器。
-* 該呼叫不含自訂中繼資料。
+* 此呼叫不包含自訂中繼資料。
 
 ## 檢視廣告播放 {#view-ad-playback}
 
@@ -147,8 +147,8 @@ ht-degree: 100%
 
 **附註：**
 
-* 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
-* 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
+* 其他內容資料變數應存在且包含中繼資料。 請參閱下方的中繼資料詳細資料。
+* 如果廣告開始無法使用，廣告長度可設為–1。
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的標準中繼資料 {#std-metadata-aa-ad-start}
 
@@ -192,8 +192,8 @@ ht-degree: 100%
 
 **附註：**
 
-* 應該要有其他內容資料變數，而且應該要含有中繼資料。請參閱以下中繼資料詳情。
-* 如果無法在廣告開始時取得廣告長度，可以設定為 -1。
+* 其他內容資料變數應存在且包含中繼資料。 請參閱下方的中繼資料詳細資料。
+* 如果廣告開始無法使用，廣告長度可設為–1。
 
 ### Media Analytics (心率) 廣告開始呼叫中的標準中繼資料 {#std-metadata-ma-ad-start}
 

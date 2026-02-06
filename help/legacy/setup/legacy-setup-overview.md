@@ -2,12 +2,12 @@
 title: 說明實作舊版 Media SDK
 description: 了解如何在行動裝置、OTT 和瀏覽器 (JS) 應用程式中設定 **舊版** 2.x Media SDK 進行媒體追蹤。
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '755'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -144,7 +144,7 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
   分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
-* **&#x200B; Media Analytics (心率) 伺服器**
+* ** Media Analytics (心率) 伺服器**
 此格式一律為「`[your_namespace].hb.omtrdc.net`」。「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
 
 媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。目前音訊追蹤可在行動平台運作。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數：
@@ -153,13 +153,13 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
 | Video Analytics 1.x SDK |  開發人員指南 (僅提供 PDF) |
 | --- | --- |
-| Android | [為 Android 進行配置](vhl-dev-guide-v15_android.pdf) |
+| Android | [設定Android](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [設定Apple TV](vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | [為 Chromecast 進行配置](chromecast_1.x_sdk.pdf) |
-| iOS | [為 iOS 進行配置](vhl-dev-guide-v15_ios.pdf) |
-| JavaScript | [為 JavaScript 進行配置](vhl-dev-guide-v15_js.pdf) |
+| Chromecast | [為Chromecast進行設定](chromecast_1.x_sdk.pdf) |
+| iOS | [設定iOS](vhl-dev-guide-v15_ios.pdf) |
+| JavaScript | [設定JavaScript](vhl-dev-guide-v15_js.pdf) |
 | Primetime | <ul> <li> Android：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/android/1.4/index.html) </li> <li> DHLS：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS：[設定 Media Analytics](https://help.adobe.com/zh_TW/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
-| TVML | [為 TVML 進行配置](vhl_tvml.pdf) |
+| TVML | [設定TVML](vhl_tvml.pdf) |
 
 ## Primetime Media SDK 文件 {#primetime-docs}
 

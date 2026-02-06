@@ -5,8 +5,8 @@ seo-description: Instructions and code samples to assist in migrating from the M
 description: 了解如何從 Media SDK 移轉至 Launch。
 exl-id: 5350bbe9-c34f-46d9-a4c4-dbccdbed0bb0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 100%
@@ -30,7 +30,7 @@ Launch 可讓客戶透過簡單的方式部署及管理所有必要的分析、
 
 網頁和行動裝置皆可使用 Launch 擴充功能 Adobe Media Analytics for Audio and Video：
 
-* [網頁 Launch 文件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant)
+* [網頁 Launch 文件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
 * [行動裝置 Launch 文件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## 平台

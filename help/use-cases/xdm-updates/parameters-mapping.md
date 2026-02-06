@@ -2,18 +2,18 @@
 title: 將受眾移轉至適用於串流媒體的新的Adobe Analytics資料型別
 description: 瞭解如何將受眾移轉至適用於串流媒體的新的Adobe Analytics資料型別
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 44%
+ht-degree: 43%
 
 ---
 
 # 適用於Adobe Experience Platform和Customer Journey Analytics的Media Analytics引數對應
 
-本檔案提供Adobe Experience Platform和Customer Journey Analytics中所有Media Analytics使用引數的完整清單。 其目的是支援將透過[Analytics Source Connector](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/classifications)從Adobe Analytics匯入的資料整合到Platform，並將每個引數對應到其對應的XDM欄位路徑。
+本檔案提供Adobe Experience Platform和Customer Journey Analytics中所有Media Analytics使用引數的完整清單。 其目的是支援將透過[Analytics Source Connector](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/tw/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)從Adobe Analytics匯入的資料整合到Platform，並將每個引數對應到其對應的XDM欄位路徑。
 
 ## Media Analytics保留變數
 
@@ -23,7 +23,7 @@ ht-degree: 44%
 
 ## 串流媒體引數
 
-| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 備註 |
+| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 附註 |
 |--------------------|---------------------------------------------------------------------------|---------------------------------------------------|-----------|-------------------|-----------------------------------------------------------------------|
 | 串流類型 | media.mediaTimed.primaryAssetReference.streamType | mediaReporting.sessionDetails.streamType | 維度 | 串流類型 |                                                                       |
 | 內容 ID | media.mediaTimed.primaryAssetReference._id | mediaReporting.sessionDetails.name | 維度 | 內容 ID |                                                                       |
@@ -74,7 +74,7 @@ ht-degree: 44%
 
 ## 播放器狀態引數更新
 
-| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 備註 |
+| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 附註 |
 |----------------------------|-------------------------------------|----------------------------------|-----------|----------------|--------------------------------------|
 | 受播放器狀態影響的資料流 | 不支援 | mediaReporting.states.isSet | 量度 | 不支援 | 使用mediaReporting欄位 |
 | 播放器狀態計數 | 不支援 | mediaReporting.states.count | 量度 | 不支援 | 使用mediaReporting欄位 |
@@ -85,7 +85,7 @@ ht-degree: 44%
 
 ## 章節參數
 
-| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 備註 |
+| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 附註 |
 |------------------|--------------------------------------------------------------|-------------------------------------------|-----------|----------------|-----------|
 | 章節 | media.mediaTimed.mediaChapter.chapterAssetReference._id | mediaReporting.chapterDetails.ID | 維度 | 章節 |           |
 | 章節開始 | media.mediaTimed.mediaChapter.impressions.value | mediaReporting.chapterDetails.isStarted | 量度 | 章節開始 |           |
@@ -96,7 +96,7 @@ ht-degree: 44%
 
 ## 廣告參數
 
-| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 備註 |
+| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 附註 |
 |------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
 | 廣告 ID | advertising.adAssetReference._id | mediaReporting.advertisingDetails.name | 維度 | 廣告 ID |           |
 | Pod 位置中的廣告 | advertising.adAssetViewDetails.index | mediaReporting.advertisingDetails.podPosition | 維度 | Pod 位置中的廣告 |     |
@@ -114,15 +114,15 @@ ht-degree: 44%
 
 ## 品質參數
 
-| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 備註 |
+| 欄位名稱 | 目前的XDM欄位路徑（已棄用） | 報告XDM欄位路徑 | 資料類型 | 衍生欄位 | 附註 |
 |------------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
-| 平均位元速率 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage |   | 平均位元速率 |           |
-| 開始時間 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart |   | 開始時間 |           |
-| 掉格 | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames |   | 掉格 |           |
-| 緩衝事件 | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount |   | 緩衝事件 |           |
-| 總緩衝期間 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime |   | 總緩衝期間 |     |
-| 位元速率變更 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount |   | 位元速率變更 |         |
-| 錯誤/錯誤事件 | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount |   | 錯誤/錯誤事件 |  |
+| 平均位元速率 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | 兩者 | 平均位元速率 |           |
+| 開始時間 | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | 兩者 | 開始時間 |           |
+| 掉格 | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | 兩者 | 掉格 |           |
+| 緩衝事件 | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | 兩者 | 緩衝事件 |           |
+| 總緩衝期間 | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | 兩者 | 總緩衝期間 |     |
+| 位元速率變更 | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | 兩者 | 位元速率變更 |         |
+| 錯誤/錯誤事件 | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | 兩者 | 錯誤/錯誤事件 |  |
 | 播放器 SDK 錯誤 ID | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkErrors | mediaReporting.qoeDataDetails.playerSdkErrors | 維度 | 不支援 | 使用mediaReporting欄位 |
 | 外部錯誤 ID | media.mediaTimed.primaryAssetViewDetails.qoe.externalSdkErrors | mediaReporting.qoeDataDetails.externalErrors | 維度 | 不支援 | 使用mediaReporting欄位 |
 | 開始前掉格 | media.mediaTimed.dropBeforeStarts.value | mediaReporting.qoeDataDetails.isDroppedBeforeStart | 量度 | 開始前掉格 |     |
@@ -189,8 +189,8 @@ Media Analytics分類會透過稱為ACDC的個別流程內嵌至AEP中。 下表
 | videoad | 廣告名稱 | `<_sandbox>.ad_name` |
 | videoad | 創作 ID | `<_sandbox>.creative_id` |
 | videoadpod | 索引鍵/廣告Pod ID | `<_sandbox>.key` |
-| videoadpod | Pod 位置 | `<_sandbox>.pod_position` |
-| videoadpod | Pod 名稱 | `<_sandbox>.pod_name` |
+| videoadpod | Pod位置 | `<_sandbox>.pod_position` |
+| videoadpod | Pod名稱 | `<_sandbox>.pod_name` |
 | videochapter | 索引鍵/章節 | `<_sandbox>.key` |
 | videochapter | 章節長度 | `<_sandbox>.chapter_length` |
 | videochapter | 章節位移 | `<_sandbox>.chapter_offset` |
@@ -223,7 +223,7 @@ Media Analytics分類會透過稱為ACDC的個別流程內嵌至AEP中。 下表
 | 資料流格式 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 維度 |
 | 首播日期 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 維度 |
 | 首次數位化日期 | `_experience.analytics.customDimensions.eVars.eVar<number>` | 維度 |
-| 同盟資料 | `_experience.analytics.customDimensions.eVars.eVar<number>` 與 `_experience.analytics.event<x>to<y>.event<number>.value` |   |
+| 同盟資料 | `_experience.analytics.customDimensions.eVars.eVar<number>` 與 `_experience.analytics.event<x>to<y>.event<number>.value` | 兩者 |
 | 預估資料流量 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 | 廣告計數 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 | 章節計數 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
@@ -231,7 +231,7 @@ Media Analytics分類會透過稱為ACDC的個別流程內嵌至AEP中。 下表
 | 網站 ID | `_experience.analytics.customDimensions.eVars.eVar<number>` | 維度 |
 | 創作 URL | `_experience.analytics.customDimensions.eVars.eVar<number>` | 維度 |
 | 版面 ID | `_experience.analytics.customDimensions.eVars.eVar<number>` | 維度 |
-| 每秒影格數 | `_experience.analytics.customDimensions.eVars.eVar<number>` 與 `_experience.analytics.event<x>to<y>.event<number>.value` |   |
+| 每秒影格數 | `_experience.analytics.customDimensions.eVars.eVar<number>` 與 `_experience.analytics.event<x>to<y>.event<number>.value` | 兩者 |
 | Media SDK 錯誤 ID | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 | 停頓影響的資料流 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |
 | 停頓事件 | `_experience.analytics.event<x>to<y>.event<number>.value` | 量度 |

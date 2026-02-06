@@ -4,8 +4,8 @@ description: 了解如何在 Chromecast 上設定標準視訊和廣告中繼資�
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 exl-id: 052ede4b-ea8a-4ca6-bf02-0aab22a8bcda
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 100%

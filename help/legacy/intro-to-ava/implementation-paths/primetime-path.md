@@ -3,8 +3,8 @@ title: Adobe Primetime 是什麼？
 description: 瞭解Adobe Primetime解決方案及其如何協助串流媒體服務營利。
 exl-id: 756e4e62-35b3-42a2-93f5-81531e1c9cc8
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '255'
 ht-degree: 71%

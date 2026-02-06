@@ -4,11 +4,11 @@ description: 了解如何在 Android 上使用 Media SDK 實作核心追蹤。
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -68,7 +68,7 @@ ht-degree: 100%
      >
      >將標準中繼資料物件附加到媒體物件為選用。
 
-      * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
+      * 媒體中繼資料索引鍵API參考 — [標準中繼資料索引鍵 — Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * 請在此處參閱完整的可用視訊中繼資料組：[音效和視訊參數](/help/implementation/variables/audio-video-parameters.md)
 
    * **自訂中繼資料**
@@ -177,4 +177,4 @@ ht-degree: 100%
 如需有關追蹤核心播放的詳細資訊，請參閱下列內容：
 
 * 追蹤案例：[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* 完整追蹤範例的 Android SDK 包含範例播放器。
+* Android SDK隨附的範例播放器提供完整的追蹤範例。

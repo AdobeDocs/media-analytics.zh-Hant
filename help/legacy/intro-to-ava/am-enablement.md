@@ -3,8 +3,8 @@ title: 什麼是 Adobe Audience Manager 輔助？
 description: 了解如何將應用程式動作連結到媒體追蹤資料，而不需要其他處理規則和自訂變數。
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 100%

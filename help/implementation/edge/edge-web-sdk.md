@@ -2,9 +2,9 @@
 title: 使用Adobe Experience Platform Web SDK將網頁資料傳送至Edge
 description: 瞭解如何使用Adobe Web SDK將Adobe Experience Platform串流媒體資料傳送到Experience Platform Edge。
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用Adobe Experience Platform Web SDK將網頁資料傳送至Edge
 
-從2.20.0版開始，Adobe Experience Platform `streamingMedia`Web SDK[的](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)元件可讓您收集與網站上的媒體工作階段相關的資料。 收集的資料可包括關於媒體播放、暫停、完成和其他相關事件的資訊。
+從2.20.0版開始，Adobe Experience Platform `streamingMedia`Web SDK[的](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)元件可讓您收集與網站上的媒體工作階段相關的資料。 收集的資料可包括關於媒體播放、暫停、完成和其他相關事件的資訊。
 
 收集資料後，您可以將其傳送至Adobe Experience Platform及/或Adobe Analytics以產生報表。 此功能提供全方位的解決方案，可追蹤及瞭解您網站上的媒體使用行為。
 
@@ -68,7 +68,7 @@ alloy("configure", {
 });
 ```
 
-如需如何設定的完整詳細資訊，請參閱網頁SDK `streamingMedia`元件[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
+如需如何設定的完整詳細資訊，請參閱網頁SDK `streamingMedia`元件[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
 
 ### 步驟3：從Media JS SDK移轉時取得Media追蹤器例項
 
@@ -76,7 +76,7 @@ alloy("configure", {
 
 [!DNL Web SDK]包含擷取Media Analytics追蹤器的命令。 您可以使用此命令來建立物件執行個體，然後使用與[Media JS程式庫](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)提供的相同API來追蹤媒體事件。
 
-請參閱[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)檔案，以取得支援方法的完整詳細資料。
+請參閱[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)檔案，以取得支援方法的完整詳細資料。
 
 以下程式碼片段顯示如何在Media JS中擷取媒體追蹤器例項。
 

@@ -4,8 +4,8 @@ description: 瞭解串流媒體服務中的計算量度和量度公式。
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 72%
@@ -30,10 +30,10 @@ Adobe串流媒體服務的計算量度是自訂量度，可讓您取得目標串
 | 平均內容逗留時間 | 每次內容開始的內容逗留時間(`HH:MM:SS`) | `Content Time Spent / Content Start` |
 | 平均廣告逗留時間 | 每次廣告開始的廣告逗留時間(`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
 | 平均章節逗留時間 | 每次章節開始的章節逗留時間(`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
-| 媒體結束率 | 內容完成數與媒體起始數的比率 (%) | `Content Completes/ Media Starts` |
-| 內容結束率 | 內容結束與內容開始的比率 (%) | `Content Completes / Content Starts` |
-| 廣告結束率 | 廣告結束與廣告開始的比率 (%) | `Ad Completes / Ad Starts` |
-| 章節結束率 | 章節結束與章節開始的比率 (%) | `Chapter Completes / Chapter Starts` |
+| 媒體完成率 | 內容完成數與媒體起始數的比率 (%) | `Content Completes/ Media Starts` |
+| 內容完成率 | 內容結束與內容開始的比率 (%) | `Content Completes / Content Starts` |
+| 廣告完成率 | 廣告結束與廣告開始的比率 (%) | `Ad Completes / Ad Starts` |
+| 章節完成率 | 章節結束與章節開始的比率 (%) | `Chapter Completes / Chapter Starts` |
 | 開始前中斷率 | 開始前掉格與媒體開始的比率 (%) | `Drops before Starts / Media Starts` |
 | 內容暫停期間率 | 總暫停期間與內容逗留時間的比率 (%) | `Total Pause Duration / Content Time Spent` |
 | 內容緩衝期間率 | 總緩衝期間與內容逗留時間的比率 (% ) | `Total Buffer Duration / Content Time Spent` |
