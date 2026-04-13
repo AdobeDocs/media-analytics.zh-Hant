@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
-user-guide-description: 實施串流媒體服務。包含 Media SDK 和 Media Collection API。
+user-guide-description: 實施串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
+source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
 workflow-type: tm+mt
-source-wordcount: '929'
-ht-degree: 78%
+source-wordcount: '958'
+ht-degree: 79%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 78%
          + [Android - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-+ 實作 {#implementation}
++ 實施 {#implementation}
    + [實施概觀](implementation/overview.md)
    + Edge實施（建議） {#edge-recommended}
       + [先決條件](/help/implementation/edge/prerequisites-edge.md)
@@ -39,6 +39,7 @@ ht-degree: 78%
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
+      + [自訂中繼資料支援](/help/implementation/edge/implementation-edge-custom-metadata.md)
    + 僅限Adobe Analytics的實作 {#analytics-only}
       + [先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + Media SDK /擴充功能 {#media-sdk}
@@ -74,7 +75,7 @@ ht-degree: 78%
       + [播放器狀態參數](implementation/variables/player-state-parameters.md)
       + [品質參數](implementation/variables/quality-parameters.md)
       + [計算量度](implementation/variables/calculated-metrics.md)
-+ 報表 {#media-reports}
++ 報告 {#media-reports}
    + [啟用媒體報表](reporting/media-reports-enable.md)
    + Workspace中的媒體面板 {#media-workspace-panels}
       + [「平均分鐘觀眾數」面板](reporting/workspace/average-minute-audience.md)
@@ -92,7 +93,7 @@ ht-degree: 78%
       + [取得同時檢視者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
       + [取得媒體播放時間資料](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 使用個案 {#media-use-cases}
-   + [Media SDK 使用案例 &#x200B;](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Media SDK 使用案例](use-cases/cookbook/sdk-cookbook-overview.md)
    + 播放器狀態追蹤 {#player-state-tracking}
       + [概觀](use-cases/player-state-tracking/player-state-overview.md)
       + [標準和自訂狀態](use-cases/player-state-tracking/standard-and-custom-states.md)
@@ -193,7 +194,7 @@ ht-degree: 78%
       + [測試 2：媒體中斷](legacy/validation/test2-media-interrupt.md)
       + [測試呼叫詳細資料](legacy/validation/test-call-details.md)
       + [心率參數說明](legacy/validation/heartbeat-params.md)
-      + 偵錯 {#debugging}
+      + 除錯 {#debugging}
          + [SDK 除錯](legacy/validation/debugging/sdk-debugging.md)
    + [舊版移轉： VHL 1.x 至 VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
    + [程式碼比較： v1.x 與 v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
