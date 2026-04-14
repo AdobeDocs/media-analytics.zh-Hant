@@ -5,7 +5,7 @@ user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
 user-guide-description: 實施串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 79%
@@ -39,7 +39,7 @@ ht-degree: 79%
          + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
          + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
       + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-      + [自訂中繼資料支援](/help/implementation/edge/implementation-edge-custom-metadata.md)
+      + [自訂中繼資料支援](implementation/edge/implementation-edge-custom-metadata.md)
    + 僅限Adobe Analytics的實作 {#analytics-only}
       + [先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + Media SDK /擴充功能 {#media-sdk}

@@ -3,7 +3,7 @@ title: 自訂中繼資料支援 — XDM格式
 description: 瞭解如何使用Experience Edge XDM格式傳送包含媒體追蹤事件的自訂中繼資料。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: da2fe856a32f9056752b9e2c2e339d43be20372a
+source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -301,6 +301,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 ```
 
 在此範例中，
+
 - `_mycompany.league`→傳送至Analytics和AEP
 - `debugMode`和`testFlag` （在`_data.__adobe.analytics.contextData`下）只→傳送到Analytics
 
@@ -312,11 +313,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 `xdm.mediaCollection.customMetadata`是用來傳送包含事件的自訂中繼資料的&#x200B;**傳入API路徑**。 處理之後，資料會以內容資料變數的形式轉送至Adobe Analytics，並儲存在`mediaReporting.customMetadata`下的Adobe Experience Platform中，以最上層平面化的欄位形式儲存。
 
 **Adobe Analytics:**
+
 - 處理之後，自訂中繼資料會以內容資料變數的形式轉送至Adobe Analytics。 `_tenant`首碼會自動移除，所以處理規則只會參考`_tenant`之後的欄位路徑（例如，`_mycompany.contentCategory`變成`contentCategory`）
 - 透過`_data`傳送的資料也會轉送至Adobe Analytics，並可透過處理規則取得
 - 使用處理規則將內容資料變數對應至eVar、prop或其他Analytics變數。 如需詳細資訊，請參閱Adobe Experience Platform Edge Network的[資料變數對應](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/data-var-mapping)。
 
 **Adobe Experience Platform：**
+
 - 自訂中繼資料欄位必須定義為XDM結構描述中的自訂欄位（例如`_mycompany`），並且可以在AEP中以平面化的欄位形式儲存和查詢
 
   ![XDM結構描述中的自訂欄位定義](assets/custom_metadata.png)
@@ -336,6 +339,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 - [自訂中繼資料支援](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)。 — MC API （JSON格式）
 - [媒體收集詳細資料資料型別](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) — XDM結構描述參考
 - [Adobe Experience Platform Edge Network的資料變數對應](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/data-var-mapping) — XDM欄位的Analytics內容資料對應
+
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
 - [Ad endpoints](ads.md) — Track advertising impressions
