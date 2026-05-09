@@ -1,29 +1,30 @@
 ---
 cloud: Experience Cloud
 solution: Analytics
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
 feature-set: Analytics
 landing-page-name: analytics
 landing-page-breadcrumb-title: Analytics
-git-repo: https://github.com/AdobeDocs/media-analytics.zh-Hant
+git-repo: https://github.com/AdobeDocs/media-analytics.en
 index: true
-source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
+source-git-commit: 478d146b3d5d9736cb3e1c1e2ebb5fd0473b9729
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 0%
+source-wordcount: 128
+ht-degree: 89%
 
 ---
 
 
-# 內部使用的中繼資料
+# 僅限內部使用的中繼資料
 
-metadata.md檔案包含存放庫層級中繼資料，這些中繼資料會傳遞至存放庫中的使用手冊TOC.md檔案。 如果您想要變更任何使用手冊的metadata.md內容，請在任何TOC.md檔案中進行變更。
+metadata.md 檔案包含存放庫層級的中繼資料，會將這些資料傳遞至存放庫中的使用者指南 TOC.md 檔案。 如果您想變更任何使用者指南的 metadata.md 內容，請在任何 TOC.md 檔案中進行變更。
 
-| 中繼資料 | 作用 |
+| 中繼資料 | 功能說明 |
 |--- |--- |
 | solution-title | 在文章標題中作為連結使用。 保持簡短。 |
-| solution-hub-url | 開啟Helpx中樞頁面 |
-| solution-icon | 在解決方案標題旁邊顯示解決方案圖示。 尚未實作 |
-| getting-started-url | helpx快速入門頁面連結 |
-| tutorials-url | 教學課程影片（helpx或KT教學課程其中之一）的連結 |
-| mini-toc-levels | 決定顯示在右側欄中的標題層數。 預設為2 |
-| git-repo | 指定內部使用的主要存放庫位置 |
+| solution-hub-url | 開啟 HelpX 中心頁面 |
+| solution-icon | 會在解決方案標題旁，顯示解決方案圖示。 尚未執行 |
+| getting-started-url | 連結至 HelpX 快速入門頁面 |
+| tutorials-url | 連結至影片教學課程，包含 HelpX 教學課程，或是 KT 教學課程 |
+| mini-toc-levels | 決定右側邊欄中顯示的標題層級數量。 預設值為 2 |
+| git-repo | 指定內部專用的主要存放庫位置 |
