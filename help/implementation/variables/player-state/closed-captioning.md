@@ -24,7 +24,7 @@ ht-degree: 9%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.closedcaptioning.set`, `a.media.states.closedcaptioning.count`, `a.media.states.closedcaptioning.time` |
-| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "closedCaptioning"`的專案） |
+| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "closedCaptioning"`的專案） |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | 狀態開始、狀態結束 |
 

@@ -24,7 +24,7 @@ ht-degree: 12%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.podFriendlyName` |
-| **XDM集合欄位** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **必要** | 是（行動SDK）；否（Edge、媒體收集API） |
 | **與**&#x200B;一起傳送 | 廣告開始、廣告關閉 |
 

@@ -24,7 +24,7 @@ ht-degree: 12%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.chapter.offset` |
-| **XDM集合欄位** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **必要** | 否（行動SDK）；是（Edge、媒體收集API） |
 | **與**&#x200B;一起傳送 | 章節開始、章節關閉 |
 

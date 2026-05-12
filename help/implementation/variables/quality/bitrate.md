@@ -24,7 +24,7 @@ ht-degree: 10%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | 品質事件（位元速率變更、緩衝、錯誤）、工作階段關閉 |
 

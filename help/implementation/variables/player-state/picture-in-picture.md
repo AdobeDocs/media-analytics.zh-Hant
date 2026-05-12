@@ -24,7 +24,7 @@ ht-degree: 8%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "pictureInPicture"`的專案） |
+| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "pictureInPicture"`的專案） |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | 狀態開始、狀態結束 |
 
