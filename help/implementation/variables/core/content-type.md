@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容型別**變數的資料集合。 檢視對應報表維度的[內容型別](/help/reporting/dimensions/content-type.md)。*
+*本頁涵蓋&#x200B;**內容型別**&#x200B;變數的資料集合。 檢視對應報表維度的[內容型別](/help/reporting/dimensions/content-type.md)。*
 
 >[!ENDSHADEBOX]
 

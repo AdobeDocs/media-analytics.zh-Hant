@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**資產識別碼**報告維度。 請參閱[資產識別碼](/help/implementation/variables/standard-metadata/asset-id.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**資產識別碼**&#x200B;報告維度。 請參閱[資產識別碼](/help/implementation/variables/standard-metadata/asset-id.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

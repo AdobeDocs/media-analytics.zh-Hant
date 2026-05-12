@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**掉格**變數的資料集合。 檢視對應報表維度和量度的[掉格](/help/reporting/dimensions/dropped-frames.md)。*
+*本頁涵蓋&#x200B;**掉格**&#x200B;變數的資料集合。 檢視對應報表維度和量度的[掉格](/help/reporting/dimensions/dropped-frames.md)。*
 
 >[!ENDSHADEBOX]
 

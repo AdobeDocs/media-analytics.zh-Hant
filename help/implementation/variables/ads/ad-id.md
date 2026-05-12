@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告ID**變數的資料集合。 如需對應的報表維度，請參閱[廣告](/help/reporting/dimensions/ad.md)。*
+*本頁涵蓋&#x200B;**廣告ID**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[廣告](/help/reporting/dimensions/ad.md)。*
 
 >[!ENDSHADEBOX]
 

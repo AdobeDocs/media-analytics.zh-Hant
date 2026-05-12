@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**網站識別碼**變數的資料集合。 如需對應的報表維度，請參閱[網站ID](/help/reporting/dimensions/site-id.md)。*
+*本頁涵蓋&#x200B;**網站識別碼**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[網站ID](/help/reporting/dimensions/site-id.md)。*
 
 >[!ENDSHADEBOX]
 

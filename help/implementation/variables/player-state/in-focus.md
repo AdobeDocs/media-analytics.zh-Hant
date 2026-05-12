@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**焦點**播放器狀態的資料集合。 檢視對應報表量度的受焦點影響的[資料流](/help/reporting/metrics/in-focus-streams-impacted.md)、[焦點計數](/help/reporting/metrics/in-focus-count.md)以及[焦點總持續時間](/help/reporting/metrics/in-focus-total-duration.md)。*
+*此頁面涵蓋&#x200B;**焦點**&#x200B;播放器狀態的資料集合。 檢視對應報表量度的受焦點影響的[資料流](/help/reporting/metrics/in-focus-streams-impacted.md)、[焦點計數](/help/reporting/metrics/in-focus-count.md)以及[焦點總持續時間](/help/reporting/metrics/in-focus-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 

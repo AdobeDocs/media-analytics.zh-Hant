@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容管道**變數的資料集合。 如需對應的報表維度，請參閱[內容管道](/help/reporting/dimensions/content-channel.md)。*
+*本頁涵蓋&#x200B;**內容管道**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[內容管道](/help/reporting/dimensions/content-channel.md)。*
 
 >[!ENDSHADEBOX]
 
