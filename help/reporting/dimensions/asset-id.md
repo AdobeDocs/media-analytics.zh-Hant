@@ -1,0 +1,55 @@
+---
+source-git-commit: 415d20722965d510458d3c09004b6991b05ac264
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 2%
+
+---
+﻿---
+title: 資產 ID
+description: 報告基礎媒體資產的穩定產業識別碼。
+feature: Dimensions
+role: User, Admin
+---
+
+# 資產 ID
+
+>[!BEGINSHADEBOX]
+
+*此頁面涵蓋&#x200B;**資產識別碼**報告維度。 請參閱[資產識別碼](/help/implementation/variables/standard-metadata/asset-id.md)以瞭解如何收集此變數。*
+
+>[!ENDSHADEBOX]
+
+**資產ID**&#x200B;維度會報告基礎媒體資產的穩定產業識別碼（通常是EIDR、TMS/Gracenote或Rovi ID，但也接受專有ID）。
+
+## 如何填入此維度
+
+資產ID是在工作階段開始時由播放器設定。
+
+| 報告系統 | 來源 |
+| --- | --- |
+| Adobe Analytics （處理規則） | 建立將`a.media.asset`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics （分類） | [內容（識別碼）](content.md)維度的分類 — 為報表套裝啟用&#x200B;**[[!UICONTROL 視訊中繼資料]](/help/reporting/media-reports-enable.md)**&#x200B;時，Adobe會自動建立此分類。 您需負責填入及維護分類值。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料摘要（處理規則） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.asset`對應至的eVar） |
+| 資料摘要（分類） | 不適用 — 資料摘要不支援分類。 |
+
+## 分類方法
+
+為報表套裝啟用&#x200B;**[[!UICONTROL 視訊中繼資料]](/help/reporting/media-reports-enable.md)**&#x200B;時，Adobe會自動建立資產ID分類結構。 您負責使用[分類設定](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填入及維護分類。
+
+此方法可保證每個內容ID與其資產ID之間有1:1個關係。 分類更新會回溯套用至該ID的所有歷史資料。
+
+>[!IMPORTANT]
+>
+>請勿變更資產ID分類名稱。 將其重新命名可能會導致Adobe重新建立原始分類，並造成重複。
+
+## 處理規則方法
+
+建立將`a.media.asset`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取資產ID作為每次點選值，而不需要分類維護。
+
+取捨是您會失去資產ID與上層[內容(ID)](content.md)維度之間保證的1:1關係。 如果您的實施在不同事件間傳送的相同內容ID值不一致，則相同內容下可能會出現多個資產ID。 更新值僅適用於未來的資料。
+
+## 維度項目
+
+每個專案都是報表期間所回報的唯一資產ID值。 跨所有發佈平台針對每個資產使用單一穩定識別碼，以便相同內容向上彙整至單一條列專案。
