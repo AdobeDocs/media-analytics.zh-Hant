@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**章節名稱**報告維度。 如需如何收集此變數，請參閱[章節名稱](/help/implementation/variables/chapters/chapter-name.md)。*
+*此頁面涵蓋&#x200B;**章節名稱**&#x200B;報告維度。 如需如何收集此變數，請參閱[章節名稱](/help/implementation/variables/chapters/chapter-name.md)。*
 
 >[!ENDSHADEBOX]
 
