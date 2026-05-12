@@ -1,0 +1,146 @@
+---
+title: 節目型別
+description: 使用字串整數代碼識別內容格式（全集、預覽、剪輯或其他）。
+feature: Streaming Media
+role: Developer
+source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+workflow-type: tm+mt
+source-wordcount: '194'
+ht-degree: 13%
+
+---
+
+
+# 節目型別
+
+>[!BEGINSHADEBOX]
+
+*本頁涵蓋&#x200B;**節目型別**變數的資料集合。 檢視對應報表維度的[顯示型別](/help/reporting/dimensions/show-type.md)。*
+
+>[!ENDSHADEBOX]
+
+show type變數會使用字串整數代碼來識別內容格式：
+
+- `"0"`：整集
+- `"1"`：預覽或預告
+- `"2"`：剪輯
+- `"3"`：其他
+
+在測量參與度時，使用它可將完整程式檢視與短格式內容（如預告片和剪輯）分開。
+
+| 屬性 | 價值 |
+| --- | --- |
+| **內容資料變數** | `a.media.type` |
+| **XDM集合欄位** | [`mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **必要** | 否 |
+| **與**&#x200B;一起傳送 | 工作階段開始、工作階段關閉 |
+
+## Web SDK
+
+呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`mediaCollection.sessionDetails`內設定`showType`：
+
+```javascript
+alloy("sendEvent", {
+  xdm: {
+    eventType: "media.sessionStart",
+    mediaCollection: {
+      sessionDetails: {
+        showType: "0"
+      },
+      playhead: 0
+    }
+  }
+});
+```
+
+## Mobile SDK
+
+將顯示型別作為HashMap引數中的中繼資料索引鍵傳遞給`trackSessionStart`。 使用`MediaConstants.VideoMetadataKeys.SHOW_TYPE`。
+
+**iOS (Swift)**
+
+```swift
+var metadata: [String: String] = [:]
+metadata[MediaConstants.VideoMetadataKeys.SHOW_TYPE] = "0"
+
+tracker.trackSessionStart(info: mediaObject, metadata: metadata)
+```
+
+**Android (Kotlin)**
+
+```kotlin
+val metadata = HashMap<String, String>()
+metadata[MediaConstants.VideoMetadataKeys.SHOW_TYPE] = "0"
+
+tracker.trackSessionStart(mediaInfo, metadata)
+```
+
+## Roku (BrightScript)
+
+使用`createMediaSession`設定`sessionDetails`內的`showType`：
+
+```brightscript
+m.aepSdk.createMediaSession({
+    "xdm": {
+        "eventType": "media.sessionStart",
+        "mediaCollection": {
+            "sessionDetails": {
+                "showType": "0"
+            },
+            "playhead": 0
+        }
+    }
+})
+```
+
+## Media Edge API
+
+呼叫`mediaCollection.sessionDetails`內有`showType`的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)端點：
+
+```json
+{
+  "events": [{
+    "xdm": {
+      "eventType": "media.sessionStart",
+      "mediaCollection": {
+        "sessionDetails": {
+          "name": "video-123",
+          "length": 128,
+          "contentType": "vod",
+          "playerName": "HTML5 Player",
+          "channel": "Sports",
+          "showType": "0"
+        },
+        "playhead": 0
+      }
+    }
+  }]
+}
+```
+
+## Media SDK
+
+使用`ADB.Media.VideoMetadataKeys.ShowType`在`contextData`物件中傳遞顯示型別：
+
+```javascript
+var contextData = {};
+contextData[ADB.Media.VideoMetadataKeys.ShowType] = "0";
+
+tracker.trackSessionStart(mediaInfo, contextData);
+```
+
+## Media Collection API
+
+在`params`物件中包含`media.showType`：
+
+```json
+{
+  "playerTime": { "playhead": 0, "ts": 1699523820000 },
+  "eventType": "sessionStart",
+  "params": {
+    "media.showType": "0"
+  }
+}
+```
+
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。

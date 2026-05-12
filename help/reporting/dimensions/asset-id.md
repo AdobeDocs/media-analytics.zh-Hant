@@ -1,22 +1,21 @@
 ---
-source-git-commit: 415d20722965d510458d3c09004b6991b05ac264
+title: 資產 ID
+description: 報告基礎媒體資產的穩定產業識別碼。
+feature: Dimensions
+role: User, Admin
+source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 2%
 
 ---
-﻿---
-title: 資產 ID
-description: 報告基礎媒體資產的穩定產業識別碼。
-feature: Dimensions
-role: User, Admin
----
+
 
 # 資產 ID
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**資產識別碼**&#x200B;報告維度。 請參閱[資產識別碼](/help/implementation/variables/standard-metadata/asset-id.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**資產識別碼**報告維度。 請參閱[資產識別碼](/help/implementation/variables/standard-metadata/asset-id.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
@@ -28,9 +27,9 @@ role: User, Admin
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics （處理規則） | 建立將`a.media.asset`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics （處理規則） | 建立將`a.media.asset`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics （分類） | [內容（識別碼）](content.md)維度的分類 — 為報表套裝啟用&#x200B;**[[!UICONTROL 視訊中繼資料]](/help/reporting/media-reports-enable.md)**&#x200B;時，Adobe會自動建立此分類。 您需負責填入及維護分類值。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料摘要（處理規則） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.asset`對應至的eVar） |
 | 資料摘要（分類） | 不適用 — 資料摘要不支援分類。 |
 
@@ -46,7 +45,7 @@ role: User, Admin
 
 ## 處理規則方法
 
-建立將`a.media.asset`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取資產ID作為每次點選值，而不需要分類維護。
+建立將`a.media.asset`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取資產ID作為每次點選值，而不需要分類維護。
 
 取捨是您會失去資產ID與上層[內容(ID)](content.md)維度之間保證的1:1關係。 如果您的實施在不同事件間傳送的相同內容ID值不一致，則相同內容下可能會出現多個資產ID。 更新值僅適用於未來的資料。
 
