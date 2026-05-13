@@ -6,11 +6,21 @@ exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/hAoksavM6bSmrMzE1O99tCai7A3tBZUvRuhGPmNr4o8
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 314
@@ -28,7 +38,7 @@ ht-degree: 94%
 
 | 觸發 | 心率方法 | 網路呼叫   | 附註 |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。 這些網路呼叫仍完全等同於iOS](vod-no-intrs-details.md)案例中沒有岔斷的[播放。 |
+| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。 這些網路呼叫仍完全等同於iOS[&#128279;](vod-no-intrs-details.md)案例中沒有岔斷的播放。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
 | 播放章節的第一個時間格。 | `trackPlay` | 心率章節播放 | 當章節內容在主要內容之前播放，我們想在章節開始時啟動心率。 |
 | 章節播放。 |  | 章節心率 |  |

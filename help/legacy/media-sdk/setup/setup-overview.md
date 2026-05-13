@@ -6,11 +6,23 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/DsVDPsePWd123v5D8OdC2zUn52IWAOwh6QxcpvB1FIs
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c8add8f2-4250-4fd9-9cde-9707036c567did: e7d92df1-c5ba-4e93-85df-f83171b889be
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 626
@@ -132,7 +144,7 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
   分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
-* ** Media Analytics （心率）伺服器**
+* **&#x200B; Media Analytics （心率）伺服器**
 格式一律為&quot;`[your_namespace].hb.omtrdc.net`&quot;。 「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
 
 媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。 目前音訊追蹤可在行動平台運作。 在所有追蹤呼叫中，有一些要驗證的關鍵通用變數：
