@@ -73,7 +73,7 @@ Media 擴充功能會使用已設定的參數進行追蹤。
 
    ![](assets/launch_config_js.png)
 
-[Launch使用手冊 — 安裝和設定媒體擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
+[Launch使用手冊 — 安裝和設定媒體擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant#install-and-configure-the-ma-extension)
 
 ## 追蹤器建立差異
 
@@ -142,5 +142,5 @@ Launch 提供兩種建立追蹤基礎架構的方法。 兩種方法都使用 Me
 
 ### Launch
 
-* [Launch概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-* [Media Analytics擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [Launch概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
+* [Media Analytics擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant)

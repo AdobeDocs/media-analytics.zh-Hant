@@ -42,8 +42,8 @@ Adobe Media Analytics 擴充功能新增了音訊和視訊的核心 JavaScript M
 Adobe Data Collection 搭配 Media Analytics 擴充功能使用，須符合以下條件：
 * 您必須是 Adobe Experience Cloud 客戶。
 * 您必須在網頁上部署資料收集或 DTM 嵌入程式碼。
-* 您必須設定 [Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)。
-* 您必須設定[Adobe Media Analytics for Audio and Video擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)。
+* 您必須設定 [Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant)。
+* 您必須設定[Adobe Media Analytics for Audio and Video擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=zh-Hant)。
 * 您必須設定 [Experience Cloud ID 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh=Hant)。
 
 ## 下載 2.x Media SDK {#download-2x-sdks}
