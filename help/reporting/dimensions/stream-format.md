@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**資料流格式**報告維度。 如需如何收集此變數，請參閱[資料流格式](/help/implementation/variables/standard-metadata/stream-format.md)。*
+*此頁面涵蓋&#x200B;**資料流格式**&#x200B;報告維度。 如需如何收集此變數，請參閱[資料流格式](/help/implementation/variables/standard-metadata/stream-format.md)。*
 
 >[!ENDSHADEBOX]
 

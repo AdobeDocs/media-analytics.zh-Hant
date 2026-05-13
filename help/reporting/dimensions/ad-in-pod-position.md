@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋pod position **報告維度中的**廣告。 請參閱Pod位置](/help/implementation/variables/ads/ad-in-pod-position.md)中的[廣告，瞭解如何收集此變數。*
+*此頁面涵蓋pod position **報告維度中的**&#x200B;廣告。 請參閱Pod位置[&#128279;](/help/implementation/variables/ads/ad-in-pod-position.md)中的廣告，瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

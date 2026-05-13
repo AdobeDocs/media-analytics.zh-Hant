@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**節目型別**報告維度。 如需如何收集此變數，請參閱[顯示型別](/help/implementation/variables/standard-metadata/show-type.md)。*
+*此頁面涵蓋&#x200B;**節目型別**&#x200B;報告維度。 如需如何收集此變數，請參閱[顯示型別](/help/implementation/variables/standard-metadata/show-type.md)。*
 
 >[!ENDSHADEBOX]
 

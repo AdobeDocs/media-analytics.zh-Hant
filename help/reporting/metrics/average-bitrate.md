@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**平均位元速率**事件量度，此量度會報告每個工作階段的原始加權平均位元速率。 請參閱分段維度的平均位元速率（維度）[](/help/reporting/dimensions/average-bitrate.md)。 如需如何收集此變數，請參閱[位元速率](/help/implementation/variables/quality/bitrate.md)。*
+*此頁面涵蓋&#x200B;**平均位元速率**&#x200B;事件量度，此量度會報告每個工作階段的原始加權平均位元速率。 請參閱分段維度的平均位元速率（維度）[&#128279;](/help/reporting/dimensions/average-bitrate.md)。 如需如何收集此變數，請參閱[位元速率](/help/implementation/variables/quality/bitrate.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**觀看中總時間**報告量度。 請參閱[焦點](/help/implementation/variables/player-state/in-focus.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**觀看中總時間**&#x200B;報告量度。 請參閱[焦點](/help/implementation/variables/player-state/in-focus.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

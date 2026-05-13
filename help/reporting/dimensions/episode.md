@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**集數**報告維度。 請參閱[Episode](/help/implementation/variables/standard-metadata/episode.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**集數**&#x200B;報告維度。 請參閱[Episode](/help/implementation/variables/standard-metadata/episode.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

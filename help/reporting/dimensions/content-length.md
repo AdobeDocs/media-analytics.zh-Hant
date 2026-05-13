@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**內容長度**報告維度。 如需如何收集此變數，請參閱[內容長度](/help/implementation/variables/core/content-length.md)。*
+*此頁面涵蓋&#x200B;**內容長度**&#x200B;報告維度。 如需如何收集此變數，請參閱[內容長度](/help/implementation/variables/core/content-length.md)。*
 
 >[!ENDSHADEBOX]
 

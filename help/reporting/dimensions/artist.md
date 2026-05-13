@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**藝人**報告維度。 請參閱[藝人](/help/implementation/variables/standard-metadata/artist.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**藝人**&#x200B;報告維度。 請參閱[藝人](/help/implementation/variables/standard-metadata/artist.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

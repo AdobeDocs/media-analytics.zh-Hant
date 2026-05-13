@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**資料流型別**報告維度。 如需如何收集此變數，請參閱[資料流型別](/help/implementation/variables/core/stream-type.md)。*
+*此頁面涵蓋&#x200B;**資料流型別**&#x200B;報告維度。 如需如何收集此變數，請參閱[資料流型別](/help/implementation/variables/core/stream-type.md)。*
 
 >[!ENDSHADEBOX]
 

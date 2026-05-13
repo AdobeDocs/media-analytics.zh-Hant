@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋受靜音影響的&#x200B;**資料流**報告量度。 請參閱[靜音](/help/implementation/variables/player-state/mute.md)以瞭解如何收集此變數。*
+*此頁面涵蓋受靜音影響的&#x200B;**資料流**&#x200B;報告量度。 請參閱[靜音](/help/implementation/variables/player-state/mute.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

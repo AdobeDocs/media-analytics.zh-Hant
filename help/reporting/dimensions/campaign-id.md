@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**促銷活動識別碼**報告維度。 如需如何收集此變數，請參閱[促銷活動識別碼](/help/implementation/variables/ads/campaign-id.md)。*
+*此頁面涵蓋&#x200B;**促銷活動識別碼**&#x200B;報告維度。 如需如何收集此變數，請參閱[促銷活動識別碼](/help/implementation/variables/ads/campaign-id.md)。*
 
 >[!ENDSHADEBOX]
 

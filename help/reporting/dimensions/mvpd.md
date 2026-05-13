@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**MVPD**報告維度。 請參閱[MVPD](/help/implementation/variables/standard-metadata/mvpd.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**MVPD**&#x200B;報告維度。 請參閱[MVPD](/help/implementation/variables/standard-metadata/mvpd.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

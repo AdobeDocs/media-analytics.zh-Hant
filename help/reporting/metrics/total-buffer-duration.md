@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**總緩衝期間**量度。 Adobe Analytics會從相同的`a.media.qoe.bufferTime`內容資料變數自動填入配對的[總緩衝期間（維度）](/help/reporting/dimensions/total-buffer-duration.md)。 Customer Journey Analytics公開單一`mediaReporting.qoeDataDetails.bufferTime`欄位，您可將其作為維度或量度使用。*
+*此頁面涵蓋&#x200B;**總緩衝期間**&#x200B;量度。 Adobe Analytics會從相同的`a.media.qoe.bufferTime`內容資料變數自動填入配對的[總緩衝期間（維度）](/help/reporting/dimensions/total-buffer-duration.md)。 Customer Journey Analytics公開單一`mediaReporting.qoeDataDetails.bufferTime`欄位，您可將其作為維度或量度使用。*
 
 >[!ENDSHADEBOX]
 
