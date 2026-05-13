@@ -5,9 +5,15 @@ uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/tuQKZx3-sYhbRWOcamQ15n3sTEOwZmiXxgIFe4-kGQ0
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '275'
+source-wordcount: 276
 ht-degree: 100%
 
 ---
@@ -20,13 +26,13 @@ ht-degree: 100%
 
 此情境與[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境相同，只是一部分內容遭到擦除，而且從主要內容中的某個時間點到另一個時間點期間，已完成搜尋作業。
 
-| 觸發 | 心率方法 | 網路呼叫 | 附註   |
+| 觸發   | 心率方法   | 網路呼叫   | 附註   |
 | --- | --- | --- | --- |
 | 使用者點按[!UICONTROL 「播放」] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 播放內容的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
 | 內容播放 | | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 使用者開始搜尋內容 | `trackSeekStart` | | 在搜尋完成前 (例如 `trackSeekComplete`) 不會傳出任何心率。 |
-| 搜尋作業完成 | `trackSeekComplete` | | 因為搜尋已完成，即會開始傳出心率。提示：搜尋之後，播放點值應該呈現正確的新播放點。 |
+| 搜尋作業完成 | `trackSeekComplete` | | 因為搜尋已完成，即會開始傳出心率。  提示：搜尋之後，播放點值應該呈現正確的新播放點。 |
 | 內容已完成 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 工作階段結束 | `trackSessionEnd` | | `SessionEnd` |
 

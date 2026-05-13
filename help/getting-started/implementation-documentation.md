@@ -5,10 +5,16 @@ uuid: null
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/XqlNBPWJBTXi3Nqukt4HhAOU03wVI4Y3aeazc-w-sjw
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 38%
+source-wordcount: 362
+ht-degree: 52%
 
 ---
 
@@ -34,8 +40,8 @@ ht-degree: 38%
 | 產品 | 文件 |
 |:-----------------------:|----------------|
 | **Adobe Analytics** | *[Adobe Analytics 實作指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)<br>  *[Adobe Analytics 元件指南](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=zh-Hant)<br> *[Adobe Analytics 工具指南](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=zh-Hant)<br> *[Adobe Analytics 教學課程](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hant#tutorials) <br> *[Adobe Analytics API](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Analytics 的 Mobile 實作](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
-| **標記** | [Adobe Experience Platform 標記文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant) |
+| **標記** | [Adobe Experience Platform 標記文件](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) |
 
 ## Adobe 企業教學課程 {#adobe-tutorials}
 
-使用 [Adobe 企業教學課程](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=zh-Hant)，以善用 Adobe 企業應用程式來滿足您的業務需求。您會找到 Adobe Experience Cloud、Adobe Experience Platform 和 Adobe Analytics 的實用教學課程和培訓。
+使用 [Adobe 企業教學課程](https://experienceleague.adobe.com/docs/home-tutorials.html?lang=zh-Hant)，以善用 Adobe 企業應用程式來滿足您的業務需求。 您會找到 Adobe Experience Cloud、Adobe Experience Platform 和 Adobe Analytics 的實用教學課程和培訓。

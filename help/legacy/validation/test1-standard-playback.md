@@ -5,10 +5,16 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ChiE4jNDe-8GnbzNp8f9epCCFi6Hq9FkwrLzZEbcxcU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 99%
+source-wordcount: 854
+ht-degree: 84%
 
 ---
 
@@ -33,13 +39,13 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
 
    **追蹤伺服器** (適用於所有網站與應用程式)：
 
-   * **Adobe Analytics (AppMeasurement) 伺服器 -** Experience Cloud 訪客 ID 服務須有 RDC 追蹤伺服器，或是解析為 RDC 追蹤伺服器的 CNAME。Adobe Analytics 追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
+   * **Adobe Analytics (AppMeasurement) 伺服器 -** Experience Cloud 訪客 ID 服務須有 RDC 追蹤伺服器，或是解析為 RDC 追蹤伺服器的 CNAME。 Adobe Analytics 追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
-   * **Media Analytics (心率) 伺服器 -** 這部伺服器的格式一律為「`[namespace].hb.omtrdc.net`」，其中 `[namespace]` 會指定您的公司名稱。此名稱由 Adobe 提供。
+   * **Media Analytics (心率) 伺服器 -** 這部伺服器的格式一律為「`[namespace].hb.omtrdc.net`」，其中 `[namespace]` 會指定您的公司名稱。 此名稱由 Adobe 提供。
 
    您需要驗證所有追蹤呼叫的某些重要通用變數：
 
-   **Adobe 訪客 ID (`mid`)：** `mid` 變數可以用來擷取 AMCV Cookie 中設定的值。`mid` 變數是網站與行動應用程式的主要識別值，也代表 Experience Cloud 訪客 ID 服務設定正確。您可以在 Adobe Analytics (AppMeasurement) 與 Media Analytics (心率) 呼叫中找到它。
+   **Adobe 訪客 ID (`mid`)：** `mid` 變數可以用來擷取 AMCV Cookie 中設定的值。 `mid` 變數是網站與行動應用程式的主要識別值，也代表 Experience Cloud 訪客 ID 服務設定正確。 您可以在 Adobe Analytics (AppMeasurement) 與 Media Analytics (心率) 呼叫中找到它。
 
    * **Adobe Analytics 開始呼叫**
 
@@ -69,7 +75,7 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
 
      >[!NOTE]
      >
-     >`mid` 值不一定會存在 Media Analytics 開始呼叫 (`s:event:type=start`) 中。這沒有關係。在 Media Analytics 播放呼叫 (`s:event:type=play`) 之前，它們不一定會出現。
+     >`mid` 值不一定會存在 Media Analytics 開始呼叫 (`s:event:type=start`) 中。 這沒有關係。 在 Media Analytics 播放呼叫 (`s:event:type=play`) 之前，它們不一定會出現。
 
    * **Media Analytics 播放呼叫**
 
@@ -86,7 +92,7 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
    1. Media Analytics 伺服器 - 開始呼叫
    1. Media Analytics 伺服器 -「已要求 Adobe Analytics 開始呼叫」
 
-   以上前兩個呼叫含有額外的中繼資料和變數。如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#start-the-media-player)。
+   以上前兩個呼叫含有額外的中繼資料和變數。 如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#start-the-media-player)。
 
    以上第三個呼叫會通知 Media Analytics 伺服器，Media SDK 已要求將 Adobe Analytics 開始呼叫 (`pev2=ms_s`) 傳送到 Adobe Analytics 伺服器。
 
@@ -100,7 +106,7 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
    1. Media Analytics 伺服器 - 廣告開始呼叫
    1. Media Analytics 伺服器 -「已要求 Adobe Analytics 廣告開始呼叫」
 
-   前兩個呼叫含有額外的中繼資料和變數。如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#view-ad-playback)。
+   前兩個呼叫含有額外的中繼資料和變數。 如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#view-ad-playback)。
 
    第三個呼叫會通知 Media Analytics 伺服器，Media SDK 已要求將 Adobe Analytics 廣告開始呼叫 (`pev2=msa_s`) 傳送到 Adobe Analytics 伺服器。
 
@@ -133,14 +139,14 @@ Media Analytics 實作包含兩種類型的追蹤呼叫：
 
      如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#play-main-content)。
 
-1. **在播放期間暫停至少 30 秒。** 暫停媒體播放器時，SDK 會每隔 10 秒將暫停事件呼叫傳送到 Media Analytics 伺服器。暫停結束後，視訊將繼續播放。
+1. **播放期間暫停至少30秒。** 暫停媒體播放器時，SDK會每隔10秒將暫停事件呼叫傳送到Media Analytics伺服器。 暫停結束後，視訊將繼續播放。
 
    如需呼叫參數與中繼資料的相關資訊，請參閱[測試呼叫詳細資料](/help/legacy/validation/test-call-details.md#pause-main-content)。
 
-1. **尋找/拖曳媒體。**&#x200B;拖曳媒體播放點時，不會傳送任何特殊的追蹤呼叫，不過當拖曳結束後繼續播放媒體時，播放點值應該要反映主要內容中的新位置。
+1. **搜尋/拖曳媒體。** 拖曳媒體播放點時，不會傳送任何特殊的追蹤呼叫，不過當拖曳結束後繼續播放媒體時，播放點值應該要反映主要內容中的新位置。
 
-1. **重播媒體 (僅限 VOD)。**&#x200B;重播媒體時，應傳送一組新的媒體開始呼叫 (就像重新開始一樣)。
+1. **重播媒體（僅限VOD）。** 重播媒體時，應傳送一組新的媒體開始呼叫（就像重新開始一樣）。
 
-1. **檢視播放清單中的下一個媒體。**&#x200B;開始播放播放清單中的下一個媒體時，應傳送一組新的媒體開始呼叫。
+1. **檢視播放清單中的下一個媒體。** 開始播放播放播放清單中的下一個媒體時，應傳送一組新的媒體開始呼叫。
 
-1. **切換媒體或資料流。**&#x200B;切換即時資料流時，不應傳送第一個資料流的 Media Analytics 心率完成呼叫。媒體開始呼叫和播放呼叫的開頭，應該要是新節目和資料流名稱，以及新節目的正確播放點和持續時間值。
+1. **切換媒體或資料流。** 切換即時資料流時，不應傳送第一個資料流的Media Analytics完成呼叫。 媒體開始呼叫和播放呼叫的開頭，應該要是新節目和資料流名稱，以及新節目的正確播放點和持續時間值。

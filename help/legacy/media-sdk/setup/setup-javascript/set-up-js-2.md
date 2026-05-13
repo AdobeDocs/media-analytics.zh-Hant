@@ -5,10 +5,16 @@ uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 exl-id: 33976096-8b86-4353-906b-e25bf4693471
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/mYfKt95xUE59MuMFOzGro6fPsJsdy4wcy2F2J--JaW8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '395'
-ht-degree: 100%
+source-wordcount: 408
+ht-degree: 89%
 
 ---
 
@@ -16,28 +22,28 @@ ht-degree: 100%
 
 ## 先決條件
 
-* **取得有效的設定參數**
-在您設定分析帳戶後，即可從 Adobe 代表取得這些參數。
-* **在您的媒體應用程式實作 JavaScript 適用的 `AppMeasurement`**
-如需有關 Adobe Mobile SDK 文件的詳細資訊，請參閱[利用 JavaScript 實作分析](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hant)。
+* **取得有效的設定引數**
+設定Analytics帳戶後，可以向Adobe代表取得這些引數。
+* 在您的媒體應用程式中&#x200B;**實作JavaScript的`AppMeasurement`**
+如需Adobe Mobile SDK檔案的詳細資訊，請參閱[使用JavaScript實作Analytics。](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=zh-Hant)
 
 * **在您的媒體播放器中提供下列功能：**
 
    * *訂閱播放器事件專用的 API* - 當您的播放器中發生事件時，Media SDK 需要您呼叫一組簡易 API。
    * *提供播放器資訊的 API* - 此資訊包含媒體名稱和播放點位置等詳細內容。
 
-1. 將[下載的](/help/getting-started/download-sdks.md)程式庫新增至專案。為方便起見，請建立類別的本機參照。
+1. 將[下載的](/help/getting-started/download-sdks.md)程式庫新增至專案。 為方便起見，請建立類別的本機參照。
 
    1. 展開您下載的 `MediaSDK-js-v2.*.zip` 檔案。
    1. 驗證 `MediaSDK.min.js` 目錄中存在 `libs` 檔案：
 
    1. 主控 `MediaSDK.min.js` 檔案。
 
-      此核心 JavaScript 檔案必須放置您網站所有頁面都能存取的網站伺服器上。下一個步驟需要用到前往這些檔案的路徑。
+      此核心 JavaScript 檔案必須放置您網站所有頁面都能存取的網站伺服器上。 下一個步驟需要用到前往這些檔案的路徑。
 
    1. 在所有網站頁面上參考 `MediaSDK.min.js`
 
-      在每一頁的 `<head>` 或 `<body>` 標籤中新增下列程式碼行，加入 JavaScript 適用的 `MediaSDK`。例如：
+      在每一頁的 `<head>` 或 `<body>` 標籤中新增下列程式碼行，加入 JavaScript 適用的 `MediaSDK`。 例如：
 
       ```
       <script type="text/javascript"
@@ -102,11 +108,11 @@ ht-degree: 100%
 
    >[!IMPORTANT]
    >
-   >請確保您的 `MediaHeartbeat` 例項可供存取，並且不會在媒體工作階段結束前遭到取消配置。此例項將用於下列所有追蹤事件。
+   >請確保您的 `MediaHeartbeat` 例項可供存取，並且不會在媒體工作階段結束前遭到取消配置。 此例項將用於下列所有追蹤事件。
 
    >[!TIP]
    >
-   >`MediaHeartbeat` 需要 `AppMeasurement` 的例項，才能傳送呼叫至 Adobe Analytics。以下是 `AppMeasurement` 例項的範例：
+   >`MediaHeartbeat` 需要 `AppMeasurement` 的例項，才能傳送呼叫至 Adobe Analytics。 以下是 `AppMeasurement` 例項的範例：
 
    ```js
    var appMeasurement = new AppMeasurement();
@@ -119,6 +125,6 @@ ht-degree: 100%
 
 ## 從 JavaScript 1.x 移轉至 2.x
 
-在 2.x 版中，所有公用方法皆已整合至 `ADB.va.MediaHeartbeat` 類別，讓開發人員更容易操作。此外，所有的設定現已整合至 `ADB.va.MediaHeartbeatConfig` 類別。
+在 2.x 版中，所有公用方法皆已整合至 `ADB.va.MediaHeartbeat` 類別，讓開發人員更容易操作。 此外，所有的設定現已整合至 `ADB.va.MediaHeartbeatConfig` 類別。
 
 如需有關從 1.x 移轉至 2.x 的資訊，請參閱舊版實作文件。

@@ -5,9 +5,14 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yj31nOyVc9b6mFyYN0XeRidvQkiYXPS3Aat0a7z5CfI
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: 688
 ht-degree: 92%
 
 ---
@@ -39,11 +44,11 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
 
    1. 新增程式庫檔案和 JSON 設定檔案至您的專案來源。
 
-      用來設定 Adobe Mobile 的 JSON 有一個媒體分析專用的索引鍵，稱為 `mediaHeartbeat`。這是媒體分析的設定引數所屬的位置。
+      用來設定 Adobe Mobile 的 JSON 有一個媒體分析專用的索引鍵，稱為 `mediaHeartbeat`。 這是媒體分析的設定引數所屬的位置。
 
       >[!TIP]
       >
-      >套件會隨附 `ADBMobileConfig` JSON 檔案範例。如需設定，請聯絡 Adobe 代表。
+      >套件會隨附 `ADBMobileConfig` JSON 檔案範例。 如需設定，請聯絡 Adobe 代表。
 
       例如：
 
@@ -88,7 +93,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
       }
       ```
 
-      | 設定參數 | 說明 |
+      | 設定參數 | 說明     |
       | --- | --- |
       | `server` | 代表後端追蹤端點之 URL 的字串。 |
       | `publisher` | 代表內容發行者唯一識別碼的字串。 |
@@ -104,7 +109,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
 
 1. 設定 Experience Cloud 訪客 ID。
 
-   Experience Cloud 訪客 ID 服務提供跨 Experience Cloud 解決方案的通用訪客 ID。視訊事件和其他 Marketing Cloud 整合需要訪客 ID 服務。
+   Experience Cloud 訪客 ID 服務提供跨 Experience Cloud 解決方案的通用訪客 ID。 視訊事件和其他 Marketing Cloud 整合需要訪客 ID 服務。
 
    確認您的 `ADBMobileConfig` 設定包含 `marketingCloud` 組織 ID。
 
@@ -120,7 +125,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    >
    >一定要包含 `@AdobeOrg`。
 
-   完成設定後，即會產生一個 Experience Cloud 訪客 ID，並包含在所有點撃中。其他訪客 ID (例如 `custom` 和 `automatically-generated` ID) 會繼續在每次點撃時一併傳送。
+   完成設定後，即會產生一個 Experience Cloud 訪客 ID，並包含在所有點撃中。 其他訪客 ID (例如 `custom` 和 `automatically-generated` ID) 會繼續在每次點撃時一併傳送。
 
    **Experience Cloud 訪客 ID 服務方法**
 
@@ -128,11 +133,11 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    >
    >Experience Cloud 訪客 ID 方法的前置詞為 `visitor`。
 
-   |  方法 | 說明 |
+   |  方法   | 說明 |
    | --- | --- |
    | `visitorMarketingCloudID` | 從訪客 ID 服務中擷取 Experience Cloud 訪客 ID。 <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | 透過 Experience Cloud 訪客 ID，您可以設定與每個訪客相關聯的額外客戶 ID。訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。此方法對應至 `setCustomerIDs`。例如：<br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | 用來在 SDK 上設定適用於廣告的 Roku ID (RIDA)例如︰<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用 Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API 取得適用於廣告的 Roku ID (RIDA)。 |
+   | `visitorSyncIdentifiers` | 透過 Experience Cloud 訪客 ID，您可以設定與每個訪客相關聯的額外客戶 ID。 訪客 API 可接受同一名訪客具有多個客戶 ID，並透過客戶類型識別碼來區分不同客戶 ID 的範圍。 此方法對應至 `setCustomerIDs`。 例如：<br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | 用來在 SDK 上設定適用於廣告的 Roku ID (RIDA) 例如︰<br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>使用 Roku SDK [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) API 取得適用於廣告的 Roku ID (RIDA)。 |
    | `getAllIdentifiers` | 傳回 SDK 儲存的所有識別碼清單，包括分析、訪客、Audience Manager 和客戶識別碼。<br/><br/> `identifiers = ADBMobile().getAllIdentifiers()` |
 
    <!--
@@ -145,7 +150,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
 
    **DebugLogging**
 
-   |  方法 | 說明 |
+   |  方法   | 說明 |
    | --- | --- |
    | `setDebugLogging` | 用於啟用或停用 SDK 的偵錯記錄。<br/><br/>`ADBMobile().setDebugLogging(true)` |
    | `getDebugLogging` | 如果啟用偵錯記錄，則傳回 True。<br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
@@ -157,7 +162,7 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    | `PRIVACY_STATUS_OPT_IN` | 呼叫 setPrivacyStatus 以選擇加入時要傳遞的常數。<br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
    | `PRIVACY_STATUS_OPT_OUT` | 呼叫 setPrivacyStatus 以選擇退出時要傳遞的常數。<br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
-   |  方法 | 說明 |
+   |  方法   | 說明 |
    | --- | --- |
    | `setPrivacyStatus` | 設定 SDK 上的隱私權狀態。<br/><br/>`ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)` |
    | `getPrivacyStatus` | 取得在 SDK 上設定的目前隱私權狀態。<br/><br/>`privacyStatus = ADBMobile().getPrivacyStatus()` |
@@ -166,10 +171,10 @@ Experience Cloud 解決方案適用的 Roku SDK 2.x 可讓您測量在 BrightScr
    >
    >確保您每 250 ms 呼叫主事件迴圈中的 `processMessages` 和 `processMediaMessages` 函數，以確保 SDK 傳出 Ping。
 
-   |  方法 | 說明 |
+   |  方法   | 說明 |
    | --- | --- |
    | `processMessages` | 負責傳遞分析事件至要處理的 SDK。<br/><br/>`ADBMobile().processMessages()` |
    | `processMediaMessages` | 負責傳遞媒體事件至要處理的 SDK。<br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=zh-Hant) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

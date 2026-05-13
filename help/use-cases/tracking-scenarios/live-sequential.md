@@ -5,9 +5,15 @@ uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/oCoZuJHBMNOe3I6ITBqIQO6BSTNSWpbsjzXGuzd9KyU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: 526
 ht-degree: 100%
 
 ---
@@ -16,20 +22,20 @@ ht-degree: 100%
 
 ## 情境 {#scenario}
 
-此情境中，一個沒有廣告的即時資產在加入即時資料流後播放了 40 秒。
+此情境中，一個沒有廣告的即時資產在加入即時資料流後，播放了 40 秒。
 
 此情境與[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境相同，只是一部分內容遭到擦除，而且從主要內容中的某個時間點到另一個時間點期間，已完成搜尋作業。
 
-| 觸發 | 心率方法 |  網路呼叫 |  附註   |
+| 觸發 | 心率方法 |  網路呼叫  |  附註   |
 | --- | --- | --- | --- |
 | 使用者點按[!UICONTROL 播放] | trackSessionStart | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 播放內容的第一個時間格。 | trackPlay | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
 | 內容播放 | | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
-| 工作階段 1 結束 (第 1 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成是指內容已播放到第 1 集的工作階段 1，並已完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
+| 工作階段 1 結束 (第 1 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成是指內容已播放到第 1 集的工作階段 1，並已完整觀看。 開始下一集的工作階段之前，必須結束此工作階段。 |
 | 第 2 集開始 (工作階段 2 開始) | trackSessionStart | Analytics 內容開始、心率內容開始 | 這是因為使用者觀看了第一集並繼續觀看其他集 |
 | 媒體的第一個時間格 | trackPlay | 心率內容播放 | 此方法會觸發計時器，從此時間點開始，只要繼續播放，便會每 10 秒傳送心率。 |
 | 內容播放 | | 內容心率 | |
-| 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成是指內容已播放到第 2 集的工作階段 2，並已完整觀看。開始下一集的工作階段之前，必須結束此工作階段。 |
+| 工作階段結束 (第 2 集結束) | trackComplete / trackSessionEnd | 心率內容完成 | 完成是指內容已播放到第 2 集的工作階段 2，並已完整觀看。 開始下一集的工作階段之前，必須結束此工作階段。 |
 
 ## 參數 {#parameters}
 
@@ -48,7 +54,7 @@ ht-degree: 100%
 
 ## 心率內容播放 {#heartbeat-content-play}
 
-這應該看起來大多與心率內容開始呼叫完全相同，但主要的差異在於「s:event:type」參數。所有參數應該依然不受影響。
+這應該看起來大多與心率內容開始呼叫完全相同，但主要的差異在於「s:event:type」參數。 所有參數應該依然不受影響。
 
 | 參數 | 值 | 附註 |
 |---|---|---|
@@ -57,7 +63,7 @@ ht-degree: 100%
 
 ## 內容心率 {#content-heartbeats}
 
-在媒體播放期間，對於主要內容，計時器將每隔 10 秒傳送一或多個心率；對於廣告，則為每隔一秒。這些心率將包含播放、廣告、緩衝和其他部分項目的相關資訊。每個心率的確切內容不在本文件的討論範圍，這裡要確認的重點在於，繼續播放能否會一致觸發心率。
+在媒體播放期間，對於主要內容，計時器將每隔 10 秒傳送一或多個心率；對於廣告，則為每隔一秒。 這些心率將包含播放、廣告、緩衝和其他部分項目的相關資訊。 每個心率的確切內容不在本文件的討論範圍，這裡要確認的重點在於，繼續播放能否會一致觸發心率。
 
 在內容心率中，尋找幾個特定項目：
 
@@ -68,7 +74,7 @@ ht-degree: 100%
 
 ## 心率內容完成 {#heartbeat-content-complete}
 
-任何集數播放完成時 (播放點越過各集之間的界限)，就會傳送「心率內容完成」呼叫。這類似其他 Heartbeat 呼叫，但將包含某些特定項目：
+任何集數播放完成時 (播放點越過各集之間的界限)，就會傳送「心率內容完成」呼叫。 這類似其他 Heartbeat 呼叫，但將包含某些特定項目：
 
 | 參數 | 值 | 附註 |
 |---|---|---|

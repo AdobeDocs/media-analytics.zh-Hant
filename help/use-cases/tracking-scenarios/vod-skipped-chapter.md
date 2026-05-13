@@ -5,9 +5,15 @@ uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/hAoksavM6bSmrMzE1O99tCai7A3tBZUvRuhGPmNr4o8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: 314
 ht-degree: 94%
 
 ---
@@ -20,9 +26,9 @@ ht-degree: 94%
 
 這是與[單一章節 VOD 播放](/help/use-cases/tracking-scenarios/vod-one-chapter.md)相同的情境，只是此情境中的使用者要超出章節範圍搜尋，因此略過該章節，直接進入主要內容。
 
-| 觸發 | 心率方法 | 網路呼叫 | 附註 |
+| 觸發 | 心率方法 | 網路呼叫   | 附註 |
 |---|---|---|---|
-| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。這些網路呼叫仍完全等同於iOS[案例中沒有岔斷的](vod-no-intrs-details.md)播放。 |
+| 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告。 這些網路呼叫仍完全等同於iOS](vod-no-intrs-details.md)案例中沒有岔斷的[播放。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
 | 播放章節的第一個時間格。 | `trackPlay` | 心率章節播放 | 當章節內容在主要內容之前播放，我們想在章節開始時啟動心率。 |
 | 章節播放。 |  | 章節心率 |  |
@@ -31,7 +37,7 @@ ht-degree: 94%
 | 應用程式發現使用者的搜尋已超出正常章節範圍。 | `trackEvent:trackChapterSkip` |  |  |
 | 內容播放。 |  | 內容心率 |  |
 | 內容已完成播放。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於 [iOS 中沒有岔斷的播放](vod-no-intrs-details.md)情境。 |
-| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未持續觀看到媒體完成，仍必須呼叫此 API。 |
+| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。 即使使用者未持續觀看到媒體完成，仍必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 

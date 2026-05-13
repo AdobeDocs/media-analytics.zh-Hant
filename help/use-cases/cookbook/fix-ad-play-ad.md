@@ -5,19 +5,23 @@ uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/-Q92qldvgTTgJave-VP6P8IYN1CxbQQzxbtLS3DgYAE
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 76%
+source-wordcount: 453
+ht-degree: 77%
 
 ---
-
 
 # 處理出現在廣告之間的間隙{#resolving-main-play-appearing-between-ads}
 
 ## 問題
 
-在某些追蹤情況下，您可能會遭遇 `main:play` 呼叫意外出現在某個廣告的結尾與下一個廣告的開始之間的情況。如果廣告完成呼叫與下一個廣告開始呼叫之間的延遲超過 250 毫秒，Media SDK 便會回復到傳送 `main:play` 呼叫。如果這個回復到 `main:play` 的動作發生在前段廣告插播期間，內容開始量度的設定可能會過早。
+在某些追蹤情況下，您可能會遭遇 `main:play` 呼叫意外出現在某個廣告的結尾與下一個廣告的開始之間的情況。 如果廣告完成呼叫與下一個廣告開始呼叫之間的延遲超過 250 毫秒，Media SDK 便會回復到傳送 `main:play` 呼叫。 如果這個回復到 `main:play` 的動作發生在前段廣告插播期間，內容開始量度的設定可能會過早。
 
 上述廣告之間的間隙會由Media SDK解譯為主要內容，因為這些間隙不會與任何廣告內容重疊。 Media SDK上未設定任何廣告資訊，且播放器處於播放狀態。 如果沒有廣告資訊，且播放器狀態正在播放，則Media SDK依預設會將與主要內容的間隔時間計入在內。 它不能將播放持續期間視為空的廣告資訊。
 
@@ -40,7 +44,7 @@ ht-degree: 76%
 
 ***延遲觸發廣告完成呼叫。***
 
-延遲呼叫第一個廣告的 `trackEvent:AdComplete`，緊接著呼叫第二個廣告的 `trackEvent:AdStart`，藉此從播放器內部處理間隙。第一個廣告完成時，應用程式應延遲呼叫 `AdComplete` 事件。請務必呼叫廣告插播中最後一個廣告的 `trackEvent:AdComplete`。如果播放器能識別目前的廣告資產是廣告插播中的最後一個廣告，請立即呼叫 `trackEvent:AdComplete`。此解析度將導致少於1秒的額外廣告時間歸因到先前的廣告單位。
+延遲呼叫第一個廣告的 `trackEvent:AdComplete`，緊接著呼叫第二個廣告的 `trackEvent:AdStart`，藉此從播放器內部處理間隙。 第一個廣告完成時，應用程式應延遲呼叫 `AdComplete` 事件。 請務必呼叫廣告插播中最後一個廣告的 `trackEvent:AdComplete`。 如果播放器能識別目前的廣告資產是廣告插播中的最後一個廣告，請立即呼叫 `trackEvent:AdComplete`。 此解析度將導致少於1秒的額外廣告時間歸因到先前的廣告單位。
 
 **在廣告插播 (包括前段廣告) 開始時：**
 
@@ -54,7 +58,7 @@ ht-degree: 76%
 
   >[!NOTE]
   >
-  >唯有在上一個廣告未完成時才進行呼叫。請考慮使用布林值來維持上一個廣告的 &quot;`isinAd`&quot; 狀態。
+  >唯有在上一個廣告未完成時才進行呼叫。 請考慮使用布林值來維持上一個廣告的 &quot;`isinAd`&quot; 狀態。
 
 * 為廣告資產建立物件例項，如 `adObject`。
 * 填入廣告中繼資料 `adCustomMetadata`。

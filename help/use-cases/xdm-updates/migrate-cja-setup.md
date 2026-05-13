@@ -4,20 +4,25 @@ description: 瞭解如何將受眾移轉至適用於串流媒體的新的Adobe A
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Y-Y-xWKm-zOzaQm8kMbgGx8r6BTNLl-Q5AltlF5v7aA
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: 759
 ht-degree: 1%
 
 ---
 
 # 移轉Customer Journey Analytics以使用新的串流媒體欄位
 
-本檔案說明應如何更新使用名為「Media」的Adobe串流媒體服務資料型別的Customer Journey Analytics設定，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
+本檔案說明應如何更新使用名為「Media」的Adobe串流媒體服務資料型別的Customer Journey Analytics設定，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
 
 ## 移轉Customer Journey Analytics
 
-若要將Customer Journey Analytics安裝程式從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須更新下列使用舊資料型別的安裝程式：
+若要將Customer Journey Analytics安裝程式從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須更新下列使用舊資料型別的安裝程式：
 
 * 資料檢視
 
@@ -43,7 +48,7 @@ ht-degree: 1%
 
 1. 以「媒體報告詳細資訊」的新對應欄位取代衍生欄位中的所有舊欄位。
 
-檢視[音訊和視訊引數](https://experienceleague.adobe.com/tw/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id)頁面上的[內容識別碼](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters)引數，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。
+檢視[內容ID](/help/reporting/dimensions/content.md)引數和[串流媒體服務](/help/media-overview.md)下記錄的其餘串流媒體變數，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。
 
 ![舊和新XDM欄位路徑](assets/field-paths-updated.jpeg)
 
@@ -61,7 +66,7 @@ ht-degree: 1%
 
    資料檢視中的![舊欄位路徑](assets/old-field-data-view.jpeg)
 
-1. 檢查[章節引數](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset)文章中[章節位移](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters)區段中對應的新欄位。
+1. 檢查[章節位移](/help/reporting/dimensions/chapter-offset.md)文章中對應的新欄位。
 
 1. 在資料檢視中找出新的對應欄位。
 
@@ -81,7 +86,7 @@ ht-degree: 1%
 
    ![自訂新欄位以建立資料檢視](assets/create-derived-field2.jpeg)
 
-1. 使用&#x200B;[!UICONTROL **報告XDM欄位路徑**]&#x200B;的值填入&#x200B;**If**&#x200B;子句，如[章節引數](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name)頁面上的[章節名稱](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/chapter-parameters)引數所示。
+1. 使用&#x200B;**報告XDM欄位路徑**&#x200B;的值填入&#x200B;[!UICONTROL **If**]&#x200B;子句，如[章節名稱](/help/reporting/dimensions/chapter-name.md)頁面所示。
 
    ![章節名稱](assets/chapter-name.jpeg)
 
@@ -111,7 +116,7 @@ ht-degree: 1%
 
    ![尋找具有舊資料型別的欄位](assets/locate-fields-with-old-datatype.jpeg)
 
-1. 檢查[串流媒體引數](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable)文章中[內容名稱（變數）](https://experienceleague.adobe.com/zh-hant/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable)區段中對應的新欄位。
+1. 檢查[內容名稱](/help/reporting/dimensions/content-name.md)文章中對應的新欄位。
 
 1. 以新欄位取代舊欄位。
 

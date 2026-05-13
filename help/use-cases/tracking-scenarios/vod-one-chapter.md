@@ -5,9 +5,15 @@ uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/VV3HRRhTaxd-CC-uAyfYWks9q5A2zdCN-yn5td2Ajb8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: 434
 ht-degree: 100%
 
 ---
@@ -18,24 +24,24 @@ ht-degree: 100%
 
 此情境中，部分 VOD 內容會標示為章節。
 
-除非另有指定，否則此情境中的網路呼叫與[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境中的呼叫相同。網路呼叫會同時發生，但裝載不同。
+除非另有指定，否則此情境中的網路呼叫與[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境中的呼叫相同。 網路呼叫會同時發生，但裝載不同。
 
-| 觸發 | 心率方法 | 網路呼叫 | 附註   |
+| 觸發   | 心率方法   | 網路呼叫   | 附註   |
 |---|---|---|---|
 | 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 我們尚未通知 Measurement Library 有前段廣告，因此這些網路呼叫仍完全等同於單一 VoD。 |
 | 章節開始。 | `trackEvent:ChapterStart` | 心率章節開始 |  |
-| 章節播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放，Heartbeats 會在章節開始時啟動。 |
+| 章節播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 當章節內容在主要內容之前播放時，Heartbeats 會在章節開始時啟動。 |
 | 章節播放。 |  | 章節心率 |  |
 | 章節已完成。 | `trackEvent:trackChapterComplete` | 心率章節完成 | 此時已到達章節的結尾。 |
 | 內容播放。 |  | 內容心率 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
 | 內容已完成。 | `trackComplete` | 心率內容完成 | 此網路呼叫完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 |
-| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。即使使用者未持續觀看到媒體完成，仍必須呼叫此 API。 |
+| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示已達到檢視工作階段的結尾。 即使使用者未持續觀看到媒體完成，仍必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 
-當章節播放開始時，會傳送 `Heartbeat Chapter Start` 呼叫。如果章節的開頭不符合 10 秒的計時器，`Heartbeat Chapter Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。
+當章節播放開始時，會傳送 `Heartbeat Chapter Start` 呼叫。 如果章節的開頭不符合 10 秒的計時器，`Heartbeat Chapter Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。
 
-發生此情況時，會以相同的間隔傳出 `Content Heartbeat` 呼叫。您可以透過檢查事件類型和資產類型來區分這兩者：
+發生此情況時，會以相同的間隔傳出 `Content Heartbeat` 呼叫。 您可以透過檢查事件類型和資產類型來區分這兩者：
 
 ### 心率章節開始
 

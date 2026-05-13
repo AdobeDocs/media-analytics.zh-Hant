@@ -5,9 +5,15 @@ uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/jud37ZkadqiCb4F35qddJjglbaUW942hd0KmjAWrAdw
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: 231
 ht-degree: 100%
 
 ---
@@ -20,17 +26,17 @@ ht-degree: 100%
 
 除非另有指定，否則此情境中的網路呼叫與[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境中的呼叫相同。
 
-| 觸發 | 心率方法 | 網路呼叫 | 附註   |
+| 觸發   | 心率方法   | 網路呼叫   | 附註   |
 |---|---|---|---|
 | 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 可能是使用者點按&#x200B;**[!UICONTROL 播放]**&#x200B;或自動播放事件。 |
-| 播放視訊的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要繼續播放，便會每 10 秒傳送心率。 |
+| 播放視訊的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。 只要繼續播放，便會每 10 秒傳送心率。 |
 | 內容播放。 |  | 內容心率 |  |
 | 緩衝開始。 | `trackEvent:BufferStart` | 心率緩衝 |  |
 | 內容已緩衝。 |  | 內容心率 |  |
 | 緩衝完成。 | `trackEvent:BufferComplete` | 心率緩衝、心率播放 |  |
 | 內容播放。 |  | 內容心率 |  |
 | 內容已完成播放。 | `trackComplete` | 心率內容完成 | 已到播放點的結尾。 |
-| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未觀看視訊到完成，也必須呼叫此 API。 |
+| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。 即使使用者未觀看視訊到完成，也必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 

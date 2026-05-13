@@ -4,9 +4,14 @@ description: 瞭解如何在使用JavaScript 3x的瀏覽器應用程式中使用
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/aR7oVHv3n2xQnrMGHowhLFCYxhRyP1vyIrlXbKHEa5A
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: 227
 ht-degree: 90%
 
 ---
@@ -62,11 +67,11 @@ ht-degree: 90%
 
    >[!IMPORTANT]
    >
-   >更新 QoE 物件，並在每次位元速率變更時呼叫位元速率變更事件。如此可提供最精確的 QoE 資料。
+   >更新 QoE 物件，並在每次位元速率變更時呼叫位元速率變更事件。 如此可提供最精確的 QoE 資料。
 
 1. 請務必呼叫 `updateQoEObject()` 方法以向 SDK 提供最新的 QoE 資訊。
-1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊(請參閱[概觀](/help/use-cases/track-errors/track-errors-overview.md))。
+1. 當媒體播放器發生錯誤，且播放器 API 可使用錯誤事件時，請利用 `trackError()` 來擷取錯誤資訊 (請參閱[概觀](/help/use-cases/track-errors/track-errors-overview.md))。
 
    >[!TIP]
    >
-   >追蹤媒體播放器錯誤將不會停止媒體追蹤工作階段。如果媒體播放器錯誤使得播放無法繼續，請透過在呼叫 `trackError()` 之後呼叫 `trackSessionEnd()`，以確定媒體追蹤工作階段已關閉。
+   >追蹤媒體播放器錯誤將不會停止媒體追蹤工作階段。 如果媒體播放器錯誤使得播放無法繼續，請透過在呼叫 `trackError()` 之後呼叫 `trackSessionEnd()`，以確定媒體追蹤工作階段已關閉。

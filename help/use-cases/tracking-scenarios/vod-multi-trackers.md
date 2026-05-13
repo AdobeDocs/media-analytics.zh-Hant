@@ -5,9 +5,15 @@ uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/wMYVK9HfRpdPfz4aiFEKOaTDHj548se9hySTd3ux9g8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: 245
 ht-degree: 100%
 
 ---
@@ -18,7 +24,7 @@ ht-degree: 100%
 
 此情境中，有兩個工作階段並行執行兩個不同的媒體，並使用兩個不同的 `MediaHeartbeat` 例項。
 
-除了有兩個工作階段並行執行兩個不同的媒體以外，此情境等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。每一個工作階段會使用不同的 `MediaHeartbeat` 例項。
+除了有兩個工作階段並行執行兩個不同的媒體以外，此情境等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境。 每一個工作階段會使用不同的 `MediaHeartbeat` 例項。
 
 除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)情境相同。
 
@@ -112,7 +118,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-`MediaAnalyticsProvider` 和 `MediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。Charles 除錯工具或除錯記錄中的兩個工作階段，可透過使用工作階段 ID 值來加以識別。如要在 Android 上顯示此情境，請設定下列程式碼：
+`MediaAnalyticsProvider` 和 `MediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。 Charles 除錯工具或除錯記錄中的兩個工作階段，可透過使用工作階段 ID 值來加以識別。 如要在 Android 上顯示此情境，請設定下列程式碼：
 
 ```java
 // Set up mediaObject 
@@ -276,7 +282,7 @@ _mediaHeartbeat.trackSessionEnd();
 } 
 ```
 
-`MediaAnalyticsProvider` 和 `ADBMediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。Charles 除錯工具或除錯記錄中的兩個工作階段，可透過使用工作階段 ID 值來加以識別。
+`MediaAnalyticsProvider` 和 `ADBMediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。 Charles 除錯工具或除錯記錄中的兩個工作階段，可透過使用工作階段 ID 值來加以識別。
 
 如要在 iOS 上顯示此情境，請設定下列程式碼：
 
@@ -377,4 +383,4 @@ analyticsProvider2 = new MediaAnalyticsProvider(_player2);
 _player2.loadContent(URL_TO_MEDIA_2); 
 ```
 
-`MediaAnalyticsProvider` 和 `MediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。您可以在 Charles 除錯工具中看到兩個工作階段。
+`MediaAnalyticsProvider` 和 `MediaHeartbeat` 這兩個例項追蹤個別的工作階段，每一個都具有其自己的唯一工作階段 ID。 您可以在 Charles 除錯工具中看到兩個工作階段。

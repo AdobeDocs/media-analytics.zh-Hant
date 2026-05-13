@@ -1,13 +1,17 @@
 ---
 title: 了解媒體追蹤時間軸 - 使用者放棄工作階段
-description: 了解播放點時間軸和視訊工作階段放棄時對應的使用者動作。了解每個動作和要求的詳細資料。
+description: 了解播放點時間軸和視訊工作階段放棄時對應的使用者動作。 了解每個動作和要求的詳細資料。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/e0p6PwQPp5P2RG5M-0IeWtSebVa8rH20SZBRExC9Q7c
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: 642
 ht-degree: 100%
 
 ---
@@ -16,7 +20,7 @@ ht-degree: 100%
 
 ## VOD、前段廣告、中段廣告、使用者提早放棄內容
 
-下列圖表說明播放點時間軸和使用者動作的對應時間軸。以下呈現每個動作的詳細資料及其隨附要求。
+下列圖表說明播放點時間軸和使用者動作的對應時間軸。 以下呈現每個動作的詳細資料及其隨附要求。
 
 ![API 內容](assets/va_api_content_2.png)
 
@@ -30,7 +34,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 按下「自動播放」或「播放」按鈕 | 0 | 0 | `/api/v1/sessions` |
 
-這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。播放器狀態尚未進入「正在播放」，而是「正在開始」。要求內容的 `params` 對應必須包含強制工作階段參數。在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。如需有關工作階段的資訊，請參閱 Media Collection API 文件。
+這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。 它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。 播放器狀態尚未進入「正在播放」，而是「正在開始」。  要求內容的 `params` 對應必須包含強制工作階段參數。  在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。 如需有關工作階段的資訊，請參閱 Media Collection API 文件。
 
 ```json
 {
@@ -62,7 +66,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 應用程式啟動 Ping 事件計時器 | 0 | 0 | |
 
-啟動應用程式的 Ping 計時器。如果有前段廣告，第一個 Ping 事件則應在 1 秒引發；如果沒有，則為 10 秒。
+啟動應用程式的 Ping 計時器。 如果有前段廣告，第一個 Ping 事件則應在 1 秒引發；如果沒有，則為 10 秒。
 
 ### 動作 3 - 廣告插播開始 {#Action-3}
 
@@ -70,7 +74,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告插播開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-必須追蹤前段廣告。廣告追蹤只能在廣告插播中進行。
+必須追蹤前段廣告。 廣告追蹤只能在廣告插播中進行。
 
 ```json
 {
@@ -125,7 +129,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 應用程式傳送 Ping 事件 | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
-每隔 1 秒 Ping 後端一次。(為了簡單起見，將不會顯示後續廣告 Ping。)
+每隔 1 秒 Ping 後端一次。 (為了簡單起見，將不會顯示後續廣告 Ping。)
 
 ```json
 {
@@ -161,7 +165,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告插播完成 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-廣告插播結束。整個廣告插播期間，播放器一直保持「正在播放」狀態。
+廣告插播結束。 整個廣告插播期間，播放器一直保持「正在播放」狀態。
 
 ```json
 {
@@ -340,7 +344,7 @@ ht-degree: 100%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 使用者關閉應用程式。應用程式判斷使用者已放棄觀看，且不會回到此工作階段。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
+| 使用者關閉應用程式。 應用程式判斷使用者已放棄觀看，且不會回到此工作階段。 | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
 傳送 `sessionEnd` 給 VA 後端，指出應立即關閉工作階段，而且不需要進一步處理。
 

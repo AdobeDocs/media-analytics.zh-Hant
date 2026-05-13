@@ -5,9 +5,15 @@ uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/VrVa44XnAVGI2kNPEFfTB2S840O8jQdvI-PuGX5Y3nM
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c8add8f2-4250-4fd9-9cde-9707036c567did: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: 598
 ht-degree: 91%
 
 ---
@@ -16,7 +22,7 @@ ht-degree: 91%
 
 ## 概觀 {#overview}
 
-「里程碑」和「自訂連結」追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。「自訂連結」方法應視為精簡及簡化實作與收集的資料。 使用「自訂連結」解決方案，不會預先定義影片測量的變數或方法，須完全自訂。應可更新播放器事件程式碼，以指向基本播放器事件（例如開始和完成）的自訂連結追蹤呼叫。 如需詳細資訊，請參閱[自訂連結實作指南](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md)。
+「里程碑」和「自訂連結」追蹤的影片測量核心概念相同，也就是擷取影片播放器事件，並對應至分析方法，同時擷取播放器中繼資料和值，將其對應至分析變數。 「自訂連結」方法應視為精簡及簡化實作與收集的資料。 使用「自訂連結」解決方案，不會預先定義影片測量的變數或方法，須完全自訂。 應可更新播放器事件程式碼，以指向基本播放器事件（例如開始和完成）的自訂連結追蹤呼叫。 如需詳細資訊，請參閱[自訂連結實作指南](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md)。
 
 下表為「里程碑」解決方案和「自訂連結」解決方案的對照表。
 
