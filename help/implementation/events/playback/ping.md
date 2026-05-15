@@ -3,17 +3,17 @@ title: Ping
 description: 傳送心率以保持媒體工作階段作用中並定期追蹤播放進度。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 6%
+source-wordcount: '218'
+ht-degree: 5%
 
 ---
 
 
 # Ping
 
-Ping事件是心率，可讓工作階段持續運作並追蹤播放進度。 在播放過程中，透過計時器傳送檔案。
+Ping事件是心率，可讓工作階段持續運作並追蹤播放進度。 在播放過程中，透過計時器傳送檔案。 在行動SDK上，Ping會自動傳送；在所有其他平台上，它們必須在指定的間隔內手動傳送。
 
 * **主要內容**：開始播放後第一個ping 10秒，之後每10秒一次
 * **廣告內容**：在廣告追蹤期間每1秒

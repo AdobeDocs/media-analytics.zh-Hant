@@ -3,66 +3,72 @@ title: 串流媒體事件概觀
 description: 瞭解媒體事件型別及其必須傳送的順序。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 4%
+source-wordcount: '1078'
+ht-degree: 0%
 
 ---
 
 
 # 串流媒體事件
 
-串流媒體追蹤的運作方式是傳送一系列事件呼叫至Adobe資料收集端點，每個事件呼叫代表播放器狀態轉變。 每個事件都屬於以[sessionStart](session/session-start.md)呼叫開頭並以[sessionComplete](session/session-complete.md)或[sessionEnd](session/session-end.md)關閉的使用中工作階段。
+串流媒體追蹤的運作方式是將一系列事件呼叫傳送至Adobe資料收集端點，每個都代表播放器狀態的轉變。 每個事件都屬於[工作階段開始](session/session-start.md)呼叫所開啟的活動工作階段。 工作階段會在到期時自動關閉，或可以使用[工作階段結束](session/session-end.md)呼叫立即關閉。
 
-## 事件工作流程
+事件分為六個類別（工作階段、播放、廣告、章節、播放器狀態和品質），每個類別各涵蓋媒體體驗的不同層面。
 
-下列已排序清單顯示典型VOD播放的必要事件序列，其中包含一個前段廣告和一個章節：
+## 工作階段事件
 
-1. **[工作階段開始](session/session-start.md)**：永遠是第一個事件；建立工作階段並傳回工作階段識別碼
-2. **[廣告插播開始](ads/ad-break-start.md)**：任何廣告事件之前都需要
-3. **[廣告開始](ads/ad-start.md)** → **[廣告完成](ads/ad-complete.md)** （或&#x200B;**[廣告略過](ads/ad-skip.md)**）
-4. **[廣告插播完成](ads/ad-break-complete.md)**：插播中的所有廣告之後為必要
-5. **[播放](playback/play.md)**：代表內容播放開始或繼續
-6. **[章節開始](chapters/chapter-start.md)**：選擇性；標示章節開始
-7. **[Ping](playback/ping.md)**：主要內容期間每10秒傳送一次，廣告期間每1秒傳送一次
-8. **[章節完成](chapters/chapter-complete.md)**：選擇性；標籤章節的結尾
-9. **[暫停開始](playback/pause-start.md)** → **[播放](playback/play.md)** （繼續）：任何暫停
-10. **[緩衝開始](playback/buffer-start.md)** → **[播放](playback/play.md)** （繼續）：適用於任何緩衝
-11. **[工作階段完成](session/session-complete.md)**：當檢視器到達內容結尾時
+工作階段事件適用於任何型別的媒體追蹤，包括：隨選影片、直播串流、播客和有聲書。 它們定義追蹤工作階段本身的邊界。 最重要的工作階段事件是[工作階段開始](session/session-start.md)，因為幾乎所有其他事件型別都取決於它產生的工作階段識別碼。 當使用者起始工作階段時（例如當他們按下「播放」或播放器開始自動播放時），將它當作第一個事件傳送。
 
-如果檢視者在到達內容結尾之前放棄工作階段，請使用[工作階段結束](session/session-end.md)，而非工作階段完成。
+工作階段開啟後，請使用[工作階段完成](session/session-complete.md)或[工作階段結束](session/session-end.md)來指示檢視體驗的結束方式。 當檢視器到達內容的自然結尾（視訊結束、播客集結尾，或有聲書的最後一個章節結束）時，傳送工作階段完成。 工作階段完成不會關閉工作階段；工作階段會保持開啟狀態，直到自然過期為止，因此系統仍會擷取任何尾隨事件（例如最終Ping）。
 
-## 工作階段生命週期
+如果檢視器在到達結束之前離開，請傳送[工作階段結束](session/session-end.md)以立即關閉工作階段。 只有在未發生其他事件時（例如，當播放器損毀或頁面解除安裝時），才會結束傳送工作階段。 工作階段結束是硬性關閉：傳送後，工作階段會終止，且無法在其下追蹤進一步事件。 在大多數情況下，允許工作階段自然過期會比較安全。 例如檢視器無限期暫停、應用程式移至背景，或內容無法載入。
 
-如果符合下列任何條件，工作階段就會自動過期：
+如果在10分鐘內未收到任何事件，或在30分鐘內未偵測到播放點移動，工作階段會自動過期。 如果符合任一條件且檢視器回到內容，您必須先呼叫「工作階段開始」以開啟新的工作階段，才能傳送任何其他事件。
 
-* **10分鐘未收到任何事件**
-* **30分鐘沒有播放點移動**
+## 播放事件
 
-## 事件參考
+播放事件會在整個工作階段中追蹤媒體播放器中的狀態轉變。 它們構成事件串流的核心，並套用至任何內容型別。
 
-| 事件 | 類別 | 關聯的量度 |
-| --- | --- | --- |
-| [工作階段開始](session/session-start.md) | 工作階段 | [媒體開始](/help/reporting/metrics/media-starts.md) |
-| [工作階段完成](session/session-complete.md) | 工作階段 | [內容完成](/help/reporting/metrics/content-completes.md) |
-| [工作階段結束](session/session-end.md) | 工作階段 | — |
-| [播放](playback/play.md) | 播放 | [內容開始](/help/reporting/metrics/content-starts.md) |
-| [暫停開始](playback/pause-start.md) | 播放 | [暫停事件](/help/reporting/metrics/pause-events.md) |
-| [緩衝開始](playback/buffer-start.md) | 播放 | [緩衝事件](/help/reporting/metrics/buffer-events.md) |
-| [位元速率變更](playback/bitrate-change.md) | 播放 | [位元速率變更](/help/reporting/metrics/bitrate-changes.md) |
-| [Ping](playback/ping.md) | 播放 | — |
-| [廣告插播開始](ads/ad-break-start.md) | 廣告 | — |
-| [廣告開始](ads/ad-start.md) | 廣告 | [廣告開始](/help/reporting/metrics/ad-starts.md) |
-| [廣告完成](ads/ad-complete.md) | 廣告 | [廣告完成](/help/reporting/metrics/ad-completes.md) |
-| [廣告略過](ads/ad-skip.md) | 廣告 | — |
-| [廣告插播完成](ads/ad-break-complete.md) | 廣告 | — |
-| [章節開始](chapters/chapter-start.md) | 章節 | [章節開始](/help/reporting/metrics/chapter-starts.md) |
-| [章節完成](chapters/chapter-complete.md) | 章節 | [章節完成](/help/reporting/metrics/chapter-completes.md) |
-| [章節略過](chapters/chapter-skip.md) | 章節 | — |
-| [狀態開始](player-state/state-start.md) | 播放器狀態 | 因州而異 |
-| [狀態結束](player-state/state-end.md) | 播放器狀態 | 因州而異 |
-| [錯誤](error.md) | 品質 | [錯誤影響的資料流](/help/reporting/metrics/error-impacted-streams.md) |
+主要播放事件是[播放](playback/play.md)。 呼叫工作階段開始後，「播放」會指出內容已開始播放，無論是初始開始、自動播放觸發或回到播放狀態。 [暫停開始](playback/pause-start.md)表示使用者已暫停播放。 沒有專用的繼續事件；當檢視器繼續時，請再次傳送「播放」。 在緩衝停止後，Play的運作方式相同 — 當播放器停止等候資料時，傳送[緩衝開始](playback/buffer-start.md)，然後在緩衝解析時跟隨Play。
+
+在主要內容播放期間每10秒傳送[Ping](playback/ping.md)，在廣告播放期間每1秒傳送一次。 Ping會保持工作階段進行中，並記錄播放點移動。 在行動SDK上，Ping會自動傳送；在所有其他平台上，都必須手動傳送。
+
+當播放器的最適化位元速率演演算法切換至不同的品質等級時，傳送[位元速率變更](playback/bitrate-change.md)。 在QoE資料中包含新的位元速率值可啟用「平均位元速率」報表。
+
+## 廣告事件
+
+廣告事件會追蹤媒體工作階段中的廣告。 常見的案例包括在影片開始前插入前段廣告、在長格式影片或即時資料流期間插入中段廣告，以及在內容結束後的後段廣告。 單一廣告插播可以包含一或多個個別廣告。
+
+每個廣告插播會遵循相同結構。 [廣告插播開始](ads/ad-break-start.md)開啟插播，而[廣告插播完成](ads/ad-break-complete.md)關閉它。 這兩個事件當作書擋，將所有個別廣告事件換行。 在插播中，當每個廣告開始播放時，傳送[廣告開始](ads/ad-start.md)。 如果廣告播放到其完整長度，則以[廣告完成](ads/ad-complete.md)進行追蹤，或如果檢視者選取略過按鈕，則以[廣告略過](ads/ad-skip.md)進行。 省略任一書擋會導致插播中的所有廣告事件遭到忽略，且廣告持續時間會錯誤歸因於主要內容。
+
+下列範例顯示包含三個廣告的單一廣告插播的正確事件順序，檢視器已略過第三個廣告：
+
+1. 廣告插播開始
+2. 廣告開始
+3. 廣告完成
+4. 廣告開始
+5. 廣告完成
+6. 廣告開始
+7. 廣告略過
+8. 廣告插播完成
+
+## 章節事件
+
+章節事件是選用專案，可追蹤工作階段中的已命名內容區段。 它們很適合將內容自然地分成獨立部分。 常見的範例包括有聲書的章節、紀錄片的動作、影片課程的課程，或播客集的區段。 當您想要瞭解檢視者在區段層級的參與時（例如識別對象傾向於略過的章節），請使用章節事件。
+
+當章節開始時，傳送[章節開始](chapters/chapter-start.md)。 如果檢視器觀看至章節結尾，請傳送[章節完成](chapters/chapter-complete.md)。 如果檢視器搜尋超過章節界限而未觀看其完成，請改為傳送[章節略過](chapters/chapter-skip.md)。 在關閉章節時，必須先完成章節或跳過章節，新章節才能開啟；章節不能重疊。
+
+## 播放器狀態事件
+
+播放器狀態事件會追蹤檢視者在整個工作階段中與播放器控制項互動的方式。 這類變數有助於瞭解協助工具功能的使用情形，例如檢視器啟用隱藏式字幕或靜音的頻率。 此外，還可呈現全熒幕或內嵌檢視、子母畫面多工作業等檢視行為模式。
+
+五個可追蹤的狀態為： `fullscreen`、`mute`、`closedCaptioning`、`pictureInPicture`和`inFocus`。 當播放器進入其中任一狀態時，傳送[狀態開始](player-state/state-start.md)，當播放器退出時，傳送[狀態結束](player-state/state-end.md)。 可同時啟用多個狀態；檢視器可同時處於全熒幕和靜音狀態，且同一事件呼叫可結束多個狀態。
+
+## 錯誤事件
+
+[錯誤](error.md)事件會在工作階段期間記錄播放失敗 — 失敗的資料流要求、轉碼器錯誤或外部傳遞失敗。 每當發生有意義的錯誤時，就傳送它。 錯誤事件不會關閉工作階段；播放可以繼續，並在相同工作階段下追蹤後續事件。 如果錯誤無法復原，請在工作階段結束之後明確關閉工作階段。
 
 >[!MORELIKETHIS]
 >

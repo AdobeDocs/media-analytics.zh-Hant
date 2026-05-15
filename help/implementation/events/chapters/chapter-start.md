@@ -3,17 +3,17 @@ title: 章節開始
 description: 代表內容中章節區段的開始。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 17%
+source-wordcount: '149'
+ht-degree: 15%
 
 ---
 
 
 # 章節開始
 
-章節開始事件代表內容中章節的開始。 章節追蹤為選用，且不是核心媒體追蹤的必要專案。
+章節開始事件代表內容中章節的開始。 章節追蹤為選用，且不是核心媒體追蹤的必要專案。 章節不能重疊；傳送[章節完成](chapter-complete.md)或[章節略過](chapter-skip.md)以關閉目前的章節，然後再開始新章節。
 
 * **必要條件**： [工作階段開始](../session/session-start.md)
 * **關聯的量度**： [章節開始](/help/reporting/metrics/chapter-starts.md)

@@ -3,10 +3,10 @@ title: 工作階段開始
 description: 代表媒體工作階段開始，並取得所有後續事件所需的工作階段ID。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 10%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 12%
 # 工作階段開始
 
 工作階段開始事件會開啟媒體追蹤工作階段。 此事件必須是任何播放所傳送的第一個事件。 回應會傳回相同工作階段的所有後續事件都必須包含的工作階段ID。
+
+如果&#x200B;**在10分鐘內未收到任何事件**，或是&#x200B;**在30分鐘內沒有播放點移動**，工作階段會自動過期。 如果工作階段過期，您必須再次呼叫工作階段開始以取得新的工作階段ID。
 
 * **必要條件**：無；永遠是第一個事件
 * **關聯的量度**： [媒體開始](/help/reporting/metrics/media-starts.md)
