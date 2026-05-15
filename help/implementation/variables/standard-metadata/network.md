@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**網路**變數的資料集合。 如需對應的報表維度，請參閱[網路](/help/reporting/dimensions/network.md)。*
+*本頁涵蓋&#x200B;**網路**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[網路](/help/reporting/dimensions/network.md)。*
 
 >[!ENDSHADEBOX]
 

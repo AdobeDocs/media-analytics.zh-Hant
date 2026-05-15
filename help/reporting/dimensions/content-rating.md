@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**內容評等**報告維度。 如需如何收集此變數，請參閱[內容評等](/help/implementation/variables/standard-metadata/content-rating.md)。*
+*此頁面涵蓋&#x200B;**內容評等**&#x200B;報告維度。 如需如何收集此變數，請參閱[內容評等](/help/implementation/variables/standard-metadata/content-rating.md)。*
 
 >[!ENDSHADEBOX]
 

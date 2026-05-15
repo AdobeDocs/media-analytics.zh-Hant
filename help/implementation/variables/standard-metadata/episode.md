@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**Episode**變數的資料集合。 如需對應的報表維度，請參閱[Episode](/help/reporting/dimensions/episode.md)。*
+*本頁涵蓋&#x200B;**Episode**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[Episode](/help/reporting/dimensions/episode.md)。*
 
 >[!ENDSHADEBOX]
 

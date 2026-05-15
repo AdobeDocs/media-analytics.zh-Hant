@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告插播名稱**變數的資料集合。 如需對應的報表維度，請參閱[Pod名稱](/help/reporting/dimensions/pod-name.md)。*
+*本頁涵蓋&#x200B;**廣告插播名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[Pod名稱](/help/reporting/dimensions/pod-name.md)。*
 
 >[!ENDSHADEBOX]
 

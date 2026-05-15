@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**標籤**報告維度。 請參閱[標籤](/help/implementation/variables/standard-metadata/label.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**標籤**&#x200B;報告維度。 請參閱[標籤](/help/implementation/variables/standard-metadata/label.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

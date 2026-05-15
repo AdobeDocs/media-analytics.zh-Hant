@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容評等**變數的資料收集。 檢視對應報表維度的[內容評等](/help/reporting/dimensions/content-rating.md)。*
+*本頁涵蓋&#x200B;**內容評等**&#x200B;變數的資料收集。 檢視對應報表維度的[內容評等](/help/reporting/dimensions/content-rating.md)。*
 
 >[!ENDSHADEBOX]
 

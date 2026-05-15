@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**首播日期**變數的資料收集。 如需對應的報表維度，請參閱[首播日期](/help/reporting/dimensions/first-air-date.md)。*
+*本頁涵蓋&#x200B;**首播日期**&#x200B;變數的資料收集。 如需對應的報表維度，請參閱[首播日期](/help/reporting/dimensions/first-air-date.md)。*
 
 >[!ENDSHADEBOX]
 

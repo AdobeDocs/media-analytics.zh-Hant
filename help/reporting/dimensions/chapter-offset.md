@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**章節位移**報告維度。 如需如何收集此變數，請參閱[章節位移](/help/implementation/variables/chapters/chapter-offset.md)。*
+*此頁面涵蓋&#x200B;**章節位移**&#x200B;報告維度。 如需如何收集此變數，請參閱[章節位移](/help/implementation/variables/chapters/chapter-offset.md)。*
 
 >[!ENDSHADEBOX]
 

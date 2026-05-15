@@ -15,7 +15,7 @@ ht-degree: 14%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**季**變數的資料集合。 如需對應的報表維度，請參閱[季](/help/reporting/dimensions/season.md)。*
+*本頁涵蓋&#x200B;**季**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[季](/help/reporting/dimensions/season.md)。*
 
 >[!ENDSHADEBOX]
 

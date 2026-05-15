@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**已授權**變數的資料集合。 如需對應的報表量度，請參閱[已授權](/help/reporting/metrics/authorized.md)。*
+*本頁涵蓋&#x200B;**已授權**&#x200B;變數的資料集合。 如需對應的報表量度，請參閱[已授權](/help/reporting/metrics/authorized.md)。*
 
 >[!ENDSHADEBOX]
 

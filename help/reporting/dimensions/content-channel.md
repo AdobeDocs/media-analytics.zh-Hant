@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**內容管道**報告維度。 如需如何收集此變數，請參閱[內容管道](/help/implementation/variables/core/content-channel.md)。*
+*此頁面涵蓋&#x200B;**內容管道**&#x200B;報告維度。 如需如何收集此變數，請參閱[內容管道](/help/implementation/variables/core/content-channel.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**隱藏式字幕總時間**報告量度。 請參閱[隱藏式字幕](/help/implementation/variables/player-state/closed-captioning.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**隱藏式字幕總時間**&#x200B;報告量度。 請參閱[隱藏式字幕](/help/implementation/variables/player-state/closed-captioning.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

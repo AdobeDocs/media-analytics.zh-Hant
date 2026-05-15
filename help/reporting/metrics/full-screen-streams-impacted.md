@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋受全熒幕&#x200B;**報告量度影響的**資料流。 請參閱[全熒幕](/help/implementation/variables/player-state/full-screen.md)以瞭解如何收集此變數。*
+*此頁面涵蓋受全熒幕&#x200B;**報告量度影響的**&#x200B;資料流。 請參閱[全熒幕](/help/implementation/variables/player-state/full-screen.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

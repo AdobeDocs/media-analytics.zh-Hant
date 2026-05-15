@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**相簿**變數的資料集合。 如需對應的報表維度，請參閱[相簿](/help/reporting/dimensions/album.md)。*
+*本頁涵蓋&#x200B;**相簿**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[相簿](/help/reporting/dimensions/album.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**子母畫面**播放器狀態的資料集合。 檢視對應報表量度的[受子母畫面影響的資料流](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[子母畫面計數](/help/reporting/metrics/picture-in-picture-count.md)和[子母畫面總持續時間](/help/reporting/metrics/picture-in-picture-total-duration.md)。*
+*此頁面涵蓋&#x200B;**子母畫面**&#x200B;播放器狀態的資料集合。 檢視對應報表量度的[受子母畫面影響的資料流](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[子母畫面計數](/help/reporting/metrics/picture-in-picture-count.md)和[子母畫面總持續時間](/help/reporting/metrics/picture-in-picture-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
