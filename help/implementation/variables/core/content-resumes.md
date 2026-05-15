@@ -3,10 +3,10 @@ title: 內容繼續
 description: 標幟工作階段以繼續先前中斷的播放，讓後端會計為內容繼續事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 10%
+source-wordcount: '248'
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容繼續**&#x200B;變數的資料集合。 檢視[對應報表量度的內容履歷](/help/reporting/metrics/content-resumes.md)。*
+*本頁涵蓋&#x200B;**內容繼續**變數的資料集合。 檢視[對應報表量度的內容履歷](/help/reporting/metrics/content-resumes.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.resume` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特徵** | 不適用 |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 工作階段開始 |
+| **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md) |
 
 ## Web SDK
 

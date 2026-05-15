@@ -3,9 +3,9 @@ title: 全螢幕
 description: 追蹤檢視器何時進入和結束全熒幕播放，讓後端可以報告全熒幕參與度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '284'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**全熒幕**&#x200B;播放器狀態的資料集合。 檢視對應報表量度受全熒幕影響的[資料流](/help/reporting/metrics/full-screen-streams-impacted.md)、[全熒幕計數](/help/reporting/metrics/full-screen-count.md)及[全熒幕總持續時間](/help/reporting/metrics/full-screen-total-duration.md)。*
+*此頁面涵蓋&#x200B;**全熒幕**播放器狀態的資料集合。 檢視對應報表量度受全熒幕影響的[資料流](/help/reporting/metrics/full-screen-streams-impacted.md)、[全熒幕計數](/help/reporting/metrics/full-screen-count.md)及[全熒幕總持續時間](/help/reporting/metrics/full-screen-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "fullscreen"`的專案） |
+| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "fullscreen"`的專案） |
+| **Audience Manager特徵** | `c_contextdata.a.media.states.fullscreen.set`, `c_contextdata.a.media.states.fullscreen.count`, `c_contextdata.a.media.states.fullscreen.time` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 狀態開始、狀態結束 |
+| **與**&#x200B;一起傳送 | [狀態開始](/help/implementation/events/player-state/state-start.md)，[狀態結束](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 

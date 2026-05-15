@@ -3,10 +3,10 @@ title: 集數
 description: 設定偶發內容的集數編號，以便個別報告個別集數。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 16%
+source-wordcount: '182'
+ht-degree: 15%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**Episode**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[Episode](/help/reporting/dimensions/episode.md)。*
+*本頁涵蓋&#x200B;**Episode**變數的資料集合。 如需對應的報表維度，請參閱[Episode](/help/reporting/dimensions/episode.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 16%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.episode` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.episode` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 工作階段開始、工作階段關閉 |
+| **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
 
 ## Web SDK
 

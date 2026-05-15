@@ -3,10 +3,10 @@ title: MVPD
 description: 當使用者透過Adobe Pass進行驗證時，請設定多頻道視訊節目銷售商。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 15%
+source-wordcount: '196'
+ht-degree: 14%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**MVPD**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[MVPD](/help/reporting/dimensions/mvpd.md)。*
+*本頁涵蓋&#x200B;**MVPD**變數的資料集合。 如需對應的報表維度，請參閱[MVPD](/help/reporting/dimensions/mvpd.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ MVPD （多頻道視訊節目經銷商）變數是使用者驗證所透過的cab
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.pass.mvpd` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.pass.mvpd` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 工作階段開始、工作階段關閉 |
+| **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
 
 ## Web SDK
 

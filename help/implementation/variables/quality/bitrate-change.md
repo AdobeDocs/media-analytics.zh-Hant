@@ -3,7 +3,7 @@ title: 位元速率變更
 description: 當播放器切換至不同的位元速率時，引發位元速率變更事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 11%
@@ -25,8 +25,9 @@ ht-degree: 11%
 | --- | --- |
 | **內容資料變數** | （無 — 由後端計算） |
 | **XDM事件型別** | `media.bitrateChange` |
+| **Audience Manager特徵** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 每當播放器切換位元速率時 |
+| **與**&#x200B;一起傳送 | [位元速率變更](/help/implementation/events/playback/bitrate-change.md) |
 
 ## Web SDK
 

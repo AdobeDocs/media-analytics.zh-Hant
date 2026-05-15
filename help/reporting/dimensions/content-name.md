@@ -3,10 +3,10 @@ title: 內容名稱
 description: 報告每個媒體工作階段的人類可讀標題。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 8%
+source-wordcount: '160'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**內容名稱**&#x200B;報告維度。 如需如何收集此變數，請參閱[內容名稱](/help/implementation/variables/core/content-name.md)。*
+*此頁面涵蓋&#x200B;**內容名稱**報告維度。 如需如何收集此變數，請參閱[內容名稱](/help/implementation/variables/core/content-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 8%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體核心]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.friendlyName`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `videoname, post_videoname` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `videoname`, `post_videoname` |
+| Audience Manager | `c_contextdata.a.media.friendlyName` |
 
 >[!NOTE]
 >

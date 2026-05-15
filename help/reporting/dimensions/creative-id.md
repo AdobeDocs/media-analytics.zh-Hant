@@ -3,10 +3,10 @@ title: 創作 ID
 description: 報告廣告創意識別碼。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 415d20722965d510458d3c09004b6991b05ac264
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 2%
+source-wordcount: '376'
+ht-degree: 3%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**Creative ID**&#x200B;報告維度。 如需如何收集此變數，請參閱[Creative ID](/help/implementation/variables/ads/creative-id.md)。*
+*此頁面涵蓋&#x200B;**Creative ID**報告維度。 如需如何收集此變數，請參閱[Creative ID](/help/implementation/variables/ads/creative-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -25,11 +25,12 @@ ht-degree: 2%
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics （處理規則） | 建立將`a.media.ad.creative`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics （處理規則） | 建立將`a.media.ad.creative`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics （分類） | [廣告](ad.md)維度的分類 — 為報表套裝啟用&#x200B;**[[!UICONTROL 媒體廣告]](/help/reporting/media-reports-enable.md)**&#x200B;時，Adobe會自動建立此分類。 您需負責填入及維護分類值。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 資料摘要（處理規則） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.ad.creative`對應至的eVar） |
 | 資料摘要（分類） | 不適用 — 資料摘要不支援分類。 |
+| Audience Manager | `c_contextdata.a.media.ad.creative` |
 
 ## 分類方法
 
@@ -43,7 +44,7 @@ ht-degree: 2%
 
 ## 處理規則方法
 
-建立將`a.media.ad.creative`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取創意ID作為每次點選值，而不需要分類維護。
+建立將`a.media.ad.creative`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取創意ID作為每次點選值，而不需要分類維護。
 
 取捨是您會遺失創意ID與上層[廣告](ad.md)維度之間保證的1:1關係。 如果您的實施在不同事件間為相同的廣告ID傳送不一致的值，則同一廣告下可能會出現多個創意ID。 更新值僅適用於未來的資料。
 

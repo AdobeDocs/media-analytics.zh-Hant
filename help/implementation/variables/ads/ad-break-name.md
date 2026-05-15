@@ -3,10 +3,10 @@ title: 廣告插播名稱
 description: 設定上層廣告插播的易記名稱。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 12%
+source-wordcount: '209'
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告插播名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[Pod名稱](/help/reporting/dimensions/pod-name.md)。*
+*本頁涵蓋&#x200B;**廣告插播名稱**變數的資料集合。 如需對應的報表維度，請參閱[Pod名稱](/help/reporting/dimensions/pod-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 12%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.podFriendlyName` |
-| **XDM集合欄位** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **必要** | 是（行動SDK）；否（Edge、媒體收集API） |
-| **與**&#x200B;一起傳送 | 廣告開始、廣告關閉 |
+| **與**&#x200B;一起傳送 | [廣告插播開始](/help/implementation/events/ads/ad-break-start.md)，廣告關閉 |
 
 ## Web SDK
 

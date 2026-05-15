@@ -3,9 +3,9 @@ title: 媒體工作階段ID
 description: 唯一識別每個播放工作階段。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '203'
 ht-degree: 5%
 
 ---
@@ -17,13 +17,14 @@ ht-degree: 5%
 
 ## 如何填入此維度
 
-當後端收到`media.sessionStart`事件時，會自動產生工作階段識別碼。 Web SDK和Mobile SDK實作會擷取並保留您的ID；直接API實作必須從`sessionStart`回應（Media Collection API的`Location`標頭或Media Edge API的`media-analytics:new-session`控制代碼）讀取工作階段ID，並將其納入後續事件。
+當後端收到[工作階段開始](/help/implementation/events/session/session-start.md)事件時，會自動產生工作階段識別碼。 Web SDK和Mobile SDK實作會擷取並保留您的ID；直接API實作必須從`sessionStart`回應（Media Collection API的`Location`標頭或Media Edge API的`media-analytics:new-session`控制代碼）讀取工作階段ID，並將其納入後續事件。
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics | 建立將`a.media.vsid`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `videosessionid, post_videosessionid` |
+| Adobe Analytics | 建立將`a.media.vsid`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `videosessionid`, `post_videosessionid` |
+| Audience Manager | `c_contextdata.a.media.vsid` |
 
 ## 維度項目
 

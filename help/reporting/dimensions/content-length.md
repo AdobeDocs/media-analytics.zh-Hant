@@ -3,9 +3,9 @@ title: 內容長度
 description: 報告每個媒體工作階段在工作階段開始時所設定的總持續時間（秒數）。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '229'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**內容長度**&#x200B;報告維度。 如需如何收集此變數，請參閱[內容長度](/help/implementation/variables/core/content-length.md)。*
+*此頁面涵蓋&#x200B;**內容長度**報告維度。 如需如何收集此變數，請參閱[內容長度](/help/implementation/variables/core/content-length.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,12 +28,13 @@ ht-degree: 6%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體核心]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.length`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `videolength, post_videolength` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `videolength`, `post_videolength` |
+| Audience Manager | `c_contextdata.a.media.length` |
 
 >[!NOTE]
 >
->在Adobe Analytics中，此值也對應至[Content](content.md)維度上的&#x200B;**影片長度**&#x200B;分類。 您需個別負責填入及維護該分類。 Customer Journey Analytics直接使用此維度。 您可以視需要使用[值分組](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)。
+>在Adobe Analytics中，此值也對應至[Content](content.md)維度上的&#x200B;**影片長度**&#x200B;分類。 您需個別負責填入及維護該分類。 Customer Journey Analytics直接使用此維度。 您可以視需要使用[值分組](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)。
 
 >[!IMPORTANT]
 >

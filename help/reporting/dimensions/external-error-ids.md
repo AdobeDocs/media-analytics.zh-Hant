@@ -3,10 +3,10 @@ title: 外部錯誤ID
 description: 報告來自外部來源的唯一錯誤識別碼，例如CDN錯誤。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 6%
+source-wordcount: '155'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 6%
 
 ## 如何填入此維度
 
-播放器會將外部錯誤ID傳遞至`media.error`事件的追蹤器。 後端會收集工作階段中的唯一ID，並在關閉呼叫時回報。
+播放器將外部錯誤ID傳遞至[錯誤](/help/implementation/events/error.md)事件的追蹤器。 後端會收集工作階段中的唯一ID，並在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.qoe.externalErrors`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 資料饋送 | `videoqoeextneralerrors` |
+| Audience Manager | `c_contextdata.a.media.qoe.externalErrors` |
 
 ## 維度項目
 

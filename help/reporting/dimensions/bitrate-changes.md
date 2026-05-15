@@ -3,9 +3,9 @@ title: 位元速率變更（維度）
 description: 報告每個工作階段的位元速率變更事件計數。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '203'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**位元速率變更**&#x200B;維度。 Adobe Analytics會從相同的`a.media.qoe.bitrateChangeCount`內容資料變數自動填入配對的[位元速率變更（量度）](/help/reporting/metrics/bitrate-changes.md)。 Customer Journey Analytics公開單一`mediaReporting.qoeDataDetails.bitrateChangeCount`欄位，您可將其作為維度或量度使用。 請參閱[位元速率變更](/help/implementation/variables/quality/bitrate-change.md)，瞭解如何引發位元速率變更事件。*
+*此頁面涵蓋&#x200B;**位元速率變更**維度。 Adobe Analytics會從相同的`a.media.qoe.bitrateChangeCount`內容資料變數自動填入配對的[位元速率變更（量度）](/help/reporting/metrics/bitrate-changes.md)。 Customer Journey Analytics公開單一`mediaReporting.qoeDataDetails.bitrateChangeCount`欄位，您可將其作為維度或量度使用。 請參閱[位元速率變更](/help/implementation/variables/quality/bitrate-change.md)，瞭解如何引發位元速率變更事件。*
 
 >[!ENDSHADEBOX]
 
@@ -23,13 +23,14 @@ ht-degree: 5%
 
 ## 如何填入此維度
 
-媒體後端會遞增工作階段期間每收到`media.bitrateChange`個事件的計數。 此值會在關閉呼叫時回報。
+媒體後端會遞增工作階段期間每收到[位元速率變更](/help/implementation/events/playback/bitrate-change.md)事件的計數。 此值會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.qoe.bitrateChangeCount`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| 資料饋送 | `videoqoebitratechangecountevar, post_videoqoebitratechangecountevar` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 資料饋送 | `videoqoebitratechangecountevar`, `post_videoqoebitratechangecountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 
 ## 維度項目
 

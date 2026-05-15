@@ -3,9 +3,9 @@ title: 靜音
 description: 追蹤檢視器何時將音訊靜音和取消靜音，以便後端可以報告靜音參與。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '264'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**靜音**&#x200B;播放器狀態的資料集合。 檢視對應報表量度的[受靜音影響的資料流](/help/reporting/metrics/mute-streams-impacted.md)、[靜音計數](/help/reporting/metrics/mute-count.md)和[靜音總持續時間](/help/reporting/metrics/mute-total-duration.md)。*
+*此頁面涵蓋&#x200B;**靜音**播放器狀態的資料集合。 檢視對應報表量度的[受靜音影響的資料流](/help/reporting/metrics/mute-streams-impacted.md)、[靜音計數](/help/reporting/metrics/mute-count.md)和[靜音總持續時間](/help/reporting/metrics/mute-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "mute"`的專案） |
+| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "mute"`的專案） |
+| **Audience Manager特徵** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 狀態開始、狀態結束 |
+| **與**&#x200B;一起傳送 | [狀態開始](/help/implementation/events/player-state/state-start.md)，[狀態結束](/help/implementation/events/player-state/state-end.md) |
 
 ## Web SDK
 

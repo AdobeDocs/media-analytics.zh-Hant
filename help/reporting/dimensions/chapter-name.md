@@ -3,10 +3,10 @@ title: 章節名稱
 description: 顯示可讀取的章節標題。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 415d20722965d510458d3c09004b6991b05ac264
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '359'
-ht-degree: 1%
+source-wordcount: '365'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**章節名稱**&#x200B;報告維度。 如需如何收集此變數，請參閱[章節名稱](/help/implementation/variables/chapters/chapter-name.md)。*
+*此頁面涵蓋&#x200B;**章節名稱**報告維度。 如需如何收集此變數，請參閱[章節名稱](/help/implementation/variables/chapters/chapter-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -23,15 +23,16 @@ ht-degree: 1%
 
 ## 如何填入此維度
 
-章節名稱由播放器在每個`media.chapterStart`事件上設定。
+章節名稱由播放器在每個[章節開始](/help/implementation/events/chapters/chapter-start.md)事件上設定。
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics （處理規則） | 建立將`a.media.chapter.friendlyName`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics （處理規則） | 建立將`a.media.chapter.friendlyName`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics （分類） | [Chapter](chapter.md)維度的分類 — 為報表套裝啟用&#x200B;**[[!UICONTROL 媒體章節]](/help/reporting/media-reports-enable.md)**&#x200B;時，Adobe會自動建立此分類。 您需負責填入及維護分類值。 |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | 資料摘要（處理規則） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.chapter.friendlyName`對應至的eVar） |
 | 資料摘要（分類） | 不適用 — 資料摘要不支援分類。 |
+| Audience Manager | `c_contextdata.a.media.chapter.friendlyName` |
 
 ## 分類方法
 
@@ -45,10 +46,10 @@ ht-degree: 1%
 
 ## 處理規則方法
 
-建立將`a.media.chapter.friendlyName`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取好記名稱作為每次點選值，而不需要分類維護。
+建立將`a.media.chapter.friendlyName`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取好記名稱作為每次點選值，而不需要分類維護。
 
 取捨是您會遺失章節名稱和上層[章節](chapter.md)維度之間保證的1:1關係。 如果您的實施在事件間傳送的相同章節ID值不一致，則同一章節下可能會出現多個名稱。 更新值僅適用於未來的資料。
 
 ## 維度項目
 
-每個專案都是`media.chapterStart`上報告的常值章節標題。
+每個專案都是在[章節開始](/help/implementation/events/chapters/chapter-start.md)報告的常值章節標題。

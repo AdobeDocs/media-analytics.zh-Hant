@@ -3,9 +3,9 @@ title: 網站 ID
 description: 設定每個廣告的廣告網站ID以啟用依廣告位置網站劃分。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '179'
+source-wordcount: '182'
 ht-degree: 17%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**網站識別碼**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[網站ID](/help/reporting/dimensions/site-id.md)。*
+*本頁涵蓋&#x200B;**網站識別碼**變數的資料集合。 如需對應的報表維度，請參閱[網站ID](/help/reporting/dimensions/site-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 17%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.site` |
-| **XDM集合欄位** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.ad.site` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 廣告開始、廣告關閉 |
+| **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
 
 ## Web SDK
 

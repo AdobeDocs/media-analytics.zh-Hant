@@ -3,10 +3,10 @@ title: 相簿
 description: 報告音軌所屬的相簿。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 8%
+source-wordcount: '136'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**相簿**&#x200B;報告維度。 請參閱[相簿](/help/implementation/variables/standard-metadata/album.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**相簿**報告維度。 請參閱[相簿](/help/implementation/variables/standard-metadata/album.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 8%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 音訊中繼資料]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.album`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.album`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.album`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料饋送 | `videoaudioalbum` |
+| Audience Manager | `c_contextdata.a.media.album` |
 
 ## 維度項目
 

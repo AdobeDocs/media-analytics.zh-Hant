@@ -3,9 +3,9 @@ title: 第一個數位日期
 description: 設定內容在數位平台上的首播日期。 Adobe建議使用YYYY-MM-DD格式。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '206'
 ht-degree: 13%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**第一個數位日期**&#x200B;變數的資料彙集。 如需對應的報表維度，請參閱[第一個數位日期](/help/reporting/dimensions/first-digital-date.md)。*
+*本頁涵蓋&#x200B;**第一個數位日期**變數的資料彙集。 如需對應的報表維度，請參閱[第一個數位日期](/help/reporting/dimensions/first-digital-date.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 13%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.digitalDate` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.digitalDate` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 工作階段開始、工作階段關閉 |
+| **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
 
 ## Web SDK
 

@@ -3,10 +3,10 @@ title: 內容管道
 description: 報告每個工作階段播放所在的分發站台、網路或屬性。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 6%
+source-wordcount: '161'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**內容管道**&#x200B;報告維度。 如需如何收集此變數，請參閱[內容管道](/help/implementation/variables/core/content-channel.md)。*
+*此頁面涵蓋&#x200B;**內容管道**報告維度。 如需如何收集此變數，請參閱[內容管道](/help/implementation/variables/core/content-channel.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 6%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體核心]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.channel`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `videochannel, post_videochannel` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `videochannel`, `post_videochannel` |
+| Audience Manager | `c_contextdata.a.media.channel` |
 
 >[!IMPORTANT]
 >

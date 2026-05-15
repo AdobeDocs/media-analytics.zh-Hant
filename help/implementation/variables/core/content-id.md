@@ -3,9 +3,9 @@ title: 內容 ID
 description: 唯一識別媒體內容。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '197'
 ht-degree: 15%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容識別碼**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[內容](/help/reporting/dimensions/content.md)。*
+*本頁涵蓋&#x200B;**內容識別碼**變數的資料集合。 如需對應的報表維度，請參閱[內容](/help/reporting/dimensions/content.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 15%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.name` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.name` |
 | **必要** | 是 |
-| **與**&#x200B;一起傳送 | 工作階段開始、工作階段關閉 |
+| **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
 
 ## Web SDK
 

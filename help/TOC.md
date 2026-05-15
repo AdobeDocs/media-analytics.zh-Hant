@@ -1,18 +1,17 @@
 ---
-source-git-commit: c9c4287b4b330ebc1a1ec8b7197b42ee45f7ff48
-workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 61%
-
----
-﻿---
 product: adobe analytics
 audience: end-user
 user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
 user-guide-description: 實施串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
+source-git-commit: 84574afd9d39e0643e7f12f44e8729e947c2ec1b
+workflow-type: tm+mt
+source-wordcount: '1395'
+ht-degree: 59%
+
 ---
+
 
 # 串流媒體服務指南 {#using}
 
@@ -33,6 +32,32 @@ sub-product: media analytics
          + [JavaScript - Media SDK 至 Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + 實施 {#implementation}
    + [實施概觀](implementation/overview.md)
+   + 活動 {#events}
+      + [事件概觀](implementation/events/overview.md)
+      + 工作階段 {#session}
+         + [工作階段開始](implementation/events/session/session-start.md)
+         + [工作階段完成](implementation/events/session/session-complete.md)
+         + [工作階段結束](implementation/events/session/session-end.md)
+      + 播放 {#playback}
+         + [播放](implementation/events/playback/play.md)
+         + [暫停開始](implementation/events/playback/pause-start.md)
+         + [緩衝開始](implementation/events/playback/buffer-start.md)
+         + [位元速率變更](implementation/events/playback/bitrate-change.md)
+         + [Ping](implementation/events/playback/ping.md)
+      + 廣告 {#ads}
+         + [廣告插播開始](implementation/events/ads/ad-break-start.md)
+         + [廣告開始](implementation/events/ads/ad-start.md)
+         + [廣告完成](implementation/events/ads/ad-complete.md)
+         + [廣告略過](implementation/events/ads/ad-skip.md)
+         + [廣告插播完成](implementation/events/ads/ad-break-complete.md)
+      + 章節 {#chapters}
+         + [章節開始](implementation/events/chapters/chapter-start.md)
+         + [章節完成](implementation/events/chapters/chapter-complete.md)
+         + [章節略過](implementation/events/chapters/chapter-skip.md)
+      + 播放器狀態 {#player-state}
+         + [狀態開始](implementation/events/player-state/state-start.md)
+         + [狀態結束](implementation/events/player-state/state-end.md)
+      + [錯誤](implementation/events/error.md)
    + 變數 {#variables}
       + Core {#core}
          + [內容管道](implementation/variables/core/content-channel.md)
@@ -121,7 +146,6 @@ sub-product: media analytics
          + [工作階段要求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
          + [事件要求](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
          + [要求參數](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-         + [事件類型和說明](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
          + 實作API {#mc-api-impl}
             + [在播放器中設定 HTTP 要求類型](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
             + [取得工作階段 ID](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
@@ -239,6 +263,8 @@ sub-product: media analytics
       + [子母畫面次數](reporting/metrics/picture-in-picture-count.md)
       + [子母畫面總時間](reporting/metrics/picture-in-picture-total-duration.md)
       + [進度標籤](reporting/metrics/progress-markers.md)
+      + [延遲事件](reporting/metrics/stall-events.md)
+      + [延遲受影響的串流](reporting/metrics/stall-impacted-streams.md)
       + [受隱藏式字幕影響的資料流](reporting/metrics/closed-captioning-streams-impacted.md)
       + [受全熒幕影響的資料流](reporting/metrics/full-screen-streams-impacted.md)
       + [受觀看中影響的資料流](reporting/metrics/in-focus-streams-impacted.md)
@@ -247,6 +273,7 @@ sub-product: media analytics
       + [開始時間（量度）](reporting/metrics/time-to-start.md)
       + [總緩衝期間（量度）](reporting/metrics/total-buffer-duration.md)
       + [總暫停期間](reporting/metrics/total-pause-duration.md)
+      + [總延遲期間](reporting/metrics/total-stalling-duration.md)
       + [不重複播放時間](reporting/metrics/unique-time-played.md)
    + [計算量度](reporting/calculated-metrics.md)
    + [啟用媒體報表](reporting/media-reports-enable.md)

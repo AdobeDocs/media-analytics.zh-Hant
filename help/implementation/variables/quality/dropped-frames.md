@@ -3,9 +3,9 @@ title: 掉格
 description: 設定QoE物件上掉格的執行計數，讓後端可以報告掉格品質。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**掉格**&#x200B;變數的資料集合。 檢視對應報表維度和量度的[掉格](/help/reporting/dimensions/dropped-frames.md)。*
+*本頁涵蓋&#x200B;**掉格**變數的資料集合。 檢視對應報表維度和量度的[掉格](/help/reporting/dimensions/dropped-frames.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ dropped frames變數是播放器在工作階段期間捨棄的畫面執行計數
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.qoe.droppedFrameCount` |
-| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 品質事件，工作階段關閉 |
+| **與**&#x200B;一起傳送 | 品質事件（[位元速率變更](/help/implementation/events/playback/bitrate-change.md)，[緩衝開始](/help/implementation/events/playback/buffer-start.md)，[錯誤](/help/implementation/events/error.md)），工作階段關閉 |
 
 ## Web SDK
 

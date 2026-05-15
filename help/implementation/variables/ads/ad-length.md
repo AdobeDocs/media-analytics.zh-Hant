@@ -3,10 +3,10 @@ title: 廣告長度
 description: 設定每個廣告的長度（以秒為單位）。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 15%
+source-wordcount: '174'
+ht-degree: 14%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告長度**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[廣告長度](/help/reporting/dimensions/ad-length.md)。*
+*本頁涵蓋&#x200B;**廣告長度**變數的資料集合。 如需對應的報表維度，請參閱[廣告長度](/help/reporting/dimensions/ad-length.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 15%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.length` |
-| **XDM集合欄位** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.advertisingDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.ad.length` |
 | **必要** | 是 |
-| **與**&#x200B;一起傳送 | 廣告開始、廣告關閉 |
+| **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
 
 ## Web SDK
 

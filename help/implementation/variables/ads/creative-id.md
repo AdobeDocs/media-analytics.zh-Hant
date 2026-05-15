@@ -3,10 +3,10 @@ title: 創作 ID
 description: 設定每個廣告的創意識別碼。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 18%
+source-wordcount: '175'
+ht-degree: 17%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 18%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**Creative ID**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[Creative ID](/help/reporting/dimensions/creative-id.md)。*
+*本頁涵蓋&#x200B;**Creative ID**變數的資料集合。 如需對應的報表維度，請參閱[Creative ID](/help/reporting/dimensions/creative-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 18%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.creative` |
-| **XDM集合欄位** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.ad.creative` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 廣告開始、廣告關閉 |
+| **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
 
 ## Web SDK
 

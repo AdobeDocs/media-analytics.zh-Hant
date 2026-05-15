@@ -3,9 +3,9 @@ title: 位元速率
 description: 在QoE物件上設定目前的播放位元速率（以每秒位元組數為單位），讓後端可以計算位元速率量度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '247'
 ht-degree: 10%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**位元速率**&#x200B;變數的資料集合。 檢視對應報表變數的[平均位元速率（維度）](/help/reporting/dimensions/average-bitrate.md)和[平均位元速率（量度）](/help/reporting/metrics/average-bitrate.md)。*
+*本頁涵蓋&#x200B;**位元速率**變數的資料集合。 檢視對應報表變數的[平均位元速率（維度）](/help/reporting/dimensions/average-bitrate.md)和[平均位元速率（量度）](/help/reporting/metrics/average-bitrate.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 10%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 品質事件（位元速率變更、緩衝、錯誤）、工作階段關閉 |
+| **與**&#x200B;一起傳送 | 品質事件（[位元速率變更](/help/implementation/events/playback/bitrate-change.md)，[緩衝開始](/help/implementation/events/playback/buffer-start.md)，[錯誤](/help/implementation/events/error.md)），工作階段關閉 |
 
 ## Web SDK
 

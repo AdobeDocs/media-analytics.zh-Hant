@@ -3,10 +3,10 @@ title: MVPD
 description: 報告使用者驗證的纜線、衛星或虛擬提供者。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 8%
+source-wordcount: '148'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**MVPD**&#x200B;報告維度。 請參閱[MVPD](/help/implementation/variables/standard-metadata/mvpd.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**MVPD**報告維度。 請參閱[MVPD](/help/implementation/variables/standard-metadata/mvpd.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ MVPD是由播放器在工作階段開始時，在內容被封鎖在Adobe Pass之
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 視訊中繼資料]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.pass.mvpd`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `videomvpd, post_videomvpd` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `videomvpd`, `post_videomvpd` |
+| Audience Manager | `c_contextdata.a.media.pass.mvpd` |
 
 ## 維度項目
 

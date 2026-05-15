@@ -3,9 +3,9 @@ title: 章節位置
 description: 在內容內設定章節索引。 章節ID需要章節位置才能正確自動產生。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '208'
 ht-degree: 12%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**章節位置**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[章節位置](/help/reporting/dimensions/chapter-position.md)。*
+*本頁涵蓋&#x200B;**章節位置**變數的資料集合。 如需對應的報表維度，請參閱[章節位置](/help/reporting/dimensions/chapter-position.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ ht-degree: 12%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.chapter.position` |
-| **XDM集合欄位** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.chapter.position` |
 | **必要** | 否（行動SDK）；是（Edge、媒體收集API） |
-| **與**&#x200B;一起傳送 | 章節開始、章節關閉 |
+| **與**&#x200B;一起傳送 | [章節開始](/help/implementation/events/chapters/chapter-start.md)，章節關閉 |
 
 ## Web SDK
 

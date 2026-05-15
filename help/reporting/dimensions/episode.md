@@ -3,10 +3,10 @@ title: 集數
 description: 報告一個季節內的集數。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 9%
+source-wordcount: '130'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**集數**&#x200B;報告維度。 請參閱[Episode](/help/implementation/variables/standard-metadata/episode.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**集數**報告維度。 請參閱[Episode](/help/implementation/variables/standard-metadata/episode.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 9%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 視訊中繼資料]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.episode`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.episode`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `videoepisode, post_videoepisode` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `videoepisode`, `post_videoepisode` |
+| Audience Manager | `c_contextdata.a.media.episode` |
 
 ## 維度項目
 

@@ -3,10 +3,10 @@ title: 媒體摘要型別
 description: 透過多個摘要提供相同內容時，會報告廣播摘要（例如East-HD或West-SD）。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 6%
+source-wordcount: '157'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**媒體摘要型別**&#x200B;報告維度。 如需如何收集此變數，請參閱[媒體摘要型別](/help/implementation/variables/standard-metadata/media-feed-type.md)。*
+*此頁面涵蓋&#x200B;**媒體摘要型別**報告維度。 如需如何收集此變數，請參閱[媒體摘要型別](/help/implementation/variables/standard-metadata/media-feed-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,8 +28,9 @@ ht-degree: 6%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 視訊中繼資料]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.feed`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `videofeedtype, post_videofeedtype` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `videofeedtype`, `post_videofeedtype` |
+| Audience Manager | `c_contextdata.a.media.feed` |
 
 ## 維度項目
 

@@ -3,9 +3,9 @@ title: 每秒影格數
 description: 在QoE物件上設定目前的影格速率，讓後端有品質報告的影格速率內容。
 feature: Streaming Media
 role: Developer
-source-git-commit: 0e6b5a8ef5738191276976ed31125016774c043d
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '225'
 ht-degree: 12%
 
 ---
@@ -18,9 +18,10 @@ ht-degree: 12%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | 無（Adobe Analytics不會為影格速率指派保留的內容資料索引鍵） |
-| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Audience Manager特徵** | 不適用 |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 品質事件，工作階段關閉 |
+| **與**&#x200B;一起傳送 | 品質事件（[位元速率變更](/help/implementation/events/playback/bitrate-change.md)，[緩衝開始](/help/implementation/events/playback/buffer-start.md)，[錯誤](/help/implementation/events/error.md)），工作階段關閉 |
 
 ## Web SDK
 

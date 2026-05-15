@@ -3,10 +3,10 @@ title: 廣告Pod
 description: 報告每個獨特的廣告插播，由自動產生的Pod ID作為索引鍵。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 5%
+source-wordcount: '195'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ ht-degree: 5%
 
 ## 如何填入此維度
 
-當`media.adBreakStart`引發時，SDK會自動產生廣告Pod ID。 直接API實作會從中斷索引和開始時間建構它，或提供自訂pod ID。
+當觸發[廣告插播開始](/help/implementation/events/ads/ad-break-start.md)事件時，SDK會自動產生廣告Pod ID。 直接API實作會從中斷索引和開始時間建構它，或提供自訂pod ID。
 
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體廣告]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.ad.pod`收集。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
-| 資料饋送 | `videoadpod, post_videoadpod` |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| 資料饋送 | `videoadpod`, `post_videoadpod` |
+| Audience Manager | 不適用 |
 
 ## 維度項目
 

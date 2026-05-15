@@ -3,10 +3,10 @@ title: 資產 ID
 description: 設定資產ID，此為媒體資產的穩定產業識別碼，例如EIDR或TMS/Gracenote ID。
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 13%
+source-wordcount: '239'
+ht-degree: 12%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 13%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**資產識別碼**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[資產識別碼](/help/reporting/dimensions/asset-id.md)。*
+*本頁涵蓋&#x200B;**資產識別碼**變數的資料集合。 如需對應的報表維度，請參閱[資產識別碼](/help/reporting/dimensions/asset-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,9 +28,10 @@ ht-degree: 13%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.asset` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Audience Manager特徵** | `c_contextdata.a.media.asset` |
 | **必要** | 否 |
-| **與**&#x200B;一起傳送 | 工作階段開始、工作階段關閉 |
+| **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
 
 ## Web SDK
 

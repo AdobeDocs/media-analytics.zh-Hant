@@ -3,10 +3,10 @@ title: 開始前掉格
 description: 計算檢視器在任何主要內容轉譯前結束的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 8%
+source-wordcount: '158'
+ht-degree: 9%
 
 ---
 
@@ -17,10 +17,11 @@ ht-degree: 8%
 
 ## 此量度的計算方式
 
-媒體後端會為關閉的工作階段設定`mediaReporting.qoeDataDetails.isDroppedBeforeStart = true`，而不會在主要內容上產生`media.play`事件。 量度會在關閉呼叫時回報。
+媒體後端會針對關閉的工作階段設定`mediaReporting.qoeDataDetails.isDroppedBeforeStart = true`，而不會在主內容上產生[播放](/help/implementation/events/playback/play.md)事件。 量度會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.qoe.dropBeforeStart`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.isDroppedBeforeStart`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/zh-hant/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.isDroppedBeforeStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
+| Audience Manager | `c_contextdata.a.media.qoe.dropBeforeStart` |
