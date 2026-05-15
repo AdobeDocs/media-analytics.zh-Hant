@@ -21,8 +21,8 @@ ht-degree: 5%
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics | 建立將`a.media.vsid`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | 建立將`a.media.vsid`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.ID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料饋送 | `videosessionid`, `post_videosessionid` |
 | Audience Manager | `c_contextdata.a.media.vsid` |
 

@@ -18,7 +18,7 @@ ht-degree: 12%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | 無（Adobe Analytics不會為影格速率指派保留的內容資料索引鍵） |
-| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特徵** | 不適用 |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | 品質事件（[位元速率變更](/help/implementation/events/playback/bitrate-change.md)，[緩衝開始](/help/implementation/events/playback/buffer-start.md)，[錯誤](/help/implementation/events/error.md)），工作階段關閉 |

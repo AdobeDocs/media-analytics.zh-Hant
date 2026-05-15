@@ -22,7 +22,7 @@ ht-degree: 7%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.qoe.playerSdkErrors`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 資料饋送 | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
 | Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 

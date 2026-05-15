@@ -28,7 +28,7 @@ ht-degree: 6%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體廣告]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.ad.friendlyName`收集。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 資料饋送 | `videoadname`, `post_videoadname` |
 | Audience Manager | `c_contextdata.a.media.ad.friendlyName` |
 

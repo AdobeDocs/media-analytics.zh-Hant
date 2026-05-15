@@ -24,7 +24,7 @@ ht-degree: 17%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.creative` |
-| **XDM集合欄位** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`mediaCollection.advertisingDetails.creativeID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.creative` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
