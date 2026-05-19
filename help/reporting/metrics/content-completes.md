@@ -3,9 +3,9 @@ title: 內容完成
 description: 計算播放點達到內容結尾的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '142'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 ## 此量度的計算方式
 
-收到[工作階段完成](/help/implementation/events/session/session-complete.md)事件時，媒體後端會設定`mediaReporting.sessionDetails.isCompleted = true`。 量度會在關閉呼叫時回報。 在沒有明確`sessionComplete`的情況下逾時的工作階段不會計為完成。
+媒體後端在收到[工作階段完成](/help/implementation/events/session/session-complete.md)事件時設定此旗標。 量度會在關閉呼叫時回報。 在沒有明確`sessionComplete`的情況下逾時的工作階段不會計為完成。
 
 | 報告系統 | 來源 |
 | --- | --- |

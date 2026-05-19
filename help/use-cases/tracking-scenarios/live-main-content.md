@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 98%
+source-wordcount: 749
+ht-degree: 77%
 
 ---
 
@@ -87,6 +87,17 @@ ht-degree: 98%
 ### 暫停時
 
 使用者暫停播放時，必須套用開始播放時所套用的同一個「即時播放點」邏輯。 當使用者繼續播放即時資料流時，您必須根據自 UTC 午夜以來的新秒數來設定 `l:event:playhead` 值，而&#x200B;_不是_&#x200B;設為使用者暫停即時資料流的時間點。
+
+## 追蹤即時資料流中的方案變更 {#live-program-changes}
+
+當直播串流從一個節目或節目轉換到另一個節目或節目（廣播和纜線屬性的共同模式）時，每個節目都應作為單獨的工作階段進行追蹤。 這可讓您報告每個標題的參與度和逗留時間，而非將所有檢視歸因到單一連續資料流。
+
+**建議的方法：**
+
+1. 當目前的程式結束時（或當播放器發出程式變更事件的訊號時），請呼叫`trackSessionEnd`以關閉目前的工作階段。
+2. 當新程式開始時，請使用新程式的中繼資料（名稱、ID、內容型別等）呼叫`trackSessionStart`。
+
+將每個方案追蹤為自己的工作階段，可保留[內容逗留時間](/help/reporting/metrics/content-time-spent.md)、[進度標籤](/help/reporting/metrics/progress-markers.md)和完成量度，其範圍設定為個別方案，並可啟用每個標題的精確受眾報告。 使用`trackSessionEnd`而非`trackComplete`進行轉換 — `trackComplete`代表檢視者有意觀看至個別內容結尾，而`trackSessionEnd`在此是正確的，因為串流會以不同的程式設計繼續進行，而不是結束。
 
 ## 程式碼範例 {#sample-code}
 

@@ -3,10 +3,10 @@ title: 開始時間
 description: 設定播放器的啟動時間（以毫秒為單位），讓後端可以報告時間到第一個影格品質。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 12%
 >[!ENDSHADEBOX]
 
 開始時間變數是播放器起始播放與第一個影格轉譯之間經過的時間，以毫秒為單位。 在工作階段開始事件引發之前，在QoE物件上設定它。 Adobe會以秒為單位儲存和報告值；傳遞毫秒，Adobe會在擷取時轉換。
+
+>[!IMPORTANT]
+>
+>播放器開始轉譯內容框架後，請停止更新`timeToStart`。 此值可能會在初始緩衝或載入階段期間增加，但應視為從播放開始時刻起即已固定。 在第一個影格轉譯後繼續更新，會產生膨脹或不正確的[開始時間](/help/reporting/metrics/time-to-start.md)量度。
 
 | 屬性 | 價值 |
 | --- | --- |

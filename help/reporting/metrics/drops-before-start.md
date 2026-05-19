@@ -3,10 +3,10 @@ title: 開始前掉格
 description: 計算檢視器在任何主要內容轉譯前結束的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 9%
+source-wordcount: '211'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## 此量度的計算方式
 
-媒體後端會針對關閉的工作階段設定`mediaReporting.qoeDataDetails.isDroppedBeforeStart = true`，而不會在主內容上產生[播放](/help/implementation/events/playback/play.md)事件。 量度會在關閉呼叫時回報。
+媒體後端會為關閉的工作階段設定此旗標，而不會在主內容上產生[播放](/help/implementation/events/playback/play.md)事件。 量度會在關閉呼叫時回報。 常見的情況包括：檢視器在前段廣告期間退出、播放器在初始緩衝階段無限期停頓，或是在第一個主要內容播放事件之前引發錯誤。 在這些情況下，工作階段會記錄[媒體開始](/help/reporting/metrics/media-starts.md)，但沒有[內容開始](/help/reporting/metrics/content-starts.md)，而且沒有記錄[進度標籤](/help/reporting/metrics/progress-markers.md)。
 
 | 報告系統 | 來源 |
 | --- | --- |

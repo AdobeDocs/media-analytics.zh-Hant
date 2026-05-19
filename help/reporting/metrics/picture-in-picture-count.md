@@ -3,9 +3,9 @@ title: 子母畫面次數
 description: 報告檢視者在工作階段期間輸入子母畫面次數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '181'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## 此量度的計算方式
 
-媒體後端會遞增每個子母畫面狀態開始事件上`mediaReporting.states[]`之`pictureInPicture`專案中的`count`欄位。 量度會在關閉呼叫時回報。
+媒體後端會遞增每個子母畫面狀態開始事件的此計數。 量度會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |

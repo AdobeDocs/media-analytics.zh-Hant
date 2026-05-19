@@ -3,9 +3,9 @@ title: 受子母畫面影響的資料流
 description: 計算檢視器至少一次輸入子母畫面的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '192'
 ht-degree: 7%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 7%
 
 ## 此量度的計算方式
 
-媒體後端在第一次收到`statesStart`中具有`pictureInPicture`的`media.statesUpdate`事件時，將`pictureInPicture`專案的`mediaReporting.states[]`中的`isSet`旗標設為`true`。 量度會在關閉呼叫時回報。
+媒體後端會在工作階段期間第一次收到子母畫面狀態開始事件時設定此旗標。 量度會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |

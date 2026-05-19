@@ -3,9 +3,9 @@ title: 同盟資料
 description: 計算透過同盟資料共用而非客戶自己的實作接收的工作階段。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 ## 此量度的計算方式
 
-工作階段經過同盟通道時，媒體後端會設定`mediaReporting.sessionDetails.isFederated = true`。 該量度會在每個合格工作階段增加一次，並在結束通話時回報。
+當工作階段經過同盟通道時，媒體後端會設定此旗標。 該量度會在每個合格工作階段增加一次，並在結束通話時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |

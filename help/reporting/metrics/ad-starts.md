@@ -3,10 +3,10 @@ title: 廣告開始
 description: 計算工作階段期間開始播放的每個廣告數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 12%
+source-wordcount: '126'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## 此量度的計算方式
 
-收到[廣告開始](/help/implementation/events/ads/ad-start.md)事件時，媒體後端會設定`mediaReporting.advertisingDetails.isStarted = true`。 量度會在廣告開始呼叫上報告。
+媒體後端在收到[廣告開始](/help/implementation/events/ads/ad-start.md)事件時設定此旗標。 量度會在廣告開始呼叫上報告。
 
 | 報告系統 | 來源 |
 | --- | --- |

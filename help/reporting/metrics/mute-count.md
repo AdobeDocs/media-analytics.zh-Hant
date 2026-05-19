@@ -3,9 +3,9 @@ title: 靜音次數
 description: 報告檢視者在工作階段期間將音訊靜音的次數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '158'
 ht-degree: 9%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 9%
 
 ## 此量度的計算方式
 
-媒體後端會遞增每個靜音狀態開始事件上`mediaReporting.states[]`之`mute`專案中的`count`欄位。 量度會在關閉呼叫時回報。
+媒體後端會在每個靜音狀態開始事件上增加此計數。 量度會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |

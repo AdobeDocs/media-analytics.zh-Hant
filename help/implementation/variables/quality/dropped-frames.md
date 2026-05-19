@@ -3,10 +3,10 @@ title: 掉格
 description: 設定QoE物件上掉格的執行計數，讓後端可以報告掉格品質。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -20,6 +20,10 @@ ht-degree: 12%
 >[!ENDSHADEBOX]
 
 dropped frames變數是播放器在工作階段期間捨棄的畫面執行計數。 將其設定在QoE物件上，並在播放器回報新資料掉格時更新值。 後端會在工作階段關閉時報告最新值。
+
+>[!NOTE]
+>
+>請一律傳遞截至該時間為止整個工作階段的&#x200B;**累積總計**&#x200B;個掉格，而非每個間隔差值。 如果您在更新之間將值重設為`0`，則後端會接收`0`作為最終值，並報告工作階段的零掉格，無論之前實際掉格為何。
 
 | 屬性 | 價值 |
 | --- | --- |

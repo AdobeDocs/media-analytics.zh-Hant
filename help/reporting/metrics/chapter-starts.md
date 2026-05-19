@@ -3,10 +3,10 @@ title: 章節開始
 description: 計算工作階段期間開始播放的每個章節。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 13%
+source-wordcount: '116'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 ## 此量度的計算方式
 
-收到[章節開始](/help/implementation/events/chapters/chapter-start.md)事件時，媒體後端會設定`mediaReporting.chapterDetails.isStarted = true`。 量度會在章節關閉呼叫上報告。
+當收到[章節開始](/help/implementation/events/chapters/chapter-start.md)事件時，媒體後端會設定此旗標。 量度會在章節關閉呼叫上報告。
 
 | 報告系統 | 來源 |
 | --- | --- |

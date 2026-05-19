@@ -3,9 +3,9 @@ title: 廣告計數
 description: 報告工作階段開始的廣告數量。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '176'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## 此量度的計算方式
 
-在工作階段期間收到的每個[廣告開始](/help/implementation/events/ads/ad-start.md)事件，媒體後端都會增加`mediaReporting.sessionDetails.adCount`。 量度會在關閉呼叫時回報。
+媒體後端會在工作階段期間每收到[廣告開始](/help/implementation/events/ads/ad-start.md)事件時遞增此計數。 量度會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |

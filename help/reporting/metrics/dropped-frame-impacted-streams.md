@@ -3,9 +3,9 @@ title: 掉格影響的資料流
 description: 計算至少捨棄一個影格的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 11%
 
 ## 此量度的計算方式
 
-如果QoE物件的`droppedFrames`值在工作階段關閉時大於零，媒體後端會設定`mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true`。
+如果QoE物件的`droppedFrames`值在工作階段關閉時大於零，媒體後端會設定此旗標。
 
 | 報告系統 | 來源 |
 | --- | --- |

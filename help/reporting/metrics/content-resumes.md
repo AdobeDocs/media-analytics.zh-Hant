@@ -3,10 +3,10 @@ title: 內容繼續
 description: 計算繼續先前中斷之播放的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 10%
+source-wordcount: '171'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 10%
 
 ## 此量度的計算方式
 
-當`mediaCollection.sessionDetails.hasResume`在[工作階段開始](/help/implementation/events/session/session-start.md)事件上為`true`時，媒體後端會設定`mediaReporting.sessionDetails.hasResume = true`。 播放器必須將工作階段明確標幟為繼續。 量度會在關閉呼叫時回報。
+當`mediaCollection.sessionDetails.hasResume`在[工作階段開始](/help/implementation/events/session/session-start.md)事件上為`true`時，媒體後端會設定此旗標。 播放器必須將工作階段明確標幟為繼續。 量度會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |

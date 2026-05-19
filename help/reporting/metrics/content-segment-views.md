@@ -3,9 +3,9 @@ title: 內容區段檢視次數
 description: 計算發生作用中主要內容播放的區段。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '185'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 ## 此量度的計算方式
 
-媒體後端會針對任何涵蓋區段的關閉呼叫設定`mediaReporting.sessionDetails.hasSegmentView = true`，其中至少已收到主要內容的一個[播放](/help/implementation/events/playback/play.md)事件。 量度會在關閉呼叫時回報。 在Media Edge API路徑上，區段檢視會在與內容開始的相同條件下引發。 這兩者都需要在主要內容上進行[播放](/help/implementation/events/playback/play.md)事件。
+媒體後端會為任何涵蓋區段的關閉呼叫設定此旗標，其中至少已收到主要內容的一個[播放](/help/implementation/events/playback/play.md)事件。 量度會在關閉呼叫時回報。 在Media Edge API路徑上，區段檢視會在與內容開始的相同條件下引發。 這兩者都需要在主要內容上進行[播放](/help/implementation/events/playback/play.md)事件。
 
 | 報告系統 | 來源 |
 | --- | --- |

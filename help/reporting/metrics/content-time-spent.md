@@ -3,10 +3,10 @@ title: 內容逗留時間
 description: 報告每個工作階段作用中主要內容播放的總秒數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 8%
+source-wordcount: '221'
+ht-degree: 6%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 8%
 
 ## 此量度的計算方式
 
-當播放器處於主要內容的`play`狀態時，媒體後端會加總事件之間經過的時鐘時間。 會排除廣告、暫停、緩衝事件和停頓的時間。 量度會在關閉呼叫時回報。 值在Analysis Workspace中顯示為`HH:MM:SS`，在資料摘要、Data Warehouse及報表API中以秒為單位顯示。
+當播放器處於主要內容的`play`狀態時，媒體後端會加總事件之間經過的時鐘時間。 會排除廣告、暫停、緩衝事件和停頓的時間。 因為只計算作用中播放時間，所以當檢視器向後搜尋並重新觀看區段時，量度可能會超過[內容長度](/help/reporting/dimensions/content-length.md)。 每個通過指定區段的過程都會累積額外的播放時間，而且只要使用者消耗工作階段中的內容並倒轉內容，就會累積。 量度會在關閉呼叫時回報。 值在Analysis Workspace中顯示為`HH:MM:SS`，在資料摘要、Data Warehouse及報表API中以秒為單位顯示。
 
 | 報告系統 | 來源 |
 | --- | --- |
