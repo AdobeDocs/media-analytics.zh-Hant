@@ -5,18 +5,34 @@ uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Yw1UIjZr5ZKx6AWU4anAo5kux5EoVtnQMoFLs5T2nas
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: 544
 ht-degree: 95%
 
 ---
 
 # 有前段廣告的 VOD 播放{#vod-playback-with-pre-roll-ads}
 
-在此案例中，前段廣告已插入到主要內容之前。除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。網路呼叫會同時發生，但裝載不同。
+在此案例中，前段廣告已插入到主要內容之前。 除非另有指定，否則網路呼叫與[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)案例中的呼叫相同。 網路呼叫會同時發生，但裝載不同。
 
-| 觸發 | 心率方法 | 網路呼叫 | 附註   |
+| 觸發 | 心率方法 | 網路呼叫   | 附註   |
 | --- | --- | --- | --- |
 | 使用者點按[!UICONTROL 播放] | `trackSessionStart` | Analytics 內容開始、心率內容開始 | Measurement Library 不知道有前段廣告，因此這些網路呼叫仍完全等同於[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)案例。 |
 | 廣告開始。 | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics 廣告開始、心率廣告開始 | |
@@ -32,7 +48,7 @@ ht-degree: 95%
 
 ## 參數 {#parameters}
 
-當廣告播放開始時，會傳送 `Heartbeat Ad Start` 呼叫。如果廣告的開頭不符合 10 秒的計時器，`Heartbeat Ad Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。發生此情況時，`Content Heartbeat` 會以相同的間隔傳出，而您可以透過查看事件類型和資產類型來區分這兩個呼叫：
+當廣告播放開始時，會傳送 `Heartbeat Ad Start` 呼叫。 如果廣告的開頭不符合 10 秒的計時器，`Heartbeat Ad Start` 呼叫會延遲幾秒，然後呼叫會進入下一個 10 秒的間隔。 發生此情況時，`Content Heartbeat` 會以相同的間隔傳出，而您可以透過查看事件類型和資產類型來區分這兩個呼叫：
 
 ### 心率廣告開始
 
@@ -61,7 +77,7 @@ ht-degree: 95%
 | `s:asset:ad_id` | &lt;ad ID> |  |
 | `s:asset:pod_id` | &lt;ad pod ID> |  |
 
-類似於 `Heartbeat Content Complete` 呼叫，當完成時，以及到達播放點結尾時，會傳送 `Heartbeat Ad Complete` 呼叫。此呼叫看起來類似其他 `Heartbeat Ad` 呼叫，但包含某些特定項目：
+類似於 `Heartbeat Content Complete` 呼叫，當完成時，以及到達播放點結尾時，會傳送 `Heartbeat Ad Complete` 呼叫。 此呼叫看起來類似其他 `Heartbeat Ad` 呼叫，但包含某些特定項目：
 
 ### 心率廣告完成呼叫
 

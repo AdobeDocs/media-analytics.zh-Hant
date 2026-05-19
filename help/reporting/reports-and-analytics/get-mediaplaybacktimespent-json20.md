@@ -4,10 +4,23 @@ description: 了解如何使用 Analytics 2.0 API 取得媒體播放時間報告
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/WYVf65R-G8v-x23nNMM4q14ZrBNZhrr8gls3HfO3XO8
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 100%
+source-wordcount: 210
+ht-degree: 90%
 
 ---
 
@@ -15,16 +28,16 @@ ht-degree: 100%
 
 您可以使用 [_*Analytics 2.0 API*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html) 取得媒體播放時間報告資料。
 
-1. 使用 UI 上建置的任何區段來篩選資料。若要依據特定內容 ID 進行篩選，請建立新的區段。
+1. 使用 UI 上建置的任何區段來篩選資料。 若要依據特定內容 ID 進行篩選，請建立新的區段。
 1. 視您想要以秒或分輸出而定，請將請求內文中的 `elements` -> `id` 設為 `metrics/playback_time_spent_seconds` 或 `metrics/playback_time_spent_minutes`。
 1. 要求足夠的資料量。
 
-   * 您在報表中指定的資料範圍會&#x200B;_在視訊工作階段結束時_收集所有同時檢閱者資料。
-您必須說明在某一天開始並在午夜後結束 (亦即隔天) 的工作階段。
+   * 您在報表中指定的資料範圍會&#x200B;_在視訊工作階段結束時_
+收集所有同時檢閱者資料。您必須說明在某一天開始並在午夜後結束（亦即隔天）的工作階段。
 
    * 在要求中要求比目標期間多一天的資料，但在分析中&#x200B;_*僅使用目標期間的資料*_。
 
-一天資料的範例要求裝載如以下範例所示。要求會連續執行 2 天，但在報表中僅使用第一天的資料。
+一天資料的範例要求裝載如以下範例所示。 要求會連續執行 2 天，但在報表中僅使用第一天的資料。
 
 ## 範例要求
 

@@ -4,10 +4,31 @@ description: 了解如何在行動裝置、OTT 和瀏覽器 (JS) 應用程式中
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: d94ede3e-95f8-4591-9833-ef39aff12ba9
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/8wkHfEeGx3TtATwf9TH7B6exw2lV5xkgOm-z5GCqajQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c77ba355-6681-41fe-b719-563d3f507fdb
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 97%
+source-wordcount: 805
+ht-degree: 87%
 
 ---
 
@@ -21,7 +42,7 @@ ht-degree: 97%
 
 >[!IMPORTANT]
 >
->我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/additional-resources/end-of-support-faqs.md)。
+>我們於 2021 年 8 月 31 日停止支援第 4 版 Mobile SDK 後，Adobe 也將停止支援 Media Analytics SDK iOS 版和 Android 版。  如需詳細資訊，請參閱 [Media Analytics SDK 支援終止常見問題集](/help/additional-resources/end-of-support-faqs.md)。
 
 
 ## 最低平台版本支援 {#minimum-platform-version}
@@ -48,9 +69,9 @@ ht-degree: 97%
 
 1. 建立 `MediaHeartbeatConfig` 例項並設定您的設定參數值。
 
-   |  變數名稱 | 說明 | 必填 |  預設值  |
+   |  變數名稱  | 說明  | 必填 |  預設值  |
    |---|---|:---:|---|
-   | `trackingServer` | 適用於媒體分析的追蹤伺服器。這與您的分析追蹤伺服器不同。 | 是 | 空字串 |
+   | `trackingServer` | 適用於媒體分析的追蹤伺服器。 這與您的分析追蹤伺服器不同。 | 是 | 空字串 |
    | `channel` | 頻道名稱 | 無 | 空字串 |
    | `ovp` | 線上媒體平台的名稱，透過它分送內容 | 無 | 空字串 |
    | `appVersion` | 媒體播放器應用程式/SDK 的版本 | 無 | 空字串 |
@@ -60,16 +81,16 @@ ht-degree: 97%
 
 1. 實作 `MediaHeartbeatDelegate`。
 
-   |  方法名稱  |  說明 | 必填 |
+   |  方法名稱  |  說明  | 必填 |
    | --- | --- | :---: |
-   | `getQoSObject()` | 傳回包含目前 QoS 資訊的 `MediaObject` 例項。將在播放工作階段期間呼叫此方法多次。播放器實作必須一律傳回最新可用的 QoS 資料。 | 是 |
-   | `getCurrentPlaybackTime()` | 傳回播放點的目前位置。<br /> 對於 VOD 追蹤，此值是從媒體項目的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天 UTC 午夜開始的秒數。<br /> 注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。 | 是 |
+   | `getQoSObject()` | 傳回包含目前 QoS 資訊的 `MediaObject` 例項。 將在播放工作階段期間呼叫此方法多次。 播放器實作必須一律傳回最新可用的 QoS 資料。 | 是 |
+   | `getCurrentPlaybackTime()` | 傳回播放點的目前位置。<br /> 對於VOD追蹤，此值是從媒體專案的開頭開始以秒為單位指定的。<br /> 對於直播串流，如果播放器未提供內容持續時間的相關資訊，則此值可以指定為自當天UTC午夜開始的秒數。<br /> 注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。 | 是 |
 
    >[!TIP]
    >
-   >服務品質 (QoS) 物件為選用。若 QoS 資料可供您的播放器使用，且您希望追蹤該資料，則需要下列變數：
+   >服務品質 (QoS) 物件為選用。 若 QoS 資料可供您的播放器使用，且您希望追蹤該資料，則需要下列變數：
 
-   | 變數名稱 | 說明 | 必填 |
+   | 變數名稱 | 說明   | 必填 |
    | --- | --- | :---: |
    | `bitrate` | 媒體的位元速率 (以每秒位元組數為單位)。 | 是 |
    | `startupTime` | 媒體的啟動時間 (以毫秒為單位) | 是 |
@@ -82,7 +103,7 @@ ht-degree: 97%
 
    >[!IMPORTANT]
    >
-   >請確保您的 `MediaHeartbeat` 例項可供存取，並且不會在工作階段結束前遭到取消配置。此例項將用於下列所有媒體追蹤事件。
+   >請確保您的 `MediaHeartbeat` 例項可供存取，並且不會在工作階段結束前遭到取消配置。 此例項將用於下列所有媒體追蹤事件。
 
    >[!TIP]
    >
@@ -135,8 +156,8 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 * 媒體和廣告開始呼叫會直接傳送到 Adobe Analytics (AppMeasurement) 伺服器。
 * 心率呼叫會傳送到 Media Analytics (心率) 追蹤伺服器並於該位置處理，然後再傳遞到 Adobe Analytics 伺服器。
 
-* **Adobe Analytics (AppMeasurement) 伺服器**
-如需有關追蹤伺服器選項的詳細資訊，請參閱[正確填入 trackingServer 和 trackingServerSecure 變數](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html)。
+* **Adobe Analytics (AppMeasurement)伺服器**
+如需追蹤伺服器選項的詳細資訊，請參閱[正確填入trackingServer和trackingServerSecure變數。](https://helpx.adobe.com/tw/analytics/kb/determining-data-center.html)
 
   >[!IMPORTANT]
   >
@@ -144,14 +165,14 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
   分析追蹤伺服器的結尾應該是「`.sc.omtrdc.net`」或應該是 CNAME。
 
-* **&#x200B; Media Analytics (心率) 伺服器**
-此格式一律為「`[your_namespace].hb.omtrdc.net`」。「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
+* **&#x200B; Media Analytics （心率）伺服器**
+格式一律為&quot;`[your_namespace].hb.omtrdc.net`&quot;。 「`[your_namespace]`」會指定您的公司，並且由 Adobe 提供。
 
-媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。目前音訊追蹤可在行動平台運作。在所有追蹤呼叫中，有一些要驗證的關鍵通用變數：
+媒體追蹤的運作方式在所有平台、桌上型電腦及行動裝置上都一樣。 目前音訊追蹤可在行動平台運作。 在所有追蹤呼叫中，有一些要驗證的關鍵通用變數：
 
 ## SDK 1.x 文件 {#sdk-1x-documentation}
 
-| Video Analytics 1.x SDK |  開發人員指南 (僅提供 PDF) |
+| Video Analytics 1.x SDK  |  開發人員指南 (僅提供 PDF) |
 | --- | --- |
 | Android | [設定Android](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [設定Apple TV](vhl-dev-guide-v1x_appletv.pdf) |
@@ -163,4 +184,4 @@ Media Analytics 追蹤實作會產生兩種類型的追蹤呼叫：
 
 ## Primetime Media SDK 文件 {#primetime-docs}
 
-* [Primetime 使用手冊](https://helpx.adobe.com/tw/primetime/user-guide.html)
+* [Primetime使用手冊](https://helpx.adobe.com/tw/primetime/user-guide.html)

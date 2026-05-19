@@ -3,18 +3,30 @@ title: 媒體串流區段解釋
 description: 瞭解與媒體資料流型別相關的報告區段，包括媒體資料流型別的區段、說明和規則。
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
-feature: "Streaming Media, Segmentation"
+feature: Streaming Media, Segmentation
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/7RwJQtw-jHlMMV1yc80lUyEYIwIxR-3oh7vN04cPcRg
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 89%
+source-wordcount: 209
+ht-degree: 90%
 
 ---
 
 # 媒體區塊{#segments}
 
-區段可讓您根據特性或網站互動來識別訪客的子集。串流媒體區段可讓您識別訪客資料流類型，例如音訊、直播或播客資料流。 有關 Adobe Analytics 區段的資訊，請參閱《Adobe Analytics 元件指南》中的[關於區段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=zh-Hant)。
+區段可讓您根據特性或網站互動來識別訪客的子集。 串流媒體區段可讓您識別訪客資料流類型，例如音訊、直播或播客資料流。 有關 Adobe Analytics 區段的資訊，請參閱《Adobe Analytics 元件指南》中的[關於區段和容器](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

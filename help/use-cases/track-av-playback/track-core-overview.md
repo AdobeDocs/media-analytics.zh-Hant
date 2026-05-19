@@ -5,10 +5,26 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: 882
+ht-degree: 96%
 
 ---
 
@@ -22,7 +38,7 @@ ht-degree: 97%
 
 ## 播放器事件
 
-追蹤核心播放包含追蹤媒體載入、媒體開始、媒體暫停和媒體完成。追蹤緩衝和搜尋雖然並非為強制性，但也是可用於追蹤內容播放的核心元件。在您的媒體播放器 API 中，識別與 Media SDK 追蹤呼叫對應的播放器事件，並編寫事件處理程式的程式碼，以呼叫追蹤 API 及填入必要和選用的變數。
+追蹤核心播放包含追蹤媒體載入、媒體開始、媒體暫停和媒體完成。 追蹤緩衝和搜尋雖然並非為強制性，但也是可用於追蹤內容播放的核心元件。 在您的媒體播放器 API 中，識別與 Media SDK 追蹤呼叫對應的播放器事件，並編寫事件處理程式的程式碼，以呼叫追蹤 API 及填入必要和選用的變數。
 
 ### 媒體載入時
 
@@ -53,7 +69,7 @@ ht-degree: 97%
 
 ### 拖曳結束時
 
-* 撥打`trackEvent(SeekComplete)`
+* 呼叫 `trackEvent(SeekComplete)`
 取消變更
 
 ### 緩衝開始時
@@ -109,15 +125,13 @@ ht-degree: 97%
 
      在媒體心率物件上，實例化標準中繼資料物件、填入必要的變數，然後設定中繼資料物件。
 
-     請在此處參閱完整的中繼資料清單：[音效和視訊參數.](../../implementation/variables/audio-video-parameters.md)
-
    * **自訂中繼資料 -** 為自訂變數建立變數物件，並為此內容填入資料。
 
 1. **追蹤開始播放的意圖 -** 若要開始追蹤工作階段，請呼叫媒體心率例項上的 `trackSessionStart`。
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 會追蹤使用者的播放意圖，而非播放的開始。此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
+   >`trackSessionStart` 會追蹤使用者的播放意圖，而非播放的開始。 此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
 
    >[!NOTE]
    >
@@ -131,24 +145,24 @@ ht-degree: 97%
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 會標記追蹤工作階段的結尾。如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。在 `trackSessionEnd` 之後會忽略任何其他 `track*` API 呼叫 (除了新追蹤工作階段的 `trackSessionStart`)。
+   >`trackSessionEnd` 會標記追蹤工作階段的結尾。 如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。 在 `trackSessionEnd` 之後會忽略任何其他 `track*` API 呼叫 (除了新追蹤工作階段的 `trackSessionStart`)。
 
 1. **追蹤所有可能的暫停情況 -** 識別來自媒體播放器的暫停事件，並呼叫 `trackPause`。
 
-   **暫停情況 -** 識別「播放器」會暫停的情況，並請務必正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`：
+   **暫停情況 -** 識別「播放器」會暫停的情況，並請務必正確呼叫 `trackPause`。 以下情形都要求應用程式呼叫 `trackPause()`：
 
    * 使用者明確在應用程式中點擊暫停。
    * 播放器自行進入「暫停」狀態。
    * (*行動應用程式*) - 使用者讓應用程式進入背景，但您希望應用程式保持工作階段開啟。
-   * (*行動應用程式*) - 發生任何類型的系統中斷，導致應用程式進入背景。例如，使用者接聽電話、或發生來自另一個應用程式的彈出視窗，但您希望應用程式維持工作階段進行中，讓使用者能夠從中斷點復原內容。
+   * (*行動應用程式*) - 發生任何類型的系統中斷，導致應用程式進入背景。 例如，使用者接聽電話、或發生來自另一個應用程式的彈出視窗，但您希望應用程式維持工作階段進行中，讓使用者能夠從中斷點復原內容。
 
 1. 識別來自播放器的播放和/或來自暫停的恢復事件，並呼叫 `trackPlay`。
 
    >[!TIP]
    >
-   >這可能與在步驟 4 使用的事件來源相同。確保播放恢復時，每個 `trackPause()` API 呼叫都與下列 `trackPlay()` API 呼叫成對。
+   >這可能與在步驟 4 使用的事件來源相同。 確保播放恢復時，每個 `trackPause()` API 呼叫都與下列 `trackPlay()` API 呼叫成對。
 
-1. 從媒體播放器上聽取播放搜尋事件。在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋。
+1. 從媒體播放器上聽取播放搜尋事件。 在搜尋開始事件通知上使用 `SeekStart` 事件追蹤搜尋。
 1. 在來自媒體播放器的搜尋完成通知上，使用 `SeekComplete` 事件來追蹤搜尋的結尾.
 1. 接聽來自媒體播放器的播放緩衝事件，並在緩衝開始事件通知時使用 `BufferStart` 事件追蹤緩衝。
 1. 在來自媒體播放器的緩衝完成通知上，使用 `BufferComplete` 事件來追蹤緩衝的結尾。
@@ -239,3 +253,12 @@ if (e.type == "buffered") {
 ## 驗證 {#validate}
 
 如需有關驗證&#x200B;*舊版*&#x200B;實作的資訊，請參閱[舊版驗證](/help/legacy/validation/validation-overview.md)。
+
+>[!MORELIKETHIS]
+>
+>* [工作階段開始](/help/implementation/events/session/session-start.md)
+>* [播放](/help/implementation/events/playback/play.md)
+>* [暫停開始](/help/implementation/events/playback/pause-start.md)
+>* [緩衝開始](/help/implementation/events/playback/buffer-start.md)
+>* [工作階段完成](/help/implementation/events/session/session-complete.md)
+>* [工作階段結束](/help/implementation/events/session/session-end.md)

@@ -5,9 +5,25 @@ uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/l5Qi-MmSMd-b9bueLmYzeCiJVr24cGSWKnQ-yBoLG-Q
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: 370
 ht-degree: 100%
 
 ---
@@ -27,7 +43,7 @@ ht-degree: 100%
 
 ## 參數 {#parameters}
 
-您在心率內容開始呼叫上看到的許多相同值，也會在 Adobe Analytics `Content Start` 呼叫上看到。Adobe 使用許多參數來填入各種媒體報表，但下表僅列出最重要的參數：
+您在心率內容開始呼叫上看到的許多相同值，也會在 Adobe Analytics `Content Start` 呼叫上看到。 Adobe 使用許多參數來填入各種媒體報表，但下表僅列出最重要的參數：
 
 ### 心率內容開始
 
@@ -43,7 +59,7 @@ ht-degree: 100%
 
 ## 心率內容播放 {#heartbeat-content-play}
 
-這些參數看起來應該與 `Heartbeat Content Start` 呼叫大致相同，但主要的差異為 `s:event:type` 參數。所有其他參數仍應存在。
+這些參數看起來應該與 `Heartbeat Content Start` 呼叫大致相同，但主要的差異為 `s:event:type` 參數。 所有其他參數仍應存在。
 
 | 參數 | 值 | 附註   |
 |---|---|---|
@@ -52,7 +68,7 @@ ht-degree: 100%
 
 ## 內容心率 {#content-heartbeats}
 
-在媒體播放期間，計時器至少會每 10 秒傳送一個心率。這些心率包含關於播放、廣告、緩衝等資訊。每個心率的確切內容不在本文件的範圍，但重要問題為，當播放繼續時會一致地觸發心率。
+在媒體播放期間，計時器至少會每 10 秒傳送一個心率。 這些心率包含關於播放、廣告、緩衝等資訊。 每個心率的確切內容不在本文件的範圍，但重要問題為，當播放繼續時會一致地觸發心率。
 
 在內容心率中，尋找下列參數：
 
@@ -63,7 +79,7 @@ ht-degree: 100%
 
 ## 心率內容完成 {#heartbeat-content-complete}
 
-當播放完成時，其表示到達播放點結尾，會傳送 `Heartbeat Content Complete` 呼叫。此呼叫與其他心率呼叫類似，但包含幾個特定參數：
+當播放完成時，其表示到達播放點結尾，會傳送 `Heartbeat Content Complete` 呼叫。 此呼叫與其他心率呼叫類似，但包含幾個特定參數：
 
 | 參數 | 值 | 附註   |
 |---|---|---|
@@ -72,7 +88,7 @@ ht-degree: 100%
 
 ## 程式碼範例 {#sample-code}
 
-在此案例中，內容長度為 40 秒，其播放到結尾而沒有任何岔斷。
+在此案例中，內容長度為 40 秒， 其播放到結尾而沒有任何岔斷。
 
 ![](assets/main-content-regular-playback.png)
 

@@ -4,10 +4,22 @@ description: 瞭解如何將受眾移轉至適用於串流媒體的新的Adobe A
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '1346'
-ht-degree: 43%
+source-wordcount: 1376
+ht-degree: 44%
 
 ---
 
@@ -49,8 +61,8 @@ ht-degree: 43%
 | 專輯 | media.mediaTimed.primaryAssetReference._xmpDM.album | mediaReporting.sessionDetails.album | 維度 | 專輯 |                                                                       |
 | 標籤 | 不支援 | mediaReporting.sessionDetails.label | 維度 | 標籤 |                                                                       |
 | 作者 | 不支援 | mediaReporting.sessionDetails.author | 維度 | 作者 |                                                                       |
-| 電台 | media.mediaTimed.primaryAssetReference._id3.音訊。_id3.TRSN | mediaReporting.sessionDetails.station | 維度 | 電台 |                                                                       |
-| 發行者 | media.mediaTimed.primaryAssetReference._id3.音訊。_id3.TPUB | mediaReporting.sessionDetails.publisher | 維度 | 發行者 |                                                                       |
+| 電台 | media.mediaTimed.primaryAssetReference._id3.Audio._id3.TRSN | mediaReporting.sessionDetails.station | 維度 | 電台 |                                                                       |
+| 發行者 | media.mediaTimed.primaryAssetReference._id3.Audio._id3.TPUB | mediaReporting.sessionDetails.publisher | 維度 | 發行者 |                                                                       |
 | 媒體開始次數 | media.mediaTimed.impressions.value | mediaReporting.sessionDetails.isViewed | 量度 | 媒體開始次數 |                                                                       |
 | 內容開始 | media.mediaTimed.starts.value | mediaReporting.sessionDetails.isPlayed | 量度 | 內容開始 |                                                                       |
 | 內容完成 | media.mediaTimed.completes.value | mediaReporting.sessionDetails.isCompleted | 量度 | 內容完成 |                                                                       |
@@ -189,8 +201,8 @@ Media Analytics分類會透過稱為ACDC的個別流程內嵌至AEP中。 下表
 | videoad | 廣告名稱 | `<_sandbox>.ad_name` |
 | videoad | 創作 ID | `<_sandbox>.creative_id` |
 | videoadpod | 索引鍵/廣告Pod ID | `<_sandbox>.key` |
-| videoadpod | Pod位置 | `<_sandbox>.pod_position` |
-| videoadpod | Pod名稱 | `<_sandbox>.pod_name` |
+| videoadpod | Pod 位置 | `<_sandbox>.pod_position` |
+| videoadpod | Pod 名稱 | `<_sandbox>.pod_name` |
 | videochapter | 索引鍵/章節 | `<_sandbox>.key` |
 | videochapter | 章節長度 | `<_sandbox>.chapter_length` |
 | videochapter | 章節位移 | `<_sandbox>.chapter_offset` |

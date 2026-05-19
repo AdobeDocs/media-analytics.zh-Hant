@@ -5,10 +5,25 @@ uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 79%
+source-wordcount: 522
+ht-degree: 77%
 
 ---
 
@@ -20,23 +35,22 @@ ht-degree: 79%
 >
 >若您正在實作 SDK 1.x 版，您可以在此處下載 1.x 開發人員指南：[下載 SDK。](/help/getting-started/download-sdks.md)
 
-廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。請使用媒體播放器的 API 來識別重要的播放器事件，並填入必要和選用的廣告變數。請在此處參閱完整的中繼資料清單：[廣告參數](../../implementation/variables/ad-parameters.md)。
+廣告播放包含追蹤廣告插播、廣告開始、廣告完成，以及廣告略過。 請使用媒體播放器的 API 來識別重要的播放器事件，並填入必要和選用的廣告變數。
 
 ## 播放器事件 {#player-events}
-
 
 ### 在廣告插播開始時
 
 >[!NOTE]
 >包括前段廣告
 
-* 為廣告插播建立 `adBreak` 物件例項，例如，`adBreakObject`。
+* 為廣告插播建立 `adBreak` 物件例項， 例如，`adBreakObject`。
 
 * 使用 `trackEvent` 呼叫廣告插播開始的 `adBreakObject`。
 
 ### 在每個廣告資產開始時
 
-* 為廣告資產建立廣告物件例項，例如，`adObject`。
+* 為廣告資產建立廣告物件例項， 例如，`adObject`。
 * 填入廣告中繼資料 `adCustomMetadata`。
 * 呼叫廣告開始的 `trackEvent`。
 
@@ -56,7 +70,7 @@ ht-degree: 79%
 
 ### 廣告追蹤常數
 
-| 常數名稱 | 說明 |
+| 常數名稱 | 說明   |
 |---|---|
 | `AdBreakStart` | 用於追蹤廣告插播開始事件的常數 |
 | `AdBreakComplete` | 用於追蹤廣告插播事件的常數 |
@@ -106,7 +120,7 @@ ht-degree: 79%
 
 >[!IMPORTANT]
 >
->請勿在廣告播放期間 (`s:asset:type=ad`) 增加內容播放器播放點 (`l:event:playhead`)。若這麼做，會對「內容逗留時間」量度產生不利的影響。
+>請勿在廣告播放期間 (`s:asset:type=ad`) 增加內容播放器播放點 (`l:event:playhead`)。 若這麼做，會對「內容逗留時間」量度產生不利的影響。
 
 以下程式碼範例將 JavaScript 2.x SDK 用於 HTML5 媒體播放器。
 
@@ -145,3 +159,11 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete);
 };
 ```
+
+>[!MORELIKETHIS]
+>
+>* [廣告插播開始](/help/implementation/events/ads/ad-break-start.md)
+>* [廣告開始](/help/implementation/events/ads/ad-start.md)
+>* [廣告完成](/help/implementation/events/ads/ad-complete.md)
+>* [廣告略過](/help/implementation/events/ads/ad-skip.md)
+>* [廣告插播完成](/help/implementation/events/ads/ad-break-complete.md)

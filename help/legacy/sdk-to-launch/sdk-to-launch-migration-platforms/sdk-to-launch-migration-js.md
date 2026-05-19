@@ -4,29 +4,47 @@ description: 了解如何從 Media SDK 移轉至 JS 版的 Launch。
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/N4Fcbg3R9tT9cjUcaw-kcUm6h-QT8TYwatdCe1IdsaM
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c069c44e-5426-4c1a-accc-8028662f2fde
+  - id: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 97%
+source-wordcount: 466
+ht-degree: 77%
 
 ---
 
 # 從獨立 Media SDK 移轉至 Adobe Launch - Web (JS)
 
 >[!NOTE]
->Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-Hant)。
+>Adobe Experience Platform Launch 已經過品牌重塑，現在是 Experience Platform 中的一套資料收集技術。 因此，所有產品文件中出現了幾項術語變更。 如需術語變更的彙整參考資料，請參閱以下[文件](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=zh-TW)。
 
 ## 功能差異
 
-* *Launch* - Launch 提供您一個 UI，引導您建立、設定和部署網頁型媒體追蹤解決方案。Launch 可改善 Dynamic Tag Management (DTM)。
-* *Media SDK* - Media SDK 提供您專為特定平台 (例如：Android、iOS 等) 所設計的媒體追蹤程式庫。Adobe 建議使用 Media SDK 來追蹤行動應用程式中的媒體使用情形。
+* *Launch* - Launch 提供您一個 UI，引導您建立、設定和部署網頁型媒體追蹤解決方案。 Launch 可改善 Dynamic Tag Management (DTM)。
+* *Media SDK* - Media SDK 提供您專為特定平台 (例如：Android、iOS 等) 所設計的媒體追蹤程式庫。 Adobe 建議使用 Media SDK 來追蹤行動應用程式中的媒體使用情形。
 
 ## 設定
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK 中，您可在應用程式中設定追蹤，
-並在建立追蹤器時將其傳遞至 SDK。
+在獨立Media SDK中，您可在應用程式中設定追蹤設定
+並在建立追蹤器時將其傳遞至SDK。
 
 ```javascript
 //Media Heartbeat initialization
@@ -40,21 +58,22 @@ mediaConfig.ssl = true;
 mediaConfig.debugLogging = true;
 ```
 
-除了設定 `MediaHeartbeat` 外，頁面必須設定並傳遞
-媒體追蹤的 `AppMeasurement` 例項和 `VisitorAPI` 例項
-才能正常運作。
+除了`MediaHeartbeat`設定外，頁面還必須設定並傳遞
+媒體追蹤的`AppMeasurement`執行個體和`VisitorAPI`執行個體依序排列
+以正常運作。
 
 ### Launch 擴充功能
 
-1. 在 Experience Platform Launch 中，按一下您 Web 屬性的[!UICONTROL 「擴充功能」]
-標籤。
-1. 在[!UICONTROL 「編目」]標籤上，找到 Adobe Media Analytics for Audio and
-Video 擴充功能，然後按一下[!UICONTROL 「安裝」]。
-1. 在擴充功能設定頁面中，設定追蹤參數。Media 擴充功能會使用已設定的參數進行追蹤。
+1. 在Experience Platform Launch中，按一下您專屬的[!UICONTROL 擴充功能]標籤
+Web屬性。
+1. 在[!UICONTROL 目錄]標籤上，找到Adobe Media Analytics for Audio並
+視訊延伸模組，然後按一下[安裝]。
+1. 在擴充功能設定頁面中，設定追蹤參數。
+Media 擴充功能會使用已設定的參數進行追蹤。
 
    ![](assets/launch_config_js.png)
 
-[Launch 使用手冊 - 安裝和設定媒體擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant#install-and-configure-the-ma-extension)
+[Launch使用手冊 — 安裝和設定媒體擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant#install-and-configure-the-ma-extension)
 
 ## 追蹤器建立差異
 
@@ -86,7 +105,7 @@ this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurem
 
 ### Launch
 
-Launch 提供兩種建立追蹤基礎架構的方法。兩種方法都使用 Media Analytics Launch 擴充功能：
+Launch 提供兩種建立追蹤基礎架構的方法。 兩種方法都使用 Media Analytics Launch 擴充功能：
 
 1. 使用網頁中的媒體追蹤 API。
 
@@ -102,7 +121,7 @@ Launch 提供兩種建立追蹤基礎架構的方法。兩種方法都使用 Med
 
    >[!NOTE]
    >
-   >「共用模組」不適用於網頁。您只能使用其他擴充功能的「共用模組」。
+   >「共用模組」不適用於網頁。 您只能使用其他擴充功能的「共用模組」。
 
    使用 `get-instance`「共用模組」建立 `MediaHeartbeat` 例項。
 將委派物件傳遞至 `get-instance` 公開的 `getQoSObject()` 和 `getCurrentPlaybackTime()` 函數。
@@ -123,5 +142,5 @@ Launch 提供兩種建立追蹤基礎架構的方法。兩種方法都使用 Med
 
 ### Launch
 
-* [Launch 概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
-* [Media Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant)
+* [Launch概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
+* [Media Analytics擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=zh-Hant)

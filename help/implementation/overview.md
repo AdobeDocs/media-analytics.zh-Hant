@@ -5,9 +5,25 @@ uuid: null
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/aFrxbzBLlf1ngetaM-GsNFXz6TUXi6Pic3quLVI297c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: 522
 ht-degree: 65%
 
 ---
@@ -40,17 +56,17 @@ Edge實作方法使用串流媒體收集附加元件。
 
 僅限Adobe Analytics的實作方法使用Adobe Analytics for Streaming Media附加元件。
 
-* **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。資料會傳送至 Adobe Analytics。
+* **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。 資料會傳送至 Adobe Analytics。
 
   如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=zh-Hant)。
 
-* **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。(如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
+* **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。 (如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
 
-  Media SDK 使用 Media Collection API 進行追蹤。資料會傳送至 Adobe Analytics。
+  Media SDK 使用 Media Collection API 進行追蹤。 資料會傳送至 Adobe Analytics。
 
   如需有關下載和安裝 Media SDK 和擴充功能的資訊，請參閱[取得 Media SDK、使用標記的擴充功能和 OTT SDK](/help/getting-started/download-sdks.md)。
 
-* **Media Collection API：**&#x200B;由於 Media Collection API 是可自訂的，因此它們可用於需要自訂追蹤功能的應用程式以及 Media SDK 不支援的裝置。Media Collection API 使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。資料會傳送至 Adobe Analytics。
+* **Media Collection API：**&#x200B;由於 Media Collection API 是可自訂的，因此它們可用於需要自訂追蹤功能的應用程式以及 Media SDK 不支援的裝置。 Media Collection API 使用 RESTful HTTP 呼叫追蹤音訊和視訊事件。 資料會傳送至 Adobe Analytics。
 
   如需關於使用 Media Collection API 的資訊，請參閱 [Media Collection API](media-collection-api/mc-api-overview.md)。
 

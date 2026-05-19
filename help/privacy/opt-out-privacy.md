@@ -5,10 +5,23 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 94%
+source-wordcount: 382
+ht-degree: 92%
 
 ---
 
@@ -18,8 +31,8 @@ ht-degree: 94%
 
 您可以控制特定裝置上是否允許追蹤活動。
 
-* **行動應用程式 -** Media 擴充功能遵守 Data Collection 中的隱私權設定。若選擇退出追蹤，您必須將隱私權設定為[在標記中選擇退出](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property)或[在 Mobile SDK 更新隱私權狀態](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus)。
-* **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。若要退出追蹤，您需要從訪客 API 服務退出。如需選擇退出與隱私權的詳細資訊，請參閱[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+* **行動應用程式 -** Media 擴充功能遵守 Data Collection 中的隱私權設定。 若選擇退出追蹤，您必須將隱私權設定為[在標記中選擇退出](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property)或[在 Mobile SDK 更新隱私權狀態](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus)。
+* **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。 若要退出追蹤，您需要從訪客 API 服務退出。 如需選擇退出與隱私權的詳細資訊，請參閱[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 * **OTT 應用程式 (Chromecast、Roku) -** OTT SDK 提供符合一般資料保護規範 (GDPR) 的 API，讓您將資料收集和傳輸的狀態標幟設為 `opt`，並擷取儲存於本機的身分識別資料。
 
   >[!NOTE]
@@ -28,7 +41,7 @@ ht-degree: 94%
 
   您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料：
 
-   * `privacyDefault` 設定檔案中的 `ADBMobile.json` 設定。這會控制持續使用的初始設定，直到在程式碼中變更為止。
+   * `privacyDefault` 設定檔案中的 `ADBMobile.json` 設定。 這會控制持續使用的初始設定，直到在程式碼中變更為止。
 
    * `ADBMobile().setPrivacyStatus()` 方法。
 
@@ -86,7 +99,7 @@ ht-degree: 94%
 
 >[!IMPORTANT]
 >
->擷取所有識別碼的方法會取得已知且由 SDK 保存的所有使用者身分識別資料。您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
+>擷取所有識別碼的方法會取得已知且由 SDK 保存的所有使用者身分識別資料。 您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
 
 存放在本機的身分識別資料會以 JSON 字串傳回，其中包括：
 

@@ -5,10 +5,35 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/EJ6osO9PkXBubSF7a7HebRJhpSTamNnghofASOs7E-E
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: df312454-73c4-43f6-a90e-18f5043f074c
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5520579-b31f-4df7-9281-f0d9f91e2edc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+  - id: e0eb8757-182f-49f3-94a4-1587d16f5094
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 59%
+source-wordcount: 606
+ht-degree: 53%
 
 ---
 
@@ -42,9 +67,9 @@ Adobe串流媒體服務提供適用於串流媒體內容的強大收集、測量
 
 * **促進參與**：透過減少緩衝事件及瞭解廣告在內容中應該播放的時間和位置，提供干擾較少的流暢體驗，促使使用者重複造訪，強化使用者互動。
 
-* **全方位掌握 -** 合併所有內容經銷商的多個資料點，以完整掌控所有媒體活動。測量所有可能管道的參與度和檢視/收聽次數。
+* **全方位掌握**：合併所有內容經銷商的多個資料點，以完整掌控所有媒體活動。 測量所有可能管道的參與度和檢視/收聽次數。
 
-  串流媒體服務可讓您追蹤整個網站和串流應用程式的客戶歷程，將客戶路徑和興趣視覺化，並提供強化的推薦和個人化的客戶體驗。  媒體測量可讓您將資料分為多個維度和區段，以擷取完整詳細分析所需的所有中繼資料。如此便能分析資料，並將成功條件歸因於完整使用的媒體、平均逗留時間以及完成的廣告。
+  串流媒體服務可讓您追蹤整個網站和串流應用程式的客戶歷程，將客戶路徑和興趣視覺化，並提供強化的推薦和個人化的客戶體驗。  媒體測量可讓您將資料分為多個維度和區段，以擷取完整詳細分析所需的所有中繼資料。 如此便能分析資料，並將成功條件歸因於完整使用的媒體、平均逗留時間以及完成的廣告。
 
 * **重要量度**：測量掉格、緩衝時間和平均位元速率等與體驗品質 (QoE) 相關的重要傳送量度。
 

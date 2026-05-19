@@ -5,10 +5,10 @@ uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '347'
-ht-degree: 92%
+source-wordcount: '496'
+ht-degree: 69%
 
 ---
 
@@ -18,8 +18,8 @@ ht-degree: 92%
 
 您可以控制特定裝置上是否允許追蹤活動。
 
-* **行動應用程式 —** VA資料庫會遵循`AdobeMobile`資料庫的隱私權和選擇退出設定。 若要退出追蹤，必須使用 `AdobeMobile` 資料庫。如需`AdobeMobile`資料庫的選擇退出與隱私權設定的詳細資訊，請參閱[選擇退出與隱私權設定](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hant)。
-* **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。若要退出追蹤，您需要從訪客 API 服務退出。如需有關選擇退出和隱私權的進一步資訊，請參閱 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+* **行動應用程式 —** VA資料庫會遵循`AdobeMobile`資料庫的隱私權和選擇退出設定。 若要退出追蹤，必須使用 `AdobeMobile` 資料庫。 如需`AdobeMobile`資料庫的選擇退出與隱私權設定的詳細資訊，請參閱[選擇退出與隱私權設定](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=zh-Hant)。
+* **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。 若要退出追蹤，您需要從訪客 API 服務退出。 如需有關選擇退出和隱私權的進一步資訊，請參閱 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 * **OTT 應用程式 (Chromecast、Roku) -** OTT SDK 提供符合一般資料保護規範 (GDPR) 的 API，讓您將資料收集和傳輸的狀態標幟設為 `opt`，並擷取儲存於本機的身分識別資料。
 
   >[!NOTE]
@@ -28,7 +28,7 @@ ht-degree: 92%
 
   您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料：
 
-   * `privacyDefault` 設定檔案中的 `ADBMobile.json` 設定。這會控制持續使用的初始設定，直到在程式碼中變更為止。
+   * `privacyDefault` 設定檔案中的 `ADBMobile.json` 設定。 這會控制持續使用的初始設定，直到在程式碼中變更為止。
 
    * `ADBMobile().setPrivacyStatus()` 方法。
 
@@ -86,7 +86,7 @@ ht-degree: 92%
 
 >[!IMPORTANT]
 >
->擷取所有識別碼的方法會取得已知且由 SDK 保存的所有使用者身分識別資料。您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
+>擷取所有識別碼的方法會取得已知且由 SDK 保存的所有使用者身分識別資料。 您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
 
 存放在本機的身分識別資料會以 JSON 字串傳回，其中包括：
 
@@ -110,3 +110,19 @@ ht-degree: 92%
   ```
   vids = ADBMobile().getAllIdentifiers()
   ```
+
+## Analytics選擇退出引數 {#analytics-opt-out}
+
+兩個保留引數可讓您禁止Media Analytics資料從伺服器端轉送至Audience Manager，以及從與協力廠商共用資料。 這些會與API層級的工作階段引數一起傳遞，而非在SDK設定物件上設定。
+
+| 參數 | API金鑰 | 上下文資料 |
+| --- | --- | --- |
+| 選擇退出伺服器端轉送 | `analytics.optOutServerSideForwarding` | `cm.dmp` |
+| 選擇退出資料共用 | `analytics.optOutSellToThirdParty` | `cm.sell` |
+
+* **`analytics.optOutServerSideForwarding`**：當`true`時，會抑制此點選到Audience Manager和其他Adobe目的地的伺服器端轉送。
+* **`analytics.optOutSellToThirdParty`**：當`true`時，禁止與協力廠商合作夥伴共用此點選資料。
+
+>[!NOTE]
+>
+>這些引數記錄在[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)中。 它們適用於Media Collection API和Media Edge API實作。 上述SDK層級的選擇退出控制項適用於行動裝置和OTT實作。

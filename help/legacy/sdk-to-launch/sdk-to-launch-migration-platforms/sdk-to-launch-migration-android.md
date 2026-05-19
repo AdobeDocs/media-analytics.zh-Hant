@@ -4,10 +4,24 @@ description: 了解如何從 Media SDK 移轉至 Android 版的 Launch。
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/HawnzTGV1nsGCibAtXkl3cAB5NjO2VfUpQODm6-w-qk
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 97%
+source-wordcount: 428
+ht-degree: 48%
 
 ---
 
@@ -21,8 +35,8 @@ ht-degree: 97%
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK 中，您可在應用程式中設定追蹤，並在建立追蹤器時
-將其傳遞至 SDK。
+在獨立Media SDK中，您可在應用程式中設定追蹤，並將其傳遞至
+建立追蹤器時的SDK 。
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -39,11 +53,12 @@ MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 
 ### Launch 擴充功能
 
-1. 在 Experience Platform Launch 中，按一下您行動屬性的[!UICONTROL 「擴充功能」]
-標籤。
-1. 在[!UICONTROL 「編目」]標籤上，找到 Adobe Media Analytics for Audio
-and Video 擴充功能，然後按一下[!UICONTROL 「安裝」]。
-1. 在擴充功能設定頁面中，設定追蹤參數。Media 擴充功能會使用已設定的參數進行追蹤。
+1. 在Experience Platform Launch中，按一下您專屬的[!UICONTROL 擴充功能]標籤
+行動屬性。
+1. 在[!UICONTROL 目錄]標籤上，找到Adobe Media Analytics for Audio
+和Video延伸模組，然後按一下[安裝]。
+1. 在擴充功能設定頁面中，設定追蹤參數。
+Media 擴充功能會使用已設定的參數進行追蹤。
 
 ![](assets/launch_config_mobile.png)
 
@@ -53,10 +68,10 @@ and Video 擴充功能，然後按一下[!UICONTROL 「安裝」]。
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK中，您可手動建立 `MediaHeartbeatConfig` 物件
-並設定追蹤參數。實作委派介面公開
-`getQoSObject()` 和 `getCurrentPlaybackTime()functions.`
-建立 `MediaHeartbeat` 例項以供追蹤。
+在獨立Media SDK中，您可以手動建立`MediaHeartbeatConfig`物件
+和設定追蹤引數。 實作委派介面公開
+`getQoSObject()`和 `getCurrentPlaybackTime()functions.`
+建立`MediaHeartbeat`執行個體以進行追蹤。
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -90,9 +105,10 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Launch 擴充功能
 
-[媒體 API 參考 - 建立媒體追蹤器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
+[媒體API參考 — 建立媒體追蹤器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
-建立追蹤器前，您應先透過行動核心註冊媒體擴充功能與相依擴充功能。
+建立追蹤器之前，請務必先註冊媒體擴充功能，然後
+具有行動核心的相依擴充功能。
 
 ```java
 // Register the extension once during app launch
@@ -132,20 +148,24 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 
 ### 獨立 Media SDK
 
-在獨立 Media SDK 中，實作 `MediaHeartbeartDelegate` 介面的委派物件會在建立追蹤器時傳遞。當追蹤器呼叫 `getQoSObject()` 和 `getCurrentPlaybackTime()` 介面方法時，實作應傳回最新的 QoE 和播放點。
+在獨立Media SDK中，您傳遞的委派物件會實作
+建立追蹤器期間的`MediaHeartbeartDelegate`介面。  實施
+當追蹤器呼叫
+`getQoSObject()`和`getCurrentPlaybackTime()`介面方法。
 
 ### Launch 擴充功能
 
-實作應呼叫追蹤器公開的 `updateCurrentPlayhead` 方法，
-以更新目前播放器播放點。您應每秒至少呼叫一次此方法以精確追蹤。
+實作應呼叫「 」，更新目前播放器播放點
+追蹤器公開的`updateCurrentPlayhead`方法。 進行精確追蹤
+您應每秒至少呼叫一次此方法。
 
-[媒體 API 參考 - 更新目前的播放器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
+[媒體API參考 — 更新目前的播放器](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
-實作應呼叫追蹤器公開的 `updateQoEObject` 方法，
-以更新 QoE 資訊。我們預期當品質量度發生變更時，
-會呼叫此方法。
+實作應呼叫「 」，以更新QoE資訊 `updateQoEObject`
+追蹤器公開的方法。 我們預期每當出現此問題時，都會呼叫此方法
+是品品質度的變更。
 
-[媒體 API 參考 - 更新 QoE 物件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
+[媒體API參考 — 更新QoE物件](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## 傳遞標準媒體 / 廣告中繼資料
 

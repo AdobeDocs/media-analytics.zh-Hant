@@ -5,10 +5,26 @@ uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
 exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/efxauhuL5aOcMQhSuayeodzUOtgfppMgZTAiwTiHsEE
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 100%
+source-wordcount: 693
+ht-degree: 99%
 
 ---
 
@@ -35,7 +51,7 @@ ht-degree: 100%
 
    **`StreamType`常數：**
 
-   | 常數名稱 | 說明 |
+   | 常數名稱 | 說明   |
    |---|---|
    | `VOD` | 隨選視訊的資料流類型。 |
    | `LIVE` | LIVE 內容的資料流類型。 |
@@ -74,11 +90,9 @@ ht-degree: 100%
 
       * 媒體中繼資料索引鍵 API 參考 - [標準中繼資料索引鍵 - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-        請在此處參閱完整的可用中繼資料組：[音訊和視訊參數](/help/implementation/variables/audio-video-parameters.md)
-
    * **自訂中繼資料**
 
-     為自訂變數建立變數物件，並為此媒體填入資料。例如：
+     為自訂變數建立變數物件，並為此媒體填入資料。 例如：
 
      ```js
      /* Set custom context data */
@@ -91,7 +105,7 @@ ht-degree: 100%
 
 1. **追蹤開始播放的意圖**
 
-   若要開始追蹤媒體工作階段，請呼叫媒體心率例項上的 `trackSessionStart`：
+   若要開始追蹤媒體工作階段，請呼叫媒體心率例項上的 `trackSessionStart`:
 
    ```js
    mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
@@ -103,7 +117,7 @@ ht-degree: 100%
 
    >[!IMPORTANT]
    >
-   >`trackSessionStart` 會追蹤使用者的播放意圖，而非播放的開始。此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
+   >`trackSessionStart` 會追蹤使用者的播放意圖，而非播放的開始。 此 API 用來載入資料/中繼資料，以及估計開始 QoS 量度所需的時間 (`trackSessionStart` 與 `trackPlay` 之間的時間)。
 
    >[!NOTE]
    >
@@ -135,7 +149,7 @@ ht-degree: 100%
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` 會標記追蹤工作階段的結尾。如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。在 `trackSessionEnd` 之後會忽略任何其他 `track*` API 呼叫 (除了新追蹤工作階段的 `trackSessionStart`)。
+   >`trackSessionEnd` 會標記追蹤工作階段的結尾。 如果成功觀看工作階段至完成 (使用者觀看了內容至結尾)，請確定在 `trackComplete` 之前呼叫 `trackSessionEnd`。 在 `trackSessionEnd` 之後會忽略任何其他 `track*` API 呼叫 (除了新追蹤工作階段的 `trackSessionStart`)。
 
 1. **追蹤所有可能的暫停情況**
 
@@ -147,12 +161,12 @@ ht-degree: 100%
 
    **暫停情況**
 
-   識別媒體播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。以下情形都要求應用程式呼叫 `trackPause()`：
+   識別媒體播放器將暫停的任何案例，並確定正確呼叫 `trackPause`。 以下情形都要求應用程式呼叫 `trackPause()`：
 
    * 使用者明確在應用程式中點擊暫停。
    * 播放器自行進入「暫停」狀態。
    * (*行動應用程式*) - 使用者讓應用程式進入背景，但您希望應用程式保持工作階段開啟。
-   * (*行動應用程式*) - 發生任何類型的系統中斷，導致應用程式進入背景。例如，使用者接聽電話、或發生來自另一個應用程式的彈出視窗，但您希望應用程式維持工作階段進行中，讓使用者能夠從中斷點復原媒體。
+   * (*行動應用程式*) - 發生任何類型的系統中斷，導致應用程式進入背景。 例如，使用者接聽電話、或發生來自另一個應用程式的彈出視窗，但您希望應用程式維持工作階段進行中，讓使用者能夠從中斷點復原媒體。
 
 1. 識別來自播放器的播放和/或來自暫停的恢復事件，並呼叫 `trackPlay`：
 
@@ -162,7 +176,7 @@ ht-degree: 100%
 
    >[!TIP]
    >
-   >這可能與在步驟 4 使用的事件來源相同。確保播放恢復時，每個 `trackPause()` API 呼叫都與下列 `trackPlay()` API 呼叫成對。
+   >這可能與在步驟 4 使用的事件來源相同。 確保播放恢復時，每個 `trackPause()` API 呼叫都與下列 `trackPlay()` API 呼叫成對。
 
 * 追蹤案例：[沒有廣告的 VOD 播放](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
 * 完整追蹤範例的含 JavaScript SDK 範例播放器。

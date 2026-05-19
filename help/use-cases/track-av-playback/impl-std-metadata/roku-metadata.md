@@ -5,16 +5,29 @@ uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/nWQiQkx66U5JL19U4yV8o4dvm0nLivpyKq29uNlIXTc
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: 472
 ht-degree: 79%
 
 ---
 
 # Roku 中繼資料索引鍵{#roku-metadata-keys}
 
-標準視訊、音訊和廣告中繼資料可分別在媒體和廣告資訊物件上設定。使用視訊/廣告中繼資料的常數索引鍵，在呼叫追蹤API之前設定包含資訊物件上標準中繼資料的字典。 如需標準中繼資料常數的完整清單，請參閱下表，後面是範例。
+標準視訊、音訊和廣告中繼資料可分別在媒體和廣告資訊物件上設定。 使用視訊/廣告中繼資料的常數索引鍵，在呼叫追蹤API之前設定包含資訊物件上標準中繼資料的字典。 如需標準中繼資料常數的完整清單，請參閱下表，後面是範例。
 
 ## 視訊中繼資料常數 {#video-metadata-constants}
 
@@ -43,7 +56,7 @@ ht-degree: 79%
 | 中繼資料名稱 | 內容資料索引鍵 | 常數名稱 |
 | --- | --- | --- |
 | 藝人 | `a.media.artist` | `MEDIA_AudioMetadataKeyARTIST` |
-| 專輯 | `a.media.album` | `MEDIA_AudioMetadataKeyALBUM` |
+| 相簿 | `a.media.album` | `MEDIA_AudioMetadataKeyALBUM` |
 | 標籤 | `a.media.label` | `MEDIA_AudioMetadataKeyLABEL` |
 | 作者 | `a.media.author` | `MEDIA_AudioMetadataKeyAUTHOR` |
 | 電台 | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
@@ -66,28 +79,28 @@ ht-degree: 79%
 
 ### 其他常數
 
-| 常數 | 說明 |
+| 常數 | 說明   |
 |---|---|
 | `ERROR_SOURCE_PLAYER` | 錯誤來源的常數為播放器 |
 
 ### MediaObjectkey 常數 (用於作為 MediaObject 例項內的索引鍵)
 
-| 常數 | 說明 |
+| 常數 | 說明   |
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | 可在 `MediaInfo` `trackLoad` 上設定中繼資料的常數 |
 | `MEDIA_STANDARD_AD_METADATA` | 可在 `EventData` `trackEvent` 上設定廣告中繼資料的常數 |
-| `MEDIA_RESUMED` | 傳送影片繼續心率的常數。如要延續先前暫停內容繼續影片追蹤，您必須在您呼叫 `MEDIA_RESUMED` 時設定在 `mediaInfo` 物件上的 `mediaTrackLoad` 屬性。（`MEDIA_RESUMED`不是您可以使用`mediaTrackEvent` API追蹤的事件。）當應用程式想要繼續追蹤使用者停止觀看但現在打算繼續觀看的內容時，`MEDIA_RESUMED`應設為true。 <br/><br/> 例如，假設使用者觀看了 30% 的內容，然後關閉該應用程式。這會導致作業結束。稍後，如果同一位使用者返回觀看同一個內容，而應用程式允許使用者從中斷的地方繼續，則應用程式應將 `MEDIA_RESUMED` 設定為「true」，同時呼叫 `mediaTrackLoad` API。結果是針對相同影片內容的這兩個不同媒體工作階段可以連結在一起。以下為實作範例： <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>這將會為該影片建立一個新的工作階段，但也會導致 SDK 傳送含有「繼續」事件類型的心率要求，其可用於報表，以將兩個不同的媒體工作階段繫結在一起。 |
+| `MEDIA_RESUMED` | 傳送影片繼續心率的常數。 如要延續先前暫停內容繼續影片追蹤，您必須在您呼叫 `MEDIA_RESUMED` 時設定在 `mediaInfo` 物件上的 `mediaTrackLoad` 屬性。 （`MEDIA_RESUMED`不是可以使用`mediaTrackEvent` API追蹤的事件。） 當應用程式想要繼續追蹤使用者停止觀看但現在打算繼續觀看的內容時，`MEDIA_RESUMED`應設為true。 <br/><br/> 例如，假設使用者觀看了 30% 的內容，然後關閉該應用程式。 這會導致作業結束。 稍後，如果同一位使用者返回觀看同一個內容，而應用程式允許使用者從中斷的地方繼續，則應用程式應將 `MEDIA_RESUMED` 設定為「true」，同時呼叫 `mediaTrackLoad` API。 結果是針對相同影片內容的這兩個不同媒體工作階段可以連結在一起。 以下為實作範例： <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)`<br/><br/>這將會為該影片建立一個新的工作階段，但也會導致 SDK 傳送含有「繼續」事件類型的心率要求，其可用於報表，以將兩個不同的媒體工作階段繫結在一起。 |
 
 ### 內容類型常數
 
-| 常數 | 說明 |
+| 常數 | 說明   |
 |---|---|
 | `MEDIA_STREAM_TYPE_LIVE` | LIVE 資料流類型常數 |
 | `MEDIA_STREAM_TYPE_VOD` | VOD 資料流類型的常數 |
 
 ### 事件類型常數 (用於 trackEvent 呼叫)
 
-| 常數 | 說明 |
+| 常數 | 說明   |
 |---|---|
 | `MEDIA_BUFFER_START` | 緩衝區開始的事件類型 |
 | `MEDIA_BUFFER_COMPLETE` | 緩衝區完成的事件類型 |

@@ -5,9 +5,26 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/oOshJZEQmXqgNh5l10-qhLMO8dmph6Tz9mpH0a4FePU
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: 590
 ht-degree: 98%
 
 ---
@@ -21,13 +38,13 @@ ht-degree: 98%
 | 觸發 | 心率方法 | 網路呼叫 | 附註   |
 |---|---|---|---|
 | 使用者點按&#x200B;**[!UICONTROL 「播放」]** | `trackSessionStart` | Analytics 內容開始、心率內容開始 | 可能是使用者點按&#x200B;**[!UICONTROL 播放]**&#x200B;或自動播放事件。 |
-| 媒體播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。只要繼續播放，便會每 10 秒傳送心率。 |
+| 媒體播放的第一個時間格。 | `trackPlay` | 心率內容播放 | 此方法會觸發計時器。 只要繼續播放，便會每 10 秒傳送心率。 |
 | 內容播放。 |  | 內容心率 |  |
-| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。即使使用者未持續使用到媒體完成，仍必須呼叫此 API。 |
+| 工作階段已結束。 | `trackSessionEnd` |  | `SessionEnd` 表示檢視工作階段的結尾。 即使使用者未持續使用到媒體完成，仍必須呼叫此 API。 |
 
 ## 參數 {#parameters}
 
-您在 Adobe Analytics 內容開始呼叫上看到的許多相同值，也會在 Heartbeat 內容開始呼叫上看到。您也將看到 Adobe 用來在 Adobe Analytics 中填入各種「媒體」報表的許多其他參數。我們不會在此說明所有內容，只會說明真正重要的那些內容。
+您在 Adobe Analytics 內容開始呼叫上看到的許多相同值，也會在 Heartbeat 內容開始呼叫上看到。 您也將看到 Adobe 用來在 Adobe Analytics 中填入各種「媒體」報表的許多其他參數。 我們不會在此說明所有內容，只會說明真正重要的那些內容。
 
 ### 心率內容開始
 
@@ -44,7 +61,7 @@ ht-degree: 98%
 
 ## 內容心率 {#content-heartbeats}
 
-在媒體播放期間，對於主要內容，計時器將每隔 10 秒傳送一或多個心率 (或 Ping)；對於廣告，則為每秒。這些心率將包含播放、廣告、緩衝和其他部分項目的相關資訊。每個心率的確切內容不在本文件的討論範圍，這裡要確認的重點在於，繼續播放能否會一致觸發心率。
+在媒體播放期間，對於主要內容，計時器將每隔 10 秒傳送一或多個心率 (或 Ping)；對於廣告，則為每秒。 這些心率將包含播放、廣告、緩衝和其他部分項目的相關資訊。 每個心率的確切內容不在本文件的討論範圍，這裡要確認的重點在於，繼續播放能否會一致觸發心率。
 
 在內容心率中，尋找幾個特定項目：
 
@@ -63,13 +80,13 @@ ht-degree: 98%
 
 ### 開始時
 
-對於直播媒體，當用戶開始播放串流時，您需要將 `l:event:playhead` 設定為自當天 UTC 午夜開始的秒數。與此相對的是，在 VOD 中，您會將播放點設為「0」。注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。
+對於直播媒體，當用戶開始播放串流時，您需要將 `l:event:playhead` 設定為自當天 UTC 午夜開始的秒數。 與此相對的是，在 VOD 中，您會將播放點設為「0」。 注意：使用進度標記時，需要內容持續時間，並且播放點需要更新為從媒體項目開始的秒數，從 0 開始。
 
-例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。接著，假設使用者於12:00pm開始播放該「即時」資料流。 在這種情況下，您應將 `l:event:playhead` 設定為 43200 (自當天 UTC 午夜起 12 小時，以秒為單位）。
+例如，假設「即時」資料流事件在午夜開始並持續執行 24 小時 (`a.media.length=86400`; `l:asset:length=86400`)。 接著，假設使用者於12:00pm開始播放該「即時」資料流。 在這種情況下，您應將 `l:event:playhead` 設定為 43200 (自當天 UTC 午夜起 12 小時，以秒為單位）。
 
 ### 暫停時
 
-使用者暫停播放時，必須套用開始播放時所套用的同一個「即時播放點」邏輯。當使用者繼續播放即時資料流時，您必須根據自 UTC 午夜以來的新秒數來設定 `l:event:playhead` 值，而&#x200B;_不是_&#x200B;設為使用者暫停即時資料流的時間點。
+使用者暫停播放時，必須套用開始播放時所套用的同一個「即時播放點」邏輯。 當使用者繼續播放即時資料流時，您必須根據自 UTC 午夜以來的新秒數來設定 `l:event:playhead` 值，而&#x200B;_不是_&#x200B;設為使用者暫停即時資料流的時間點。
 
 ## 程式碼範例 {#sample-code}
 

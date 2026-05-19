@@ -5,9 +5,26 @@ uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/98Oa98xntOkB9Fe3NQ30FUdvVk0JNKJMyzjgSTvncdI
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: 616
 ht-degree: 78%
 
 ---
@@ -18,7 +35,7 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 開始呼叫 {#aa-start-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
@@ -37,7 +54,7 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 開始呼叫中的標準中繼資料 {#std-metadata-aa}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -56,14 +73,14 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 開始呼叫中的自訂中繼資料 {#custom-metadata-aa}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
 ### Media Analytics (心率) 開始呼叫 {#ma-start-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:event:type` | start |
 | _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**0**&#x200B;_ |
@@ -83,7 +100,7 @@ ht-degree: 78%
 
 ### Media Analytics (心率) 開始呼叫中的標準中繼資料 {#std-metadata-ma}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:a.media.show` | 節目 |
 | `s:meta:a.media.season` | 6 |
@@ -102,14 +119,14 @@ ht-degree: 78%
 
 ### Media Analytics (心率) 開始呼叫中的自訂中繼資料 {#custom-metadata-ma}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
 ### Media Analytics (心率) Adobe Analytics 開始呼叫 {#ma-aa-start}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_start**&#x200B;_ |
 | `l:event:playhead` | 0 |
@@ -129,7 +146,7 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫 {#aa-ad-start-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | _&#x200B;**`pev2`**&#x200B;_ | _&#x200B;**msa_s**&#x200B;_ |
 | `a.media.name` | 123456 |
@@ -152,7 +169,7 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的標準中繼資料 {#std-metadata-aa-ad-start}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -171,14 +188,14 @@ ht-degree: 78%
 
 ### Adobe Analytics (AppMeasurement) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-aa-ad-start}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
 ### Media Analytics (心率) 廣告開始呼叫 {#ma-ad-start-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**start**&#x200B;_ |
 | `l:event:playhead` | 0 |
@@ -197,7 +214,7 @@ ht-degree: 78%
 
 ### Media Analytics (心率) 廣告開始呼叫中的標準中繼資料 {#std-metadata-ma-ad-start}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:a.media.show` | 節目 |
 | `s:meta:a.media.season` | 6 |
@@ -216,14 +233,14 @@ ht-degree: 78%
 
 ### Media Analytics (心率) 廣告開始呼叫中的自訂中繼資料 {#custom-metadata-ma-ad-start}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
 ### Media Analytics (心率) Adobe Analytics 廣告開始呼叫 {#ma-aa-ad-start-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**aa_ad_start**&#x200B;_ |
 | `l:event:playhead` | 0 |
@@ -235,7 +252,7 @@ ht-degree: 78%
 
 ### Media Analytics (心率) 廣告播放呼叫 {#ma-ad-play-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**play**&#x200B;_ |
 | `l:event:playhead` | 15 |
@@ -247,7 +264,7 @@ ht-degree: 78%
 
 ### Media Analytics (心率) 廣告暫停呼叫 {#ma-ad-pause-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pause**&#x200B;_ |
 | `l:event:playhead` | 15 |
@@ -259,7 +276,7 @@ ht-degree: 78%
 
 ### Media Analytics (心率) Adobe Analytics 廣告完成呼叫 {#ma-aa-ad-complete-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**complete**&#x200B;_ |
 | `l:event:playhead` | 15 |
@@ -273,7 +290,7 @@ ht-degree: 78%
 
 ### Media Analytics (心率) 播放呼叫 {#ma-play-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | `s:event:type` | play |
 | _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |
@@ -293,7 +310,7 @@ ht-degree: 78%
 
 ### Media Analytics (心率) 暫停呼叫 {#ma-pause-call}
 
-| 參數 |  值 (範例) |
+| 參數 |  值 (範例)  |
 |---|---|
 | _&#x200B;**`s:event:type`**&#x200B;_ | _&#x200B;**pause**&#x200B;_ |
 | _&#x200B;**`l:event:playhead`**&#x200B;_ | _&#x200B;**29**&#x200B;_ |

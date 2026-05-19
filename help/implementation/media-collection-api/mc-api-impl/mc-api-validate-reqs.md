@@ -5,9 +5,22 @@ uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/dJKiHSFFHaoCvHZQUgPJFZagzcM3tZdhji3DuYJZiMs
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: 121
 ht-degree: 72%
 
 ---
@@ -16,7 +29,7 @@ ht-degree: 72%
 
 每個事件型別的JSON要求內文，都會在後端透過JSON結構描述進行驗證。 當API呼叫的驗證失敗時，HTTP回應內文會填入錯誤訊息。
 
-每種事件類型的 JSON 驗證結構均可公開存取，請前往：`{uri}/api/v1/schemas/{eventType}` (例如 `{uri}/api/v1/schemas/sessionEnd`)。JSON 驗證結構是判斷每種事件類型之正確要求內容參數的絕對可信來源。
+每種事件類型的 JSON 驗證結構均可公開存取，請前往：`{uri}/api/v1/schemas/{eventType}` (例如 `{uri}/api/v1/schemas/sessionEnd`)。 JSON 驗證結構是判斷每種事件類型之正確要求內容參數的絕對可信來源。
 
 例如，`sessionStart` 驗證結構之要求的回應將與以下範例相似 (稍微調整格式以利閱讀)：
 

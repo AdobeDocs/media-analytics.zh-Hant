@@ -4,9 +4,19 @@ description: 瞭解Adobe串流媒體服務支援的主要裝置，例如iOS、An
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
+TQID: https://experienceleague.adobe.com/O3mOUZAV8D1yI3kylOt86o4vgE9mtj6-4wPcYVHqCz8
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: 308
 ht-degree: 75%
 
 ---
@@ -21,13 +31,13 @@ Adobe串流媒體服務支援所有主要裝置，包括：
 
 SDK 會因應裝置發佈新版本而定時更新，讓您能將 SDK 與各個平台的原生播放器或任何其他可用的媒體播放器整合。
 
-若是裝置目前尚未支援 SDK，或您可能需要自訂實施的情況下，您可以使用 Media Collection API 或 Media Edge API。這些API可讓您直接從裝置對Adobe串流媒體服務的後端進行RESTful API呼叫。
+若是裝置目前尚未支援 SDK，或您可能需要自訂實施的情況下，您可以使用 Media Collection API 或 Media Edge API。 這些API可讓您直接從裝置對Adobe串流媒體服務的後端進行RESTful API呼叫。
 
-目前支援的裝置如下表所示。若裝置不在清單中，請聯絡您的客戶服務人員或解決方案顧問，以瞭解該裝置的狀態。
+目前支援的裝置如下表所示。 若裝置不在清單中，請聯絡您的客戶服務人員或解決方案顧問，以瞭解該裝置的狀態。
 
 如需在Edge上實作媒體的詳細資訊，請參閱[使用Experience Platform Edge安裝串流媒體集合](/help/implementation/edge/implementation-edge.md)。
 
-| 串流平台和裝置 |  |  Media for Edge Network SDK/擴充功能 | Media Edge API | 含標記的 Media 擴充功能或 AEP Mobile SDK | Media SDK | Media Collection API |
+| 串流平台和裝置 |  | Media for Edge Network SDK/擴充功能 | Media Edge API | 含標記的 Media 擴充功能或 AEP Mobile SDK | Media SDK | Media Collection API |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | 網頁/行動網頁 | | | | | | |
 | | JavaScript 瀏覽器 | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) |
