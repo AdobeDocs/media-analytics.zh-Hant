@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**開始時間**變數的資料集合。 如需對應的報表維度和量度，請參閱[開始時間](/help/reporting/dimensions/time-to-start.md)。*
+*本頁涵蓋&#x200B;**開始時間**&#x200B;變數的資料集合。 如需對應的報表維度和量度，請參閱[開始時間](/help/reporting/dimensions/time-to-start.md)。*
 
 >[!ENDSHADEBOX]
 

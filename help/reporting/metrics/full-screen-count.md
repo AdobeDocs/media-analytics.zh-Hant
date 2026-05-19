@@ -15,11 +15,11 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**全熒幕計數**報告量度。 請參閱[全熒幕](/help/implementation/variables/player-state/full-screen.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**全熒幕計數**&#x200B;報告量度。 請參閱[全熒幕](/help/implementation/variables/player-state/full-screen.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
-**全熒幕計數**&#x200B;量度會報告檢視者在工作階段期間進入全熒幕的次數。 每個全熒幕狀態開始事件都會增加計數。 與受全熒幕影響的[串流](full-screen-streams-impacted.md)配對，以進行工作階段層級的布林值統計；與全熒幕總持續時間](full-screen-total-duration.md)配對，以進行狀態總時間。[
+**全熒幕計數**&#x200B;量度會報告檢視者在工作階段期間進入全熒幕的次數。 每個全熒幕狀態開始事件都會增加計數。 與受全熒幕影響的[串流](full-screen-streams-impacted.md)配對，以進行工作階段層級的布林值統計；與全熒幕總持續時間[&#128279;](full-screen-total-duration.md)配對，以進行狀態總時間。
 
 ## 此量度的計算方式
 
