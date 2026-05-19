@@ -1,22 +1,21 @@
 ---
-source-git-commit: c06ecd16f417c9584fb87181074d1c2bee487e0b
+title: 計算量度
+description: Adobe Analytics和Customer Journey Analytics中串流媒體報表的自訂計算量度。
+feature: Metrics
+role: User, Admin
+source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-﻿---
-title: 計算量度
-description: Adobe Analytics和Customer Journey Analytics中串流媒體報表的自訂計算量度。
-feature: Metrics
-role: User, Admin
----
+
 
 # 計算量度
 
 Adobe串流媒體服務的計算量度是根據標準串流媒體量度建置的自訂量度，可讓您在不變更實施的情況下衍生出平均廣告逗留時間或媒體完成率等比率。
 
-若要在Analysis Workspace中建立這些計算量度，請在[Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics/components/calculated-metrics/cm-overview)或[Customer Journey Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)中檢視個別計算量度概觀。
+若要在Analysis Workspace中建立這些計算量度，請在[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview)或[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)中檢視個別計算量度概觀。
 
 | 計算量度 | 說明 | 公式 |
 | --- | --- | --- |
