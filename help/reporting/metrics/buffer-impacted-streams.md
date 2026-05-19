@@ -3,9 +3,9 @@ title: 緩衝影響的資料流
 description: 計算播放器至少一次進入緩衝狀態的工作階段。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 10%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 10%
 
 ## 此量度的計算方式
 
-在工作階段期間第一次收到[緩衝開始](/help/implementation/events/playback/buffer-start.md)事件時，媒體後端會設定`mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true`。 量度會在關閉呼叫時回報。
+媒體後端會在工作階段期間第一次收到[緩衝開始](/help/implementation/events/playback/buffer-start.md)事件時設定此旗標。 量度會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.qoe.buffer`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasBufferImpactedStreams`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/zh-hant/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasBufferImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
 | Audience Manager | `c_contextdata.a.media.qoe.buffer` |

@@ -6,24 +6,15 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 77%
+source-wordcount: 641
+ht-degree: 58%
 
 ---
 
@@ -110,7 +101,7 @@ ht-degree: 77%
 
 1. 在 `MediaHeartbeat` 例項中使用 `AdStart` 事件呼叫 `trackEvent()` 以開始追蹤廣告播放。
 
-   將參考加入您的自訂中繼資料變數 (或空白物件)，作為事件呼叫中的第三個參數。
+   將參考加入您的自訂中繼資料變數 (或空白物件)，作為事件呼叫中的第三個參數。 當廣告播放時，將內容播放點(`l:event:playhead`)固定在廣告插播開始的位置；在廣告播放期間推進會誇大[內容逗留時間](/help/reporting/metrics/content-time-spent.md)。
 
 1. 當廣告播放達到廣告結尾時，請使用 `AdComplete` 事件呼叫 `trackEvent()`。
 
@@ -120,7 +111,11 @@ ht-degree: 77%
 
 >[!IMPORTANT]
 >
->請勿在廣告播放期間 (`s:asset:type=ad`) 增加內容播放器播放點 (`l:event:playhead`)。 若這麼做，會對「內容逗留時間」量度產生不利的影響。
+>**前段廣告：請勿在`AdBreakStart`和`AdStart`之前呼叫`trackPlay`。** 主要內容增量[內容開始](/help/reporting/metrics/content-starts.md)上的前`play`個Ping。 如果在前段廣告事件引發之前呼叫`trackPlay`，且檢視者在廣告期間退出，則即使未播放任何主要內容，內容開始次數也會增加。 對於前段案例，延遲`trackPlay`直到傳送`AdBreakStart`和`AdStart`之後。
+
+>[!NOTE]
+>
+>廣告播放期間報告的播放點值代表檢視者在&#x200B;**主要內容**&#x200B;中的位置，而非廣告中的位置。 對於10分鐘視訊之前的前段廣告，整個廣告的播放點都是`0`。 對於以5分鐘標籤開始的中段廣告，播放點在廣告期間維持在`300` （秒）。
 
 以下程式碼範例將 JavaScript 2.x SDK 用於 HTML5 媒體播放器。
 

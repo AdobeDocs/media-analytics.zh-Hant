@@ -6,18 +6,13 @@ exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/BlL-c1rf5d3juDKHybex9vrPvQsBIiNXVO2ug9LKl0g
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 358
-ht-degree: 55%
+source-wordcount: 473
+ht-degree: 41%
 
 ---
 
@@ -45,3 +40,11 @@ ht-degree: 55%
 * _重新啟動相同工作階段怎麼樣？_
 
   如需有關繼續追蹤工作階段的資訊，請參閱[繼續非作用中工作階段](resuming-inactive.md)。SDK會傳送恢復Ping來通知後端，告知它使用者正在手動恢復工作階段。
+
+* _如果針對相同工作階段呼叫`trackSessionEnd`兩次，會發生什麼情況？_
+
+  為相同工作階段多次呼叫`trackSessionEnd`是安全的。 後端會關閉第一個事件的工作階段，並自動捨棄該工作階段ID的所有後續事件，包括第二個`trackSessionEnd`。 這表示競爭條件（例如觀看者關閉播放器的同時觸發30分鐘非使用狀態逾時）不會產生重複資料。
+
+* _如果工作階段處於作用中狀態時呼叫`trackSessionStart`，會發生什麼情況？_
+
+  如果工作階段尚未關閉，SDK會忽略第二個`trackSessionStart`呼叫。 如果您需要啟動新的工作階段，請先呼叫`trackSessionEnd`以明確關閉目前的工作階段，然後呼叫新工作階段的`trackSessionStart`。

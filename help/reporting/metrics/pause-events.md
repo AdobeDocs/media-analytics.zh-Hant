@@ -3,10 +3,10 @@ title: 暫停事件
 description: 計算工作階段期間發生的每個不同暫停次數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '135'
-ht-degree: 12%
+source-wordcount: '170'
+ht-degree: 10%
 
 ---
 
@@ -17,11 +17,11 @@ ht-degree: 12%
 
 ## 此量度的計算方式
 
-媒體後端在每個[暫停開始](/help/implementation/events/playback/pause-start.md)事件時遞增`mediaReporting.sessionDetails.pauseCount`。 量度會在關閉呼叫時回報。
+媒體後端會在每[個暫停開始](/help/implementation/events/playback/pause-start.md)事件時增加此計數。 單一連續暫停會產生一個增量，無論其持續時間為何。 在播放器保持暫停狀態時傳送的心率[Ping](/help/implementation/events/playback/ping.md)全都屬於相同的暫停期間，不會再次增加計數。 量度會在關閉呼叫時回報。
 
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體核心]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.pauseCount`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.pauseCount`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/zh-hant/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.pauseCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
 | Audience Manager | 不適用 |

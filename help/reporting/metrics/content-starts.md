@@ -3,9 +3,9 @@ title: 內容開始
 description: 計算主要內容實際開始播放的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 10%
 
 ## 此量度的計算方式
 
-媒體後端在第一次收到主要內容的[播放](/help/implementation/events/playback/play.md)事件時設定`mediaReporting.sessionDetails.isPlayed = true`。 量度會在該播放事件上觸發，但在關閉呼叫上報告。 若要計算前段下拉率，請使用`(Media starts − Content starts) / Media starts`。
+媒體後端在第一次收到主要內容的[播放](/help/implementation/events/playback/play.md)事件時設定此旗標。 量度會在該播放事件上觸發，但在關閉呼叫上報告。 若要計算前段下拉率，請使用`(Media starts − Content starts) / Media starts`。
 
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體核心]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.play`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isPlayed`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/zh-hant/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isPlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
 | Audience Manager | `c_contextdata.a.media.play` |
