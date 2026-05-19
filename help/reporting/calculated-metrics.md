@@ -15,7 +15,7 @@ ht-degree: 5%
 
 Adobe串流媒體服務的計算量度是根據標準串流媒體量度建置的自訂量度，可讓您在不變更實施的情況下衍生出平均廣告逗留時間或媒體完成率等比率。
 
-若要在Analysis Workspace中建立這些計算量度，請在[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview)或[Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)中檢視個別計算量度概觀。
+若要在Analysis Workspace中建立這些計算量度，請在[Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics/components/calculated-metrics/cm-overview)或[Customer Journey Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview)中檢視個別計算量度概觀。
 
 | 計算量度 | 說明 | 公式 |
 | --- | --- | --- |
