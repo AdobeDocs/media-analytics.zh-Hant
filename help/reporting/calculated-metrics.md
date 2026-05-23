@@ -3,13 +3,12 @@ title: 計算量度
 description: Adobe Analytics和Customer Journey Analytics中串流媒體報表的自訂計算量度。
 feature: Metrics
 role: User, Admin
-source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
+source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
-
 
 # 計算量度
 
@@ -34,3 +33,4 @@ Adobe串流媒體服務的計算量度是根據標準串流媒體量度建置的
 | 內容緩衝期間率 | 總緩衝期間與內容逗留時間的比率 | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | 內容開始時間率 | 開始時間與內容逗留時間的比率 | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | 廣告逗留時間率 | 廣告逗留時間與內容逗留時間的比率 | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+
