@@ -3,10 +3,10 @@ title: 廣告插播完成
 description: 表示廣告插播中的所有廣告都已完成。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '139'
-ht-degree: 16%
+source-wordcount: '156'
+ht-degree: 9%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 16%
 >
 >每個`adBreakStart`必須有相符的`adBreakComplete`。 如果沒有結尾書擋，廣告事件會遭忽略，且廣告持續時間會歸因於主要內容。
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 與`eventType: "media.adBreakComplete"`通話[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 使用`AdBreakComplete`事件型別呼叫`trackEvent`。
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackEvent(event: MediaEvent.AdBreakComplete, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+使用`AdBreakComplete`事件型別呼叫`trackEvent`。
 
 ```kotlin
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 與`eventType: "media.adBreakComplete"`通話`sendMediaEvent`：
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 呼叫[adBreakComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakcomplete)端點：
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakComplete?configId={datast
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 使用`AdBreakComplete`事件型別呼叫`trackEvent`：
 
@@ -98,7 +108,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakComplete?configId={datast
 tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+使用`AdBreakComplete`事件型別呼叫`trackEvent`：
+
+```javascript
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB 媒體收集API]
 
 傳送`adBreakComplete`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
 
@@ -108,3 +126,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
   "eventType": "adBreakComplete"
 }
 ```
+
+>[!ENDTABS]

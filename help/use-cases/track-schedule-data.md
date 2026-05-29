@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 5%
 
 若要上傳過去直播內容的排程資料，您的串流媒體環境必須符合以下先決條件：
 
-* 必須啟用串流媒體收集來追蹤您要上傳排程資料的內容，如[追蹤總覽](/help/use-cases/track-av-playback/track-core-overview.md)中所述。<!--specifics??? -->
+* 必須啟用串流媒體收集來追蹤您要上傳排程資料的內容，如[追蹤總覽](/help/implementation/events/session/overview.md)中所述。<!--specifics??? -->
 
 * 搭配Customer Journey Analytics使用串流媒體收集。 Adobe Analytics不提供上傳排程資料的功能。
 
@@ -317,9 +317,9 @@ ht-degree: 5%
 
    考量下列您可以在Customer Journey Analytics中建立並報告的維度範例：
 
-   * **[「_集名稱_」](/help/reporting/dimensions/episode.md)**：此維度可協助您瞭解特定系列中的哪些集數表現最佳。
+   * **[[!UICONTROL 劇集]](/help/reporting/dimensions/episode.md)**：此維度可協助您瞭解特定系列中的哪些劇集表現最佳。
 
-   * **[資產ID](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL 資產ID]](/help/reporting/dimensions/asset-id.md)**
 
 1. 繼續[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析資料。
 

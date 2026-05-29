@@ -3,7 +3,7 @@ title: 自訂中繼資料支援 — XDM格式
 description: 瞭解如何使用Experience Edge XDM格式傳送包含媒體追蹤事件的自訂中繼資料。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 5%
@@ -310,7 +310,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 &lt;InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata`是用來傳送包含事件的自訂中繼資料的&#x200B;**傳入API路徑**。 處理之後，資料會以內容資料變數的形式轉送至Adobe Analytics，並儲存在`mediaReporting.customMetadata`下的Adobe Experience Platform中，以最上層平面化的欄位形式儲存。
+`xdm.mediaCollection.customMetadata`是用來傳送包含事件的自訂中繼資料的&#x200B;**傳入API路徑**。 處理之後，資料會以內容資料變數的形式轉送至Adobe Analytics，並儲存在`xdm.mediaReporting.customMetadata`下的Adobe Experience Platform中，以最上層平面化的欄位形式儲存。
 
 **Adobe Analytics:**
 
@@ -323,7 +323,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 - 自訂中繼資料欄位必須定義為XDM結構描述中的自訂欄位（例如`_mycompany`），並且可以在AEP中以平面化的欄位形式儲存和查詢
 
   ![XDM結構描述中的自訂欄位定義](assets/custom_metadata.png)
-- 對於報表和查詢，自訂中繼資料可在`mediaReporting.customMetadata`下取得，也可作為頂層平面化欄位。 使用最適合您使用案例的專案。
+- 對於報表和查詢，自訂中繼資料可在`xdm.mediaReporting.customMetadata`下取得，也可作為頂層平面化欄位。 使用最適合您使用案例的專案。
 - 區段、Journey Orchestration和Real-Time CDP啟用都可存取
 
 ## 行為

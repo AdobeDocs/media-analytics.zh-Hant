@@ -3,10 +3,10 @@ title: 工作階段完成
 description: 表示檢視器已到達主要內容的結尾。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 16%
+source-wordcount: '165'
+ht-degree: 9%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 16%
 工作階段完成事件代表檢視器已到達主要內容的結尾。 它不會立即關閉工作階段；工作階段會保持開啟狀態，直到它自然過期為止。 如果要立即關閉工作階段，請改為呼叫[工作階段結束](session-end.md)。
 
 * **必要條件**： [工作階段開始](session-start.md)
-* **關聯的量度**： [內容完成](/help/reporting/metrics/content-completes.md)
+* **關聯的量度**： [[!UICONTROL 內容完成]](/help/reporting/metrics/content-completes.md)
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 與`eventType: "media.sessionComplete"`通話[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 當媒體播放器到達內容結尾時，呼叫`trackComplete`。
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackComplete()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+當媒體播放器到達內容結尾時，呼叫`trackComplete`。
 
 ```kotlin
 tracker.trackComplete()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 與`eventType: "media.sessionComplete"`通話`sendMediaEvent`：
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 呼叫[sessionComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessioncomplete)端點：
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionComplete?configId={datast
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 當媒體播放器到達內容結尾時，呼叫`trackComplete`：
 
@@ -94,7 +104,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionComplete?configId={datast
 tracker.trackComplete();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+當媒體播放器到達內容結尾時，呼叫`trackComplete`：
+
+```javascript
+ADBMobile.media.trackComplete();
+```
+
+>[!TAB 媒體收集API]
 
 傳送`sessionComplete`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
 
@@ -104,3 +122,5 @@ tracker.trackComplete();
   "eventType": "sessionComplete"
 }
 ```
+
+>[!ENDTABS]

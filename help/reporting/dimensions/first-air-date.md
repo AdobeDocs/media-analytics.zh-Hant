@@ -3,7 +3,7 @@ title: 首播日期
 description: 報告內容在電視上的首播日期。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 | --- | --- |
 | Adobe Analytics （處理規則） | 建立將`a.media.airDate`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics （分類） | [內容（識別碼）](content.md)維度的分類 — 為報表套裝啟用&#x200B;**[[!UICONTROL 視訊中繼資料]](/help/reporting/media-reports-enable.md)**&#x200B;時，Adobe會自動建立此分類。 您需負責填入及維護分類值。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.firstAirDate`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料摘要（處理規則） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.airDate`對應至的eVar） |
 | 資料摘要（分類） | 不適用 — 資料摘要不支援分類。 |
 | Audience Manager | `c_contextdata.a.media.airDate` |

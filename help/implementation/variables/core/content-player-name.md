@@ -3,10 +3,10 @@ title: 內容播放器名稱
 description: 設定播放器名稱以識別轉譯了內容的播放器。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 11%
+source-wordcount: '264'
+ht-degree: 6%
 
 ---
 
@@ -24,14 +24,18 @@ ht-degree: 11%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.playerName` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.playerName` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
 
-## Web SDK
+## 建議的實作型別
 
-呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`mediaCollection.sessionDetails`內設定`playerName`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`xdm.mediaCollection.sessionDetails`內設定`playerName`：
 
 ```javascript
 alloy("sendEvent", {
@@ -52,11 +56,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 使用`MediaConstants.TrackerConfig.PLAYER_NAME`建立追蹤器時，透過追蹤器設定設定播放器名稱。 播放器名稱不是媒體物件的一部分。
-
-**iOS (Swift)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -68,7 +70,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+使用`MediaConstants.TrackerConfig.PLAYER_NAME`建立追蹤器時，透過追蹤器設定設定播放器名稱。 播放器名稱不是媒體物件的一部分。
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -78,9 +82,9 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-呼叫`createMediaSession`時在`mediaCollection.sessionDetails`內設定`playerName`：
+呼叫`createMediaSession`時在`xdm.mediaCollection.sessionDetails`內設定`playerName`：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -101,9 +105,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-呼叫`mediaCollection.sessionDetails`內有`playerName`的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)端點：
+呼叫`xdm.mediaCollection.sessionDetails`內有`playerName`的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)端點：
 
 ```json
 {
@@ -125,7 +129,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 在建立追蹤器之前，先在`ADB.MediaConfig`上設定播放器名稱：
 
@@ -138,7 +148,18 @@ mediaConfig.channel = "Sports";
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+呼叫`trackSessionStart`時傳遞播放器名稱作為標準中繼資料索引鍵：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var metadata = { "a.media.playerName": "Chromecast Player" };
+ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB 媒體收集API]
 
 在`sessionStart` POST要求的`params`物件中包含`media.playerName`：
 
@@ -153,3 +174,5 @@ var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
 如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+
+>[!ENDTABS]

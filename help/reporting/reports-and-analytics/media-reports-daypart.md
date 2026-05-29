@@ -16,13 +16,13 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 45
-ht-degree: 100%
+ht-degree: 53%
 
 ---
 
 # 媒體播出時段{#media-daypart}
 
-「媒體播出時段」儀表板會顯示到當天某個時間之前開始播放內容的次數，好讓您快速檢視您的客群何時參與。 ![](assets/video-daypart-report.png)
+「媒體播出時段」儀表板會依每日時間顯示[[!UICONTROL 內容開始]](/help/reporting/metrics/content-starts.md)，讓您在觀眾參與時快速檢視。 ![](assets/video-daypart-report.png)

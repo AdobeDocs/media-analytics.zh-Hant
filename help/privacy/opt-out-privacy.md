@@ -18,108 +18,208 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
-source-wordcount: 382
-ht-degree: 92%
+source-wordcount: 750
+ht-degree: 4%
 
 ---
 
-# 選擇退出與隱私權{#opt-out-and-privacy}
+# 選擇退出與隱私權
 
-## 選擇退出/選擇加入 {#opt-out-opt-in}
+當使用者選擇退出追蹤時，串流媒體程式庫會立即停止所有資料收集活動。 不會為該使用者傳送工作階段開始呼叫、心率Ping，以及事件追蹤資料至Adobe資料收集伺服器。
 
-您可以控制特定裝置上是否允許追蹤活動。
+## 選擇退出/選擇加入
 
-* **行動應用程式 -** Media 擴充功能遵守 Data Collection 中的隱私權設定。 若選擇退出追蹤，您必須將隱私權設定為[在標記中選擇退出](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property)或[在 Mobile SDK 更新隱私權狀態](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus)。
-* **JavaScript/瀏覽器應用程式 -** VA 資料庫會依照 `VisitorAPI` 隱私權和退出設定。 若要退出追蹤，您需要從訪客 API 服務退出。 如需選擇退出與隱私權的詳細資訊，請參閱[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
-* **OTT 應用程式 (Chromecast、Roku) -** OTT SDK 提供符合一般資料保護規範 (GDPR) 的 API，讓您將資料收集和傳輸的狀態標幟設為 `opt`，並擷取儲存於本機的身分識別資料。
+選擇退出控制項會依裝置或瀏覽器操作。 尊重使用者同意是實作組織的責任。 如需Adobe隱私權實務的概觀，請參閱[Adobe隱私權中心](https://www.adobe.com/tw/privacy.html)。
 
-  >[!NOTE]
-  >
-  >如果隱私權狀態設為退出，也會停用媒體心率追蹤呼叫。
+## 建議的實作型別
 
-  您可以使用以下設定控制是否在特定裝置上傳送 Analytics 資料：
+>[!BEGINTABS]
 
-   * `privacyDefault` 設定檔案中的 `ADBMobile.json` 設定。 這會控制持續使用的初始設定，直到在程式碼中變更為止。
+>[!TAB Web SDK]
 
-   * `ADBMobile().setPrivacyStatus()` 方法。
+Web SDK會遵守使用`setConsent`命令設定的同意偏好設定。 當同意設為`"out"`時，Web SDK會停止轉送所有事件（包括串流媒體追蹤呼叫）至Edge Network。 同意狀態會在工作階段之間持續存在於瀏覽器儲存中。
 
-      * **選擇退出：**
+在實作選擇退出之前，請確定您的網頁SDK已設定串流媒體元件。 如需詳細資訊，請參閱[設定網頁SDK](../implementation/edge/edge-web-sdk.md)。
 
-         * **Chromecast：**
+使用Adobe 2.0同意標準將同意設為選擇退出：
 
-           ```
-           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-           ```
+```javascript
+alloy("setConsent", {
+  consent: [{
+    standard: "Adobe",
+    version: "2.0",
+    value: {
+      collect: { val: "n" }
+    }
+  }]
+});
+```
 
-         * **Roku：**
+同意值：
 
-           ```
-           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-           ```
+* `"y"`：選擇加入（允許資料收集）
+* `"n"`：選擇退出（資料收集已隱藏）
+* `"p"`：擱置中（等待使用者決定；在解析之前不會收集任何資料）
 
-        >[!IMPORTANT]
-        >
-        >當使用者選擇退出追蹤時，應用程式將清除所有保存的裝置資料和 ID，直到使用者重新加入為止。
+若要還原追蹤，請以`"y"`作為`collect.val`值，再次呼叫`setConsent`。
 
-      * **再次加入：**
+如需其他格式，包括IAB TCF 2.0，請參閱Web SDK檔案中的[setConsent命令](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/setconsent)。
 
-         * **Chromecast：**
+>[!TAB iOS]
 
-           ```
-           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-           ```
+Adobe Experience Platform Mobile SDK尊重使用`MobileCore.setPrivacyStatus()`設定的隱私權狀態。 將狀態設定為`.optedOut`會隱藏所有AEP擴充功能（包括串流媒體）的所有資料收集。 狀態會在各應用程式工作階段中持續存在。
 
-         * **Roku：**
+```swift
+MobileCore.setPrivacyStatus(.optedOut)
+```
 
-           ```
-           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-           ```
+若要還原追蹤，請將隱私權狀態設定回`.optedIn`：
 
-      * **傳回目前設定：**
+```swift
+MobileCore.setPrivacyStatus(.optedIn)
+```
 
-         * **Chromecast：**
+如需詳細資訊，請參閱AEP Mobile SDK檔案中的[隱私權與GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)。
 
-           ```
-           ADBMobile.config.getPrivacyStatus()
-           ```
+>[!TAB Android]
 
-         * **Roku：**
+Adobe Experience Platform Mobile SDK尊重使用`MobileCore.setPrivacyStatus()`設定的隱私權狀態。 將狀態設定為`MobilePrivacyStatus.OPT_OUT`會隱藏所有AEP擴充功能（包括串流媒體）的所有資料收集。 狀態會在各應用程式工作階段中持續存在。
 
-           ```
-           ADBMobile().getPrivacyStatus()
-           ```
+```kotlin
+MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_OUT)
+```
 
-  使用 `setPrivacyStatus` 變更隱私權設定後，變更為永久有效，直到使用此方法再次變更，或者應用程式解除安裝並重新安裝為止。
+若要還原追蹤，請將隱私權狀態設定回`MobilePrivacyStatus.OPT_IN`：
 
-## 擷取儲存的識別碼 (OTT 應用程式) {#retrieving-stored-identifiers-ott-apps}
+```kotlin
+MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
+```
 
-這些資訊有助於從 Roku 應用程式擷取存放在本機的使用者身分識別資料。
+如需詳細資訊，請參閱AEP Mobile SDK檔案中的[隱私權與GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)。
 
->[!IMPORTANT]
->
->擷取所有識別碼的方法會取得已知且由 SDK 保存的所有使用者身分識別資料。 您必須在使用者選擇退出&#x200B;**之前**&#x200B;呼叫此方法。
+>[!TAB Roku]
 
-存放在本機的身分識別資料會以 JSON 字串傳回，其中包括：
+AEP Roku SDK使用`setConsent()`搭配Adobe 2.0同意標準。 將`collect.val`設定為`"n"`會立即停止所有資料收集，包括串流媒體事件。
 
-* 公司內容 - IMS 組織 ID
-* 使用者 ID
-* Experience Cloud ID (MCID)
-* 資料來源 ID (DPID、DPUUID)
-* Analytics ID (AVID、AID、VID 以及相關 RSID)
-* Audience Manager ID (UUID)
+同意值：
 
-例如：
+* `"y"` — 選擇加入（允許資料收集）
+* `"n"` — 選擇退出（資料收集已隱藏）
+* `"p"` — 擱置中（等待使用者決定；在解析之前不會收集任何資料）
 
-* **Chromecast：**
+```brightscript
+currentDate = CreateObject("roDateTime")
+timestampInISO8601 = currentDate.ToISOString("milliseconds")
 
-  ```
-  ADBMobile.config.getAllIdentifiersAsync(callback)
-  ```
+collectConsentNo = {
+  "consent": [{
+    "standard": "Adobe",
+    "version": "2.0",
+    "value": {
+      "metadata": { "time": timestampInISO8601 },
+      "collect": { "val": "n" }
+    }
+  }]
+}
 
-* **Roku：**
+m.aepSdk.setConsent(collectConsentNo)
+```
 
-  ```
-  vids = ADBMobile().getAllIdentifiers()
-  ```
+若要還原追蹤，請將`collect.val`設定為`"y"`並再次呼叫`setConsent()`。
+
+您也可以在SDK初始化時使用`updateConfiguration()`搭配`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT`金鑰設定預設同意值。 如需詳細資訊，請參閱[AEP Roku SDK檔案](https://github.com/adobe/aepsdk-roku)。
+
+>[!TAB Media Edge API]
+
+Media Edge API是伺服器端實作。 SDK層不會自動強制同意 — 您的應用程式必須先檢查使用者同意狀態，才能進行API呼叫並隱藏選擇退出使用者的請求。
+
+對於完整選擇退出，對於選擇退出的使用者，請勿在`/va/v2/sessions`端點（或任何後續事件端點）進行POST：
+
+```javascript
+// Check consent status before initiating a media session
+if (userHasOptedOut) {
+  // Do not call the Media Edge API
+  return;
+}
+
+// Only call the API for users who have not opted out
+fetch("https://edge.adobedc.net/va/v2/sessions", {
+  method: "POST",
+  body: JSON.stringify(sessionStartPayload)
+});
+```
+
+如需詳細資訊，請參閱[Media Edge API參考](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/)。
+
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
+
+Media SDK JS 3.x程式庫會遵循Adobe訪客API （身分服務）選擇退出狀態。 當使用者選擇退出使用訪客API時，Media SDK會自動抑制所有追蹤呼叫。
+
+```javascript
+var visitor = Visitor.getInstance("YOUR_ORG_ID@AdobeOrg");
+visitor.setOptOut(true);
+```
+
+將`YOUR_ORG_ID@AdobeOrg`取代為您的來自Adobe Admin Console的組織ID。
+
+若要還原追蹤，請將`false`傳遞至`setOptOut()`。
+
+如需詳細資訊，請參閱[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+
+>[!TAB Chromecast]
+
+Chromecast Media SDK 3.x尊重使用`ADBMobile.config.setPrivacyStatus()`所設定的隱私權狀態。 將狀態設定為`PRIVACY_STATUS_OPT_OUT`會隱藏所有資料集合。
+
+```javascript
+ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT);
+```
+
+若要還原追蹤，請將狀態設回opted in：
+
+```javascript
+ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN);
+```
+
+您也可以在您的`ADBMobileConfig`物件中，於SDK初始化時設定預設隱私權狀態：
+
+```javascript
+var ADBMobileConfig = {
+  "analytics": {
+    "privacyDefault": "optedout"
+  }
+};
+```
+
+>[!TAB 媒體收集API]
+
+Media Collection API是伺服器端實作。 您的應用程式必須先檢查使用者同意狀態，才能進行API呼叫並抑制選擇退出使用者的請求。
+
+對於完整選擇退出，對於選擇退出的使用者，請勿對工作階段端點進行POST。
+
+針對CCPA下的部分選擇退出，請在`sessionStart`請求的`params`物件中包含選擇退出旗標：
+
+```json
+{
+  "playerTime": { "playhead": 0, "ts": 1699523820000 },
+  "eventType": "sessionStart",
+  "params": {
+    "analytics.optOutServerSideForwarding": true,
+    "analytics.optOutShare": true
+  }
+}
+```
+
+* `analytics.optOutServerSideForwarding`：設定為`true`可選擇退出Adobe Analytics與其他Experience Cloud解決方案（例如Audience Manager）之間共用的資料。
+* `analytics.optOutShare`：設定為`true`可選擇退出與其他Adobe Analytics使用者端的同盟資料共用。
+
+如需可用引數的完整清單，請參閱[媒體收集API要求引數參考](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)。
+
+>[!ENDTABS]

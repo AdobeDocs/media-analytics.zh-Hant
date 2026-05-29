@@ -3,10 +3,10 @@ title: 暫停開始
 description: 表示使用者已暫停媒體播放。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '121'
-ht-degree: 19%
+source-wordcount: '140'
+ht-degree: 10%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 19%
 暫停開始事件表示使用者已暫停播放。 沒有單獨的繼續事件；繼續播放時傳送[播放](play.md)事件。
 
 * **必要條件**： [工作階段開始](../session/session-start.md)
-* **相關聯的量度**： [暫停事件](/help/reporting/metrics/pause-events.md)
+* **相關聯的量度**： [[!UICONTROL 暫停事件]](/help/reporting/metrics/pause-events.md)
 
 >[!NOTE]
 >
 >沒有繼續事件型別。 當您在`pauseStart`之後傳送[`play`](play.md)事件時會推斷為繼續。
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 與`eventType: "media.pauseStart"`通話[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -38,23 +42,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 當使用者暫停播放時，呼叫`trackPause`。
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackPause()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+當使用者暫停播放時，呼叫`trackPause`。
 
 ```kotlin
 tracker.trackPause()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 與`eventType: "media.pauseStart"`通話`sendMediaEvent`：
 
@@ -69,7 +73,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 呼叫[pauseStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/pausestart/)端點：
 
@@ -90,7 +94,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/pauseStart?configId={datastreamI
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 當使用者暫停播放時，呼叫`trackPause`：
 
@@ -98,7 +108,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/pauseStart?configId={datastreamI
 tracker.trackPause();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+當使用者暫停播放時，呼叫`trackPause`：
+
+```javascript
+ADBMobile.media.trackPause();
+```
+
+>[!TAB 媒體收集API]
 
 傳送`pauseStart`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
 
@@ -108,3 +126,5 @@ tracker.trackPause();
   "eventType": "pauseStart"
 }
 ```
+
+>[!ENDTABS]

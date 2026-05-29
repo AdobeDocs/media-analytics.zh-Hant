@@ -3,7 +3,7 @@ title: 計算量度
 description: Adobe Analytics和Customer Journey Analytics中串流媒體報表的自訂計算量度。
 feature: Metrics
 role: User, Admin
-source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
@@ -18,19 +18,19 @@ Adobe串流媒體服務的計算量度是根據標準串流媒體量度建置的
 
 | 計算量度 | 說明 | 公式 |
 | --- | --- | --- |
-| 平均 每個媒體資料流的廣告 | 每次媒體開始的廣告開始數 | [`Ad Starts`](/help/reporting/metrics/ad-starts.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| 平均 每個媒體資料流的章節數 | 每次媒體開始的章節開始數 | [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| 平均 媒體逗留時間 | 每次媒體開始的總逗留時間(`HH:MM:SS`) | [`Media Time Spent`](/help/reporting/metrics/media-time-spent.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| 平均 內容逗留時間 | 每次內容開始的內容逗留時間(`HH:MM:SS`) | [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) / [`Content Starts`](/help/reporting/metrics/content-starts.md) |
-| 平均 廣告逗留時間 | 每次廣告開始的廣告逗留時間(`HH:MM:SS`) | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Ad Starts`](/help/reporting/metrics/ad-starts.md) |
-| 平均 章節逗留時間 | 每次章節開始的章節逗留時間(`HH:MM:SS`) | [`Chapter Time Spent`](/help/reporting/metrics/chapter-time-spent.md) / [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) |
-| 媒體完成率 | 內容完成次數與媒體起始次數的比率 | [`Content Completes`](/help/reporting/metrics/content-completes.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| 內容完成率 | 內容完成與內容開始的比率 | [`Content Completes`](/help/reporting/metrics/content-completes.md) / [`Content Starts`](/help/reporting/metrics/content-starts.md) |
-| 廣告完成率 | 廣告完成與廣告開始的比率 | [`Ad Completes`](/help/reporting/metrics/ad-completes.md) / [`Ad Starts`](/help/reporting/metrics/ad-starts.md) |
-| 章節完成率 | 章節結束與章節開始的比率 | [`Chapter Completes`](/help/reporting/metrics/chapter-completes.md) / [`Chapter Starts`](/help/reporting/metrics/chapter-starts.md) |
-| 開始前掉格率 | 開始前掉格與媒體開始的比率 | [`Drops Before Start`](/help/reporting/metrics/drops-before-start.md) / [`Media Starts`](/help/reporting/metrics/media-starts.md) |
-| 內容暫停期間率 | 總暫停期間與內容逗留時間的比率 | [`Total Pause Duration`](/help/reporting/metrics/total-pause-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| 內容緩衝期間率 | 總緩衝期間與內容逗留時間的比率 | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| 內容開始時間率 | 開始時間與內容逗留時間的比率 | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
-| 廣告逗留時間率 | 廣告逗留時間與內容逗留時間的比率 | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+| 平均 每個媒體資料流的廣告 | 每個[&#128279;](/help/reporting/metrics/media-starts.md)媒體開始的[[!UICONTROL 廣告開始次數]](/help/reporting/metrics/ad-starts.md) | `[Ad starts] / [Media starts]` |
+| 平均 每個媒體資料流的章節數 | 每[[!UICONTROL 個媒體開始]](/help/reporting/metrics/media-starts.md)的[[!UICONTROL 章節開始]](/help/reporting/metrics/chapter-starts.md) | `[Chapter starts] / [Media starts]` |
+| 平均 媒體逗留時間 | 每[&#128279;](/help/reporting/metrics/media-starts.md)個媒體開始的[[!UICONTROL 媒體逗留時間]](/help/reporting/metrics/media-time-spent.md) (`HH:MM:SS`) | `[Media time spent] / [Media starts]` |
+| 平均 內容逗留時間 | 每個[[!UICONTROL 內容開始時間]](/help/reporting/metrics/content-starts.md) (`HH:MM:SS`) [[!UICONTROL 內容逗留時間]](/help/reporting/metrics/content-time-spent.md) | `[Content time spent] / [Content starts]` |
+| 平均 廣告逗留時間 | 每[&#128279;](/help/reporting/metrics/ad-starts.md)個廣告開始的[[!UICONTROL 廣告逗留時間]](/help/reporting/metrics/ad-time-spent.md) &#x200B; (`HH:MM:SS`) | `[Ad time spent] / [Ad starts]` |
+| 平均 章節逗留時間 | 每個[&#128279;](/help/reporting/metrics/chapter-starts.md)章節開始的[[!UICONTROL 章節逗留時間]](/help/reporting/metrics/chapter-time-spent.md) (`HH:MM:SS`) | `[Chapter time spent] / [Chapter starts]` |
+| 媒體完成率 | [[!UICONTROL 內容完成]](/help/reporting/metrics/content-completes.md)與[[!UICONTROL 媒體開始]](/help/reporting/metrics/media-starts.md)的比率 | `[Content completes] / [Media starts]` |
+| 內容完成率 | [[!UICONTROL 內容完成]](/help/reporting/metrics/content-completes.md)與[[!UICONTROL 內容開始]](/help/reporting/metrics/content-starts.md)的比率 | `[Content completes] / [Content starts]` |
+| 廣告完成率 | [[!UICONTROL 廣告完成]](/help/reporting/metrics/ad-completes.md)與[[!UICONTROL 廣告開始]](/help/reporting/metrics/ad-starts.md)的比率 | `[Ad completes] / [Ad starts]` |
+| 章節完成率 | [[!UICONTROL 章節完成]](/help/reporting/metrics/chapter-completes.md)與[[!UICONTROL 章節開始]](/help/reporting/metrics/chapter-starts.md)的速率 | `[Chapter completes] / [Chapter starts]` |
+| 開始前掉格率 | [[!UICONTROL 開始前掉格]](/help/reporting/metrics/drops-before-start.md)與[[!UICONTROL 媒體開始前的掉格率]](/help/reporting/metrics/media-starts.md) | `[Drops before start] / [Media starts]` |
+| 內容暫停期間率 | 總暫停期間[&#128279;](/help/reporting/metrics/total-pause-duration.md)與[[!UICONTROL 內容逗留時間]](/help/reporting/metrics/content-time-spent.md)的比率 | `[Total pause duration] / [Content time spent]` |
+| 內容緩衝期間率 | [[!UICONTROL 總緩衝期間]](/help/reporting/metrics/total-buffer-duration.md)與[[!UICONTROL 內容逗留時間]](/help/reporting/metrics/content-time-spent.md)的比率 | `[Total buffer duration] / [Content time spent]` |
+| 內容開始時間率 | [[!UICONTROL 開始時間]](/help/reporting/metrics/time-to-start.md)與[[!UICONTROL 內容逗留時間]](/help/reporting/metrics/content-time-spent.md)的比率 | `[Time to start] / [Content time spent]` |
+| 廣告逗留時間率 | [[!UICONTROL 廣告逗留時間]](/help/reporting/metrics/ad-time-spent.md)與[[!UICONTROL 內容逗留時間]](/help/reporting/metrics/content-time-spent.md)的比率 | `[Ad time spent] / [Content time spent]` |
 

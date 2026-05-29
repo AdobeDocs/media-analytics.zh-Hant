@@ -3,7 +3,7 @@ title: 總緩衝期間（量度）
 description: 報告跨工作階段之總和平均值的累積緩衝時間。
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**總緩衝期間**&#x200B;量度。 Adobe Analytics會從相同的`a.media.qoe.bufferTime`內容資料變數自動填入配對的[總緩衝期間（維度）](/help/reporting/dimensions/total-buffer-duration.md)。 Customer Journey Analytics公開單一`mediaReporting.qoeDataDetails.bufferTime`欄位，您可將其作為維度或量度使用。*
+*此頁面涵蓋&#x200B;**總緩衝期間**&#x200B;量度。 Adobe Analytics會從相同的`a.media.qoe.bufferTime`內容資料變數自動填入配對的[總緩衝期間（維度）](/help/reporting/dimensions/total-buffer-duration.md)。 Customer Journey Analytics公開單一`xdm.mediaReporting.qoeDataDetails.bufferTime`欄位，您可將其作為維度或量度使用。*
 
 >[!ENDSHADEBOX]
 
@@ -28,6 +28,6 @@ ht-degree: 7%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.qoe.bufferTime`收集。 |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 資料饋送 | `event_list`， `post_event_list` （請參閱[`event.tsv`](https://experienceleague.adobe.com/zh-hant/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)查閱） |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferTime` |

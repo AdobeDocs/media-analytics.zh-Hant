@@ -16,14 +16,18 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 131
-ht-degree: 82%
+source-wordcount: 153
+ht-degree: 70%
 
 ---
 
 # 使用Media Analytics擴充功能安裝串流媒體服務
+
+>[!IMPORTANT]
+>
+>本頁涵蓋僅限Analytics的Media Analytics擴充功能實施。 如需建議的實作，請參閱[使用Edge Network實作串流媒體](/help/implementation/edge/edge-web-sdk.md)。
 
 您可以使用Adobe Media Analytics擴充功能來實作Adobe串流媒體服務。 Media Analytics 擴充功能新增核心 JavaScript Media SDK (Media 3.x SDK)。 此擴充功能可將 Media 追蹤器執行個體新增至已啟用標記的網站或專案。
 

@@ -17,15 +17,15 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 50
-ht-degree: 56%
+ht-degree: 8%
 
 ---
 
 # 媒體詳細資料{#media-detail}
 
-「媒體詳細資料」儀表板會顯示所有內容的詳細量度，包括同時檢閱者或聽眾、內容開始時間、完成率、逗留時間和廣告開始時間。
+「媒體詳細資料」儀表板會顯示所有內容的詳細量度，包括同時檢閱者或聽眾、[[!UICONTROL 內容開始]](/help/reporting/metrics/content-starts.md)、完成率、逗留時間和[[!UICONTROL 廣告開始]](/help/reporting/metrics/ad-starts.md)。
 
 ![](assets/media_detail.png)

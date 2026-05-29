@@ -15,14 +15,18 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 199
-ht-degree: 70%
+source-wordcount: 220
+ht-degree: 63%
 
 ---
 
 # 安裝 Mobile SDK {#install-mobile-sdks}
+
+>[!IMPORTANT]
+>
+>本頁涵蓋僅限Analytics的行動SDK實作。 如需建議的實作，請參閱[使用Edge Network實作串流媒體](/help/implementation/edge/edge-mobile-sdk.md)。
 
 若要在Android或iOS上實作適用於行動應用程式的Adobe串流媒體服務，請安裝和設定下列專案：
 

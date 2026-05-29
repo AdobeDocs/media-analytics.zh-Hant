@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1521
-ht-degree: 81%
+source-wordcount: 1516
+ht-degree: 79%
 
 ---
 
@@ -43,7 +43,7 @@ ht-degree: 81%
 
 * [Adobe Analytics發行說明](https://experienceleague.adobe.com/docs/analytics/release-notes/latest.html?lang=zh-Hant)
 * [Customer Journey Analytics發行說明](https://experienceleague.adobe.com/docs/analytics-platform/using/releases/latest.html?lang=zh-hant)
-* [Adobe Experience Cloud 產品](https://business.adobe.com/tw/products/adobe-experience-cloud-products.html)的最新發行更新
+* [Adobe CX Enterprise](https://business.adobe.com/tw/products/adobe-experience-cloud-products.html)的最新版更新
 
 * [Adobe Analytics 教學課程](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=zh-Hant)
 
@@ -54,7 +54,7 @@ ht-degree: 81%
 | 功能 | 說明 | 目標日期 |
 | ----------- | ---------- | ------- |
 | **串流媒體服務：支援排程資料** | 您現在可以上傳過往串流媒體直播內容的排程資料，以便更輕鬆且更準確地追蹤觀看人數。<p>以下是支援排程資料上傳的直播內容範例：</p><ul><li>FAST (免費廣告支援的電視) 平台</li><li>本地串流</li><li>現場體育賽事</li></ul><p>透過上傳排程資料，您可以追蹤上傳檔案中指定時間內播出的各個節目之觀看人數資料。 您甚至可以收集特定主題或節目區段的觀看人數資料。</p><p>無論您以何種方式實施串流媒體收集，均可使用這些功能。</p><p>過去在分析直播內容時，無法準確地將特定工作階段與特定節目相關聯，亦無法將特定工作階段與個別主題或節目區段相關聯。</p><p>如需詳細資訊，請參閱[上傳排程資料以追蹤即時內容](/help/use-cases/track-schedule-data.md)</p> | 開始推出： 2025年10月29日<p>全面發佈：2026年上半年</p><p>（原計畫於2025年10月29日全面推出）</p> |
-| 更新XDM欄位，用於將串流媒體資料收集到Adobe Experience Platform | 將串流媒體資料收集至 Adobe Experience Platform 時，不應再使用串流媒體參數文件中「XDM 欄位路徑」標題下所顯示的 XDM 欄位路徑。 相對地，在 2025 年 5 月 9 日前實施 Analytics 來源連接器，將串流媒體資料收集至 Platform 內的客戶，必須將其現有設定移轉至 mediaReporting 欄位路徑 (如串流媒體參數文件之「報告 XDM 欄位路徑」標題下的內容所示)。<p> 這些欄位路徑記錄在從[串流媒體服務總覽](../media-overview.md)連結的串流媒體變數頁面中，並標籤為「已棄用」。 (在 2025 年 5 月 9 日之後實施 Analytics 來源連接器，且僅使用 mediaReporting XDM 路徑的客戶，則無需採取任何行動。)</p><p>已棄用的 XDM 欄位路徑上的資料攝取將持續至 2025 年 10 月底。 之後會完全移除已棄用的欄位路徑，且在 Adobe Experience Platform Schema UI 中不再顯示，而且只會使用 mediaReporting 欄位路徑傳送資料。</p><p>如需更多詳細資訊，請參閱[移轉 Analytics 來源連接器實作至已更新的 XDM 串流媒體欄位](/help/use-cases/xdm-updates/updated-xdm-fields.md)。</p><p>如需移轉支援，請聯絡您的 Adobe Consulting 服務或帳戶團隊。 </p> | 2025 年 10 月 |
+| 更新XDM欄位，用於將串流媒體資料收集到Adobe Experience Platform | 將串流媒體資料收集至 Adobe Experience Platform 時，不應再使用串流媒體參數文件中「XDM 欄位路徑」標題下所顯示的 XDM 欄位路徑。 相對地，在 2025 年 5 月 9 日前實施 Analytics 來源連接器，將串流媒體資料收集至 Platform 內的客戶，必須將其現有設定移轉至 mediaReporting 欄位路徑 (如串流媒體參數文件之「報告 XDM 欄位路徑」標題下的內容所示)。<p> 這些欄位路徑記錄在從[串流媒體服務總覽](../media-overview.md)連結的串流媒體變數頁面中，並標籤為「已棄用」。 (在 2025 年 5 月 9 日之後實施 Analytics 來源連接器，且僅使用 mediaReporting XDM 路徑的客戶，則無需採取任何行動。)</p><p>已棄用的 XDM 欄位路徑上的資料攝取將持續至 2025 年 10 月底。 之後會完全移除已棄用的欄位路徑，且在 Adobe Experience Platform Schema UI 中不再顯示，而且只會使用 mediaReporting 欄位路徑傳送資料。</p><p>如需詳細資訊，請參閱[Adobe Experience Platform與Customer Journey Analytics的Media Analytics引數對應](/help/implementation/parameters-mapping.md)。</p><p>如需移轉支援，請聯絡您的 Adobe Consulting 服務或帳戶團隊。 </p> | 2025 年 10 月 |
 | 使用網頁SDK將網頁資料傳送至Adobe Experience Platform Edge Network | 您現在可以[使用Adobe Experience Platform Web SDK將串流媒體網頁資料傳送至Adobe Experience Platform Edge Network](/help/implementation/edge/edge-web-sdk.md)，讓您建立更個人化的行銷活動並提供更個人化的內容，產生更多可報告的追蹤資料。<p>此增強功能可為所有平台解決方案 (例如 Customer Journey Analytics、RT-CDP、AJO 和事件轉送) 的 Web 實作提供統一的資料收集方法。 以前，將串流媒體 Web 資料傳送到 Edge Network 時，唯一的方法就是使用 Media Edge API。 | 2024 年 5 月 29 日 |
 | 將Roku資料傳送至Adobe Experience Platform Edge | 現在，當[使用Experience Platform Edge](/help/implementation/edge/implementation-edge.md)安裝Customer Journey Analytics串流媒體集合時，您可以使用Adobe Experience Platform Roku SDK將串流媒體資料傳送到Adobe Experience Platform。 | 2024 年 4 月 12 日 |
 | 媒體收集：與Experience Edge （API和Mobile SDK）整合 | 您現在可以使用Experience Edge API和Mobile SDK來實作Customer Journey Analytics串流媒體收集，好讓您可以建立更個人化的行銷活動並提供更個人化的內容，進而產生更多可報告的追蹤資料。<p>此增強功能提供跨所有解決方案的統一收集方法，例如Customer Journey Analytics報告、RT-CDP、AJO和事件轉送。  [了解更多](/help/implementation/edge/implementation-edge.md) | 2023年5月12日 |
@@ -70,9 +70,9 @@ ht-degree: 81%
 
 | 功能 | 說明 | 目標日期 |
 | ----------- | ---------- | ------- |
-| 多播放器狀態追蹤 | 使用 Media Collection API 來實施多播放器狀態追蹤。 [了解更多](/help/use-cases/player-state-tracking/multiple-player-states.md) | 2022 年 9 月 |
+| 多播放器狀態追蹤 | 使用 Media Collection API 來實施多播放器狀態追蹤。 [了解更多](/help/implementation/events/player-state/overview.md) | 2022 年 9 月 |
 | 已重新命名 XDM 欄位 | 已重新命名 XDM 欄位名稱以保持一致性：<br>* 音訊和視訊參數<br>* 廣告參數<br>* 章節參數<br>* 播放器狀態參數<br>* 品質參數 | 2022 年 9 月 |
-| Device Co-op 參考 | 已移除 Adobe Experience Cloud Device Co-op 和 Experience Cloud ID 服務需求。 | 2022 年 8 月 |
+| Device Co-op 參考 | 移除Device Co-op和ID服務需求的參考資料。 | 2022 年 8 月 |
 | 已更新用於收集和報告的欄位名稱和 XDM 路徑 | 已更新以下項目：<br>* 音訊和視訊參數<br>* 廣告參數<br>* 章節參數<br>* 播放器狀態參數<br>* 品質參數 | 2022 年 8 月 |
 | 平均分鐘觀眾數 | Media Analytics 客戶可以使用「平均分鐘觀眾數」面板來更了解平均內容使用量。 <br>「平均分鐘觀眾數」可比較任何長度或類型的節目。 此外，您也可以比較數位平均分鐘觀眾數和線性電視的平均分鐘量度，或是將前者附加到後者。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及持續時間分類的更新時間。  [了解更多](/help/reporting/workspace/average-minute-audience.md) | 2022 年 3 月 16 日 |
 | 媒體播放時間面板 | 了解媒體播放時間花費面板如何透過一天中所選顆粒度期間的觀看時間，來讓媒體用戶了解他們的觀看量。 <br>[「媒體播放逗留時間」面板 (教學課程)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=zh-Hant) | 1 月 2022 日 |

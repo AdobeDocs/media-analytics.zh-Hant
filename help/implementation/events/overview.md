@@ -3,9 +3,9 @@ title: 串流媒體事件概觀
 description: 瞭解媒體事件型別及其必須傳送的順序。
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -69,10 +69,3 @@ ht-degree: 0%
 ## 錯誤事件
 
 [錯誤](error.md)事件會在工作階段期間記錄播放失敗 — 失敗的資料流要求、轉碼器錯誤或外部傳遞失敗。 每當發生有意義的錯誤時，就傳送它。 錯誤事件不會關閉工作階段；播放可以繼續，並在相同工作階段下追蹤後續事件。 如果錯誤無法復原，請在工作階段結束之後明確關閉工作階段。
-
->[!MORELIKETHIS]
->
->* [JSON驗證結構](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)：驗證每個事件型別的要求裝載結構
->* [事件要求端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：媒體收集API端點參考
->* [工作階段要求端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)：在傳送事件之前建立工作階段
->* [播放器狀態追蹤](/help/use-cases/player-state-tracking/implementation-and-reporting.md)：狀態開始和狀態結束實作詳細資料

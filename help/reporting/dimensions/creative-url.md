@@ -3,7 +3,7 @@ title: 創作 URL
 description: 報告每個廣告創意的資產URL。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 10%
@@ -28,7 +28,7 @@ Creative URL是由播放器在每個[廣告開始](/help/implementation/events/a
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 建立將`a.media.ad.creativeURL`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 資料饋送 | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.ad.creativeURL`對應至的eVar） |
 | Audience Manager | `c_contextdata.a.media.ad.creativeURL` |
 
