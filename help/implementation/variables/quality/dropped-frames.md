@@ -28,7 +28,7 @@ dropped frames變數是播放器在工作階段期間捨棄的畫面執行計數
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.qoe.droppedFrameCount` |
-| **XDM集合欄位** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | 品質事件（[位元速率變更](/help/implementation/events/playback/bitrate-change.md)，[緩衝開始](/help/implementation/events/playback/buffer-start.md)，[錯誤](/help/implementation/events/error.md)），工作階段關閉 |

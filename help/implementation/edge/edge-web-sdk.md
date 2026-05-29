@@ -27,7 +27,7 @@ ht-degree: 5%
 
 # 使用Adobe Experience Platform Web SDK將網頁資料傳送至Edge
 
-從2.20.0版開始，Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的`streamingMedia`元件可讓您收集與網站上的媒體工作階段相關的資料。 收集的資料可包括關於媒體播放、暫停、完成和其他相關事件的資訊。
+從2.20.0版開始，Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)的`streamingMedia`元件可讓您收集與網站上的媒體工作階段相關的資料。 收集的資料可包括關於媒體播放、暫停、完成和其他相關事件的資訊。
 
 收集資料後，您可以將其傳送至Adobe Experience Platform及/或Adobe Analytics以產生報表。 此功能提供全方位的解決方案，可追蹤及瞭解您網站上的媒體使用行為。
 
@@ -82,13 +82,13 @@ alloy("configure", {
 });
 ```
 
-如需如何設定的完整詳細資訊，請參閱網頁SDK `streamingMedia`元件[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
+如需如何設定的完整詳細資訊，請參閱網頁SDK `streamingMedia`元件[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/configure/streamingmedia)。
 
 ### 步驟3：從Media JS SDK移轉時取得Media追蹤器例項
 
 對於使用Media JS SDK的客戶，Web SDK提供從Media JS SDK移轉至Web SDK的移轉路徑，同時支援現有的Media JS功能，例如處理媒體事件。
 
-Web SDK包含[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)命令，您可以使用它來建立物件執行個體。 您可以使用與[3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md)所提供的相同API來追蹤媒體事件。
+Web SDK包含[`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker)命令，您可以使用它來建立物件執行個體。 您可以使用與[3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md)所提供的相同API來追蹤媒體事件。
 
 以下程式碼片段顯示如何在Media JS中擷取媒體追蹤器例項。
 

@@ -24,7 +24,7 @@ label變數是發行音訊內容的唱片公司的名稱（例如，`"Capitol Re
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.label` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.label` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |

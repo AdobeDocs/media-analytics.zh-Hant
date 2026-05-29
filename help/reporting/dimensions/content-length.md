@@ -28,13 +28,13 @@ ht-degree: 6%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體核心]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.length`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.length`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料饋送 | `videolength`, `post_videolength` |
 | Audience Manager | `c_contextdata.a.media.length` |
 
 >[!NOTE]
 >
->在Adobe Analytics中，此值也對應至[Content](content.md)維度上的&#x200B;**影片長度**&#x200B;分類。 您需個別負責填入及維護該分類。 Customer Journey Analytics直接使用此維度。 您可以視需要使用[值分組](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)。
+>在Adobe Analytics中，此值也對應至[Content](content.md)維度上的&#x200B;**影片長度**&#x200B;分類。 您需個別負責填入及維護該分類。 Customer Journey Analytics直接使用此維度。 您可以視需要使用[值分組](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/value-bucketing)。
 
 >[!IMPORTANT]
 >
