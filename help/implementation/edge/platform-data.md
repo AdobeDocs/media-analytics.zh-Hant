@@ -1,5 +1,5 @@
 ---
-title: Media Edge API資料對應和平台驗證
+title: XDM報告結構描述
 description: 瞭解哪些Media Edge API事件會在Adobe Experience Platform中產生Experience事件，以及如何使用mediaReporting XDM結構描述驗證您的實施。
 feature: Streaming Media
 role: User, Admin, Developer
@@ -15,26 +15,26 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Media Edge API資料對應和平台驗證
+# XDM報告結構描述
 
-當您使用Media Edge API或Media Edge SDK傳送媒體追蹤事件時，Media Analytics後端會處理這些事件，並將運算後的體驗事件寫入Adobe Experience Platform資料集。 瞭解哪些事件可觸及Platform，以及後端為您計算的內容，可協助您驗證實作，並在Customer Journey Analytics或Adobe Analytics中建立準確的報告。
+當您使用Adobe Experience Platform Edge Network傳送媒體追蹤事件時，Media Analytics後端會處理這些事件，並將運算出的Experience事件寫入Platform資料集。 瞭解哪些事件可觸及Platform，以及後端為您計算的內容，可協助您驗證實作，並在Customer Journey Analytics或Adobe Analytics中建立準確的報告。
 
-Media Edge使用兩個不同的XDM結構描述：
+集合和報告管道的不同部分使用了兩個不同的XDM結構描述：
 
 | 結構描述 | 命名空間 | 方向 | 用途 |
 |---|---|---|---|
-| 媒體收集 | `xdm.mediaCollection` | 使用者端Adobe | 您的播放器會傳送每個追蹤事件的內容 |
-| 媒體報告 | `xdm.mediaReporting` | Adobe → Platform | 後端在處理後寫入資料集的內容 |
+| 媒體收集 | `xdm.mediaCollection` | 使用者端Adobe | 您的播放器會傳送每個追蹤事件的內容。 由[變數](/help/implementation/variables/)使用。 |
+| 媒體報告 | `xdm.mediaReporting` | Adobe → Platform | 後端在處理後寫入資料集的內容。 由[維度](/help/reporting/dimensions/overview.md)和[量度](/help/reporting/metrics/overview.md)使用。 |
 
-在`mediaReporting`中出現但您的`mediaCollection`裝載中沒有的欄位是&#x200B;**後端計算** — 衍生自工作階段中的完整事件序列。 您絕不會傳送這些欄位，因為Adobe會產生這些欄位。
+在`mediaReporting`中出現但在`mediaCollection`裝載中沒有的欄位衍生自工作階段中的完整事件序列。 您絕不會傳送這些欄位，因為Adobe會產生這些欄位。
 
 ## 寫入Platform資料集的事件
 
