@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**首播日期**報告維度。 如需如何收集此變數，請參閱[首播日期](/help/implementation/variables/standard-metadata/first-air-date.md)。*
+*此頁面涵蓋&#x200B;**首播日期**&#x200B;報告維度。 如需如何收集此變數，請參閱[首播日期](/help/implementation/variables/standard-metadata/first-air-date.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**資料流型別**變數的資料集合。 檢視對應報表維度的[資料流型別](/help/reporting/dimensions/stream-type.md)。*
+*本頁涵蓋&#x200B;**資料流型別**&#x200B;變數的資料集合。 檢視對應報表維度的[資料流型別](/help/reporting/dimensions/stream-type.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**掉格**維度。 Adobe Analytics會從相同的`a.media.qoe.droppedFrameCount`內容資料變數自動填入配對的[掉格（量度）](/help/reporting/metrics/dropped-frames.md)。 Customer Journey Analytics公開單一`xdm.mediaReporting.qoeDataDetails.droppedFrames`欄位，您可將其作為維度或量度使用。 如需如何收集此變數，請參閱[掉格](/help/implementation/variables/quality/dropped-frames.md)。*
+*此頁面涵蓋&#x200B;**掉格**&#x200B;維度。 Adobe Analytics會從相同的`a.media.qoe.droppedFrameCount`內容資料變數自動填入配對的[掉格（量度）](/help/reporting/metrics/dropped-frames.md)。 Customer Journey Analytics公開單一`xdm.mediaReporting.qoeDataDetails.droppedFrames`欄位，您可將其作為維度或量度使用。 如需如何收集此變數，請參閱[掉格](/help/implementation/variables/quality/dropped-frames.md)。*
 
 >[!ENDSHADEBOX]
 

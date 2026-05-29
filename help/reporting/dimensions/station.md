@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**電台**報告維度。 請參閱[工作站](/help/implementation/variables/standard-metadata/station.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**電台**&#x200B;報告維度。 請參閱[工作站](/help/implementation/variables/standard-metadata/station.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

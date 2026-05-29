@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**媒體下載旗標**變數的資料集合。 檢視對應報表維度的[下載的媒體](/help/reporting/dimensions/media-downloaded-flag.md)。*
+*本頁涵蓋&#x200B;**媒體下載旗標**&#x200B;變數的資料集合。 檢視對應報表維度的[下載的媒體](/help/reporting/dimensions/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 

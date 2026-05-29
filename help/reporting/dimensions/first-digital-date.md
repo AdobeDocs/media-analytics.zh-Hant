@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**第一個數位日期**報告維度。 如需如何收集此變數，請參閱[第一個數位日期](/help/implementation/variables/standard-metadata/first-digital-date.md)。*
+*此頁面涵蓋&#x200B;**第一個數位日期**&#x200B;報告維度。 如需如何收集此變數，請參閱[第一個數位日期](/help/implementation/variables/standard-metadata/first-digital-date.md)。*
 
 >[!ENDSHADEBOX]
 

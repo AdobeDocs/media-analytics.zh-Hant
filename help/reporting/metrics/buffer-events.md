@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**緩衝事件**量度。 Adobe Analytics會從相同的`a.media.qoe.bufferCount`內容資料變數自動填入配對的[緩衝事件（維度）](/help/reporting/dimensions/buffer-events.md)。 Customer Journey Analytics公開單一`xdm.mediaReporting.qoeDataDetails.bufferCount`欄位，您可將其作為維度或量度使用。*
+*此頁面涵蓋&#x200B;**緩衝事件**&#x200B;量度。 Adobe Analytics會從相同的`a.media.qoe.bufferCount`內容資料變數自動填入配對的[緩衝事件（維度）](/help/reporting/dimensions/buffer-events.md)。 Customer Journey Analytics公開單一`xdm.mediaReporting.qoeDataDetails.bufferCount`欄位，您可將其作為維度或量度使用。*
 
 >[!ENDSHADEBOX]
 

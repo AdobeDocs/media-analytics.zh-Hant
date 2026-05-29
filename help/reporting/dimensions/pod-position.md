@@ -15,7 +15,7 @@ ht-degree: 1%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**Pod位置**報告維度。 如需如何收集此變數，請參閱[廣告插播開始時間](/help/implementation/variables/ads/ad-break-start-time.md)。*
+*此頁面涵蓋&#x200B;**Pod位置**&#x200B;報告維度。 如需如何收集此變數，請參閱[廣告插播開始時間](/help/implementation/variables/ads/ad-break-start-time.md)。*
 
 >[!ENDSHADEBOX]
 

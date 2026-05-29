@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**位置ID**變數的資料集合。 如需對應的報表維度，請參閱[位置ID](/help/reporting/dimensions/placement-id.md)。*
+*本頁涵蓋&#x200B;**位置ID**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[位置ID](/help/reporting/dimensions/placement-id.md)。*
 
 >[!ENDSHADEBOX]
 

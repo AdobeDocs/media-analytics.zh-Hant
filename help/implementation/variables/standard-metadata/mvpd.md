@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**MVPD**變數的資料集合。 如需對應的報表維度，請參閱[MVPD](/help/reporting/dimensions/mvpd.md)。*
+*本頁涵蓋&#x200B;**MVPD**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[MVPD](/help/reporting/dimensions/mvpd.md)。*
 
 >[!ENDSHADEBOX]
 

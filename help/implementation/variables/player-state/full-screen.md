@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**全熒幕**播放器狀態的資料集合。 檢視對應報表量度受全熒幕影響的[資料流](/help/reporting/metrics/full-screen-streams-impacted.md)、[全熒幕計數](/help/reporting/metrics/full-screen-count.md)及[全熒幕總持續時間](/help/reporting/metrics/full-screen-total-duration.md)。*
+*此頁面涵蓋&#x200B;**全熒幕**&#x200B;播放器狀態的資料集合。 檢視對應報表量度受全熒幕影響的[資料流](/help/reporting/metrics/full-screen-streams-impacted.md)、[全熒幕計數](/help/reporting/metrics/full-screen-count.md)及[全熒幕總持續時間](/help/reporting/metrics/full-screen-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 

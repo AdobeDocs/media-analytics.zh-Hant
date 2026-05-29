@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**下載的媒體**報告維度。 如需如何收集此變數，請參閱[媒體已下載的旗標](/help/implementation/variables/core/media-downloaded-flag.md)。*
+*此頁面涵蓋&#x200B;**下載的媒體**&#x200B;報告維度。 如需如何收集此變數，請參閱[媒體已下載的旗標](/help/implementation/variables/core/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**天部分**變數的資料集合。 如需對應的報表維度，請參閱[日期部分](/help/reporting/dimensions/day-part.md)。*
+*本頁涵蓋&#x200B;**天部分**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[日期部分](/help/reporting/dimensions/day-part.md)。*
 
 >[!ENDSHADEBOX]
 

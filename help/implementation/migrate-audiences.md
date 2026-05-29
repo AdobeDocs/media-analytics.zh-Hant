@@ -5,10 +5,17 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 5664bf56-b228-430a-944c-faaab55fa108
 TQID: https://experienceleague.adobe.com/TqsfcR2JgxVjDNx3-CBBa9n6pwvuGk9JgQ--DvWeHg0
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 516
@@ -76,7 +83,7 @@ ht-degree: 1%
 
 1. 選取「[!UICONTROL **儲存**]」以儲存對象。 您可以維持此設定，直到需要驗證對象是否仍如預期般運作為止。
 
-1. 驗證完成後，請移除舊欄位，然後選取[儲存]以儲存對象。[!UICONTROL ****]
+1. 驗證完成後，請移除舊欄位，然後選取[儲存]以儲存對象。[!UICONTROL **&#x200B;**]
 
    ![新增規則](assets/add-rule4.jpeg)
 

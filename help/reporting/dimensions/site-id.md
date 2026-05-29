@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**網站識別碼**報告維度。 請參閱[網站ID](/help/implementation/variables/ads/site-id.md)，瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**網站識別碼**&#x200B;報告維度。 請參閱[網站ID](/help/implementation/variables/ads/site-id.md)，瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

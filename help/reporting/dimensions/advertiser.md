@@ -15,7 +15,7 @@ ht-degree: 12%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**廣告商**報告維度。 請參閱[廣告商](/help/implementation/variables/ads/advertiser.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**廣告商**&#x200B;報告維度。 請參閱[廣告商](/help/implementation/variables/ads/advertiser.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

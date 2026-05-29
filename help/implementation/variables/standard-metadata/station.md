@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**站台**變數的資料集合。 如需對應的報表維度，請參閱[工作站](/help/reporting/dimensions/station.md)。*
+*本頁涵蓋&#x200B;**站台**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[工作站](/help/reporting/dimensions/station.md)。*
 
 >[!ENDSHADEBOX]
 

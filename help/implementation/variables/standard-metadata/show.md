@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**Show**變數的資料集合。 檢視對應報表維度的[節目](/help/reporting/dimensions/show.md)。*
+*本頁涵蓋&#x200B;**Show**&#x200B;變數的資料集合。 檢視對應報表維度的[節目](/help/reporting/dimensions/show.md)。*
 
 >[!ENDSHADEBOX]
 

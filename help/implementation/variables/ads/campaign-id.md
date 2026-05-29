@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**促銷活動識別碼**變數的資料集合。 如需對應的報表維度，請參閱[促銷活動識別碼](/help/reporting/dimensions/campaign-id.md)。*
+*本頁涵蓋&#x200B;**促銷活動識別碼**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[促銷活動識別碼](/help/reporting/dimensions/campaign-id.md)。*
 
 >[!ENDSHADEBOX]
 

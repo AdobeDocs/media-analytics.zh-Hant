@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**位置ID**報告維度。 如需如何收集此變數，請參閱[位置ID](/help/implementation/variables/ads/placement-id.md)。*
+*此頁面涵蓋&#x200B;**位置ID**&#x200B;報告維度。 如需如何收集此變數，請參閱[位置ID](/help/implementation/variables/ads/placement-id.md)。*
 
 >[!ENDSHADEBOX]
 

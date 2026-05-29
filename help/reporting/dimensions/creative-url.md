@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**Creative URL**報告維度。 如需如何收集此變數，請參閱[Creative URL](/help/implementation/variables/ads/creative-url.md)。*
+*此頁面涵蓋&#x200B;**Creative URL**&#x200B;報告維度。 如需如何收集此變數，請參閱[Creative URL](/help/implementation/variables/ads/creative-url.md)。*
 
 >[!ENDSHADEBOX]
 

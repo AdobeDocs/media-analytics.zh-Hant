@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容識別碼**變數的資料集合。 如需對應的報表維度，請參閱[內容](/help/reporting/dimensions/content.md)。*
+*本頁涵蓋&#x200B;**內容識別碼**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[內容](/help/reporting/dimensions/content.md)。*
 
 >[!ENDSHADEBOX]
 

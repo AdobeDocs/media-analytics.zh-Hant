@@ -5,10 +5,19 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
 TQID: https://experienceleague.adobe.com/yr1qlonZDoevoT-vFo-WknObsb-CegTihWEFZN5TdAE
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 563
@@ -28,7 +37,7 @@ ht-degree: 5%
 
 若要使用Web SDK的`streamingMedia`元件，您必須符合下列必要條件：
 
-* 在將串流媒體資料傳送到Edge之前，請先使用Edge Network](/help/implementation/edge/implementation-edge.md)完成[實作Adobe串流媒體服務中的步驟。
+* 在將串流媒體資料傳送到Edge之前，請先使用Edge Network[&#128279;](/help/implementation/edge/implementation-edge.md)完成實作Adobe串流媒體服務中的步驟。
 * 確保您有權存取Adobe Experience Platform和/或Adobe Analytics。
 * 您必須使用Web SDK 2.20.0版或更新版本。 請參閱[網頁SDK安裝概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/install/overview)，瞭解如何安裝最新版本。
 * 為您使用的資料流啟用&#x200B;**[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)**&#x200B;選項。
