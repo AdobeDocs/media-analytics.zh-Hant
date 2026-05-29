@@ -3,7 +3,7 @@ title: 網路
 description: 報告廣播網路或頻道名稱。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 11%
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**網路**&#x200B;報告維度。 請參閱[網路](/help/implementation/variables/standard-metadata/network.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**網路**報告維度。 請參閱[網路](/help/implementation/variables/standard-metadata/network.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 11%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 視訊中繼資料]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.network`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.network`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.network`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料饋送 | `videonetwork`, `post_videonetwork` |
 | Audience Manager | `c_contextdata.a.media.network` |
 

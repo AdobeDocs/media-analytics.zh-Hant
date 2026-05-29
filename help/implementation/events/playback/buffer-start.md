@@ -3,10 +3,10 @@ title: 緩衝開始
 description: 表示媒體播放器進入緩衝狀態。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 15%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 15%
 緩衝開始事件代表媒體播放器進入緩衝狀態。
 
 * **必要條件**： [工作階段開始](../session/session-start.md)
-* **關聯的量度**： [緩衝事件](/help/reporting/metrics/buffer-events.md)
+* **關聯的量度**： [[!UICONTROL 緩衝事件]](/help/reporting/metrics/buffer-events.md)
 
 >[!NOTE]
 >
@@ -24,7 +24,11 @@ ht-degree: 15%
 >
 >**行動SDK：**&#x200B;在播放器結束緩衝時呼叫`trackEvent(BufferComplete)`，然後呼叫`trackPlay()`以繼續播放。
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 與`eventType: "media.bufferStart"`通話[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -40,11 +44,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 當播放器進入緩衝狀態時，使用`BufferStart`呼叫`trackEvent`，當播放器結束時呼叫`BufferComplete`。
-
-**iOS (Swift)**
 
 ```swift
 // Buffer starts
@@ -54,7 +56,9 @@ tracker.trackEvent(event: MediaEvent.BufferStart, info: nil, metadata: nil)
 tracker.trackEvent(event: MediaEvent.BufferComplete, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+當播放器進入緩衝狀態時，使用`BufferStart`呼叫`trackEvent`，當播放器結束時呼叫`BufferComplete`。
 
 ```kotlin
 // Buffer starts
@@ -64,7 +68,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 與`eventType: "media.bufferStart"`通話`sendMediaEvent`：
 
@@ -79,7 +83,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 呼叫[bufferStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bufferstart/)端點：
 
@@ -100,7 +104,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bufferStart?configId={datastream
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 使用`BufferStart`事件型別呼叫`trackEvent`：
 
@@ -108,7 +118,19 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bufferStart?configId={datastream
 tracker.trackEvent(ADB.Media.Event.BufferStart, null, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+當播放器進入緩衝狀態時，使用`BufferStart`呼叫`trackEvent`，當播放器結束時呼叫`BufferComplete`：
+
+```javascript
+// Buffer starts
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
+
+// Buffer ends
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB 媒體收集API]
 
 傳送`bufferStart`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
 
@@ -118,3 +140,5 @@ tracker.trackEvent(ADB.Media.Event.BufferStart, null, null);
   "eventType": "bufferStart"
 }
 ```
+
+>[!ENDTABS]

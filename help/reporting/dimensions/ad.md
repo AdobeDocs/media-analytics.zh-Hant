@@ -3,7 +3,7 @@ title: 廣告
 description: 報告每個播放的唯一廣告，並以廣告ID作為金鑰。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**廣告**&#x200B;報告維度。 請參閱[廣告ID](/help/implementation/variables/ads/ad-id.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**廣告**報告維度。 請參閱[廣告ID](/help/implementation/variables/ads/ad-id.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 7%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體廣告]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.ad.name`收集。 持續存在於造訪期間。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 資料饋送 | `videoad`, `post_videoad` |
 | Audience Manager | `c_contextdata.a.media.ad.name` |
 

@@ -6,21 +6,14 @@ exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/F7NHDQkJVwVc-Th-blxBP8gifT7V55xLqlI1YT-pswc
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 294
-ht-degree: 90%
+ht-degree: 82%
 
 ---
 
@@ -30,7 +23,7 @@ ht-degree: 90%
 >
 >收集向 Media Analytics (MA) Collection API 後端伺服器發出成功[工作階段要求](../mc-api-ref/mc-api-sessions-req.md)所需的要求資料。 您可以手動傳送要求 (利用 `curl` 或 Postman 等)，進而迅速驗證要求資料。 如此一來，您將能立即獲知要求中是否有因為資料類型錯誤或資訊錯誤而引起的問題。 請使用 [JSON 驗證結構](../mc-api-ref/mc-api-json-validation.md)來確認您提供的要求資料是否適當。
 
-1. 收集必要的標準 Adobe Analytics 和訪客資料；您必須提供這些資料才能執行任何 Experience Cloud 應用程式：
+1. 收集執行任何CX Enterprise應用程式必須提供的標準、必要Adobe Analytics和訪客資料：
 
    * 訪客 Experience Cloud 組織 ID
    * 訪客 Experience Cloud 使用者 ID

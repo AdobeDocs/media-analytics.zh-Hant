@@ -3,7 +3,7 @@ title: 資料流類型
 description: 擷取每個媒體工作階段是否為音訊或視訊內容。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 6%
@@ -15,11 +15,11 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**資料流型別**&#x200B;報告維度。 如需如何收集此變數，請參閱[資料流型別](/help/implementation/variables/core/stream-type.md)。*
+*此頁面涵蓋&#x200B;**資料流型別**報告維度。 如需如何收集此變數，請參閱[資料流型別](/help/implementation/variables/core/stream-type.md)。*
 
 >[!ENDSHADEBOX]
 
-**資料流型別**&#x200B;維度會擷取每個媒體工作階段是否為音訊或視訊內容。 為報表套裝啟用[媒體核心](/help/reporting/media-reports-enable.md)後，它就會在Adobe Analytics中使用，若有任何資料集包含串流媒體資料，也能在Customer Journey Analytics中使用。
+**資料流型別**&#x200B;維度會擷取每個媒體工作階段是否為音訊或視訊內容。 為報表套裝啟用[媒體核心](/help/implementation/media-sdk/setup/media-reports-enable.md)後，它就會在Adobe Analytics中使用，若有任何資料集包含串流媒體資料，也能在Customer Journey Analytics中使用。
 
 ## 如何填入此維度
 
@@ -28,8 +28,8 @@ ht-degree: 6%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體核心]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.streamType`收集。 |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| 資料饋送 | `videostreamtype` |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| 資料摘要 | `videostreamtype` |
 | Audience Manager | `c_contextdata.a.media.streamType` |
 
 >[!IMPORTANT]

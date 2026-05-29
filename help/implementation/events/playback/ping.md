@@ -3,10 +3,10 @@ title: Ping
 description: 傳送心率以保持媒體工作階段作用中並定期追蹤播放進度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 5%
+source-wordcount: '253'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,11 @@ Ping事件是心率，可讓工作階段持續運作並追蹤播放進度。 在
 * **必要條件**： [工作階段開始](../session/session-start.md)
 * **關聯的量度**：無
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 排程與`eventType: "media.ping"`的週期性`sendEvent`呼叫。 將`playhead`更新至每次呼叫的目前播放位置：
 
@@ -39,11 +43,15 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 行動SDK會自動傳送Ping事件。 不需要明確呼叫。
 
-## Roku (BrightScript)
+>[!TAB Android]
+
+行動SDK會自動傳送Ping事件。 不需要明確呼叫。
+
+>[!TAB Roku]
 
 排程與`eventType: "media.ping"`的週期性`sendMediaEvent`呼叫。 將`playhead`更新至每次呼叫的目前播放位置：
 
@@ -58,7 +66,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 呼叫計時器上的[ping](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ping/)端點。 Adobe建議在主要播放開始後第一個ping 10秒、之後每10秒一次，以及在廣告追蹤期間每1秒一次：
 
@@ -79,11 +87,21 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/ping?configId={datastreamID}" \
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Media SDK會自動傳送Ping事件。 不需要明確呼叫。
 
-## Media Collection API
+>[!TAB Chromecast]
+
+Chromecast SDK會自動傳送Ping事件。 不需要明確呼叫。
+
+>[!TAB 媒體收集API]
 
 傳送`ping` POST至計時器上的[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。 不要包含`params`物件：
 
@@ -93,3 +111,5 @@ Media SDK會自動傳送Ping事件。 不需要明確呼叫。
   "eventType": "ping"
 }
 ```
+
+>[!ENDTABS]

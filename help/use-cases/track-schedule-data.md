@@ -5,22 +5,13 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
 TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -29,7 +20,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->本文中描述的功能處於發佈的有限測試階段，可能尚未開放使用於您的環境中。 此功能普遍開放使用時，便會移除此注意事項。 如需發行程式的相關資訊，請參閱[Customer Journey Analytics功能發行](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/releases/releases)。
+>本文中描述的功能處於發佈的有限測試階段，可能尚未開放使用於您的環境中。 此功能普遍開放使用時，便會移除此注意事項。 如需發行程式的相關資訊，請參閱[Customer Journey Analytics功能發行](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)。
 
 您可以上傳過去直播串流媒體內容的排程資料，以更輕鬆且更準確地追蹤直播內容的收視率。 您可以追蹤個別方案的收視率，甚至追蹤特定主題或方案區段。
 
@@ -81,7 +72,7 @@ ht-degree: 5%
 
 若要上傳過去直播內容的排程資料，您的串流媒體環境必須符合以下先決條件：
 
-* 必須啟用串流媒體收集來追蹤您要上傳排程資料的內容，如[追蹤總覽](/help/use-cases/track-av-playback/track-core-overview.md)中所述。<!--specifics??? -->
+* 必須啟用串流媒體收集來追蹤您要上傳排程資料的內容，如[追蹤總覽](/help/implementation/events/session/overview.md)中所述。<!--specifics??? -->
 
 * 搭配Customer Journey Analytics使用串流媒體收集。 Adobe Analytics不提供上傳排程資料的功能。
 
@@ -157,7 +148,7 @@ ht-degree: 5%
 
    1. 推送包含使用批次ID之程式排程資料記錄的.json檔案。
 
-      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/batch/overview)所述。
+      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)所述。
 
       請考慮以下使用cURL來推送包含排程記錄的檔案的範例：
 
@@ -317,9 +308,9 @@ ht-degree: 5%
 
    考量下列您可以在Customer Journey Analytics中建立並報告的維度範例：
 
-   * **[「_集名稱_」](/help/reporting/dimensions/episode.md)**：此維度可協助您瞭解特定系列中的哪些集數表現最佳。
+   * **[[!UICONTROL 劇集]](/help/reporting/dimensions/episode.md)**：此維度可協助您瞭解特定系列中的哪些劇集表現最佳。
 
-   * **[資產ID](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL 資產ID]](/help/reporting/dimensions/asset-id.md)**
 
 1. 繼續[在Customer Journey Analytics](#analyze-data-in-customer-journey-analytics)中分析資料。
 

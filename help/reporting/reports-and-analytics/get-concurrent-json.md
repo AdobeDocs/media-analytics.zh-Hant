@@ -2,10 +2,10 @@
 title: 取得並行檢視者 JSON 報表資料
 description: 取得並行檢視者 JSON 報表資料
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 100%
+source-wordcount: '150'
+ht-degree: 84%
 
 ---
 
@@ -16,12 +16,12 @@ ht-degree: 100%
 * [Analytics API](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. 使用 UI 上建置的任何區段來篩選資料。若要依據特定內容 ID 進行篩選，請建立新的區段。
+1. 使用 UI 上建置的任何區段來篩選資料。 若要依據特定內容 ID 進行篩選，請建立新的區段。
 1. 將要求內文中的 `elements` -> `id` 設為 `videoconcurrentviewers`。
-1. 要求足夠的資料量。為確保資料中沒有間隙，Adobe 建議要求 3200 個資料點。
+1. 要求足夠的資料量。 為確保資料中沒有間隙，Adobe 建議要求 3200 個資料點。
 
-   * 您在報表中指定的資料範圍會&#x200B;_在視訊工作階段結束時_收集所有同時觀看者資料。
-因此，您必須說明在某一天開始並在午夜後結束 (亦即隔天) 的工作階段。
+   * 您在報表中指定的資料範圍會在視訊工作階段結束時，收集所有同時檢閱者資料&#x200B;_。_
+因此，您必須說明在某一天開始並在午夜後結束（亦即隔天）的工作階段。
 
    * 請要求一天以上的資料量，但在您的分析中，_*只能使用第一天的資料*_。
 
@@ -56,7 +56,7 @@ ht-degree: 100%
 ```
 
 <!--
-You can extract the concurrent viewers report data using the Experience Cloud API Explorer as follows. 
+You can extract the concurrent viewers report data using the API Explorer as follows. 
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
@@ -66,7 +66,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=zh-Hant)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
         
         * `dateTo` - End date of the report.         
         

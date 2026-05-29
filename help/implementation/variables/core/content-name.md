@@ -3,10 +3,10 @@ title: 內容名稱
 description: 設定內容的易記名稱（報表中顯示的可讀取標題）。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 15%
+source-wordcount: '233'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 15%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[內容名稱](/help/reporting/dimensions/content-name.md)。*
+*本頁涵蓋&#x200B;**內容名稱**變數的資料集合。 如需對應的報表維度，請參閱[內容名稱](/help/reporting/dimensions/content-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,14 +24,18 @@ ht-degree: 15%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.friendlyName` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.friendlyName` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
 
-## Web SDK
+## 建議的實作型別
 
-呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`mediaCollection.sessionDetails`內設定`friendlyName`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`xdm.mediaCollection.sessionDetails`內設定`friendlyName`：
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 將人類可讀的名稱做為第一個(`name`)引數傳遞給`createMediaObject`。 第二個引數是內容ID。
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "Blinding Light",
@@ -69,7 +71,9 @@ let mediaObject = Media.createMediaObjectWith(name: "Blinding Light",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+將人類可讀的名稱做為第一個(`name`)引數傳遞給`createMediaObject`。 第二個引數是內容ID。
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("Blinding Light",
@@ -81,9 +85,9 @@ var mediaInfo = Media.createMediaObject("Blinding Light",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-呼叫`createMediaSession`時在`mediaCollection.sessionDetails`內設定`friendlyName`：
+呼叫`createMediaSession`時在`xdm.mediaCollection.sessionDetails`內設定`friendlyName`：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,9 +109,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-呼叫`mediaCollection.sessionDetails`內有`friendlyName`的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)端點：
+呼叫`xdm.mediaCollection.sessionDetails`內有`friendlyName`的[sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart)端點：
 
 ```json
 {
@@ -130,7 +134,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 將人類可讀的名稱作為第一個引數傳遞給`ADB.Media.createMediaObject`：
 
@@ -146,7 +156,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+將人類可讀的名稱作為第一個引數傳遞給`ADBMobile.media.createMediaObject`：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "Blinding Light",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB 媒體收集API]
 
 在`sessionStart` POST要求的`params`物件中包含`media.name`：
 
@@ -161,3 +186,5 @@ tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
 如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+
+>[!ENDTABS]

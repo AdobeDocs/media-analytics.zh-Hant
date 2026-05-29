@@ -3,10 +3,10 @@ title: 廣告插播名稱
 description: 設定上層廣告插播的易記名稱。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 11%
+source-wordcount: '248'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告插播名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[Pod名稱](/help/reporting/dimensions/pod-name.md)。*
+*本頁涵蓋&#x200B;**廣告插播名稱**變數的資料集合。 如需對應的報表維度，請參閱[Pod名稱](/help/reporting/dimensions/pod-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,14 +24,18 @@ ht-degree: 11%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.podFriendlyName` |
-| **XDM集合欄位** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **必要** | 是（行動SDK）；否（Edge、媒體收集API） |
 | **與**&#x200B;一起傳送 | [廣告插播開始](/help/implementation/events/ads/ad-break-start.md)，廣告關閉 |
 
-## Web SDK
+## 建議的實作型別
 
-呼叫`media.adBreakStart`的[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`mediaCollection.advertisingPodDetails`內設定`friendlyName`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+呼叫`media.adBreakStart`的[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`xdm.mediaCollection.advertisingPodDetails`內設定`friendlyName`：
 
 ```javascript
 alloy("sendEvent", {
@@ -50,11 +54,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 將廣告插播名稱作為第一個(`name`)引數傳遞至`createAdBreakObject`，然後在廣告開始事件之前追蹤廣告插播開始事件。
-
-**iOS (Swift)**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
@@ -64,7 +66,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+將廣告插播名稱作為第一個(`name`)引數傳遞至`createAdBreakObject`，然後在廣告開始事件之前追蹤廣告插播開始事件。
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("pre-roll",
@@ -74,9 +78,9 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-呼叫`media.adBreakStart`的`sendMediaEvent`時，在`mediaCollection.advertisingPodDetails`中設定`friendlyName`：
+呼叫`media.adBreakStart`的`sendMediaEvent`時，在`xdm.mediaCollection.advertisingPodDetails`中設定`friendlyName`：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -94,9 +98,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-呼叫`mediaCollection.advertisingPodDetails`內有`friendlyName`的[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart)端點：
+呼叫`xdm.mediaCollection.advertisingPodDetails`內有`friendlyName`的[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart)端點：
 
 ```json
 {
@@ -117,7 +121,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 將廣告插播名稱作為第一個引數傳遞給`ADB.Media.createAdBreakObject`：
 
@@ -131,7 +141,20 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+將廣告插播名稱作為第一個引數傳遞給`ADBMobile.media.createAdBreakObject`：
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "pre-roll",
+  1,
+  0
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB 媒體收集API]
 
 在`adBreakStart` POST要求的`params`物件中包含`media.ad.podFriendlyName`：
 
@@ -146,3 +169,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
 如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]

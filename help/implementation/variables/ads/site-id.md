@@ -3,10 +3,10 @@ title: 網站 ID
 description: 設定每個廣告的廣告網站ID以啟用依廣告位置網站劃分。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '182'
-ht-degree: 17%
+source-wordcount: '214'
+ht-degree: 11%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 17%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**網站識別碼**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[網站ID](/help/reporting/dimensions/site-id.md)。*
+*本頁涵蓋&#x200B;**網站識別碼**變數的資料集合。 如需對應的報表維度，請參閱[網站ID](/help/reporting/dimensions/site-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,14 +24,18 @@ ht-degree: 17%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.site` |
-| **XDM集合欄位** | [`mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.siteID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.site` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
 
-## Web SDK
+## 建議的實作型別
 
-呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`mediaCollection.advertisingDetails`內設定`siteID`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`xdm.mediaCollection.advertisingDetails`內設定`siteID`：
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 將網站ID作為HashMap引數中的中繼資料索引鍵傳遞給`trackEvent(AdStart)`。 使用`MediaConstants.AdMetadataKeys.SITE_ID`。
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -62,7 +64,9 @@ metadata[MediaConstants.AdMetadataKeys.SITE_ID] = "site-42"
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+將網站ID作為HashMap引數中的中繼資料索引鍵傳遞給`trackEvent(AdStart)`。 使用`MediaConstants.AdMetadataKeys.SITE_ID`。
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -71,9 +75,9 @@ metadata[MediaConstants.AdMetadataKeys.SITE_ID] = "site-42"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-呼叫`media.adStart`的`sendMediaEvent`時，在`mediaCollection.advertisingDetails`中設定`siteID`：
+呼叫`media.adStart`的`sendMediaEvent`時，在`xdm.mediaCollection.advertisingDetails`中設定`siteID`：
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -90,9 +94,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
-呼叫`mediaCollection.advertisingDetails`內有`siteID`的[adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart)端點：
+呼叫`xdm.mediaCollection.advertisingDetails`內有`siteID`的[adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart)端點：
 
 ```json
 {
@@ -115,7 +119,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 使用`ADB.Media.AdMetadataKeys.SiteId`傳遞`contextData`物件中的網站識別碼：
 
@@ -126,7 +136,19 @@ contextData[ADB.Media.AdMetadataKeys.SiteId] = "site-42";
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+在標準廣告中繼資料物件中使用`ADBMobile.media.AdMetadataKeys.SITE_ID`設定網站ID：
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
+var standardAdMetadata = {};
+standardAdMetadata[ADBMobile.media.AdMetadataKeys.SITE_ID] = "site-42";
+adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB 媒體收集API]
 
 在`params`物件中包含`media.ad.siteId`：
 
@@ -141,3 +163,5 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
 如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]

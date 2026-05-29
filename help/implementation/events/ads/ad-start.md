@@ -3,10 +3,10 @@ title: 廣告開始
 description: 表示個別廣告開始播放。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 14%
+source-wordcount: '187'
+ht-degree: 8%
 
 ---
 
@@ -16,13 +16,17 @@ ht-degree: 14%
 廣告開始事件代表個別廣告開始播放。 它必須出現在[廣告插播開始](ad-break-start.md) / [廣告插播完成](ad-break-complete.md)配對中。
 
 * **必要條件**： [工作階段開始](../session/session-start.md)，[廣告插播開始](ad-break-start.md)
-* **關聯的量度**： [廣告開始](/help/reporting/metrics/ad-starts.md)
+* **關聯的量度**： [[!UICONTROL 廣告開始]](/help/reporting/metrics/ad-starts.md)
 
 >[!IMPORTANT]
 >
 >此事件必須由`adBreakStart`和`adBreakComplete`個書檔包圍，即使播放單一廣告亦然。 如果沒有這些書擋，廣告事件會被忽略，而廣告持續時間會計為主要內容持續時間。
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用`eventType: "media.adStart"`和必要的`advertisingDetails`來呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -45,11 +49,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 將廣告名稱、ID、Pod位置和長度傳遞至`createAdObject`，然後呼叫`trackEvent`。
-
-**iOS (Swift)**
 
 ```swift
 let adObject = Media.createAdObjectWith(name: "Ford F-150",
@@ -60,7 +62,9 @@ let adObject = Media.createAdObjectWith(name: "Ford F-150",
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+將廣告名稱、ID、Pod位置和長度傳遞至`createAdObject`，然後呼叫`trackEvent`。
 
 ```kotlin
 val adObject = Media.createAdObject("Ford F-150",
@@ -71,7 +75,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`eventType: "media.adStart"`和必要的`advertisingDetails`來呼叫`sendMediaEvent`：
 
@@ -93,7 +97,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 使用必要的`advertisingDetails`呼叫[adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart)端點：
 
@@ -120,7 +124,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adStart?configId={datastreamID}"
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 將廣告名稱、ID、位置和長度傳遞至`ADB.Media.createAdObject`：
 
@@ -135,7 +145,22 @@ var adInfo = ADB.Media.createAdObject(
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+將廣告名稱、ID、位置和長度傳遞至`ADBMobile.media.createAdObject`：
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject(
+  "Ford F-150",  // name (friendly name)
+  "ad-2125",     // ad ID
+  0,             // position in pod
+  15             // length (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB 媒體收集API]
 
 傳送`adStart`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
 
@@ -151,3 +176,5 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, null);
   }
 }
 ```
+
+>[!ENDTABS]

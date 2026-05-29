@@ -3,10 +3,10 @@ title: 廣告插播開始
 description: 代表廣告插播開始（一或多個廣告的序列）。
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '172'
-ht-degree: 13%
+source-wordcount: '201'
+ht-degree: 7%
 
 ---
 
@@ -22,7 +22,11 @@ ht-degree: 13%
 >
 >已忽略廣告事件(`adStart`、`adComplete`、`adSkip`)，但不包含`adBreakStart`和`adBreakComplete`個書擋。 如果沒有這些變數，廣告持續時間會歸因於主要內容持續時間，而這會影響彙總的報表資料。
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用`eventType: "media.adBreakStart"`和必要的`advertisingPodDetails`來呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -43,11 +47,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 將廣告插播名稱、位置和開始時間傳遞至`createAdBreakObject`，然後呼叫`trackEvent`。
-
-**iOS (Swift)**
 
 ```swift
 let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
@@ -57,7 +59,9 @@ let adBreakObject = Media.createAdBreakObjectWith(name: "pre-roll",
 tracker.trackEvent(event: MediaEvent.AdBreakStart, info: adBreakObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+將廣告插播名稱、位置和開始時間傳遞至`createAdBreakObject`，然後呼叫`trackEvent`。
 
 ```kotlin
 val adBreakObject = Media.createAdBreakObject("pre-roll",
@@ -67,7 +71,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`eventType: "media.adBreakStart"`和必要的`advertisingPodDetails`來呼叫`sendMediaEvent`：
 
@@ -87,7 +91,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 使用必要的`advertisingPodDetails`呼叫[adBreakStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adbreakstart)端點：
 
@@ -112,7 +116,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/adBreakStart?configId={datastrea
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 將廣告插播名稱、位置和開始時間傳遞至`ADB.Media.createAdBreakObject`：
 
@@ -126,7 +136,21 @@ var adBreakInfo = ADB.Media.createAdBreakObject(
 tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+將廣告插播名稱、位置和開始時間傳遞至`ADBMobile.media.createAdBreakObject`：
+
+```javascript
+var adBreakInfo = ADBMobile.media.createAdBreakObject(
+  "pre-roll",  // name
+  1,           // position
+  0            // start time (seconds)
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB 媒體收集API]
 
 傳送`adBreakStart`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
 
@@ -141,3 +165,5 @@ tracker.trackEvent(ADB.Media.Event.AdBreakStart, adBreakInfo, null);
   }
 }
 ```
+
+>[!ENDTABS]

@@ -6,19 +6,11 @@ exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
 feature: Streaming Media, Workspace Basics
 role: User, Admin
 TQID: https://experienceleague.adobe.com/engzFFk1A-g6oRqo-MnlNfEmVGUmR316Po152Wajm8c
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 109
 ht-degree: 81%
@@ -27,7 +19,7 @@ ht-degree: 81%
 
 # 媒體概觀{#media-overview}
 
-「媒體概觀」控制面板的設計可讓您監視網站上的各個媒體。 「媒體概觀」畫面會顯示數個彙總測量，供您快速監測媒體是否如預期般執行。 圖形會在廣告開始旁顯示內容開始，讓您快速檢視每個媒體專案的這些量度。
+「媒體概觀」控制面板的設計可讓您監視網站上的各個媒體。 「媒體概觀」畫面會顯示數個彙總測量，供您快速監測媒體是否如預期般執行。 圖表會在[[!UICONTROL 廣告開始]](/help/reporting/metrics/ad-starts.md)旁顯示[[!UICONTROL 內容開始]](/help/reporting/metrics/content-starts.md)，讓您快速檢視每個媒體專案的這些量度。
 
 ![](assets/media_overview.png)
 

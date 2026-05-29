@@ -3,10 +3,10 @@ title: 工作階段結束
 description: 當檢視器放棄內容時，立即關閉媒體工作階段。
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 8%
+source-wordcount: '300'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,11 @@ ht-degree: 8%
 * **必要條件**： [工作階段開始](session-start.md)
 * **關聯的量度**：無
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 與`eventType: "media.sessionEnd"`通話[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)：
 
@@ -40,23 +44,23 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 當檢視器關閉播放器或導覽離開時，請呼叫`trackSessionEnd`。
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackSessionEnd()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+當檢視器關閉播放器或導覽離開時，請呼叫`trackSessionEnd`。
 
 ```kotlin
 tracker.trackSessionEnd()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 與`eventType: "media.sessionEnd"`通話`sendMediaEvent`：
 
@@ -71,7 +75,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 呼叫[sessionEnd](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionend)端點：
 
@@ -92,7 +96,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionEnd?configId={datastreamI
 }'
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 當檢視器關閉播放器或導覽離開時呼叫`trackSessionEnd`：
 
@@ -100,7 +110,15 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionEnd?configId={datastreamI
 tracker.trackSessionEnd();
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+當檢視器關閉播放器或導覽離開時呼叫`trackSessionEnd`：
+
+```javascript
+ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB 媒體收集API]
 
 傳送`sessionEnd`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
 
@@ -110,3 +128,5 @@ tracker.trackSessionEnd();
   "eventType": "sessionEnd"
 }
 ```
+
+>[!ENDTABS]

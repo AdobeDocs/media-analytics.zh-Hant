@@ -3,7 +3,7 @@ title: 廣告名稱
 description: 報告每個廣告的人類可讀標題。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '191'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**廣告名稱**&#x200B;報告維度。 如需如何收集此變數，請參閱[廣告名稱](/help/implementation/variables/ads/ad-name.md)。*
+*此頁面涵蓋&#x200B;**廣告名稱**報告維度。 如需如何收集此變數，請參閱[廣告名稱](/help/implementation/variables/ads/ad-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體廣告]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.ad.friendlyName`收集。 |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 資料饋送 | `videoadname`, `post_videoadname` |
 | Audience Manager | `c_contextdata.a.media.ad.friendlyName` |
 

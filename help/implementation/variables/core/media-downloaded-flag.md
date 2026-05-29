@@ -3,10 +3,10 @@ title: 媒體已下載的旗標
 description: 將工作階段標示為已下載的離線播放，以便與串流工作階段分開報告。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 10%
+source-wordcount: '273'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**媒體下載旗標**&#x200B;變數的資料集合。 檢視對應報表維度的[下載的媒體](/help/reporting/dimensions/media-downloaded-flag.md)。*
+*本頁涵蓋&#x200B;**媒體下載旗標**變數的資料集合。 檢視對應報表維度的[下載的媒體](/help/reporting/dimensions/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,14 +24,18 @@ ht-degree: 10%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.downloaded` |
-| **XDM集合欄位** | [`mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.downloaded` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
 
-## Web SDK
+## 建議的實作型別
 
-呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`mediaCollection.sessionDetails`內將`isDownloaded`設為`true`：
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
+
+呼叫[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)時，在`xdm.mediaCollection.sessionDetails`內將`isDownloaded`設為`true`：
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 使用`MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`建立追蹤器時，在追蹤器設定上設定下載內容標幟。
-
-**iOS (Swift)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -70,7 +72,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+使用`MediaConstants.TrackerConfig.DOWNLOADED_CONTENT`建立追蹤器時，在追蹤器設定上設定下載內容標幟。
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -81,9 +85,9 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-呼叫`createMediaSession`時在`mediaCollection.sessionDetails`內將`isDownloaded`設為`true`：
+呼叫`createMediaSession`時在`xdm.mediaCollection.sessionDetails`內將`isDownloaded`設為`true`：
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,7 +109,7 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 在裝置返回上線後，呼叫[已下載](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/downloaded/#downloaded)端點，在`mediaDownloadedEvents`內批次處理完整的離線工作階段。 Adobe會自動將`isDownloaded`設定為`true`並指派工作階段ID；請勿在承載中包含任一工作階段。
 
@@ -142,7 +146,13 @@ m.aepSdk.createMediaSession({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 建立追蹤器之前，先在`ADB.MediaConfig`上設定`downloadedContent`：
 
@@ -156,7 +166,18 @@ mediaConfig.downloadedContent = true;
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+呼叫`trackSessionStart`之前，在媒體資訊物件上設定`MediaDownloaded`：
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB 媒體收集API]
 
 在`sessionStart` POST要求的`params`物件中包含`media.downloaded`：
 
@@ -171,3 +192,5 @@ var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
 如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+
+>[!ENDTABS]

@@ -6,24 +6,14 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/6SPeRxCbhd8xZE-u0PlNpqXpZ9JWAS5hi41f7mjTBe0
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1344
-ht-degree: 98%
+source-wordcount: 1337
+ht-degree: 86%
 
 ---
 
@@ -31,7 +21,7 @@ ht-degree: 98%
 
 ## Analytics 資料
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | 字串 | `sessionStart` | Adobe Analytics 伺服器的 URL |
 | `analytics.reportSuite` | Y | 字串 | `sessionStart` | 識別 Analytics 報表資料的 ID |
@@ -40,16 +30,16 @@ ht-degree: 98%
 
 ## 訪客資料
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | Y | 字串 | `sessionStart` | Experience Cloud 組織 ID，能在 Adobe Experience Cloud 生態系統中識別您的組織 |
-| `visitor.marketingCloudUserId` | N | 字串 | `sessionStart` | 這是 Experience Cloud 使用者 ID (ECID)。 在大多數案例中，這是識別使用者時應使用的 ID。 心率 `marketingCloudUserId` 等於 Adobe Analytics 中的 `MID`。 此參數就技術上而言雖然並非必要，但在存取 Experience Cloud 應用程式系列時則需使用此參數。 |
+| `visitor.marketingCloudOrgId` | Y | 字串 | `sessionStart` | IMS組織ID，可在Adobe CX Enterprise中識別您的組織 |
+| `visitor.marketingCloudUserId` | N | 字串 | `sessionStart` | Experience Cloud使用者ID (ECID)。 在大多數案例中，這是識別使用者時應使用的 ID。 心率 `marketingCloudUserId` 等於 Adobe Analytics 中的 `MID`。 雖然從技術上講並非必要，但存取CX Enterprise應用程式和服務需要此引數。 |
 | `visitor.aamLocationHint` | N | integer | `sessionStart` | 提供 Adobe Audience Manager Edge 資料 - 如果未輸入值，則為空值。 |
 | `appInstallationId` | N | 字串 | `sessionStart` | 唯一識別應用程式和裝置的 appInstallationId |
 
 ## 內容資料
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
 | `media.id` | Y | 字串 | `sessionStart` | 內容的唯一識別碼 |
 | `media.name` | N | 字串 | `sessionStart` | 內容的人類可讀名稱 |
@@ -62,7 +52,7 @@ ht-degree: 98%
 
 ## 內容標準中繼資料
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
 | `media.streamFormat` | N | 字串 | `sessionStart` | 串流格式，例如「HD」 |
 | `media.show` | N | 字串 | `sessionStart` | 節目或影集名稱 |
@@ -84,7 +74,7 @@ ht-degree: 98%
 
 ## 廣告資料
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | 字串 | `adBreakStart` | 廣告插播的易記名稱 |
 | `media.ad.podIndex` | Y | integer | `adBreakStart` | 視訊中的廣告 Pod 索引 |
@@ -97,7 +87,7 @@ ht-degree: 98%
 
 ## 廣告標準中繼資料
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.advertiser` | N | 字串 | `adStart` | 廣告中精選產品的公司或品牌 |
 | `media.ad.campaignId` | N | 字串 | `adStart` | 廣告促銷活動 ID |
@@ -108,7 +98,7 @@ ht-degree: 98%
 
 ## 章節資料
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
 | `media.chapter.index` | Y | integer | `chapterStart` | 識別章節在內容中的位置 |
 | `media.chapter.offset` | Y | 數字 | `chapterStart` | 章節開始播放的秒數 |
@@ -117,7 +107,7 @@ ht-degree: 98%
 
 ## 品質資料
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | integer | 任何 | 平均位元速率 (以每秒位元數為單位)。 平均位元速率的計算方式，為播放作業工作階段期間發生、與播放期間相關的所有位元速率值的加權平均。 |
 | `media.qoe.droppedFrames` | N | integer | 任何 | 資料流掉格的數量 |
@@ -126,20 +116,20 @@ ht-degree: 98%
 
 ## 加州消費者隱私法 (CCPA) 參數 {#ccpa-params}
 
-| 要求索引鍵  | 必填 | 要求類型索引鍵 | 設定於... |  說明  |
+| 要求索引鍵 | 必要 | 要求型別索引鍵 | 設定於…… | 說明 |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | 布林值 | `sessionStart` | 若使用者已選擇退出其在 Adobe Analytics 與其他 Experience Cloud 解決方案 (例如 Audience Manager) 之間共用的資料，則設為 true |
+| `analytics.optOutServerSideForwarding` | N | 布林值 | `sessionStart` | 若使用者已選擇退出其在Adobe Analytics與其他CX企業解決方案（例如Audience Manager）之間共用的資料，則設為true |
 | `analytics.optOutShare` | N | 布林值 | `sessionStart` | 若使用者已選擇退出為其資料建立同盟 (例如與其他 Adobe Analytics 用戶端建立同盟)，則設為 true。 |
 
 ## 其他詳細資料 {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-使用以下索引鍵將 Experience Cloud 使用者 ID (亦稱為 `MID` 或 `MCID`) 加入 `params` 對應，再透過 `sessionStart` 呼叫予以傳遞：**visitor.marketingCloudUserId**。 如果您已經與 Experience Cloud 產品整合，而且已取得 MCID，這項功能將會非常實用。
+使用以下索引鍵將 Experience Cloud 使用者 ID (亦稱為 `MID` 或 `MCID`) 加入 `params` 對應，再透過 `sessionStart` 呼叫予以傳遞：**visitor.marketingCloudUserId**。 如果您已經與其他CX Enterprise產品整合，而且已取得MCID，這項功能會很有用。
 
 >[!NOTE]
 >
->Media Analytics (MA) 已與 Experience Cloud 應用程式系列 (Adobe Analytics、Audience Manager、Target 等) 整合。 若要存取這些應用程式，您需要 Experience Cloud ID。 _在大多數案例中，您應在識別使用者時使用 ECID。_
+>Media Analytics (MA)已與CX Enterprise應用程式系列（Adobe Analytics、Audience Manager、Target等）整合。 若要存取這些應用程式，您需要 Experience Cloud ID。 _在大多數案例中，您應在識別使用者時使用 ECID。_
 
 ### appInstallationId
 

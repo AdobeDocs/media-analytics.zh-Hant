@@ -3,10 +3,10 @@ title: 焦點
 description: 追蹤播放器何時聚焦在檢視者的畫面，讓後端可以報告焦點參與情形。
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 8%
+source-wordcount: '314'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**焦點**&#x200B;播放器狀態的資料集合。 檢視對應報表量度的受焦點影響的[資料流](/help/reporting/metrics/in-focus-streams-impacted.md)、[焦點計數](/help/reporting/metrics/in-focus-count.md)以及[焦點總持續時間](/help/reporting/metrics/in-focus-total-duration.md)。*
+*此頁面涵蓋&#x200B;**焦點**播放器狀態的資料集合。 檢視對應報表量度的受焦點影響的[資料流](/help/reporting/metrics/in-focus-streams-impacted.md)、[焦點計數](/help/reporting/metrics/in-focus-count.md)以及[焦點總持續時間](/help/reporting/metrics/in-focus-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,12 +24,16 @@ ht-degree: 8%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM集合欄位** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "inFocus"`的專案） |
+| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "inFocus"`的專案） |
 | **Audience Manager特徵** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [狀態開始](/help/implementation/events/player-state/state-start.md)，[狀態結束](/help/implementation/events/player-state/state-end.md) |
 
-## Web SDK
+## 建議的實作型別
+
+>[!BEGINTABS]
+
+>[!TAB Web SDK]
 
 使用[`sendEvent`](https://experienceleague.adobe.com/tw/en/docs/experience-platform/collection/js/commands/sendevent/overview)傳送狀態已新增至`statesStart`的`media.statesUpdate`事件：
 
@@ -61,11 +65,9 @@ alloy("sendEvent", {
 });
 ```
 
-## Mobile SDK
+>[!TAB iOS]
 
 將`tracker.trackPlayerStateStart()`和`tracker.trackPlayerStateEnd()`與`MediaConstants.PlayerState.IN_FOCUS`常數搭配使用。
-
-**iOS (Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.IN_FOCUS)
@@ -74,7 +76,9 @@ tracker.trackPlayerStateStart(info: stateObject)
 tracker.trackPlayerStateEnd(info: stateObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+將`tracker.trackPlayerStateStart()`和`tracker.trackPlayerStateEnd()`與`MediaConstants.PlayerState.IN_FOCUS`常數搭配使用。
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.IN_FOCUS)
@@ -83,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 使用`sendMediaEvent`傳送狀態已新增至`statesStart`的`media.statesUpdate`事件：
 
@@ -113,7 +117,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## Media Edge API
+>[!TAB Media Edge API]
 
 呼叫[statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/)端點，其中`statesStart`有`inFocus` （或播放器失焦時的`statesEnd`）：
 
@@ -132,7 +136,13 @@ m.aepSdk.sendMediaEvent({
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## 舊版實作型別（僅限Analytics）
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 使用`ADB.Media.createStateObject`和`ADB.Media.PlayerState.InFocus`常數：
 
@@ -143,7 +153,18 @@ tracker.trackPlayerStateStart(stateObject);
 tracker.trackPlayerStateEnd(stateObject);
 ```
 
-## Media Collection API
+>[!TAB Chromecast]
+
+直接將`ADBMobile.media.createStateObject`與`"inFocus"`字串搭配使用，因為Chromecast尚未命名`PlayerState`常數：
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject("inFocus");
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+// When the player loses focus:
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
+```
+
+>[!TAB 媒體收集API]
 
 在播放器獲得焦點時傳送`stateStart` POST要求，並在失焦時傳送`stateEnd` POST：
 
@@ -158,3 +179,5 @@ tracker.trackPlayerStateEnd(stateObject);
 ```
 
 如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+
+>[!ENDTABS]
