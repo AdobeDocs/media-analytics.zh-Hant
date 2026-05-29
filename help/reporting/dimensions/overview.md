@@ -3,7 +3,7 @@ title: 串流媒體維度概觀
 description: 瞭解如何填入及組織Adobe Analytics和Customer Journey Analytics中的串流媒體維度。
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -36,6 +36,6 @@ ht-degree: 6%
 
 >[!MORELIKETHIS]
 >
->* [量度總覽](../metrics/overview.md)：串流媒體量度參考
->* [引數對應](/help/implementation/parameters-mapping.md)：完整的變數到欄到XDM參考
->* [媒體區段](/help/reporting/segments.md)：使用串流媒體維度的內建區段
+>* [事件總覽](/help/implementation/events/overview.md)：填入維度的播放器事件
+>* [變數總覽](/help/implementation/variables/overview.md)：事件攜帶到Adobe的資料
+>* [量度總覽](/help/reporting/metrics/overview.md)：變數填入的報告量度
