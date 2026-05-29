@@ -3,9 +3,9 @@ title: 串流媒體事件概觀
 description: 瞭解媒體事件型別及其必須傳送的順序。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -69,3 +69,9 @@ ht-degree: 0%
 ## 錯誤事件
 
 [錯誤](error.md)事件會在工作階段期間記錄播放失敗 — 失敗的資料流要求、轉碼器錯誤或外部傳遞失敗。 每當發生有意義的錯誤時，就傳送它。 錯誤事件不會關閉工作階段；播放可以繼續，並在相同工作階段下追蹤後續事件。 如果錯誤無法復原，請在工作階段結束之後明確關閉工作階段。
+
+>[!MORELIKETHIS]
+>
+>* [變數總覽](/help/implementation/variables/overview.md)：事件攜帶到Adobe的資料
+>* [維度總覽](/help/reporting/dimensions/overview.md)：事件填入的報告維度
+>* [量度總覽](/help/reporting/metrics/overview.md)：事件填入的報告量度
