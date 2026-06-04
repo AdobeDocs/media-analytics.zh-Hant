@@ -24,7 +24,7 @@ ht-degree: 3%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.adLoad` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.adLoad` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 >[!TAB Web SDK]
 
-呼叫[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)時，在`xdm.mediaCollection.sessionDetails`內設定`adLoad`：
+呼叫[`createMediaSession`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/commands/createmediasession)時，在`xdm.mediaCollection.sessionDetails`內設定`adLoad`：
 
 ```javascript
 alloy("createMediaSession", {

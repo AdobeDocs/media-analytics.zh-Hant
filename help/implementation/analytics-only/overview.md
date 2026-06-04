@@ -18,7 +18,7 @@ ht-degree: 5%
 
 1. **完成一般必要條件。** 請參閱[一般必要條件](/help/getting-started/prereqs.md)。
 
-1. **確認Adobe Analytics實作。** 僅限Analytics的串流媒體實作需要基本的Adobe Analytics實作。 請參閱[實作Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
+1. **確認Adobe Analytics實作。** 僅限Analytics的串流媒體實作需要基本的Adobe Analytics實作。 請參閱[實作Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)。
 
 1. **取得媒體追蹤伺服器URL。** 請向您的Adobe Analytics代表詢問媒體追蹤伺服器URL (`collection-api-server` URL)。 網域通常遵循模式`[your_namespace].hb-api.omtrdc.net`。
 

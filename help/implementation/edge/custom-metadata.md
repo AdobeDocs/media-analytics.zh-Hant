@@ -336,7 +336,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 >[!MORELIKETHIS]
 >
 >* [自訂中繼資料支援](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)。 — MC API （JSON格式）
->* [媒體收集詳細資料資料型別](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — XDM結構描述參考
+>* [媒體收集詳細資料資料型別](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) — XDM結構描述參考
 >* [Adobe Experience Platform Edge Network的資料變數對應](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/data-var-mapping) — XDM欄位的Analytics內容資料對應
 
 <!--

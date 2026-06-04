@@ -31,8 +31,8 @@ ht-degree: 4%
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics | 使用Edge實作時透過XDM欄位對應自動收集。 若為僅限Analytics的實作，請使用[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)將內容資料`media.sdkVersion`對應至自訂eVar。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | 使用Edge實作時透過XDM欄位對應自動收集。 若為僅限Analytics的實作，請使用[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md)將內容資料`media.sdkVersion`對應至自訂eVar。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料摘要 | 沒有專用的資料摘要欄。 對於僅限Analytics的實作，請使用透過處理規則設定的自訂eVar的資料摘要欄。 |
 | Audience Manager | `c_contextdata.media.sdkVersion` （僅限Analytics實施） |
 

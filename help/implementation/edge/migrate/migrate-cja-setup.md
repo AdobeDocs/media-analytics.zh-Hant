@@ -26,11 +26,11 @@ ht-degree: 1%
 
 # 移轉Customer Journey Analytics以使用新的串流媒體欄位
 
-本檔案說明應如何更新使用名為「Media」的Adobe串流媒體服務資料型別的Customer Journey Analytics設定，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
+本檔案說明應如何更新使用名為「Media」的Adobe串流媒體服務資料型別的Customer Journey Analytics設定，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
 
 ## 移轉Customer Journey Analytics
 
-若要將Customer Journey Analytics安裝程式從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須更新下列使用舊資料型別的安裝程式：
+若要將Customer Journey Analytics安裝程式從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須更新下列使用舊資料型別的安裝程式：
 
 * 資料檢視
 

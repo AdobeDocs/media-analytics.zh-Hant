@@ -16,7 +16,7 @@ ht-degree: 3%
 
 * **必要條件**：
    * 完成[僅限Analytics的實作概觀](overview.md)。
-   * 實作[AppMeasurement](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/js/overview)和[訪客ID服務](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)。
+   * 實作[AppMeasurement](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/js/overview)和[訪客ID服務](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/appmeasurement)。
    * [下載JavaScript的Media SDK](/help/getting-started/download-sdks.md)。
 
 ## 安裝和設定SDK

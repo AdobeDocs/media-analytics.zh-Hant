@@ -127,7 +127,7 @@ ht-degree: 17%
 
 1. （視條件而定）如果您將自訂中繼資料新增到結構描述，請為自訂欄位設定持續性，如Customer Journey Analytics指南中的[持續性元件設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)所述。
 
-1. 依照[共用專案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的說明共用專案。
+1. 依照[共用專案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hant)中的說明共用專案。
 
    >[!NOTE]
    >

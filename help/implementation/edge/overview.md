@@ -22,15 +22,15 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
 1. **確認相容的Adobe解決方案。** 您必須具備有效的Customer Journey Analytics、Adobe Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform實作：
    * [Customer Journey Analytics指南](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant)
-   * [實作 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)
+   * [實作 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)
    * [Adobe Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)
-   * [Real-Time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)
+   * [Real-Time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hant)
 
 ## 在Adobe Experience Platform中設定結構
 
 為了標準化使用Adobe Experience Platform之應用程式的資料收集，Adobe建立了開放式、公開記錄的體驗資料模型(XDM)標準。
 
-1. 在Adobe Experience Platform中，開始建立結構描述，如[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)中所述。
+1. 在Adobe Experience Platform中，開始建立結構描述，如[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hant)中所述。
 
 1. 在[結構描述詳細資料]頁面上，選擇&#x200B;**[!UICONTROL 體驗事件]**&#x200B;作為結構描述的基底類別。
 
@@ -129,7 +129,7 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [使用產生的路徑](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
+   1. [使用產生的路徑](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -167,11 +167,11 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
       * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics）
 
-        如果您使用Adobe Analytics，請依照[建立報表套裝](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中的說明定義報表套裝。
+        如果您使用Adobe Analytics，請依照[建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中的說明定義報表套裝。
 
       * **[!UICONTROL Adobe Experience Platform]** （若使用Customer Journey Analytics）
 
-     如需有關將服務新增至資料串流的資訊，請參閱[設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的「將服務新增至資料串流」。
+     如需有關將服務新增至資料串流的資訊，請參閱[設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#view-details)中的「將服務新增至資料串流」。
 
      ![新增Adobe Analytics服務](assets/datastream-add-service.png)
 
