@@ -5,9 +5,9 @@ user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
 user-guide-description: 實施串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '754'
 ht-degree: 35%
 
 ---
@@ -67,8 +67,10 @@ ht-degree: 35%
          + [內容繼續](implementation/variables/core/content-resumes.md)
          + [內容型別](implementation/variables/core/content-type.md)
          + [媒體已下載的旗標](implementation/variables/core/media-downloaded-flag.md)
+         + [應用程式版本](implementation/variables/core/app-version.md)
          + [資料流類型](implementation/variables/core/stream-type.md)
       + 標準中繼資料 {#metadata}
+         + [廣告載入型別](implementation/variables/standard-metadata/ad-load-type.md)
          + [相簿](implementation/variables/standard-metadata/album.md)
          + [藝術家](implementation/variables/standard-metadata/artist.md)
          + [資產 ID](implementation/variables/standard-metadata/asset-id.md)
@@ -123,24 +125,30 @@ ht-degree: 35%
          + [靜音](implementation/variables/player-state/mute.md)
          + [子母畫面](implementation/variables/player-state/picture-in-picture.md)
    + Edge實施（建議） {#edge}
-      + [先決條件](/help/implementation/edge/prerequisites-edge.md)
-      + Media Edge SDK /擴充功能 {#media-edge-sdk}
-         + [Media Edge SDK/ 擴充功能設定](/help/implementation/edge/implementation-edge.md)
-         + [Media Edge Web SDK](/help/implementation/edge/edge-web-sdk.md)
-         + [Media Edge Mobile SDK](/help/implementation/edge/edge-mobile-sdk.md)
-      + [Media Edge API](/help/implementation/edge/implementation-edge-api.md)
-      + [自訂中繼資料支援](implementation/edge/implementation-edge-custom-metadata.md)
-      + [XDM報告結構描述](/help/implementation/edge/platform-data.md)
+      + [Edge實作概觀](/help/implementation/edge/overview.md)
+      + [Web SDK](/help/implementation/edge/web-sdk.md)
+      + [Web SDK 標記擴充功能](/help/implementation/edge/web-sdk-tags.md)
+      + [iOS](/help/implementation/edge/ios.md)
+      + [iOS標籤擴充功能](/help/implementation/edge/ios-tags.md)
+      + [Android](/help/implementation/edge/android.md)
+      + [Android標籤擴充功能](/help/implementation/edge/android-tags.md)
+      + [Roku](/help/implementation/edge/roku.md)
+      + [Media Edge API](/help/implementation/edge/media-edge-api.md)
+      + [自訂中繼資料支援](/help/implementation/edge/custom-metadata.md)
+      + [XDM報告結構描述](/help/implementation/edge/reporting-schema.md)
+      + 遷移XDM欄位 {#xdm-updates}
+         + [移轉對象](implementation/edge/migrate/migrate-audiences.md)
+         + [移轉CJA設定](implementation/edge/migrate/migrate-cja-setup.md)
+         + [移轉資料準備](implementation/edge/migrate/migrate-dataprep.md)
+         + [移轉設定檔](implementation/edge/migrate/migrate-profiles.md)
+         + [媒體引數對應](implementation/edge/migrate/parameters-mapping.md)
    + 僅限Adobe Analytics的實作 {#analytics-only}
-      + [先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
-      + [啟用媒體報表](implementation/media-sdk/setup/media-reports-enable.md)
-      + Media SDK /擴充功能 {#media-sdk}
-         + [JavaScript Web SDK](implementation/media-sdk/setup/web-implementation.md)
-         + [JavaScript網頁SDK API參考](implementation/media-sdk/setup/js-3x-api-reference.md)
-         + [從JS SDK 2.x移轉至3.x](implementation/media-sdk/setup/migrate-js-2x-to-3x.md)
-         + [Media Analytics 擴充功能](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [行動 SDK](implementation/media-sdk/setup/mobile-implementation.md)
-      + Media Collection API — 實作 {#streaming-media-apis}
+      + [僅限Analytics的實施概觀](/help/implementation/analytics-only/overview.md)
+      + [JavaScript](/help/implementation/analytics-only/javascript.md)
+      + [Media Analytics標籤擴充功能](/help/implementation/analytics-only/javascript-tags.md)
+      + [Chromecast](/help/implementation/analytics-only/chromecast.md)
+      + [Media Collection API](/help/implementation/analytics-only/media-collection-api.md)
+      + Media Collection API參考 {#streaming-media-apis}
          + [媒體收集](implementation/media-collection-api/mc-api-overview.md)
          + [API 快速入門](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
          + [工作階段要求](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -158,23 +166,22 @@ ht-degree: 35%
             + [逾時條件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [控制事件順序](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [在工作階段回應緩慢時將事件加入佇列](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + 遷移XDM欄位 {#xdm-updates}
-      + [移轉對象](implementation/migrate-audiences.md)
-      + [移轉CJA設定](implementation/migrate-cja-setup.md)
-      + [移轉資料準備](implementation/migrate-dataprep.md)
-      + [移轉設定檔](implementation/migrate-profiles.md)
-      + [媒體引數對應](implementation/parameters-mapping.md)
 + 報告 {#reporting}
+   + 設定報告 {#reporting-setup}
+      + [Edge實施](reporting/setup/edge-reporting.md)
+      + [僅限Analytics的實作](reporting/setup/analytics-reporting.md)
    + 維度 {#dimensions}
       + [維度概觀](reporting/dimensions/overview.md)
       + [廣告](reporting/dimensions/ad.md)
       + [Pod位置中的廣告](reporting/dimensions/ad-in-pod-position.md)
       + [廣告長度](reporting/dimensions/ad-length.md)
+      + [廣告載入](reporting/dimensions/ad-load-type.md)
       + [廣告名稱](reporting/dimensions/ad-name.md)
       + [廣告播放器名稱](reporting/dimensions/ad-player-name.md)
       + [廣告Pod](reporting/dimensions/ad-pod.md)
       + [廣告商](reporting/dimensions/advertiser.md)
       + [相簿](reporting/dimensions/album.md)
+      + [應用程式版本](reporting/dimensions/app-version.md)
       + [藝術家](reporting/dimensions/artist.md)
       + [資產 ID](reporting/dimensions/asset-id.md)
       + [作者](reporting/dimensions/author.md)

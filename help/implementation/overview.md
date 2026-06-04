@@ -6,25 +6,15 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
 TQID: https://experienceleague.adobe.com/aFrxbzBLlf1ngetaM-GsNFXz6TUXi6Pic3quLVI297c
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
-  - id: df312454-73c4-43f6-a90e-18f5043f074c
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c8add8f2-4250-4fd9-9cde-9707036c567did: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 65%
+source-wordcount: 518
+ht-degree: 66%
 
 ---
 
@@ -34,13 +24,11 @@ ht-degree: 65%
 
 ## Edge 實施方法
 
-我們建議在對所有新Adobe Analytics或Edge客戶實作串流媒體服務時使用Customer Journey Analytics。
-
-Edge實作方法使用串流媒體收集附加元件。
+Adobe建議所有新的Adobe Analytics或Customer Journey Analytics客戶使用Edge Network實作方法。
 
 * **Edge Network SDK媒體/擴充功能：**&#x200B;從網頁、iOS和Android裝置或Roku裝置收集資料，並傳送至Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
-  如需Edge Network SDK /擴充功能適用之媒體的詳細資訊，請參閱[使用Edge Network實作串流媒體收集](/help/implementation/edge/implementation-edge.md)。
+  如需有關Edge Network SDK /擴充功能之媒體的詳細資訊，請參閱[Edge實作概觀](/help/implementation/edge/overview.md)。
 
 * **Media Edge API：**&#x200B;可自訂為從任何裝置或格式（包括行動裝置、網頁和過頂裝置）收集資料，並將資料傳送至Edge Network。 之後可將資料傳送至 Customer Journey Analytics 或 Adobe Analytics。
 
@@ -52,13 +40,13 @@ Edge實作方法使用串流媒體收集附加元件。
 
 建議將上述 Edge 實施方法用於 Customer Journey Analytics 和 Adobe Analytics，特別是對於新實施。
 
-除了 Edge 實施方法之外，還有其他實施方法。 這些實施方法專為與 Adobe Analytics 搭配使用而設計。 但是，採用以下任何實施方法的現有客戶仍然可以透過建立 [Analytics 來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant)的方式，使資料可用於 Customer Journey Analytics。
+除了 Edge 實施方法之外，還有其他實施方法。 這些實施方法專為與 Adobe Analytics 搭配使用而設計。 但是，採用以下任何實施方法的現有客戶仍然可以透過建立 [Analytics 來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)的方式，使資料可用於 Customer Journey Analytics。
 
-僅限Adobe Analytics的實作方法使用Adobe Analytics for Streaming Media附加元件。
+僅限Adobe Analytics的實作方法使用Adobe Analytics for Streaming Media附加元件。 如需必要條件和方法清單，請參閱[僅限Analytics的實施概述](/help/implementation/analytics-only/overview.md)。
 
 * **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。 資料會傳送至 Adobe Analytics。
 
-  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=zh-Hant)。
+  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)。
 
 * **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。 (如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
 
@@ -72,10 +60,3 @@ Edge實作方法使用串流媒體收集附加元件。
 
 
 ![Analytics 工作流程](assets/analytics-implementation.png)
-
-<!--
-(Not sure if we need the following paragraph and graphic. Paragraph is somewhat redundant with the intro paragraph of this article)
-Choose the implementation method depending on the supported platforms. Some players are not supported by the Media SDKs or the Adobe Experience Platform Media Extensions. The Media Collection APIs provide a way to support those players. For information on supported devices, see [Supported devices and platforms](/help/getting-started/supported-devices.md).
-
-![Media Flow](media-sdk/assets/choose-media-flow2.png)
--->

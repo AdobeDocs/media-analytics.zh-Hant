@@ -3,7 +3,7 @@ title: 藝術家
 description: 針對音訊內容報告表演藝人。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '128'
 ht-degree: 10%
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**藝人**&#x200B;報告維度。 請參閱[藝人](/help/implementation/variables/standard-metadata/artist.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**藝人**報告維度。 請參閱[藝人](/help/implementation/variables/standard-metadata/artist.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 10%
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics | 啟用[[!UICONTROL 音訊中繼資料]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.artist`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.artist`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics | 啟用[[!UICONTROL 音訊中繼資料]](/help/reporting/setup/analytics-reporting.md)時，自動從內容資料`a.media.artist`收集。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料摘要 | `videoaudioartist` |
 | Audience Manager | `c_contextdata.a.media.artist` |
 

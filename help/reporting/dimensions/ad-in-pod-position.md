@@ -3,7 +3,7 @@ title: Pod位置中的廣告
 description: 報告每個廣告在其上層廣告插播中的零索引位置。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋pod position **報告維度中的**&#x200B;廣告。 請參閱Pod位置[&#128279;](/help/implementation/variables/ads/ad-in-pod-position.md)中的廣告，瞭解如何收集此變數。*
+*此頁面涵蓋pod position **報告維度中的**廣告。 請參閱Pod位置](/help/implementation/variables/ads/ad-in-pod-position.md)中的[廣告，瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ Pod位置中的廣告由播放器在每個[廣告開始](/help/implementation/ev
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics | 啟用[[!UICONTROL 媒體廣告]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.ad.podPosition`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | 啟用[[!UICONTROL 媒體廣告]](/help/reporting/setup/analytics-reporting.md)時，自動從內容資料`a.media.ad.podPosition`收集。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 資料饋送 | `videoadinpod`, `post_videoadinpod` |
 | Audience Manager | `c_contextdata.a.media.ad.podPosition` |
 

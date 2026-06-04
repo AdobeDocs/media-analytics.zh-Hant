@@ -3,7 +3,7 @@ title: 位元速率變更（維度）
 description: 報告每個工作階段的位元速率變更事件計數。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**位元速率變更**&#x200B;維度。 Adobe Analytics會從相同的`a.media.qoe.bitrateChangeCount`內容資料變數自動填入配對的[位元速率變更（量度）](/help/reporting/metrics/bitrate-changes.md)。 Customer Journey Analytics公開單一`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`欄位，您可將其作為維度或量度使用。 請參閱[位元速率變更](/help/implementation/variables/quality/bitrate-change.md)，瞭解如何引發位元速率變更事件。*
+*此頁面涵蓋&#x200B;**位元速率變更**維度。 Adobe Analytics會從相同的`a.media.qoe.bitrateChangeCount`內容資料變數自動填入配對的[位元速率變更（量度）](/help/reporting/metrics/bitrate-changes.md)。 Customer Journey Analytics公開單一`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`欄位，您可將其作為維度或量度使用。 請參閱[位元速率變更](/help/implementation/variables/quality/bitrate-change.md)，瞭解如何引發位元速率變更事件。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +27,8 @@ ht-degree: 5%
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.qoe.bitrateChangeCount`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/setup/analytics-reporting.md)時，自動從內容資料`a.media.qoe.bitrateChangeCount`收集。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 資料饋送 | `videoqoebitratechangecountevar`, `post_videoqoebitratechangecountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 

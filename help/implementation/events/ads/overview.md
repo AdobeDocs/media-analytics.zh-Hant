@@ -6,21 +6,12 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/PguxKIzAL95WbMl5c0yJq9rYSqZgOGbbAYtxOI4eVOs
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -72,8 +63,8 @@ ht-degree: 3%
 
 **解決方法：**&#x200B;延遲每個廣告的AdComplete呼叫（最後一個除外），而不是在廣告結束時立即呼叫。 依下列方式批次處理呼叫：
 
-- 在每個&#x200B;**廣告開始**&#x200B;時：如果先前的廣告存在且尚未標籤為完成，請呼叫新廣告的AdComplete *before*。
-- 在每個&#x200B;**廣告資產結束**&#x200B;時：不要立即呼叫AdComplete — 延遲。
-- 在&#x200B;**廣告插播完成**：呼叫最後一個廣告的AdComplete （如果尚未呼叫），然後呼叫AdBreakComplete。
+* 在每個&#x200B;**廣告開始**&#x200B;時：如果先前的廣告存在且尚未標籤為完成，請呼叫新廣告的AdComplete *before*。
+* 在每個&#x200B;**廣告資產結束**&#x200B;時：不要立即呼叫AdComplete — 延遲。
+* 在&#x200B;**廣告插播完成**：呼叫最後一個廣告的AdComplete （如果尚未呼叫），然後呼叫AdBreakComplete。
 
 此模式可確保AdComplete和下一個AdStart會連續引發，消除任何間隙。

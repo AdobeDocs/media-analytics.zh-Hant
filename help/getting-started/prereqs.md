@@ -6,24 +6,15 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: c8add8f2-4250-4fd9-9cde-9707036c567d
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 489
-ht-degree: 46%
+source-wordcount: 490
+ht-degree: 43%
 
 ---
 
@@ -38,7 +29,7 @@ ht-degree: 46%
 Customer Journey Analytics串流媒體收集附加元件和Adobe Analytics for Streaming Media附加元件目前的定價模型是以視訊串流為基礎。 如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為此附加元件是針對Adobe Analytics和Adobe Experience Platform分開銷售。
 
 1. **啟用Adobe Analytics報表**<br>
-若要在Analytics或Customer Journey Analytics中啟用報表，以及檢視您正在收集的內容和廣告資料，您必須啟用報表。 請參閱[啟用 Media 報表](/help/implementation/media-sdk/setup/media-reports-enable.md)。
+若要在Analytics或Customer Journey Analytics中啟用報表，以及檢視您正在收集的內容和廣告資料，您必須啟用報表。 請參閱[為僅限Analytics的實施設定報告](/help/reporting/setup/analytics-reporting.md)。
 
 1. **在CX Enterprise中實作Adobe Experience Platform Identity Service**
 
@@ -58,8 +49,8 @@ Customer Journey Analytics串流媒體收集附加元件和Adobe Analytics for S
 
    根據您計畫實作串流媒體服務的方式，檢視下列任一實作方法的先決條件：
 
-   * [僅實作 Adob&#x200B;&#x200B;e Analytics 的先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [僅限Analytics的實施概觀](/help/implementation/analytics-only/overview.md)
 
-   * [Edge 實作的先決條件](/help/implementation/edge/prerequisites-edge.md)
+   * [Edge實作概觀](/help/implementation/edge/overview.md)
 
    使用[實施概觀](/help/implementation/overview.md)以確定哪種實施方法適合您。

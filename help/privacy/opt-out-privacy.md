@@ -6,19 +6,11 @@ exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: d095671a-1355-40aa-8b5f-06c33c68080b
-  - id: d3cdead0-685a-4489-9250-4bb709942f66
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: d3cdead0-685a-4489-9250-4bb709942f66id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 750
 ht-degree: 4%
@@ -41,7 +33,7 @@ ht-degree: 4%
 
 Web SDK會遵守使用`setConsent`命令設定的同意偏好設定。 當同意設為`"out"`時，Web SDK會停止轉送所有事件（包括串流媒體追蹤呼叫）至Edge Network。 同意狀態會在工作階段之間持續存在於瀏覽器儲存中。
 
-在實作選擇退出之前，請確定您的網頁SDK已設定串流媒體元件。 如需詳細資訊，請參閱[設定網頁SDK](../implementation/edge/edge-web-sdk.md)。
+在實作選擇退出之前，請確定您的網頁SDK已設定串流媒體元件。 如需詳細資訊，請參閱[設定網頁SDK](../implementation/edge/web-sdk.md)。
 
 使用Adobe 2.0同意標準將同意設為選擇退出：
 
@@ -65,7 +57,7 @@ alloy("setConsent", {
 
 若要還原追蹤，請以`"y"`作為`collect.val`值，再次呼叫`setConsent`。
 
-如需其他格式，包括IAB TCF 2.0，請參閱Web SDK檔案中的[setConsent命令](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/setconsent)。
+如需其他格式，包括IAB TCF 2.0，請參閱Web SDK檔案中的[setConsent命令](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)。
 
 >[!TAB iOS]
 
@@ -172,7 +164,7 @@ visitor.setOptOut(true);
 
 若要還原追蹤，請將`false`傳遞至`setOptOut()`。
 
-如需詳細資訊，請參閱[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)。
 
 >[!TAB Chromecast]
 
