@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋受子母畫面影響的&#x200B;**資料流**報告量度。 如需如何收集此變數，請參閱[子母畫面](/help/implementation/variables/player-state/picture-in-picture.md)。*
+*此頁面涵蓋受子母畫面影響的&#x200B;**資料流**&#x200B;報告量度。 如需如何收集此變數，請參閱[子母畫面](/help/implementation/variables/player-state/picture-in-picture.md)。*
 
 >[!ENDSHADEBOX]
 

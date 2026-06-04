@@ -109,7 +109,7 @@ ht-degree: 17%
 
       除了此表格中的維度之外，您也可以在專案中新增任何其他要用來篩選資料的維度。
 
-1. 選取「儲存並繼續」**[!UICONTROL >「**[!UICONTROL &#x200B;儲存並完成」]**以儲存您的變更。]**
+1. 選取「儲存並繼續」**[!UICONTROL >「**&#x200B;[!UICONTROL &#x200B;儲存並完成」]&#x200B;**以儲存您的變更。]**
 
 1. 繼續[在Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)中建立及設定專案。
 

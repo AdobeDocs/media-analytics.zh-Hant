@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**應用程式版本**變數的資料集合。 如需對應的報表維度，請參閱[應用程式版本](/help/reporting/dimensions/app-version.md)。*
+*本頁涵蓋&#x200B;**應用程式版本**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[應用程式版本](/help/reporting/dimensions/app-version.md)。*
 
 >[!ENDSHADEBOX]
 

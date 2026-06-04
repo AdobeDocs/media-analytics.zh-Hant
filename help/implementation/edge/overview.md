@@ -117,7 +117,7 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
    +++ 展開以檢視將自訂中繼資料新增至結構描述的指示。
 
-   1. 選取&#x200B;**[!UICONTROL 帳戶資訊]** > **[!UICONTROL 指派的組織]** > [!UICONTROL _**組織名稱**_] > **[!UICONTROL 租使用者]**，以找出組織的租使用者名稱稱。
+   1. 選取&#x200B;**[!UICONTROL 帳戶資訊]** > **[!UICONTROL 指派的組織]** > [!UICONTROL _&#x200B;**組織名稱**&#x200B;_] > **[!UICONTROL 租使用者]**，以找出組織的租使用者名稱稱。
 
       透過此路徑接收自訂欄位。 （例如，租使用者名稱稱： _dcbl → myCustomField路徑： _dcbl.myCustomField。）
 

@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**季**報告維度。 請參閱[季](/help/implementation/variables/standard-metadata/season.md)以瞭解如何收集此變數。*
+*此頁面涵蓋&#x200B;**季**&#x200B;報告維度。 請參閱[季](/help/implementation/variables/standard-metadata/season.md)以瞭解如何收集此變數。*
 
 >[!ENDSHADEBOX]
 

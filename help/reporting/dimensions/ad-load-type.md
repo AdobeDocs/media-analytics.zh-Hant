@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**廣告載入**報告維度。 如需如何收集此變數，請參閱[廣告載入型別](/help/implementation/variables/standard-metadata/ad-load-type.md)。*
+*此頁面涵蓋&#x200B;**廣告載入**&#x200B;報告維度。 如需如何收集此變數，請參閱[廣告載入型別](/help/implementation/variables/standard-metadata/ad-load-type.md)。*
 
 >[!ENDSHADEBOX]
 

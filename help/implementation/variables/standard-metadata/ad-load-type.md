@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告載入型別**變數的資料集合。 檢視對應報表維度的[廣告載入](/help/reporting/dimensions/ad-load-type.md)。*
+*本頁涵蓋&#x200B;**廣告載入型別**&#x200B;變數的資料集合。 檢視對應報表維度的[廣告載入](/help/reporting/dimensions/ad-load-type.md)。*
 
 >[!ENDSHADEBOX]
 

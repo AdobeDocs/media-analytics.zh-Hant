@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**廣告播放器名稱**報告維度。 如需如何收集此變數，請參閱[廣告播放器名稱](/help/implementation/variables/ads/ad-player-name.md)。*
+*此頁面涵蓋&#x200B;**廣告播放器名稱**&#x200B;報告維度。 如需如何收集此變數，請參閱[廣告播放器名稱](/help/implementation/variables/ads/ad-player-name.md)。*
 
 >[!ENDSHADEBOX]
 
