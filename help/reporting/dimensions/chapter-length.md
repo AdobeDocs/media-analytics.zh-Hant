@@ -3,7 +3,7 @@ title: 章節長度
 description: 報告每個章節的持續時間。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 2%
@@ -28,7 +28,7 @@ ht-degree: 2%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics （處理規則） | 建立將`a.media.chapter.length`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Adobe Analytics （分類） | [Chapter](chapter.md)維度的分類 — 為報表套裝啟用&#x200B;**[[!UICONTROL 媒體章節]](/help/reporting/media-reports-enable.md)**&#x200B;時，Adobe會自動建立此分類。 您需負責填入及維護分類值。 |
+| Adobe Analytics （分類） | [Chapter](chapter.md)維度的分類 — 為報表套裝啟用&#x200B;**[[!UICONTROL 媒體章節]](/help/reporting/setup/analytics-reporting.md)**&#x200B;時，Adobe會自動建立此分類。 您需負責填入及維護分類值。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.length`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | 資料摘要（處理規則） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.chapter.length`對應至的eVar） |
 | 資料摘要（分類） | 不適用 — 資料摘要不支援分類。 |
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 ## 分類方法
 
-為報表套裝啟用&#x200B;**[[!UICONTROL 媒體章節]](/help/reporting/media-reports-enable.md)**&#x200B;時，Adobe會自動建立章節長度分類結構。 您負責使用[分類設定](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填入及維護分類。
+為報表套裝啟用&#x200B;**[[!UICONTROL 媒體章節]](/help/reporting/setup/analytics-reporting.md)**&#x200B;時，Adobe會自動建立章節長度分類結構。 您負責使用[分類設定](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填入及維護分類。
 
 此方法可保證每個章節ID與其長度之間有1:1個關係。 分類更新會回溯套用至該ID的所有歷史資料。
 

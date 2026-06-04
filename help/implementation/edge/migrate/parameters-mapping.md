@@ -16,10 +16,10 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 1325
-ht-degree: 20%
+source-wordcount: 1331
+ht-degree: 19%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 20%
 
 ## Media Analytics保留變數
 
-自2025年10月起，`media.mediaTimed` XDM欄位路徑已完全棄用，並由`mediaReporting`取代。 2025年10月之後擷取的資料僅包含`mediaReporting`欄位。 舊版欄位路徑下仍可使用舊版資料，反映在&#x200B;**舊版XDM欄位**&#x200B;下方的表格中。
+自2025年10月起，Analytics來源聯結器使用的`media.mediaTimed` XDM欄位路徑已完全棄用，並由`mediaReporting`取代。 2025年10月之後擷取的資料僅包含`mediaReporting`欄位。 舊版欄位路徑下仍可使用舊版資料，反映在&#x200B;**舊版XDM欄位**&#x200B;下方的表格中。
 
 ### 保持連線呼叫行為
 

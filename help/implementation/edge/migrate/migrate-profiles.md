@@ -17,7 +17,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 533
 ht-degree: 0%
@@ -32,11 +32,11 @@ ht-degree: 0%
 
 若要將設定檔篩選從名為「媒體」的舊資料型別移轉到名為「[媒體報告詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯現有的設定檔篩選規則：
 
-1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **來源**]&#x200B;區段底下，前往&#x200B;[!UICONTROL **資料流**]&#x200B;標籤。
+1. 在Adobe Experience Platform中的&#x200B;**[!UICONTROL 來源]**&#x200B;區段底下，前往&#x200B;**[!UICONTROL 資料流]**&#x200B;標籤。
 
 1. 找出負責透過Adobe Data Collection將串流媒體資料從Adobe Analytics匯入Adobe Experience Platform的資料流。
 
-1. 選取&#x200B;[!UICONTROL **更新資料流**]，將包含已棄用欄位的每個自訂規則取代為新XDM物件中新的對應欄位，以修改設定檔篩選設定。
+1. 選取&#x200B;**[!UICONTROL 更新資料流]**，將包含已棄用欄位的每個自訂規則取代為新XDM物件中新的對應欄位，以修改設定檔篩選設定。
 
 1. 找出包含已棄用「媒體」物件欄位的篩選器。
 
@@ -52,29 +52,29 @@ ht-degree: 0%
 
 為了更方便遵循移轉准則，請考慮以下包含單一設定檔篩選規則的資料流範例。 在此情況下，由於只有單一規則，因此您只需要套用移轉指引一次。
 
-1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **來源**]&#x200B;區段底下，前往&#x200B;[!UICONTROL **資料流**]&#x200B;標籤。
+1. 在Adobe Experience Platform中的&#x200B;**[!UICONTROL 來源]**&#x200B;區段底下，前往&#x200B;**[!UICONTROL 資料流]**&#x200B;標籤。
 
 1.找出負責透過Adobe Analytics將串流媒體資料從Adobe Analytics匯入Adobe Experience Platform的資料流。
 
 1. 選取&#x200B;**[!UICONTROL 更新資料流]**&#x200B;以輸入編輯使用者介面，如下圖所示。
 
-   ![AEP資料流設定檔](assets/aep-dataflow-profile.jpeg)
+   ![AEP資料流設定檔](../../assets/aep-dataflow-profile.jpeg)
 
 1. 選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以移至[篩選]索引標籤。
 
-   ![AEP資料流篩選器索引標籤](assets/aep-dataflow-filtering-profile.jpeg)
+   ![AEP資料流篩選器索引標籤](../../assets/aep-dataflow-filtering-profile.jpeg)
 
 1. 在&#x200B;**[!UICONTROL 篩選]**&#x200B;索引標籤上，識別依賴`media.mediaTimed`欄位的篩選規則。
 
-   ![AEP資料流篩選規則](assets/dataflow-filtering-rules-profile.jpeg)
+   ![AEP資料流篩選規則](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
    對於使用meda.mediaTimed物件的每個篩選器，在`mediaReporting`物件中，使用[串流媒體服務](/help/media-overview.md)下記錄的串流媒體變數找到其對應項，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。 例如，對於[Media Starts](/help/reporting/metrics/media-starts.md)，`media.mediaTimed.impressions.value`的通訊者是`xdm.mediaReporting.sessionDetails.isViewed`。
 
-   ![新舊的XDM欄位](assets/xdm-fields-new-and-old.jpeg)
+   ![新舊的XDM欄位](../../assets/xdm-fields-new-and-old.jpeg)
 
 1. 將相關的`mediaReporting`欄位拖曳至篩選規則，並在兩個規則之間使用OR運運算元。 使用新欄位時新增與現有規則相同的規則。
 
-   ![新增篩選器規則](assets/add-filter-rules.jpeg)
+   ![新增篩選器規則](../../assets/add-filter-rules.jpeg)
 
 1. 選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以儲存變更。

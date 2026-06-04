@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 516
 ht-degree: 1%
@@ -43,49 +43,49 @@ ht-degree: 1%
 
 檢視[內容ID](/help/reporting/dimensions/content.md)引數和[串流媒體服務](/help/media-overview.md)下記錄的其餘串流媒體變數，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。
 
-![舊和新XDM欄位路徑](assets/field-paths-updated.jpeg)
+![舊和新XDM欄位路徑](../../assets/field-paths-updated.jpeg)
 
 ## 範例
 
 若要更輕鬆遵循移轉准則，請考慮以下包含具有單一規則之對象的範例。 由於對象有單一規則，因此您只需要套用移轉指引一次。
 
-1. 選取右上角的&#x200B;[!UICONTROL **編輯對象**]&#x200B;按鈕。
+1. 選取右上角的&#x200B;**[!UICONTROL 編輯對象]**&#x200B;按鈕。
 
 1. 找出為對象設定的規則。
 
-   ![編輯對象](assets/audience-edit.jpeg)
+   ![編輯對象](../../assets/audience-edit.jpeg)
 
-   ![編輯對象](assets/audience-edit2.jpeg)
+   ![編輯對象](../../assets/audience-edit2.jpeg)
 
 1. 選取規則以開啟其設定。
 
-   ![編輯對象](assets/audience-edit3.jpeg)
+   ![編輯對象](../../assets/audience-edit3.jpeg)
 
 1. （可選）若要檢視規則中使用的欄位路徑，請選取欄位名稱附近的資訊按鈕。
 
-   ![編輯對象](assets/audience-edit4.jpeg)
+   ![編輯對象](../../assets/audience-edit4.jpeg)
 
 1. 識別欄位名稱（在此例中為「媒體開始」）。
 
-   ![編輯對象](assets/audience-edit5.jpeg)
+   ![編輯對象](../../assets/audience-edit5.jpeg)
 
 1. 檢視[串流媒體服務](/help/media-overview.md)下記錄的串流媒體變數，以便在舊欄位之間對應。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。 例如，對於[Media Starts](/help/reporting/metrics/media-starts.md)引數，`media.mediaTimed.impressions.value`的對應方是`xdm.mediaReporting.sessionDetails.isViewed`。
 
-   ![已更新XDM路徑](assets/updated-xdm-path.jpeg)
+   ![已更新XDM路徑](../../assets/updated-xdm-path.jpeg)
 
 1. 使用新欄位新增與現有規則相同的規則。
 
-   ![新增規則](assets/add-rule.jpeg)
+   ![新增規則](../../assets/add-rule.jpeg)
 
-   ![新增規則](assets/add-rule2.jpeg)
+   ![新增規則](../../assets/add-rule2.jpeg)
 
-   ![新增規則](assets/add-rule3.jpeg)
+   ![新增規則](../../assets/add-rule3.jpeg)
 
-1. 選取「[!UICONTROL **儲存**]」以儲存對象。 您可以維持此設定，直到需要驗證對象是否仍如預期般運作為止。
+1. 選取「**[!UICONTROL 儲存]**」以儲存對象。 您可以維持此設定，直到需要驗證對象是否仍如預期般運作為止。
 
-1. 驗證完成後，請移除舊欄位，然後選取[儲存]以儲存對象。[!UICONTROL **&#x200B;**]
+1. 驗證完成後，請移除舊欄位，然後選取[儲存]以儲存對象。**&#x200B;**
 
-   ![新增規則](assets/add-rule4.jpeg)
+   ![新增規則](../../assets/add-rule4.jpeg)
 
 1. 再次驗證對象。
 

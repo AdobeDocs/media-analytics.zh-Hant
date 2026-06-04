@@ -18,7 +18,7 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 700
 ht-degree: 0%
@@ -37,11 +37,11 @@ ht-degree: 0%
 >
 >為避免遺失資料，在完成本節中的步驟之前，請確保已使用新的`mediaReporting`欄位部署Analytics來源聯結器。
 
-1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **來源**]&#x200B;區段底下，前往&#x200B;[!UICONTROL **資料流**]&#x200B;標籤。
+1. 在Adobe Experience Platform中的&#x200B;**[!UICONTROL 來源]**&#x200B;區段底下，前往&#x200B;**[!UICONTROL 資料流]**&#x200B;標籤。
 
 1. 找出負責透過Adobe Data Collection將串流媒體資料從Adobe Analytics匯入Adobe Experience Platform的資料流。
 
-1. 選取&#x200B;[!UICONTROL **更新資料流**]，將包含已棄用欄位的每個自訂來源對應，取代為新XDM物件中新的對應欄位，以修改「資料準備」設定。
+1. 選取&#x200B;**[!UICONTROL 更新資料流]**，將包含已棄用欄位的每個自訂來源對應，取代為新XDM物件中新的對應欄位，以修改「資料準備」設定。
 
 1. 找出包含已棄用「Media」物件之來源欄位的對應。
 
@@ -55,19 +55,19 @@ ht-degree: 0%
 
 為了更方便遵循移轉准則，請考慮以下包含單一對應的資料流範例。 在此情況下，您只需要套用移轉指引一次。
 
-1. 在Adobe Experience Platform中的&#x200B;[!UICONTROL **來源**]&#x200B;區段底下，前往&#x200B;[!UICONTROL **資料流**]&#x200B;標籤。
+1. 在Adobe Experience Platform中的&#x200B;**[!UICONTROL 來源]**&#x200B;區段底下，前往&#x200B;**[!UICONTROL 資料流]**&#x200B;標籤。
 
 1. 找出負責透過Adobe Data Collection將串流媒體資料從Adobe Analytics匯入Adobe Experience Platform的資料流。
 
 1. 選取&#x200B;**[!UICONTROL 更新資料流]**&#x200B;以輸入編輯使用者介面，如下圖所示。
 
-   ![AEP資料流](assets/aep-dataflow.jpeg)
+   ![AEP資料流](../../assets/aep-dataflow.jpeg)
 
 1. 在&#x200B;**[!UICONTROL 對應]**&#x200B;索引標籤中，選取&#x200B;**[!UICONTROL 自訂]**。
 
 1. 識別依賴`media.mediaTimed`欄位做為來源的自訂對應。
 
-   ![AEP資料流繼續](assets/aep-dataflow2.jpeg)
+   ![AEP資料流繼續](../../assets/aep-dataflow2.jpeg)
 
    在此範例中，由於您在開發組織的結構描述上建立了自訂欄位群組，因此目標欄位在`_dcbl`下。 自訂欄位群組路徑會因組織名稱而異。
 
@@ -75,17 +75,17 @@ ht-degree: 0%
 
    例如，對於Network，`media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork的通訊者是`xdm.mediaReporting.sessionDetails.network`。
 
-   ![已更新XDM欄位路徑](assets/xdm-field-path-old-and-new.jpeg)
+   ![已更新XDM欄位路徑](../../assets/xdm-field-path-old-and-new.jpeg)
 
 1. 在&#x200B;**[!UICONTROL Source欄位]**&#x200B;欄位中，將`media.mediaTimed`路徑取代為`mediaReporting`路徑。 目標欄位保持不變。
 
-   ![AEP資料流繼續](assets/aep-dataflow3.jpeg)
+   ![AEP資料流繼續](../../assets/aep-dataflow3.jpeg)
 
 1. 選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以儲存變更。
 
    狀態顯示為&#x200B;**[!UICONTROL 正在處理]**。 套用變更後，狀態會顯示為&#x200B;**[!UICONTROL 已啟用]**。
 
-   ![AEP資料流繼續](assets/aep-dataflow5.jpeg)
+   ![AEP資料流繼續](../../assets/aep-dataflow5.jpeg)
 
 ## 不同資料型別的範例
 
@@ -99,8 +99,8 @@ ht-degree: 0%
 
 與`media.mediaTimed`對應至自訂欄位。
 
-![AEP資料流繼續](assets/aep-dataflow6.jpeg)
+![AEP資料流繼續](../../assets/aep-dataflow6.jpeg)
 
 與`mediaReporting`對應至相同的自訂欄位：
 
-![AEP資料流繼續](assets/aep-dataflow7.jpeg)
+![AEP資料流繼續](../../assets/aep-dataflow7.jpeg)

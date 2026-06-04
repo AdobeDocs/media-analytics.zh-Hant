@@ -20,10 +20,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 489
-ht-degree: 46%
+source-wordcount: 490
+ht-degree: 43%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 46%
 Customer Journey Analytics串流媒體收集附加元件和Adobe Analytics for Streaming Media附加元件目前的定價模型是以視訊串流為基礎。 如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為此附加元件是針對Adobe Analytics和Adobe Experience Platform分開銷售。
 
 1. **啟用Adobe Analytics報表**<br>
-若要在Analytics或Customer Journey Analytics中啟用報表，以及檢視您正在收集的內容和廣告資料，您必須啟用報表。 請參閱[啟用 Media 報表](/help/implementation/media-sdk/setup/media-reports-enable.md)。
+若要在Analytics或Customer Journey Analytics中啟用報表，以及檢視您正在收集的內容和廣告資料，您必須啟用報表。 請參閱[為僅限Analytics的實施設定報告](/help/reporting/setup/analytics-reporting.md)。
 
 1. **在CX Enterprise中實作Adobe Experience Platform Identity Service**
 
@@ -58,8 +58,8 @@ Customer Journey Analytics串流媒體收集附加元件和Adobe Analytics for S
 
    根據您計畫實作串流媒體服務的方式，檢視下列任一實作方法的先決條件：
 
-   * [僅實作 Adob&#x200B;&#x200B;e Analytics 的先決條件](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [僅限Analytics的實施概觀](/help/implementation/analytics-only/overview.md)
 
-   * [Edge 實作的先決條件](/help/implementation/edge/prerequisites-edge.md)
+   * [Edge實作概觀](/help/implementation/edge/overview.md)
 
    使用[實施概觀](/help/implementation/overview.md)以確定哪種實施方法適合您。

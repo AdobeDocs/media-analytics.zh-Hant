@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 750
 ht-degree: 4%
@@ -41,7 +41,7 @@ ht-degree: 4%
 
 Web SDK會遵守使用`setConsent`命令設定的同意偏好設定。 當同意設為`"out"`時，Web SDK會停止轉送所有事件（包括串流媒體追蹤呼叫）至Edge Network。 同意狀態會在工作階段之間持續存在於瀏覽器儲存中。
 
-在實作選擇退出之前，請確定您的網頁SDK已設定串流媒體元件。 如需詳細資訊，請參閱[設定網頁SDK](../implementation/edge/edge-web-sdk.md)。
+在實作選擇退出之前，請確定您的網頁SDK已設定串流媒體元件。 如需詳細資訊，請參閱[設定網頁SDK](../implementation/edge/web-sdk.md)。
 
 使用Adobe 2.0同意標準將同意設為選擇退出：
 

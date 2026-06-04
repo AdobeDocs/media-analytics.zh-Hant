@@ -3,7 +3,7 @@ title: 掉格（維度）
 description: 報告每個工作階段的累計掉格計數。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '181'
 ht-degree: 6%
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/media-reports-enable.md)時，自動從內容資料`a.media.qoe.droppedFrameCount`收集。 |
+| Adobe Analytics | 啟用[[!UICONTROL 媒體品質]](/help/reporting/setup/analytics-reporting.md)時，自動從內容資料`a.media.qoe.droppedFrameCount`收集。 |
 | Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | 資料饋送 | `videoqoedroppedframecountevar`, `post_videoqoedroppedframecountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.droppedFrameCount` |

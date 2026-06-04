@@ -17,7 +17,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 759
 ht-degree: 1%
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 檢視[內容ID](/help/reporting/dimensions/content.md)引數和[串流媒體服務](/help/media-overview.md)下記錄的其餘串流媒體變數，以對應舊欄位和新欄位。 舊欄位路徑可在「XDM欄位路徑」屬性下找到，而新欄位路徑可在「報告XDM欄位路徑」屬性下找到。
 
-![舊和新XDM欄位路徑](assets/field-paths-updated.jpeg)
+![舊和新XDM欄位路徑](../../assets/field-paths-updated.jpeg)
 
 ## 範例
 
@@ -72,13 +72,13 @@ ht-degree: 1%
 
 1. 找出使用過時資料型別中舊欄位的量度或維度。
 
-   資料檢視中的![舊欄位路徑](assets/old-field-data-view.jpeg)
+   資料檢視中的![舊欄位路徑](../../assets/old-field-data-view.jpeg)
 
 1. 檢查[章節位移](/help/reporting/dimensions/chapter-offset.md)文章中對應的新欄位。
 
 1. 在資料檢視中找出新的對應欄位。
 
-   ![資料檢視中的新欄位路徑](assets/new-field-data-view.jpeg)
+   ![資料檢視中的新欄位路徑](../../assets/new-field-data-view.jpeg)
 
 1. 將新欄位拖曳至量度或維度。
 
@@ -92,43 +92,43 @@ ht-degree: 1%
 
 1. 將「Case When」子句拖曳至衍生欄位。
 
-   ![自訂新欄位以建立資料檢視](assets/create-derived-field2.jpeg)
+   ![自訂新欄位以建立資料檢視](../../assets/create-derived-field2.jpeg)
 
-1. 使用&#x200B;**報告XDM欄位路徑**&#x200B;的值填入&#x200B;[!UICONTROL **If**]&#x200B;子句，如[章節名稱](/help/reporting/dimensions/chapter-name.md)頁面所示。
+1. 使用&#x200B;**報告XDM欄位路徑**&#x200B;的值填入&#x200B;**[!UICONTROL If]**&#x200B;子句，如[章節名稱](/help/reporting/dimensions/chapter-name.md)頁面所示。
 
-   ![章節名稱](assets/chapter-name.jpeg)
+   ![章節名稱](../../assets/chapter-name.jpeg)
 
-   ![章節名稱](assets/chapter-name2.jpeg)
+   ![章節名稱](../../assets/chapter-name2.jpeg)
 
-   ![衍生欄位條件](assets/derived-field-condition.jpeg)
+   ![衍生欄位條件](../../assets/derived-field-condition.jpeg)
 
-   ![衍生欄位章節名稱](assets/derived-field-chapter-name.jpeg)
+   ![衍生欄位章節名稱](../../assets/derived-field-chapter-name.jpeg)
 
 1. 使用已遭取代之「媒體」資料型別的舊欄位填入遞補值。
 
-   ![遞補值](assets/fallback-value.jpeg)
+   ![遞補值](../../assets/fallback-value.jpeg)
 
-   ![遞補值](assets/fallback-value2.jpeg)
+   ![遞補值](../../assets/fallback-value2.jpeg)
 
    這是衍生欄位的最終定義。
 
-   ![衍生欄位完成](assets/derived-field-complete.jpeg)
+   ![衍生欄位完成](../../assets/derived-field-complete.jpeg)
 
 1. 若要更新衍生欄位，請找到使用舊版已棄用欄位的衍生欄位（路徑以`media.mediaTimed`開頭）。
 
-   ![衍生欄位](assets/old-derived-field.jpeg)
+   ![衍生欄位](../../assets/old-derived-field.jpeg)
 
-1. 將游標移至您要更新的衍生欄位上，然後選取&#x200B;[!UICONTROL **編輯**]&#x200B;圖示。
+1. 將游標移至您要更新的衍生欄位上，然後選取&#x200B;**[!UICONTROL 編輯]**&#x200B;圖示。
 
 1. 找出舊資料型別的所有欄位（以`media.mediaTimed`開頭的路徑），並將它們取代為新的對應欄位。
 
-   ![尋找具有舊資料型別的欄位](assets/locate-fields-with-old-datatype.jpeg)
+   ![尋找具有舊資料型別的欄位](../../assets/locate-fields-with-old-datatype.jpeg)
 
 1. 檢查[內容名稱](/help/reporting/dimensions/content-name.md)文章中對應的新欄位。
 
 1. 以新欄位取代舊欄位。
 
-   ![新欄位](assets/derived-field-new.jpeg)
+   ![新欄位](../../assets/derived-field-new.jpeg)
 
 1. 使用舊版已棄用的「媒體」資料型別的欄位，對所有衍生欄位重複此程式。
 

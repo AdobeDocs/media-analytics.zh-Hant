@@ -1,41 +1,22 @@
 ---
-title: 啟用媒體報表
-description: 了解收集媒體量度的媒體報表套裝。  遵循這些步驟，在傳送媒體資料之前設定媒體報表。
-uuid: d306068d-a308-4b6e-8a72-742dda0de428
-exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+title: 為僅限Analytics的實施設定報告
+description: 啟用Adobe Analytics中的媒體報表套裝模組，以便收集及報告串流媒體資料。
 feature: Streaming Media
-role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+role: User, Admin
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 20%
+source-wordcount: '580'
+ht-degree: 8%
 
 ---
 
-# 啟用媒體報表
+# 為僅限Analytics的實施設定報告
+
+在僅限Analytics的實施可收集串流媒體資料之前，必須將接收該資料的每個報表套裝設定為啟用適當的媒體模組。 此頁面說明如何啟用這些模組，以及在何處尋找產生的報告。
+
+* **必要條件**： Adobe Analytics實作。 檢視[僅限Analytics的實作概觀](/help/implementation/analytics-only/overview.md)以及您選擇的實作方法。
+
+## 在報表套裝上啟用媒體報表
 
 在傳送媒體資料之前，必須先設定好收集媒體量度的每個報表套裝。
 
@@ -44,11 +25,11 @@ ht-degree: 20%
 
    ![報表套裝管理員功能表熒幕擷圖](assets/media-reporting.png)
 
-1. 在&#x200B;**[!UICONTROL 媒體報表]**&#x200B;頁面上，啟用所需的串流媒體元件（請參閱下文）。
+1. 在&#x200B;**[!UICONTROL 媒體報表]**&#x200B;頁面上，啟用所需的串流媒體模組（請參閱下文）。
 
 1. 選取&#x200B;**[!UICONTROL 儲存].**
 
-   若此報表套裝已設定來收集媒體資料，在您按一下&#x200B;**[!UICONTROL 「儲存」]**&#x200B;後，將顯示另一個設定頁面。 如果您看見&#x200B;**[!UICONTROL 「媒體核心測量」]**&#x200B;頁面，請繼續進行下一個步驟。
+   若此報表套裝已設定來收集媒體資料，在您選取「**[!UICONTROL 儲存]**」後，會顯示額外的設定頁面。 如果您看見&#x200B;**[!UICONTROL 「媒體核心測量」]**&#x200B;頁面，請繼續進行下一個步驟。
 
 ## 可用的串流媒體模組
 
@@ -141,7 +122,7 @@ ht-degree: 20%
       * [[!UICONTROL 總緩衝期間]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL 視訊中繼資料]**：啟用追蹤標準視訊內容屬性的功能，例如節目、季節和型別。
    * **維度：**
-      * [!UICONTROL 個廣告載入]
+      * [[!UICONTROL 個廣告載入]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL 天部分]](/help/reporting/dimensions/day-part.md)
       * [[!UICONTROL 集]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL 型別]](/help/reporting/dimensions/genre.md)
@@ -178,3 +159,9 @@ ht-degree: 20%
       * [[!UICONTROL 受觀看中影響的資料流]](/help/reporting/metrics/in-focus-streams-impacted.md)
       * [[!UICONTROL 受靜音影響的資料流]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL 受子母畫面影響的資料流]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+
+>[!MORELIKETHIS]
+>
+>* 在Workspace中[媒體報告](/help/reporting/workspace/media-workspace-templates.md)
+>* [維度概觀](/help/reporting/dimensions/overview.md)
+>* [量度概觀](/help/reporting/metrics/overview.md)
