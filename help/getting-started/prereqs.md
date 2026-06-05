@@ -20,10 +20,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: 490
-ht-degree: 43%
+source-wordcount: 274
+ht-degree: 10%
 
 ---
 
@@ -31,28 +31,21 @@ ht-degree: 43%
 
 開始實作Adobe串流媒體服務前，請先完成下列工作：
 
-1. **檢閱Adobe串流媒體服務總覽**<br>
-在您開始實作串流媒體服務之前，請先檢閱[Adobe串流媒體服務總覽](/help/media-overview.md)，確定它符合您的需求。
-
 1. **確認您的定價模式**<br>
 Customer Journey Analytics串流媒體收集附加元件和Adobe Analytics for Streaming Media附加元件目前的定價模型是以視訊串流為基礎。 如有必要，請聯絡您的銷售代表或Adobe客戶團隊，因為此附加元件是針對Adobe Analytics和Adobe Experience Platform分開銷售。
 
-1. **啟用Adobe Analytics報表**<br>
-若要在Analytics或Customer Journey Analytics中啟用報表，以及檢視您正在收集的內容和廣告資料，您必須啟用報表。 請參閱[為僅限Analytics的實施設定報告](/help/reporting/setup/analytics-reporting.md)。
+1. **啟用Adobe Analytics報表** *（僅限Analytics實施）*<br>
+若要在Analytics中啟用報表並檢視您正在收集的內容和廣告資料，您必須啟用報表。 請參閱[為僅限Analytics的實施設定報告](/help/reporting/setup/analytics-reporting.md)。
 
-1. **在CX Enterprise中實作Adobe Experience Platform Identity Service**
+1. **設定身分**<br>
 
-   **Identity服務**&#x200B;可為CX Enterprise核心服務、解決方案以及People核心服務的客戶屬性和對象啟用共同識別架構。 其運用方式為指派一個唯一的永久性 ID 給網站訪客。 當貴組織實作ID服務時，此ID可讓您在不同的CX Enterprise解決方案中識別相同的網站訪客及其資料。
+   身分設定需求會因您的實作方法而異：
 
-   ![ID 服務圖形](assets/mc_id_service_graphic.png)
+   * **Edge實作**：身分是透過Adobe Experience Platform身分識別名稱空間設定來處理。 不需要個別設定Identity Service。 如需詳細資訊，請參閱[Edge實作概觀](/help/implementation/edge/overview.md)。
 
-   ID 服務也可以取代不同的解決方案特定 ID (例如 Analytics AID)。 透過[客戶ID和驗證狀態](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant)功能，ID服務可讓您將您的客戶ID傳遞至CX Enterprise。 請記住，ID 服務僅適用於您已訂閱的解決方案。 如果您未註冊存取其他產品，則 ID 服務不提供存取權。
+   * **僅限Analytics的實作**：必須啟用Adobe Experience Platform Identity Service，才能在CX Enterprise解決方案中一致地識別訪客。 Identity Service會為每個網站訪客指派不重複的永久ID，並可讓該ID在您訂閱的所有CX Enterprise解決方案之間共用。
 
-   ID服務是許多CX Enterprise功能、增強功能與服務的必要元件。 目前 ID 服務支援 [Analytics](https://www.adobe.com/tw/marketing-cloud/web-analytics.html)、[Audience Manager](https://www.adobe.com/tw/marketing-cloud/data-management-platform.html) 和 [Target](https://www.adobe.com/tw/marketing-cloud/testing-targeting.html)。
-
-   如果您尚未實作 ID 服務，現在就是開始考慮移轉策略的最佳時機。 如需 ID 服務之重要性和角色的詳細資訊，請參閱[為何您應認真考慮身分識別服務](https://theblog.adobe.com/why-new-adobe-marketing-cloud-id-service-should-be-on-your-radar/)。
-
-   如需 Experience Cloud ID 的詳細資訊，請參閱 [Experience Cloud ID 服務概觀](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)和 [Adobe Experience Platform 身分識別服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+     如需詳細資訊，請參閱[Adobe Experience Platform Identity Service檔案](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 
 1. **檢視您的實作的其他先決條件**
 

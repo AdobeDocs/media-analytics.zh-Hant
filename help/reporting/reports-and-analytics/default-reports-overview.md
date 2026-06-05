@@ -22,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 358
 ht-degree: 50%
@@ -37,7 +37,7 @@ Adobe Analytics 提供數個報表和量度來追蹤網站上的媒體效能。
 
 媒體報表會列於&#x200B;**[!UICONTROL 「報表」]**&#x200B;標籤中。 導覽至&#x200B;**[!UICONTROL 「媒體]** > **[!UICONTROL 媒體參與」]**，然後選取：
 
-| 媒體報表 | 說明     | 常見業務洞察       |
+| 媒體報表 | 說明 | 常見業務洞察 |
 | --- | --- | --- |
 | [媒體概觀](media-reports-overview.md) | 顯示數個彙總測量，快速監測媒體是否如預期般執行。 圖表會在廣告曝光數旁顯示[[!UICONTROL 媒體開始]](/help/reporting/metrics/media-starts.md)，讓您快速檢視及比較這些量度。 | <ul> <li>熱門量度的總計包括[[!UICONTROL 內容開始]](/help/reporting/metrics/content-starts.md)、完成率、資料流平均逗留時間和每次造訪平均媒體專案數。  </li> <li>依裝置型別或國家篩選的媒體總計[[!UICONTROL 內容開始]](/help/reporting/metrics/content-starts.md)和[[!UICONTROL 廣告開始]](/help/reporting/metrics/ad-starts.md)。  </li> </ul> |
 | [媒體詳細資料](media-reports-detail.md) | 為所有的媒體項目顯示詳細的量度，包括開始、同時檢閱者、完成率、播放率以及廣告曝光次數。 | <ul> <li>熱門量度的總計包括[[!UICONTROL 媒體開始]](/help/reporting/metrics/media-starts.md)、[[!UICONTROL 內容開始]](/help/reporting/metrics/content-starts.md)和[[!UICONTROL 廣告開始]](/help/reporting/metrics/ad-starts.md)，以及每次造訪的平均內容。  </li> <li>依裝置型別或國家篩選的媒體總計[[!UICONTROL 內容開始]](/help/reporting/metrics/content-starts.md)和[[!UICONTROL 廣告開始]](/help/reporting/metrics/ad-starts.md)。  </li> </ul> |
