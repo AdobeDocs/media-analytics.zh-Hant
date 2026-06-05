@@ -26,7 +26,7 @@ ht-degree: 6%
 
 ## 在 Customer Journey Analytics 中建立資料檢視
 
-1. 在Customer Journey Analytics中建立資料檢視，如[建立或編輯資料檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/create-dataview)中所述。
+1. 在Customer Journey Analytics中建立資料檢視，如[建立或編輯資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)中所述。
 
    1. 在&#x200B;**[!UICONTROL 連線]**&#x200B;欄位中，選取您先前建立的連線。 新連線最多可能需要15分鐘才會顯示。
 
@@ -50,7 +50,7 @@ ht-degree: 6%
 
       >[!IMPORTANT]
       >
-      >此表格中的內容標籤是串流媒體面板運作所必需的。 Customer Journey Analytics會使用這些量度自動計算&#x200B;**同時檢閱者**&#x200B;和&#x200B;**播放時間**&#x200B;衍生量度（由[媒體同時檢閱者](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒體播放時間](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)面板使用），並填入[媒體平均每分鐘觀眾數](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)面板的報告選項。
+      >此表格中的內容標籤是串流媒體面板運作所必需的。 Customer Journey Analytics會使用這些量度自動計算&#x200B;**同時檢閱者**&#x200B;和&#x200B;**播放時間**&#x200B;衍生量度（由[媒體同時檢閱者](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒體播放時間](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)面板使用），並填入[媒體平均每分鐘觀眾數](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)面板的報告選項。
 
       此時您可以新增任何其他[維度](/help/reporting/dimensions/overview.md)或[量度](/help/reporting/metrics/overview.md)至您的資料檢視。 每個頁面都會列出該元件的XDM路徑。
 
@@ -70,7 +70,7 @@ ht-degree: 6%
 
 1. （視條件而定）如果您將自訂中繼資料新增到結構描述，請為自訂欄位設定持續性，如Customer Journey Analytics指南中的[持續性元件設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)所述。
 
-1. 依照[共用專案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en)中的說明共用專案。
+1. 依照[共用專案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=zh-Hant)中的說明共用專案。
 
    >[!NOTE]
    >
@@ -80,9 +80,9 @@ ht-degree: 6%
 
 Customer Journey Analytics中的Analysis Workspace包含三個專用媒體面板，供具有串流媒體收集附加元件的客戶使用。 這些面板會根據最常見的串流媒體報表需求，提供預先建立的視覺效果。
 
-* **[媒體平均每分鐘觀眾數](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**：比較任何長度或型別的節目的平均內容使用量。 支援特定內容（以持續時間為基礎）和自訂時段模式，並允許事後更新持續時間分類。
-* **[媒體同時檢閱者](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**：分析一段時間內的同時檢閱者，以找出尖峰同時檢閱和下降點。 支援可設定的粒度和依區段、維度或日期範圍的序列劃分。
-* **[媒體播放時間](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**：分析一段時間的播放持續時間，包含尖峰和低谷期間的詳細資料。 支援可設定的詳細程度和輸出格式（小時或分鐘）。
+* **[媒體平均每分鐘觀眾數](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**：比較任何長度或型別的節目的平均內容使用量。 支援特定內容（以持續時間為基礎）和自訂時段模式，並允許事後更新持續時間分類。
+* **[媒體同時檢閱者](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**：分析一段時間內的同時檢閱者，以找出尖峰同時檢閱和下降點。 支援可設定的粒度和依區段、維度或日期範圍的序列劃分。
+* **[媒體播放時間](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**：分析一段時間的播放持續時間，包含尖峰和低谷期間的詳細資料。 支援可設定的詳細程度和輸出格式（小時或分鐘）。
 
 >[!MORELIKETHIS]
 >

@@ -24,14 +24,14 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
 1. **確認相容的Adobe解決方案。** 您必須具備下列其中至少一個的有效實作：
    * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant) — Edge媒體資料的主要報表目的地
-   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html) — 透過相同資料流支援隨附或替代CJA
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html) — 在設定其中一項時，將&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服務新增至您的資料流
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant) — 透過相同資料流支援隨附或替代CJA
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hant) — 在設定其中一項時，將&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服務新增至您的資料流
 
 ## 在Adobe Experience Platform中設定結構
 
 為了標準化使用Adobe Experience Platform之應用程式的資料收集，Adobe建立了開放式、公開記錄的體驗資料模型(XDM)標準。
 
-1. 在Adobe Experience Platform中，開始建立結構描述，如[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)中所述。
+1. 在Adobe Experience Platform中，開始建立結構描述，如[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hant)中所述。
 
 1. 在[結構描述詳細資料]頁面上，選擇&#x200B;**[!UICONTROL 體驗事件]**&#x200B;作為結構描述的基底類別。
 
@@ -130,7 +130,7 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [使用產生的路徑](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
+   1. [使用產生的路徑](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -156,9 +156,9 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
      ![建立資料流並選取結構描述](assets/datastream-create-schema.png)
 
-   * 根據您的Adobe解決方案，將適當的服務新增至資料流。 如需新增服務的相關資訊，請參閱[設定資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的「將服務新增至資料流」。
+   * 根據您的Adobe解決方案，將適當的服務新增至資料流。 如需新增服務的相關資訊，請參閱[設定資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#view-details)中的「將服務新增至資料流」。
 
-      * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics） — 如[建立報表套裝](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述，定義報表套裝。
+      * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics） — 如[建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述，定義報表套裝。
 
       * **[!UICONTROL Adobe Experience Platform]** （若使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
 
@@ -172,7 +172,7 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
 在準備好結構、資料集和資料流後，實作下列其中一個程式碼庫，以開始將串流媒體資料傳送到Edge Network。 每個頁面都涵蓋串流媒體特定的設定；每個事件和每個變數的程式碼都存在於[事件](/help/implementation/events/overview.md)和[變數](/help/implementation/variables/overview.md)中。
 
-**程式碼內**&#x200B;實作會直接在應用程式原始碼中寫入SDK呼叫。 **使用標籤**&#x200B;實作使用[Adobe Experience Platform標籤](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)，可讓您設定及部署追蹤規則，而不需修改應用程式程式碼。 選擇適合您的部署工作流程的方法。
+**程式碼內**&#x200B;實作會直接在應用程式原始碼中寫入SDK呼叫。 **使用標籤**&#x200B;實作使用[Adobe Experience Platform標籤](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)，可讓您設定及部署追蹤規則，而不需修改應用程式程式碼。 選擇適合您的部署工作流程的方法。
 
 | 程式碼基底 | 程式碼內 | 使用標籤 |
 |---|---|---|
