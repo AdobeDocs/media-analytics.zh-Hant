@@ -64,7 +64,7 @@ ht-degree: 59%
 | **多重播放器狀態追蹤** | 使用 Media Collection API 來實施多播放器狀態追蹤。 [了解更多](/help/implementation/events/player-state/overview.md) | 2022 年 9 月 |
 | 已重新命名 XDM 欄位 | 已重新命名XDM欄位名稱以保持一致性：<ul><li>音訊和視訊引數</li><li>廣告參數</li><li>章節參數</li><li>播放器狀態參數</li><li>品質參數</li></ul> | 2022 年 9 月 |
 | **媒體同時檢閱者面板** | 了解高峰期同時觀看或使用者數下降的位置。 取得內容品質和檢閱者參與的寶貴洞察，並取得疑難排解或規劃數量和規模的協助。 [了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hant) | 2022 年 8 月 9 日 |
-| **媒體播放時間面板** | 「媒體播放時間」提供寶貴的觀眾參與度洞察，並可讓媒體組織透過進階花費時間分析及日時段分割功能，以每分鐘的使用者參與度，取得更深入、顆粒度更小的洞察。 您可以觀察使用者在特定時間點觀看您的媒體串流所花的時間多寡。 您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。 [了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html) | 2022 年 8 月 9 日 |
+| **媒體播放時間面板** | 「媒體播放時間」提供寶貴的觀眾參與度洞察，並可讓媒體組織透過進階花費時間分析及日時段分割功能，以每分鐘的使用者參與度，取得更深入、顆粒度更小的洞察。 您可以觀察使用者在特定時間點觀看您的媒體串流所花的時間多寡。 您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。 [了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=zh-Hant) | 2022 年 8 月 9 日 |
 | **平均分鐘觀眾數** | Media Analytics 客戶可以使用「平均分鐘觀眾數」面板來更了解平均內容使用量。 <br>「平均分鐘觀眾數」可比較任何長度或類型的節目。 此外，您也可以比較數位平均分鐘觀眾數和線性電視的平均分鐘量度，或是將前者附加到後者。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及持續時間分類的更新時間。  [了解更多](/help/reporting/workspace/average-minute-audience.md) | 2022 年 3 月 16 日 |
 
 ## 2021
