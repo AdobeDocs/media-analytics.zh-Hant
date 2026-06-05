@@ -5,10 +5,10 @@ user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
 user-guide-description: 實施串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 35%
+source-wordcount: '749'
+ht-degree: 34%
 
 ---
 
@@ -16,13 +16,11 @@ ht-degree: 35%
 # 串流媒體服務指南 {#using}
 
 + [Adobe串流媒體服務指南](media-overview.md)
-+ 發行說明 {#release-notes}
-   + [串流媒體服務發行說明](additional-resources/release-notes.md)
++ [串流媒體服務發行說明](release-notes.md)
 + 開始使用 {#getting-started}
    + [先決條件](getting-started/prereqs.md)
    + [支援裝置](getting-started/supported-devices.md)
-   + [串流媒體服務實作檔案](getting-started/implementation-documentation.md)
-   + [SDK、程式庫與擴充功能](getting-started/download-sdks.md)
+   + [取得Media SDK、擴充功能和API](getting-started/download-sdks.md)
 + 實施 {#implementation}
    + [實施概觀](implementation/overview.md)
    + 活動 {#events}
