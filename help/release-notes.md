@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
 workflow-type: tm+mt
-source-wordcount: 789
-ht-degree: 59%
+source-wordcount: 793
+ht-degree: 60%
 
 ---
 
@@ -37,12 +37,17 @@ ht-degree: 59%
 
 **上次更新日期**：2026年6月4日
 
-## 2025
+## 2026
 
 | 功能 | 說明 | 日期 |
 | --- | --- | --- |
 | **支援排程資料** | 上傳過去直播內容的排程資料，以按方案或區段追蹤收視率。 支援的內容型別包括：<ul><li>FAST (免費廣告支援的電視) 平台</li><li>本地串流</li><li>現場體育賽事</li></ul>如需詳細資訊，請參閱[上傳排程資料以追蹤即時內容](/help/use-cases/track-schedule-data.md)使用案例。 | 開始推出： 2025年10月29日<p>全面發佈：2026年10月</p> |
-| `mediaTimed` XDM欄位淘汰 | `mediaTimed` XDM物件已過時，改用`mediaReporting`欄位路徑。 在2025年5月9日之前實施Analytics來源聯結器的客戶必須移轉其設定。 如需詳細資訊，請參閱下列移轉指南：<ul><li>[將對象移轉至新的串流媒體欄位](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[移轉Customer Journey Analytics以使用新的串流媒體欄位](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[將自訂欄位的資料準備移轉至新的串流媒體欄位](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[將設定檔移轉至新的串流媒體欄位](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | 2025 年 10 月 |
+
+## 2025
+
+| 功能 | 說明 | 日期 |
+| --- | --- | --- |
+| **`mediaTimed`XDM欄位淘汰** | `mediaTimed` XDM物件已過時，改用`mediaReporting`欄位路徑。 在2025年5月9日之前實施Analytics來源聯結器的客戶必須移轉其設定。 如需詳細資訊，請參閱下列移轉指南：<ul><li>[將對象移轉至新的串流媒體欄位](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[移轉Customer Journey Analytics以使用新的串流媒體欄位](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[將自訂欄位的資料準備移轉至新的串流媒體欄位](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[將設定檔移轉至新的串流媒體欄位](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | 2025 年 10 月 |
 
 ## 2024
 
