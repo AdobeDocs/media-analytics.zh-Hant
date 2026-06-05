@@ -5,10 +5,10 @@ user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
 user-guide-description: 實施串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 34%
+source-wordcount: '698'
+ht-degree: 32%
 
 ---
 
@@ -289,21 +289,7 @@ ht-degree: 34%
       + [總延遲期間](reporting/metrics/total-stalling-duration.md)
       + [不重複播放時間](reporting/metrics/unique-time-played.md)
    + [計算量度](reporting/calculated-metrics.md)
-   + Workspace中的媒體面板 {#media-workspace-panels}
-      + [「平均分鐘觀眾數」面板](reporting/workspace/average-minute-audience.md)
-      + [「媒體同時檢閱者」面板](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [「媒體播放時間」面板](reporting/workspace/media-playback-time-spent.md)
-   + [Workspace 中的媒體報表](reporting/workspace/media-workspace-templates.md)
    + [媒體區塊](reporting/segments.md)
-   + 預設媒體報表 {#media-default-reports}
-      + [預設報表概觀](reporting/reports-and-analytics/default-reports-overview.md)
-      + [媒體概觀](reporting/reports-and-analytics/media-reports-overview.md)
-      + [媒體詳細資料](reporting/reports-and-analytics/media-reports-detail.md)
-      + [媒體播出時段報表](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [媒體同時檢視者報表](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + 媒體API {#media-api}
-      + [取得同時檢視者資料](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [取得媒體播放時間資料](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + 使用個案 {#media-use-cases}
    + [追蹤排程資料](/help/use-cases/track-schedule-data.md)
    + [追蹤下載內容](use-cases/track-downloaded-content.md)

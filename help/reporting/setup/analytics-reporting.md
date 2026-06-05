@@ -3,10 +3,10 @@ title: 為僅限Analytics的實施設定報告
 description: 啟用Adobe Analytics中的媒體報表套裝模組，以便收集及報告串流媒體資料。
 feature: Streaming Media
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 8%
+source-wordcount: '779'
+ht-degree: 11%
 
 ---
 
@@ -36,6 +36,9 @@ ht-degree: 8%
 媒體測量包含下列模組:
 
 * **[!UICONTROL 媒體核心]**：所有串流媒體追蹤都需要。 它會保留解決方案變數以用於內容播放和工作階段資料。
+
+  +++選取以檢視維度和量度
+
    * **維度：**
       * [[!UICONTROL 內容]](/help/reporting/dimensions/content.md)
       * [[!UICONTROL 內容頻道]](/help/reporting/dimensions/content-channel.md)
@@ -60,7 +63,13 @@ ht-degree: 8%
       * [[!UICONTROL 進度標籤]](/help/reporting/metrics/progress-markers.md)
       * [[!UICONTROL 總暫停期間]](/help/reporting/metrics/total-pause-duration.md)
       * [[!UICONTROL 不重複播放時間]](/help/reporting/metrics/unique-time-played.md)
+
+  +++
+
 * **[!UICONTROL 媒體廣告]**：啟用媒體內容內廣告的追蹤功能。
+
+  +++選取以檢視維度、分類和量度
+
    * **維度：**
       * [[!UICONTROL 廣告]](/help/reporting/dimensions/ad.md)
       * [Pod位置中的[!UICONTROL 廣告]](/help/reporting/dimensions/ad-in-pod-position.md)
@@ -83,7 +92,13 @@ ht-degree: 8%
       * [[!UICONTROL 廣告開始]](/help/reporting/metrics/ad-starts.md)
       * [[!UICONTROL 廣告逗留時間]](/help/reporting/metrics/ad-time-spent.md)
       * [[!UICONTROL 媒體逗留時間]](/help/reporting/metrics/media-time-spent.md)
+
+  +++
+
 * **[!UICONTROL 媒體章節]**：啟用媒體內容中章節的追蹤功能。
+
+  +++選取以檢視維度、分類和量度
+
    * **Dimension：**
       * [[!UICONTROL 章節]](/help/reporting/dimensions/chapter.md)
    * **分類維度：**
@@ -96,7 +111,13 @@ ht-degree: 8%
       * [[!UICONTROL 章節完成]](/help/reporting/metrics/chapter-completes.md)
       * [[!UICONTROL 章節開始]](/help/reporting/metrics/chapter-starts.md)
       * [[!UICONTROL 章節逗留時間]](/help/reporting/metrics/chapter-time-spent.md)
+
+  +++
+
 * **[!UICONTROL 媒體品質]**：啟用播放品質資料的追蹤功能，包括緩衝、位元速率和錯誤事件。
+
+  +++選取以檢視維度和量度
+
    * **維度：**
       * [[!UICONTROL 平均位元速率]](/help/reporting/dimensions/average-bitrate.md)
       * [[!UICONTROL 位元速率變更]](/help/reporting/dimensions/bitrate-changes.md)
@@ -120,7 +141,13 @@ ht-degree: 8%
       * [[!UICONTROL 錯誤影響的資料流]](/help/reporting/metrics/error-impacted-streams.md)
       * [[!UICONTROL 開始時間]](/help/reporting/metrics/time-to-start.md)
       * [[!UICONTROL 總緩衝期間]](/help/reporting/metrics/total-buffer-duration.md)
+
+  +++
+
 * **[!UICONTROL 視訊中繼資料]**：啟用追蹤標準視訊內容屬性的功能，例如節目、季節和型別。
+
+  +++選取以檢視維度和量度
+
    * **維度：**
       * [[!UICONTROL 個廣告載入]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL 天部分]](/help/reporting/dimensions/day-part.md)
@@ -134,7 +161,13 @@ ht-degree: 8%
       * [[!UICONTROL 顯示型別]](/help/reporting/dimensions/show-type.md)
    * **量度：**
       * [[!UICONTROL 已授權]](/help/reporting/metrics/authorized.md)
+
+  +++
+
 * **[!UICONTROL 音訊中繼資料]**：啟用標準音訊內容屬性的追蹤功能，例如演出者、專輯和電台。
+
+  +++選取以檢視維度
+
    * **維度：**
       * [[!UICONTROL 相簿]](/help/reporting/dimensions/album.md)
       * [[!UICONTROL 藝人]](/help/reporting/dimensions/artist.md)
@@ -142,7 +175,13 @@ ht-degree: 8%
       * [[!UICONTROL Label]](/help/reporting/dimensions/label.md)
       * [[!UICONTROL 發行者]](/help/reporting/dimensions/publisher.md)
       * [[!UICONTROL 電台]](/help/reporting/dimensions/station.md)
+
+  +++
+
 * **[!UICONTROL 播放器狀態追蹤]**：啟用標準播放器UI狀態的測量，例如全熒幕、隱藏式字幕和子母畫面。
+
+  +++選取以檢視量度
+
    * **量度：**
       * [[!UICONTROL 隱藏式字幕計數]](/help/reporting/metrics/closed-captioning-count.md)
       * [[!UICONTROL 隱藏式字幕總時間]](/help/reporting/metrics/closed-captioning-total-duration.md)
@@ -160,8 +199,17 @@ ht-degree: 8%
       * [[!UICONTROL 受靜音影響的資料流]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL 受子母畫面影響的資料流]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
 
+  +++
+
+## Adobe Analytics中的可用媒體面板
+
+Analysis Workspace包含三個專用媒體面板，供具有Adobe Analytics for Streaming Media附加元件的客戶使用。 這些面板會根據最常見的串流媒體報表需求，提供預先建立的視覺效果。
+
+* **[媒體平均每分鐘觀眾數](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)**：比較任何長度或型別的節目的平均內容使用量。 支援特定內容（以持續時間為基礎）和自訂時段模式，並允許事後更新持續時間分類。
+* **[媒體同時檢閱者](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)**：分析一段時間內的同時檢閱者，以找出尖峰同時檢閱和下降點。 支援可設定的粒度和依區段、維度或日期範圍的序列劃分。
+* **[媒體播放時間](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)**：分析一段時間的播放持續時間，包含尖峰和低谷期間的詳細資料。 支援可設定的詳細程度和輸出格式（小時或分鐘）。
+
 >[!MORELIKETHIS]
 >
->* 在Workspace中[媒體報告](/help/reporting/workspace/media-workspace-templates.md)
 >* [維度概觀](/help/reporting/dimensions/overview.md)
 >* [量度概觀](/help/reporting/metrics/overview.md)
