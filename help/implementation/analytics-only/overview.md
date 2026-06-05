@@ -3,7 +3,7 @@ title: 僅限Analytics的實施概觀
 description: 適用於串流媒體的Adobe Analytics附加元件的先決條件和實作方法，用於僅限Analytics的實作。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 5%
@@ -28,7 +28,7 @@ ht-degree: 5%
 
 每個頁面都涵蓋串流媒體特有的設定。 每個事件和每個變數的程式碼都存在於[事件](/help/implementation/events/overview.md)和[變數](/help/implementation/variables/overview.md)中。
 
-| 程式碼基底 | 程式碼內 | 透過標籤 |
+| 程式碼基底 | 程式碼內 | 使用標籤 |
 |---|---|---|
 | 網頁(JavaScript) | [JavaScript](javascript.md) | [Media Analytics標籤擴充功能](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |

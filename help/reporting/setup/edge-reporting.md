@@ -3,16 +3,16 @@ title: 設定Edge實作的報表
 description: 設定Customer Journey Analytics以報告透過Edge Network收集的串流媒體資料。
 feature: Streaming Media
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 17%
+source-wordcount: '832'
+ht-degree: 6%
 
 ---
 
 # 設定Edge實作的報表
 
-透過Edge Network實作串流媒體收集後，請設定Customer Journey Analytics以報告收集的資料。 本頁面說明如何建立串流媒體的連線、資料檢視和專案。
+透過Edge Network實作串流媒體收集後，請設定Customer Journey Analytics以報告收集的資料。
 
 >[!NOTE]
 >
@@ -22,108 +22,51 @@ ht-degree: 17%
 
 ## 在 Customer Journey Analytics 中建立連線
 
-1. 在Customer Journey Analytics中建立連線，如[建立連線](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-connections/create-connection.html?lang=zh-Hant)中所述。
-
-   建立連線時，串流媒體需要以下選擇：
-
-   1. 選取您在實施期間建立的資料集。
-
-   1. 確定已啟用&#x200B;**[!UICONTROL 匯入所有新資料]**&#x200B;設定。
-
-1. 繼續[在Customer Journey Analytics](#create-a-data-view-in-customer-journey-analytics)中建立資料檢視。
+1. 在Customer Journey Analytics中建立連線，如[建立連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/create-connection)中所述。 建立連線時，請確定已啟用&#x200B;**[!UICONTROL 匯入所有新資料]**&#x200B;核取方塊。
 
 ## 在 Customer Journey Analytics 中建立資料檢視
 
-1. 在Customer Journey Analytics中建立資料檢視，如[建立或編輯資料檢視](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-dataviews/create-dataview.html?lang=zh-Hant)中所述。
+1. 在Customer Journey Analytics中建立資料檢視，如[建立或編輯資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)中所述。
 
-   1. 在&#x200B;**[!UICONTROL 連線]**&#x200B;欄位中，選取您先前建立的連線。
+   1. 在&#x200B;**[!UICONTROL 連線]**&#x200B;欄位中，選取您先前建立的連線。 新連線最多可能需要15分鐘才會顯示。
 
-      選取新連線最多可能需要15分鐘。
+   1. 在&#x200B;**[!UICONTROL 元件]**&#x200B;標籤的&#x200B;**[!UICONTROL 結構描述欄位]**&#x200B;區段中，搜尋下表中每個元件，並將其拖曳至適當的&#x200B;**[!UICONTROL 維度]**&#x200B;或&#x200B;**[!UICONTROL 量度]**&#x200B;面板。 如果存在多個相同名稱的欄位，請使用XDM路徑來確認正確的欄位。 套用元件設定中&#x200B;**[!UICONTROL 內容標籤]**&#x200B;下拉式清單中所顯示的內容標籤。
 
-   1. 在&#x200B;**[!UICONTROL 元件]**&#x200B;標籤的&#x200B;**[!UICONTROL 結構描述欄位]**&#x200B;區段中，搜尋下表中每個元件，並將其拖曳至&#x200B;**[!UICONTROL 量度]**&#x200B;面板。 如果存在多個相同名稱的欄位，請使用XDM路徑來確認正確的欄位。
+      | 元件 | 類型 | XDM 路徑 | 內容標籤 |
+      |---|---|---|---|
+      | [內容](/help/reporting/dimensions/content.md) | 維度 | `mediaReporting.sessionDetails.name` | 媒體：內容ID |
+      | [內容名稱](/help/reporting/dimensions/content-name.md) | 維度 | `mediaReporting.sessionDetails.friendlyName` | 媒體：視訊名稱 |
+      | [內容長度](/help/reporting/dimensions/content-length.md) | 維度 | `mediaReporting.sessionDetails.length` | 媒體：視訊長度 |
+      | [節目](/help/reporting/dimensions/show.md) | 維度 | `mediaReporting.sessionDetails.show` | 媒體：節目 |
+      | [季](/help/reporting/dimensions/season.md) | 維度 | `mediaReporting.sessionDetails.season` | 媒體：季數 |
+      | [集](/help/reporting/dimensions/episode.md) | 維度 | `mediaReporting.sessionDetails.episode` | 媒體：集數 |
+      | 事件型別 | 維度 | `eventType` | 媒體：事件型別 |
+      | [內容逗留時間](/help/reporting/metrics/content-time-spent.md) | 量度 | `mediaReporting.sessionDetails.timePlayed` | 媒體：內容逗留時間 |
+      | [媒體逗留時間](/help/reporting/metrics/media-time-spent.md) | 量度 | `mediaReporting.sessionDetails.totalTimePlayed` | 媒體：媒體逗留時間 |
+      | [總暫停期間](/help/reporting/metrics/total-pause-duration.md) | 量度 | `mediaReporting.sessionDetails.pauseTime` | 媒體：總暫停期間 |
+      | [開始時間](/help/reporting/metrics/time-to-start.md) | 量度 | `mediaReporting.qoeDataDetails.timeToStart` | 媒體：開始時間 |
+      | [總緩衝期間](/help/reporting/metrics/total-buffer-duration.md) | 量度 | `mediaReporting.qoeDataDetails.bufferTime` | 媒體：總緩衝期間 |
+      | 媒體工作階段伺服器逾時 | 量度 | `mediaReporting.sessionDetails.secondsSinceLastCall` | 媒體：自上次呼叫以來的秒數 |
 
-      **主要內容 — 內容量度**
+      >[!IMPORTANT]
+      >
+      >此表格中的內容標籤是串流媒體面板運作所必需的。 Customer Journey Analytics會使用這些量度自動計算&#x200B;**同時檢閱者**&#x200B;和&#x200B;**播放時間**&#x200B;衍生量度（由[媒體同時檢閱者](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒體播放時間](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)面板使用），並填入[媒體平均每分鐘觀眾數](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)面板的報告選項。
 
-      | 元件名稱 | XDM 路徑 |
-      |----------|---------|
-      | 媒體開始次數 | mediaReporting.sessionDetails.isViewed |
-      | 媒體區段檢視次數 | mediaReporting.sessionDetails.hasSegmentView |
-      | 內容開始 | mediaReporting.sessionDetails.isPlayed |
-      | 內容結束 | mediaReporting.sessionDetails.isCompleted |
-      | 內容逗留時間 | mediaReporting.sessionDetails.timePlayed |
-      | 媒體逗留時間 | mediaReporting.sessionDetails.totalTimePlayed |
-      | 不重複播放時間 | mediaReporting.sessionDetails.uniqueTimePlayed |
-      | 10% 進度標記 | mediaReporting.sessionDetails.hasProgress10 |
-      | 平均分鐘觀眾數 | mediaReporting.sessionDetails.averageMinuteAudience |
+      此時您可以新增任何其他[維度](/help/reporting/dimensions/overview.md)或[量度](/help/reporting/metrics/overview.md)至您的資料檢視。 每個頁面都會列出該元件的XDM路徑。
 
-      **章節與廣告 — 章節與廣告量度**
-
-      | 元件名稱 | XDM 路徑 |
-      |----------|---------|
-      | 章節已開始 | mediaReporting.chapterDetails.isStarted |
-      | 章節已完成 | mediaReporting.chapterDetails.isCompleted |
-      | 章節時間已播放 | mediaReporting.chapterDetails.timePlayed |
-      | 廣告開始 | mediaReporting.advertisingDetails.isStarted |
-      | 廣告完成 | mediaReporting.advertisingDetails.isCompleted |
-      | 廣告播放時間 | mediaReporting.advertisingDetails.timePlayed |
-
-      **QoE - QoE量度**
-
-      | 元件名稱 | XDM 路徑 |
-      |----------|---------|
-      | 開始時間 | mediaReporting.qoeDataDetails.timeToStart |
-      | 開始前掉格 | mediaReporting.qoeDataDetails.isDroppedBeforeStart |
-      | 緩衝影響的資料流 | mediaReporting.qoeDataDetails.hasBufferImpactedStreams |
-      | 位元速率變更影響的資料流 | mediaReporting.qoeDataDetails.hasBitrateChangeImpactedStreams |
-      | 位元速率變更 | mediaReporting.qoeDataDetails.bitrateChangeCount |
-      | 平均位元速率 | mediaReporting.qoeDataDetails.bitrateAverage |
-      | 掉格 | mediaReporting.qoeDataDetails.droppedFrames |
-      | 錯誤 | mediaReporting.qoeDataDetails.errorCount |
-      | 錯誤影響的資料流 | mediaReporting.qoeDataDetails.hasErrorImpactedStreams |
-      | 掉格影響的資料流 | mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams |
-
-      **播放器狀態 — 播放器狀態量度**
-
-      | 元件名稱 | XDM 路徑 |
-      |----------|---------|
-      | 播放器狀態集 | mediaReporting.states.isSet |
-      | 播放器狀態計數 | mediaReporting.states.count |
-      | 播放器狀態時間 | mediaReporting.states.time |
-
-   1. 更新下表中元件的標籤（在&#x200B;**[!UICONTROL 內容標籤]**&#x200B;下拉式功能表中）。 搜尋並拖曳量度面板中尚未的任何元件至面板。
-
-      | 元件名稱 | 內容標籤 |
-      |---------|----------|
-      | 媒體工作階段伺服器逾時 | 媒體：自上次呼叫以來的秒數 |
-      | 媒體逗留時間 | 媒體：媒體逗留時間 |
-      | 總緩衝期間 | 媒體：總緩衝期間 |
-      | 開始時間 | 媒體：開始時間 |
-      | 總暫停期間 | 媒體：總暫停期間 |
-
-   1. 若要在專案中加入劃分，請將下列維度加入&#x200B;**[!UICONTROL 維度]**&#x200B;面板：
-
-      | XDM 路徑 | 元件名稱 |
-      |---------|----------|
-      | mediaReporting.states.name | 播放器狀態名稱 |
-      | mediaReporting.sessionDetails.ID | 媒體工作階段 ID |
-
-      除了此表格中的維度之外，您也可以在專案中新增任何其他要用來篩選資料的維度。
-
-1. 選取「儲存並繼續」**[!UICONTROL >「**&#x200B;[!UICONTROL &#x200B;儲存並完成」]&#x200B;**以儲存您的變更。]**
-
-1. 繼續[在Customer Journey Analytics](#create-and-configure-a-project-in-customer-journey-analytics)中建立及設定專案。
+1. 選取&#x200B;**[!UICONTROL 儲存並繼續]** → **[!UICONTROL 儲存並完成]**&#x200B;以儲存您的變更。
 
 ## 在Customer Journey Analytics中建立及設定專案
 
 1. 在Customer Journey Analytics的&#x200B;**[!UICONTROL Workspace]**&#x200B;索引標籤的&#x200B;**[!UICONTROL 專案]**&#x200B;區域中，選取&#x200B;**[!UICONTROL 建立專案]**。
 
-1. 選取&#x200B;**[!UICONTROL 空白專案]** > **[!UICONTROL 建立]**。
+1. 選取&#x200B;**[!UICONTROL 空白專案]** → **[!UICONTROL 建立]**。
 
 1. 在新專案中，選取您先前建立的資料檢視。
 
    在專案中建立面板時，您可以使用新增至資料檢視的任何元件。
 
-1. 選取左側邊欄中的&#x200B;**面板**&#x200B;圖示，然後拖曳至&#x200B;**[!UICONTROL 媒體同時檢閱者]**&#x200B;面板和&#x200B;**[!UICONTROL 媒體播放時間]**&#x200B;面板。
+1. 選取左側邊欄中的&#x200B;**面板**&#x200B;圖示，然後拖曳至&#x200B;**[!UICONTROL 媒體平均每分鐘觀眾數]**、**[!UICONTROL 媒體同時檢閱者]**&#x200B;和&#x200B;**[!UICONTROL 媒體播放時間]**&#x200B;面板。
 
 1. （視條件而定）如果您將自訂中繼資料新增到結構描述，請為自訂欄位設定持續性，如Customer Journey Analytics指南中的[持續性元件設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/persistence)所述。
 
@@ -133,8 +76,15 @@ ht-degree: 17%
    >
    >如果您想要共用的使用者無法使用，請確定使用者擁有Adobe Admin Console中Customer Journey Analytics的使用者和管理員存取權。
 
+## Customer Journey Analytics中的可用媒體面板
+
+Customer Journey Analytics中的Analysis Workspace包含三個專用媒體面板，供具有串流媒體收集附加元件的客戶使用。 這些面板會根據最常見的串流媒體報表需求，提供預先建立的視覺效果。
+
+* **[媒體平均每分鐘觀眾數](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)**：比較任何長度或型別的節目的平均內容使用量。 支援特定內容（以持續時間為基礎）和自訂時段模式，並允許事後更新持續時間分類。
+* **[媒體同時檢閱者](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)**：分析一段時間內的同時檢閱者，以找出尖峰同時檢閱和下降點。 支援可設定的粒度和依區段、維度或日期範圍的序列劃分。
+* **[媒體播放時間](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)**：分析一段時間的播放持續時間，包含尖峰和低谷期間的詳細資料。 支援可設定的詳細程度和輸出格式（小時或分鐘）。
+
 >[!MORELIKETHIS]
 >
->* Workspace中的[媒體面板](/help/reporting/workspace/media-concurrent-viewers-overview.md)
 >* [維度概觀](/help/reporting/dimensions/overview.md)
 >* [量度概觀](/help/reporting/metrics/overview.md)

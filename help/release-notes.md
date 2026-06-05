@@ -26,10 +26,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: 793
-ht-degree: 60%
+source-wordcount: 720
+ht-degree: 35%
 
 ---
 
@@ -66,21 +66,20 @@ ht-degree: 60%
 
 | 功能 | 說明 | 日期 |
 | --- | --- | --- |
-| **多重播放器狀態追蹤** | 使用 Media Collection API 來實施多播放器狀態追蹤。 [了解更多](/help/implementation/events/player-state/overview.md) | 2022 年 9 月 |
+| **多重播放器狀態追蹤** | 使用Media Collection API實作多個[播放器狀態追蹤](/help/implementation/events/player-state/overview.md)。 | 2022 年 9 月 |
 | 已重新命名 XDM 欄位 | 已重新命名XDM欄位名稱以保持一致性：<ul><li>音訊和視訊引數</li><li>廣告參數</li><li>章節參數</li><li>播放器狀態參數</li><li>品質參數</li></ul> | 2022 年 9 月 |
-| **媒體同時檢閱者面板** | 了解高峰期同時觀看或使用者數下降的位置。 取得內容品質和檢閱者參與的寶貴洞察，並取得疑難排解或規劃數量和規模的協助。 [了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=zh-Hant) | 2022 年 8 月 9 日 |
-| **媒體播放時間面板** | 「媒體播放時間」提供寶貴的觀眾參與度洞察，並可讓媒體組織透過進階花費時間分析及日時段分割功能，以每分鐘的使用者參與度，取得更深入、顆粒度更小的洞察。 您可以觀察使用者在特定時間點觀看您的媒體串流所花的時間多寡。 您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。 [了解更多](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=zh-Hant) | 2022 年 8 月 9 日 |
-| **平均分鐘觀眾數** | Media Analytics 客戶可以使用「平均分鐘觀眾數」面板來更了解平均內容使用量。 <br>「平均分鐘觀眾數」可比較任何長度或類型的節目。 此外，您也可以比較數位平均分鐘觀眾數和線性電視的平均分鐘量度，或是將前者附加到後者。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及持續時間分類的更新時間。  [了解更多](/help/reporting/workspace/average-minute-audience.md) | 2022 年 3 月 16 日 |
+| **個面板已新增至Customer Journey Analytics** | 已將[媒體同時檢閱者面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒體播放時間面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)新增至Customer Journey Analytics。 | 2022 年 8 月 9 日 |
+| **平均分鐘觀眾數** | 您可以使用[平均每分鐘觀眾數面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)來更瞭解平均內容使用量。 <br>「平均分鐘觀眾數」可比較任何長度或類型的節目。 此外，您也可以比較數位平均分鐘觀眾數和線性電視的平均分鐘量度，或是將前者附加到後者。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及持續時間分類的更新時間。 | 2022 年 3 月 16 日 |
 
 ## 2021
 
 | 功能 | 說明 | 日期 |
 | --- | --- | --- |
-| **媒體播放時間** | Adobe 串流媒體播放時間提供寶貴的觀眾參與度洞察，並可讓媒體組織透過進階花費時間分析及時段功能，以每分鐘的使用者參與度，取得更深入、顆粒度更小的洞察。 您可以觀察在特定時間點觀看您的媒體串流所花費的時間多寡。 您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。 [了解更多...](/help/reporting/workspace/media-playback-time-spent.md) | 2021 年 9 月 |
+| **媒體播放時間** | 「[播放時間](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)」面板提供寶貴的觀眾參與度insight，並可讓媒體組織透過進階花費時間分析及時段功能，以每分鐘的使用者參與度取得更深入、更細微的分析。 您可以觀察使用者在特定時間點觀看您的媒體串流所花的時間多寡。 您可以依不同的資料粒度 (包括新的 5 分鐘、15 分鐘和 30 分鐘資料粒度) 分割播放持續時間。 | 2021 年 9 月 |
 
 ## 2020
 
 | 功能 | 說明 | 日期 |
 | --- | --- | --- |
-| **媒體同時檢閱者面板** | 了解高峰期同時觀看或使用者數下降的位置。 取得內容品質和檢閱者參與的寶貴洞察，並取得疑難排解或規劃數量和規模的協助。 [了解更多…](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Analytics Workspace 中的「媒體同時檢閱者」面板 (教學課程)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=zh-Hant#analysis-workspace) | 2020年9月；2021年1月 |
+| **媒體同時檢閱者面板** | [同時檢閱者面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)可協助您瞭解人數高峰或趨勢反轉的時間。 取得內容品質和檢閱者參與的寶貴洞察，並取得疑難排解或規劃數量和規模的協助。<br><br>[媒體同時檢閱者面板（教學課程）](https://experienceleague.adobe.com/zh-hant/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020年9月；2021年1月 |
 | **支援的裝置和平台** | 含 AEP SDK 的 Media Launch 擴充功能現在支援下列 OTT 裝置： <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | 2020 年 6 月 |

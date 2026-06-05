@@ -3,16 +3,18 @@ title: Edge實作概觀
 description: 設定透過Edge Network收集串流媒體資料所需的Adobe Experience Platform結構、資料集和資料流。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 5%
+source-wordcount: '1298'
+ht-degree: 4%
 
 ---
 
 # Edge實作概觀
 
-Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的資料傳送至單一端點，接著將適當的資訊轉送至每個產品。 這可以整合多個資料解決方案的實作工作，也是為Adobe Analytics和Customer Journey Analytics實作串流媒體收集的建議方式。
+Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的資料傳送至單一端點，接著將適當的資訊轉送至每個產品。 這是實作串流媒體收集的建議方法，也是唯一可從單一儀器同時支援Adobe Analytics和Customer Journey Analytics的方法。
+
+舊版Media SDK方法需要每個Adobe解決方案使用產品專屬的檢測工具，相比之下，Edge實作則使用共用XDM資料模型和單一資料流。 資料會從SDK或API傳輸至Edge Network，接著路由至資料串流中設定的Adobe產品（Analytics、CJA、AJO或RTCDP）。 這表示稍後切換或新增下游產品不需要重新檢測您的媒體事件。
 
 無論您使用哪個程式碼基底(網頁SDK、行動SDK （iOS或Android）、Roku SDK或Media Edge API)，您都必須先完成本頁所述的平台設定：建立結構、建立資料集並設定資料流。
 
@@ -20,11 +22,10 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
 1. **完成一般必要條件。** 請參閱[一般必要條件](/help/getting-started/prereqs.md)。
 
-1. **確認相容的Adobe解決方案。** 您必須具備有效的Customer Journey Analytics、Adobe Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform實作：
-   * [Customer Journey Analytics指南](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant)
-   * [實作 Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)
-   * [Adobe Journey Optimizer檔案](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)
-   * [Real-Time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hant)
+1. **確認相容的Adobe解決方案。** 您必須具備下列其中至少一個的有效實作：
+   * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant) — Edge媒體資料的主要報表目的地
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant) — 透過相同資料流支援隨附或替代CJA
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hant) — 在設定其中一項時，將&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服務新增至您的資料流
 
 ## 在Adobe Experience Platform中設定結構
 
@@ -51,7 +52,7 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存您的變更。
 
-1. （選用）您可以隱藏Media Edge API未使用的特定欄位。 隱藏這些欄位可讓結構描述更容易閱讀，但並非必要。 這些欄位僅參考`MediaAnalytics Interaction Details`欄位群組中的欄位。
+1. （選用）您可以在結構描述UI中隱藏某些欄位。 這些欄位是Adobe填充在後端的伺服器計算報表欄位 — 並非由SDK或API傳送，不會影響資料收集。 隱藏這些功能不會影響功能，只會減少在AEP UI中瀏覽結構描述時的視覺雜訊。 這些欄位僅參考`MediaAnalytics Interaction Details`欄位群組中的欄位。
 
    +++ 展開以檢視可隱藏欄位的指示。
 
@@ -135,43 +136,31 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
    +++
 
-1. 繼續[在Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform)中建立資料集。
-
 ## 在 Adobe Experience Platform 中建立資料集
-
-1. 請確定您已依照[在Adobe Experience Platform中設定結構描述](#set-up-the-schema-in-adobe-experience-platform)中的說明設定結構描述。
 
 1. 在Adobe Experience Platform中，依照[資料集UI指南](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hant#create)中的說明開始建立資料集。
 
    為資料集選取結構描述時，請選擇您先前建立的結構描述。
 
-1. 繼續[在Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform)中設定資料串流。
-
 ## 在Adobe Experience Platform中設定資料串流
-
-1. 請確定您已按照[在Adobe Experience Platform中建立資料集](#create-a-dataset-in-adobe-experience-platform)中的說明建立資料集。
 
 1. 如[設定資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant)中所述，建立新的資料流。
 
    建立資料串流時，請進行下列選擇：
 
-   * 在&#x200B;**[!UICONTROL 事件結構描述]**&#x200B;欄位中，選取您在[中建立的結構描述。在Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)中設定結構描述。 選取&#x200B;**[!UICONTROL 「儲存」]**。
+   * 在&#x200B;**[!UICONTROL 事件結構描述]**&#x200B;欄位中，選取您在[中建立的結構描述。在Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform)中設定結構描述。
 
      >[!IMPORTANT]
      >
-     >請勿選取&#x200B;**[!UICONTROL 儲存並新增對應]**，因為這樣做會導致Timestamp欄位的對應錯誤。
+     >選取&#x200B;**[!UICONTROL 儲存]**；不要選取&#x200B;**[!UICONTROL 儲存並新增對應]**。 選取&#x200B;**[!UICONTROL 儲存並新增對應]**&#x200B;會造成時間戳記欄位的對應錯誤。
 
      ![建立資料流並選取結構描述](assets/datastream-create-schema.png)
 
-   * 視您使用Adobe Analytics或Customer Journey Analytics而定，將下列任一服務新增至資料流：
+   * 根據您的Adobe解決方案，將適當的服務新增至資料流。 如需新增服務的相關資訊，請參閱[設定資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#view-details)中的「將服務新增至資料流」。
 
-      * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics）
+      * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics） — 如[建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述，定義報表套裝。
 
-        如果您使用Adobe Analytics，請依照[建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中的說明定義報表套裝。
-
-      * **[!UICONTROL Adobe Experience Platform]** （若使用Customer Journey Analytics）
-
-     如需有關將服務新增至資料串流的資訊，請參閱[設定資料串流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#view-details)中的「將服務新增至資料串流」。
+      * **[!UICONTROL Adobe Experience Platform]** （若使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
 
      ![新增Adobe Analytics服務](assets/datastream-add-service.png)
 
@@ -183,7 +172,9 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
 在準備好結構、資料集和資料流後，實作下列其中一個程式碼庫，以開始將串流媒體資料傳送到Edge Network。 每個頁面都涵蓋串流媒體特定的設定；每個事件和每個變數的程式碼都存在於[事件](/help/implementation/events/overview.md)和[變數](/help/implementation/variables/overview.md)中。
 
-| 程式碼基底 | 程式碼內 | 透過標籤 |
+**程式碼內**&#x200B;實作會直接在應用程式原始碼中寫入SDK呼叫。 **使用標籤**&#x200B;實作使用[Adobe Experience Platform標籤](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/home)，可讓您設定及部署追蹤規則，而不需修改應用程式程式碼。 選擇適合您的部署工作流程的方法。
+
+| 程式碼基底 | 程式碼內 | 使用標籤 |
 |---|---|---|
 | Web | [Web SDK](web-sdk.md) | [Web SDK標籤延伸模組](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS （標籤）](ios-tags.md) |
