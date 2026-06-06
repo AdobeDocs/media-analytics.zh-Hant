@@ -5,9 +5,9 @@ user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
 user-guide-description: 實施串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '693'
 ht-degree: 31%
 
 ---
@@ -290,7 +290,7 @@ ht-degree: 31%
       + [總延遲期間](reporting/metrics/total-stalling-duration.md)
       + [不重複播放時間](reporting/metrics/unique-time-played.md)
    + [計算量度](reporting/calculated-metrics.md)
-   + [媒體區塊](reporting/segments.md)
+   + [區段](reporting/segments.md)
 + 使用個案 {#media-use-cases}
    + [追蹤排程資料](/help/use-cases/track-schedule-data.md)
    + [追蹤下載內容](use-cases/track-downloaded-content.md)
