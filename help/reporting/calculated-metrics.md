@@ -3,14 +3,14 @@ title: 計算量度
 description: Adobe Analytics和Customer Journey Analytics中串流媒體報表的自訂計算量度。
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 5%
+source-wordcount: '269'
+ht-degree: 4%
 
 ---
 
-# 計算量度
+# 串流媒體計算量度
 
 Adobe串流媒體服務的計算量度是根據標準串流媒體量度建置的自訂量度，可讓您在不變更實施的情況下衍生出平均廣告逗留時間或媒體完成率等比率。
 
