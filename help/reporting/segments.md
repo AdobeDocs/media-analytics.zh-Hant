@@ -26,7 +26,7 @@ ht-degree: 75%
 
 # 串流媒體區段
 
-區段可讓您根據特性或網站互動來識別訪客的子集。 串流媒體區段可讓您識別訪客資料流類型，例如音訊、直播或播客資料流。 如需Adobe Analytics區段的詳細資訊，請參閱《Adobe Analytics元件指南》中的[關於區段](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/seg-overview)。
+區段可讓您根據特性或網站互動來識別訪客的子集。 串流媒體區段可讓您識別訪客資料流類型，例如音訊、直播或播客資料流。 如需Adobe Analytics區段的詳細資訊，請參閱《Adobe Analytics元件指南》中的[關於區段](https://experienceleague.adobe.com/zh-hant/docs/analytics/components/segmentation/seg-overview)。
 
 | 區段 | 說明 | 規則 |
 |---|---|---|
