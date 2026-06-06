@@ -1,5 +1,5 @@
 ---
-title: 說明選擇退出與隱私權
+title: 選擇退出與隱私權設定
 description: 了解如何處理選擇加入、選擇退出和隱私權。
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
@@ -18,14 +18,14 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: 750
-ht-degree: 4%
+source-wordcount: 751
+ht-degree: 3%
 
 ---
 
-# 選擇退出與隱私權
+# 選擇退出與隱私權設定
 
 當使用者選擇退出追蹤時，串流媒體程式庫會立即停止所有資料收集活動。 不會為該使用者傳送工作階段開始呼叫、心率Ping，以及事件追蹤資料至Adobe資料收集伺服器。
 
