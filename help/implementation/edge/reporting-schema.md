@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 763
 ht-degree: 4%
@@ -65,7 +65,7 @@ ht-degree: 4%
 |---|---|
 | `xdm.mediaReporting.sessionDetails.timePlayed` | 主要內容播放的總秒數，不包括廣告 |
 | `xdm.mediaReporting.sessionDetails.totalTimePlayed` | 經過的總秒數，包括廣告 |
-| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | 刪除重複資料秒數 — 多次檢視的間隔只會計算一次 |
+| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | 刪除重複資料秒數。 多次檢視的間隔只會計算一次 |
 | `xdm.mediaReporting.sessionDetails.averageMinuteAudience` | `timePlayed`除以內容長度 |
 | `xdm.mediaReporting.sessionDetails.estimatedStreams` | 預估並行串流 |
 | `xdm.mediaReporting.sessionDetails.adCount` | 開始的廣告數量 |

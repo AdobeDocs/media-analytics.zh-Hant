@@ -3,7 +3,7 @@ title: 設定適用於串流媒體的Web SDK標籤擴充功能
 description: 在Adobe Experience Platform Web SDK標籤擴充功能中設定串流媒體收集。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -23,10 +23,10 @@ Adobe Experience Platform Web SDK標籤擴充功能可讓您在資料收集UI中
 1. 在資料收集UI中，開啟您的Web屬性並選取&#x200B;**[!UICONTROL 擴充功能]**。
 1. 在已安裝的&#x200B;**Adobe Experience Platform Web SDK**&#x200B;擴充功能上，選取&#x200B;**[!UICONTROL 設定]**。
 1. 展開&#x200B;**[!UICONTROL 串流媒體]**&#x200B;區段並設定下列專案：
-   * **[!UICONTROL 頻道]** — 每個工作階段報告的頻道名稱。
-   * **[!UICONTROL 播放器名稱]** — 使用中的媒體播放器名稱。
-   * **[!UICONTROL 應用程式版本]** — 您的播放器應用程式的版本。
-   * **[!UICONTROL 主要Ping間隔]**&#x200B;和&#x200B;**[!UICONTROL 廣告Ping間隔]** — 主要內容和廣告的Ping步調（以秒為單位）。
+   * **[!UICONTROL 頻道]**：每個工作階段報告的頻道名稱。
+   * **[!UICONTROL 播放器名稱]**：使用中的媒體播放器名稱。
+   * **[!UICONTROL 應用程式版本]**：您的播放器應用程式的版本。
+   * **[!UICONTROL 主要Ping間隔]**&#x200B;和&#x200B;**[!UICONTROL 廣告Ping間隔]**：主要內容和廣告的Ping步調（以秒為單位）。
 1. 儲存擴充功能組態並發佈變更。
 
 ## 追蹤媒體事件

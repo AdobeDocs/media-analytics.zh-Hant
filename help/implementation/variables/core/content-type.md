@@ -3,9 +3,9 @@ title: 內容型別
 description: 設定內容型別以識別資料流的格式（VOD、即時、線性、播客、歌曲等）。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '334'
 ht-degree: 5%
 
 ---
@@ -89,7 +89,7 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`createMediaSession`時在`xdm.mediaCollection.sessionDetails`內設定`contentType`：
 
@@ -171,6 +171,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+將`MEDIA_STREAM_TYPE_*`常數作為第四個(`streamType`)引數傳入`adb_media_init_mediainfo`。 在Roku 2.x SDK中，此引數包含內容型別(`vod`、`live`、`linear`)：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒體收集API]

@@ -3,10 +3,10 @@ title: 全螢幕
 description: 追蹤檢視器何時進入和結束全熒幕播放，讓後端可以報告全熒幕參與度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 7%
+source-wordcount: '333'
+ht-degree: 6%
 
 ---
 
@@ -89,7 +89,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`sendMediaEvent`傳送狀態已新增至`statesStart`的`media.statesUpdate`事件：
 
@@ -166,6 +166,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 // When the user exits full-screen:
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK中不提供播放器狀態追蹤功能。 若要追蹤播放器狀態，請使用[Roku Edge SDK](/help/implementation/edge/roku.md)。
 
 >[!TAB 媒體收集API]
 

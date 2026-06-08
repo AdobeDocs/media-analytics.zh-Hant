@@ -3,10 +3,10 @@ title: 工作階段完成
 description: 表示檢視器已到達主要內容的結尾。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ tracker.trackComplete()
 tracker.trackComplete()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.sessionComplete"`通話`sendMediaEvent`：
 
@@ -110,6 +110,14 @@ tracker.trackComplete();
 
 ```javascript
 ADBMobile.media.trackComplete();
+```
+
+>[!TAB Roku 2.x]
+
+當媒體播放器到達內容結尾時，呼叫`mediaTrackComplete`：
+
+```brightscript
+ADBMobile().mediaTrackComplete()
 ```
 
 >[!TAB 媒體收集API]

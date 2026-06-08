@@ -3,10 +3,10 @@ title: 緩衝開始
 description: 表示媒體播放器進入緩衝狀態。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 8%
+source-wordcount: '196'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +68,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.bufferStart"`通話`sendMediaEvent`：
 
@@ -128,6 +128,20 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
 
 // Buffer ends
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB Roku 2.x]
+
+當播放器進入緩衝狀態時，使用`MEDIA_BUFFER_START`呼叫`mediaTrackEvent`，當播放器結束時呼叫`MEDIA_BUFFER_COMPLETE`：
+
+```brightscript
+adb = ADBMobile()
+
+' Buffer starts
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_START)
+
+' Buffer ends
+adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 ```
 
 >[!TAB 媒體收集API]

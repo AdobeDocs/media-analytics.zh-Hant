@@ -3,7 +3,7 @@ title: 廣告載入
 description: 報告用於每個串流媒體工作階段的廣告載入型別。
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
@@ -34,4 +34,4 @@ ht-degree: 7%
 
 ## 維度項目
 
-每個專案都是工作階段開始時所設定的常值廣告載入型別字串。 值不受限於標準分項清單 — 可定義在您的實施中一致的分類法，以便值可預見地在報表中累計。
+每個專案都是工作階段開始時所設定的常值廣告載入型別字串。 值不受限於標準列舉。 定義在您的實施中一致的分類法，讓值以可預見的方式在報表中累計。

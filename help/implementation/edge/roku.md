@@ -1,16 +1,16 @@
 ---
-title: 設定適用於串流媒體的Roku
+title: 設定適用於串流媒體的Roku Edge
 description: 設定Adobe Experience Platform Roku SDK將串流媒體資料傳送至Edge Network。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
-# 設定適用於串流媒體的Roku
+# 設定適用於串流媒體的Roku Edge
 
 [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku) (BrightScript)會收集Roku頻道中的媒體工作階段資料，並將其傳送至Edge Network。 Roku是在程式碼中設定，不使用標籤。
 
@@ -18,7 +18,7 @@ ht-degree: 0%
    * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
    * 從[GitHub版本](https://github.com/adobe/aepsdk-roku/releases)下載SDK並將其新增至您的頻道，如[快速入門手冊](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md)中所述。
 
-## 設定適用於媒體的AEP Roku SDK
+## 設定適用於媒體的Roku Edge SDK
 
 初始化SDK並設定資料流和媒體設定：
 
@@ -49,13 +49,13 @@ m.aepSdk.createMediaSession({
 
 >[!IMPORTANT]
 >
->在播放期間使用最新的播放點值，每秒至少傳送一次`media.ping`事件。 AEP Roku SDK需仰賴這些Ping才能正常運作。
+>在播放期間使用最新的播放點值，每秒至少傳送一次`media.ping`事件。 Roku Edge SDK需仰賴這些Ping才能正常運作。
 
-如需設定金鑰和完整API的資訊，請參閱[AEP Roku SDK API參考](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md)。
+如需設定金鑰和完整API的資訊，請參閱[Roku Edge SDK API參考](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/api-reference.md)。
 
 ## 追蹤媒體事件
 
-在工作階段開啟後，傳送每個媒體事件並附上`sendMediaEvent`。 檢視每個[事件](/help/implementation/events/overview.md)和[變數](/help/implementation/variables/overview.md)頁面上的&#x200B;**Roku**&#x200B;索引標籤，以取得確切的負載。
+在工作階段開啟後，傳送每個媒體事件並附上`sendMediaEvent`。 檢視每個[事件](/help/implementation/events/overview.md)和[變數](/help/implementation/variables/overview.md)頁面上的&#x200B;**Roku Edge**&#x200B;索引標籤，以取得確切的負載。
 
 ## 下一步
 

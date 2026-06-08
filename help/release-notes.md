@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: 722
 ht-degree: 35%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 35%
 | 功能 | 說明 | 日期 |
 | --- | --- | --- |
 | **網頁SDK支援** | 使用Web SDK或Web SDK標籤擴充功能，將串流媒體網頁資料傳送至Adobe Experience Platform Edge Network，實現跨平台解決方案（例如Customer Journey Analytics、Real-time CDP、Journey Optimizer和事件轉送）的統一收集方法。 如需詳細資訊，請參閱[設定適用於串流媒體的Web SDK](/help/implementation/edge/web-sdk.md)或[設定適用於串流媒體的Web SDK標籤擴充功能](/help/implementation/edge/web-sdk-tags.md)。 | 2024 年 5 月 29 日 |
-| **Roku支援** | 使用Roku SDK將串流媒體資料傳送到Adobe Experience Platform。 如需詳細資訊，請參閱[設定適用於串流媒體的Roku](/help/implementation/edge/roku.md)。 | 2024 年 4 月 12 日 |
+| **Roku支援** | 使用Roku Edge SDK將串流媒體資料傳送到Adobe Experience Platform。 如需詳細資訊，請參閱[設定適用於串流媒體的Roku Edge](/help/implementation/edge/roku.md)。 | 2024 年 4 月 12 日 |
 
 ## 2023
 

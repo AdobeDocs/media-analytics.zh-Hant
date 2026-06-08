@@ -3,7 +3,7 @@ title: 延遲受影響的串流
 description: 計算播放期間發生至少一個停頓的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # 延遲受影響的串流
 
-**Stall影響的資料流**&#x200B;量度會計算播放期間至少發生一次停頓的工作階段。 量度是工作階段層級的布林值 — 相同工作階段內的多個停止計為一個受影響的資料流。 若要取得總停止數量，請使用[停止事件](stall-events.md)。
+**Stall影響的資料流**&#x200B;量度會計算播放期間至少發生一次停頓的工作階段。 量度是工作階段層級的布林值；相同工作階段內的多個停止計為一個受影響的資料流。 若要取得總停止數量，請使用[停止事件](stall-events.md)。
 
 ## 此量度的計算方式
 

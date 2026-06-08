@@ -18,9 +18,9 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 751
+source-wordcount: 798
 ht-degree: 3%
 
 ---
@@ -99,15 +99,15 @@ MobileCore.setPrivacyStatus(MobilePrivacyStatus.OPT_IN)
 
 如需詳細資訊，請參閱AEP Mobile SDK檔案中的[隱私權與GDPR](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#setprivacystatus)。
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
-AEP Roku SDK使用`setConsent()`搭配Adobe 2.0同意標準。 將`collect.val`設定為`"n"`會立即停止所有資料收集，包括串流媒體事件。
+Roku Edge SDK使用`setConsent()`搭配Adobe 2.0同意標準。 將`collect.val`設定為`"n"`會立即停止所有資料收集，包括串流媒體事件。
 
 同意值：
 
-* `"y"` — 選擇加入（允許資料收集）
-* `"n"` — 選擇退出（資料收集已隱藏）
-* `"p"` — 擱置中（等待使用者決定；在解析之前不會收集任何資料）
+* `"y"`：選擇加入（允許資料收集）
+* `"n"`：選擇退出（資料收集已隱藏）
+* `"p"`：擱置中（等待使用者決定；在解析之前不會收集任何資料）
 
 ```brightscript
 currentDate = CreateObject("roDateTime")
@@ -129,7 +129,7 @@ m.aepSdk.setConsent(collectConsentNo)
 
 若要還原追蹤，請將`collect.val`設定為`"y"`並再次呼叫`setConsent()`。
 
-您也可以在SDK初始化時使用`updateConfiguration()`搭配`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT`金鑰設定預設同意值。 如需詳細資訊，請參閱[AEP Roku SDK檔案](https://github.com/adobe/aepsdk-roku)。
+您也可以在SDK初始化時使用`updateConfiguration()`搭配`ADB_CONSTANTS.CONFIGURATION.CONSENT_DEFAULT`金鑰設定預設同意值。 如需詳細資訊，請參閱[Roku Edge SDK檔案](https://github.com/adobe/aepsdk-roku)。
 
 >[!TAB Media Edge API]
 
@@ -196,6 +196,30 @@ var ADBMobileConfig = {
     "privacyDefault": "optedout"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK尊重使用`setPrivacyStatus`設定的隱私權狀態。 將狀態設定為`PRIVACY_STATUS_OPT_OUT`會隱藏所有資料集合。
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_OUT)
+```
+
+若要還原追蹤，請將狀態設回opted in：
+
+```brightscript
+adb = ADBMobile()
+adb.setPrivacyStatus(adb.PRIVACY_STATUS_OPT_IN)
+```
+
+您也可以在您的`ADBMobileConfig.json`檔案中，於SDK初始化時設定預設隱私權狀態：
+
+```json
+"analytics": {
+  "privacyDefault": "optedout"
+}
 ```
 
 >[!TAB 媒體收集API]

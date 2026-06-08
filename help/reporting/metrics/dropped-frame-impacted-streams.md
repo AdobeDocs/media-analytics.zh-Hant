@@ -3,7 +3,7 @@ title: 掉格影響的資料流
 description: 計算至少捨棄一個影格的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # 掉格影響的資料流
 
-**掉格影響的資料流**&#x200B;量度會計算至少掉一個格的工作階段。 此量度是工作階段層級的布林值 — 在相同工作階段數內，發生多個卸除作為一個受影響的資料流。 若要取得總下拉音量，請使用[掉格](dropped-frames.md)。
+**掉格影響的資料流**&#x200B;量度會計算至少掉一個格的工作階段。 此量度是工作階段層級的布林值；相同工作階段內的多個資料捨棄計為一個受影響的資料流。 若要取得總下拉音量，請使用[掉格](dropped-frames.md)。
 
 ## 此量度的計算方式
 

@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -73,7 +73,7 @@ ht-degree: 3%
 **解決方法：**&#x200B;延遲每個廣告的AdComplete呼叫（最後一個除外），而不是在廣告結束時立即呼叫。 依下列方式批次處理呼叫：
 
 * 在每個&#x200B;**廣告開始**&#x200B;時：如果先前的廣告存在且尚未標籤為完成，請呼叫新廣告的AdComplete *before*。
-* 在每個&#x200B;**廣告資產結束**&#x200B;時：不要立即呼叫AdComplete — 延遲。
+* 在每個&#x200B;**廣告資產結束**&#x200B;時：不要立即呼叫AdComplete；請將其延遲。
 * 在&#x200B;**廣告插播完成**：呼叫最後一個廣告的AdComplete （如果尚未呼叫），然後呼叫AdBreakComplete。
 
 此模式可確保AdComplete和下一個AdStart會連續引發，消除任何間隙。

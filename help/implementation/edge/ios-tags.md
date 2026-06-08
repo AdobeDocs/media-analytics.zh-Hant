@@ -3,7 +3,7 @@ title: 設定適用於串流媒體的iOS及其標籤
 description: 使用iOS適用的Adobe串流媒體標籤擴充功能設定Edge Network的串流媒體收集。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
@@ -23,9 +23,9 @@ ht-degree: 0%
 1. 在資料彙集UI中，開啟您的行動屬性並選取&#x200B;**[!UICONTROL 擴充功能]**。
 1. 在&#x200B;**[!UICONTROL 目錄]**&#x200B;標籤上，找到&#x200B;**Adobe Streaming Media for Edge Network**&#x200B;擴充功能，然後選取&#x200B;**[!UICONTROL 安裝]**。
 1. 設定下列專案，然後儲存：
-   * **[!UICONTROL 頻道]** — 每個工作階段報告的頻道名稱。
-   * **[!UICONTROL 播放器名稱]** — 使用中的媒體播放器名稱。
-   * **[!UICONTROL 應用程式版本]** — 您的播放器應用程式的版本。
+   * **[!UICONTROL 頻道]**：每個工作階段報告的頻道名稱。
+   * **[!UICONTROL 播放器名稱]**：使用中的媒體播放器名稱。
+   * **[!UICONTROL 應用程式版本]**：您的播放器應用程式的版本。
 1. 發佈您的變更，然後將`AEPCore`、`AEPEdge`、`AEPEdgeIdentity`和`AEPEdgeMedia`相依性新增至您的應用程式，並註冊至行動核心。
 
 ## 追蹤媒體事件

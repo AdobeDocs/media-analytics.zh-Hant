@@ -3,7 +3,7 @@ title: 受靜音影響的資料流
 description: 計算檢視器至少將音訊靜音一次的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-受靜音影響的&#x200B;**資料流**&#x200B;量度會計入檢視器至少將音訊靜音一次的工作階段。 量度是工作階段層級的布林值 — 在相同工作階段中，將多個靜音切換為一個受影響的資料流。 若要取得靜音音量總計，請使用[靜音計數](mute-count.md)。
+受靜音影響的&#x200B;**資料流**&#x200B;量度會計入檢視器至少將音訊靜音一次的工作階段。 量度是工作階段層級的布林值；在相同工作階段中，多個靜音會作為一個受影響的資料流切換。 若要取得靜音音量總計，請使用[靜音計數](mute-count.md)。
 
 ## 此量度的計算方式
 

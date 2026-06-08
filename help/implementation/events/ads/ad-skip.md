@@ -3,9 +3,9 @@ title: 廣告略過
 description: 表示檢視器略過廣告。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '167'
+source-wordcount: '176'
 ht-degree: 8%
 
 ---
@@ -58,7 +58,7 @@ tracker.trackEvent(event: MediaEvent.AdSkip, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.AdSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.adSkip"`通話`sendMediaEvent`：
 
@@ -114,6 +114,15 @@ tracker.trackEvent(ADB.Media.Event.AdSkip, null, null);
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdSkip);
+```
+
+>[!TAB Roku 2.x]
+
+使用`MEDIA_AD_SKIP`事件型別呼叫`mediaTrackEvent`：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_SKIP)
 ```
 
 >[!TAB 媒體收集API]

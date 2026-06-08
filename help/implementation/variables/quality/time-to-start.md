@@ -3,10 +3,10 @@ title: 開始時間
 description: 設定播放器的啟動時間（以毫秒為單位），讓後端可以報告時間到第一個影格品質。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 5%
 
 ---
 
@@ -89,7 +89,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`createMediaSession`時，在`media.sessionStart`的`xdm.mediaCollection.qoeDataDetails`中設定`timeToStart`：
 
@@ -169,6 +169,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0       // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+將啟動時間作為第二個引數(`startupTime`)傳遞至`adb_media_init_qosinfo`，並使用`mediaUpdateQoS`更新追蹤器：
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 媒體收集API]

@@ -3,7 +3,7 @@ title: 受觀看中影響的資料流
 description: 至少計算一次播放器處於焦點的工作階段。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-受觀看中影響的&#x200B;**資料流**&#x200B;量度會計入播放器至少有一次觀看中的工作階段。 量度是工作階段層級的布林值 — 相同工作階段中的多個焦點事件會計為一個受影響的資料流。 若要取得焦點事件數量總計，請使用[焦點計數](in-focus-count.md)。
+受觀看中影響的&#x200B;**資料流**&#x200B;量度會計入播放器至少有一次觀看中的工作階段。 量度是工作階段層級的布林值；相同工作階段中的多個焦點事件會計為一個受影響的資料流。 若要取得焦點事件數量總計，請使用[焦點計數](in-focus-count.md)。
 
 ## 此量度的計算方式
 

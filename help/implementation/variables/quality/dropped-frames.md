@@ -3,9 +3,9 @@ title: 掉格
 description: 設定QoE物件上掉格的執行計數，讓後端可以報告掉格品質。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '323'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`sendMediaEvent`時在`xdm.mediaCollection.qoeDataDetails`內設定`droppedFrames`：
 
@@ -150,6 +150,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames (cumulative total)
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+將累積捨棄影格計數作為第四個引數(`droppedFrames`)傳遞至`adb_media_init_qosinfo`，並使用`mediaUpdateQoS`更新追蹤器：
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 媒體收集API]

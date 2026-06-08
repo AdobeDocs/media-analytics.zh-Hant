@@ -23,10 +23,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 575
-ht-degree: 32%
+source-wordcount: 625
+ht-degree: 30%
 
 ---
 
@@ -44,7 +44,7 @@ Edge實施作業會收集資料一次，並透過Adobe Experience Platform Edge 
 | [![Apple iOS圖示](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [設定適用於串流媒體的iOS](/help/implementation/edge/ios.md) | [樣本](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![擴充功能圖示](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Android標籤擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [設定適用於串流媒體的Android標籤延伸模組](/help/implementation/edge/android-tags.md) | |
 | [![擴充功能圖示](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[iOS / tvOS標籤擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [設定適用於串流媒體的iOS標籤延伸模組](/help/implementation/edge/ios-tags.md) | |
-| [![Roku圖示](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku SDK](https://github.com/adobe/aepsdk-roku) | [設定適用於串流媒體的Roku](/help/implementation/edge/roku.md) | [樣本](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
+| [![Roku圖示](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[Roku Edge SDK](https://github.com/adobe/aepsdk-roku) | [設定適用於串流媒體的Roku Edge](/help/implementation/edge/roku.md) | [樣本](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
 | [![API圖示](assets/api.png)](https://developer.adobe.com/data-collection-apis/docs/api/media-edge)<br>[Media Edge API](https://developer.adobe.com/data-collection-apis/docs/api/media-edge) | [設定Media Edge API](/help/implementation/edge/media-edge-api.md) | [樣本](https://developer.adobe.com/data-collection-apis/docs/getting-started/media-edge-examples) |
 
 ## 僅限Analytics的實作 {#analytics-only-sdks}
@@ -56,4 +56,5 @@ Edge實施作業會收集資料一次，並透過Adobe Experience Platform Edge 
 | [![JavaScript圖示](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[Media SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [設定適用於串流媒體的JavaScript](/help/implementation/analytics-only/javascript.md) | [樣本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | [![擴充功能圖示](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant)<br>[媒體擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=zh-Hant) | [使用串流媒體的標籤設定JavaScript](/help/implementation/analytics-only/javascript-tags.md) | [樣本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | [![Chromecast圖示](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [設定適用於串流媒體的Chromecast](/help/implementation/analytics-only/chromecast.md) | [樣本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
+| [![Roku圖示](assets/roku-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7)<br>[Roku SDK 2.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7) | [設定適用於串流媒體的Roku 2.x](/help/implementation/analytics-only/roku-2x.md) | [樣本](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/roku/samples) |
 | [![API圖示](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[媒體收集API](/help/implementation/media-collection-api/mc-api-overview.md) | [設定Media Collection API](/help/implementation/analytics-only/media-collection-api.md) | |

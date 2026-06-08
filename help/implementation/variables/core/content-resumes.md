@@ -3,10 +3,10 @@ title: 內容繼續
 description: 標幟工作階段以繼續先前中斷的播放，讓後端會計為內容繼續事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 7%
+source-wordcount: '293'
+ht-degree: 6%
 
 ---
 
@@ -87,7 +87,7 @@ mediaInfo[MediaConstants.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫繼續工作階段的`createMediaSession`時，在`xdm.mediaCollection.sessionDetails`內將`hasResume`設為`true`：
 
@@ -168,6 +168,18 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+呼叫`mediaTrackSessionStart`之前，在媒體物件上設定`resumed`索引鍵：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+mediaInfo.resumed = true
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒體收集API]

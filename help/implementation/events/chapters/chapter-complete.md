@@ -3,10 +3,10 @@ title: 章節完成
 description: 表示章節區段已完成播放。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '132'
-ht-degree: 11%
+source-wordcount: '141'
+ht-degree: 10%
 
 ---
 
@@ -54,7 +54,7 @@ tracker.trackEvent(event: MediaEvent.ChapterComplete, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.ChapterComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.chapterComplete"`通話`sendMediaEvent`：
 
@@ -110,6 +110,15 @@ tracker.trackEvent(ADB.Media.Event.ChapterComplete, null, null);
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterComplete);
+```
+
+>[!TAB Roku 2.x]
+
+使用`MEDIA_CHAPTER_COMPLETE`事件型別呼叫`mediaTrackEvent`：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_COMPLETE)
 ```
 
 >[!TAB 媒體收集API]

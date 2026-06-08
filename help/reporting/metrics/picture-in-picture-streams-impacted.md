@@ -3,7 +3,7 @@ title: 受子母畫面影響的資料流
 description: 計算檢視器至少一次輸入子母畫面的工作階段數。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!ENDSHADEBOX]
 
-**受子母畫面影響的資料流**&#x200B;量度會計算檢視器至少一次進入子母畫面播放的工作階段。 量度是工作階段層級的布林值 — 在相同工作階段中，多個子母畫面專案會計為一個受影響的資料流。 若要取得子母畫面輸入的總數量，請使用[子母畫面計數](picture-in-picture-count.md)。
+**受子母畫面影響的資料流**&#x200B;量度會計算檢視器至少一次進入子母畫面播放的工作階段。 量度是工作階段層級的布林值；相同工作階段中的多個子母畫面專案會計為一個受影響的資料流。 若要取得子母畫面輸入的總數量，請使用[子母畫面計數](picture-in-picture-count.md)。
 
 ## 此量度的計算方式
 

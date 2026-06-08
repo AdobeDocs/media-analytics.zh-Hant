@@ -3,10 +3,10 @@ title: 媒體已下載的旗標
 description: 將工作階段標示為已下載的離線播放，以便與串流工作階段分開報告。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`createMediaSession`時在`xdm.mediaCollection.sessionDetails`內將`isDownloaded`設為`true`：
 
@@ -176,6 +176,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK不提供下載內容追蹤功能。 若要報告下載的媒體播放，請使用[Roku Edge SDK](/help/implementation/edge/roku.md)或[媒體收集API](/help/implementation/analytics-only/media-collection-api.md)。
 
 >[!TAB 媒體收集API]
 
