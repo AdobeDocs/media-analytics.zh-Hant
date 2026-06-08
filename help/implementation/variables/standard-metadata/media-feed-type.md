@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**媒體摘要型別**變數的資料集合。 如需對應的報表維度，請參閱[媒體摘要型別](/help/reporting/dimensions/media-feed-type.md)。*
+*本頁涵蓋&#x200B;**媒體摘要型別**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[媒體摘要型別](/help/reporting/dimensions/media-feed-type.md)。*
 
 >[!ENDSHADEBOX]
 

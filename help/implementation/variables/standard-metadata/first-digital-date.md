@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**第一個數位日期**變數的資料彙集。 如需對應的報表維度，請參閱[第一個數位日期](/help/reporting/dimensions/first-digital-date.md)。*
+*本頁涵蓋&#x200B;**第一個數位日期**&#x200B;變數的資料彙集。 如需對應的報表維度，請參閱[第一個數位日期](/help/reporting/dimensions/first-digital-date.md)。*
 
 >[!ENDSHADEBOX]
 

@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容繼續**變數的資料集合。 檢視[[!UICONTROL 對應報表量度的內容履歷]](/help/reporting/metrics/content-resumes.md)。*
+*本頁涵蓋&#x200B;**內容繼續**&#x200B;變數的資料集合。 檢視[[!UICONTROL 對應報表量度的內容履歷]](/help/reporting/metrics/content-resumes.md)。*
 
 >[!ENDSHADEBOX]
 

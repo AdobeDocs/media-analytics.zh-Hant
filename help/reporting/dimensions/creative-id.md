@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**Creative ID**報告維度。 如需如何收集此變數，請參閱[Creative ID](/help/implementation/variables/ads/creative-id.md)。*
+*此頁面涵蓋&#x200B;**Creative ID**&#x200B;報告維度。 如需如何收集此變數，請參閱[Creative ID](/help/implementation/variables/ads/creative-id.md)。*
 
 >[!ENDSHADEBOX]
 

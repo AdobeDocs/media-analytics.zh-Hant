@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**Creative ID**變數的資料集合。 如需對應的報表維度，請參閱[Creative ID](/help/reporting/dimensions/creative-id.md)。*
+*本頁涵蓋&#x200B;**Creative ID**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[Creative ID](/help/reporting/dimensions/creative-id.md)。*
 
 >[!ENDSHADEBOX]
 

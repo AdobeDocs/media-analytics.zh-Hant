@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**位元速率**變數的資料集合。 檢視對應報表變數的[[!UICONTROL 平均位元速率] （維度）](/help/reporting/dimensions/average-bitrate.md)和[[!UICONTROL 平均位元速率] （量度）](/help/reporting/metrics/average-bitrate.md)。*
+*本頁涵蓋&#x200B;**位元速率**&#x200B;變數的資料集合。 檢視對應報表變數的[[!UICONTROL 平均位元速率] （維度）](/help/reporting/dimensions/average-bitrate.md)和[[!UICONTROL 平均位元速率] （量度）](/help/reporting/metrics/average-bitrate.md)。*
 
 >[!ENDSHADEBOX]
 

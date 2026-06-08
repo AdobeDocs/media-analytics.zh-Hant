@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**型別**變數的資料集合。 如需對應的報表維度，請參閱[型別](/help/reporting/dimensions/genre.md)。*
+*本頁涵蓋&#x200B;**型別**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[型別](/help/reporting/dimensions/genre.md)。*
 
 >[!ENDSHADEBOX]
 

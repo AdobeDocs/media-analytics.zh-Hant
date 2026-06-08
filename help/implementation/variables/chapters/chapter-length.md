@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**章節長度**變數的資料集合。 如需對應的報表維度，請參閱[章節長度](/help/reporting/dimensions/chapter-length.md)。*
+*本頁涵蓋&#x200B;**章節長度**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[章節長度](/help/reporting/dimensions/chapter-length.md)。*
 
 >[!ENDSHADEBOX]
 
