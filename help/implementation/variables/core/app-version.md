@@ -27,7 +27,7 @@ ht-degree: 2%
 
 | 屬性 | 價值 |
 | --- | --- |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **媒體收集API引數** | `media.sdkVersion` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!TAB Web SDK]
 
-呼叫[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)時，在`streamingMedia`設定物件中設定`appVersion`：
+呼叫[`configure`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/commands/configure/streamingmedia)時，在`streamingMedia`設定物件中設定`appVersion`：
 
 ```javascript
 alloy("configure", {

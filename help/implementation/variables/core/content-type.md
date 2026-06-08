@@ -29,7 +29,7 @@ ht-degree: 5%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.contentType` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.contentType` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |

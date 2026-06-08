@@ -16,7 +16,7 @@ Adobe Experience Platform Web SDK標籤擴充功能可讓您在資料收集UI中
 
 * **必要條件**：
    * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
-   * 安裝及設定網頁SDK標籤擴充功能。 請參閱[Web SDK標籤擴充功能概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)。
+   * 安裝及設定網頁SDK標籤擴充功能。 請參閱[Web SDK標籤擴充功能概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/overview)。
 
 ## 在擴充功能中設定串流媒體
 
@@ -39,6 +39,6 @@ Adobe Experience Platform Web SDK標籤擴充功能可讓您在資料收集UI中
 
 >[!MORELIKETHIS]
 >
->* [網頁SDK標籤延伸總覽](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [網頁SDK標籤延伸總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [設定串流媒體Web SDK （程式碼）](web-sdk.md)
 >* [事件總覽](/help/implementation/events/overview.md)

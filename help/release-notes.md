@@ -68,7 +68,7 @@ ht-degree: 35%
 | --- | --- | --- |
 | **多重播放器狀態追蹤** | 使用Media Collection API實作多個[播放器狀態追蹤](/help/implementation/events/player-state/overview.md)。 | 2022 年 9 月 |
 | 已重新命名 XDM 欄位 | 已重新命名XDM欄位名稱以保持一致性：<ul><li>音訊和視訊引數</li><li>廣告參數</li><li>章節參數</li><li>播放器狀態參數</li><li>品質參數</li></ul> | 2022 年 9 月 |
-| **個面板已新增至Customer Journey Analytics** | 已將[媒體同時檢閱者面板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒體播放時間面板](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)新增至Customer Journey Analytics。 | 2022 年 8 月 9 日 |
+| **個面板已新增至Customer Journey Analytics** | 已將[媒體同時檢閱者面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒體播放時間面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)新增至Customer Journey Analytics。 | 2022 年 8 月 9 日 |
 | **平均分鐘觀眾數** | 您可以使用[平均每分鐘觀眾數面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)來更瞭解平均內容使用量。 <br>「平均分鐘觀眾數」可比較任何長度或類型的節目。 此外，您也可以比較數位平均分鐘觀眾數和線性電視的平均分鐘量度，或是將前者附加到後者。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及持續時間分類的更新時間。 | 2022 年 3 月 16 日 |
 
 ## 2021
@@ -81,5 +81,5 @@ ht-degree: 35%
 
 | 功能 | 說明 | 日期 |
 | --- | --- | --- |
-| **媒體同時檢閱者面板** | [同時檢閱者面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)可協助您瞭解人數高峰或趨勢反轉的時間。 取得內容品質和檢閱者參與的寶貴洞察，並取得疑難排解或規劃數量和規模的協助。<br><br>[媒體同時檢閱者面板（教學課程）](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020年9月；2021年1月 |
+| **媒體同時檢閱者面板** | [同時檢閱者面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)可協助您瞭解人數高峰或趨勢反轉的時間。 取得內容品質和檢閱者參與的寶貴洞察，並取得疑難排解或規劃數量和規模的協助。<br><br>[媒體同時檢閱者面板（教學課程）](https://experienceleague.adobe.com/zh-hant/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020年9月；2021年1月 |
 | **支援的裝置和平台** | 含 AEP SDK 的 Media Launch 擴充功能現在支援下列 OTT 裝置： <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | 2020 年 6 月 |
