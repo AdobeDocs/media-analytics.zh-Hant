@@ -3,9 +3,9 @@ title: 廣告插播名稱
 description: 設定上層廣告插播的易記名稱。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '267'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告插播名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[Pod名稱](/help/reporting/dimensions/pod-name.md)。*
+*本頁涵蓋&#x200B;**廣告插播名稱**變數的資料集合。 如需對應的報表維度，請參閱[Pod名稱](/help/reporting/dimensions/pod-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.podFriendlyName` |
-| **XDM集合欄位** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **必要** | 是（行動SDK）；否（Edge、媒體收集API） |
 | **與**&#x200B;一起傳送 | [廣告插播開始](/help/implementation/events/ads/ad-break-start.md)，廣告關閉 |
@@ -78,7 +78,7 @@ val adBreakObject = Media.createAdBreakObject("pre-roll",
 tracker.trackEvent(Media.Event.AdBreakStart, adBreakObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`media.adBreakStart`的`sendMediaEvent`時，在`xdm.mediaCollection.advertisingPodDetails`中設定`friendlyName`：
 
@@ -152,6 +152,17 @@ var adBreakInfo = ADBMobile.media.createAdBreakObject(
   0
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakStart, adBreakInfo);
+```
+
+>[!TAB Roku 2.x]
+
+將廣告插播名稱作為第一個引數傳遞給`adb_media_init_adbreakinfo`。 請注意Roku引數順序： `name, startTime, position`。
+
+```brightscript
+adb = ADBMobile()
+adBreakInfo = adb_media_init_adbreakinfo("pre-roll", 0.0, 1)  ' name, startTime, position
+
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 ```
 
 >[!TAB 媒體收集API]

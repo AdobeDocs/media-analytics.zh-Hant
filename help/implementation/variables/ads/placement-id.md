@@ -3,10 +3,10 @@ title: 版面 ID
 description: 設定每個廣告的版位ID以啟用依廣告版位劃分。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '210'
-ht-degree: 11%
+source-wordcount: '225'
+ht-degree: 10%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**位置ID**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[位置ID](/help/reporting/dimensions/placement-id.md)。*
+*本頁涵蓋&#x200B;**位置ID**變數的資料集合。 如需對應的報表維度，請參閱[位置ID](/help/reporting/dimensions/placement-id.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 11%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.placement` |
-| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.placement` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.PLACEMENT_ID] = "placement-12"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`media.adStart`的`sendMediaEvent`時，在`xdm.mediaCollection.advertisingDetails`中設定`placementID`：
 
@@ -146,6 +146,21 @@ var standardAdMetadata = {};
 standardAdMetadata[ADBMobile.media.AdMetadataKeys.PLACEMENT_ID] = "placement-12";
 adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在標準廣告中繼資料物件中使用`MEDIA_AdMetadataKeyPLACEMENT_ID`設定版位ID：
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+standardAdMetadata = {}
+standardAdMetadata[adb.MEDIA_AdMetadataKeyPLACEMENT_ID] = "placement-12"
+adInfo[adb.MEDIA_STANDARD_AD_METADATA] = standardAdMetadata
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB 媒體收集API]

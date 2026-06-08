@@ -3,17 +3,17 @@ title: 工作階段結束
 description: 當檢視器放棄內容時，立即關閉媒體工作階段。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 5%
+source-wordcount: '314'
+ht-degree: 4%
 
 ---
 
 
 # 工作階段結束
 
-工作階段結束事件會立即且不可撤銷地關閉媒體追蹤工作階段。 工作階段結束是硬性關閉 — 一旦傳送，工作階段就會終止，且無法在其下追蹤進一步事件。 只有在您確定不會發生其他事件時（例如當播放器損毀或頁面解除安裝時），才使用「工作階段結束」。 在多數情況下，允許工作階段自然過期會比較安全，而不用冒截斷仍可能抵達之事件的風險。 如果檢視器完成內容，請改為呼叫[工作階段完成](session-complete.md)。
+工作階段結束事件會立即且不可撤銷地關閉媒體追蹤工作階段。 工作階段結束是硬性關閉；傳送後，工作階段會終止，且無法在其下追蹤進一步事件。 只有在您確定不會發生其他事件時（例如當播放器損毀或頁面解除安裝時），才使用「工作階段結束」。 在多數情況下，允許工作階段自然過期會比較安全，而不用冒截斷仍可能抵達之事件的風險。 如果檢視器完成內容，請改為呼叫[工作階段完成](session-complete.md)。
 
 如果沒有明確的工作階段結束，工作階段會在沒有事件的10分鐘或播放點沒有移動的30分鐘後自動關閉。
 
@@ -60,7 +60,7 @@ tracker.trackSessionEnd()
 tracker.trackSessionEnd()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.sessionEnd"`通話`sendMediaEvent`：
 
@@ -116,6 +116,14 @@ tracker.trackSessionEnd();
 
 ```javascript
 ADBMobile.media.trackSessionEnd();
+```
+
+>[!TAB Roku 2.x]
+
+當檢視器關閉播放器或導覽離開時呼叫`mediaTrackSessionEnd`：
+
+```brightscript
+ADBMobile().mediaTrackSessionEnd()
 ```
 
 >[!TAB 媒體收集API]

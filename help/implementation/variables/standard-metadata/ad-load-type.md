@@ -3,9 +3,9 @@ title: 廣告載入型別
 description: 設定串流工作階段的廣告載入型別。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '248'
+source-wordcount: '269'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告載入型別**&#x200B;變數的資料集合。 檢視對應報表維度的[廣告載入](/help/reporting/dimensions/ad-load-type.md)。*
+*本頁涵蓋&#x200B;**廣告載入型別**變數的資料集合。 檢視對應報表維度的[廣告載入](/help/reporting/dimensions/ad-load-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.adLoad` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.adLoad` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 >[!TAB Web SDK]
 
-呼叫[`createMediaSession`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/commands/createmediasession)時，在`xdm.mediaCollection.sessionDetails`內設定`adLoad`：
+呼叫[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)時，在`xdm.mediaCollection.sessionDetails`內設定`adLoad`：
 
 ```javascript
 alloy("createMediaSession", {
@@ -79,7 +79,7 @@ videoMetadata[MediaConstants.VideoMetadataKeys.AD_LOAD] = "linear"
 tracker.trackSessionStart(mediaInfo, videoMetadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`createMediaSession`設定`sessionDetails`內的`adLoad`：
 
@@ -150,6 +150,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.AD_LOAD] = "linear";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在呼叫`mediaTrackSessionStart`之前，使用`MEDIA_VideoMetadataKeyAD_LOAD`在媒體物件的標準中繼資料中設定廣告載入型別：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyAD_LOAD] = "linear"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒體收集API]

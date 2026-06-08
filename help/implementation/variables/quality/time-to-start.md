@@ -3,10 +3,10 @@ title: 開始時間
 description: 設定播放器的啟動時間（以毫秒為單位），讓後端可以報告時間到第一個影格品質。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**開始時間**&#x200B;變數的資料集合。 如需對應的報表維度和量度，請參閱[[!UICONTROL 開始時間]](/help/reporting/dimensions/time-to-start.md)。*
+*本頁涵蓋&#x200B;**開始時間**變數的資料集合。 如需對應的報表維度和量度，請參閱[[!UICONTROL 開始時間]](/help/reporting/dimensions/time-to-start.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.qoe.timeToStart` |
-| **XDM集合欄位** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.qoe.timeToStart` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -89,7 +89,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`createMediaSession`時，在`media.sessionStart`的`xdm.mediaCollection.qoeDataDetails`中設定`timeToStart`：
 
@@ -169,6 +169,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0       // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+將啟動時間作為第二個引數(`startupTime`)傳遞至`adb_media_init_qosinfo`，並使用`mediaUpdateQoS`更新追蹤器：
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 媒體收集API]

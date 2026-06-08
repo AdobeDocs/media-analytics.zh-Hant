@@ -3,10 +3,10 @@ title: 廣告開始
 description: 表示個別廣告開始播放。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 8%
+source-wordcount: '209'
+ht-degree: 7%
 
 ---
 
@@ -75,7 +75,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`eventType: "media.adStart"`和必要的`advertisingDetails`來呼叫`sendMediaEvent`：
 
@@ -158,6 +158,17 @@ var adInfo = ADBMobile.media.createAdObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+使用`adb_media_init_adinfo`建立廣告物件，然後追蹤事件。 Pod內的廣告位置是以1為基底。
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 15.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB 媒體收集API]

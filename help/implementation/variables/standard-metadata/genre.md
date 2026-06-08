@@ -3,10 +3,10 @@ title: 類型
 description: 將內容型別設定為逗號分隔的字串。 多型別內容會在報告中的條列專案間分割。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '261'
-ht-degree: 8%
+source-wordcount: '280'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**型別**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[型別](/help/reporting/dimensions/genre.md)。*
+*本頁涵蓋&#x200B;**型別**變數的資料集合。 如需對應的報表維度，請參閱[型別](/help/reporting/dimensions/genre.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ ht-degree: 8%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.genre` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.genre` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -77,7 +77,7 @@ metadata[MediaConstants.VideoMetadataKeys.GENRE] = "Drama,Action"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`createMediaSession`設定`sessionDetails`內的`genre`：
 
@@ -148,6 +148,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.GENRE] = "Drama,Action";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在呼叫`mediaTrackSessionStart`之前，使用`MEDIA_VideoMetadataKeyGENRE`在媒體物件的標準中繼資料中設定型別：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyGENRE] = "Drama,Action"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒體收集API]

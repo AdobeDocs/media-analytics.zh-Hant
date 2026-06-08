@@ -3,10 +3,10 @@ title: 節目
 description: 設定屬於一系列一部分的視訊內容的節目名稱，讓集數在報表中統計為單一程式。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 8%
+source-wordcount: '277'
+ht-degree: 7%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**Show**&#x200B;變數的資料集合。 檢視對應報表維度的[節目](/help/reporting/dimensions/show.md)。*
+*本頁涵蓋&#x200B;**Show**變數的資料集合。 檢視對應報表維度的[節目](/help/reporting/dimensions/show.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.show` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.show`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.show` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.SHOW] = "Blinding Light"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`createMediaSession`設定`sessionDetails`內的`show`：
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.SHOW] = "Blinding Light";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在呼叫`mediaTrackSessionStart`之前，使用`MEDIA_VideoMetadataKeySHOW`在媒體物件的標準中繼資料中設定顯示名稱：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeySHOW] = "Blinding Light"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒體收集API]

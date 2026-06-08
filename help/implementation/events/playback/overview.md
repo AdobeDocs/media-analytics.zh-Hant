@@ -6,24 +6,14 @@ exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/Cc5T13Z1S15MyG-CxpxMoHX-ckULmIe0dfUOe7650DE
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889beid: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 230
+source-wordcount: 231
 ht-degree: 2%
 
 ---
@@ -50,4 +40,4 @@ ht-degree: 2%
 1. 當使用者暫停播放時，**呼叫[暫停開始](pause-start.md)**。 繼續播放時傳送播放。
 1. 播放器停止等候資料時，**呼叫[緩衝開始](buffer-start.md)**。 在XDM型API上，當您傳送下一個「播放」事件時會推斷緩衝結束。 在行動SDK上，解析緩衝時也明確地呼叫`BufferComplete`。
 1. **在主要內容播放期間每10秒和廣告播放期間每1秒呼叫一次[Ping](ping.md)**。 Ping會保持工作階段進行中，並記錄播放點移動。 Mobile SDK會自動傳送ping；所有其他平台都必須手動傳送。
-1. 當播放器交涉新的位元速率時，**呼叫[位元速率變更](bitrate-change.md)**。 包含目前的QoE資料 — 位元速率、每秒影格數、掉格數 — 讓後端可以計算[平均位元速率](/help/reporting/metrics/average-bitrate.md)和相關的品品質度。
+1. 當播放器交涉新的位元速率時，**呼叫[位元速率變更](bitrate-change.md)**。 包含目前的QoE資料（位元速率、每秒影格數、掉格），讓後端可以計算[平均位元速率](/help/reporting/metrics/average-bitrate.md)和相關品品質度。

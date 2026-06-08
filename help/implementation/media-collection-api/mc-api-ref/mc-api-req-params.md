@@ -6,21 +6,11 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/6SPeRxCbhd8xZE-u0PlNpqXpZ9JWAS5hi41f7mjTBe0
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 1337
 ht-degree: 86%
@@ -44,7 +34,7 @@ ht-degree: 86%
 | --- | :---: | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | 字串 | `sessionStart` | IMS組織ID，可在Adobe CX Enterprise中識別您的組織 |
 | `visitor.marketingCloudUserId` | N | 字串 | `sessionStart` | Experience Cloud使用者ID (ECID)。 在大多數案例中，這是識別使用者時應使用的 ID。 心率 `marketingCloudUserId` 等於 Adobe Analytics 中的 `MID`。 雖然從技術上講並非必要，但存取CX Enterprise應用程式和服務需要此引數。 |
-| `visitor.aamLocationHint` | N | integer | `sessionStart` | 提供 Adobe Audience Manager Edge 資料 - 如果未輸入值，則為空值。 |
+| `visitor.aamLocationHint` | N | integer | `sessionStart` | 提供Adobe Audience Manager Edge資料。 如果未輸入值，則為空值。 |
 | `appInstallationId` | N | 字串 | `sessionStart` | 唯一識別應用程式和裝置的 appInstallationId |
 
 ## 內容資料

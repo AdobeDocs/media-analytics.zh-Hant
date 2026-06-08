@@ -6,25 +6,15 @@ exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
-  - id: e992d880-33bc-4949-a648-aa7d410276cd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 803
-ht-degree: 2%
+source-wordcount: 807
+ht-degree: 3%
 
 ---
 
@@ -51,7 +41,7 @@ ht-degree: 2%
 ## 實作步驟
 
 1. **識別使用者何時觸發播放** （使用者點按播放或自動播放觸發）。 建立具有內容名稱、ID、長度、資料流型別和媒體型別的媒體物件。 如需欄位定義，請參閱[內容名稱](/help/implementation/variables/core/content-name.md)、[內容識別碼](/help/implementation/variables/core/content-id.md)、[內容長度](/help/implementation/variables/core/content-length.md)、[資料流型別](/help/implementation/variables/core/stream-type.md)以及[內容型別](/help/implementation/variables/core/content-type.md)。
-1. **可選擇附加中繼資料** — 標準中繼資料（節目、季度、集數等） 和自訂內容資料變數。 如需標準中繼資料金鑰參考，請參閱[節目](/help/implementation/variables/standard-metadata/show.md)、[季](/help/implementation/variables/standard-metadata/season.md)、[集數](/help/implementation/variables/standard-metadata/episode.md)、[型別](/help/implementation/variables/standard-metadata/genre.md)和[網路](/help/implementation/variables/standard-metadata/network.md)。
+1. **可選擇附加中繼資料**：標準中繼資料（節目、季度、集數等） 和自訂內容資料變數。 如需標準中繼資料金鑰參考，請參閱[節目](/help/implementation/variables/standard-metadata/show.md)、[季](/help/implementation/variables/standard-metadata/season.md)、[集數](/help/implementation/variables/standard-metadata/episode.md)、[型別](/help/implementation/variables/standard-metadata/genre.md)和[網路](/help/implementation/variables/standard-metadata/network.md)。
 1. **呼叫[工作階段開始](/help/implementation/events/session/session-start.md)**&#x200B;以開始追蹤工作階段。 這會載入資料和中繼資料，並開始QoS測量的開始時間。 SessionStart會追蹤要播放的&#x200B;*意圖*，而不是第一個影格。
 1. 當熒幕上呈現內容的第一個畫面格時，**撥打[播放](/help/implementation/events/playback/play.md)**。
 1. 播放器暫停時，**呼叫[暫停開始](/help/implementation/events/playback/pause-start.md)**。 繼續播放時再次呼叫播放。 沒有單獨的繼續事件。
@@ -64,7 +54,7 @@ ht-degree: 2%
 
 ## 核心播放
 
-下列範例顯示完整的作業階段流程 — 從作業階段開始到內容完成和工作階段結束。
+下列範例顯示從工作階段開始到內容完成和工作階段結束的完整工作階段流程。
 
 如需依平台的實作詳細資料，請參閱[工作階段開始](/help/implementation/events/session/session-start.md)、[播放](/help/implementation/events/playback/play.md)、[暫停開始](/help/implementation/events/playback/pause-start.md)、[工作階段完成](/help/implementation/events/session/session-complete.md)以及[工作階段結束](/help/implementation/events/session/session-end.md)。
 
@@ -82,7 +72,7 @@ ht-degree: 2%
 
 ## 處理應用程式中斷
 
-媒體應用程式中的播放作業可能會因為多種原因而中斷，例如使用者按下暫停、應用程式進入背景、來電等。 無論原因為何，追蹤指示保持不變：
+媒體應用程式中的播放作業可以透過多種方式中斷。 例如，當使用者按下暫停鍵、應用程式進入背景或接到電話時。 無論原因為何，追蹤指示保持不變：
 
 1. 當應用程式中斷（進入背景、媒體暫停等）時，呼叫&#x200B;**PauseStart**。
 1. 當應用程式返回前景及/或媒體恢復播放時，呼叫&#x200B;**播放**。

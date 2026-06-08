@@ -3,10 +3,10 @@ title: 藝術家
 description: 設定音訊內容的演出藝人名稱。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 10%
+source-wordcount: '231'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**藝人**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[藝人](/help/reporting/dimensions/artist.md)。*
+*本頁涵蓋&#x200B;**藝人**變數的資料集合。 如需對應的報表維度，請參閱[藝人](/help/reporting/dimensions/artist.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 10%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.artist` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.artist` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -73,7 +73,7 @@ metadata[MediaConstants.AudioMetadataKeys.ARTIST] = "Crested Larks"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`createMediaSession`設定`sessionDetails`內的`artist`：
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.AudioMetadataKeys.ARTIST] = "Crested Larks";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在呼叫`mediaTrackSessionStart`之前，使用`MEDIA_AudioMetadataKeyARTIST`在媒體物件的標準中繼資料中設定演出者名稱：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Track", "audio-123", 240.0, adb.MEDIA_STREAM_TYPE_AOD, adb.MEDIA_TYPE_AUDIO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_AudioMetadataKeyARTIST] = "Crested Larks"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒體收集API]

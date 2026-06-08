@@ -3,10 +3,10 @@ title: 廣告播放器名稱
 description: 設定轉譯廣告之播放器的名稱。 廣告播放器可以和主要內容播放器不同。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
+source-wordcount: '277'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告播放器名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[廣告播放器名稱](/help/reporting/dimensions/ad-player-name.md)。*
+*本頁涵蓋&#x200B;**廣告播放器名稱**變數的資料集合。 如需對應的報表維度，請參閱[廣告播放器名稱](/help/reporting/dimensions/ad-player-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.playerName` |
-| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.playerName` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.AD_PLAYER] = "Freewheel"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`media.adStart`的`sendMediaEvent`時，在`xdm.mediaCollection.advertisingDetails`中設定`playerName`：
 
@@ -145,6 +145,18 @@ tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
 var metadata = { "a.media.ad.playerName": "Chromecast Player" };
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+追蹤廣告開始事件時，在內容資料物件中傳遞廣告播放器名稱：
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+contextData = { "a.media.ad.playerName": "Roku Player" }
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo, contextData)
 ```
 
 >[!TAB 媒體收集API]

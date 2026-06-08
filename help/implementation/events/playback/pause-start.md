@@ -3,9 +3,9 @@ title: 暫停開始
 description: 表示使用者已暫停媒體播放。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '150'
 ht-degree: 10%
 
 ---
@@ -58,7 +58,7 @@ tracker.trackPause()
 tracker.trackPause()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.pauseStart"`通話`sendMediaEvent`：
 
@@ -114,6 +114,14 @@ tracker.trackPause();
 
 ```javascript
 ADBMobile.media.trackPause();
+```
+
+>[!TAB Roku 2.x]
+
+當使用者暫停播放時，呼叫`mediaTrackPause`：
+
+```brightscript
+ADBMobile().mediaTrackPause()
 ```
 
 >[!TAB 媒體收集API]

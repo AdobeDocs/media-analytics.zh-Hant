@@ -3,9 +3,9 @@ title: Ping
 description: 傳送心率以保持媒體工作階段作用中並定期追蹤播放進度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '283'
 ht-degree: 1%
 
 ---
@@ -51,7 +51,7 @@ alloy("sendEvent", {
 
 行動SDK會自動傳送Ping事件。 不需要明確呼叫。
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 排程與`eventType: "media.ping"`的週期性`sendMediaEvent`呼叫。 將`playhead`更新至每次呼叫的目前播放位置：
 
@@ -100,6 +100,14 @@ Media SDK會自動傳送Ping事件。 不需要明確呼叫。
 >[!TAB Chromecast]
 
 Chromecast SDK會自動傳送Ping事件。 不需要明確呼叫。
+
+>[!TAB Roku 2.x]
+
+只要您在事件回圈中呼叫`processMediaMessages`，Media SDK就會自動傳送Ping事件。 更新播放點，以便每次Ping都報告目前位置：
+
+```brightscript
+ADBMobile().mediaUpdatePlayhead(10)
+```
 
 >[!TAB 媒體收集API]
 

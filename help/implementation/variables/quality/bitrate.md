@@ -3,10 +3,10 @@ title: 位元速率
 description: 在QoE物件上設定目前的播放位元速率（以每秒位元組數為單位），讓後端可以計算位元速率量度。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 6%
+source-wordcount: '307'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**位元速率**&#x200B;變數的資料集合。 檢視對應報表變數的[[!UICONTROL 平均位元速率] （維度）](/help/reporting/dimensions/average-bitrate.md)和[[!UICONTROL 平均位元速率] （量度）](/help/reporting/metrics/average-bitrate.md)。*
+*本頁涵蓋&#x200B;**位元速率**變數的資料集合。 檢視對應報表變數的[[!UICONTROL 平均位元速率] （維度）](/help/reporting/dimensions/average-bitrate.md)和[[!UICONTROL 平均位元速率] （量度）](/help/reporting/metrics/average-bitrate.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.qoe.bitrateAverageBucket` |
-| **XDM集合欄位** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | 品質事件（[位元速率變更](/help/implementation/events/playback/bitrate-change.md)，[緩衝開始](/help/implementation/events/playback/buffer-start.md)，[錯誤](/help/implementation/events/error.md)），工作階段關閉 |
@@ -81,7 +81,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`media.bitrateChange`等品質事件的`sendMediaEvent`時，在`xdm.mediaCollection.qoeDataDetails`內設定`bitrate`：
 
@@ -156,6 +156,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+將位元速率（以kbps為單位）作為第一個引數傳給`adb_media_init_qosinfo`，並使用`mediaUpdateQoS`更新追蹤器：
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 媒體收集API]

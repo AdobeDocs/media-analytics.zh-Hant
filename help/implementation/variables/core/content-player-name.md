@@ -3,9 +3,9 @@ title: 內容播放器名稱
 description: 設定播放器名稱以識別轉譯了內容的播放器。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '285'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容播放器名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[內容播放器名稱](/help/reporting/dimensions/content-player-name.md)。*
+*本頁涵蓋&#x200B;**內容播放器名稱**變數的資料集合。 如需對應的報表維度，請參閱[內容播放器名稱](/help/reporting/dimensions/content-player-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.playerName` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.playerName` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`createMediaSession`時在`xdm.mediaCollection.sessionDetails`內設定`playerName`：
 
@@ -157,6 +157,16 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 var metadata = { "a.media.playerName": "Chromecast Player" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+在`ADBMobileConfig.json`的`mediaHeartbeat`區段中設定`playerName`。 播放器名稱是設定值，而非每個工作階段值：
+
+```json
+"mediaHeartbeat": {
+  "playerName": "Roku Player"
+}
 ```
 
 >[!TAB 媒體收集API]

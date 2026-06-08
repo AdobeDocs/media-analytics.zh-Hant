@@ -3,10 +3,10 @@ title: 內容管道
 description: 設定頻道以識別播放內容的分發站台、網路或屬性。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容管道**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[內容管道](/help/reporting/dimensions/content-channel.md)。*
+*本頁涵蓋&#x200B;**內容管道**變數的資料集合。 如需對應的報表維度，請參閱[內容管道](/help/reporting/dimensions/content-channel.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 7%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.channel` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.channel` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`createMediaSession`時在`xdm.mediaCollection.sessionDetails`內設定`channel`：
 
@@ -157,6 +157,16 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 var metadata = { "a.media.channel": "Sports" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+在`ADBMobileConfig.json`的`mediaHeartbeat`區段中設定`channel`。 通道是設定值，而非每個工作階段值：
+
+```json
+"mediaHeartbeat": {
+  "channel": "Sports"
+}
 ```
 
 >[!TAB 媒體收集API]

@@ -3,9 +3,9 @@ title: 廣告名稱
 description: 設定廣告的易記名稱。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '223'
 ht-degree: 8%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[廣告名稱](/help/reporting/dimensions/ad-name.md)。*
+*本頁涵蓋&#x200B;**廣告名稱**變數的資料集合。 如需對應的報表維度，請參閱[廣告名稱](/help/reporting/dimensions/ad-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 8%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.friendlyName` |
-| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.friendlyName` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
@@ -79,7 +79,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`media.adStart`的`sendMediaEvent`時，在`xdm.mediaCollection.advertisingDetails`中設定`friendlyName`：
 
@@ -159,6 +159,17 @@ var adInfo = ADBMobile.media.createAdObject(
   30
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+將廣告名稱作為第一個引數傳遞給`adb_media_init_adinfo`：
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB 媒體收集API]

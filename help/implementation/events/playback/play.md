@@ -3,10 +3,10 @@ title: 播放
 description: 表示媒體播放器已進入播放狀態。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 10%
+source-wordcount: '178'
+ht-degree: 9%
 
 ---
 
@@ -54,7 +54,7 @@ tracker.trackPlay()
 tracker.trackPlay()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.play"`通話`sendMediaEvent`：
 
@@ -110,6 +110,14 @@ tracker.trackPlay();
 
 ```javascript
 ADBMobile.media.trackPlay();
+```
+
+>[!TAB Roku 2.x]
+
+當媒體播放器開始或繼續播放時，呼叫`mediaTrackPlay`：
+
+```brightscript
+ADBMobile().mediaTrackPlay()
 ```
 
 >[!TAB 媒體收集API]

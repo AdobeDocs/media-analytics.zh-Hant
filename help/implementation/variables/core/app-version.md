@@ -3,9 +3,9 @@ title: 應用程式版本
 description: 設定媒體播放器應用程式的版本字串。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**應用程式版本**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[應用程式版本](/help/reporting/dimensions/app-version.md)。*
+*本頁涵蓋&#x200B;**應用程式版本**變數的資料集合。 如需對應的報表維度，請參閱[應用程式版本](/help/reporting/dimensions/app-version.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 | 屬性 | 價值 |
 | --- | --- |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **媒體收集API引數** | `media.sdkVersion` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 >[!TAB Web SDK]
 
-呼叫[`configure`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/commands/configure/streamingmedia)時，在`streamingMedia`設定物件中設定`appVersion`：
+呼叫[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)時，在`streamingMedia`設定物件中設定`appVersion`：
 
 ```javascript
 alloy("configure", {
@@ -77,7 +77,7 @@ val config: Map<String, Any> = mapOf(
 MobileCore.updateConfiguration(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`ADB_CONSTANTS.CONFIGURATION.MEDIA_APP_VERSION`在SDK設定中設定應用程式版本：
 
@@ -149,6 +149,16 @@ var ADBMobileConfig = {
     "sdkVersion": "2.1.0"
   }
 };
+```
+
+>[!TAB Roku 2.x]
+
+在`ADBMobileConfig.json`的`mediaHeartbeat`區段中設定`sdkVersion`。 此欄位會擷取您的播放器應用程式版本，而非Roku 2.x SDK程式庫版本：
+
+```json
+"mediaHeartbeat": {
+  "sdkVersion": "2.1.0"
+}
 ```
 
 >[!TAB 媒體收集API]

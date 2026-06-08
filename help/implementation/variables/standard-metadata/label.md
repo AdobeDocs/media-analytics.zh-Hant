@@ -3,10 +3,10 @@ title: 標籤
 description: 設定發行音訊內容的錄製標籤。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 10%
+source-wordcount: '232'
+ht-degree: 9%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 10%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**標籤**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[標籤](/help/reporting/dimensions/label.md)。*
+*本頁涵蓋&#x200B;**標籤**變數的資料集合。 如需對應的報表維度，請參閱[標籤](/help/reporting/dimensions/label.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ label變數是發行音訊內容的唱片公司的名稱（例如，`"Capitol Re
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.label` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.label`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.label` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -73,7 +73,7 @@ metadata[MediaConstants.AudioMetadataKeys.LABEL] = "Capitol Records"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`createMediaSession`設定`sessionDetails`內的`label`：
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.AudioMetadataKeys.LABEL] = "Capitol Records";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+在呼叫`mediaTrackSessionStart`之前，使用`MEDIA_AudioMetadataKeyLABEL`在媒體物件的標準中繼資料中設定記錄標籤：
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Track", "audio-123", 240.0, adb.MEDIA_STREAM_TYPE_AOD, adb.MEDIA_TYPE_AUDIO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_AudioMetadataKeyLABEL] = "Capitol Records"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB 媒體收集API]

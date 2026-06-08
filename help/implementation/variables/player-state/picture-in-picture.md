@@ -3,9 +3,9 @@ title: 子母畫面
 description: 追蹤檢視器何時進入和結束子母畫面播放，讓後端可以報告PiP參與情形。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '341'
 ht-degree: 5%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**子母畫面**&#x200B;播放器狀態的資料集合。 檢視對應報表量度的[受子母畫面影響的資料流](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[子母畫面計數](/help/reporting/metrics/picture-in-picture-count.md)和[子母畫面總持續時間](/help/reporting/metrics/picture-in-picture-total-duration.md)。*
+*此頁面涵蓋&#x200B;**子母畫面**播放器狀態的資料集合。 檢視對應報表量度的[受子母畫面影響的資料流](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[子母畫面計數](/help/reporting/metrics/picture-in-picture-count.md)和[子母畫面總持續時間](/help/reporting/metrics/picture-in-picture-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ ht-degree: 5%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "pictureInPicture"`的專案） |
+| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "pictureInPicture"`的專案） |
 | **Audience Manager特徵** | `c_contextdata.a.media.states.pictureinpicture.set`, `c_contextdata.a.media.states.pictureinpicture.count`, `c_contextdata.a.media.states.pictureinpicture.time` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [狀態開始](/help/implementation/events/player-state/state-start.md)，[狀態結束](/help/implementation/events/player-state/state-end.md) |
@@ -87,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`sendMediaEvent`傳送狀態已新增至`statesStart`的`media.statesUpdate`事件：
 
@@ -163,6 +163,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 // When the viewer exits picture-in-picture:
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Roku 2.x SDK中不提供播放器狀態追蹤功能。 若要追蹤播放器狀態，請使用[Roku Edge SDK](/help/implementation/edge/roku.md)。
 
 >[!TAB 媒體收集API]
 

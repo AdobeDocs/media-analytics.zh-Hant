@@ -3,9 +3,9 @@ title: 廣告插播完成
 description: 表示廣告插播中的所有廣告都已完成。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '165'
 ht-degree: 9%
 
 ---
@@ -58,7 +58,7 @@ tracker.trackEvent(event: MediaEvent.AdBreakComplete, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.adBreakComplete"`通話`sendMediaEvent`：
 
@@ -114,6 +114,15 @@ tracker.trackEvent(ADB.Media.Event.AdBreakComplete, null, null);
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB Roku 2.x]
+
+使用`MEDIA_AD_BREAK_COMPLETE`事件型別呼叫`mediaTrackEvent`：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_COMPLETE)
 ```
 
 >[!TAB 媒體收集API]

@@ -3,9 +3,9 @@ title: 每秒影格數
 description: 在QoE物件上設定目前的影格速率，讓後端有品質報告的影格速率內容。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '272'
 ht-degree: 7%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 7%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | 無（Adobe Analytics不會為影格速率指派保留的內容資料索引鍵） |
-| **XDM集合欄位** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Audience Manager特徵** | 不適用 |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | 品質事件（[位元速率變更](/help/implementation/events/playback/bitrate-change.md)，[緩衝開始](/help/implementation/events/playback/buffer-start.md)，[錯誤](/help/implementation/events/error.md)），工作階段關閉 |
@@ -73,7 +73,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 呼叫`sendMediaEvent`時在`xdm.mediaCollection.qoeDataDetails`內設定`framesPerSecond`：
 
@@ -140,6 +140,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+將影格速率作為第三個引數(`fps`)傳遞至`adb_media_init_qosinfo`，並使用`mediaUpdateQoS`更新追蹤器：
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB 媒體收集API]

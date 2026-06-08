@@ -5,18 +5,13 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
 TQID: https://experienceleague.adobe.com/O3mOUZAV8D1yI3kylOt86o4vgE9mtj6-4wPcYVHqCz8
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 268
+source-wordcount: 269
 ht-degree: 55%
 
 ---
@@ -45,7 +40,7 @@ SDK 會因應裝置發佈新版本而定時更新，讓您能將 SDK 與各個�
 | | Windows裝置 | | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |
 | OTT | | | | | |
 | | Apple TV (tvOS) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |
-| | Roku | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |
+| | Roku | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) |
 | | Fire TV (Fire OS) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |
 | | Android TV | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | | ![支援](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) | ![支援](/help/assets/icon-blue-check.png) |

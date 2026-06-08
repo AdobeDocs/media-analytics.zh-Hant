@@ -3,10 +3,10 @@ title: 位元速率變更
 description: 表示播放位元速率已變更。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 7%
+source-wordcount: '226'
+ht-degree: 6%
 
 ---
 
@@ -69,7 +69,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 以`eventType: "media.bitrateChange"`呼叫`sendMediaEvent`，新位元速率為`qoeDataDetails`：
 
@@ -150,6 +150,18 @@ this._qosInfo = ADBMobile.media.createQoSObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB Roku 2.x]
+
+使用`adb_media_init_qosinfo`以新的位元速率建置QoS物件，使用`mediaUpdateQoS`更新追蹤器，然後追蹤事件。 請注意Roku引數順序： `bitrate, startupTime, fps, droppedFrames`。
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
+adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 ```
 
 >[!TAB 媒體收集API]

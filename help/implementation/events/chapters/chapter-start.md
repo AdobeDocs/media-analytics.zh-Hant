@@ -3,10 +3,10 @@ title: 章節開始
 description: 代表內容中章節區段的開始。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 8%
+source-wordcount: '191'
+ht-degree: 7%
 
 ---
 
@@ -70,7 +70,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 使用`eventType: "media.chapterStart"`和必要的`chapterDetails`來呼叫`sendMediaEvent`：
 
@@ -151,6 +151,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
 );
 
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+使用`adb_media_init_chapterinfo`建立章節物件，然後追蹤事件：
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 ```
 
 >[!TAB 媒體收集API]

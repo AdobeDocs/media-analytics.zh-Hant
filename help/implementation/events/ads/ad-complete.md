@@ -3,10 +3,10 @@ title: 廣告完成
 description: 代表個別廣告完成播放。
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 9%
+source-wordcount: '173'
+ht-degree: 8%
 
 ---
 
@@ -58,7 +58,7 @@ tracker.trackEvent(event: MediaEvent.AdComplete, info: nil, metadata: nil)
 tracker.trackEvent(Media.Event.AdComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 與`eventType: "media.adComplete"`通話`sendMediaEvent`：
 
@@ -114,6 +114,15 @@ tracker.trackEvent(ADB.Media.Event.AdComplete, null, null);
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
+```
+
+>[!TAB Roku 2.x]
+
+使用`MEDIA_AD_COMPLETE`事件型別呼叫`mediaTrackEvent`：
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_COMPLETE)
 ```
 
 >[!TAB 媒體收集API]
