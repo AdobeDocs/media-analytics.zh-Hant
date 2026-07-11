@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: e760701d832fbb4336e9d40d183f6b514f3bf02a
+source-git-commit: 8b9e7582923a61bd2a43049a02ce36727a677e17
 workflow-type: tm+mt
 source-wordcount: 798
 ht-degree: 3%
@@ -247,4 +247,3 @@ Media Collection API是伺服器端實作。 您的應用程式必須先檢查�
 如需可用引數的完整清單，請參閱[媒體收集API要求引數參考](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)。
 
 >[!ENDTABS]
-
