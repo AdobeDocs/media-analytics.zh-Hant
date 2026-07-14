@@ -5,10 +5,10 @@ user-guide-title: 串流媒體服務指南
 breadcrumb-title: 串流媒體服務指南
 user-guide-description: 實施串流媒體服務。 包含 Media SDK 和 Media Collection API。
 sub-product: media analytics
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: caf61bd76e2911ae5be31c4b1d8265b1df002acf
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 31%
+source-wordcount: '692'
+ht-degree: 32%
 
 ---
 
@@ -165,7 +165,6 @@ ht-degree: 31%
             + [逾時條件](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [控制事件順序](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [在工作階段回應緩慢時將事件加入佇列](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + [選擇退出與隱私權設定](implementation/opt-out-privacy.md)
 + 報告 {#reporting}
    + 設定報告 {#reporting-setup}
       + [Edge實施](reporting/setup/edge-reporting.md)
@@ -300,3 +299,8 @@ ht-degree: 31%
       + [時間軸：章節](use-cases/scenarios/chapter-start-end.md)
       + [時間軸：檢視到結束](use-cases/scenarios/view-to-end-of-content.md)
       + [時間軸：使用者放棄工作階段](use-cases/scenarios/user-abandons-session.md)
+
+<!--
+Removed from before the Reporting section:
+  + [Opt-out and privacy settings](implementation/opt-out-privacy.md)
+-->
