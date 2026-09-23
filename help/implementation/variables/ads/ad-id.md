@@ -3,19 +3,17 @@ title: 廣告 ID
 description: 唯一識別廣告。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '241'
 ht-degree: 9%
-
 ---
-
 
 # 廣告 ID
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告ID**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[廣告](/help/reporting/dimensions/ad.md)。*
+*本頁涵蓋&#x200B;**廣告ID**變數的資料集合。 如需對應的報表維度，請參閱[廣告](/help/reporting/dimensions/ad.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 9%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.name` |
-| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.name` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
@@ -188,6 +186,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

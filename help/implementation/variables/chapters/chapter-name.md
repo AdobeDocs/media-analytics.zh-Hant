@@ -3,19 +3,17 @@ title: 章節名稱
 description: 設定每個章節的易記名稱，讓章節層級報表可以依章節標題劃分。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
-
+source-wordcount: '234'
+ht-degree: 7%
 ---
-
 
 # 章節名稱
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**章節名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[章節名稱](/help/reporting/dimensions/chapter-name.md)。*
+*本頁涵蓋&#x200B;**章節名稱**變數的資料集合。 如需對應的報表維度，請參閱[章節名稱](/help/reporting/dimensions/chapter-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 8%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.chapter.friendlyName` |
-| **XDM集合欄位** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.chapter.friendlyName` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [章節開始](/help/implementation/events/chapters/chapter-start.md)，章節關閉 |
@@ -186,6 +184,6 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

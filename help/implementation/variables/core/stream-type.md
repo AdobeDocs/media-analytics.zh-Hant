@@ -3,19 +3,17 @@ title: 資料流類型
 description: 設定資料流型別，以識別媒體資料流是音訊或視訊內容。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 6%
-
 ---
-
 
 # 資料流類型
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**資料流型別**&#x200B;變數的資料集合。 檢視對應報表維度的[資料流型別](/help/reporting/dimensions/stream-type.md)。*
+*本頁涵蓋&#x200B;**資料流型別**變數的資料集合。 檢視對應報表維度的[資料流型別](/help/reporting/dimensions/stream-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -26,7 +24,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.streamType` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.streamType` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -198,6 +196,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-如需完整的要求結構和所有必要欄位，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構和所有必要欄位，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

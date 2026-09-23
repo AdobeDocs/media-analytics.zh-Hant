@@ -3,19 +3,17 @@ title: 季數
 description: 設定情節內容的季數，以便依季劃分參與度。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '259'
 ht-degree: 8%
-
 ---
-
 
 # 季數
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**季**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[季](/help/reporting/dimensions/season.md)。*
+*本頁涵蓋&#x200B;**季**變數的資料集合。 如需對應的報表維度，請參閱[季](/help/reporting/dimensions/season.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 8%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.season` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.season`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.season` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

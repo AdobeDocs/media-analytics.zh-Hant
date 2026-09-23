@@ -3,19 +3,17 @@ title: 內容繼續
 description: 標幟工作階段以繼續先前中斷的播放，讓後端會計為內容繼續事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '302'
 ht-degree: 6%
-
 ---
-
 
 # 內容繼續
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容繼續**&#x200B;變數的資料集合。 檢視[[!UICONTROL 對應報表量度的內容履歷]](/help/reporting/metrics/content-resumes.md)。*
+*本頁涵蓋&#x200B;**內容繼續**變數的資料集合。 檢視[[!UICONTROL 對應報表量度的內容履歷]](/help/reporting/metrics/content-resumes.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.resume` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | 不適用 |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md) |
@@ -196,6 +194,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

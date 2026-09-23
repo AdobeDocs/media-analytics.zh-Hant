@@ -3,19 +3,17 @@ title: 媒體摘要型別
 description: 識別視地區或品質而異的廣播摘要型別（例如East-HD或West-SD）。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '270'
 ht-degree: 7%
-
 ---
-
 
 # 媒體摘要型別
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**媒體摘要型別**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[媒體摘要型別](/help/reporting/dimensions/media-feed-type.md)。*
+*本頁涵蓋&#x200B;**媒體摘要型別**變數的資料集合。 如需對應的報表維度，請參閱[媒體摘要型別](/help/reporting/dimensions/media-feed-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 7%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.feed` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.feed` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

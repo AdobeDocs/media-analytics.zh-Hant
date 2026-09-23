@@ -3,13 +3,11 @@ title: 錯誤
 description: 表示媒體播放器發生錯誤。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 9%
-
+source-wordcount: '196'
+ht-degree: 8%
 ---
-
 
 # 錯誤
 
@@ -137,7 +135,7 @@ adb.mediaTrackError("media-error-001", adb.ERROR_SOURCE_PLAYER)
 
 >[!TAB 媒體收集API]
 
-傳送`error`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
+傳送`error`張貼至[事件端點](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)：
 
 ```json
 {

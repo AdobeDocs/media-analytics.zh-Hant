@@ -3,19 +3,17 @@ title: 廣告播放器名稱
 description: 設定轉譯廣告之播放器的名稱。 廣告播放器可以和主要內容播放器不同。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '286'
 ht-degree: 6%
-
 ---
-
 
 # 廣告播放器名稱
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告播放器名稱**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[廣告播放器名稱](/help/reporting/dimensions/ad-player-name.md)。*
+*本頁涵蓋&#x200B;**廣告播放器名稱**變數的資料集合。 如需對應的報表維度，請參閱[廣告播放器名稱](/help/reporting/dimensions/ad-player-name.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.playerName` |
-| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.playerName` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
@@ -173,6 +171,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo, contextData)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

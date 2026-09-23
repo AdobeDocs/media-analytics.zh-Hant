@@ -8,23 +8,29 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/eF09wxu2mIUoFph5EdHz5y0XtcpXHHLINqSGLQEMoHU
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 3fd9ffcb997e1570abb983107e69d183b1c8b311
+    internal-label: Privacy
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 798
+source-wordcount: '806'
 ht-degree: 3%
-
 ---
-
 # 選擇退出與隱私權設定
 
 當使用者選擇退出追蹤時，串流媒體程式庫會立即停止所有資料收集活動。 不會為該使用者傳送工作階段開始呼叫、心率Ping，以及事件追蹤資料至Adobe資料收集伺服器。
@@ -65,7 +71,7 @@ alloy("setConsent", {
 
 若要還原追蹤，請以`"y"`作為`collect.val`值，再次呼叫`setConsent`。
 
-如需其他格式，包括IAB TCF 2.0，請參閱Web SDK檔案中的[setConsent命令](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/setconsent)。
+如需其他格式，包括IAB TCF 2.0，請參閱Web SDK檔案中的[setConsent命令](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent)。
 
 >[!TAB iOS]
 
@@ -161,7 +167,7 @@ fetch("https://edge.adobedc.net/va/v2/sessions", {
 
 >[!TAB Media SDK JS 3.x]
 
-Media SDK JS 3.x程式庫會遵循Adobe訪客API （身分服務）選擇退出狀態。 當使用者選擇退出使用訪客API時，Media SDK會自動抑制所有追蹤呼叫。
+Media SDK JS 3.x程式庫會遵循Adobe訪客ID服務選擇退出狀態。 當使用者選擇退出使用ID服務時，Media SDK會自動抑制所有追蹤呼叫。
 
 ```javascript
 var visitor = Visitor.getInstance("YOUR_ORG_ID@AdobeOrg");
@@ -172,7 +178,7 @@ visitor.setOptOut(true);
 
 若要還原追蹤，請將`false`傳遞至`setOptOut()`。
 
-如需詳細資訊，請參閱[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+如需詳細資訊，請參閱[Adobe訪客ID服務](https://experienceleague.adobe.com/tw/en/docs/id-service/using/home)。
 
 >[!TAB Chromecast]
 
@@ -244,7 +250,7 @@ Media Collection API是伺服器端實作。 您的應用程式必須先檢查�
 * `analytics.optOutServerSideForwarding`：設為`true`，可選擇退出在Adobe Analytics與其他Experience Cloud解決方案（例如Audience Manager）之間共用的資料。
 * `analytics.optOutShare`：設定為`true`可選擇退出與其他Adobe Analytics使用者端的同盟資料共用。
 
-如需可用引數的完整清單，請參閱[媒體收集API要求引數參考](../implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)。
+如需可用引數的完整清單，請參閱[媒體收集API要求引數參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/parameters)。
 
 >[!ENDTABS]
 

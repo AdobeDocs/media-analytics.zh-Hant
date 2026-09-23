@@ -3,13 +3,11 @@ title: 狀態結束
 description: 表示媒體播放器已結束追蹤的播放器狀態。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # 狀態結束
 
@@ -147,7 +145,7 @@ Roku 2.x SDK中不提供播放器狀態追蹤功能。 若要追蹤播放器狀�
 
 >[!TAB 媒體收集API]
 
-傳送`stateEnd`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
+傳送`stateEnd`張貼至[事件端點](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)：
 
 ```json
 {

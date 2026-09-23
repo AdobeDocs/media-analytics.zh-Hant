@@ -3,19 +3,17 @@ title: 廣告載入型別
 description: 設定串流工作階段的廣告載入型別。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '278'
 ht-degree: 3%
-
 ---
-
 
 # 廣告載入型別
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**廣告載入型別**&#x200B;變數的資料集合。 檢視對應報表維度的[廣告載入](/help/reporting/dimensions/ad-load-type.md)。*
+*本頁涵蓋&#x200B;**廣告載入型別**變數的資料集合。 檢視對應報表維度的[廣告載入](/help/reporting/dimensions/ad-load-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 3%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.adLoad` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.adLoad` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -35,7 +33,7 @@ ht-degree: 3%
 
 >[!TAB Web SDK]
 
-呼叫[`createMediaSession`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/commands/createmediasession)時，在`xdm.mediaCollection.sessionDetails`內設定`adLoad`：
+呼叫[`createMediaSession`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/createmediasession)時，在`xdm.mediaCollection.sessionDetails`內設定`adLoad`：
 
 ```javascript
 alloy("createMediaSession", {
@@ -181,6 +179,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

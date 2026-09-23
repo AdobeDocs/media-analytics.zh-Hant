@@ -8,25 +8,32 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: e992d880-33bc-4949-a648-aa7d410276cd
+    internal-label: Validation
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 721
-ht-degree: 93%
-
+source-wordcount: '729'
+ht-degree: 91%
 ---
-
 # 追蹤下載內容{#track-downloaded-content}
 
 ## 概觀 {#overview}
@@ -56,13 +63,13 @@ iOS 和 Android 行動裝置均支援內容追蹤功能。
 ### 事件結構
 
 「下載內容」功能是離線版本的 (標準) 線上 Media Collection API，因此播放器批次處理及傳送到後端的事件資料，必須使用與線上呼叫時相同的事件結構。 如需這些結構的詳細資訊，請參閱：
-* [概觀;](/help/implementation/media-collection-api/mc-api-overview.md)
-* [驗證事件請求](/help/implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+* [概觀;](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/)
+* [驗證事件要求](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)
 
 ### 事件順序
 
 * 根據 Media Collection API 通常的情況，批次裝載中的第一個事件必須為 `sessionStart`。
-* 在 **事件上，`media.downloaded: true`**&#x200B;您必須將 `params` 包含在標準中繼資料參數 (`sessionStart` 索引鍵) 中，以表示您要將下載內容傳送到哪個後端。 若此參數不存在或設為 false，在傳送下載資料時，API 會傳回 400 回應代碼 (Bad Request)。 此參數會區分傳送到後端的下載內容與即時內容。 若 `media.downloaded: true` 設在即時工作階段上，同樣會導致 API 傳回 400 回應代碼。
+* 在 **事件上，`media.downloaded: true`**&#x200B;您必須將 `params` 包含在標準中繼資料參數 (`sessionStart` 索引鍵) 中，以表示您要將下載內容傳送到哪個後端。 若此參數不存在或設為 false，在傳送下載資料時，API 會傳回 400 回應代碼 (Bad Request)。 此參數可讓後端區分下載內容與即時內容。 若 `media.downloaded: true` 設在即時工作階段上，同樣會導致 API 傳回 400 回應代碼。
 * 實施時應負責依照其外觀的順序，正確地儲存播放器事件。
 
 ### 回應代碼

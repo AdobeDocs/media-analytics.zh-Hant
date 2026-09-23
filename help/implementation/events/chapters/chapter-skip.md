@@ -3,13 +3,11 @@ title: 章節略過
 description: 表示檢視器已略過章節。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 10%
-
+source-wordcount: '157'
+ht-degree: 9%
 ---
-
 
 # 章節略過
 
@@ -123,7 +121,7 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_SKIP)
 
 >[!TAB 媒體收集API]
 
-傳送`chapterSkip`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
+傳送`chapterSkip`張貼至[事件端點](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)：
 
 ```json
 {

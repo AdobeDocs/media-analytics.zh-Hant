@@ -3,19 +3,17 @@ title: 時段
 description: 設定廣播或播放內容時的當天時段（上午、下午、黃金時段、深夜）。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '265'
 ht-degree: 7%
-
 ---
-
 
 # 時段
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**天部分**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[日期部分](/help/reporting/dimensions/day-part.md)。*
+*本頁涵蓋&#x200B;**天部分**變數的資料集合。 如需對應的報表維度，請參閱[日期部分](/help/reporting/dimensions/day-part.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 7%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.dayPart` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.dayPart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.dayPart` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

@@ -3,13 +3,11 @@ title: 工作階段結束
 description: 當檢視器放棄內容時，立即關閉媒體工作階段。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 4%
-
+source-wordcount: '323'
+ht-degree: 5%
 ---
-
 
 # 工作階段結束
 
@@ -128,7 +126,7 @@ ADBMobile().mediaTrackSessionEnd()
 
 >[!TAB 媒體收集API]
 
-傳送`sessionEnd`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
+傳送`sessionEnd`張貼至[事件端點](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)：
 
 ```json
 {

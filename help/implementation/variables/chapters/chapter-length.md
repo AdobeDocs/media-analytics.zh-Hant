@@ -3,19 +3,17 @@ title: 章節長度
 description: 設定每個章節的長度（以秒為單位）。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '232'
 ht-degree: 7%
-
 ---
-
 
 # 章節長度
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**章節長度**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[章節長度](/help/reporting/dimensions/chapter-length.md)。*
+*本頁涵蓋&#x200B;**章節長度**變數的資料集合。 如需對應的報表維度，請參閱[章節長度](/help/reporting/dimensions/chapter-length.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 7%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.chapter.length` |
-| **XDM集合欄位** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.chapter.length` |
 | **必要** | 否（行動SDK）；是（Edge、媒體收集API） |
 | **與**&#x200B;一起傳送 | [章節開始](/help/implementation/events/chapters/chapter-start.md)，章節關閉 |
@@ -185,6 +183,6 @@ adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

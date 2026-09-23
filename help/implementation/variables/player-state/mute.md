@@ -3,19 +3,17 @@ title: 靜音
 description: 追蹤檢視器何時將音訊靜音和取消靜音，以便後端可以報告靜音參與。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 6%
-
+source-wordcount: '328'
+ht-degree: 7%
 ---
-
 
 # 靜音
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**靜音**&#x200B;播放器狀態的資料集合。 檢視對應報表量度的[受靜音影響的資料流](/help/reporting/metrics/mute-streams-impacted.md)、[靜音計數](/help/reporting/metrics/mute-count.md)和[靜音總持續時間](/help/reporting/metrics/mute-total-duration.md)。*
+*此頁面涵蓋&#x200B;**靜音**播放器狀態的資料集合。 檢視對應報表量度的[受靜音影響的資料流](/help/reporting/metrics/mute-streams-impacted.md)、[靜音計數](/help/reporting/metrics/mute-count.md)和[靜音總持續時間](/help/reporting/metrics/mute-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.mute.set`, `a.media.states.mute.count`, `a.media.states.mute.time` |
-| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "mute"`的專案） |
+| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "mute"`的專案） |
 | **Audience Manager特徵** | `c_contextdata.a.media.states.mute.set`, `c_contextdata.a.media.states.mute.count`, `c_contextdata.a.media.states.mute.time` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [狀態開始](/help/implementation/events/player-state/state-start.md)，[狀態結束](/help/implementation/events/player-state/state-end.md) |
@@ -182,6 +180,6 @@ Roku 2.x SDK中不提供播放器狀態追蹤功能。 若要追蹤播放器狀�
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

@@ -3,19 +3,17 @@ title: 發行者
 description: 設定音訊內容發行者。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '227'
+source-wordcount: '236'
 ht-degree: 9%
-
 ---
-
 
 # 發行者
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**Publisher**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[發行者](/help/reporting/dimensions/publisher.md)。*
+*本頁涵蓋&#x200B;**Publisher**變數的資料集合。 如需對應的報表維度，請參閱[發行者](/help/reporting/dimensions/publisher.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 9%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.publisher` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.publisher` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

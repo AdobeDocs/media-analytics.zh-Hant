@@ -3,13 +3,11 @@ title: 廣告插播開始
 description: 代表廣告插播開始（一或多個廣告的序列）。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '229'
 ht-degree: 6%
-
 ---
-
 
 # 廣告插播開始
 
@@ -163,7 +161,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_START, adBreakInfo)
 
 >[!TAB 媒體收集API]
 
-傳送`adBreakStart`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
+傳送`adBreakStart`張貼至[事件端點](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)：
 
 ```json
 {

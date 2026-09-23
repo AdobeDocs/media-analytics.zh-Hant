@@ -3,19 +3,17 @@ title: 焦點
 description: 追蹤播放器何時聚焦在檢視者的畫面，讓後端可以報告焦點參與情形。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 5%
-
+source-wordcount: '354'
+ht-degree: 6%
 ---
-
 
 # 焦點
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**焦點**&#x200B;播放器狀態的資料集合。 檢視對應報表量度的受焦點影響的[資料流](/help/reporting/metrics/in-focus-streams-impacted.md)、[焦點計數](/help/reporting/metrics/in-focus-count.md)以及[焦點總持續時間](/help/reporting/metrics/in-focus-total-duration.md)。*
+*此頁面涵蓋&#x200B;**焦點**播放器狀態的資料集合。 檢視對應報表量度的受焦點影響的[資料流](/help/reporting/metrics/in-focus-streams-impacted.md)、[焦點計數](/help/reporting/metrics/in-focus-count.md)以及[焦點總持續時間](/help/reporting/metrics/in-focus-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 5%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.infocus.set`, `a.media.states.infocus.count`, `a.media.states.infocus.time` |
-| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "inFocus"`的專案） |
+| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "inFocus"`的專案） |
 | **Audience Manager特徵** | `c_contextdata.a.media.states.infocus.set`, `c_contextdata.a.media.states.infocus.count`, `c_contextdata.a.media.states.infocus.time` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [狀態開始](/help/implementation/events/player-state/state-start.md)，[狀態結束](/help/implementation/events/player-state/state-end.md) |
@@ -182,6 +180,6 @@ Roku 2.x SDK中不提供播放器狀態追蹤功能。 若要追蹤播放器狀�
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

@@ -3,13 +3,11 @@ title: 緩衝開始
 description: 表示媒體播放器進入緩衝狀態。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '205'
 ht-degree: 7%
-
 ---
-
 
 # 緩衝開始
 
@@ -146,7 +144,7 @@ adb.mediaTrackEvent(adb.MEDIA_BUFFER_COMPLETE)
 
 >[!TAB 媒體收集API]
 
-傳送`bufferStart`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
+傳送`bufferStart`張貼至[事件端點](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)：
 
 ```json
 {

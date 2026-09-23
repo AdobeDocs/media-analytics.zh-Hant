@@ -3,19 +3,17 @@ title: 創作者
 description: 設定內容的建立者或製作工作室。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '235'
 ht-degree: 9%
-
 ---
-
 
 # 創作者
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**Originator**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[建立者](/help/reporting/dimensions/originator.md)。*
+*本頁涵蓋&#x200B;**Originator**變數的資料集合。 如需對應的報表維度，請參閱[建立者](/help/reporting/dimensions/originator.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ ht-degree: 9%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.originator` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.originator` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |
@@ -175,6 +173,6 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

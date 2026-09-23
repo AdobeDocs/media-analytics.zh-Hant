@@ -3,13 +3,11 @@ title: 廣告插播完成
 description: 表示廣告插播中的所有廣告都已完成。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
-
+source-wordcount: '174'
+ht-degree: 8%
 ---
-
 
 # 廣告插播完成
 
@@ -127,7 +125,7 @@ adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_COMPLETE)
 
 >[!TAB 媒體收集API]
 
-傳送`adBreakComplete`張貼至[事件端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)：
+傳送`adBreakComplete`張貼至[事件端點](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)：
 
 ```json
 {

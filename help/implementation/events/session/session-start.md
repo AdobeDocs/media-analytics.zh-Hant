@@ -3,13 +3,11 @@ title: 工作階段開始
 description: 代表媒體工作階段開始，並取得所有後續事件所需的工作階段ID。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 4%
-
+source-wordcount: '397'
+ht-degree: 5%
 ---
-
 
 # 工作階段開始
 
@@ -175,7 +173,7 @@ adb.mediaTrackSessionStart(mediaInfo, invalid)
 
 >[!TAB 媒體收集API]
 
-傳送`sessionStart`張貼至[工作階段端點](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。 回應`Location`標頭包含要用於所有後續事件要求的工作階段識別碼。
+傳送`sessionStart`張貼至[工作階段端點](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。 回應`Location`標頭包含要用於所有後續事件要求的工作階段識別碼。
 
 ```json
 {

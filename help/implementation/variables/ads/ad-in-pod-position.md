@@ -3,19 +3,17 @@ title: Pod位置中的廣告
 description: 將廣告的索引位置設定在其上層廣告插播中。 第一個廣告索引為0。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
-
+source-wordcount: '266'
+ht-degree: 6%
 ---
-
 
 # Pod位置中的廣告
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋pod position **變數中**&#x200B;廣告的資料集合。 如需對應的報表維度，請參閱Pod位置[&#128279;](/help/reporting/dimensions/ad-in-pod-position.md)中的廣告。*
+*本頁涵蓋pod position **變數中**廣告的資料集合。 如需對應的報表維度，請參閱Pod位置](/help/reporting/dimensions/ad-in-pod-position.md)中的[廣告。*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +22,7 @@ Pod位置變數中的廣告是廣告在其上層廣告插播中的零索引位�
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.ad.podPosition` |
-| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.ad.podPosition` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [廣告開始](/help/implementation/events/ads/ad-start.md)，廣告關閉 |
@@ -184,6 +182,6 @@ adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]
