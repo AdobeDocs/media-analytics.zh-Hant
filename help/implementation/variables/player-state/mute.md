@@ -3,13 +3,11 @@ title: 靜音
 description: 追蹤檢視器何時將音訊靜音和取消靜音，以便後端可以報告靜音參與。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 6%
-
+source-wordcount: '328'
+ht-degree: 7%
 ---
-
 
 # 靜音
 
@@ -182,6 +180,6 @@ Roku 2.x SDK中不提供播放器狀態追蹤功能。 若要追蹤播放器狀�
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

@@ -3,13 +3,11 @@ title: 全螢幕
 description: 追蹤檢視器何時進入和結束全熒幕播放，讓後端可以報告全熒幕參與度。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 6%
-
+source-wordcount: '348'
+ht-degree: 8%
 ---
-
 
 # 全螢幕
 
@@ -195,6 +193,6 @@ Roku 2.x SDK中不提供播放器狀態追蹤功能。 若要追蹤播放器狀�
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

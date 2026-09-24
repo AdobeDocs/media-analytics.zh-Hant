@@ -3,13 +3,11 @@ title: 位元速率變更
 description: 當播放器切換至不同的位元速率時，引發位元速率變更事件。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '287'
 ht-degree: 6%
-
 ---
-
 
 # 位元速率變更
 
@@ -177,6 +175,6 @@ adb.mediaTrackEvent(adb.MEDIA_BITRATE_CHANGE)
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API事件參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)。
+如需完整的要求結構，請參閱[媒體收集API事件參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/events)。
 
 >[!ENDTABS]

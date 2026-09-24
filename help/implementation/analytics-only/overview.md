@@ -3,13 +3,11 @@ title: 僅限Analytics的實施概觀
 description: 適用於串流媒體的Adobe Analytics附加元件的先決條件和實作方法，用於僅限Analytics的實作。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '243'
 ht-degree: 5%
-
 ---
-
 # 僅限Analytics的實施概觀
 
 僅限Analytics的實施使用Adobe Analytics for Streaming Media附加元件直接將資料傳送至Adobe Analytics，而不使用Edge Network。 這些方法仍受到完整支援。 若是新的實作，Adobe建議改用[Edge實作](/help/implementation/edge/overview.md)，因為這樣除Adobe Analytics外，還能讓Customer Journey Analytics、Adobe Journey Optimizer和Real-Time CDP使用資料。
@@ -33,7 +31,7 @@ ht-degree: 5%
 | 網頁(JavaScript) | [JavaScript](javascript.md) | [Media Analytics標籤擴充功能](javascript-tags.md) |
 | Chromecast | [Chromecast](chromecast.md) | — |
 | Roku | [Roku 2.x](roku-2x.md) | — |
-| API | [媒體收集API](media-collection-api.md) | — |
+| API | [媒體收集API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation) | — |
 
 ## 下一步
 

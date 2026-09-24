@@ -3,19 +3,17 @@ title: 自訂中繼資料支援 — XDM格式
 description: 瞭解如何使用Experience Edge XDM格式傳送包含媒體追蹤事件的自訂中繼資料。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '774'
 ht-degree: 5%
-
 ---
-
 
 # 自訂中繼資料支援 — XDM格式
 
 Experience Edge API可讓您在`sessionStart`、`adStart`和`chapterStart` API事件中，連同標準XDM欄位一起傳送媒體自訂中繼資料。 透過XDM格式傳送的媒體自訂中繼資料可轉送至&#x200B;**Adobe Analytics**&#x200B;和&#x200B;**Adobe Experience Platform**。
 
-如需媒體收集API實作，請參閱[自訂中繼資料支援](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)。
+如需媒體收集API實作，請參閱[自訂中繼資料支援](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)。
 
 ## 概觀
 
@@ -335,6 +333,6 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 >[!MORELIKETHIS]
 >
->* [媒體收集API自訂中繼資料支援](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [媒體收集API自訂中繼資料支援](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/custom-metadata)
 >* [媒體收集詳細資料資料型別](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)
 >* [Adobe Experience Platform Edge Network的資料變數對應](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/data-var-mapping)

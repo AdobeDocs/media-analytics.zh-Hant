@@ -3,13 +3,11 @@ title: 媒體已下載的旗標
 description: 將工作階段標示為已下載的離線播放，以便與串流工作階段分開報告。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '322'
 ht-degree: 5%
-
 ---
-
 
 # 媒體已下載的旗標
 
@@ -179,7 +177,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 >[!TAB Roku 2.x]
 
-Roku 2.x SDK不提供下載內容追蹤功能。 若要報告下載的媒體播放，請使用[Roku Edge SDK](/help/implementation/edge/roku.md)或[媒體收集API](/help/implementation/analytics-only/media-collection-api.md)。
+Roku 2.x SDK不提供下載內容追蹤功能。 若要報告下載的媒體播放，請使用[Roku Edge SDK](/help/implementation/edge/roku.md)或[媒體收集API](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/implementation)。
 
 >[!TAB 媒體收集API]
 
@@ -195,6 +193,6 @@ Roku 2.x SDK不提供下載內容追蹤功能。 若要報告下載的媒體播�
 }
 ```
 
-如需完整的要求結構，請參閱[媒體收集API工作階段參考](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)。
+如需完整的要求結構，請參閱[媒體收集API工作階段參考](https://developer.adobe.com/analytics-collection-apis/methods/media-collection/sessions)。
 
 >[!ENDTABS]

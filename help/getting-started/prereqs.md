@@ -8,25 +8,32 @@ role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
 subfeature_v2:
   - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+    internal-label: Methods
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+    internal-label: Implementation
+source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
 workflow-type: tm+mt
-source-wordcount: 274
+source-wordcount: '274'
 ht-degree: 10%
-
 ---
-
 # 先決條件 {#prerequisites}
 
 開始實作Adobe串流媒體服務前，請先完成下列工作：
@@ -41,11 +48,11 @@ Customer Journey Analytics串流媒體收集附加元件和Adobe Analytics for S
 
    身分設定需求會因您的實作方法而異：
 
-   * **Edge實作**：身分是透過Adobe Experience Platform身分識別名稱空間設定來處理。 不需要個別設定Identity Service。 如需詳細資訊，請參閱[Edge實作概觀](/help/implementation/edge/overview.md)。
+   * **Edge實作**：身分是透過Adobe Experience Platform身分識別名稱空間設定來處理。 不需要另行設定訪客ID服務。 如需詳細資訊，請參閱[Edge實作概觀](/help/implementation/edge/overview.md)。
 
-   * **僅限Analytics的實作**：必須啟用Adobe Experience Platform Identity Service，才能在CX Enterprise解決方案中一致地識別訪客。 Identity Service會為每個網站訪客指派不重複的永久ID，並可讓該ID在您訂閱的所有CX Enterprise解決方案之間共用。
+   * **僅限Analytics的實作**：必須啟用Adobe訪客ID服務，才能在所有CX Enterprise解決方案中一致地識別訪客。 訪客ID服務會指派不重複的永久ID給每個網站訪客，並允許該ID在您訂閱的所有CX Enterprise解決方案之間共用。
 
-     如需詳細資訊，請參閱[Adobe Experience Platform Identity Service檔案](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
+     如需詳細資訊，請參閱[Adobe訪客ID服務檔案](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)。
 
 1. **檢視您的實作的其他先決條件**
 
