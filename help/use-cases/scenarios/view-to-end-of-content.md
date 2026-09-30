@@ -1,29 +1,39 @@
 ---
 title: 了解媒體追蹤時間軸
-description: 深入了解播放點時間軸和對應使用者的動作。 了解每個動作的詳細資料及其隨附的要求。
+description: 深入了解播放點時間軸和對應使用者的動作。 了解每個動作的詳細資料及其隨附的請求。
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/3jO1VR5n4Ft6t1F2y99PlrDoGhada-gV-5mM0o3YzkY
+TQID: 'https://experienceleague.adobe.com/3jO1VR5n4Ft6t1F2y99PlrDoGhada-gV-5mM0o3YzkY'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+    internal-label: Metadata
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1137
-ht-degree: 98%
-
+source-wordcount: '1142'
+ht-degree: 100%
 ---
-
 # 時間軸 1 - 檢視到內容結尾{#timeline-view-to-end-of-content}
 
 ## VOD、前段廣告、暫停、緩衝、檢視內容到結束為止
@@ -44,7 +54,7 @@ ht-degree: 98%
 
 這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。
 
-它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。 播放器狀態尚未進入「正在播放」，而是「正在開始」。
+它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。 播放器狀態尚未進入「正在播放」，而是「啟動中」。
 
 要求內容的 `params` 對應必須包含強制工作階段參數。 如需有關工作階段的資訊，請參閱 Media Collection API 文件。
 
@@ -79,13 +89,13 @@ ht-degree: 98%
 | --- | :---: | :---: | --- |
 | 應用程式啟動 Ping 事件計時器 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-啟動應用程式的 Ping 計時器。 如果有前段廣告，第一個 Ping 事件則應在 1 秒引發；如果沒有，則為 10 秒。
+啟動應用程式的 Ping 計時器。 如果有片頭廣告，第一個 Ping 事件則應在 1 秒引發；如果沒有，則為 10 秒。
 
 ### 動作 3 - 廣告插播開始 {#Action-3}
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤前段廣告插播開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 追蹤片頭廣告插播開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 廣告追蹤只能在廣告插播中進行。
 
@@ -108,9 +118,9 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤前段廣告 #1 開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 追蹤片頭廣告 #1 開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-開始追蹤第一個前段廣告，其持續時間為 15 秒。 包括該 `adStart` 的中繼資料。
+開始追蹤第一個片頭廣告，其持續時間為 15 秒。 包括該 `adStart` 的中繼資料。
 
 ```json
 {
@@ -190,7 +200,8 @@ ht-degree: 98%
 
 >[!NOTE]
 >
->為了簡單起見，時間軸中的後續廣告將略過顯示一連串的一秒Ping>。
+>時間軸中的後續廣告將略過顯示一連串的一秒 Ping
+>為求簡潔起見……
 
 ```json
 {
@@ -206,9 +217,9 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤前段廣告 #1 完成 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
+| 追蹤片頭廣告 #1 完成 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-追蹤第一個前段廣告的結尾。
+追蹤第一個片頭廣告的結尾。
 
 ```json
 {
@@ -224,9 +235,9 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤前段廣告 #2 開始 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
+| 追蹤片頭廣告 #2 開始 | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-追蹤第二個前段廣告開始，其持續時間為 7 秒。
+追蹤第二個片頭廣告開始，其持續時間為 7 秒。
 
 ```json
 {
@@ -274,9 +285,9 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤前段廣告 #2 完成 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| 追蹤片頭廣告 #2 完成 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-追蹤第二個前段廣告的結尾。
+追蹤第二個片頭廣告的結尾。
 
 ```json
 {
@@ -292,7 +303,7 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤前段廣告插播完成 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
+| 追蹤片頭廣告插播完成 | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
 廣告插播結束。
 
@@ -365,7 +376,7 @@ ht-degree: 98%
 | --- | :---: | :---: | --- |
 | 緩衝結束，應用程式追蹤內容繼續播放作業 | 36 | 11 | `/api/v1/sessions/{sid}/events` |
 
-緩衝在 3 秒後結束，因此請讓播放器回復「正在播放」狀態。 您必須傳送另一個追蹤播放事件來結束緩衝狀態。  **`bufferStart` 之後的 `play` 呼叫意味著傳送「bufferEnd」呼叫到後端**，因此不需要 `bufferEnd` 事件。
+緩衝在 3 秒後結束，因此請讓播放器回復「正在播放」狀態。 您必須在結束緩衝狀態後傳送另一個追蹤播放事件。  **`bufferStart` 之後的 `play` 呼叫意味著傳送「bufferEnd」呼叫到後端**，因此不需要 `bufferEnd` 事件。
 
 ```json
 {
@@ -398,7 +409,7 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤中段廣告插播開始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| 追蹤插入廣告插播開始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
 持續 8 秒的中段廣告：傳送 `adBreakStart`。
 
@@ -421,9 +432,9 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤中段廣告 #3 開始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
+| 追蹤插入廣告 #3 開始 | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-追蹤中段廣告。
+追蹤插入廣告。
 
 ```json
 {
@@ -470,9 +481,9 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤中段廣告 #1 完成 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| 追蹤插入廣告 #1 完成 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
-中段廣告完成。
+中間插入廣告完成。
 
 ```json
 {
@@ -488,7 +499,7 @@ ht-degree: 98%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤中段廣告插播完成 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
+| 追蹤插入廣告插播完成 | 54 | 21 | `/api/v1/sessions/{sid}/events` |
 
 廣告插播完成。
 

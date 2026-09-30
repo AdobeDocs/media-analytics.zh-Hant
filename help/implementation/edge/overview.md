@@ -3,13 +3,27 @@ title: Edge實作概觀
 description: 設定透過Edge Network收集串流媒體資料所需的Adobe Experience Platform結構、資料集和資料流。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '1282'
-ht-degree: 4%
-
+ht-degree: 5%
 ---
-
 # Edge實作概觀
 
 Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的資料傳送至單一端點，接著將適當的資訊轉送至每個產品。 這是實作串流媒體收集的建議方法，也是從單一實作同時支援Adobe Analytics和Customer Journey Analytics的唯一方法。
@@ -158,9 +172,9 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
    * 根據您的Adobe解決方案，將適當的服務新增至資料流。 如需新增服務的相關資訊，請參閱[設定資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#view-details)中的「將服務新增至資料流」。
 
-      * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics）：如[建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述，定義報表套裝。
+     * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics）：如[建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述，定義報表套裝。
 
-      * **[!UICONTROL Adobe Experience Platform]** （若使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
+     * **[!UICONTROL Adobe Experience Platform]** （若使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
 
      ![新增Adobe Analytics服務](assets/datastream-add-service.png)
 

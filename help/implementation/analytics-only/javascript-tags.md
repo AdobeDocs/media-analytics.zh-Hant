@@ -3,13 +3,23 @@ title: 設定Media Analytics標籤擴充功能
 description: 使用Adobe Media Analytics (3.x SDK) for Audio and Video標籤擴充功能來實作僅限Analytics的串流媒體。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 12%
-
 ---
-
 # 設定Media Analytics標籤擴充功能
 
 Adobe Media Analytics (3.x SDK) for Audio and Video標籤擴充功能會透過Tags部署Media SDK for JavaScript (3.x)，不需要手動安裝JavaScript。 本頁涵蓋標籤設定。 若要改為在程式碼中安裝SDK，請參閱[設定適用於串流媒體的JavaScript](javascript.md)。 若為新實作，請考慮建議的[Web SDK標籤延伸模組](/help/implementation/edge/web-sdk-tags.md) Edge路徑。

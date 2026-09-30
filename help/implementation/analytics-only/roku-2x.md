@@ -3,13 +3,23 @@ title: 設定適用於串流媒體的Roku 2.x
 description: 安裝並設定適用於Roku的Adobe Media SDK 2.x，以實施僅限Analytics的串流媒體，包括SceneGraph頻道。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '764'
 ht-degree: 2%
-
 ---
-
 # 設定適用於串流媒體的Roku 2.x
 
 Roku適用的Adobe Media SDK 2.x (`adbmobile.brs`)會將來自以BrightScript撰寫的Roku頻道的串流媒體資料直接傳送到Adobe Analytics。 它也會透過Audience Manager收集受眾資料，並透過媒體事件測量參與度。
@@ -19,9 +29,9 @@ Roku適用的Adobe Media SDK 2.x (`adbmobile.brs`)會將來自以BrightScript撰
 >本頁涵蓋Roku適用的僅限Analytics的Media SDK 2.x。 若是新的實作，Adobe建議[Roku Edge SDK](/help/implementation/edge/roku.md)，此工具可讓Customer Journey Analytics、Adobe Journey Optimizer和Real-Time CDP以及Adobe Analytics也能使用資料。
 
 * **必要條件**：
-   * 完成[僅限Analytics的實作概觀](overview.md)。
-   * [下載Roku的Media SDK](/help/getting-started/download-sdks.md)。
-   * 在您的媒體播放器中加入API以訂閱播放器事件，以及加入API以提供媒體名稱和播放點位置等播放器資訊。
+  * 完成[僅限Analytics的實作概觀](overview.md)。
+  * [下載Roku的Media SDK](/help/getting-started/download-sdks.md)。
+  * 在您的媒體播放器中加入API以訂閱播放器事件，以及加入API以提供媒體名稱和播放點位置等播放器資訊。
 
 ## 安裝SDK
 

@@ -4,35 +4,53 @@ description: 檢視串流媒體服務的發行說明。
 feature: Release Notes
 role: User, Admin, Developer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-TQID: https://experienceleague.adobe.com/yNfosiewndKE7c-VjoVM6D3ifYlgX3eJGgYQWcBC9no
+TQID: 'https://experienceleague.adobe.com/yNfosiewndKE7c-VjoVM6D3ifYlgX3eJGgYQWcBC9no'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
   - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+    internal-label: Implementations
   - id: f73667dc-d296-4875-8975-ac3fdc3adc42
+    internal-label: Dashboards
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: a421fb65-2c82-457a-921c-28c46b697a39
+    internal-label: Analytics basics
 subfeature_v2:
   - id: ac8a38fa-dec3-4581-8f64-178fde9f64e8
+    internal-label: Report Builder
   - id: c77ba355-6681-41fe-b719-563d3f507fdb
+    internal-label: Mobile SDK
   - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+    internal-label: Variables
+  - id: d89ba969-e026-48bf-927e-e9df2f1e34f3
+    internal-label: Release notes
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
+    internal-label: Troubleshooting
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+    internal-label: Insights
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 722
-ht-degree: 35%
-
+source-wordcount: '722'
+ht-degree: 37%
 ---
-
 # 串流媒體服務發行說明
 
 **上次更新日期**：2026年6月4日
@@ -69,7 +87,7 @@ ht-degree: 35%
 | **多重播放器狀態追蹤** | 使用Media Collection API實作多個[播放器狀態追蹤](/help/implementation/events/player-state/overview.md)。 | 2022 年 9 月 |
 | 已重新命名 XDM 欄位 | 已重新命名XDM欄位名稱以保持一致性：<ul><li>音訊和視訊引數</li><li>廣告參數</li><li>章節參數</li><li>播放器狀態參數</li><li>品質參數</li></ul> | 2022 年 9 月 |
 | **個面板已新增至Customer Journey Analytics** | 已將[媒體同時檢閱者面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)和[媒體播放時間面板](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)新增至Customer Journey Analytics。 | 2022 年 8 月 9 日 |
-| **平均分鐘觀眾數** | 您可以使用[平均每分鐘觀眾數面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)來更瞭解平均內容使用量。 <br>「平均分鐘觀眾數」可比較任何長度或類型的節目。 此外，您也可以比較數位平均分鐘觀眾數和線性電視的平均分鐘量度，或是將前者附加到後者。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及持續時間分類的更新時間。 | 2022 年 3 月 16 日 |
+| **平均分鐘觀眾數** | 您可以使用[平均每分鐘觀眾數面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)來更瞭解平均內容使用量。 <br>「平均分鐘觀眾數」可比較任何長度或類型的節目。 此外，您也可以比較數位平均分鐘觀眾數和線性電視的平均分鐘量度，或是將前者附加到後者。 此面板提供較大的彈性來測量自訂時段的平均觀眾數，以及在持續時間分類已更新時進行測量。 | 2022 年 3 月 16 日 |
 
 ## 2021
 
@@ -81,5 +99,5 @@ ht-degree: 35%
 
 | 功能 | 說明 | 日期 |
 | --- | --- | --- |
-| **媒體同時檢閱者面板** | [同時檢閱者面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)可協助您瞭解人數高峰或趨勢反轉的時間。 取得內容品質和檢閱者參與的寶貴洞察，並取得疑難排解或規劃數量和規模的協助。<br><br>[媒體同時檢閱者面板（教學課程）](https://experienceleague.adobe.com/zh-hant/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020年9月；2021年1月 |
+| **媒體同時檢閱者面板** | [同時檢閱者面板](https://experienceleague.adobe.com/zh-hant/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)可協助您瞭解人數高峰或趨勢反轉的時間。 取得內容品質和檢視者參與的寶貴洞察，並取得疑難排解或規劃數量和規模的協助。<br><br>[媒體同時檢閱者面板（教學課程）](https://experienceleague.adobe.com/zh-hant/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace) | 2020年9月；2021年1月 |
 | **支援的裝置和平台** | 含 AEP SDK 的 Media Launch 擴充功能現在支援下列 OTT 裝置： <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Fire OS)</li><li>Android TV</li></ul></div> | 2020 年 6 月 |

@@ -3,20 +3,30 @@ title: 設定適用於串流媒體的iOS
 description: 在iOS上設定Adobe Experience Platform Mobile SDK，將串流媒體資料傳送至Edge Network。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 0%
-
 ---
-
 # 設定適用於串流媒體的iOS
 
 Adobe Streaming Media for Edge Network擴充功能(`AEPEdgeMedia`)會收集iOS或tvOS應用程式中的媒體工作階段資料，並將其傳送至Edge Network。 本頁說明程式碼內設定。 若要改為透過Tags行動屬性設定SDK，請參閱[為含有標籤的串流媒體設定iOS](ios-tags.md)。
 
 * **必要條件**：
-   * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
-   * 將`AEPCore`、`AEPEdge`、`AEPEdgeIdentity`和`AEPEdgeMedia`擴充功能新增至您的應用程式。 如需安裝和註冊，請參閱[Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)。
+  * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
+  * 將`AEPCore`、`AEPEdge`、`AEPEdgeIdentity`和`AEPEdgeMedia`擴充功能新增至您的應用程式。 如需安裝和註冊，請參閱[Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)。
 
 ## 設定iOS的媒體
 

@@ -3,13 +3,25 @@ title: 內容分級
 description: 依美國電視分級制度(TV Parental Guidelines)或地區分級系統的定義，報告對象分級。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '400'
 ht-degree: 2%
-
 ---
-
 
 # 內容分級
 
@@ -38,7 +50,7 @@ ht-degree: 2%
 
 為報表套裝啟用&#x200B;**[[!UICONTROL 視訊中繼資料]](/help/reporting/setup/analytics-reporting.md)**&#x200B;時，Adobe會自動建立內容評等分類結構。 您負責使用[分類設定](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填入及維護分類。
 
-此方法可保證每個內容ID與其評等之間都有1:1關係。 分類更新會回溯套用至該ID的所有歷史資料。
+此方法可確保每個內容ID與其評等之間維持1:1關係。 分類更新會回溯套用至該ID的所有歷史資料。
 
 >[!IMPORTANT]
 >

@@ -3,13 +3,25 @@ title: 創作 ID
 description: 報告廣告創意識別碼。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '378'
 ht-degree: 3%
-
 ---
-
 
 # 創作 ID
 
@@ -36,7 +48,7 @@ ht-degree: 3%
 
 為報表套裝啟用&#x200B;**[[!UICONTROL 媒體廣告]](/help/reporting/setup/analytics-reporting.md)**&#x200B;時，Adobe會自動建立Creative ID分類結構。 您負責使用[分類設定](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填入及維護分類。
 
-此方法可保證每個廣告ID與其創意ID之間有1:1個關係。 分類更新會回溯套用至該ID的所有歷史資料。
+此方法可保證每個廣告ID與其創意ID之間保持1:1關係。 分類更新會回溯套用至該ID的所有歷史資料。
 
 >[!IMPORTANT]
 >
@@ -46,7 +58,7 @@ ht-degree: 3%
 
 建立將`a.media.ad.creative`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取創意ID作為每次點選值，而不需要分類維護。
 
-取捨是您會遺失創意ID與上層[廣告](ad.md)維度之間保證的1:1關係。 如果您的實施在不同事件間為相同的廣告ID傳送不一致的值，則同一廣告下可能會出現多個創意ID。 更新值僅適用於未來的資料。
+取捨是您會失去創意ID與上層[廣告](ad.md)維度之間保證的1:1關係。 如果您的實施在不同事件間為相同的廣告ID傳送不一致的值，則同一廣告下可能會出現多個創意ID。 更新值僅適用於未來的資料。
 
 ## 維度項目
 

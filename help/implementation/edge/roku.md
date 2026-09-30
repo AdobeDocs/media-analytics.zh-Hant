@@ -3,20 +3,30 @@ title: 設定適用於串流媒體的Roku Edge
 description: 設定Adobe Experience Platform Roku SDK將串流媒體資料傳送至Edge Network。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '244'
 ht-degree: 0%
-
 ---
-
 # 設定適用於串流媒體的Roku Edge
 
 [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku) (BrightScript)會收集Roku頻道中的媒體工作階段資料，並將其傳送至Edge Network。 Roku是在程式碼中設定，不使用標籤。
 
 * **必要條件**：
-   * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
-   * 從[GitHub版本](https://github.com/adobe/aepsdk-roku/releases)下載SDK並將其新增至您的頻道，如[快速入門手冊](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md)中所述。
+  * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
+  * 從[GitHub版本](https://github.com/adobe/aepsdk-roku/releases)下載SDK並將其新增至您的頻道，如[快速入門手冊](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md)中所述。
 
 ## 設定適用於媒體的Roku Edge SDK
 

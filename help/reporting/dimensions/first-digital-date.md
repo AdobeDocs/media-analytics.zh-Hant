@@ -3,13 +3,25 @@ title: 第一個數位日期
 description: 報告內容首次在數位平台上出現的日期。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 1%
-
 ---
-
 
 # 第一個數位日期
 
@@ -38,7 +50,7 @@ ht-degree: 1%
 
 為報表套裝啟用&#x200B;**[[!UICONTROL 視訊中繼資料]](/help/reporting/setup/analytics-reporting.md)**&#x200B;時，Adobe會自動建立第一個數位日期分類結構。 您負責使用[分類設定](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填入及維護分類。
 
-此方法可保證每個內容ID與其第一個數位日期之間有1:1個關係。 分類更新會回溯套用至該ID的所有歷史資料。
+此方法可保證每個內容ID與其第一個數位日期之間保持1:1關係。 分類更新會回溯套用至該ID的所有歷史資料。
 
 >[!IMPORTANT]
 >

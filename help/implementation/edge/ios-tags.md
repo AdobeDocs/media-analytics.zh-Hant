@@ -3,20 +3,30 @@ title: 設定適用於串流媒體的iOS及其標籤
 description: 使用iOS適用的Adobe串流媒體標籤擴充功能設定Edge Network的串流媒體收集。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
-
 ---
-
 # 設定適用於串流媒體的iOS及其標籤
 
 您可以透過「標籤」行動屬性來設定iOS或tvOS應用程式的串流媒體收集，並在資料收集UI中管理媒體設定。 本頁涵蓋標籤設定。 若要改為在程式碼中設定SDK，請參閱[為串流媒體設定iOS](ios.md)。
 
 * **必要條件**：
-   * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
-   * 在資料收集UI中建立行動屬性。 請參閱[適用於Edge Network的Adobe串流媒體](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)。
+  * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
+  * 在資料收集UI中建立行動屬性。 請參閱[適用於Edge Network的Adobe串流媒體](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/)。
 
 ## 設定擴充功能
 

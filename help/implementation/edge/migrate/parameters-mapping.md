@@ -4,25 +4,35 @@ description: 搭配Analytics Source Connector和Customer Journey Analytics使用
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
+TQID: 'https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1331
+source-wordcount: '1331'
 ht-degree: 19%
-
 ---
-
 # 適用於Adobe Experience Platform和Customer Journey Analytics的Media Analytics引數對應
 
 本檔案提供Adobe Experience Platform和Customer Journey Analytics中所有Media Analytics使用引數的完整清單。 其目的是支援將透過[Analytics Source Connector](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/adobe-applications/analytics)或[Analytics Source Connector for Classifications](https://experienceleague.adobe.com/tw/en/docs/experience-platform/sources/connectors/adobe-applications/classifications)從Adobe Analytics匯入的資料整合到Platform，並將每個引數對應到其對應的XDM欄位路徑。
@@ -161,24 +171,24 @@ Media Analytics分類會透過稱為ACDC的個別流程內嵌至AEP中。 下表
 針對每個查詢資料集（分類資料集），設定如下：
 
 * **視訊資料集**：
-   * 索引鍵： `_sandbox.key`
-   * 比對索引鍵： `Asset ID (media.mediaTimed.primaryAssetReference._id)`
-   * 資料來源型別： `Web Data`
+  * 索引鍵： `_sandbox.key`
+  * 比對索引鍵： `Asset ID (media.mediaTimed.primaryAssetReference._id)`
+  * 資料來源型別： `Web Data`
 
 * **視訊資料集**：
-   * 索引鍵： `_sandbox.key`
-   * 比對索引鍵： `Ad ID (advertising.adAssetReference._id)`
-   * 資料來源型別： `Web Data`
+  * 索引鍵： `_sandbox.key`
+  * 比對索引鍵： `Ad ID (advertising.adAssetReference._id)`
+  * 資料來源型別： `Web Data`
 
 * **videoadpod資料集**：
-   * 索引鍵： `_sandbox.key`
-   * 比對索引鍵： `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
-   * 資料來源型別： `Web Data`
+  * 索引鍵： `_sandbox.key`
+  * 比對索引鍵： `Ad Pod ID (advertising.adAssetViewDetails.adBreak._id)`
+  * 資料來源型別： `Web Data`
 
 * **videochapter資料集**：
-   * 索引鍵： `_sandbox.key`
-   * 比對索引鍵： `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
-   * 資料來源型別： `Web Data`
+  * 索引鍵： `_sandbox.key`
+  * 比對索引鍵： `Chapter identity (media.mediaTimed.mediaChapter.chapterAssetReference._id)`
+  * 資料來源型別： `Web Data`
 
 ### 報表考量事項
 
@@ -242,7 +252,7 @@ Media Analytics分類會透過稱為ACDC的個別流程內嵌至AEP中。 下表
 | [[!UICONTROL Creative URL]](/help/reporting/dimensions/creative-url.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | 維度 |
 | [[!UICONTROL 位置ID]](/help/reporting/dimensions/placement-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | 維度 |
 | 每秒影格數 | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>`<br>和<br>`xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 兩者 |
-| Media SDK 錯誤 ID | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
+| 媒體 SDK 錯誤 ID | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
 | [[!UICONTROL 延遲受影響的資料流]](/help/reporting/metrics/stall-impacted-streams.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
 | [[!UICONTROL 延遲事件]](/help/reporting/metrics/stall-events.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
 | 總停頓期間[&#128279;](/help/reporting/metrics/total-stalling-duration.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |

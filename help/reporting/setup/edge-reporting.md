@@ -3,13 +3,25 @@ title: 設定Edge實作的報表
 description: 設定Customer Journey Analytics以報告透過Edge Network收集的串流媒體資料。
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '832'
-ht-degree: 6%
-
+ht-degree: 7%
 ---
-
 # 設定Edge實作的報表
 
 透過Edge Network實作串流媒體收集後，請設定Customer Journey Analytics以報告收集的資料。
@@ -24,7 +36,7 @@ ht-degree: 6%
 
 1. 在Customer Journey Analytics中建立連線，如[建立連線](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-connections/create-connection)中所述。 建立連線時，請確定已啟用&#x200B;**[!UICONTROL 匯入所有新資料]**&#x200B;核取方塊。
 
-## 在 Customer Journey Analytics 中建立資料檢視
+## 在 Customer Journey Analytics 中建立資料釋圖
 
 1. 在Customer Journey Analytics中建立資料檢視，如[建立或編輯資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/create-dataview)中所述。
 
