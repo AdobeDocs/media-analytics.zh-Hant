@@ -34,7 +34,7 @@ ht-degree: 9%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 媒體章節]](/help/reporting/setup/analytics-reporting.md)時，自動從內容資料`a.media.chapter.name`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | 資料饋送 | `videochapter`, `post_videochapter` |
 | Audience Manager | 不適用 |
 

@@ -40,7 +40,7 @@ Publisher是在工作階段開始時，由播放器針對音訊內容所設定�
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 啟用[[!UICONTROL 音訊中繼資料]](/help/reporting/setup/analytics-reporting.md)時，自動從內容資料`a.media.publisher`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.publisher`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料摘要 | `videoaudiopublisher` |
 | Audience Manager | `c_contextdata.a.media.publisher` |
 
