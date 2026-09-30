@@ -255,4 +255,4 @@ Media Analytics分類會透過稱為ACDC的個別流程內嵌至AEP中。 下表
 | 媒體 SDK 錯誤 ID | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
 | [[!UICONTROL 延遲受影響的資料流]](/help/reporting/metrics/stall-impacted-streams.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
 | [[!UICONTROL 延遲事件]](/help/reporting/metrics/stall-events.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
-| 總停頓期間[](/help/reporting/metrics/total-stalling-duration.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
+| 總停頓期間[&#128279;](/help/reporting/metrics/total-stalling-duration.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | 量度 |
