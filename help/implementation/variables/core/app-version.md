@@ -3,7 +3,19 @@ title: 應用程式版本
 description: 設定媒體播放器應用程式的版本字串。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 2%
@@ -13,7 +25,7 @@ ht-degree: 2%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**應用程式版本**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[應用程式版本](/help/reporting/dimensions/app-version.md)。*
+*本頁涵蓋&#x200B;**應用程式版本**變數的資料集合。 如需對應的報表維度，請參閱[應用程式版本](/help/reporting/dimensions/app-version.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -25,7 +37,7 @@ ht-degree: 2%
 
 | 屬性 | 價值 |
 | --- | --- |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **媒體收集API引數** | `media.sdkVersion` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md) |
@@ -36,7 +48,7 @@ ht-degree: 2%
 
 >[!TAB Web SDK]
 
-呼叫[`configure`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/commands/configure/streamingmedia)時，在`streamingMedia`設定物件中設定`appVersion`：
+呼叫[`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)時，在`streamingMedia`設定物件中設定`appVersion`：
 
 ```javascript
 alloy("configure", {

@@ -3,20 +3,30 @@ title: 設定適用於串流媒體的Web SDK標籤擴充功能
 description: 在Adobe Experience Platform Web SDK標籤擴充功能中設定串流媒體收集。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
-
 ---
-
 # 設定適用於串流媒體的Web SDK標籤擴充功能
 
 Adobe Experience Platform Web SDK標籤擴充功能可讓您在資料收集UI中設定串流媒體收集，而不使用`alloy.js`設定代碼。 本頁涵蓋標籤設定。 若要改為在程式碼中設定Web SDK，請參閱[為串流媒體設定Web SDK](web-sdk.md)。
 
 * **必要條件**：
-   * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
-   * 安裝及設定網頁SDK標籤擴充功能。 請參閱[Web SDK標籤擴充功能概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/overview)。
+  * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
+  * 安裝及設定網頁SDK標籤擴充功能。 請參閱[Web SDK標籤擴充功能概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)。
 
 ## 在擴充功能中設定串流媒體
 
@@ -39,6 +49,6 @@ Adobe Experience Platform Web SDK標籤擴充功能可讓您在資料收集UI中
 
 >[!MORELIKETHIS]
 >
->* [網頁SDK標籤延伸總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [網頁SDK標籤延伸總覽](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [設定串流媒體Web SDK （程式碼）](web-sdk.md)
 >* [事件總覽](/help/implementation/events/overview.md)

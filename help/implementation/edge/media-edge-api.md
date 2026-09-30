@@ -3,13 +3,23 @@ title: 設定適用於串流媒體的Media Edge API
 description: 使用Media Edge API直接將串流媒體資料傳送到Edge Network。
 feature: Streaming Media
 role: Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
-
 ---
-
 # 設定適用於串流媒體的Media Edge API
 
 如果您無法使用網頁SDK、Mobile SDK或Roku Edge SDK （例如，在自訂或不支援的執行階段上），可以使用Media Edge API直接將串流媒體資料傳送到Edge Network。 此API使用RESTful HTTP呼叫，且完全可自訂。

@@ -3,7 +3,19 @@ title: 媒體已下載的旗標
 description: 將工作階段標示為已下載的離線播放，以便與串流工作階段分開報告。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 5%
@@ -13,7 +25,7 @@ ht-degree: 5%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**媒體下載旗標**&#x200B;變數的資料集合。 檢視對應報表維度的[下載的媒體](/help/reporting/dimensions/media-downloaded-flag.md)。*
+*本頁涵蓋&#x200B;**媒體下載旗標**變數的資料集合。 檢視對應報表維度的[下載的媒體](/help/reporting/dimensions/media-downloaded-flag.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ ht-degree: 5%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.downloaded` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.downloaded` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |

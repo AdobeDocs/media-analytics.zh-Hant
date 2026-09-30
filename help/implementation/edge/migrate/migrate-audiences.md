@@ -4,36 +4,46 @@ description: 瞭解如何將受眾移轉至適用於串流媒體的新的Adobe A
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 5664bf56-b228-430a-944c-faaab55fa108
-TQID: https://experienceleague.adobe.com/TqsfcR2JgxVjDNx3-CBBa9n6pwvuGk9JgQ--DvWeHg0
+TQID: 'https://experienceleague.adobe.com/TqsfcR2JgxVjDNx3-CBBa9n6pwvuGk9JgQ--DvWeHg0'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
+    internal-label: Implementation
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 516
+source-wordcount: '516'
 ht-degree: 1%
-
 ---
-
 # 將受眾移轉至新的串流媒體欄位
 
-本檔案說明應如何移轉使用Adobe串流媒體服務資料型別「媒體」欄位的對象，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
+本檔案說明應如何移轉使用Adobe串流媒體服務資料型別「媒體」欄位的對象，以使用名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新對應資料型別。
 
 ## 移轉對象
 
-若要將對象從名為「媒體」的舊資料型別移轉到名為「[媒體報表詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯對象，並在每個規則中將已棄用資料型別的舊欄位取代為新資料型別的新對應欄位：
+若要將對象從名為「媒體」的舊資料型別移轉到名為「[媒體報表詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」的新資料型別，您必須編輯對象，並在每個規則中將已棄用資料型別的舊欄位取代為新資料型別的新對應欄位：
 
 1. 找出包含已棄用「媒體」資料型別欄位的規則。 這是以路徑`media.mediaTimed`開頭的所有欄位。
 
-1. 使用新「[媒體報告詳細資料](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-reporting-details)」資料型別的欄位，複製這些規則。
+1. 使用新「[媒體報告詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details)」資料型別的欄位，複製這些規則。
 
 1. 將這兩個規則維持在適當位置，直到您驗證對象是否如預期般運作為止。
 
@@ -83,7 +93,7 @@ ht-degree: 1%
 
 1. 選取「**[!UICONTROL 儲存]**」以儲存對象。 您可以維持此設定，直到需要驗證對象是否仍如預期般運作為止。
 
-1. 驗證完成後，請移除舊欄位，然後選取[儲存]以儲存對象。**&#x200B;**
+1. 驗證完成後，請移除舊欄位，然後選取[儲存]以儲存對象。****
 
    ![新增規則](../../assets/add-rule4.jpeg)
 

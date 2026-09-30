@@ -3,7 +3,19 @@ title: 子母畫面
 description: 追蹤檢視器何時進入和結束子母畫面播放，讓後端可以報告PiP參與情形。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 6%
@@ -13,7 +25,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**子母畫面**&#x200B;播放器狀態的資料集合。 檢視對應報表量度的[受子母畫面影響的資料流](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[子母畫面計數](/help/reporting/metrics/picture-in-picture-count.md)和[子母畫面總持續時間](/help/reporting/metrics/picture-in-picture-total-duration.md)。*
+*此頁面涵蓋&#x200B;**子母畫面**播放器狀態的資料集合。 檢視對應報表量度的[受子母畫面影響的資料流](/help/reporting/metrics/picture-in-picture-streams-impacted.md)、[子母畫面計數](/help/reporting/metrics/picture-in-picture-count.md)和[子母畫面總持續時間](/help/reporting/metrics/picture-in-picture-total-duration.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ ht-degree: 6%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "pictureInPicture"`的專案） |
+| **XDM集合欄位** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)和[`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) （含有`name: "pictureInPicture"`的專案） |
 | **Audience Manager特徵** | `c_contextdata.a.media.states.pictureinpicture.set`, `c_contextdata.a.media.states.pictureinpicture.count`, `c_contextdata.a.media.states.pictureinpicture.time` |
 | **必要** | 否 |
 | **與**&#x200B;一起傳送 | [狀態開始](/help/implementation/events/player-state/state-start.md)，[狀態結束](/help/implementation/events/player-state/state-end.md) |

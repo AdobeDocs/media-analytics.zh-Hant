@@ -3,7 +3,23 @@ title: 僅限Analytics的實施概觀
 description: 適用於串流媒體的Adobe Analytics附加元件的先決條件和實作方法，用於僅限Analytics的實作。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 5%
@@ -16,7 +32,7 @@ ht-degree: 5%
 
 1. **完成一般必要條件。** 請參閱[一般必要條件](/help/getting-started/prereqs.md)。
 
-1. **確認Adobe Analytics實作。** 僅限Analytics的串流媒體實作需要基本的Adobe Analytics實作。 請參閱[實作Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)。
+1. **確認Adobe Analytics實作。** 僅限Analytics的串流媒體實作需要基本的Adobe Analytics實作。 請參閱[實作Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
 
 1. **取得媒體追蹤伺服器URL。** 請向您的Adobe Analytics代表詢問媒體追蹤伺服器URL (`collection-api-server` URL)。 網域通常遵循模式`[your_namespace].hb-api.omtrdc.net`。
 

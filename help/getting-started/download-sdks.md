@@ -5,7 +5,7 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/-L2tSDNue-GheYE-krKkpnOh05s5GKZZBz5sFXsBJ3I
+TQID: 'https://experienceleague.adobe.com/-L2tSDNue-GheYE-krKkpnOh05s5GKZZBz5sFXsBJ3I'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
     internal-label: Analytics
@@ -14,6 +14,8 @@ feature_v2:
     internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
     internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
     internal-label: Media Analytics
@@ -21,6 +23,8 @@ subfeature_v2:
     internal-label: Mobile SDK
   - id: df312454-73c4-43f6-a90e-18f5043f074c
     internal-label: Tags
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -35,7 +39,7 @@ topic_v2:
     internal-label: Customer experience
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 29%
@@ -49,7 +53,7 @@ Edge實施作業會收集資料一次，並透過Adobe Experience Platform Edge 
 | | 文件 | 範例 |
 |:---:|---|---|
 | [![JavaScript圖示](assets/javascript-icon.png)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/install/overview)<br>[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/install/overview) | [設定適用於串流媒體的Web SDK](/help/implementation/edge/web-sdk.md) | [樣本](https://github.com/adobe/alloy-samples/blob/main/media-collection/STANDALONE.md) |
-| [![擴充功能圖示](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=zh-Hant)<br>[Web SDK標籤擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html?lang=zh-Hant) | [設定適用於串流媒體的Web SDK標籤延伸模組](/help/implementation/edge/web-sdk-tags.md) | [樣本](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
+| [![擴充功能圖示](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html)<br>[Web SDK標籤擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html) | [設定適用於串流媒體的Web SDK標籤延伸模組](/help/implementation/edge/web-sdk-tags.md) | [樣本](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
 | [![Android圖示](assets/android.png)](https://github.com/adobe/aepsdk-media-android)<br>[Android SDK](https://github.com/adobe/aepsdk-media-android) | [設定適用於串流媒體的Android](/help/implementation/edge/android.md) | [樣本](https://github.com/adobe/aepsdk-media-android/tree/main/code/testapp) |
 | [![Apple iOS圖示](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [設定適用於串流媒體的iOS](/help/implementation/edge/ios.md) | [樣本](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![擴充功能圖示](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Android標籤擴充功能](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [設定適用於串流媒體的Android標籤延伸模組](/help/implementation/edge/android-tags.md) | |

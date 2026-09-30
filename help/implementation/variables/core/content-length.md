@@ -3,7 +3,19 @@ title: 內容長度
 description: 在工作階段開始時，設定內容長度（以秒為單位）。 這會推動進度標籤和平均每分鐘觀眾數。
 feature: Streaming Media
 role: Developer
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 7%
@@ -13,7 +25,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*本頁涵蓋&#x200B;**內容長度**&#x200B;變數的資料集合。 如需對應的報表維度，請參閱[內容長度](/help/reporting/dimensions/content-length.md)。*
+*本頁涵蓋&#x200B;**內容長度**變數的資料集合。 如需對應的報表維度，請參閱[內容長度](/help/reporting/dimensions/content-length.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -22,7 +34,7 @@ ht-degree: 7%
 | 屬性 | 價值 |
 | --- | --- |
 | **內容資料變數** | `a.media.length` |
-| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **XDM集合欄位** | [`xdm.mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Audience Manager特徵** | `c_contextdata.a.media.length` |
 | **必要** | 是 |
 | **與**&#x200B;一起傳送 | [工作階段開始](/help/implementation/events/session/session-start.md)，工作階段關閉 |

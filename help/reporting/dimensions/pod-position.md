@@ -3,19 +3,31 @@ title: Pod位置
 description: 報告內容內每個廣告插播的位移。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '403'
 ht-degree: 1%
-
 ---
-
 
 # Pod位置
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**Pod位置**&#x200B;報告維度。 如需如何收集此變數，請參閱[廣告插播開始時間](/help/implementation/variables/ads/ad-break-start-time.md)。*
+*此頁面涵蓋&#x200B;**Pod位置**報告維度。 如需如何收集此變數，請參閱[廣告插播開始時間](/help/implementation/variables/ads/ad-break-start-time.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,9 +39,9 @@ Pod位置是從播放器在[廣告插播開始](/help/implementation/events/ads/
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics （處理規則） | 建立將`a.media.ad.podSecond`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Adobe Analytics （處理規則） | 建立將`a.media.ad.podSecond`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
 | Adobe Analytics （分類） | [廣告Pod](ad-pod.md)維度的分類。 為報表套裝啟用&#x200B;**[[!UICONTROL 媒體廣告]](/help/reporting/setup/analytics-reporting.md)**&#x200B;時，Adobe會自動建立此分類。 您需負責填入及維護分類值。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | 資料摘要（處理規則） | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.ad.podSecond`對應至的eVar） |
 | 資料摘要（分類） | 不適用 — 資料摘要不支援分類。 |
 | Audience Manager | `c_contextdata.a.media.ad.podSecond` |
@@ -38,7 +50,7 @@ Pod位置是從播放器在[廣告插播開始](/help/implementation/events/ads/
 
 為報表套裝啟用&#x200B;**[[!UICONTROL 媒體廣告]](/help/reporting/setup/analytics-reporting.md)**&#x200B;時，Adobe會自動建立Pod位置分類結構。 您負責使用[分類設定](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html)填入及維護分類。
 
-此方法可保證每個廣告Pod ID與其位置之間有1:1個關係。 分類更新會回溯套用至該ID的所有歷史資料。
+此方法可確保每個廣告Pod ID與其位置之間維持1:1關係。 分類更新會回溯套用至該ID的所有歷史資料。
 
 >[!IMPORTANT]
 >
@@ -46,9 +58,9 @@ Pod位置是從播放器在[廣告插播開始](/help/implementation/events/ads/
 
 ## 處理規則方法
 
-建立將`a.media.ad.podSecond`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取pod位置作為每次點選值，而不需要分類維護。
+建立將`a.media.ad.podSecond`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 此方法會擷取pod位置作為每次點選值，而不需要分類維護。
 
-取捨是您會遺失pod位置與上層[廣告pod](ad-pod.md)維度之間保證的1:1關係。 如果您的實施在跨事件中針對同一個Pod ID傳送不一致的值，則同一廣告Pod下可能會出現多個位置。 更新值僅適用於未來的資料。
+取捨是您會失去pod位置與上層[廣告pod](ad-pod.md)維度之間保證的1:1關係。 如果您的實施在跨事件中針對同一個Pod ID傳送不一致的值，則同一廣告Pod下可能會出現多個位置。 更新值僅適用於未來的資料。
 
 ## 維度項目
 

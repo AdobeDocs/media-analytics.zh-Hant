@@ -3,19 +3,31 @@ title: 創作 URL
 description: 報告每個廣告創意的資產URL。
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '152'
 ht-degree: 10%
-
 ---
-
 
 # 創作 URL
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**Creative URL**&#x200B;報告維度。 如需如何收集此變數，請參閱[Creative URL](/help/implementation/variables/ads/creative-url.md)。*
+*此頁面涵蓋&#x200B;**Creative URL**報告維度。 如需如何收集此變數，請參閱[Creative URL](/help/implementation/variables/ads/creative-url.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -27,8 +39,8 @@ Creative URL是由播放器在每個[廣告開始](/help/implementation/events/a
 
 | 報告系統 | 來源 |
 | --- | --- |
-| Adobe Analytics | 建立將`a.media.ad.creativeURL`對應至eVar的[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Adobe Analytics | 建立將`a.media.ad.creativeURL`對應至eVar的[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)。 |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | 資料饋送 | `evar1`-`evar250`、`post_evar1`-`post_evar250` （處理規則將`a.media.ad.creativeURL`對應至的eVar） |
 | Audience Manager | `c_contextdata.a.media.ad.creativeURL` |
 

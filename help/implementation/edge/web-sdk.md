@@ -3,20 +3,30 @@ title: 設定適用於串流媒體的Web SDK
 description: 設定Adobe Experience Platform Web SDK (alloy.js)，將串流媒體資料傳送至Edge Network。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '283'
 ht-degree: 5%
-
 ---
-
 # 設定適用於串流媒體的Web SDK
 
-Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/js-overview) （`alloy.js`，版本2.20.0或更新版本）的`streamingMedia`元件會收集您網站上的媒體工作階段資料，並將其傳送至Edge Network。 本頁涵蓋程式碼內(`alloy.js`)設定。 若要改為透過標籤設定網頁SDK，請參閱[為串流媒體設定網頁SDK標籤擴充功能](web-sdk-tags.md)。
+Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) （`alloy.js`，版本2.20.0或更新版本）的`streamingMedia`元件會收集您網站上的媒體工作階段資料，並將其傳送至Edge Network。 本頁涵蓋程式碼內(`alloy.js`)設定。 若要改為透過標籤設定網頁SDK，請參閱[為串流媒體設定網頁SDK標籤擴充功能](web-sdk-tags.md)。
 
 * **必要條件**：
-   * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
-   * 安裝Web SDK 2.20.0或更新版本。 請參閱[安裝網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/install/overview)。
+  * 完成[Edge實作總覽](overview.md) （結構描述、資料集、啟用[!UICONTROL Media Analytics]的資料流）。
+  * 安裝Web SDK 2.20.0或更新版本。 請參閱[安裝網頁SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/overview)。
 
 ## 設定streamingMedia元件
 
@@ -35,11 +45,11 @@ alloy("configure", {
 });
 ```
 
-如需完整的組態詳細資料，請參閱[`streamingMedia`命令](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/commands/configure/streamingmedia)。
+如需完整的組態詳細資料，請參閱[`streamingMedia`命令](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia)。
 
 ### 從Media JS SDK移轉
 
-如果您從Media JS (3.x) SDK移動，Web SDK [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/commands/getmediaanalyticstracker)命令會傳回與[3.x Media SDK](/help/implementation/analytics-only/javascript.md)相同API的追蹤器執行個體，因此您現有的追蹤呼叫可繼續運作。
+如果您從Media JS (3.x) SDK移動，Web SDK [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/getmediaanalyticstracker)命令會傳回與[3.x Media SDK](/help/implementation/analytics-only/javascript.md)相同API的追蹤器執行個體，因此您現有的追蹤呼叫可繼續運作。
 
 ## 追蹤媒體事件
 
@@ -51,6 +61,6 @@ alloy("configure", {
 
 >[!MORELIKETHIS]
 >
->* [Web SDK 概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/collection/js/js-overview)
+>* [Web SDK 概觀](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)
 >* [事件總覽](/help/implementation/events/overview.md)
 >* [變數總覽](/help/implementation/variables/overview.md)

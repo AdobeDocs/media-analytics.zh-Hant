@@ -1,32 +1,41 @@
 ---
 title: 了解媒體追蹤時間軸 - 使用者放棄工作階段
-description: 了解播放點時間軸和視訊工作階段放棄時對應的使用者動作。 了解每個動作和要求的詳細資料。
+description: 了解播放點時間軸和視訊工作階段放棄時對應的使用者動作。 了解每個動作和請求的詳細資料。
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/e0p6PwQPp5P2RG5M-0IeWtSebVa8rH20SZBRExC9Q7c
+TQID: 'https://experienceleague.adobe.com/e0p6PwQPp5P2RG5M-0IeWtSebVa8rH20SZBRExC9Q7c'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+    internal-label: Reports
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 642
+source-wordcount: '642'
 ht-degree: 100%
-
 ---
-
 # 時間軸 2 - 使用者放棄工作階段 {#timeline--2-user-abandons-session}
 
-## VOD、前段廣告、中段廣告、使用者提早放棄內容
+## VOD、片頭廣告、插入廣告、使用者提早放棄內容
 
-下列圖表說明播放點時間軸和使用者動作的對應時間軸。 以下呈現每個動作的詳細資料及其隨附要求。
+下列圖表說明播放點時間軸和使用者動作的對應時間軸。 以下呈現每個動作的詳細資料及其隨附請求。
 
 ![API 內容](assets/va_api_content_2.png)
 
@@ -40,7 +49,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 按下「自動播放」或「播放」按鈕 | 0 | 0 | `/api/v1/sessions` |
 
-這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。 它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。 播放器狀態尚未進入「正在播放」，而是「正在開始」。  要求內容的 `params` 對應必須包含強制工作階段參數。  在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。 如需有關工作階段的資訊，請參閱 Media Collection API 文件。
+這個呼叫代表&#x200B;_使用者有意願播放_&#x200B;影片。 它會傳回工作階段 ID (`{sid}`)，給予用來識別工作階段中所有後續追蹤呼叫的用戶端。 播放器狀態尚未進入「正在播放」，而是「正在啟動」。  要求內容的 `params` 對應必須包含強制工作階段參數。  在後端，這個呼叫會產生 Adobe Analytics 起始呼叫。 如需有關工作階段的資訊，請參閱 Media Collection API 文件。
 
 ```json
 {
@@ -72,13 +81,13 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 應用程式啟動 Ping 事件計時器 | 0 | 0 | |
 
-啟動應用程式的 Ping 計時器。 如果有前段廣告，第一個 Ping 事件則應在 1 秒引發；如果沒有，則為 10 秒。
+啟動應用程式的 Ping 計時器。 如果有片頭廣告，第一個 Ping 事件則應在 1 秒引發；如果沒有，則為 10 秒。
 
 ### 動作 3 - 廣告插播開始 {#Action-3}
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤前段廣告插播開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 追蹤片頭廣告插播開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 必須追蹤前段廣告。 廣告追蹤只能在廣告插播中進行。
 
@@ -101,7 +110,7 @@ ht-degree: 100%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤前段廣告 #1 開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| 追蹤片頭廣告 #1 開始 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 12 秒的廣告開始。
 
@@ -153,7 +162,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | 追蹤前段廣告 #1 完成 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-第一個前段廣告結束。
+第一個片頭廣告結束。
 
 ```json
 {
@@ -320,7 +329,7 @@ ht-degree: 100%
 
 | 動作 | 動作時間軸 (秒) | 播放點位置 (秒) | 用戶端要求 |
 | --- | :---: | :---: | --- |
-| 追蹤中段廣告 #1 開始 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| 追蹤插入廣告 #1 開始 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 追蹤中段廣告。
 

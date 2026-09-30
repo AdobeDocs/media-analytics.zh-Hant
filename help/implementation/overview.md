@@ -1,11 +1,11 @@
 ---
 title: 實作Adobe Analytics或Customer Journey Analytics的串流媒體服務
 description: 瞭解Adobe串流媒體服務的實作路徑。
-uuid: null
+uuid:
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-TQID: https://experienceleague.adobe.com/aFrxbzBLlf1ngetaM-GsNFXz6TUXi6Pic3quLVI297c
+TQID: 'https://experienceleague.adobe.com/aFrxbzBLlf1ngetaM-GsNFXz6TUXi6Pic3quLVI297c'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
     internal-label: Analytics
@@ -14,6 +14,8 @@ feature_v2:
     internal-label: Implementations
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
     internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
 subfeature_v2:
   - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
     internal-label: Media Analytics
@@ -21,6 +23,8 @@ subfeature_v2:
     internal-label: Methods
   - id: df312454-73c4-43f6-a90e-18f5043f074c
     internal-label: Tags
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
@@ -31,7 +35,7 @@ role_v2:
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
     internal-label: Implementation
-source-git-commit: 1a499f8948bb649bb61df42e4056ac869e04faa9
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 65%
@@ -58,13 +62,13 @@ Adobe建議所有新的Adobe Analytics或Customer Journey Analytics客戶使用E
 
 建議將上述 Edge 實施方法用於 Customer Journey Analytics 和 Adobe Analytics，特別是對於新實施。
 
-除了 Edge 實施方法之外，還有其他實施方法。 這些實施方法專為與 Adobe Analytics 搭配使用而設計。 但是，採用以下任何實施方法的現有客戶仍然可以透過建立 [Analytics 來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant)的方式，使資料可用於 Customer Journey Analytics。
+除了 Edge 實施方法之外，還有其他實施方法。 這些實施方法專為與 Adobe Analytics 搭配使用而設計。 但是，採用以下任何實施方法的現有客戶仍然可以透過建立 [Analytics 來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)的方式，使資料可用於 Customer Journey Analytics。
 
 僅限Adobe Analytics的實作方法使用Adobe Analytics for Streaming Media附加元件。 如需必要條件和方法清單，請參閱[僅限Analytics的實施概述](/help/implementation/analytics-only/overview.md)。
 
 * **含標記的 Media 擴充功能：** Adobe Media Analytics for Audio and Video 擴充功能提供了將 Media 追蹤器例項新增到啟用標記的網站或專案的功能。 資料會傳送至 Adobe Analytics。
 
-  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html?lang=zh-Hant)。
+  如需安裝、設定和實作含標記的 Media 擴充功能的相關資訊，請參閱[Adobe Media Analytics (3.x SDK) for Audio and Video 擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics-3x/overview.html)。
 
 * **Media SDK：** Media SDK 可讓您測量多種媒體平台，包括網站、手機、連網電視、平板電腦、OTT 裝置、機上盒和遊戲主機。 (如需詳細資訊，請參閱[支援的裝置和平台](/help/getting-started/supported-devices.md)。)
 

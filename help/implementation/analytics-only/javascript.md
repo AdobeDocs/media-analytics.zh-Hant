@@ -3,21 +3,31 @@ title: 設定適用於串流媒體的JavaScript
 description: 安裝並設定適用於JavaScript (3.x)的Media SDK，用於僅限Analytics的串流媒體實作。
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 3%
-
 ---
-
 # 設定適用於串流媒體的JavaScript
 
 適用於JavaScript的Media SDK (3.x)會將串流媒體資料直接傳送到Adobe Analytics。 本頁涵蓋手動JavaScript安裝。 若要改為透過標籤來部署SDK，請參閱[設定Media Analytics標籤擴充功能](javascript-tags.md)。 若為新實作，請考慮使用[網頁SDK](/help/implementation/edge/web-sdk.md)，透過Edge Network資料流傳送資料給Adobe Analytics。
 
 * **必要條件**：
-   * 完成[僅限Analytics的實作概觀](overview.md)。
-   * 實作[AppMeasurement](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/js/overview)和[訪客ID服務](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/id/appmeasurement)。
-   * [下載JavaScript的Media SDK](/help/getting-started/download-sdks.md)。
+  * 完成[僅限Analytics的實作概觀](overview.md)。
+  * 實作[AppMeasurement](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/js/overview)和[訪客ID服務](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement)。
+  * [下載JavaScript的Media SDK](/help/getting-started/download-sdks.md)。
 
 ## 安裝和設定SDK
 

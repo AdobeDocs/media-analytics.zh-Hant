@@ -4,32 +4,44 @@ description: 瞭解如何上傳排程資料以追蹤即時內容。
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
+TQID: 'https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+    internal-label: Reporting
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+    internal-label: Insights
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 1424
+source-wordcount: '1424'
 ht-degree: 5%
-
 ---
-
 # 上傳排程資料以追蹤即時內容
 
 >[!AVAILABILITY]
 >
->本文中描述的功能處於發佈的有限測試階段，可能尚未開放使用於您的環境中。 此功能普遍開放使用時，便會移除此注意事項。 如需發行程式的相關資訊，請參閱[Customer Journey Analytics功能發行](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/releases/releases)。
+>本文中描述的功能處於發佈的有限測試階段，可能尚未開放使用於您的環境中。 此功能普遍開放使用時，便會移除此注意事項。 如需發行程式的相關資訊，請參閱[Customer Journey Analytics功能發行](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases)。
 
 您可以上傳過去直播串流媒體內容的排程資料，以更輕鬆且更準確地追蹤直播內容的收視率。 您可以追蹤個別方案的收視率，甚至追蹤特定主題或方案區段。
 
@@ -157,7 +169,7 @@ ht-degree: 5%
 
    1. 推送包含使用批次ID之程式排程資料記錄的.json檔案。
 
-      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ingestion/batch/overview)所述。
+      若要推送排程資訊，您應該使用AEP批次API，如[批次擷取API總覽](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview)所述。
 
       請考慮以下使用cURL來推送包含排程記錄的檔案的範例：
 

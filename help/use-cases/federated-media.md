@@ -5,25 +5,35 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Streaming Media
 role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/3h9hYx2YAws6b9RGCcZMydQ0jm-YxpxcVg40Tg-N4S4
+TQID: 'https://experienceleague.adobe.com/3h9hYx2YAws6b9RGCcZMydQ0jm-YxpxcVg40Tg-N4S4'
 product_v2:
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
 feature_v2:
   - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+    internal-label: API
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+    internal-label: Implementation
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+    internal-label: Measurement
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: 599
+source-wordcount: '599'
 ht-degree: 59%
-
 ---
-
 # 同盟媒體{#federated-media}
 
 >[!AVAILABILITY]
@@ -74,11 +84,11 @@ Federated Analytics服務提供一套系統，可供在兩個合作夥伴之間�
 
 ## 程序 {#process}
 
-1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。 「同盟規則協定」表單含有我們工程團隊專用的特殊欄位，「僅限」使用 Adobe Acrobat 編輯。 [免費下載 Acrobat。](https://get.adobe.com/reader/)
+1. 傳送者與接收者共同合作填寫「同盟規則協定」表單。 「同盟規則協定」表單含有我們工程團隊專用的特殊欄位，僅限使用 Adobe Acrobat 編輯。 [免費下載 Acrobat。](https://get.adobe.com/reader/)
 1. 在能取得資料檔案的前提下，諮詢服務可提供接收者範例資料檔案，內含來自傳送者播放器的實際資料，以便進一步確認資料共用規則已妥善定義。
 1. 傳送者與接收者可確保資料共享協定符合雙方之間的所有合約需求。
 1. 諮詢服務會將填妥的表單傳送至 Adobe 工程技術部門，以建立資料共用規則。
 1. 資料會與開發Adobe Analytics報表套裝或Adobe Experience Platform資料流共用，接收者可在此檢閱及驗證資料。
 1. 接收者一旦確認資料正確，Adobe工程將更新規則以指向生產Analytics報表套裝或Adobe Experience Platform資料流。
 1. 接收者將檢閱及驗證Analytics生產報表套裝或Adobe Experience Platform資料流中的資料。
-1. 若日後資料組發生變更，傳送者或接收者可提交客戶服務票證尋求支援。
+1. 若日後資料集發生變更，傳送者或接收者可提交客戶服務票證尋求支援。

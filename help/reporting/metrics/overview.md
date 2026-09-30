@@ -3,13 +3,22 @@ title: 串流媒體量度概觀
 description: 瞭解如何在Adobe Analytics和Customer Journey Analytics間計算及組織串流媒體量度。
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+    internal-label: Metrics
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '458'
 ht-degree: 3%
-
 ---
-
 
 # 串流媒體量度概觀
 
@@ -31,8 +40,8 @@ Streaming Media Analytics中的量度是由媒體後端運算的事件導向計�
 
 | 報告系統 | 量度如何到達 |
 | --- | --- |
-| Adobe Analytics | 使用[內容資料變數](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/vars/page-vars/contextdata)填入。 有些量度會使用這些內容資料變數自動填入解決方案事件，而其他量度則必須使用[處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)對應至自訂事件。 自動填入值的量度必須先啟用其各自的[串流媒體報表套裝設定](../setup/analytics-reporting.md)。 |
-| Customer Journey Analytics | `xdm.mediaReporting.sessionDetails`和相關節點中的XDM欄位，源自任何包含串流媒體資料的資料集。 您必須使用[資料檢視元件設定](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中的所需設定來建立每個量度。 |
+| Adobe Analytics | 使用[內容資料變數](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/vars/page-vars/contextdata)填入。 有些量度會使用這些內容資料變數自動填入解決方案事件，而其他量度則必須使用[處理規則](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview)對應至自訂事件。 自動填入值的量度必須先啟用其各自的[串流媒體報表套裝設定](../setup/analytics-reporting.md)。 |
+| Customer Journey Analytics | `xdm.mediaReporting.sessionDetails`和相關節點中的XDM欄位，源自任何包含串流媒體資料的資料集。 您必須使用[資料檢視元件設定](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview)中的所需設定來建立每個量度。 |
 | 資料摘要 | 量度在`event_list`和`post_event_list`欄中顯示為事件ID。 每個摘要檔案都包含一個`events.csv`檔案，其中包含所有量度（包括串流媒體量度）的查詢。 |
 
 >[!MORELIKETHIS]

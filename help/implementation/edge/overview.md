@@ -3,13 +3,27 @@ title: Edge實作概觀
 description: 設定透過Edge Network收集串流媒體資料所需的Adobe Experience Platform結構、資料集和資料流。
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+    internal-label: Analysis Workspace
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+    internal-label: Streaming Media
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
 source-wordcount: '1282'
-ht-degree: 4%
-
+ht-degree: 5%
 ---
-
 # Edge實作概觀
 
 Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的資料傳送至單一端點，接著將適當的資訊轉送至每個產品。 這是實作串流媒體收集的建議方法，也是從單一實作同時支援Adobe Analytics和Customer Journey Analytics的唯一方法。
@@ -24,14 +38,14 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
 1. **確認相容的Adobe解決方案。** 您必須具備下列其中至少一個的有效實作：
    * [Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant)： Edge媒體資料的主要報表目的地
-   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hant)：透過相同資料流支援隨附或替代CJA
-   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=zh-Hant)：在設定其中一項時，將&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服務新增至您的資料流
+   * [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)：透過相同資料流支援隨附或替代CJA
+   * [Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=zh-Hant)或[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html)：在設定其中一項時，將&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;服務新增至您的資料流
 
 ## 在Adobe Experience Platform中設定結構
 
 為了標準化使用Adobe Experience Platform之應用程式的資料收集，Adobe建立了開放式、公開記錄的體驗資料模型(XDM)標準。
 
-1. 在Adobe Experience Platform中，開始建立結構描述，如[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=zh-Hant)中所述。
+1. 在Adobe Experience Platform中，開始建立結構描述，如[在UI中建立和編輯結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en)中所述。
 
 1. 在[結構描述詳細資料]頁面上，選擇&#x200B;**[!UICONTROL 體驗事件]**&#x200B;作為結構描述的基底類別。
 
@@ -118,7 +132,7 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
    +++ 展開以檢視將自訂中繼資料新增至結構描述的指示。
 
-   1. 選取&#x200B;**[!UICONTROL 帳戶資訊]** > **[!UICONTROL 指派的組織]** > [!UICONTROL _&#x200B;**組織名稱**&#x200B;_] > **[!UICONTROL 租使用者]**，以找出組織的租使用者名稱稱。
+   1. 選取&#x200B;**[!UICONTROL 帳戶資訊]** > **[!UICONTROL 指派的組織]** > [!UICONTROL _**組織名稱**_] > **[!UICONTROL 租使用者]**，以找出組織的租使用者名稱稱。
 
       透過此路徑接收自訂欄位。 （例如，租使用者名稱稱： _dcbl → myCustomField路徑： _dcbl.myCustomField。）
 
@@ -130,7 +144,7 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [使用產生的路徑](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
+   1. [使用產生的路徑](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties)作為要求承載中的自訂欄位。
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -156,11 +170,11 @@ Adobe Experience Platform Edge Network可讓您將預計要用於多個產品的
 
      ![建立資料流並選取結構描述](assets/datastream-create-schema.png)
 
-   * 根據您的Adobe解決方案，將適當的服務新增至資料流。 如需新增服務的相關資訊，請參閱[設定資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#view-details)中的「將服務新增至資料流」。
+   * 根據您的Adobe解決方案，將適當的服務新增至資料流。 如需新增服務的相關資訊，請參閱[設定資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details)中的「將服務新增至資料流」。
 
-      * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics）：如[建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述，定義報表套裝。
+     * **[!UICONTROL Adobe Analytics]** （若使用Adobe Analytics）：如[建立報表套裝](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)中所述，定義報表套裝。
 
-      * **[!UICONTROL Adobe Experience Platform]** （若使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
+     * **[!UICONTROL Adobe Experience Platform]** （若使用Customer Journey Analytics、Adobe Journey Optimizer或Real-Time Customer Data Platform）
 
      ![新增Adobe Analytics服務](assets/datastream-add-service.png)
 

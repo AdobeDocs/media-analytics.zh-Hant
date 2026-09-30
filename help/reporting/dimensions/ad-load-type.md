@@ -3,19 +3,31 @@ title: 廣告載入
 description: 報告用於每個串流媒體工作階段的廣告載入型別。
 feature: Dimensions
 role: User, Admin
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
+feature_v2:
+  - id: b8734a57-d5fb-44a8-8ee1-65225cecaeae
+    internal-label: Data configuration and collection
+subfeature_v2:
+  - id: b22bc0f7-b089-4966-95a1-31e7b3b69b79
+    internal-label: Dimensions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: beb51916dece77213e1b7346573c4377d62d2b2c
 workflow-type: tm+mt
-source-wordcount: '159'
-ht-degree: 7%
-
+source-wordcount: '161'
+ht-degree: 8%
 ---
-
 
 # 廣告載入
 
 >[!BEGINSHADEBOX]
 
-*此頁面涵蓋&#x200B;**廣告載入**&#x200B;報告維度。 如需如何收集此變數，請參閱[廣告載入型別](/help/implementation/variables/standard-metadata/ad-load-type.md)。*
+*此頁面涵蓋&#x200B;**廣告載入**報告維度。 如需如何收集此變數，請參閱[廣告載入型別](/help/implementation/variables/standard-metadata/ad-load-type.md)。*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +40,7 @@ ht-degree: 7%
 | 報告系統 | 來源 |
 | --- | --- |
 | Adobe Analytics | 設定[[!UICONTROL 串流媒體]](/help/reporting/setup/analytics-reporting.md)時，自動從內容資料`a.media.adLoad`收集。 |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | 資料饋送 | `videoadload`, `post_videoadload` |
 | Audience Manager | `c_contextdata.a.media.adLoad` |
 
